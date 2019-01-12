@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>The Crow's Nest: Storage</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_list_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+
+// End of JavaScript -->
+</SCRIPT>
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0">
+<tr valign=center>
+<td><img src="images/topcrow.gif" width="108" height="66"></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table align=left>
+<tr>
+<td width=100><img src="images/blank.gif" width=100></td>
+</tr>
+</table>
+<dl>
+<table border="0">
+<tr valign=center>
+<td><img src="images/storage.jpg" width=185 height=100></td>
+<td><font color="#1FE071"><img src="images/storage.gif" alt="Storage" height=100 width="143"></font></td>
+</tr>
+</table>
+<p>
+Here you can find all the components that can be used to take your adventures to the next plateau.  You can choose from the many missions of Kyle Katarn, download new sounds, WAXes, 3DOs and lots more.  This area will be kept fairly up to date thanks to the efforts of all the people who keep me informed of new items.  A special thanks also goes to Bryant Luk of <a href="http://swgamers.com" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to swgamers.com.'; return true">swgamers.com</a>, who has graciously allowed me to link to his file directories.  If you have new add-ons and want them posted for download, you can mail it to me and I'll review it and send it on, or send it to Bryant.  If you decide to send it to Bryant please can drop me a quick line so I know it's there.  Otherwise I'll proabably get to it in a few days.
+<p>
+All files are in alphabetical order by filename, if only because it's easier to organize then shifting by title.  This seems to be the way everyone's used to viewing them as well.
+<p>
+<hr noshade>
+<p>
+<h2><font face="EngraversGothic BT">Missions</font></h2>
+<ul>
+<li><a href="levelsa-l.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Head to levels A-L.';return true">A-L Levels</a>
+<li><a href="levelsm-z.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Head to levels M-Z.';return true">M-Z Levels</a>
+</ul>
+<h2><font face="EngraversGothic BT">Other Files</font></h2>
+<ul>
+<li><a href="3dos.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to the 3DO section.';return true">3DOs</a>
+<li><a href="bms.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to the BM section.';return true">BMs</a>
+<li><a href="fmes.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to the FME section.';return true">FMEs</a>
+<li><a href="patches.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to the Patch section.';return true">Patches</a>
+<li><a href="vocs.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to the VOC section.';return true">VOCs</a>
+<li><a href="waxes.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to the WAX section.';return true">WAXes</a>
+</ul>
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan=2 width="12"><img src="images/blank.gif" width="12"></td>
+<td valign=top rowspan=2 align=right width="105"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><img src="images/menu_storage_icon_out.gif" width="97" height="56" border="0" alt="Storage"></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><IMG SRC="images/menu_storage_out.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<table align=left>
+<tr>
+<td width=100><img src="images/blank.gif" width=100></td>
+</tr>
+</table>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated August 31, 1997</i></font>
+</dl>
+</body>
+</html>

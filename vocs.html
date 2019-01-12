@@ -1,0 +1,506 @@
+<html>
+<head>
+<title>The Crow's Nest: VOCs</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+var image5 = new Image();
+image5.src = 'images/menu_list_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+
+// End of JavaScript -->
+</SCRIPT>
+
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" border="0" height="66"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table border="0" align="left" valign="top">
+<tr>
+<td width="100"><a href="storage.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Storage - All the missions and level components are kept here.'; return true"><img src="images/storage_sidebar.gif" border="0" width="85" height="46"></td>
+</tr>
+</table>
+<dl>
+<font face="EngraversGothic BT"><h1>VOCs</h1></font>
+<p>
+VOCs are the sounds that you hear in the background, the sound of a blaster or detonator, a door opening, or somebody talking.  In short any sound you hear in Dark Forces is a VOC file(except for the MIDI music).  Here you can find some files of new sounds created for use in Dark Forces levels.  Almost all of these VOC files can also be found at <a href="http://www.geocities.com/TimesSquare/Alley/1971/" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to MagicAls Dark Forces Niche.';return true">MagicAl's Dark Forces Niche</a>.
+<p>
+<hr noshade>
+<p>
+<center>
+<table border="0" cellpadding=5 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsa-l.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels A-L.'; return true">Levels A-L</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="patches.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Patches section.'; return true">Patches</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">VOCs</font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="waxes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the WAXes section.'; return true">WAXes</a></font></td>
+</tr>
+</table>
+</center>
+<p>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/alsbgtxt.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download alsbgtxt.zip.';return true" >alsbgtxt.zip</a> (6k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A text file describing the sounds in alsbgvoc.zip.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/alsbgvoc.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download alsbgvoc.zip.';return true">alsbgvoc.zip</a> (1M)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Collection of various VOC files from Star Wars sources. Included among the files: AT-AT walking, Bacta tank sounds, and a carbon freeze chamber.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/alskjtxt.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download alsjktxt.zip.';return true" >alskjtxt.zip</a> (10k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Text file describing the sounds of alskjvo1.zip and alskjvo2.zip.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/alskjvo1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download alsjkvo1.zip.';return true" >alskjvo1.zip</a> (1004k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A large file containing VOCs of dialogue between Kyle and Jan for use in Dark Forces levels  This is one of two files, so grab the second as well.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/alskjvo2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download alsjkvo2.zip.';return true" >alskjvo2.zip</a> (906k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A large file containing VOCs of dialogue between Kyle and Jan for use in Dark Forces levels.  This is one of two files, so get the other one too.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/atatstep.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download atatstep.zip.';return true">atatstep.zip</a> (9k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The sound of AT-ATs stomping above, as heard in ESB by R2D2 when the snow falls on his head.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/bactatnk.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download bactatnk.zip.';return true">bactatnk.zip</a> (16k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The sound of a Bacta tank.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/bespcell.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download bespcell.zip.';return true">bespcell.zip</a> (23k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The sounds from when Chewie is in prison on Bespin.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/cantband.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download cantband.zip.';return true">cantband.zip</a> (95k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The second piece from the Mos Eisley Cantina band.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/crbfrez1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download crbfrez1.zip.';return true">crbfrez1.zip</a> (41k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Sounds as heard in the Bespin Carbon Freeze facility.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/crbfrez2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download crbfrez2.zip.';return true">crbfrez2.zip</a> (37k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Sounds from the Carbon Freeze facility, but after Luke and Vader have smashed it up a bit.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/creak.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download creak.zip.';return true" >creak.zip</a> (80k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The sound of a large creaking door.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/dagobah.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download dagobah.zip.';return true">dagobah.zip</a> (72k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Sounds from Dagobah.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/dethstar.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download dethstar.zip.';return true">dethstar.zip</a> (27k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The sound of the Death Star moving through space.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/dethstr1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download dethstr1.zip.';return true">dethstr1.zip</a> (34k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Background sound for a control room on the Death Star.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/dethstr2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download dethstr2.zip.';return true">dethstr2.zip</a> (70k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Background sound from a control room on the Death Star with clicking from R2D2 accessing the computer.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/droid.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download droid.zip.';return true">droid.zip</a> (28k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen and Vincent Hubin</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>3 VOCs of R2-D2 beeping from ANH.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/dsplans.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download dsplans.zip.';return true">dsplans.zip</a> (39k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The sound of the Death Star plans being downloaded from R2D2 on Yavin.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/echobase.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download echobase.zip.';return true">echobase.zip</a> (87k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Sounds from the command center on Hoth.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/endor1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download endor1.zip.';return true">endor1.zip</a> (64k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Forest background sounds from Endor.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/endor2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download endor2.zip.';return true">endor2.zip</a> (18k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The whistling heard in ROTJ as Leia hides from the biker scouts.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/ewoksng1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download ewoksng1.zip.';return true">ewoksng1.zip</a> (80k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The Ewok celebration song from ROTJ.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/ewoksng2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download ewoksng2.zip.';return true">ewoksng2.zip</a> (84k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The Ewok celebration song from ROTJ.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/ewoktalk.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download ewoktalk.zip.';return true">ewoktalk.zip</a> (107k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Ewoks talking.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/garage.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download garage.zip.';return true">garage.zip</a> (7k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Background sounds from Luke's garage.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/infirmry.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download infirmry.zip.';return true">infirmry.zip</a> (14k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Sounds from the recovery room on Hoth.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/laptink1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download laptink1.zip.';return true">laptink1.zip</a> (99k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The first verse of Lapti Nek, as performed by Sy Snootles.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/laptink2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download  laptink2.zip.';return true">laptink2.zip</a> (118k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The chorus of Lapti Nek.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/mfincave.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download mfincave.zip.';return true">mfincave.zip</a> (19k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Cockpit sounds from the Millenium Falcon as the heroes hide in the asteroid in ESB.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/thunder.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download thunder.zip.';return true" >thunder.zip</a> (82k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The sound of a thunderstorm, looping.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/vocs/yavinfst.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download yavinfst.zip.';return true">yavinfst.zip</a> (60k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Sounds from the forest on Yavin.</td>
+</tr>
+</table>
+<p>
+<center>
+<table border="0" cellpadding=5 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsa-l.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels A-L.'; return true">Levels A-L</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="patches.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Patches section.'; return true">Patches</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">VOCs</font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="waxes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the WAXes section.'; return true">WAXes</a></font></td>
+</tr>
+</table>
+</center>
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="2" width="15"><img src="images/blank.gif" width="15"></td>
+<td valign=top rowspan=2 align=right width="100"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<img src="images/blank.gif" width=100 align=left>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated September 7, 1997</i></font>
+</dl>
+</body>
+</html>

@@ -1,0 +1,516 @@
+<html>
+<head>
+<title>The Crow's Nest: Patches</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+var image5 = new Image();
+image5.src = 'images/menu_list_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+
+// End of JavaScript -->
+</SCRIPT>
+
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" border="0" height="66"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table border="0" align="left" valign="top">
+<tr>
+<td width="100"><a href="storage.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Storage - All the missions and level components are kept here.'; return true"><img src="images/storage_sidebar.gif" border="0" width="85" height="46"></td>
+</tr>
+</table>
+<dl>
+<font face="EngraversGothic BT"><h1>Patches</h1></font>
+Unlike the add-on missions or components to be used in them which are meant to extend the original Dark Forces levels, patches are intended enhance them.  Various patches might include one to give you a new weapon, one to change some VOCs, or to let you play as a different character.
+<p>
+<hr noshade>
+<p>
+<center>
+<table border="0" cellpadding=5 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsa-l.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels A-L.'; return true">Levels A-L</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">Patches</font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="vocs.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the VOCs section.'; return true">VOCs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="waxes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the WAXes section.'; return true">WAXes</a></font></td>
+</tr>
+</table>
+</center>
+<p>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/algore.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download algore.zip.';return true" >algore.zip</a> (100k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font> David S. Patterson</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Makes Dark Forces bloody.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/beyond.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download beyond.zip.';return true" >beyond.zip</a> (354k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Ed Mundy</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Combines 10 early add-on levels to form a new mission set.  More info in the text file.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/bfg.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download bfg.zip.';return true" >bfg.zip</a> (8k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Turns the concussion rifle into the BFG9000 from Doom.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/boba13.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download boba13.zip.';return true" >boba13.zip</a> (267k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Rob Porter</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Lets you play as Boba Fett by replacing weapons and sounds.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/bounty.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download bounty.zip.';return true" >bounty.zip</a> (141k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Rey Perez</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Gives Kyle a bounty hunter disguise(PC users have to ungob and change wait.bm).</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/cutscene.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download cutscene.zip.';return true" >cutscene.zip</a> (1k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Adds the missing cutscene from the beginning.  For those that don't know, it's a few short clips of Kyle gearing up.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/darkflcs.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download darkflcs.zip.';return true" >darkflcs.zip</a> (3k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Joe Savlan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Includes B50/M50 files.  From Todd Wayerski: "..b50/m50 files pertain to the Thrustmaster Weapons Control System so you can play HOTAS(hands on throttle and stick) so no keyboard hunting needed."  Thanks Todd!</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/darkpow.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download darkpow.zip.';return true" >darkpow.zip</a> (9k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Tez</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Gives you the power of the Dark Side by replacing the concussion rifle with Darth Vader's hand.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/darkwolf.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download darkwolf.zip.';return true" >darkwolf.zip</a> (94k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Replaces the voices in Dark Forces with those from Wolfenstein.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/df-talk.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download df-talk.zip.';return true" >df-talk.zip</a> (49k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Carl Kenner</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Adds a voice-over to the textcrawl in the opening.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/enhdftlk.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download enhdftlk.zip.'; return true">enhdftlk.zip</a> (149k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Darren Sebire</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A corrected version of the opening textcrawl voiceover, so that it now says what the textcrawl displays.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/happydet.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download happydet.zip.';return true">happpydet.zip</a> (55k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Randon Brown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Turns the detonators into yellow smily faces and changes some of the sounds.  Fairly amusing.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/holiday.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download holiday.zip.';return true" >holiday.zip</a> (313k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Adds Christmas voices and graphics to the game.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/kyledog.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download kyledog.zip.';return true" >kyledog.zip</a> (68k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Randon Brown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Changes some sounds and makes the fists a giant tongue so that Kyle is a dog.  Also makes the stormtroopers twice as big.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/light.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download light.zip.';return true" >light.zip</a> (39k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Timmy Sookram</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Turns the fist into a lightsaber and the Phase 1 Dark Troopers into Darth Vader.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/loadscrn.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download loadscrn.zip.';return true" >loadscrn.zip</a> (45k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>4 new 'Mission Loading' screens to choose from.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/oavhthe.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download oavhthe.zip.';return true" >oavhthe.zip</a> (590k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Vincent Hubin</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A Desktop Theme for Windows about Dark Forces / Operation Archangel / Shadows of the Empire.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/rifle.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download rifle.zip.';return true" >rifle.zip</a> (8k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>An alteration of the original stormtrooper rifle.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/rpistol.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download rpistol.zip.';return true" >rpistol.zip</a> (5k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Turns the Bryar Pistol into a remote.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/saber14.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download saber14.zip.';return true" >saber14.zip</a> (148k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Dan Shay</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A collection of various colored lightsabers. Version 1.4</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/sabers.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download sabers.zip.';return true">sabers.zip</a> (3k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Philip Morton</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Another collection of lightsabers.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/sandtrpr.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download sandtrpr.zip.';return true">sandtrpr.zip</a> (101k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Chris Cowger</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Combines the stormtrooper armor patch with the newer rifle so you can play as a Sand Trooper.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/sbrgore.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download sbrgore.zip.';return true" >sbrgore.zip</a> (135k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>David S. Patterson</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Gives you a lightsaber and makes the game bloody.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/smily.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download smily.zip.';return true" >smily.zip</a> (5k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Changes the remotes into smily faces.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/speederpat.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download speederpat.zip.';return true" >speederpat.zip</a> (17k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Rey Perez</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Changes the pistol or rilfe to a speeder bike.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/starmor.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download starmor.zip.';return true" >starmor.zip</a> (93k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>David Arandle</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Changes all the weapons to appear as if you are wearing stormtrooper armor.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/stungun.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download stungun.zip.';return true" >stungun.zip</a> (4k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Changes the lasers for the rifle and pistol to the blue stun blast from ANH.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/surfin.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download surfin.zip.';return true" >surfin.zip</a> (21k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Changes the music to a track from Sam & Max Hit the Road.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/tek.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download tek.zip.';return true">tek.zip</a> (6k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>David Weaver</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Replaces several of the BMs.  Includes a holo sight on the gas mask, altered FMEs, and gives a HUD feel to the ammo and health monitors.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/vhblackw.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download vhblackw.zip.';return true" >vhblackw.zip</a> (205k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Vincent Hubin</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A new weapon, the Black Whirlwind, for use in add-on levels or your own DF gaming.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="http://weber.u.washington.edu/~godfrei/vhlsaber.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download vhlsaber.zip.';return true">vhlsaber.zip</a> (17k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Vincent Hubin</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A lightsaber patch.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/patches/weapons.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download weapons.zip.';return true" >weapons.zip</a> (9k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Bossk Trandoshan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Changes the pistol to one like Han Solo's, the rifle to one used on Hoth, and includes an FME for use as the rifle pickup.</td>
+</tr>
+</table>
+<p>
+<center>
+<table border="0" cellpadding=5 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsa-l.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels A-L.'; return true">Levels A-L</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">Patches</font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="vocs.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the VOCs section.'; return true">VOCs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="waxes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the WAXes section.'; return true">WAXes</a></font></td>
+</tr>
+</table>
+</center>
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="2" width="15"><img src="images/blank.gif" width="15"></td>
+<td valign=top rowspan=2 align=right width="100"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<img src="images/blank.gif" width=100 align=left>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated September 7, 1997</i></font>
+</dl>
+</body>
+</html>

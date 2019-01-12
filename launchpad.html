@@ -1,0 +1,331 @@
+<html>
+<head>
+<title>The Crow's Nest: Launch Pad</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_list_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews of the numerous Dark Forces Add-On Missions.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+
+// End of JavaScript -->
+</SCRIPT>
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" border="0" height="66"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table align=left>
+<tr>
+<td width=100><img src="images/blank.gif" width=100></td>
+</tr>
+</table>
+<dl>
+<table border="0">
+<tr>
+<td width="100" height="100"><img src="images/launchpadtitle.gif" width="100" height="100"></td>
+<td height=100"><font color="#1FE071"><img src="images/launchpad.gif" height="100" width="231" alt="Launch Pad"></font></td>
+</tr>
+</table>
+Contained here are links to various Dark Forces and Jedi Knight web sites.  If you notice one of the links is out of date, or your page has not been linked to, just let me know.
+<p>
+<hr noshade>
+<p>
+<h2><font face="EngraversGothic BT">Dark Forces Pages</font></h2>
+<a href="http://www.geocities.com/TimesSquare/7268/" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Admiral Thrawns Home Page.';return true" target="_top">Admiral Thrawn's Home Page</a>
+<p>
+<a href="http://www.mygale.org/01/fouillen/df.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Archangel Cellars.';return true">Archangel Cellars, The</a>
+<p>
+<a href="http://www.nucleus.com/~dlovejoy/BW/dark.htm" target="_top" onmouseout="window.status=' ';return true" onmouseover="window.status='Go to The BackWater Archive.';return true">BackWater Archive, The</a>
+<p>
+<a href="http://members.aol.com/BeinTanner/dark.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Beins Dark Forces Page.'; return true">Bein's Dark Forces Page</a>
+<p>
+<a href="http://www.st.nepean.uws.edu.au/~jwalters/index.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Bespin - The CLoud City.'; return true">Bespin - The Cloud City</a>
+<p>
+<a href="http://www.primenet.com/~bradman/darkforces.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Brad Olivers Dark Forces for Macintosh.';return true">Brad Oliver's Dark Forces for Macintosh</a>
+<p>
+<a href="http://www.lookup.com/Homepages/69636/df/df_home.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Bryans Dark Forces Docking Bay.';return true">Bryan's
+Dark Forces Docking Bay</a>
+<p>
+<a href="http://WWW.CSUA.Berkeley.EDU/~cwright/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Chris Wrights Dark Forces Utilities for the Mac.';return true">Chris Wright's Dark Forces Utilities for the Mac</a>
+<p>
+<a href="http://swgamers.com/nest/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Crows Nest | swgamers.com server.'; return true">Crow's Nest, The</a> - swgamers.com server
+<p>
+<a href="http://weber.u.washington.edu/~godfrei/nest/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Crows Nest | UW server.'; return true">Crow's Nest, The</a> - University of Washington server
+<p>
+<a href="http://members.aol.com/DakForces/index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Dak Forces.'; return true" target="_top">Dak Forces</a>
+<p>
+<a href="http://users.aol.com/Keemosabi/3dopage.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Dark Forces 3DO Page by Keemosabi.';return true">Dark Forces 3DO Page by Keemosabi, The</a>
+<p>
+<a href="http://www.jediknight.com" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Dark Forces and Jedi Knight Fan Club.';return true">Dark Forces and Jedi Knight Fan Club, The</a>
+<p>
+<a href="http://userwww.service.emory.edu/~anoviko/nook.html" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to the Dark Forces Cosy Nook.';return true">Dark Forces Cosy Nook</a>
+<p>
+<a href="http://www.hillside.co.uk/glyn/dark/" target="_top" onmosueout="window.status=' '; return true" onmouseover="window.status='Go to the Dark Forces Database.'; return true">Dark Forces Database</a>
+<p>
+<a href="http://www.connect.ab.ca/~kloepel/df.htm" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to the Dark Forces FAQList.';return true">Dark Forces FAQList</a>
+<p>
+<a href="http://outpost.simplenet.com/DarkForces/" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to The Dark Forces Homepage.';return true">Dark Forces Homepage, The</a>
+<p>
+<a href="http://www.alphalink.com.au/~jereth/jereth/dflevrev/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Dark Forces Level Review Page.';return true">Dark Forces Level Review Page, The</a>
+<p>
+<a href="http://www.geocities.com/TimesSquare/6639/" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to the Dark Forces Programmers Edge.';return true">Dark Forces Programmer's Edge</a>
+<p>
+<a href="http://www.nucleus.com/~dlovejoy/spc_home/df_specs.htm" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Dark Forces Unofficial Specifications.'; return true" target="_top">Dark Forces Unofficial Specifications</a>
+<p>
+<a href="http://interoz.com/usr/dsielke/dforces.htm" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to Don Sielkes Homepage: Dark Forces.';return true">Don Sielke's Homepage: Dark Forces</a>
+<p>
+<a href="http://members.aol.com/GagePrade/TIDES.html" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to The Dark Tides Homepage.';return true">Dark Tides Homepage, The</a>
+<p>
+<a href="http://users.uniserve.com/~ericp3/df.htm" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Erics Dark Forces Page.';return true" target="_top">Eric's Dark Forces Page</a>
+<p>
+<a href="http://www.gamespot.com/action/darkforc/index.html" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to Gamespot: Dark Forces at a Glance.';return true">Gamespot: Dark Forces at a Glance</a>
+<p>
+<a href="http://www-und.ida.liu.se/~c96matwe/dfla.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Homepage of the Dark Forces Level Academy.'; return true" target="_top">Homepage of the Dark Forces Level Academy, The</a>
+<p>
+<a href="http://www.nfi.com/~jdrive19/darkforces.html" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to J. Drivers Mac Dark Forces Page.';return true">J. Driver's Mac Dark Forces Page</a>
+<p>
+<a href="http://members.aol.com/lucasaguy/df.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Jons Dark Forces Page.'; return true" target="_top">Jon's Dark Forces Page</a>
+<p>
+<a href="http://www.iconn.net/smulders/frameid.html" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to the List of Dark Forces Levels.';return true">List of Dark Forces Levels</a>
+<p>
+<a href="http://www.contact.net/judo/dark.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Mac 3D Total Action.';return true">Mac 3D Total Action</a>
+<p>
+<a href="http://www.geocities.com/TimesSquare/Alley/1971/" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to MagicAls Dark Forces Niche.';return true">MagicAl's Dark Forces Niche</a> - GeoCities server
+<p>
+<a href="http://swgamers.com/magical/" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to MagicAls Dark Forces Niche.';return true">MagicAl's Dark Forces Niche</a> - swgamers server
+<p>
+<a href="http://members.aol.com/laker09/df.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Mike Neugebauers Dark Forces Page.'; return true">Make Neugebauer's Dark Forces Page</a>
+<p>
+<a href="http://www.millercanada.com/dark/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Mike Rajottes Dark Forces Page.'; return true">Mike Rajotte's Dark Forces Page</a>
+<p>
+<a href="http://www.geocities.com/TimesSquare/6081/" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to Mikes Dark Forces Page.';return true">Mike's Dark Forces Page</a>
+<p>
+<a href="http://www.users.dircon.co.uk/~jamess/commando" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the New Republic Commando Division.'; return true" target="_top">New Republic Commando Division</a>
+<p>
+<a href="http://pw2.netcom.com/~sgoodwi1/darkforces.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='GO to Pat Goodwins Dark Forces Page.'; return true">Pat Goodwin's Dark Forces Page</a>
+<p>
+<a href="http://members.tripod.com/~Pellaeon/Pellhome.htm" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Pellaeons Home Page.'; return true" target="_top">Pellaeon's Home Page</a>
+<p>
+<a href="http://members.aol.com/PPKlassen/darkmain.htm" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Peter Klassens Dark Forces Homepage.'; return true" target="_top">Peter Klassen's Dark Forces Homepage</a>
+<p>
+<a href="http://www.garden.net/users/kc/" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Realm of Bossk.'; return true" target="_top">Realm of Bossk, The</a>
+<p>
+<a href="http://members.aol.com/dfmaverick/index.html" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to Richs Dark Forces Page.';return true">Rich's Dark Forces Homepage</a>
+<p>
+<a href="http://laser.klemp.com/DAWSON/darkforces/df.html" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to The Secrets of Dark Forces.';return true">Secrets of Dark Forces, The</a>
+<p>
+<a href="http://members.aol.com/BBoyd6450/SWDF/starwars.htm" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Star Wars Trilogy on Dark Forces Page.'; return true" target="_top">Star Wars Trilogy on Dark Forces Page, The</a>
+<p>
+<a href="http://www.nucleus.com/~dlovejoy/wdfuse.htm" target="_top" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to The WDFUSE Homepage.';return true">WDFUSE Homepage, The</a>
+<p>
+<a href="http://www.hia.net/wedit/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Wedit Homepage.';return true" target="_top">Wedit Homepage, The</a>
+<p>
+<h2><font face="EngraversGothic BT">Jedi Knight Pages</font></h2>
+<p>
+<a href="http://www.suppression.com/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The #JediKnight Homepage.'; return true">#JediKnight Homepage, The</a>
+<p>
+<a href="http://altar.imagixx.net/lucas/jedi/jedi_knight.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Altars Jedi Knight Page.'; return true">Altar's Jedi Knight Page</a>
+<p>
+<a href="http://walden.mo.net/~smithm/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Bespins Page.'; return true">Bespin's Page</a>
+<p>
+<a href="http://www.conterra.com/brich/jediknight/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Brants Jedi Knight Page.';return true">Brant's Jedi Knight Page</a>
+<p>
+<a href="http://www.lookup.com/Homepages/69636/df/jk_home.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to Bryans Jedi Knight Docking Bay.';return true">Bryan's Jedi Knight Docking Bay</a>
+<p>
+<a href="http://cantina.gamesnet.net/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Cantina.'; return true">Cantina, The</a>
+<p>
+<a href="http://www.torget.se/users/s/Smily/index.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Crushed Jedi Knight Page.'; return true">Crushed Jedi Knight Page, The</a>
+<p>
+<a href="http://www.infocomm.net/~bower/jkpreview.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Dark Forces 2: Jedi Knight Preview Page.';return true">Dark Forces 2: Jedi Knight Preview Page, The</a>
+<p>
+<a href="http://www.jediknight.com" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to the Dark Forces and Jedi Knight Fan Club.';return true">Dark Forces and Jedi Knight Fan Club</a>
+<p>
+<a href="http://www.golden.net/~grahamw/dark.htm" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Dark Forces Rising: The Jedi Knight Chronicles.'; return true">Dark Forces Rising: The Jedi Knight Chronicles</a>
+<p>
+<a href="http://www.geocities.com/~bandit347/jedi/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Dark Knight.'; return true">Dark Knight, The</a>
+<p>
+<a href="http://www.bigwave.ca/~prest/jediknight.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Fatal Cures Jedi Knight Page.'; return true">Fatal Cure's Jedi Knight Page</a>
+<p>
+<a href="http://www.gwi.net/~finn/jedi.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Finns 3D Mac Games: Jedi Knight.'; return true" target="_top">Finn's 3D Mac Games: Jedi Knight</a>
+<p>
+<a href="http://weber.u.washington.edu/~godfrei/academy/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Jedi Knight Academy.';return true">Jedi Knight Academy, The</a>
+<p>
+<a href="http://meccaworld.com/jedi/" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Jedi Knight at MeccaWorld.'; return true">Jedi Knight at MeccaWorld</a>
+<p>
+<a href="http://swgamers.com/jk/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Jedi Knight Center.';return true">Jedi Knight Center, The</a>
+<p>
+<a href="http://www.aimnet.com/~andre/jkh/jkh.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Jedi Knight Haven.'; return true">Jedi Knight Haven, The</a>
+<p>
+<a href="http://www.wave.co.nz/pages/topnotch/jediknight/index.htm" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Jedi Knight Headquarters.'; return true">Jedi Knight Headquarters, The</a>
+<p>
+<a href="http://www.lopernet.net/~malric/jedi.htm" target="_top"  onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Jedi Knight Insider.'; return true">Jedi Knight Insider</a>
+<p>
+<a href="http://www.geocities.com/TimesSquare/Alley/1827/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Jedi Knight Lair.'; return true">Jedi Knight Lair, The</a>
+<p>
+<a href="http://www.lmmedia.com/jedi/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Jedi Knight[Michael Galvez].'; return true">Jedi Knight [Michael Galvez]</a>
+<p>
+<a href="http://outpost.simplenet.com/JediKnight/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Jedi Knight Outpost.';return true">Jedi Knight Outpost, The</a>
+<p>
+<a href="http://home.earthlink.net/~kmclellan/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Jedi News.'; return true">Jedi News</a>
+<p>
+<a href="http://members.aol.com/LiteStab/jedi.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to LiteStabs Page.'; return true">LiteStab's Page</a>
+<p>
+<a href="http://www.contact.net/judo/dark.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Mac 3D Action Page.'; return true">Mac 3D Action Page, The</a>
+<p>
+<a href="http://www.allgames.com/jk/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Mercenaries Frontier.'; return true">Mercenaries Frontier, The</a>
+<p>
+<a href="http://www.3dg.com/ngc/games/jk/" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Net Game Connection: Jedi Knight Preview.';return true">Net Game Connection: Jedi Knight Preview, The</a>
+<p>
+<a href="http://home.sprynet.com/sprynet/flyingbeagle1/Jedi/ob1hut.htm" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to OB1s Hut.'; return true">OB1's Hut</a>
+<p>
+<a href="http://www.reality-x.co.uk/jedihome.htm" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Reality Xs Jedi Knight Site.'; return true">Reality X's Jedi Knight Site</a>
+<p>
+<a href="http://www.teleport.com/~osborn/jedi.htm" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Red Dragons Jedi Knight Home Page'; return true">Red Dragon's Jedi Knight Home Page</a>
+<p>
+<a href="http://www.ionline.net/~chev/default.htm" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to TADs Jedi Knight Page.'; return true">TAD's Jedi Knight Page</a>
+<p>
+<p>
+<a href="http://www.geocities.com/TimesSquare/6697/index.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Ultimate Jedi Knight Page.'; return true">Ultimate Jedi Knight Page, The</a>
+<p>
+<a href="http://swgamers.com/jkfaq/index.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Unofficial Jedi Knight FAQListing.';return true">Unofficial Jedi Knight FAQListing, The</a>
+<p>
+<a href="http://jediknight.scorched.com" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to The Unofficial Jedi Knight Homepage.';return true">Unofficial Jedi Knight Homepage, The</a>
+<p>
+<h2><font face="EngraversGothic BT">Jedi Knight League Pages</font></h2>
+<p>
+<a href="http://www.bssc.edu.au/student/pages/lanca.o/loda97/confed/jedi/index.htm" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Black Sith Clan Site.'; return true">Black Sith Clan Site</a>
+<p>
+<a href="http://www.datasync.com/~darkjedi/db/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Brotherhood of the Dark Jedi.'; return true">Brotherhood of the Dark Jedi, The</a>
+<p>
+<a href="http://www.geocities.com/TimesSquare/Alley/7913/maelstrom.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Clan Maelstorm.'; return true">Clan Maelstorm</a>
+<p>
+<a href="http://www.auburn.edu/~starllf/darkjedi.htm" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Dark Jedi Order.'; return true">Dark Jedi Order, The</a>
+<p>
+<a href="http://www.gamesetc.org/jedi/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Elite Jedi Knight League.'; return true">Elite Jedi Knight League</a>
+<p>
+<a href="http://theriver.ou.edu/~fathom/jedi_knight/home.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Fathoms Jedi Knight League.'; return true">Fathom's Jedi Knight League</a>
+<p>
+<a href="http://www.suppression.com/JediKnight/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Jedi Knight: A Suppression Clan.'; return true">Jedi Knight: A Suppression Clan</a>
+<p>
+<a href="http://www.foothill.net/~swoosh/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Jedi Knight Orders Directory.'; return true">Jedi Knight Orders Directory, The</a>
+<p>
+<a href="http://www.california.com/~lorenz/jedi2.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Jedi Knights of Yavin IV.'; return true">Jedi Knights of Yavin IV, The</a>
+<p>
+<a href="http://www.jediwars.com" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Jedi Wars.'; return true">Jedi Wars</a>
+<p>
+<a href="http://www.starfighters.com/lsf/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Last Star Fighter League.'; return true">Last Star Fighter League, The</a>
+<p>
+<a href="http://www.geocities.com/TimesSquare/Alley/1827/legion.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Legion of the Evil Jedi.'; return true">Legion of the Evil Jedi, The</a>
+<p>
+<a href="http://www.cris.com/~anniegrl/df2/index.html" target="_top" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go to the National Dark Forces 2 League.';return true">National Dark Forces 2 League</a>
+<p>
+<a href="http://www.geocities.com/TimesSquare/Alley/2279/jkclan.html" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The New Republic.'; return true">New Republic, The</a>
+<p>
+<a href="http://www.geocities.com/Area51/Corridor/2409/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Out Rim Pilots Association.'; return true">Outer Rim Pilots' Association, The</a>
+<p>
+<a href="http://www.geocities.com/Area51/Vault/8175/" target="_top" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to The Star Wars Universe Fighters League.'; return true">Star Wars Universe Fighters League, The</a>
+<p>
+<h2><font face="EngraversGothic BT">LucasArts Pages</font></h2>
+<p>
+<a href="http://www.lucasarts.com" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the LucasArts Homepage.'; return true">LucasArts Homepage</a>
+<p>
+<a href="http://www.rebelhq.com" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Rebel HQ.'; return true">Rebel HQ</a>
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan=2 width="12"><img src="images/blank.gif" width="12"></td>
+<td valign=top rowspan=2 align=right width="105"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><img src="images/menu_launchpad_icon_out.gif" width="75" height="56" border="0" alt="Launch Pad"></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><IMG SRC="images/menu_launchpad_out.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<table align=left>
+<tr>
+<td width=100><img src="images/blank.gif" width=100></td>
+</tr>
+</table>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated September 10, 1997</i></font>
+</dl>
+</body>
+</html>

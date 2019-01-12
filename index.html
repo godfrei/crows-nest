@@ -1,0 +1,114 @@
+<html>
+<head>
+<!--These pages were constructed using my own knowledge and abilities, and should not be used, whole or altered, without first obtaining my permission. -->
+<title>The Crow's Nest</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/list_active.gif';
+var image2 = new Image();
+image2.src = 'images/storage_active.gif';
+var image3 = new Image();
+image3.src = 'images/launchpad_active.gif';
+var image4 = new Image();
+image4.src = 'images/database_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['list']= new objectdata(155,74,"images/list_active.gif","images/list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(155,58,"images/storage_active.gif","images/storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(155,61,"images/launchpad_active.gif","images/launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(155,68,"images/database_active.gif","images/database_dead.gif","Database - Data on the weapons, enemies and items of Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+
+// End of JavaScript -->
+</SCRIPT>
+
+<body onLoad="if (self != top) top.location = self.location" onLoad="load_images();" bgcolor="#555555" background="images/black.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<center>
+<font color="#1FE071"><img src="images/banner.jpg" alt="The Crow's Nest"></font>
+</center>
+<p>
+<table border="0" align=left width=250 cellpadding=0 cellspacing=0 background="images/menubg.gif">
+<tr>
+<td><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/list_icon.gif" width="95" height="74" border="0" align=top></a></td>
+<td><A HREF="reviewlist.html" OnMouseOver="ReplaceOrig('list');return true;" OnMouseOut="RestoreOrig('list');"><IMG SRC="images/list_dead.gif" NAME="list" WIDTH="155" HEIGHT="74" BORDER="0" NATURALSIZEFLAG="0" ALIGN="top"></A></td>
+</tr>
+<tr>
+<td><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/storage_icon.gif" width="95" height="58" border="0" align=top></a></td>
+<td><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/storage_dead.gif" name="storage" width="155" height="58" border="0" align=top></a></td>
+</tr>
+<tr>
+<td><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/launchpad_icon.gif" width="95" height="61" border="0" align=top></a></td>
+<td><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/launchpad_dead.gif" name="launchpad" width="155" height="61" border="0" align=top></a></td>
+</tr>
+<tr>
+<td><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/database_icon.gif" width="95" height="68" border="0" align=top></a></td>
+<td><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/database_dead.gif" name="database" width="155" height="68" border="0" align=top></a></td>
+</tr>
+<tr align=center>
+<td colspan=2 valign=top><a href="http://www.netscape.com/comprod/mirror/client_download.html" onmouseout="window.status=' '; return true"  onMouseOver="window.status='Download Netscape Communicator.';return true"  target="_top"><img src="images/netscape.gif" alt="Netscape Now!" border="0" width=88 height=31></a>
+<br>
+<font size="-1">This site is best viewed in 800x600 resolution and 16 bit color with Netscape Navigator 4.0.</font>
+<p>
+</td>
+</tr>
+<tr align=center>
+<td colspan=2 valign=top><a href="http://www.lucasarts.com/" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go the LucasArts WWW site.';return true" target="_top"><img src="images/lalogo.gif" border="0" width=66 height=62></a>
+<br>
+<font size="-2" face="Arial"><b>Dark Forces(TM) and © 1994 <a href="http://www.lucasarts.com/" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Go the LucasArts WWW site.';return true" target="_top">LucasArts Entertainment Company</a>.</font></td>
+</tr>
+<tr align=center>
+<td colspan=2><p>
+<br><font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu';return true" >Geoffrey Elliott</a>.<br>
+<i>Last Updated September 30, 1997</i></font>
+</td>
+</tr>
+</table>
+<table border="0">
+<tr>
+<td>
+Welcome to the Crow's Nest, the most complete and up-to-date site on the web for reviews and downloads of add-on levels for the <a href="http://www.lucasarts.com" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go the LucasArts WWW site.';return true">LucasArts</a>
+3D first-person game <i>Dark Forces</i>.  If you're a Dark Forces newbie or have never been to the Nest before, you should access the <a href="database.html" onmouseout="window.status=' '; return true" onMouseOver="window.status='Access the Database to find information on Dark Forces and the Nest.';return true">Database</a>.  To read a review on a level select it from the <a href="reviewlist.html" onmouseout="window.status=' '; return true" onMouseOver="window.status='Go to the Review List.';return true">Review List</a>.  You can also download the levels and other files for Dark Forces including patches, FMEs, WAXes and more from  <a href="storage.html" onmouseout="window.status=' ';return true" onmouseover="window.status='Download levels and other files.';return true">Storage</a>.  If you want to find other Dark Forces or Jedi Knight pages, head to the <a href="launchpad.html" onmouseout="window.status=' '; return true" onMouseOver="window.status='Head to the Launch Pad.';return true">Launch Pad</a> for immediate departure. 
+<p>
+<b><font size="+1" color="#1FE071" face="EngraversGothic BT">Recent News and Additions</font></b>
+<br>
+There are a couple items I need to address here:
+<p>
+First, swgamers.com FTP is down, and will be down for a while.  That means that most of the files are inaccesible from here, though a few levels are still stored locally.  Bryant tells me he's looking at various hosting services.  I don't know when the FTP will come back up, so in the meantime I can only apologize for the inconvenience.
+<p>
+Second, the Nest will be moving to swgamers.com as it's permanent home.  I don't know how often it will be updated, but probably not too often.  Jedi Knight and my JK page, the Academy, are now the objects of my web/game work.  A few people have offered to take over the Nest and update it.  But I have to say no for various reasons I won't go into.  Suffice to say that the Nest will stick around and provide the same stuff it's always provided, just without being current anymore.
+<font face="EngraversGothic BT" size="-1">[<a href="history.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the History to learn about past updates and news.'; return true">History</a>]
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>The Crow's Nest: How to do 3D Mad</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+var image5 = new Image();
+image5.src = 'images/menu_list_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+// End of JavaScript -->
+</SCRIPT>
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" border="0" height="66"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table border="0" align="left" valign="top">
+<tr>
+<td width="100"><a href="database.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.'; return true"><img src="images/database_sidebar.gif" border="0" width="85" height="85"></td>
+</tr>
+</table>
+<dl>
+<font face="EngraversGothic BT"><h1>How To Do 3D Mad</H1></font>
+<font face="EngraversGothic BT"><i>Written by: </i></font>Unknown(please <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">mail me</a> if you know)
+<p>
+<hr noshade>
+<p>
+The following are step by step instructions to creating a simplified version of the 3DMAD level created by Len Bowers. By simplified, I mean that there are only two rooms (one transition) and we don't bother to change the textures. But you should still be able to see the trick.
+<P>
+I used WDFUSE Version 2.50 beta 2 (32 bit) to do this, so if you're using a different version (or a different program) your screen may look a bit different than the pictures, and the but hopefully you can figure it out. I think the instructions should be clear in any case, as long as you are already proficient at using whatever program you have.
+<P>
+By the way, I've only been programming levels for about three days now, so I'm probably not a very good source of information in general. I just happened to figure this one out.
+<P>
+Now lets get on with it...
+<P>
+<ol>
+<li>Create a new project.
+<li>Set grid to 4, and zoom in on the square sector.
+<li>Split the top wall into 5 pieces, and move the vertices around till you have what's shown in Figure A.
+<BR><CENTER><IMG SRC="images/figureA.gif">
+<BR><FONT SIZE=-1 face="EngraversGothic BT" color="#1FE071">Figure A</FONT></center>
+<p>
+<li>Duplicate the sector, and place the new one right on top of the original.
+<li>Change the layer of the new sector to 1 (Shown in Figure B).
+<BR><CENTER><IMG SRC="images/figureB.gif">
+<BR><FONT SIZE=-1 face="EngraversGothic BT" color="#1FE071">Figure B</FONT></CENTER>
+<p>
+<li>In the original sector (on layer 0), extrude the second (from the left) portion of the top wall.
+<li>Split the right wall of the new sector, and move the verticies around until you have what is shown in Figures C and D.
+<BR><CENTER><IMG SRC="images/figureC.gif"><IMG SRC="images/figureD.gif">
+<BR><FONT SIZE=-1 face="EngraversGothic BT" color="#1FE071">Figures C and D</FONT></CENTER>
+<p>
+<li>Extrude the upper right wall of this sector, then split walls and move verticies until you have a mirror image of it, but don't adjoin anything else (shown in Figures E and F).
+<BR><CENTER><IMG SRC="images/figureE.gif"><IMG SRC="images/figureF.gif">
+<BR><FONT SIZE=-1 face="EngraversGothic BT" color="#1FE071">Figures E and F</FONT></CENTER>
+<p>
+<li>Now here's the trick, change the layer of this sector to 1. Notice it is STILL ADJOINED to the wall in layer 0.
+<li>Now switch to layer 1 and adjoin the bottom wall of this sector with the appropriate wall on the big sector in layer 1 (Shown in Figure G).
+<BR><CENTER><IMG SRC="images/figureG.gif">
+<BR><FONT SIZE=-1 face="EngraversGothic BT" color="#1FE071">Figure G</FONT></CENTER>
+</ol>
+<P>
+That's it! You should now be able to save and run you very own 3DMAD type level.  In case you're wondering, this "trick" is the same thing that's done to make it so you can walk up some stairs to the next floor (layer), so it isn't completely pointless.
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="2" width="15"><img src="images/blank.gif" width="15"></td>
+<td valign=top rowspan=2 align=right width="100"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<img src="images/blank.gif" width=100 align=left>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated August 31, 1997</i></font>
+</dl>
+</body>
+</html>

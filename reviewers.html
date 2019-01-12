@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>The Crow's Nest: Tips for Potential Reviewers</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+var image5 = new Image();
+image5.src = 'images/menu_list_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+// End of JavaScript -->
+</SCRIPT>
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" border="0" height="66"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table border="0" align="left" valign="top">
+<tr>
+<td width="100"><a href="database.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.'; return true"><img src="images/database_sidebar.gif" border="0" width="85" height="85"></td>
+</tr>
+</table>
+<dl>
+<font face="EngraversGothic BT"><h1>Tips for Potential Reviewers</h1></font>
+Lately I've had several people mail me about possibly reviewing some levels for the Crow's Nest.  And they all asked me to describe how I reviewed levels and whether I could give them any tips for doing it themselves.  So I compiled a list of all the things that I think people should look for when reviewing a level.  Read this through along with my <a href="reviewsystem.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Learn about my Review System.'; return true">Review System</a> and you should have all the information you need to write up a review for the Nest.
+<p>
+<hr noshade>
+<p>
+I have my own system that I review by, and I think it's pretty good.  But there's probably a system that will work better for you, so you will want to establish your own rhythm for doing things.  But here are several items that you'll want to look at in particular when you run through a level:
+<p>
+<ul>
+<li><font color="#1FE071" face="EngraversGothic BT"><b>Texturing</b></font> - I don't think that I can emphasize enough how important texturing is to a level.  If the right textures are put in the right places, and the author takes care to line them all up the effect can be tremendous.  If the author doesn't pay any attention to this then the level can very quickly become slipshod looking.  You should note whether the texture looks appropriate for the area, and decide whether it really belongs there.  For instance a floor texture shouldn't be used to cover the walls of a large hangar.  And a texture for a garbage compactor shouldn't find it's way into a sterile control room, just like a computer display shouldn't be used to patch the floor, or cover an entire wall without reason.  Take a look to see if the textures line up properly.  Do stone tiles all fit together, do the textures fit on the doors they've been placed on?  These are things sometimes overlooked.
+<p>
+<li><font color="#1FE071" face="EngraversGothic BT"><b>Architecture</b></font> - The design the author uses for the level is also a big part of the overall effect.  Does the architecture vary from place to place, but still feel like it all belongs in the same area?  Lots of authors like to throw in things like a hangar, crew quarters, a garbage area, etc, so take a second and think about whether the items fit into the facility and serve a purpose or are just there to be there.  Also look at the complexity of the design.  If the author has taken the time to build some wide open areas with windows and scenery outside, then I would obviously give the level a higher rating than one that consists of squares and rectangles without any view of the outside.  But again be careful to decide whether there's a point to the architecture; worthless fluff is just a waste of time.  
+<p>
+<li><font color="#1FE071" face="EngraversGothic BT"><b>Puzzles</b></font> - Puzzles are one of the things that sets Dark Forces above lots of other similar games.  To need to think about what you're doing rather than just have a happy trigger finger is probably a new experience for a lot of people.  I think it's something that every level should have some of.  So take some time to look at what the author's done in this aspect: do you need to think, or is it just a 'find the keys' level.  On the other hand, puzzles that are too abstract can make a level quickly become annoying.
+<p>
+<li><font color="#1FE071" face="EngraversGothic BT"><b>Level Difficulty</b></font> - When you play a level you don't want it to be too tough, but it certainly shouldn't be a cakewalk.  If the puzzles are too abstract or the enemies just crammed in to make it tough then the author didn't take the time to do it right.  Levels also become too easy if the author supplies every weapon to you at the beginning and gives you lots of ammo, or if all the enemies are contained in small rooms where you can just dump a detonator through the door and stand back.  A good level will have a reasonable balance of enemies, weapons and puzzles to make it tough but solvable.
+<p>
+<li><font color="#1FE071" face="EngraversGothic BT"><b>Item Placement</b></font> - Setting up the items so that their placement feels natural can be a tough thing to do.  Weapons and other items can go in an armory, obviously, but by setting up several armories around a base doesn't make all that much sense.  But you don't just want to have weapons and ammo littered all over the ground.  An author also doesn't want to make the items too plentiful or too scarce.  You have to use your best judgement on this one.
+<p>
+<li><font color="#1FE071" face="EngraversGothic BT"><b>Enemy Placement</b></font> - This might seem to resemble the previous catagory a lot, but it has some different effects of it's usage.  If all the enemies are placed in small rooms the level is easy, and if they all stand in corridors and rooms time after time it becomes boring.  So finding the right places to put the enemies has a lot of effect.  Enemies that are far away, or set below you are usually easy targets; in close quarters or with low ceilings if the author has a bunch of Grans around they'll quickly kill themselves off rather than pose any trouble to the player.  Think about it.
+<p>
+<li><font color="#1FE071" face="EngraversGothic BT"><b>Something New?</b></font> - Is there something that we haven't seen before in the level?  This doesn't have to be a new weapon, enemy or other file, it can just be a different idea for architecture or some new puzzle that's different.  A new item in a level can quickly snap the player out of any monotony that's set in, and also serves to distinquish a level from other predecessors.
+<p>
+<li><font color="1FE071" face="EngraversGothic BT"><b>The Plot</b></font> - The plot of a level goes a really long way to making it great.  And that doesn't just mean the plot given at the beginning.  If the author can keep his story running through the level then it keeps the player interested, especially if there are some twists to it during the level.  If the author has a good story, see if they took advantage of its different aspects when constructing the level.  Do you meet some characters?  A story can also serve as the basis for getting Boba Fett or Dark Troopers into a level, if it's done correctly.
+</ul>
+<p>
+Aside from all of those there are lots of other things to consider.  But what it all really boils down to is one question: Did you enjoy the level and have fun?  If the answer is yes then it's probably a decent level; the stuff above is usually the reason why it's fun or not.
+<p>
+Bear in mind that you don't HAVE to go over all these points in a review.  They're just things to think about and perhaps mention in passing, and they can explain a lot of the problems levels have.
+<p>
+If you want to review, just pick a level and try it out, then send me what you write up.  I'll take a look and if it's decent I'll throw it out.
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="2" width="15"><img src="images/blank.gif" width="15"></td>
+<td valign=top rowspan=2 align=right width="100"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<img src="images/blank.gif" width=100 align=left>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated August 31, 1997</i></font>
+</dl>
+</body>
+</html>

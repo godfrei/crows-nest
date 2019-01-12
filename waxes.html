@@ -1,0 +1,795 @@
+<html>
+<head>
+<title>The Crow's Nest: WAXes</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+var image5 = new Image();
+image5.src = 'images/menu_list_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+
+// End of JavaScript -->
+</SCRIPT>
+
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" border="0" height="66"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table border="0" align="left" valign="top">
+<tr>
+<td width="100"><a href="storage.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Storage - All the missions and level components are kept here.'; return true"><img src="images/storage_sidebar.gif" border="0" width="85" height="46"></td>
+</tr>
+</table>
+<dl>
+<font face="EngraversGothic BT"><h1>WAXes</h1></font>
+You know that ferocious Dark Trooper that's looming over you, rushing forward at an incredible pace to speed your journey to the land beyond?  You really have nothing to fear because it's just a grouping of 8 flat images with some logic applied; known otherwise as a WAX.  All enemies in Dark Forces are WAXes with the exception of the welders, mousebots and turrets which are 3DOs.  Waxes also include moving textures or other stationary objects that have different views as you move around them to give you the sensation that you're actually walking around an object.  
+<p>
+<hr noshade>
+<p>
+<center>
+<table border="0" cellpadding=5 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsa-l.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels A-L.'; return true">Levels A-L</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="patches.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Patches section.'; return true">Patches</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="vocs.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the VOCs section.'; return true">VOCs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">WAXes</font></td>
+</tr>
+</table>
+</center>
+<p>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/3p_emperor.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download 3p_emperor.zip.';return true" >3p_emperor.zip</a> (32k)</td>
+<td width=10></td>
+<td align=center width=260>Creators: Ryan Scott McCullar & Richard Snodgrass</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Emperor Palpatine.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/3p_sdbk.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download 3p_sdbk.zip.';return true" >3p_sdbk.zip</a> (33k)</td>
+<td width=10></td>
+<td align=center width=260>Creators: Ryan Scott McCullan & Richard Snodgrass</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Biker Scout on a speeder bike, plus a WAX to replace bobaball.wax.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/3p_snotrp.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download 3p_snotrp.zip.';return true" >3p_snotrp.zip</a> (32k)</td>
+<td width=10></td>
+<td align=center width=260>Creators: Ryan Scott McCullan & Richard Snodgrass</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>An Imperial Snowtrooper.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/apwax.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download apwax.zip.';return true" >apwax.zip</a> (114k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Ales Ptacek</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>WAX collection of different colored officers.  Includes grey, blue, green, black and a Grand Admiral.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/apwax2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download apwax2.zip.';return true" >apwax2.zip</a> (51k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Ales Ptacek</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>WAX collection with some Imperial officers and a Rebel captain.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/atatdvr.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download atatdvr.zip.';return true" >atatdvr.zip</a> (26k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>An Imperial AT-AT walker driver.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/candel.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download candel.zip.';return true" >candel.zip</a> (3k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A hanging iron candelbra with flickering candles.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/bar-waxs.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download bar-waxs.zip.';return true" >bar-waxs.zip</a> (174k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Barry Brien</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>WAX collection, includes an improved Tusken Raider, a TIE pilot,  an Imperial Scout, one of the Emperor's guards, and a dark jedi, along with the sounds for the dark jedi.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/biker.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download biker.zip.';return true" >biker.zip</a> (28k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Imperial Biker Scout.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/bobawalk.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download bobawalk.zip.';return true" >bobawalk.zip</a> (51k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Boba Fett, but this one walks.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/bossk.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download boskk.zip.';return true" >bossk.zip</a> (90k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Bossk Trandoshan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A complete IG88 droid; includes the WAX, new VOCs and FMEs.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/c3powax.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download c3powax.zip.';return true" >c3powax.zip</a> (1k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Gary Belisle</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>That prissy protocol droid C3PO.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/cbaoth.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download cbaoth.zip.';return true" >cbaoth.zip</a> (28k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Jeff Walters</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Jedi Master Joruus C'Baoth; suggested for use with Phase 3 Dark Trooper logic.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/comcconn.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download comcconn.zip.';return true" >comcconn.zip</a> (55k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Allen Newman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>An Imperial Commando that uses a concussion rifle. Comes complete with VOCs for use.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/dkpotato.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download dkpotato.zip.';return true" >dkpotato.zip</a> (18k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Frank A. Krueger</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Mr. Potato Head. No, I'm not kidding. :)</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="http://weber.u.washington.edu/~godfrei/duroswax.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download duroswax.zip.';return true" >duroswax.zip</a> (22k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Dan Monceaux</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A WAX of Duros, a blue-skinned alien with red eyes.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/enh_boba.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download enh_boba.zip.';return true" >enh_boba.zip</a> (53k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>An enhanced WAX of Boba Fett that walks and flies both.  Use Phase 3 logic.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/fldtrp.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download fldtrp.zip.';return true" >fldtrp.zip</a> (99k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Patrick Green</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Field Trooper WAXes, as seen in Mos Eisley.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/fusgener.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download fusgener.zip.';return true" >fusgener.zip</a> (35k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A fusion generator as seen in Mos Eisley. Use with barrel logic.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/greedo.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download greedo.zip.';return true" >greedo.zip</a> (75k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Greedo, of course.  VOCs included.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/hothtrp.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download hothtrp.zip.';return true" >hothtrp.zip</a> (34k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A stormtrooper adapted for use in iceworld levels.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/ig88.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download ig88.zip.';return true" >ig88.zip</a> (29k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Don Sielke</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>IG88 droid.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/ig88m.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download ig88m.zip.';return true" >ig88m.zip</a> (36k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Another IG88 droid.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/ig88ver1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download ig88ver1.zip.';return true" >ig88ver1.zip</a> (31k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Troy Benge</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>IG88 droid.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/invtroop.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download invtroop.zip.';return true" >invtroop.zip</a> (203k)</td>
+<td width=10></td>
+<td align=center width=260>Creators: Jereth Kok, Peter Klassen and Vladimir Klassen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Stormtrooper and Phase 3 Dark Trooper equipped with cloaking devices; from Stars End - The Cloak.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/jabba.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download jabba.zip.';return true" >jabba.zip</a> (61k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Jabba the Hutt.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/jawa1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download jawa1.zip.';return true" >jawa1.zip</a> (18k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Barry Brien</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A Jawa.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/jawa1a.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download jawa1a.zip.';return true" >jawa1a.zip</a> (7k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Matt Neuman</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A Jawa WAX.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/jawafull.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download jawafull.zip.';return true" >jawafull.zip</a> (28k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Updated Jawa WAX, includes VOCs.  Also includes a sitting Jawa FME.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="http://weber.u.washington.edu/~godfrei/kyle.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download kyle.zip.';return true" >kyle.zip</a> (130k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A WAX of Kyle Katarn.  A rather TALL Kyle Katarn.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/lspider.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download lspider.zip.';return true" >lspider.zip</a> (52k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Rick Horack</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A small spider, suggested for use with reeyees2 logic.<br>
+<li><a href="ftp://swgamers.com/pub/df/lcs/waxs/spidsnd.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download spidsnd.zip.';return true" >spidsnd.zip</a> (16k) Sounds for use with the spider, replaces reeyees VOCs.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/mestormr.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download mestormr.zip.';return true" >mestormr.zip</a> (35k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A Mos Eisley Stormtrooper.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/mikewax.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download mikewax.zip.';return true" >mikewax.zip</a> (30k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Mike Densmore</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>WAX collection, includes a new remote and a grey officer, plus more.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/prtltrp.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download prtltrp.zip.';return true" >prtltrp.zip</a> (32k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Bossk Trandoshan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>An Imperial Stormtrooper in all-purpose patrol gear.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/rbwaxv3.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download rbwaxv3.zip.';return true">rbwaxv3.zip</a> (147k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Rob Bankey</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>WAX collection, includes a Rebel Commando and Captain, X-wing pilot and more.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/reboband.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download reboband.zip.';return true" >reboband.zip</a> (3k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Gary Belisle</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Sy Snootles and the Rebo band.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/richwax0.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download richwax0.zip.';return true" >richwax0.zip</a> (175k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Richard Snodgrass</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>WAX collection, includes Lobot, a black stormtrooper, a Bespin cloudcar pilot and more.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/royal.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download royal.zip.';return true" >royal.zip</a> (10k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>An Imperial Royal Guard, meant to replace ewok86.wax(not a full movement WAX).</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/saberwax.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download saberwax.zip.';return true" >saberwax.zip</a> (69k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Bossk Trandoshan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Includes three WAXes so that when you use a lightsaber the enemies are cut in half.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/sandman1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download sandman1.zip.';return true" >sandman1.zip</a> (59k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Barry Brien</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A Tusken Raider WAX, plus some FMEs.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/smily.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download smily.zip.';return true" >smily.zip</a> (3k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Adam Shane</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A smily face to replace remotes.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/speederbike.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download speederbike.zip.';return true" >speederbike.zip</a> (5k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Speeder Bike that blows up when shot; use with scenery logic.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/spider.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download spider.zip.';return true" >spider.zip</a> (248k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Rick Horack</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A large spider, for use with Kell Dragon logic.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/thrawnwax.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download thrawnwax.zip.';return true" >thrawnwax.zip</a> (29k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Desmond Shepherd</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Grand Admiral Thrawn.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/tie.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download tie.zip.';return true" >tie.zip</a> (66k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Barry Brien</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Contains a TIE pilot and an Imperial scout.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/tiepilot.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download tiepilot.zip.';return true" >tiepilot.zip</a> (26k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Marv Mays</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A TIE Fighter pilot.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/torch.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download torch.zip.';return true" >torch.zip</a> (2k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Lionel Fouillen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A wooden torch with a flickering flame.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/vader.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download vader.zip.';return true" >vader.zip</a> (14k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Jereth Kok</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Darth Vader.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/vader1!.exe" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download vader1!.exe.';return true" >vader1!.exe</a> (75k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Peter Klassen</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Improved Darth Vader WAX.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/fmes/wax.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download wax.zip.';return true">wax.zip</a> (2k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Bossk Trandoshan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Two FMEs, a bucket of paint and a magazine, plus a TV WAX.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/wax-land.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download wax-land.zip.';return true" >wax-land.zip</a> (90k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Barry Brien</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>WAX collection of a dark jedi, a royal guard and an AT-ST controller.  Complete with VOCs.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/waxpack.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download waxpack.zip.';return true" >waxpack.zip</a> (59k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Bossk Trandoshan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A mercenary and IG88 WAXes, plus several FMEs and a wanted poster BM.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/weequay.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download weequay.zip.';return true" >weequay.zip</a> (2k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Unknown</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>Non-moving WAX of Weequay, the wrinkled guy from Jabba's sail barge.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/womprat.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download womprat.zip.';return true" >womprat.zip</a> (1k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Ed Mundy</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>A womprat, replaces chair.wax.</td>
+</tr>
+</table>
+<br>
+<table border=1 cellspacing="0">
+<tr>
+<td bgcolor="#555555" background="images/techbg.gif"  width=180 align=center><a href="ftp://swgamers.com/pub/df/lcs/waxs/zuckuss.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download zuckuss.zip.';return true" >zuckuss.zip</a> (6k)</td>
+<td width=10></td>
+<td align=center width=260><font face="EngraversGothic BT">Creator: </font>Bossk Trandoshan</td>
+</tr>
+<tr>
+<td colspan=3 width=460><li>The short bug-eyed bounty hunter from ESB.</td>
+</tr>
+</table>
+<p>
+<center>
+<table border="0" cellpadding=5 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsa-l.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels A-L.'; return true">Levels A-L</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="patches.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Patches section.'; return true">Patches</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="vocs.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the VOCs section.'; return true">VOCs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">WAXes</font></td>
+</tr>
+</table>
+</center>
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="2" width="15"><img src="images/blank.gif" width="15"></td>
+<td valign=top rowspan=2 align=right width="100"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<img src="images/blank.gif" width=100 align=left>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated September 10, 1997</i></font>
+</dl>
+</body>
+</html>

@@ -1,0 +1,734 @@
+<html>
+<head>
+<title>The Crow's Nest: Levels A-L</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+var image5 = new Image();
+image5.src = 'images/menu_list_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+// End of JavaScript -->
+</SCRIPT>
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" border="0" height="66"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table border="0" align="left" valign="top">
+<tr>
+<td width="100"><a href="storage.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Storage - All the missions and level components are kept here.'; return true"><img src="images/storage_sidebar.gif" border="0" width="85" height="46"></td>
+</tr>
+</table>
+<dl>
+<font face="EngraversGothic BT"><h1>Levels A-L</h1></font>
+<p>
+Levels here are in alphabetical order according to filename.  The dates are the date that the level was first set up for download(an approximate release date) beginning with the old dates from the Ackbar pages.  If there's a check image next to the level that means it has been reviewed on this site; you can click on the check to read the review.
+<p>
+<hr noshade>
+<p>
+<center>
+<table border="0" cellpadding=4 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">Levels A-L</font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="patches.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Patches section.'; return true">Patches</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="vocs.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the VOCs section.'; return true">VOCs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="waxes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the WAXes section.'; return true">WAXes</a></font></td>
+</tr>
+</table>
+</center>
+<p>
+<table border=1 cellspacing=0 cellpadding=2 width="85%">
+<tr>
+<td align=center bgcolor="#555555" background="images/techbg.gif"><b><font color="#1FE071" face="EngraversGothic BT"> Level Title / Author </font></b></td>
+<td align=center bgcolor="#555555" background="images/techbg.gif"><b><font color="#1FE071" face="EngraversGothic BT"> Filename / Date </font></b></td>
+<td align=center bgcolor="#555555" background="images/techbg.gif"><b><font color="#1FE071" face="EngraversGothic BT"> Size </font></b></td>
+<td align=center bgcolor="#555555" background="images/techbg.gif"><b><font color="#1FE071" face="EngraversGothic BT"> Reviewed </font></b></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/3dmad.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download 3DMad.';return true">3DMad</a><br>Author:Bowers</td>
+<td align=center>3dmad.zip<br>Aug/95</td>
+<td align=center>8k</td>
+<td align=center><a href="3dmad.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of 3D Mad.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/academy.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Imperial Academy.';return true">Imperial Academy</a><br>Agustin Leon</td>
+<td align=center>academy.zip<br>Jan/96</td>
+<td align=center>167k</td>
+<td align=center><a href="academy.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Imperial Academy.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/alderaan.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Siege at Alderaan.';return true">Siege at Alderaan</a><br>Jason Burton</td>
+<td align=center>alderaan.zip<br>Jul/95</td>
+<td align=center>84k</td>
+<td align=center><a href="siege.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Siege at Alderaan.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/alertred.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Alert Red.';return true">Alert Red</a><br>Cristoph Dobias</td>
+<td align=center>alertred.zip<br>Feb/97</td>
+<td align=center>184k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/arc_hunt.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Hunt for the Arc Hammer.';return true">The Hunt for the Arc Hammer</a><br>Mark Haidekker</td>
+<td align=center>arc_hunt.zip<br>Feb/97</td>
+<td align=center>1.0M</td>
+<td align=center><a href="arc_hunt.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of The Hunt for the Arc Hammer.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/arcadia.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Arcadia: Imperial Prison Planet.';return true">Arcadia: Imperial Prison Planet</a><br>Mike Rajotte</td>
+<td align=center>arcadia.zip<br>Jul/96</td>
+<td align=center>1.1M</td>
+<td align=center><a href="arcadia.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Arcadia: Imperial Prison Planet.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/arch1new.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Operation Archangel Episode I - Mos Eisley: The Maze.';return true">Operation Archangel Episode I - Mos Eisley: The Maze</a><br>Lionel Fouillen</td>
+<td align=center>arch1new.zip<br>Feb/97</td>
+<td align=center>355k</td>
+<td align=center><a href="archangel.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Operation Archangel Episode I - Mos Eisley: The Maze.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/archang2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Operation Archangel Episode II - Dungeons of Gamorra.';return true">Operation Archangel Episode II - Dungeons of Gamorra</a><br>Lionel Fouillen</td>
+<td align=center>archang2.zip<br>Mar/97</td>
+<td align=center>736k</td>
+<td align=center><a href="archang2.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Operation Archangel Episode II - Dungeons of Gamorra.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.swgamers.com/pub/df/cms/ardron.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Ardron.'; return true">Ardron</a><br>Aris Paterakis</td>
+<td align=center>ardron.zip<br>Sept/97</td>
+<td align=center>13k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="http://weber.u.washington.edu/~godfrei/assault.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Fortress Dantooine.'; return true">Fortress Dantooine</a><br>David Lovejoy & David Ralph</td>
+<td align=center>assault.zip<br>Aug/97</td>
+<td align=center>637k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="http://weber.u.washington.edu/~godfrei/asteroid.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Asteroid.'; return true">Asteroid</a><br>Eric Pauker</td>
+<td align=center>asteroid.zip<br>Jun/97</td>
+<td align=center>425k</td>
+<td align=center><a href="asteroid.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Asteroid.'; return true"><img src="images/check.gif" width="25" height="25" alt="Check" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/authcon.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Authorative Conflict.';return true">Authorative Conflict</a><br>Michael W. Moss</td>
+<td align=center>authcon.zip<br>Oct/96</td>
+<td align=center>37k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/bespin12.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Return to Bespin.';return true">Return to Bespin</a><br>Jason Burton, Carlos Gomez, Richard Gold, Richard Snodgrass, Arthur Sharp</td>
+<td align=center>bespin12.zip<br>Oct/95</td>
+<td align=center>426k</td>
+<td align=center><a href="bespin.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Return to Bespin.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/bfrevnge.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Boba Fetts Revenge.';return true">Boba Fett's Revenge</a><br>Randy Greene</td>
+<td align=center>bfrevnge.zip<br>Feb/97</td>
+<td align=center>529k</td>
+<td align=center><a href="bfrvnge.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Boba Fetts Revenge.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/biohazrd.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Operation: Chemical Warfare Facility.';return true">Operation Chemical Warfare Facility</a><br>Michael Messer</td>
+<td align=center>biohazrd.zip<br>Mar/96</td>
+<td align=center>66k</td>
+<td align=center><a href="biohazard.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Operation: Chemical Warfare Facility.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/borea.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Operation: Borea.';return true">Operation: Borea</a><br>Joseph Friestuhler</td>
+<td align=center>borea.zip<br>Feb/97</td>
+<td align=center>57k</td>
+<td align=center><a href="borea.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Operation: Borea.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/bounty!.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Bounty Hunt.';return true">The Bounty Hunt</a><br>
+<a href="ftp://swgamers.com/pub/df/cms/bou_cut!.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Bounty Hunt Cutscenes.';return true">Additional Cutscenes</a>(461k)<br>Peter Klassen</td>
+<td align=center>bounty!.zip<br>Feb/97</td>
+<td align=center>749k</td>
+<td align=center><a href="bounty.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of The Bounty Hunt.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.swgamers.com/pub/df/cms/capture.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Operation Capture.'; return true">Operation Capture</a><br>Cristoph Dobias</td>
+<td align=center>capture.zip<br>Sept/97</td>
+<td align=center>109k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/cargobay.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Cargobay 5.';return true">Cargobay 5</a><br>Jason Muhs</td>
+<td align=center>cargobay.zip<br>Nov/95</td>
+<td align=center>99k</td>
+<td align=center><a href="cargobay.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Cargobay 5.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/castle.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Castle.';return true">Castle</a><br>Andy Stubbs</td>
+<td align=center>castle.zip<br>May/96</td>
+<td align=center>224k</td>
+<td align=center><a href="castle.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Castle.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/castle_wolfenstein.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Castle Wolfenstein.'; return true">Castle Wolfentstein</a><br>Steven Scott</td>
+<td align=center>castle_wolfenstein.zip<br>Aug/97</td>
+<td align=center>17k</td>
+<td align=center><a href="wolf.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Castle Wolfenstein.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/clnbase.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Clone Tank Storage Facility.';return true">Clone Tank Storage Facility</a><br>Glenn Edmiston</td>
+<td align=center>clnbase.zip<br>Jun/97</td>
+<td align=center>396k</td>
+<td align=center><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/commstat.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Commenor Station: Pursuit of Cycy Loctob.';return true">Commenor Station: Pursuit of Cycy Loctob</a><br>Dave BRB Ralph</td>
+<td align=center>commstat.zip<br>Oct/95</td>
+<td align=center>76k</td>
+<td align=center><a href="commstat.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Commenor Station: Pursuit of Cycy Loctob.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/coober.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Coober.';return true">Coober</a><br>Tim Imboden</td>
+<td align=center>coober.zip<br>Feb/97</td>
+<td align=center>90k</td>
+<td align=center><a href="coober.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Coober.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/daedalus.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Daedalus Platform.';return true">Daedalus Platform</a><br>Philip Morton</td>
+<td align=center>daedalus.zip<br>Oct/96</td>
+<td align=center>27k</td>
+<td align=center><a href="daedalus.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Daedalus Platform.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dana.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download M/CRV Dana.';return true">M/CRV Dana</a><br>Zlatan Brankovic</td>
+<td align=center>dana.zip<br>Oct/96</td>
+<td align=center>452k</td>
+<td align=center><a href="mcrvdana.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of M/CRV Dana.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dangroom.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Danger Room.';return true">The Danger Room</a><br>Mike Nevebauer</td>
+<td align=center>dangroom.zip<br>Mar/96</td>
+<td align=center>30k</td>
+<td align=center><a href="dangroom.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of The Danger Room.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.swgamers.com/pub/df/cms/dantooin.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Assault on Dantooine.'; return true">Assault on Dantooine</a><br>Alex Conrad</td>
+<td align=center>dantooin.zip<br>Sept/97</td>
+<td align=center>340k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/danuta.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Danuta.';return true">Danuta</a><br>Author Unknown</td>
+<td align=center>danuta.zip<br>Aug/95</td>
+<td align=center>64k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="http://weber.u.washington.edu/~godfrei/dataret.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Data Retrieval.'; return true">Data Retrieval</a><br>James Roth</td>
+<td align=center>dataret.zip<br>Jun/97</td>
+<td align=center>580k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/deathst1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Operation: Evasive Action.';return true">Operation: Evasive Action</a><br>Andrew Emmons</td>
+<td align=center>deathst1.zip<br>Jul/95</td>
+<td align=center>28k</td>
+<td align=center><a href="deathstr.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Operation: Evasive Action.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/defbase.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download TIE Defender Base Collectors Edition.';return true">TIE Defender Base Collector's Edition</a><br>Paul Nemesh
+<br><a href="ftp://swgamers.com/pub/df/cms/defender.zip" onmouseout="window.status=' ';return true" onmouseover="window.status='Download TIE Defender Base Cutscenes.';return true">TIE Defender Base Cutscenes</a> defender.zip(1.2M)</td>
+<td align=center>defbase.zip<br>Feb/96</td>
+<td align=center>581k</td>
+<td align=center><a href="defbase.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of TIE Defender Base Collectors Edition.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dens.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Imperial Residence.';return true">Imperial Residence</a><br>Agustin Leon</td>
+<td align=center>dens.zip<br>Sep/95</td>
+<td align=center>20k</td>
+<td align=center><a href="impres.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Imperial Residence.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/depot.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Destroy Imperial Supply Depot.';return true">Destroy Imperial Supply Depot</a><br>Karl Felgate</td>
+<td align=center>depot.zip<br>Oct/96</td>
+<td align=center>109k</td>
+<td align=center><a href="depot.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Destroy Imperial Supply Depot.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/destroy.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Star Destroyer/Opressor IV.';return true">Star Destroyer/"Opressor IV"</a><br>Barry Brien</td>
+<td align=center>destroy.zip<br>Aug/96</td>
+<td align=center>176k</td>
+<td align=center><a href="destroyer.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Star Destroyer/Opressor IV.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/df96.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Dark Forces 96: The Ties That Bind.';return true">Dark Forces 96: The Ties That Bind</a><br>Jason Burton, Rick Schmidt, Rich Snodgrass, Jason Terhune</td>
+<td align=center>df96.zip<br>Aug/96</td>
+<td align=center>1.87M</td>
+<td align=center><a href="df96.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Dark Forces 96: The Ties That Bind.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dfcave2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Underground Research Facility.';return true">Underground Research Facility</a><br>Brian Gustke</td>
+<td align=center>dfcave2.zip<br>Sep/95</td>
+<td align=center>288k</td>
+<td align=center><a href="dfcave.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Underground Research Facility.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dist15.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Distribution Center 1.5.';return true">Distribution Center 1.5</a><br>Tim Smulders</td>
+<td align=center>dist15.zip<br>Jun/96</td>
+<td align=center>203k</td>
+<td align=center><a href="distcntr.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Distribution Center 1.5.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dml-df10.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Operation: Stealth.';return true">Operation: Stealth</a><br>David Lovejoy</td>
+<td align=center>dml-df10.zip<br>Dec/95</td>
+<td align=center>147k</td>
+<td align=center><a href="stealth.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Operation: Stealth.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/don-df42.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Operation: Death Star, Escape from Secbase II, Operation Tatooine, Impossible Rescue.';return true">Operation: Death Star, Escape from Secbase II, Operation Tatooine, Impossible Rescue</a><br>Don Sielke</td>
+<td align=center>don-df42.zip<br>Feb/96</td>
+<td align=center>441k</td>
+<td align=center><a href="opdstar.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Operation Death Star.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.swgamers.com/pub/df/cms/dropship.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Dropship.'; return true">Dropship</a><br>Frost</td>
+<td align=center>dropship.zip<br>Sept/97</td>
+<td align=center>52k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dsplans.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Death Star Plans.';return true">Death Star Plans</a><br>Doug Vader</td>
+<td align=center>dsplans.zip<br>Dec/95</td>
+<td align=center>10k</td>
+<td align=center><a href="dstrplans.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Death Star Plans.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/dtsearch.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Dark Trooper Search: Murdoch Station, Smugglers Ship.';return true">Dark Trooper Search: Murdoch Station, Smugglers Ship</a><br>Hunter</td>
+<td align=center>dtsearch.zip<br>Jul/96</td>
+<td align=center>183k</td>
+<td align=center><a href="dtsearch.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Dark Trooper Search: Murdoch Station, Smugglers Ship.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/easter.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Easter Attack.';return true">Easter Attack</a><br>Ron L. Davis</td>
+<td align=center>easter.zip<br>Apr/96</td>
+<td align=center>24k</td>
+<td align=center><a href="easter.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Easter Attack.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/endbase.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Rescue on Endor.';return true">Rescue on Endor</a><br>Darrin Bunker</td>
+<td align=center>endbase.zip<br>Aug/95</td>
+<td align=center>57k</td>
+<td><br> <br></td>
+</tr><tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/escape.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Escape from Hoth.';return true">Escape from Hoth</a><br>Richard Gold<br>
+<a href="hoth.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download the Escape from Hoth Cutscenes.'; return true">Escape from Hoth Cutscenes</a></td>
+<td align=center>escape.zip/hoth.zip<br>Jul/95</td>
+<td align=center>86k/858k</td>
+<td align=center><a href="escape.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Escape from Hoth.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/escapmos.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Escape from Mos Eisley.';return true">Escape from Mos Eisley</a><br>Richard Snodgrass</td>
+<td align=center>escapmos.zip<br>Sep/95</td>
+<td align=center>26k</td>
+<td align=center><a href="meisley.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Escape from Mos Eisley.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/evac.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Evacuation of Hoth.';return true">Evacuation of Hoth</a><br>Adam Shane</td>
+<td align=center>evac.zip<br>Jun/96</td>
+<td align=center>545k</td>
+<td align=center><a href="evachoth.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Evacuation of Hoth.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/faust.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Faust.';return true">Faust</a><br>Michael Conner</td>
+<td align=center>faust.zip<br>Feb/97</td>
+<td align=center>82k</td>
+<td align=center><a href="faust.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Faust.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/fest_rev.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Fest Revisited.';return true">Fest Revisited</a><br>Mark Haidekker</td>
+<td align=center>fest_rev.zip<br>Aug/96</td>
+<td align=center>96k</td>
+<td align=center><a href="fest_rev.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Fest Revisited.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/fortress.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Imperial Fortress.';return true">Imperial Fortress</a><br>John Sekeres</td>
+<td align=center>fortress.zip<br>Mar/97</td>
+<td align=center>109k</td>
+<td align=center><a href="fortress.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Imperial Fortress.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/freebird.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Mission: Freebird.';return true">Mission: Freebird</a><br>David Vitter</td>
+<td align=center>freebird.zip<br>Jun/95</td>
+<td align=center>103k</td>
+<td align=center><a href="freebird.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Mission: Freebird.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.swgamers.com/pub/df/cms/freekell.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download Free Kelly.'; return true">Free Kelly</a><br>Dave Bushnell</td>
+<td align=center>freekell.zip<br>Sept/97</td>
+<td align=center>399k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/frogmod.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Frogman Modified.'; return true">Frogman Modified</a><br>Ales Ptacek</td>
+<td align=center>frogmod.zip<br>Apr/97</td>
+<td align=center>629k</td>
+<td align=center><a href="frogman.html" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Read the review of Frogman/Frogman Modified.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/fthrawn.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Fall of Thrawn.';return true">The Fall of Thrawn</a><br>Desmond Shepherd</td>
+<td align=center>fthrawn.zip<br>Aug/96</td>
+<td align=center>607k</td>
+<td align=center><a href="fthrawn.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of The Fall of Thrawn.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/future1.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Future Present Part I.';return true">Future Present Part I</a><br>Rick Horack</td>
+<td align=center>future1.zip<br>Jun/96</td>
+<td align=center>806k</td>
+<td align=center><a href="f_pres1.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Future Present Part I.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/future2.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Future Present Part II.';return true">Future Present Part II</a>(10M RAM required)
+<br><a href="ftp://swgamers.com/pub/df/cms/futur2-8.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Future Present Part II.';return true">Future Present Part II</a>(for 8M RAM machines)<br>Joseph Friestuhler</td>
+<td align=center>future2.zip<br>futur2-8.zip<br>Aug/96</td>
+<td align=center>551k/354k</td>
+<td align=center><a href="f_pres2.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Future Present Part II.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/gambit.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Emperors Gambit.';return true">The Emperor's Gambit</a><br>Kevin M. Rusnak</td>
+<td align=center>gambit.zip<br>Apr/96</td>
+<td align=center>435k</td>
+<td align=center><a href="gambit.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of The Emperors Gambit.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/greatesc.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Great Escape.';return true">The Great Escape</a><br>Jeff Walters</td>
+<td align=center>greatesc.zip<br>Jul/96</td>
+<td align=center>326k</td>
+<td align=center><a href="g_escape.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of The Great Escape.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/gulag5.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Gulag 5.';return true">Gulag 5</a><br>Randy Caba</td>
+<td align=center>gulag5.zip<br>Feb/96</td>
+<td align=center>50k</td>
+<td align=center><a href="gulag5.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Gulag 5.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/hoerby3.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download The Hoerby Trilogy.';return true">The Hoerby Trilogy</a><br>Matthias von Herrmann<br><a href="ftp://swgamers.com/pub/df/cms/hoer3lfd.zip" onmouseout="window.status=' ';return true" onmouseover="window.status='Download The Hoerby Trilogy Cutscenes.';return true">The Hoerby Trilogy Cutscenes</a> hoer3lfd.zip(786k)</td>
+<td align=center>hoerby3.zip<br>Mar/97</td>
+<td align=center>686k</td>
+<td align=center><a href="hoerby.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of The Hoerby Trilogy.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/hotel.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Lahara Hotel.';return true">Lahara Hotel</a><br>Michael Messer</td>
+<td align=center>hotel.zip<br>Feb/97</td>
+<td align=center>350k</td>
+<td align=center><a href="l_hotel.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Lahara Hotel.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/hydra.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Hydra.';return true">Hydra</a><br>Mike Neugebauer</td>
+<td align=center>hydra.zip<br>Mar/97</td>
+<td align=center>62k</td>
+<td align=center><a href="hydra.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Hydra.'; return true"><img src="images/check.gif" width="25" height="25" alt="Check" border="0"></a></td>
+</tr>
+<tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/icewld20.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Ice World.';return true">Ice World</a><br>Tim Smulders</td>
+<td align=center>icewld20.zip<br>Aug/96</td>
+<td align=center>1.9M</td>
+<td align=center><a href="iceworld.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Ice World.'; return true"><img src="images/check.gif" width="25" height="25" alt="Check" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/impbase.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Secret Outpost.';return true">Secret Outpost</a><br>Jason Muhs</td>
+<td align=center>impbase.zip<br>/</td>
+<td align=center>94k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/impdest.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Imperial Destroyer.';return true">Imperial Destroyer</a><br>Eric Pauker</td>
+<td align=center>impdest.zip<br>Mar/97</td>
+<td align=center>80k</td>
+<td align=center><a href="impdest.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Imperial Destroyer.'; return true"><img src="images/check.gif" width="25" height="25" alt="Check" border="0"></a></td>
+</tr>
+<tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/imperial.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Imperial Secret Base.';return true">Imperial Secret Base</a><br>Mike Rajotte</td>
+<td align=center>imperial.zip<br>Mar/96</td>
+<td align=center>195k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/imphoth.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Hoth: Imperial Base.';return true">Hoth: Imperial Base</a><br>Benjamin Hike</td>
+<td align=center>imphoth.zip<br>Dec/95</td>
+<td align=center>40k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/impmin10.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Imperial Mine.';return true">Imperial Mine</a><br>Tim Smulders</td>
+<td align=center>impmin10.zip<br>Jul/96</td>
+<td align=center>84k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/imprec.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Imperial Recreation Center.';return true">Imperial Recreation Center</a><br>Ron & Ken Swope</td>
+<td align=center>imprec.zip<br>Oct/96</td>
+<td align=center>306k</td>
+<td align=center><a href="imprec.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Imperial Recreation Center.'; return true"><img src="images/check.gif" width="25" height="25" alt="Check" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/infil-lb.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Infiltrate Laboratory.';return true">Infiltrate Laboratory</a><br>Len, Sam, & Jessica Bowers</td>
+<td align=center>infil-lb.zip<br>Nov/95</td>
+<td align=center>132k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/intruder.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Intruder.';return true">Intruder</a><br>David Lovejoy</td>
+<td align=center>intruder.zip<br>Mar/97</td>
+<td align=center>474k</td>
+<td align=center><br> <br></td>
+</tr>
+<tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/invasion.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Invasion.';return true">Invasion</a><br>Jason Muhs</td>
+<td align=center>invasion.zip<br>Mar/96</td>
+<td align=center>127k</td>
+<td align=center><a href="invasion.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Invasion.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/island.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Island Invasion.';return true">Island Invasion</a><br>Andy Stubbs</td>
+<td align=center>island.zip<br>Feb/96</td>
+<td align=center>148k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/jabship.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Jabbas Ship: The Smily Debacle.';return true">Jabba's Ship: The Smily Debacle</a><br>Kevern R. Cameron</td>
+<td align=center>jabship.zip<br>Oct/96</td>
+<td align=center>9k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/jawasand.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Jawa Sandcrawler.';return true">Jawa Sandcrawler</a><br>Rolobo</td>
+<td align=center>jawasand.zip<br>Feb/97</td>
+<td align=center>89k</td>
+<td align=center><a href="sandcraw.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Jawa Sandcrawler.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/jedinight.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download A Jedi Night.';return true">A Jedi Night</a><br>Rey Perez</td>
+<td align=center>jedinight.zip<br>Jun/96</td>
+<td align=center>688k</td>
+<td align=center><a href="jedinight.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of A Jedi Night.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/jundland.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Jundland.';return true">Jundland</a><br>David Arandle</td>
+<td align=center>jundland.zip<br>Mar/97</td>
+<td align=center>494k</td>
+<td align=center><a href="jundland.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Jundland.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></td>
+</tr>
+<tr>
+<td><a href="e_choice.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Find out about the Editors Choice Awards.'; return true"><img src="images/ec.gif" width="100" height="45" border="0" align=right></a><a href="ftp://swgamers.com/pub/df/cms/kilvader.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Assassinate Darth Vader.';return true">Assassinate Darth Vader</a><br>Jereth Kok
+<br><a href="http://weber.u.washington.edu/~godfrei/vadcut.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download the Vader Cutscenes by Peter Klassen.'; return true">Download Cutscenes</a> by Peter Klassen</td>
+<td align=center>kilvader.zip<br>Aug/96</td>
+<td align=center>481k
+<br>626k</td>
+<td align=center><a href="vader.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Assassinate Darth Vader.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/kmc.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Kyle Meets Kaled.';return true">Kyle Meets Kaled</a><br>Troy Nathan Robeck</td>
+<td align=center>kmc.zip<br>Feb/97</td>
+<td align=center>716k</td>
+<td align=center><a href="kaleds.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the review of Kyle Meets Kaled.'; return true"><img src="images/check.gif" width="25" height="25" border="0"></a></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/lambda.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Lambda Base.';return true">Lambda Base</a><br>David Lovejoy</td>
+<td align=center>lambda.zip<br>Feb/96</td>
+<td align=center>558k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/lasthope.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download Missions: Last Hope, Dark Territory.';return true">Missions: Last Hope, Dark Territory</a><br>Jeff Byrd</td>
+<td align=center>lasthope.zip<br>Oct/96</td>
+<td align=center>274k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://ftp.swgamers.com/pub/df/cms/lastjedi.zip" onmouseout="window.status=' '; return true" onmouseover="window.status='Download SecBase 2.1.'; return true">SecBase2.1</a><br>Derek Brooks</td>
+<td align=center>lastjedi.zip<br>Sept/97</td>
+<td align=center>9k</td>
+<td><br> <br></td>
+</tr>
+<tr>
+<td><a href="ftp://swgamers.com/pub/df/cms/leia.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download For Leias Honor.';return true">For Leia's Honor</a><br>Gary Console</td>
+<td align=center>leia.zip<br>Mar/96</td>
+<td align=center>41k</td>
+<td><br> <br></td>
+</tr>
+</table>
+<p>
+<center>
+<table border="0" cellpadding=4 width=500 cellspacing=0 background="images/techbg2.gif">
+<tr>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT">Levels A-L</font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="levelsm-z.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to Levels M-Z.'; return true">Levels M-Z</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="3dos.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the 3DOs section.'; return true">3DOs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="bms.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the BMs section.'; return true">BMs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="fmes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the FMEs section.'; return true">FMEs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="patches.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the Patches section.'; return true">Patches</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="vocs.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the VOCs section.'; return true">VOCs</a></font></td>
+<td bgcolor="#555555" align=center><font size="-1" face="EngraversGothic BT"><a href="waxes.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Go to the WAXes section.'; return true">WAXes</a></font></td>
+</tr>
+</table>
+</center>
+</dl>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan=2 width="12"><img src="images/blank.gif" width="12"></td>
+<td valign=top rowspan=2 align=right width="105"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<table align=left>
+<tr>
+<td width=100><img src="images/blank.gif" width=100></td>
+</tr>
+</table>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated September 17, 1997</i></font>
+</dl>
+</body>
+</html>

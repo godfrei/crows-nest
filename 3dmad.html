@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>The Crow's Nest: 3D Mad Review</title>
+</head>
+
+<script language="JavaScript">
+<!--
+// Preloading images here - 
+function load_images() {
+var image1 = new Image();
+image1.src = 'images/menu_storage_active.gif';
+var image2 = new Image();
+image2.src = 'images/menu_launchpad_active.gif';
+var image3 = new Image();
+image3.src = 'images/menu_database_active.gif';
+var image4 = new Image();
+image4.src = 'images/home_active.gif';
+var image5 = new Image();
+image5.src = 'images/menu_list_active.gif';
+}
+
+// Menu script starts here - 
+var object=new Array();
+
+object['home']= new objectdata(124,12,"images/home_active.gif","images/home_dead.gif","Home - Head back to the front page.");
+object['list']= new objectdata(77,12,"images/menu_list_active.gif","images/menu_list_dead.gif","Review List - Here you can find reviews for the numerous Dark Forces Add-On Missions.");
+object['storage']= new objectdata(97,12,"images/menu_storage_active.gif","images/menu_storage_dead.gif","Storage - All the missions and level components are kept here.");
+object['launchpad']= new objectdata(75,12,"images/menu_launchpad_active.gif","images/menu_launchpad_dead.gif","Launch Pad - The shuttle is standing by to take you to other Dark Forces related sites.");
+object['database']= new objectdata(59,12,"images/menu_database_active.gif","images/menu_database_dead.gif","Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.");
+
+// add more objects above this line
+
+function objectdata(hsize,vsize,replacimg,restorimg,mess)
+{this.mess=mess;
+ this.simg=new Image(hsize,vsize);
+ this.simg.src=replacimg;
+ this.rimg=new Image(hsize,vsize);
+ this.rimg.src=restorimg;                                                                                        }
+
+function ReplaceOrig(name)
+{window.status=object[name].mess;
+document[name].src=object[name].simg.src;
+}
+
+function RestoreOrig(name)
+{window.status=" ";
+ document[name].src=object[name].rimg.src;
+}
+
+// End of JavaScript -->
+</SCRIPT>
+
+<body bgcolor="#555555" background="images/nestbg.gif" text="#FFFFFF" link="#1FE071" vlink="#009979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="index.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Home - Head back to the front page.'; return true"><img src="images/topcrow.gif" width="108" height="66" border="0"></a></td>
+<td><img src="images/toptitle.gif" width="191" height="66"></td>
+</tr>
+</table>
+<table border="0" align="left" valign="top">
+<tr>
+<td width="100"><a href="reviewlist.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Review List - Here you can read reviews of the numerous Dark Forces Add-On Missions.'; return true"><img src="images/list_sidebar.gif" border="0" width="80" height="68"></td>
+</tr>
+</table>
+<dl>
+<font face="EngraversGothic BT"><h1>3D Mad</h1></font>
+<i><font face="EngraversGothic BT">Author(s): </font></i><a href="mailto:Len@lenbow.demon.co.uk" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail Len Bowers at Len@lenbow.demon.co.uk'; return true">Len Bowers</a>
+<p>
+<hr noshade>
+<p></dl>
+<img src="images/review.gif" alt="Review" width="229" height="20"><br>
+<img src="images/blank.gif" width="100" height="1"align=left>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>Due to the extraordinary nature of the level, this review will differ in format from the rest.  There is no plot, and there are no goals to be accomplished.  The only difficulty stems from a squad of stormtroopers, and in being able to figure out what exactly is going on.  
+<p>
+In true M.C. Escher style, the author has created some impossible but very interesting rooms.  Each of the rooms is similar in size but they all have different textures on the walls.  The author claims it to be a joke between DFUSE users, and I'll elaborate on it thanks to some kind people(I'm sorry I've forgotten your names. Mail me again please.) who explained the technical side to me.  Obviously each of the rooms can't exist the way they appear; in the 3D world it's impossible.  Which reveals one problem with the Dark Forces engine, it isn't true 3D.  Therefore you can overlap rooms one on top of another and hook them up so that you can pass from one to the next while never actually leaving the same area in space.  There is a <a href="3dmadexplain.html" onmouseout="window.status=' '; return true" onmouseover="window.status='Read the detailed explanation of 3D Mad.'; return true">more detailed explanation</a> available in the <a href="database.html" onmouseout="window.status=' '; return true" onmouesover="window.status='Database - Data from Dark Forces plus info on the Nest is kept here for easy retrieval.'; return true">Database</a>.
+<p>
+There's no way to rate the level.  Mostly because there's nothing else to compare it to.  So all I can really say is that if you're interested, it's kind of fun, it won't take up much disk space, and it's a quick download.  So you might want to grab it just to see if you can figure it out.
+<p>
+<a href="ftp://swgamers.com/pub/df/cms/3dmad.zip" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Download 3D Mad.'; return true">Download 3D Mad</a> (3dmad.zip, 8k)
+</td>
+</tr>
+</table>
+<p>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="2" width="17"><img src="images/blank.gif" width="17"></td>
+<td valign=top rowspan=2 align=right width="100"><img src="images/menubar.gif" width="82" height="68"></td>
+<td valign=top width="124" height="56"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_icon.gif" width="124" height="56" border="0" alt="Home"></a></td>
+<td valign=top width="77" height="56"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_icon.gif" width="77" height="56" alt="Review List" border="0"></a></td>
+<td valign=top width="97" height="56"><a href="storage.html" onmouseover="ReplaceOrig('storage');return true;" onmouseout="RestoreOrig('storage');"><img src="images/menu_storage_icon.gif" width="97" height="56" border="0" alt="Storage"></a></td>
+<td valign=top width="75" height="56"><a href="launchpad.html" onmouseover="ReplaceOrig('launchpad');return true;" onmouseout="RestoreOrig('launchpad');"><img src="images/menu_launchpad_icon.gif" width="75" height="56" border="0" alt="Launch Pad"></a></td>
+<td valign=top width="59" height="56"><a href="database.html" onmouseover="ReplaceOrig('database');return true;" onmouseout="RestoreOrig('database');"><img src="images/menu_database_icon.gif" width="59" height="56" border="0" alt="Database"></a></td>
+</tr>
+<tr>
+<td valign=top width="124" height="12"><a href="index.html" onmouseover="ReplaceOrig('home');return true;" onmouseout="RestoreOrig('home');"><img src="images/home_dead.gif" name="home" width="124" height="12" alt="Home" border="0" naturalsizeflag="0"></a></td>
+<td valign=top width="77" height="12"><a href="reviewlist.html" onmouseover="ReplaceOrig('list');return true;" onmouseout="RestoreOrig('list');"><img src="images/menu_list_dead.gif" name="list" width="77" height="12" border="0" naturalsizeflag="0" alt="Review List"></a></td>
+<td valign=top width="97" height="12"><A HREF="storage.html" OnMouseOver="ReplaceOrig('storage');return true;" OnMouseOut="RestoreOrig('storage');"><IMG SRC="images/menu_storage_dead.gif" NAME="storage" WIDTH="97" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Storage"></A></td>
+<td valign=top width="75" height="12"><A HREF="launchpad.html" OnMouseOver="ReplaceOrig('launchpad');return true;" OnMouseOut="RestoreOrig('launchpad');"><IMG SRC="images/menu_launchpad_dead.gif" NAME="launchpad" WIDTH="75" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Launch Pad"></A></td>
+<td valign=top width="59" height="12"><A HREF="database.html" OnMouseOver="ReplaceOrig('database');return true;" OnMouseOut="RestoreOrig('database');"><IMG SRC="images/menu_database_dead.gif" NAME="database" WIDTH="59" HEIGHT="12" BORDER="0" NATURALSIZEFLAG="0" alt="Database"></A></td>
+</tr>
+</table>
+<p>
+<img src="images/blank.gif" width=100 align=left>
+<dl>
+<hr noshade>
+<font size="-1">To offer comments and suggestions please email <a 
+href="mailto:godfrei@saul.u.washington.edu" onmouseout="window.status=' '; return true" 
+onMouseOver="window.status='Mail me at godfrei@saul.u.washington.edu.';return true">Geoffrey Elliott</a>.<br>
+<i>Last Updated August 31, 1997</i></font>
+</dl>
+</body>
+</html>
