@@ -1,0 +1,34 @@
+{
+  "name": "crows-nest",
+  "private": true,
+  "description": "The Crow's Nest, a Dark Forces website focusing on add-on level reviews.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "dependencies": {
+    "gatsby": "^2.1.17",
+    "gatsby-image": "^2.0.29",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-plugin-sharp": "^2.0.22",
+    "gatsby-remark-images": "^3.0.5",
+    "gatsby-source-filesystem": "^2.0.22",
+    "gatsby-transformer-remark": "^2.2.6",
+    "gatsby-transformer-sharp": "^2.1.14",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godfrei/crows-nest"
+  },
+  "bugs": {
+    "url": "https://github.com/godfrei/crows-nest/issues"
+  }
+}
