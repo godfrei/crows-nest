@@ -14,7 +14,7 @@ export default ({ children }) => (
         `}
         render={data => (
             <main>
-                <h1>{data.site.siteMetadata.title}</h1>
+                <h1 className="gradient-glow" data-text={data.site.siteMetadata.title}>{data.site.siteMetadata.title}</h1>
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>   

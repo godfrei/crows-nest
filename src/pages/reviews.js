@@ -7,7 +7,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <h1>Reviews</h1>
+        <h1 className="gradient-glow" data-text="Reviews">Reviews</h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>

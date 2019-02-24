@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <h1>Storage</h1>
+    <h1 className="gradient-glow" data-text="Storage">Storage</h1>
     <p>Files to come.</p>
   </Layout>
 )
