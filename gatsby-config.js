@@ -2,6 +2,7 @@ module.exports = {
     siteMetadata: {
       title: `The Crow's Nest`,
     },
+    pathPrefix: `/missions`,
     plugins: [
         'gatsby-plugin-sass',
         {
@@ -9,6 +10,13 @@ module.exports = {
             options: {
               name: `src`,
               path: `${__dirname}/src/`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `missions`,
+              path: `${__dirname}/static/missions/`,
             },
         },
         {
