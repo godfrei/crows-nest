@@ -17,12 +17,11 @@ h1 {
 .gradient-glow {
     font-family: "Times New Roman", serif;
     font-weight: 900;
-    background-image: linear-gradient($teal, black 60%, black);
+    background-image: linear-gradient($teal, black 65%, black);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    line-height: 1;
 
     &:after {
         background: none;
