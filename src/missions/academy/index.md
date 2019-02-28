@@ -1,10 +1,7 @@
 ---
-title: "Review Test"
-date: "2017-08-10"
-description: "This is a level you need to play."
-author: "Jeff Walters"
 reviewer: "Geoff Elliott"
-rating: 96
+rating: 90
+mission: academy
 ---
 
 Pandas are really sweet.

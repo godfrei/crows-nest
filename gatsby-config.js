@@ -15,8 +15,15 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-              name: `missions`,
+              name: `mission-files`,
               path: `${__dirname}/static/missions/`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `missions`,
+              path: `${__dirname}/src/missions/`,
             },
         },
         {
@@ -34,6 +41,9 @@ module.exports = {
                 ],
             },
         }
-
-    ]
+    ],
+    mapping: {
+        'MarkdownRemark.frontmatter.mission': 'MarkdownRemark.frontmatter.mission_id',
+        'MarkdownRemark.frontmatter.mission_id': 'MarkdownRemark.frontmatter.mission',
+    }
 }

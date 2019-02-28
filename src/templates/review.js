@@ -7,8 +7,8 @@ export default ({ data }) => {
     const post = data.markdownRemark
     return (
         <Layout>
-            <h1>{ post.frontmatter.title }</h1>
-            Author: { post.frontmatter.author }
+            <h1>{ post.frontmatter.mission.frontmatter.title }</h1>
+            Author: { post.frontmatter.mission.frontmatter.author }
             Reviewed by: { post.frontmatter.reviewer }
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <Rating score={ post.frontmatter.rating } />
@@ -21,10 +21,14 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title,
-        author,
-        reviewer,
+        reviewer
         rating
+        mission {
+          frontmatter {
+            title
+            author
+          }
+        }
       }
     }
   }

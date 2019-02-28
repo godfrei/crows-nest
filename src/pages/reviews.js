@@ -12,13 +12,9 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link to={node.fields.slug }>
-                <h3>
-                {node.frontmatter.title}{" "}
-                <span>
-                    — {node.frontmatter.date}
-                </span>
-                </h3>
-                <p>{node.frontmatter.description}</p>
+                <h3>{node.frontmatter.mission.frontmatter.title}</h3>
+                <p>{node.frontmatter.mission.frontmatter.description}</p>
+                <p>{node.frontmatter.rating}</p>
             </Link>
           </div>
         ))}
@@ -29,15 +25,21 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index.md/" }}) {
       totalCount
       edges {
         node {
           id
           frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-            description
+            rating
+            mission {
+              frontmatter {
+                title
+                date(formatString: "DD MMMM, YYYY")
+                description
+                author
+              }
+            }
           }
           fields {
               slug
