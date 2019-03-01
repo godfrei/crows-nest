@@ -1,41 +1,28 @@
 ---
-reviewer: "Geoff Elliott"
-rating: 90
 mission: academy
+reviewer: "Geoff Elliott"
+review-date: "1996-10-25"
+rating: 94
+editors-choice: yes
 ---
 
-Pandas are really sweet.
+This is a challenging level. 
 
-Here's a video of a panda eating sweets.
+![Academy screenshot #1](./academy1.png "One of the deep access elevators is located near the sewer system; but where is it?")
 
-![Bespin image](bespin.png "This is a caption")
+There are two ways in which that statement is true. The first is obvious; you know coming in that the Academy is a trap, so you can expect there to be Imperials lurking around every corner. But what I really mean when I make this statement is that this level requires you to think, to guess, and to take some chances in order to make your way through it. There's no easy way to get by this place. Turning on all the cheats will help you survive, but it won't accomplish your goals, and won't get you out. Jan tells you that the sequencer charges need to be placed in separate areas spread across the grounds, each accesable via deep access eleveators hidden beneath the surface. But you don't know exactly where, and the entire place is locked up tighter than a Death Star Detention Center.
+I use that phrase with a purpose. Just as a group of rebels managed to penetrate the Death Star's defenses and whisk Princess Leia away to safety, so can Kyle accomplish his mission. The difficulty lies in finding everything. There is a specific sequence in which the goals must be accomplished. Usually that leads to a constrictive level where the player is merely whisked along a determined path to reach the end. But not so here. There are plenty of different areas to explore and get lost in as you try to find your way around. And just because you follow a certain path, doesn't mean you can figure out how to continue along that route. Puzzles are presented at every corner, and it's up to you to discover the secrets.
 
-How long does the excerpt go?
+![Academy screenshot #2](./academy2.png "The choice of textures and attention to details (note the shading) is what really makes the Academy come to life.")
 
-How long does the excerpt go?
+The largest thing this level has going for it is the story the author has derived and the atmosphere he's created to fit his story. There is a large .doc file contained in the zip, which holds a long description of the events starting with the destruction of the Arc Hammer leading up to Kyle's departure for the Academy. It explains his stubborness, and Jan's pleas with him to avoid what is obviously a trap. Sure enough, the area is a setup, and there are trapdoors, commandos hiding in hidden alcoves, and TIE Fighters sitting in wait for you to stroll by. As soon as you step off the Crow and begin to investigate, you feel tense, and you proceed cautiously. The other thing which adds to the sense of the area is the atmosphere which surrounds the Academy. As you progress further down into the depths of the buildings, the area gets darker, more sinister, with shadows everywhere, concealing important clues. You get a distinct sense of foreboding when you walk along a corridor which may or may not deposit you in front of a dozen stormtroopers. This level also won't let you rush right through it. Regardless of having the puzzles to slow you down, elevators move slowly, giving them a feeling of having a large mass. The good choice of sounds complements the feeling. You also don't really want to rush past everything. It was nice to stop and take a look at what the author had done. There are lots of good ideas to be found in this level for those who like to make their own.
 
-How long does the excerpt go?
 
-How long does the excerpt go?
+![Academy screenshot #3](./academy3.png "The Imperials throw everything at you in a last ditch effort to stop your plans to destroy the Academy.")
+There are two problems with this level. The diffculty of the puzzles is one. Some of them are pretty abstract, and a couple I was only able to solve by sheer luck. The author throws in some pretty cool tricks, and they make the area both interesting and challenging. This level is obviously supposed to make you think, but sometimes you have to leave logic behind and play a hunch. The other complaint is the prescence of the Dark Troopers. But this is a weak one, because when you think about it it seems reasonable for the Empire to have thrown its few remaining DTs into action in a last ditch attempt to capture Kyle. And since each of the Troopers is placed in a key area which otherwise would have felt vacant, it doesn't detract from the level.
 
-How long does the excerpt go?
+On the plus side, this level doesn't drop you off as soon as you have completed your goals. In many levels the author seems to feel that as soon as the last charge is placed, the rest of the story is just epilogue. Not so here. Even after you've set the sequencers, you still need to find your way back to the ship. There are several more puzzles that follow. This is one level that keeps you moving from beginning to end.
 
-How long does the excerpt go?
+## Overall
 
-How long does the excerpt go?
-
-How long does the excerpt go?
-
-How long does the excerpt go?
-
-How long does the excerpt go?
-
-How long does the excerpt go?
-
-How long does the excerpt go?
-
-How long does the excerpt go?
-
-How long does the excerpt go?
-
-How long does the excerpt go?
+There is no good reason not to download this level and try it out immdeiately. I have to consider it one of the best I've played to date. The detail that is apparent in every aspect envelops the player and doesn't let them go until everything has been accomplished. A word of advice: the Academy is a difficult place to survive, and you will also get stumped in places. But don't give up, because this is one level you'll want to play from start to finish.
