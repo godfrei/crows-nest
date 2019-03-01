@@ -4,30 +4,27 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   console.log(data)
+
+  function getReviewLink(node) {
+    if (node.frontmatter.mission_id && node.frontmatter.mission_id.frontmatter.rating) {
+      return (<Link to={node.frontmatter.mission_id.fields.slug}>Review ({node.frontmatter.mission_id.frontmatter.rating})</Link>)
+    }
+    return null;
+  }
+
   return (
     <Layout>
       <div>
         <h1>Missions</h1>
         <ul>
-          {/* {data.allFile.edges.map(({ node }) => (
-            <li key={node.id}>
-              <a href={ withPrefix(`/missions/${node.relativePath}`) }>
-                <h3>
-                  {node.name}{" "}
-                  <span>
-                      ({node.prettySize})
-                  </span>
-                </h3>
-              </a>
-            </li>
-          ))} */}
           {data.levels.edges.map(({ node }) => {
             const folders = node.fields.slug.split('/');
             const mission_title = folders[2]; // Structure is "/levels/*mission_title*/info/"
+            const review_link = getReviewLink(node);
             return (
               <li key={node.id}>
                 <a href={ withPrefix(`/missions/${mission_title}.zip`) }>{node.frontmatter.title}</a>
-                <Link to={node.frontmatter.mission_id.fields.slug}>Review ({node.frontmatter.mission_id.frontmatter.rating})</Link>
+                {review_link}
               </li>
             );
           })}
@@ -67,18 +64,3 @@ export const query = graphql`
     }
   }
 `
-
-// export const query = graphql`
-//   query {
-//     allFile(filter: {sourceInstanceName: {eq: "missions"}}) {
-//         edges {
-//           node {
-//             name
-//             prettySize
-//             relativePath
-//             publicURL
-//           }
-//         }
-//       }
-//   }
-// `
