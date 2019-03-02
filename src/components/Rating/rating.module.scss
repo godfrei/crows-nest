@@ -2,6 +2,7 @@
 
 .rating {
     text-align: center;
+    float: right;
 }
 
 .rating span {
@@ -16,21 +17,4 @@
     font-weight: normal;
     color: $red;
     line-height: 1;
-}
-
-a:link, a:visited {
-    color: $teal;
-}
-
-figure {
-    width: 250px;
-    float: right;
-    margin-left: 5px;
-}
-
-figcaption {
-    color: $teal;
-    font-family: "Engravers Gothic";
-    font-size: 12px;
-    margin-top: 5px;
 }

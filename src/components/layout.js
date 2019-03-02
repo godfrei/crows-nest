@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
+import crow from "../images/crow.png"
 
 export default ({ children }) => (
     <StaticQuery
@@ -14,7 +15,15 @@ export default ({ children }) => (
         `}
         render={data => (
             <main>
-                <h1 className="gradient-glow" data-text={data.site.siteMetadata.title}>{data.site.siteMetadata.title}</h1>
+                <header>
+                    <Link to="/">
+                        <img src={crow} alt="The Moldy Crow" id="crow" />
+                        <h1 className="gradient-glow" data-text={data.site.siteMetadata.title}>
+                            {data.site.siteMetadata.title}
+                        </h1>
+                    </Link>
+                </header>
+                {children}
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>   
@@ -24,7 +33,6 @@ export default ({ children }) => (
                         <li><Link to="/storage">Storage</Link></li>
                     </ul>
                 </nav>
-                {children}
             </main>
         )}
     />

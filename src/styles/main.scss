@@ -4,11 +4,24 @@
 body {
     background-color: black;
     background-image: url("../images/sidebar_bg.png");
+    background-size: auto;
     background-repeat: repeat-y;
     color: white;
-    margin-left: 124px;
+    margin: 0;
+    margin-left: 140px;
     font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
     line-height: 1.5;
+}
+
+body.home {
+    background-image: url("../images/sidebar_bg.png"), url("../images/planet.png");
+    background-size: auto, 500px;
+    background-repeat: repeat-y, no-repeat;
+}
+
+main {
+    max-width: 40em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,5 +45,70 @@ h1, h2, h3, h4, h5, h6 {
         text-shadow: 0 0 3px rgba(255,255,255, 0.8), 0 0 6px rgba(255,255,255,0.8), 1px 1px 0 $glow-border, -1px -1px 0 $glow-border, -1px 1px 0 $glow-border, 1px -1px 0 $glow-border;
         top: 0;
         z-index: -1;
+    }
+}
+
+h1.gradient-glow {
+    font-size: 48px;
+}
+
+a:link, a:visited {
+    color: $teal;
+}
+
+figure {
+    width: 250px;
+    float: right;
+    margin: 0;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-right: -100px;
+}
+
+figcaption {
+    color: $teal;
+    font-family: "Engravers Gothic";
+    font-size: 14px;
+    line-height: 1.25;
+    margin-top: 5px;
+}
+
+header {
+    position: relative;
+    
+    a:link {
+        text-decoration: none;
+    }
+
+    h1.gradient-glow {
+        font-size: 30px;
+    }
+
+    #crow {
+        position: absolute;
+        width: 100px;
+        left: -115px;
+        top: -5px;  
+    }
+}
+
+#homepage_header {
+    height: 170px;
+
+    #crow {
+        width: 215px;
+        top: 30px;
+        left: -75px;
+    }
+
+    h1 {
+        position: absolute;
+        left: 180px;
+        top: 35px;
+        font-size: 60px;
+
+        &:after {
+            text-shadow: 0 0 4px rgba(255,255,255, 0.8), 0 0 7px rgba(255,255,255,0.8), 1px 1px 0 $glow-border, -1px -1px 0 $glow-border, -1px 1px 0 $glow-border, 1px -1px 0 $glow-border;
+        }
     }
 }

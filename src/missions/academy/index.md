@@ -1,7 +1,7 @@
 ---
 mission: academy
 reviewer: "Geoff Elliott"
-review-date: "1996-10-25"
+date: "1996-10-25"
 rating: 94
 editors-choice: yes
 ---
