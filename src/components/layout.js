@@ -1,6 +1,9 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import crow from "../images/crow.png"
+import launchPad from "../images/launch_pad.png"
+import reviewList from "../images/reviews.png"
+import storage from "../images/storage.png"
 
 export default ({ children }) => (
     <StaticQuery
@@ -24,13 +27,37 @@ export default ({ children }) => (
                     </Link>
                 </header>
                 {children}
-                <nav>
+                <nav id="site_navigation">
                     <ul>
-                        <li><Link to="/">Home</Link></li>   
-                        <li><Link to="/reviews/">Reviews</Link></li>
-                        <li><Link to="/launchpad">Launch Pad</Link></li>
-                        <li><Link to="/database">Database</Link></li>
-                        <li><Link to="/storage">Storage</Link></li>
+                        <li className="home_link">
+                            <Link to="/">
+                                <img src={crow} alt="" />
+                                <span>Home</span>
+                            </Link>
+                        </li>   
+                        <li className="review_link">
+                            <Link to="/reviews/">
+                                <img src={reviewList} alt="" />
+                                <span>Reviews</span>
+                            </Link>
+                        </li>
+                        <li className="storage_link">
+                            <Link to="/storage">
+                                <img src={storage} alt="" />
+                                <span>Storage</span>
+                            </Link>
+                        </li>
+                        <li className="launchpad_link">
+                            <Link to="/launchpad">
+                                <img src={launchPad} alt="" />
+                                <span>Launch Pad</span>
+                            </Link>
+                        </li>
+                        <li className="database_link">
+                            <Link to="/database">
+                                <span>Database</span>
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </main>
