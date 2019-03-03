@@ -9,7 +9,7 @@ export default () => (
       <h1 className="gradient-glow" data-text="Database">Database</h1>
       <p>Dark Forces info to come.</p>
 
-      <AnimatedSprite spritePath="/images/GREYOF_sprite.png" width={52} height={76} />
+      <AnimatedSprite spritePath="/images/GREYOF_sprite.png" width={52} height={76} scale={5} />
     </Layout>
   </BodyClassName>
 )

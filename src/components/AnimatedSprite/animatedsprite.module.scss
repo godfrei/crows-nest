@@ -1,7 +1,9 @@
+
+
 .wax {
-    background-repeat: no-repeat;
     background-size: auto;
     image-rendering: crisp-edges;
     // Scale can be determined per use
     // transform: scale(5);
+    transform-origin: top left;
 }
