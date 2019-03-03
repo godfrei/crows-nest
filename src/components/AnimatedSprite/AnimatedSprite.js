@@ -27,6 +27,7 @@ export default class AnimatedSprite extends React.Component {
   }
 
   componentWillUnmount() {
+    document.removeEventListener('mousemove', this.onMouseMove)
     clearInterval(this.timer)
   }
 
