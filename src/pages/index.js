@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import { Link } from "gatsby"
 import BodyClassName from "react-body-classname"
 import crow from "../images/crow.png"

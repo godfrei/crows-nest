@@ -3,8 +3,7 @@ import { graphql, withPrefix, Link } from "gatsby"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
-  console.log(data)
-
+  
   function getReviewLink(node) {
     if (node.frontmatter.mission_id && node.frontmatter.mission_id.frontmatter.rating) {
       return (<Link to={node.frontmatter.mission_id.fields.slug}>Review ({node.frontmatter.mission_id.frontmatter.rating})</Link>)
