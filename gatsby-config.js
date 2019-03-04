@@ -22,8 +22,8 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-              name: `missions`,
-              path: `${__dirname}/src/missions/`,
+              name: `content`,
+              path: `${__dirname}/content/`,
             },
         },
         {

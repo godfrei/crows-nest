@@ -17,7 +17,6 @@ export default ({ data }) => {
 
         <p>Looking for the <a href="/vintage">vintage Crow's Nest</a>?</p>
 
-        <strong>{data.allMarkdownRemark.totalCount} Posts</strong>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link to={node.fields.slug }>
