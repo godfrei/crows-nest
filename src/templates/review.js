@@ -5,12 +5,13 @@ import Rating from "../components/Rating"
 
 export default ({ data }) => {
     const post = data.markdownRemark
+    const mission_info = post.frontmatter.mission.frontmatter
     return (
         <Layout>
-            <h1>{ post.frontmatter.mission.frontmatter.title }</h1>
-            Author: { post.frontmatter.mission.frontmatter.author }
+            <h1>{ mission_info.title }</h1>
+            Author: { mission_info.author }
             <h2>Plot</h2>
-            <p>{post.frontmatter.mission.frontmatter.description}</p>
+            <p>{mission_info.description}</p>
             <h2>Review</h2>
             Reviewed: {post.frontmatter.date} by { post.frontmatter.reviewer }
             <div dangerouslySetInnerHTML={{ __html: post.html }} />

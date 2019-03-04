@@ -20,7 +20,16 @@ exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
     return graphql(`
       {
-        allMarkdownRemark {
+        reviews: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!info)/" }}) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        posts: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/posts/" }}) {
           edges {
             node {
               fields {
@@ -32,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `
   ).then(result => {
-        result.data.allMarkdownRemark.edges.forEach(({node}) => {
+        result.data.reviews.edges.forEach(({node}) => {
             createPage({
                 path: node.fields.slug,
                 component: path.resolve('./src/templates/review.js'),
@@ -41,5 +50,14 @@ exports.createPages = ({ graphql, actions }) => {
                 },
             })
         })
+        result.data.posts.edges.forEach(({node}) => {
+          createPage({
+              path: node.fields.slug,
+              component: path.resolve('./src/templates/post.js'),
+              context: {
+                  slug: node.fields.slug
+              },
+          })
+      })
     })
   }

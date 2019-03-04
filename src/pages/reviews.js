@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import reviewList from "../images/reviews.png"
 
 export default ({ data }) => {
-  console.log(data)
+  console.log(data.allMarkdownRemark.edges)
   return (
     <BodyClassName className="reviews">
       <Layout>
@@ -37,7 +37,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index.md/" }}) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!info)/" }}) {
       totalCount
       edges {
         node {
