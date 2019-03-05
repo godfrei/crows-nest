@@ -1,7 +1,7 @@
 ---
 mission: mtkurek
 reviewer: "Eric Pauker"
-review-date: "1997-06-20"
+date: "1997-06-20"
 rating: 99
 editors-choice: yes
 ---

@@ -17,14 +17,28 @@ export default ({ data }) => {
 
         <p>Looking for the <a href="/vintage">vintage Crow's Nest</a>?</p>
 
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <Link to={node.fields.slug }>
-                <h3>{node.frontmatter.title}</h3>
-                <p>{node.excerpt}</p>
-            </Link>
-          </div>
-        ))}
+        {data.allMarkdownRemark.edges.map(({ node }) => {
+          if(node.frontmatter.title) {
+            return (
+              <div key={node.id}>
+                <Link to={node.fields.slug }>
+                    <h3>{node.frontmatter.title}</h3>
+                    <p>{node.excerpt}</p>
+                </Link>
+              </div>
+            )
+          }
+          else {
+            return (
+              <div key={node.id}>
+                <Link to={node.fields.slug }>
+                    <h3>{node.frontmatter.mission.frontmatter.title}</h3>
+                    <p>{node.excerpt}</p>
+                </Link>
+              </div>
+            )
+          }
+        })}
 
       </main>
     </BodyClassName>
@@ -33,14 +47,28 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/posts/" }}) {
-      totalCount
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/(missions|posts)\/.*\/(?!info)/" }}
+      limit:5
+      sort: {
+        fields: frontmatter___date
+        order:DESC
+      }
+    ) {
       edges {
         node {
           id
           frontmatter {
             title
             author
+            date(formatString: "MMMM Do, YYYY")
+            mission {
+              frontmatter {
+                title
+                author
+                description
+              }
+            }
           }
           fields {
               slug
