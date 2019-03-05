@@ -37,7 +37,13 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!info)/" }}) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!info)/" }}
+      sort: {
+        fields: frontmatter___date
+        order:DESC
+      }
+    ) {
       totalCount
       edges {
         node {
