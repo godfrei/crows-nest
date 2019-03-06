@@ -12,6 +12,7 @@ wax: yes
 3do: yes
 voc: yes
 gmd: yes
+vue: yes
 lfd: yes
 base: "New level from scratch" 
 editors: "WDFUSE 2.**"

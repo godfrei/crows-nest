@@ -12,6 +12,7 @@ wax: no
 3do: yes
 voc: yes
 gmd: yes
+vue: no
 lfd: yes
 base: "New level from scratch" 
 editors: "DFUSE 1.00"

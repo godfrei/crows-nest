@@ -3,7 +3,7 @@ import { graphql, withPrefix, Link } from "gatsby"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
-  
+
   function getReviewLink(node) {
     if (node.frontmatter.mission_id && node.frontmatter.mission_id.frontmatter.rating) {
       return (<Link to={node.frontmatter.mission_id.fields.slug}>Review ({node.frontmatter.mission_id.frontmatter.rating})</Link>)
@@ -35,7 +35,13 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    levels:allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/info/" }}) {
+    levels:allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/info/" }}
+      sort: {
+        fields: frontmatter___title
+        order:ASC
+      }
+    ) {
       totalCount
       edges {
         node {
