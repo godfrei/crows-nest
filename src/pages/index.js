@@ -62,13 +62,6 @@ export const query = graphql`
             title
             author
             date(formatString: "MMMM Do, YYYY")
-            mission {
-              frontmatter {
-                title
-                author
-                description
-              }
-            }
           }
           fields {
               slug

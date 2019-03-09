@@ -50,14 +50,6 @@ export const query = graphql`
           id
           frontmatter {
             rating
-            mission_id {
-              frontmatter {
-                title
-                date(formatString: "DD MMMM, YYYY")
-                description
-                author
-              }
-            }
           }
           fields {
               slug

@@ -3,10 +3,12 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Rating from "../components/Rating"
 
-export default ({ data }) => {
+export default ({ pageContext, data }) => {
   console.log(data)
+  console.log(pageContext)
   const post = data.markdownRemark
-  const review = post.frontmatter.mission_id
+  const reviews = data.allMarkdownRemark.edges
+  // const review = post.frontmatter.mission_id
   return (
     <Layout>
       <h1>{ post.frontmatter.title }</h1>
@@ -14,27 +16,42 @@ export default ({ data }) => {
       <h2>Plot</h2>
       <p>{post.frontmatter.description}</p>
       <h2>Review</h2>
-      Reviewed: {review.frontmatter.date} by { review.frontmatter.reviewer }
-      <div dangerouslySetInnerHTML={{ __html: review.html }} />
-      <Rating score={ review.frontmatter.rating } />
+      {reviews.map(({ node }) => {
+        return (
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+        )
+      })}
     </Layout>
   )
 }
 
+// fileAbsolutePath: { regex: "/missions\/.*\/review.*/" }
+// frontmatter: { mission: { in: [$slug] } } 
+
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $reviewRegex: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         author
         description
         date(formatString: "MMMM Do, YYYY")
-        mission_id {
+      }
+    }
+    allMarkdownRemark(
+      limit: 2000
+      filter: { 
+        fields: { slug: { regex: $reviewRegex } }
+      }
+    ) {
+      totalCount
+      edges {
+        node {
           html
           frontmatter {
             reviewer
             rating
-            date(formatString: "MMMM Do, YYYY")
+            date
           }
         }
       }

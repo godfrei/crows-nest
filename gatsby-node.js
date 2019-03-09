@@ -42,11 +42,15 @@ exports.createPages = ({ graphql, actions }) => {
     `
   ).then(result => {
         result.data.missions.edges.forEach(({node}) => {
+            const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
+            console.log(escapedSlug)
+            const reviewRegex = `/${node.fields.slug}review.*/`
             createPage({
                 path: node.fields.slug,
                 component: path.resolve('./src/templates/mission.js'),
                 context: {
-                    slug: node.fields.slug
+                    slug: node.fields.slug,
+                    reviewRegex: reviewRegex
                 },
             })
         })
