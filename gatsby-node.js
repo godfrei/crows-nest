@@ -20,7 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
     return graphql(`
       {
-        reviews: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!info)/" }}) {
+        missions: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/index/" }}) {
           edges {
             node {
               fields {
@@ -41,10 +41,10 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `
   ).then(result => {
-        result.data.reviews.edges.forEach(({node}) => {
+        result.data.missions.edges.forEach(({node}) => {
             createPage({
                 path: node.fields.slug,
-                component: path.resolve('./src/templates/review.js'),
+                component: path.resolve('./src/templates/mission.js'),
                 context: {
                     slug: node.fields.slug
                 },

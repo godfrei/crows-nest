@@ -19,13 +19,13 @@ export default ({ data }) => {
 
           <p>All the levels are available in <Link to="/storage">Storage</Link> for download. For easier access I've also included a download link at the end of each of the reviews.</p>
 
-          <strong>{data.allMarkdownRemark.totalCount} Posts</strong>
+          <strong>{data.allMarkdownRemark.totalCount} Missions</strong>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
               <Link to={node.fields.slug }>
-                  <h3>{node.frontmatter.mission.frontmatter.title}</h3>
-                  <p>{node.frontmatter.mission.frontmatter.description}</p>
-                  <p>{node.frontmatter.rating}</p>
+                  <h3>{node.frontmatter.title}</h3>
+                  <p>{node.frontmatter.description}</p>
+                  <p>{node.frontmatter.mission_id.frontmatterrating}</p>
               </Link>
             </div>
           ))}
@@ -38,7 +38,7 @@ export default ({ data }) => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!info)/" }}
+      filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!index)/" }}
       sort: {
         fields: frontmatter___date
         order:DESC
@@ -50,7 +50,7 @@ export const query = graphql`
           id
           frontmatter {
             rating
-            mission {
+            mission_id {
               frontmatter {
                 title
                 date(formatString: "DD MMMM, YYYY")
