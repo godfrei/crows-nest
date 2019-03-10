@@ -1,6 +1,6 @@
 ---
 title: Moving to swgamers.com
-date: 1997-09-30
+date: "1997-09-30"
 author: Geoff Elliott
 ---
 

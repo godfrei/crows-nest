@@ -1,0 +1,66 @@
+================================================================
+Title                   : Operation Archangel
+			  (Multipack Release - July 2000)   
+Filename                : ARCMP.ZIP
+Author                  : Lionel Fouillen
+Email Address           : fouillen@denholm.be
+Misc. Author Info       : a 30-year-old Star Wars fan
+			  from Belgium
+
+Description             : This multipack release contains the
+			  following missions:
+
+1 - Full version of "Mos Eisley: The Maze" released in 1996
+2 - Full version of "Dungeons of Gamorra" released in 1997
+3 - Demo version of "The Storming of Anterak City" (1998-2000)
+
+Additional Credits to   : Vincent Hubin, Allen Newman,
+			  Peter Klassen
+
+================================================================
+
+* Play Information *
+
+How to play:
+
+- PC users: extract all files to your "DARK" directory then
+  launch the "arcmp.bat" file.
+- MAC users: place the "arcmp.lfd" file in your "DARK/LFD"
+  directory and rename it "dfbrief.lfd".
+
+Level replaced          : SECBASE / TESTBASE / EXECUTOR
+Difficulty Settings     : Not implemented
+New BMs                 : by Fouillen and Allen Newman
+New FMEs                : by Fouillen
+New WAXs                : by Fouillen, Troy Benge, Ales Ptacek
+New 3DOs                : by Peter Klassen
+New VOCs                : by Allen Newman
+New GMDs                : No
+New VUEs                : No
+New Briefings           : by Allen Newman
+New Cutscenes           : by Allen Newman
+New Weapon		: "The Black Whirlwind" by Vincent
+			  Hubin
+
+* Construction *
+
+Base                    : New levels from scratch
+Editor(s) used          : WDFUSE 2.5
+Known Bugs              : slight homing in the cave of Gamorra
+
+
+* Copyright / Permissions *
+
+Authors may NOT use this level as a base to build additional
+levels.  
+
+You MAY distribute this level, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact. You are not allowed to rent or sell this level and make
+money with it by any possible way.
+
+* Where to get this level *
+
+The Operation Archangel Homepage at
+http://www.denholm.be/darkforces

@@ -1,6 +1,6 @@
 ---
 title: Archangel Part III Still In Development
-date: 1997-09-16
+date: "1997-09-16"
 author: Geoff Elliott
 ---
 

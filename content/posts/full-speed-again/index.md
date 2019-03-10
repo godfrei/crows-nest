@@ -1,6 +1,6 @@
 ---
 title: "Full Speed Again"
-date: 1997-09-13
+date: "1997-09-13"
 author: Geoff Elliott
 ---
 

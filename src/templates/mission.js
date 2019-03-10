@@ -67,6 +67,10 @@ export const query = graphql`
       filter: { 
         fields: { slug: { regex: $reviewRegex } }
       }
+      sort: {
+        fields: frontmatter___date
+        order:ASC
+      }
     ) {
       totalCount
       edges {
