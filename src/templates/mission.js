@@ -4,26 +4,37 @@ import Layout from "../components/layout"
 import Review from "../components/Review"
 
 export default ({ pageContext, data }) => {
+  console.log(data)
+
+  function getReviewContent(reviews) {
+    let reviewContent = null
+    if(reviews.length >= 1) {
+      reviewContent = (
+        <div>
+          <h2>Review</h2>
+          {reviews.map(({ node }) => {
+            return (
+              <Review key={node.id} node={node} />
+            )
+          })}
+        </div>
+      )
+    }
+    return reviewContent
+  }
+
   const post = data.markdownRemark
-  const reviews = data.allMarkdownRemark.edges
+  const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
   return (
     <Layout>
       <h1>{ post.frontmatter.title }</h1>
       Author: { post.frontmatter.author }
       <h2>Plot</h2>
       <p>{post.frontmatter.description}</p>
-      <h2>Review</h2>
-      {reviews.map(({ node }) => {
-        return (
-          <Review node={node} />
-        )
-      })}
+      {getReviewContent(reviews)}
     </Layout>
   )
 }
-
-// fileAbsolutePath: { regex: "/missions\/.*\/review.*/" }
-// frontmatter: { mission: { in: [$slug] } } 
 
 export const query = graphql`
   query($slug: String!, $reviewRegex: String!) {
@@ -44,6 +55,7 @@ export const query = graphql`
       totalCount
       edges {
         node {
+          id
           html
           frontmatter {
             reviewer

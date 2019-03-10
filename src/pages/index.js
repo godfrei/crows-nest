@@ -44,11 +44,12 @@ export default ({ data }) => {
     </BodyClassName>
   )
 }
+// filter: { fileAbsolutePath: { regex: "/(missions|posts)\/.*\/(?:review)?.*/" }}
 
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/(missions|posts)\/.*\/(?!info)/" }}
+      filter: { fileAbsolutePath: { regex: "/(\/missions\/.*\/review.*)|(\/posts\/.*\/)/" }}
       limit:5
       sort: {
         fields: frontmatter___date

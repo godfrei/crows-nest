@@ -22,10 +22,10 @@ export default ({ data }) => {
           <strong>{data.allMarkdownRemark.totalCount} Missions</strong>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
-              <Link to={node.fields.slug }>
-                  <h3>{node.frontmatter.title}</h3>
-                  <p>{node.frontmatter.description}</p>
-                  <p>{node.frontmatter.mission_id.frontmatterrating}</p>
+              <Link to={node.frontmatter.mission.fields.slug}>
+                  <h3>{node.frontmatter.mission.frontmatter.title}</h3>
+                  <p>{node.frontmatter.mission.frontmatter.description}</p>
+                  <p>{node.frontmatter.rating}</p>
               </Link>
             </div>
           ))}
@@ -38,7 +38,7 @@ export default ({ data }) => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/missions\/.*\/(?!index)/" }}
+      filter: { fileAbsolutePath: { regex: "/missions\/.*\/review.*/" }}
       sort: {
         fields: frontmatter___date
         order:DESC
@@ -50,6 +50,16 @@ export const query = graphql`
           id
           frontmatter {
             rating
+            mission {
+              frontmatter {
+                title
+                description
+                author
+              }
+              fields {
+                slug
+              }
+            }
           }
           fields {
               slug
