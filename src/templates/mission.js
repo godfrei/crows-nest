@@ -1,14 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Rating from "../components/Rating"
+import Review from "../components/Review"
 
 export default ({ pageContext, data }) => {
-  console.log(data)
-  console.log(pageContext)
   const post = data.markdownRemark
   const reviews = data.allMarkdownRemark.edges
-  // const review = post.frontmatter.mission_id
   return (
     <Layout>
       <h1>{ post.frontmatter.title }</h1>
@@ -18,7 +15,7 @@ export default ({ pageContext, data }) => {
       <h2>Review</h2>
       {reviews.map(({ node }) => {
         return (
-          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          <Review node={node} />
         )
       })}
     </Layout>

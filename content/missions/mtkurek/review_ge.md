@@ -2,7 +2,6 @@
 mission: mtkurek
 reviewer: "Geoff Elliott"
 date: "1997-06-20"
-rating: 99
 ---
 
 I was a fairly extensive Beta tester for this level, so I don't feel right in doing a proper review. But I have a few comments to make that hopefully won't spoil it for you. This level has some very incredible new items in it. The INF work that went in is unbelievable(can the DF engine go much further?) and the story, while perhaps a bit strained is still interesting and fresh. The added bit of the volcano will provide plenty of interesting surprises. And I'll warn you now that the ending is so climatic that you'll be sweating. I personally let out a big "YEAH!" after playing this the first time, such was the rush. I've never done that before on any level; so I can recommend you check this out, because you won't be disappointed.
