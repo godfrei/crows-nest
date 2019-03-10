@@ -1,7 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import Layout from "../components/layout"
 import Review from "../components/Review"
+import TechSpecs from "../components/TechSpecs"
 
 export default ({ pageContext, data }) => {
   console.log(data)
@@ -32,18 +33,33 @@ export default ({ pageContext, data }) => {
       <h2>Plot</h2>
       <p>{post.frontmatter.description}</p>
       {getReviewContent(reviews)}
+      <TechSpecs node={post} />
+      <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) }>Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) </a>
     </Layout>
   )
 }
 
 export const query = graphql`
-  query($slug: String!, $reviewRegex: String!) {
+  query($slug: String!, $reviewRegex: String!, $filename: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         author
         description
         date(formatString: "MMMM Do, YYYY")
+        filename
+        levelReplaced
+        difficulty
+        bm
+        fme
+        wax
+        three_do
+        voc
+        gmd
+        vue
+        lfd
+        base
+        editors
       }
     }
     allMarkdownRemark(
@@ -60,10 +76,14 @@ export const query = graphql`
           frontmatter {
             reviewer
             rating
-            date
+            date(formatString: "MMMM Do, YYYY")
           }
         }
       }
+    }
+    file(relativePath: { eq: $filename }) {
+      absolutePath
+      prettySize
     }
   }
 `

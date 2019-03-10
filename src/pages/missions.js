@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, withPrefix, Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
@@ -18,12 +18,9 @@ export default ({ data }) => {
         <h1>Missions</h1>
         <ul>
           {data.levels.edges.map(({ node }) => {
-            // const folders = node.fields.slug.split('/');
-            // const mission_title = folders[2]; // Structure is "/levels/*mission_title*/info/"
             const review_info = getReviewInfo(node);
             return (
               <li key={node.id}>
-                {/* <a href={ withPrefix(`/missions/${mission_title}.zip`) }>{node.frontmatter.title}</a> */}
                 <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
                 {review_info}
               </li>

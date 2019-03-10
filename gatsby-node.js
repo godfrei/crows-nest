@@ -23,6 +23,9 @@ exports.createPages = ({ graphql, actions }) => {
         missions: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/index/" }}) {
           edges {
             node {
+              frontmatter {
+                filename
+              }
               fields {
                 slug
               }
@@ -43,14 +46,14 @@ exports.createPages = ({ graphql, actions }) => {
   ).then(result => {
         result.data.missions.edges.forEach(({node}) => {
             const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
-            console.log(escapedSlug)
             const reviewRegex = `/${node.fields.slug}review.*/`
             createPage({
                 path: node.fields.slug,
                 component: path.resolve('./src/templates/mission.js'),
                 context: {
                     slug: node.fields.slug,
-                    reviewRegex: reviewRegex
+                    reviewRegex: reviewRegex,
+                    filename: node.frontmatter.filename
                 },
             })
         })
