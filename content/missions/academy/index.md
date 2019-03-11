@@ -1,5 +1,6 @@
 ---
 mission_id: academy
+editorsChoice: yes
 title: "Imperial Academy"
 author: "Agustin Leon"
 date: "1996-12-20"

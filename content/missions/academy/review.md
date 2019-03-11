@@ -3,7 +3,6 @@ mission: academy
 reviewer: "Geoff Elliott"
 date: "1996-10-25"
 rating: 94
-editors-choice: yes
 ---
 
 This is a challenging level. 

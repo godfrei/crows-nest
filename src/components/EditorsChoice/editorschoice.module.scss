@@ -1,0 +1,32 @@
+@import '../../styles/colors';
+
+.editorsChoice {
+    float: right;
+    background-image: url("../../images/editors_choice_crow.png");
+    background-size: auto 45px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: rgba($teal, 0.1);
+    width: 145px;
+    padding: 10px 10px;
+    padding-right: 55px;
+    line-height: 1.1;
+    // height: 45px;
+    font-family: "Engravers Gothic";
+    border: 1px solid rgba($teal, 0.5);
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+
+    &:link, &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        border-color: $teal;
+    }
+
+    strong {
+        color: $teal;
+        vertical-align: middle;
+    }
+}

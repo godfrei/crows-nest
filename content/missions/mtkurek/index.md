@@ -1,5 +1,6 @@
 ---
 mission_id: mtkurek
+editorsChoice: yes
 title: "Mt. Kurek"
 author: "Jeff Walters"
 date: "1997-06"

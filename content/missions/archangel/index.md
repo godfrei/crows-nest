@@ -1,5 +1,6 @@
 ---
 mission_id: archangel
+editorsChoice: yes
 title: "Operation Archangel Episode I - Mos Eisley: The Maze"
 author: "Lionel Fouillen"
 date: "1996"

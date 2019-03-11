@@ -3,7 +3,6 @@ mission: "arc-hunt"
 reviewer: "Geoff Elliott"
 date: ""
 rating: 93
-editors-choice: no
 ---
 
 I really enjoy it when an author decides to make a level because they have an interesting story to tell(at least when they do a good job with it). Anyone who has read any of my reviews knows how much stock I put in the story beind a level. Here is some of the proof. The author has started out with a continuation of the Dark Forces story, using the various aspects LucasArts provided for us and taking them to new and exciting levels.

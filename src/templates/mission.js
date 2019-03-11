@@ -3,6 +3,7 @@ import { graphql, withPrefix } from "gatsby"
 import Layout from "../components/layout"
 import Review from "../components/Review"
 import TechSpecs from "../components/TechSpecs"
+import EditorsChoice from "../components/EditorsChoice"
 
 export default ({ pageContext, data }) => {
   console.log(data)
@@ -24,11 +25,22 @@ export default ({ pageContext, data }) => {
     return reviewContent
   }
 
+  function getEditorsChoice(post) {
+    let editorsChoice = null
+    if(post.frontmatter.editorsChoice === "yes") {
+      editorsChoice = (
+        <EditorsChoice />
+      )
+    }
+    return editorsChoice
+  }
+
   const post = data.markdownRemark
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
   return (
     <Layout>
       <h1>{ post.frontmatter.title }</h1>
+      {getEditorsChoice(post)}
       Author: { post.frontmatter.author }
       <h2>Plot</h2>
       <p>{post.frontmatter.description}</p>
@@ -44,6 +56,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+        editorsChoice
         author
         description
         date(formatString: "MMMM Do, YYYY")

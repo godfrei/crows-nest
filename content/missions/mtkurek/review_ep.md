@@ -3,7 +3,6 @@ mission: mtkurek
 reviewer: "Eric Pauker"
 date: "1997-06-20"
 rating: 99
-editors-choice: yes
 ---
 
 When I first heard about this level a month or two ago I thought to myself, "How could anyone create a realistic volcano using the Dark Forces engine?". Well, I guess the answer is "Lots of INF programming". Which is what this level has.

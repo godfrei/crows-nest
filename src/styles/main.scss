@@ -1,3 +1,4 @@
+@import 'remedy';
 @import 'colors';
 @import 'fonts';
 
@@ -72,7 +73,7 @@ a:link, a:visited {
 }
 
 figure {
-    width: 250px;
+    width: 320px;
     float: right;
     margin: 0;
     margin-left: 1em;
@@ -147,6 +148,7 @@ header {
             font-family: "Engravers Gothic";
             font-size: 14px;
             display: block;
+            transition: color 0.2s ease;
         }
 
         a:hover {
