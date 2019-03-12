@@ -4,6 +4,7 @@ import crow from "../images/crow.png"
 import launchPad from "../images/launch_pad.png"
 import reviewList from "../images/reviews.png"
 import storage from "../images/storage.png"
+import database from "../images/database.png"
 
 export default ({ children }) => (
     <StaticQuery
@@ -55,6 +56,7 @@ export default ({ children }) => (
                         </li>
                         <li className="database_link">
                             <Link to="/database">
+                                <img src={database} alt="" />
                                 <span>Database</span>
                             </Link>
                         </li>
