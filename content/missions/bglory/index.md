@@ -1,0 +1,22 @@
+---
+mission_id: bglory
+editorsChoice:
+title: "Beyond Glory"
+author: "Kevin Buscemi"
+date: "1999-04"
+filename: "bglory.zip"
+description: "Kyle Katarn must aid in the destruction of yet another Imperial super-weapon.  The madman who designed it, however, has no intention of letting his prized creation be eliminated."
+levelReplaced:	SECBASE
+difficulty: yes
+bm:	yes
+fme: yes
+wax: yes
+three_do: no
+voc: yes
+gmd: yes
+vue: no
+lfd: yes
+base: "New level from scratch" 
+editors: "WEDIT 3.20"
+
+---
