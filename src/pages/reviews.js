@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import BodyClassName from "react-body-classname"
 import Layout from "../components/layout"
+import GradientTitle from "../components/GradientTitle"
 import reviewList from "../images/reviews.png"
 
 export default ({ data }) => {
@@ -11,7 +12,7 @@ export default ({ data }) => {
       <Layout>
         <div>
           <img src={reviewList} alt="" className="section_icon" />
-          <h1 className="gradient-glow" data-text="Reviews">Reviews</h1>
+          <GradientTitle title="Reviews" />
 
           <p>The Review section is split into two different categories. The first is levels with a plot, that follow along the lines of the levels included in the original Dark Forces. Levels are organized alphabetically, and each level gets a detailed review and a percentage rating. The second category, Showcase Levels, deals with levels where the author has not made much effort to create a detailed environment accompanied by a story but really has put together a short segment to 'showcase' some loophole or feature of the Dark Forces engine, to test an idea that could be used in future levels, or just to have some fun. For each of those I explain what's going on in the level and give you a simple recommendation on whether it might be worth your time.</p>
 

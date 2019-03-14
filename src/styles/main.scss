@@ -3,53 +3,32 @@
 @import 'fonts';
 
 body {
-    background-color: black;
-    background-image: url("../images/sidebar_bg.png");
-    background-size: auto;
-    background-repeat: repeat-y;
+    background-color: #333;
+    // background-image: url("../images/sidebar_bg.png");
+    // background-size: auto;
+    // background-repeat: repeat-y;
     color: white;
     margin: 0;
-    margin-left: 140px;
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     line-height: 1.5;
 }
 
-body.home {
-    background-image: url("../images/sidebar_bg.png"), url("../images/planet.png");
-    background-size: auto, 500px;
-    background-repeat: repeat-y, no-repeat;
+main {
+    background-color: black;
 }
 
-main {
-    max-width: 40em;
+body.home main {
+    background-image: url("../images/planet.png");
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Engravers Gothic";
 }
 
-.gradient-glow {
-    font-family: "Times New Roman", serif;
-    font-weight: 900;
-    background-image: linear-gradient($teal, black 65%, black);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-
-    &:after {
-        background: none;
-        content: attr(data-text);
-        left: 0;
-        position: absolute;
-        text-shadow: 0 0 3px rgba(255,255,255, 0.8), 0 0 6px rgba(255,255,255,0.8), 1px 1px 0 $glow-border, -1px -1px 0 $glow-border, -1px 1px 0 $glow-border, 1px -1px 0 $glow-border;
-        top: 0;
-        z-index: -1;
-    }
-}
-
-h1.gradient-glow {
+h1 {
     font-size: 48px;
 }
 
@@ -89,22 +68,33 @@ figcaption {
     margin-top: 5px;
 }
 
-header {
-    position: relative;
-    
-    a:link {
-        text-decoration: none;
+main > header {
+    display: flex;
+    align-items: center;
+    background-image: url("../images/planet.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+
+    > * {
+        flex-grow: 1;
     }
 
-    h1.gradient-glow {
-        font-size: 30px;
+    .site_title {
+        a:link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        margin: 0;
     }
 
     #crow {
-        position: absolute;
-        width: 100px;
-        left: -115px;
-        top: -5px;  
+        width: 100px;  
+        margin-left: 10px;
+        margin-right: 20px;
     }
 }
 
@@ -112,15 +102,16 @@ header {
     height: 170px;
 
     #crow {
+        position: absolute;
         width: 215px;
-        top: 30px;
-        left: -75px;
+        top: 42px;
+        left: 100px;
     }
 
     h1 {
         position: absolute;
-        left: 180px;
-        top: 35px;
+        left: 334px;
+        top: 58px;
         font-size: 60px;
 
         &:after {
@@ -129,54 +120,7 @@ header {
     }
 }
 
-#site_navigation {
-    clear: both;
-
-    ul {
-        padding: 0;
-    }
-
-    li {
-        display: inline-block;
-        text-align: center;
-        margin: 0 10px;
-        min-width: 80px;
-
-        a:link, a:visited {
-            text-decoration: none;
-            color: white;
-            font-family: "Engravers Gothic";
-            font-size: 14px;
-            display: block;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: $teal;
-        }
-
-        img {
-            display: block;
-            margin: auto;
-            max-height: 60px;
-        }
-
-        span {
-            line-height: 2;
-        }
-    }
-
-    body.reviews & .review_link,
-    body.storage & .storage_link,
-    body.database & .database_link,
-    body.launchpad & .launchpad_link {
-        a:link, a:visited, a:hover {
-            color: #666;
-            cursor: default;
-    
-            img {
-                opacity: 0.3;
-            }
-        }
-    }
+.content {
+    max-width: 40em;
+    margin: auto;
 }
