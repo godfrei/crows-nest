@@ -7,29 +7,33 @@ import storage from "../../images/storage.png"
 import database from "../../images/database.png"
 
 export default () => {
+    const linkProps = {
+        activeClassName: navStyles.active,
+        partiallyActive: true
+    }
     return (
         <nav className={navStyles.navigation}>
             <ul> 
                 <li className="review_link">
-                    <Link to="/reviews/">
+                    <Link to="/missions/" {...linkProps}>
                         <img src={reviewList} alt="" />
-                        <span>Reviews</span>
+                        <span>Missions</span>
                     </Link>
                 </li>
                 <li className="storage_link">
-                    <Link to="/storage">
+                    <Link to="/storage" {...linkProps}>
                         <img src={storage} alt="" />
                         <span>Storage</span>
                     </Link>
                 </li>
                 <li className="launchpad_link">
-                    <Link to="/launchpad">
+                    <Link to="/launchpad" {...linkProps}>
                         <img src={launchPad} alt="" />
                         <span>Launch Pad</span>
                     </Link>
                 </li>
                 <li className="database_link">
-                    <Link to="/database">
+                    <Link to="/database" {...linkProps}>
                         <img src={database} alt="" />
                         <span>Database</span>
                     </Link>
