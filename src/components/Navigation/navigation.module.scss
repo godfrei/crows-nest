@@ -3,15 +3,15 @@
 .navigation {
     clear: both;
 
-    &:after {
-        content: "";
-        display: block;
-        height: 1px;
-        background-image: linear-gradient(to left, white, transparent);
-    }
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     height: 1px;
+    //     background-image: linear-gradient(to left, $glow-border, $glow-border 200px, transparent);
+    // }
 
     ul {
-        padding: 20px 0 10px;
+        padding: 20px 10px 0;
         margin: 0;
         text-align: right;
     }

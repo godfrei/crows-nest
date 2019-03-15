@@ -37,16 +37,27 @@ export default ({ pageContext, data }) => {
 
   const post = data.markdownRemark
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
+  const heroImage = (post.frontmatter.heroImage) ? post.frontmatter.heroImage.publicURL : "";
+  const hasHeroImage = (post.frontmatter.heroImage) ? "hasHeroImage" : "";
   return (
     <Layout>
-      <h1>{ post.frontmatter.title }</h1>
-      {getEditorsChoice(post)}
-      Author: { post.frontmatter.author }
-      <h2>Plot</h2>
-      <p>{post.frontmatter.description}</p>
-      {getReviewContent(reviews)}
-      <TechSpecs node={post} />
-      <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) }>Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) </a>
+      <div className={`mission ${hasHeroImage}`}>
+        <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
+        <header>
+          <div>
+            {getEditorsChoice(post)}
+            <h1>{ post.frontmatter.title }</h1>
+            Author: { post.frontmatter.author }
+          </div>
+        </header>
+        <div className="content">
+          <h2>Plot</h2>
+          <p>{post.frontmatter.description}</p>
+          {getReviewContent(reviews)}
+          <TechSpecs node={post} />
+          <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) }>Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) </a>
+        </div>
+      </div>
     </Layout>
   )
 }
@@ -60,6 +71,9 @@ export const query = graphql`
         author
         description
         date(formatString: "MMMM Do, YYYY")
+        heroImage {
+          publicURL
+        }
         filename
         levelReplaced
         difficulty

@@ -28,9 +28,7 @@ export default ({ children }) => (
                     <Navigation />
 
                 </header>
-                <div className="content">
-                    {children}
-                </div>
+                {children}
                 <Footer />
             </main>
         )}
