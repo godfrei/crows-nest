@@ -44,8 +44,8 @@ export default ({ pageContext, data }) => {
       <div className={`mission ${hasHeroImage}`}>
         <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
         <header>
-          <div>
-            {getEditorsChoice(post)}
+          {getEditorsChoice(post)}
+          <div className="content">
             <h1>{ post.frontmatter.title }</h1>
             Author: { post.frontmatter.author }
           </div>

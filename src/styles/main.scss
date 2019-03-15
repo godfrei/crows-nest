@@ -137,12 +137,15 @@ main > header {
     max-width: 44em;
     padding: 2em;
     margin: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .mission {
     position: relative;
     z-index: 1;
     text-shadow: 1px 1px 0 black, 0 0 40px rgba(0,0,0,0.6);
+    padding-top: 10vh;
 
     &:after {
         position: absolute;
@@ -176,17 +179,16 @@ main > header {
     header {
         background-color: rgba($gray,0.85);
         border-left: 10px solid $teal;
-        padding: 40px;
-        padding-left: 100px;
+        // padding: 40px;
+        // padding-left: 100px;
         backdrop-filter: blur(3px);
         position: relative;
         z-index: 3;
-        margin-left: 250px;
+        margin-left: 10vw;
         text-shadow: 1px 1px 0 black, 0 0 40px rgba(0,0,0,0.6);
-    }
 
-    .content {
-        position: relative;
-        z-index: 2;
+        .content {
+            left: calc((5vw + 6px) * -1)
+        }
     }
 }
