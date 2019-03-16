@@ -1,0 +1,33 @@
+@import '../../styles/colors';
+
+.techspecs {
+    clear: both;
+    background-color: rgba($teal, 0.1);
+    margin: 20px 0;
+    padding: 1px 20px;
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.components {
+    li {
+        display: inline-block;
+        text-align: center;
+        padding: 0 1em; 
+
+        strong {
+            display: block;
+        }
+
+        img {
+            width: 20px;
+            display: inline-block;
+        }
+    }
+}

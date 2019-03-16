@@ -1,12 +1,13 @@
 import React from "react"
 import Rating from "../Rating"
+import reviewStyles from "./review.module.scss"
 
 export default ({ node }) => {
     return(
-        <div>
+        <article className={reviewStyles.review}>
             <p>Reviewed {node.frontmatter.date} by {node.frontmatter.reviewer}</p>
             <div dangerouslySetInnerHTML={{ __html: node.html }} />
             <Rating score={node.frontmatter.rating} />
-        </div>
+        </article>
     )
 }
