@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql, withPrefix } from "gatsby"
 import _ from "lodash"
+import Helmet from "react-helmet"
+import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
 import Review from "../components/Review"
 import TechSpecs from "../components/TechSpecs"
@@ -42,6 +44,9 @@ export default ({ pageContext, data }) => {
   const hasHeroImage = (post.frontmatter.heroImage) ? "hasHeroImage" : "";
   return (
     <Layout>
+      <Helmet>
+        <title>{`${post.frontmatter.title} | ${config.siteTitle}`}</title>
+      </Helmet>
       <div className={`mission ${hasHeroImage}`}>
         <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
         <header>

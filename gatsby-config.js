@@ -1,10 +1,24 @@
+const config = require("./data/SiteConfig");
+
 module.exports = {
     siteMetadata: {
-      title: `The Crow's Nest`,
+      title: config.siteTitle,
     },
     pathPrefix: `/missions`,
     plugins: [
         'gatsby-plugin-sass',
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: config.siteTitle,
+                short_name: config.siteTitleShort,
+                start_url: `/`,
+                background_color: config.backgroundColor,
+                theme_color: config.themeColor,
+                icon: config.siteLogo,
+                include_favicon: true,
+            },
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {

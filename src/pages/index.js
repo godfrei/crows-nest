@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import BodyClassName from "react-body-classname"
+import Helmet from "react-helmet"
+import config from "../../data/SiteConfig"
 import Navigation from "../components/Navigation"
 import GradientTitle from "../components/GradientTitle"
 import crow from "../images/crow.png"
@@ -11,6 +13,10 @@ export default ({ data }) => {
   return (
     <BodyClassName className="home">
       <main>
+        <Helmet>
+          <title>{config.siteTitle}</title>
+          <meta name="description" content={config.siteDescription} />
+        </Helmet>
         <header id="homepage_header">
           <img src={crow} alt="The Moldy Crow" id="crow" />
           <GradientTitle title="The Crow's Nest" />

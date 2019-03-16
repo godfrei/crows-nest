@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Helmet from "react-helmet"
+import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
 import GradientTitle from "../components/GradientTitle"
 import reviewList from "../images/reviews.png"
@@ -8,6 +10,9 @@ export default ({ data }) => {
   console.log(data.allMarkdownRemark.edges)
   return (
     <Layout>
+      <Helmet>
+        <title>Reviews | {config.siteTitle}</title>
+      </Helmet>
       <div>
         <img src={reviewList} alt="" className="section_icon" />
         <GradientTitle title="Reviews" />

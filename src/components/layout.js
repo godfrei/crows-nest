@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
+import Helmet from "react-helmet"
+import config from "../../data/SiteConfig"
 import Navigation from "./Navigation"
 import crow from "../images/crow.png"
 import GradientTitle from "./GradientTitle";
@@ -18,6 +20,9 @@ export default ({ children }) => (
         `}
         render={data => (
             <main>
+                <Helmet>
+                    <meta name="description" content={config.siteDescription} />
+                </Helmet>
                 <header>
                     <div className="site_title">
                         <Link to="/">

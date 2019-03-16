@@ -1,11 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
+import config from "../../../data/SiteConfig"
 import Layout from "../../components/layout"
 
 export default ({data}) => {
   console.log(data)
   return (
     <Layout>
+      <Helmet>
+        <title>Editor's Choice | {config.siteTitle}</title>
+      </Helmet>
       <h1>Editor's Choice</h1>
       <p>The best of the best.</p>
 

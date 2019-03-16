@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Helmet from "react-helmet"
+import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
 
 export default ({ pageContext, data }) => {
@@ -11,6 +13,9 @@ export default ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{`${author} | ${config.siteTitle}`}</title>
+      </Helmet>
       <h1>{authorHeader}</h1>
       <ul>
         {edges.map(({ node }) => {

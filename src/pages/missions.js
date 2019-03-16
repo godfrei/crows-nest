@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Helmet from "react-helmet"
+import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
@@ -14,6 +16,9 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Missions | {config.siteTitle}</title>
+      </Helmet>
       <div>
         <h1>Missions</h1>
         <ul>
