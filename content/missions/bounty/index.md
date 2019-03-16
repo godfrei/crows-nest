@@ -2,7 +2,8 @@
 mission_id: bounty
 editorsChoice: yes
 title: "The Bounty Hunt"
-author: "Peter Klassen"
+authors: 
+    - "Peter Klassen"
 date: "1997-06"
 filename: "bhse.zip"
 description: "

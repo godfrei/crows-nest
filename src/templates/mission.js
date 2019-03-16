@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql, withPrefix } from "gatsby"
+import { Link, graphql, withPrefix } from "gatsby"
+import _ from "lodash"
 import Layout from "../components/layout"
 import Review from "../components/Review"
 import TechSpecs from "../components/TechSpecs"
@@ -47,7 +48,14 @@ export default ({ pageContext, data }) => {
           {getEditorsChoice(post)}
           <div className="content">
             <h1>{ post.frontmatter.title }</h1>
-            Author: { post.frontmatter.author }
+            Author(s): { post.frontmatter.authors.map((author, index) => {
+              return (
+                <>
+                  { (index >=1) ? `, ` : `` }
+                  <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
+                </>
+              )
+            })}
           </div>
         </header>
         <div className="content">
@@ -68,7 +76,7 @@ export const query = graphql`
       frontmatter {
         title
         editorsChoice
-        author
+        authors
         description
         date(formatString: "MMMM Do, YYYY")
         heroImage {

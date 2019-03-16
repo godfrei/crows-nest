@@ -1,4 +1,5 @@
-const path = require('path');
+const path = require('path')
+const _ = require('lodash')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -25,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
             node {
               frontmatter {
                 filename
+                authors
               }
               fields {
                 slug
@@ -44,9 +46,13 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `
   ).then(result => {
+        let authors = []
+
+        // Create mission pages and fill authors array
         result.data.missions.edges.forEach(({node}) => {
             const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
             const reviewRegex = `/${node.fields.slug}review.*/`
+            authors = authors.concat(node.frontmatter.authors)
             createPage({
                 path: node.fields.slug,
                 component: path.resolve('./src/templates/mission.js'),
@@ -57,6 +63,22 @@ exports.createPages = ({ graphql, actions }) => {
                 },
             })
         })
+
+        // Eliminate duplicate authors
+        authors = _.uniq(authors)
+
+        // Make author pages
+        authors.forEach(author => {
+          createPage({
+            path: `/authors/${_.kebabCase(author)}/`,
+            component: path.resolve('./src/templates/author.js'),
+            context: {
+              author,
+            },
+          })
+        })
+
+        // Create blog post pages
         result.data.posts.edges.forEach(({node}) => {
           createPage({
               path: node.fields.slug,

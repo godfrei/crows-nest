@@ -2,7 +2,8 @@
 mission_id: assassin
 editorsChoice: 
 title: "Assassination at Nar Shaddaa - Boba Fett Episode I"
-author: "Barry Brien"
+authors: 
+    - "Barry Brien"
 date: 
 filename: "assassin.zip"
 description: "You play the part of Boba Fett. You have just been hired by your long time client Jabba The Hutt
