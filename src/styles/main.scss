@@ -192,3 +192,18 @@ main > header {
         }
     }
 }
+
+.mission-list {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 2rem;
+    margin: 0 auto 2em;
+
+    li {
+        position: relative;
+        max-width: 320px;
+    }
+}

@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
+import MissionCard from "../components/MissionCard"
 
 export default ({ pageContext, data }) => {
   const { author } = pageContext
@@ -17,16 +18,12 @@ export default ({ pageContext, data }) => {
         <title>{`${author} | ${config.siteTitle}`}</title>
       </Helmet>
       <h1>{authorHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
+      <ul className="mission-list">
+        {edges.map(({ node }) => (
+          <li>
+            <MissionCard node={node} />
+          </li>
+        ))}
       </ul>
     </Layout>
   )
@@ -47,6 +44,9 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            heroImage {
+              publicURL
+            }
           }
         }
       }
