@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
