@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
@@ -24,7 +24,7 @@ export default ({ data }) => {
         <h1>Missions</h1>
         <ul className="mission-list">
           {data.levels.edges.map(({ node }) => {
-            const review_info = getReviewInfo(node);
+            // const review_info = getReviewInfo(node);
             return (
               <li key={node.id}>
                 <MissionCard node={node} />
