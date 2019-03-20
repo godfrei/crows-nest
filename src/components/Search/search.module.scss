@@ -1,0 +1,49 @@
+@import '../../styles/colors';
+
+.search {
+    position: relative;
+    flex-grow: 0;
+    margin-right: 20px;
+}
+
+.input {
+    border: 1px solid $teal;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+
+    ::placeholder {
+        color: $gray;
+    }
+}
+
+.results {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    background-color: $gray;
+    backdrop-filter: blur(5px);
+    border: 1px solid $glow-border;
+    padding: 0;
+    margin: 0;
+
+    li {
+        text-align: left;
+        list-style: none;
+        width: 300px;
+
+        a:link, a:visited {
+            padding: 5px 20px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            font-family: "Engravers Gothic";
+        }
+
+        a:hover {
+            color: $teal;
+            background-color: lighten($gray, 10%);
+        }
+    }
+}

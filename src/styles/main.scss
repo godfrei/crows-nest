@@ -82,7 +82,7 @@ main > header {
     top: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    z-index: 2;
+    z-index: 10;
     border-bottom: 1px solid $glow-border;
 
     > * {

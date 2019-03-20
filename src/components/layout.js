@@ -3,6 +3,7 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Navigation from "./Navigation"
+import Search from "./Search"
 import crow from "../images/crow.png"
 import GradientTitle from "./GradientTitle";
 import Footer from "./Footer";
@@ -15,6 +16,9 @@ export default ({ children }) => (
                     siteMetadata {
                         title
                     }
+                }
+                siteSearchIndex {
+                    index
                 }
             }
         `}
@@ -31,7 +35,7 @@ export default ({ children }) => (
                         </Link>
                     </div>
                     <Navigation />
-
+                    <Search searchIndex={data.siteSearchIndex.index} />
                 </header>
                 {children}
                 <Footer />
