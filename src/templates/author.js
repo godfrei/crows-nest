@@ -18,7 +18,7 @@ export default ({ pageContext, data }) => {
         <title>{`${author} | ${config.siteTitle}`}</title>
       </Helmet>
       <h1>{authorHeader}</h1>
-      <ul className="mission-list">
+      <ul className="mission-grid">
         {edges.map(({ node }) => (
           <li>
             <MissionCard node={node} />

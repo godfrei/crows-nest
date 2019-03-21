@@ -22,7 +22,7 @@ export default ({ data }) => {
       </Helmet>
       <div>
         <h1>Missions</h1>
-        <ul className="mission-list">
+        <ul className="mission-grid">
           {data.levels.edges.map(({ node }) => {
             // const review_info = getReviewInfo(node);
             return (

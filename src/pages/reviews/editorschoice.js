@@ -1,8 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../../data/SiteConfig"
 import Layout from "../../components/layout"
+import MissionCard from "../../components/MissionCard"
 
 export default ({data}) => {
   console.log(data)
@@ -14,12 +15,11 @@ export default ({data}) => {
       <h1>Editor's Choice</h1>
       <p>The best of the best.</p>
 
-      <ul>
+      <ul className="mission-grid">
           {data.levels.edges.map(({ node }) => {
             return (
               <li key={node.id}>
-                <Link to={node.fields.slug}>{node.frontmatter.title}</Link> - 
-                {node.frontmatter.author}
+                <MissionCard node={node} />
               </li>
             );
           })}
@@ -49,6 +49,9 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             description
             author
+            heroImage {
+              publicURL
+            }
           }
           fields {
               slug
