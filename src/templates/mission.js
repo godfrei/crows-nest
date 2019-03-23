@@ -42,7 +42,7 @@ export default ({ pageContext, data }) => {
         <div className="content">
           <div className="descAndReviews">
             <h2>Plot</h2>
-            <p>{post.frontmatter.description}</p>
+            <p className="plot">{post.frontmatter.description}</p>
             {getReviewContent(reviews)}
           </div>
           <div className="supplemental">
