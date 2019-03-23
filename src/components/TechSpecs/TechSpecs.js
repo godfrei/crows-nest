@@ -14,7 +14,7 @@ export default ({ node }) => {
     }
 
     return(
-        <div className={techStyles.techspecs}>
+        <aside className={techStyles.techspecs}>
             <h2>Tech Specs</h2>
             <ul>
                 <li><strong>Level(s) Replaced:</strong> {node.frontmatter.levelReplaced}</li>
@@ -34,6 +34,6 @@ export default ({ node }) => {
                 <li><strong>LFD</strong> {checkMarkOrNot(node.frontmatter.lfd)}</li>
                 <li><strong>VUE</strong> {checkMarkOrNot(node.frontmatter.vue)}</li>
             </ul>
-        </div>
+        </aside>
     )
 }

@@ -23,11 +23,11 @@ export default ({ children }) => (
             }
         `}
         render={data => (
-            <main>
+            <>
                 <Helmet>
                     <meta name="description" content={config.siteDescription} />
                 </Helmet>
-                <header>
+                <header className="nestHeader">
                     <div className="site_title">
                         <Link to="/">
                             <img src={crow} alt="The Moldy Crow" id="crow" />
@@ -37,9 +37,11 @@ export default ({ children }) => (
                     <Navigation />
                     <Search searchIndex={data.siteSearchIndex.index} />
                 </header>
-                {children}
+                <main>
+                    {children}
+                </main>
                 <Footer />
-            </main>
+            </>
         )}
     />
 )

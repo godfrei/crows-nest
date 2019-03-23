@@ -1,12 +1,11 @@
 import React from "react"
 import { Link, graphql, withPrefix } from "gatsby"
-import _ from "lodash"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
 import Review from "../components/Review"
 import TechSpecs from "../components/TechSpecs"
-import EditorsChoice from "../components/EditorsChoice"
+import MissionHeader from "../components/MissionHeader"
 
 export default ({ pageContext, data }) => {
   console.log(data)
@@ -28,16 +27,6 @@ export default ({ pageContext, data }) => {
     return reviewContent
   }
 
-  function getEditorsChoice(post) {
-    let editorsChoice = null
-    if(post.frontmatter.editorsChoice === "yes") {
-      editorsChoice = (
-        <EditorsChoice />
-      )
-    }
-    return editorsChoice
-  }
-
   const post = data.markdownRemark
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
   const heroImage = (post.frontmatter.heroImage) ? post.frontmatter.heroImage.publicURL : "";
@@ -49,27 +38,19 @@ export default ({ pageContext, data }) => {
       </Helmet>
       <div className={`mission ${hasHeroImage}`}>
         <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
-        <header>
-          {getEditorsChoice(post)}
-          <div className="content">
-            <h1>{ post.frontmatter.title }</h1>
-            Author(s): { post.frontmatter.authors.map((author, index) => {
-              return (
-                <>
-                  { (index >=1) ? `, ` : `` }
-                  <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
-                </>
-              )
-            })}
-          </div>
-        </header>
+        <MissionHeader node={post} />
         <div className="content">
-          <h2>Plot</h2>
-          <p>{post.frontmatter.description}</p>
-          {getReviewContent(reviews)}
+          <div></div>
+          <div></div>
+          <div>
+            <h2>Plot</h2>
+            <p>{post.frontmatter.description}</p>
+            {getReviewContent(reviews)}
+          </div>
           <TechSpecs node={post} />
-          <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) }>Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) </a>
         </div>
+        
+        <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) }>Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) </a>
       </div>
     </Layout>
   )
