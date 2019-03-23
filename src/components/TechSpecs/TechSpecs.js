@@ -28,11 +28,11 @@ export default ({ node }) => {
                 <li>{checkMarkOrNot(node.frontmatter.bm)} <strong>BM</strong> </li>
                 <li>{checkMarkOrNot(node.frontmatter.fme)} <strong>FME</strong> </li>
                 <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>WAX</strong> </li>
-                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>3DO</strong> </li>
-                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>VOC</strong></li>
-                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>GMD</strong></li>
-                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>LFD</strong></li>
-                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>VUE</strong></li>
+                <li>{checkMarkOrNot(node.frontmatter.three_do)} <strong>3DO</strong> </li>
+                <li>{checkMarkOrNot(node.frontmatter.voc)} <strong>VOC</strong></li>
+                <li>{checkMarkOrNot(node.frontmatter.gmd)} <strong>GMD</strong></li>
+                <li>{checkMarkOrNot(node.frontmatter.lfd)} <strong>LFD</strong></li>
+                <li>{checkMarkOrNot(node.frontmatter.vue)} <strong>VUE</strong></li>
             </ul>
         </aside>
     )
