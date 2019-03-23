@@ -2,12 +2,17 @@
 
 .techspecs {
     clear: both;
-    background-color: rgba($teal, 0.1);
-    margin: 20px 0;
-    padding: 1px 20px;
+    // background-color: rgba($teal, 0.1);
+    // background-color: rgba($gray,0.85);
+    // backdrop-filter: blur(3px);
+    
+    // margin: 20px 0;
+    padding: 0px 20px;
+    font-size: 14px;
 
     ul {
         padding: 0;
+        line-height: 1.8;
     }
 
     li {
@@ -17,17 +22,18 @@
 
 .components {
     li {
-        display: inline-block;
-        text-align: center;
-        padding: 0 1em; 
+        // display: inline-block;
+        // text-align: center;
+        // padding: 0 1em; 
 
         strong {
-            display: block;
+            // display: block;
         }
 
         img {
-            width: 20px;
+            width: 12px;
             display: inline-block;
+            margin-right: 5px;
         }
     }
 }

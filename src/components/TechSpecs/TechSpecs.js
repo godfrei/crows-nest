@@ -25,14 +25,14 @@ export default ({ node }) => {
 
             <h3>New Stuff</h3>
             <ul className={techStyles.components}>
-                <li><strong>BM</strong> {checkMarkOrNot(node.frontmatter.bm)}</li>
-                <li><strong>FME</strong> {checkMarkOrNot(node.frontmatter.fme)}</li>
-                <li><strong>WAX</strong> {checkMarkOrNot(node.frontmatter.wax)}</li>
-                <li><strong>3DO</strong> {checkMarkOrNot(node.frontmatter.three_do)}</li>
-                <li><strong>VOC</strong> {checkMarkOrNot(node.frontmatter.voc)}</li>
-                <li><strong>GMD</strong> {checkMarkOrNot(node.frontmatter.gmd)}</li>
-                <li><strong>LFD</strong> {checkMarkOrNot(node.frontmatter.lfd)}</li>
-                <li><strong>VUE</strong> {checkMarkOrNot(node.frontmatter.vue)}</li>
+                <li>{checkMarkOrNot(node.frontmatter.bm)} <strong>BM</strong> </li>
+                <li>{checkMarkOrNot(node.frontmatter.fme)} <strong>FME</strong> </li>
+                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>WAX</strong> </li>
+                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>3DO</strong> </li>
+                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>VOC</strong></li>
+                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>GMD</strong></li>
+                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>LFD</strong></li>
+                <li>{checkMarkOrNot(node.frontmatter.wax)} <strong>VUE</strong></li>
             </ul>
         </aside>
     )

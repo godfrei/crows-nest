@@ -154,7 +154,9 @@ header.nestHeader {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 1fr) 1fr;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
+    grid-template-areas: "... padding content sidebar ...";
     position: relative;
     z-index: 1;
 }
@@ -182,6 +184,20 @@ header.nestHeader {
 
             &:after {
                 background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 40vh, rgba(0,0,0,0.75) 75vh, black);
+            }
+        }
+
+        .descAndReviews {
+            grid-column: 3 / 4;
+        }
+
+        .supplemental {
+            border-left: 1px solid $glow-border;
+
+            .download {
+                display: block;
+                margin-top: 20px;
+                margin-left: 20px;
             }
         }
     }

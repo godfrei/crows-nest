@@ -40,17 +40,18 @@ export default ({ pageContext, data }) => {
         <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
         <MissionHeader node={post} />
         <div className="content">
-          <div></div>
-          <div></div>
-          <div>
+          <div className="descAndReviews">
             <h2>Plot</h2>
             <p>{post.frontmatter.description}</p>
             {getReviewContent(reviews)}
           </div>
-          <TechSpecs node={post} />
+          <div className="supplemental">
+            <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) } className="download">
+              Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) 
+            </a>
+            <TechSpecs node={post} />
+          </div>
         </div>
-        
-        <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) }>Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) </a>
       </div>
     </Layout>
   )
