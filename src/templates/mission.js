@@ -47,7 +47,8 @@ export default ({ pageContext, data }) => {
           </div>
           <div className="supplemental">
             <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) } className="download">
-              Download {post.frontmatter.title} ({post.frontmatter.filename}, {data.file.prettySize}) 
+              <strong>Download {post.frontmatter.title}</strong>
+              ({post.frontmatter.filename}, {data.file.prettySize}) 
             </a>
             <TechSpecs node={post} />
           </div>

@@ -178,6 +178,16 @@ header.nestHeader {
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 10vh, rgba(0,0,0,0.75) 40vh, black);
     }
 
+    h2 {
+        margin-bottom: 5px;
+        border-bottom: 1px solid $glow-border;
+    }
+
+    h2 + p,
+    h2 + ul {
+        margin-top: 0;
+    }
+
     @media (min-width: 769px) {
         &.hasHeroImage {
             padding-top: 40vh;
@@ -197,12 +207,22 @@ header.nestHeader {
 
         .supplemental {
             border-left: 1px solid $glow-border;
+        }
+    }
 
-            .download {
-                display: block;
-                margin-top: 20px;
-                margin-left: 20px;
-            }
+    .download {
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+
+        strong {
+            font-size: 20px;
+            color: $teal;
+            text-decoration: underline;
+            display: block;
         }
     }
 
@@ -227,7 +247,8 @@ header.nestHeader {
     max-width: 1200px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 2rem;
-    margin: 0 auto 2em;
+    margin: 0 auto;
+    padding-bottom: 2em;
 
     li {
         position: relative;
