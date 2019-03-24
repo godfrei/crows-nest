@@ -3,8 +3,8 @@ mission_id: energy
 editorsChoice:
 title: "Energy"
 authors: 
-    - "Ken Swopes"
-    - "Ron Swopes"
+    - "Ken Swope"
+    - "Ron Swope"
 date:
 filename: "energy.zip"
 description: "Kyle goes on a mission to destroy power plant using new source of energy."
