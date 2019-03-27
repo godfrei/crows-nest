@@ -27,6 +27,22 @@ export default ({ pageContext, data }) => {
     return reviewContent
   }
 
+  function getDownloadLink(data) {
+    const post = data.markdownRemark;
+    const file = data.file;
+    if(file) {
+      return (
+        <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) } className="download">
+          <strong>Download {post.frontmatter.title}</strong>
+          ({post.frontmatter.filename}, {data.file.prettySize}) 
+        </a>
+      )
+    }
+    else {
+      return null;
+    }
+  }
+
   const post = data.markdownRemark
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
   const heroImage = (post.frontmatter.heroImage) ? post.frontmatter.heroImage.publicURL : "";
@@ -46,10 +62,7 @@ export default ({ pageContext, data }) => {
             {getReviewContent(reviews)}
           </div>
           <div className="supplemental">
-            <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) } className="download">
-              <strong>Download {post.frontmatter.title}</strong>
-              ({post.frontmatter.filename}, {data.file.prettySize}) 
-            </a>
+            {getDownloadLink(data)}
             <TechSpecs node={post} />
           </div>
         </div>
