@@ -39,7 +39,12 @@ export default ({ pageContext, data }) => {
       )
     }
     else {
-      return null;
+      return (
+        <div className="missingFile">
+          <strong>File Missing</strong>
+          <p>Do you have a copy of this mission? <a href="mailto:godfrei@gmail.com">Let us know!</a></p>
+        </div>
+      );
     }
   }
 
