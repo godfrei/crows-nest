@@ -6,14 +6,14 @@ import Layout from "../components/layout"
 import MissionCard from "../components/MissionCard"
 
 export default ({ data }) => {
-  console.log(data)
+  // console.log(data)
 
-  function getReviewInfo(node) {
-    if (node.frontmatter.mission_id && node.frontmatter.mission_id.frontmatter.rating) {
-      return ( <strong>{node.frontmatter.mission_id.frontmatter.rating}</strong>)
-    }
-    return null;
-  }
+  // function getReviewInfo(node) {
+  //   if (node.frontmatter.mission_id && node.frontmatter.mission_id.frontmatter.rating) {
+  //     return ( <strong>{node.frontmatter.mission_id.frontmatter.rating}</strong>)
+  //   }
+  //   return null;
+  // }
 
   return (
     <Layout>

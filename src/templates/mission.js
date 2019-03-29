@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, withPrefix } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
@@ -8,7 +8,7 @@ import TechSpecs from "../components/TechSpecs"
 import MissionHeader from "../components/MissionHeader"
 
 export default ({ pageContext, data }) => {
-  console.log(data)
+  // console.log(data)
 
   function getReviewContent(reviews) {
     let reviewContent = null
