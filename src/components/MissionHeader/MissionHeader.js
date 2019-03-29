@@ -23,10 +23,10 @@ export default ({ node }) => {
                     <h1>{ node.frontmatter.title }</h1>
                     Author(s): { node.frontmatter.authors.map((author, index) => {
                         return (
-                        <>
-                            { (index >=1) ? `, ` : `` }
-                            <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
-                        </>
+                            <React.Fragment key={`${node.frontmatter.title}-${author}`}>
+                                { (index >=1) ? `, ` : `` }
+                                <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
+                            </React.Fragment>
                         )
                     })}
                 </div>

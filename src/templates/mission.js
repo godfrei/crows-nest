@@ -79,6 +79,7 @@ export default ({ pageContext, data }) => {
 export const query = graphql`
   query($slug: String!, $reviewRegex: String!, $filename: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
       frontmatter {
         title
         editorsChoice
