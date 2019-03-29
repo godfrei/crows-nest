@@ -1,5 +1,7 @@
 const path = require('path')
 const _ = require('lodash')
+const fs = require('fs-extra')
+const lunr = require('lunr')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -19,14 +21,21 @@ exports.createPages = ({ graphql, actions }) => {
     // **Note:** The graphql function call returns a Promise
     // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
     const { createPage } = actions
+    let fullIndex = {}
     return graphql(`
       {
         missions: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/index/" }}) {
           edges {
             node {
+              id
               frontmatter {
+                title
                 filename
                 authors
+                description
+                heroImage {
+                  publicURL
+                }
               }
               fields {
                 slug
@@ -46,7 +55,38 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `
   ).then(result => {
+    if (result.errors) {
+      console.log(result.errors)
+      reject(result.errors)
+    }
+
         let authors = []
+
+        const store = {}
+        const index = lunr(function() {
+          this.ref('id')
+          this.field('title')
+          this.field('slug')
+          this.field('authors')
+          this.field('heroImage')
+          this.field('description')
+
+          result.data.missions.edges.forEach(({node}) => {
+            const id = node.id
+            const doc = {
+              id: id,
+              title: node.frontmatter.title,
+              slug: node.fields.slug,
+              authors: node.frontmatter.authors,
+              heroImage: (node.frontmatter.heroImage) ? node.frontmatter.heroImage.publicURL : null,
+              description: node.frontmatter.description,
+            }
+            this.add(doc)
+            store[id] = doc
+          })
+        })
+        fullIndex = { index, store }
+        fs.writeFileSync(`public/search_index.json`, JSON.stringify(fullIndex))
 
         // Create mission pages and fill authors array
         result.data.missions.edges.forEach(({node}) => {

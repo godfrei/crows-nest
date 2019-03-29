@@ -17,9 +17,6 @@ export default ({ children }) => (
                         title
                     }
                 }
-                siteSearchIndex {
-                    index
-                }
             }
         `}
         render={data => (
@@ -35,7 +32,7 @@ export default ({ children }) => (
                         </Link>
                     </div>
                     <Navigation />
-                    <Search searchIndex={data.siteSearchIndex.index} />
+                    <Search />
                 </header>
                 <main>
                     {children}

@@ -4,7 +4,7 @@ module.exports = {
     siteMetadata: {
       title: config.siteTitle,
     },
-    pathPrefix: `/missions`,
+    // pathPrefix: `/missions`,
     plugins: [
         'gatsby-plugin-sass',
         {
@@ -55,24 +55,6 @@ module.exports = {
                 ],
             },
         },
-        {
-            resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
-            options: {
-              // Fields to index
-              fields: [`title`, `authors`, `content`, `slug`, `heroImage`],
-              // How to resolve each field`s value for a supported node type
-              resolvers: {
-                // For any node of type MarkdownRemark, list how to resolve the fields` values
-                MarkdownRemark: {
-                  title: node => node.frontmatter.title,
-                  authors: node => node.frontmatter.authors,
-                  content: node => node.rawMarkdownBody,
-                  slug: node => node.fields.slug,
-                  heroImage: node => node.frontmatter.heroImage
-                },
-              },
-            },
-          },
     ],
     mapping: {
         'MarkdownRemark.frontmatter.mission': 'MarkdownRemark.frontmatter.mission_id',

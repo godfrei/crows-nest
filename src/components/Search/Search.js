@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
-import { Index } from "elasticlunr"
+import { Link, withPrefix } from "gatsby"
 import searchStyles from "./search.module.scss"
 
 export default class Search extends Component {
@@ -11,9 +10,18 @@ export default class Search extends Component {
         results: [],
       }
     }
+
+    getImage(node) {
+      if(node.heroImage) {
+        return (
+          <img src={withPrefix(node.heroImage)} alt="" />
+        )
+      }
+      return ("")
+    }
   
     render() {
-        console.log(this.state.results)
+        // console.log(this.state.results)
       return (
         <div className={searchStyles.search}>
           <input type="text" className={searchStyles.input} value={this.state.query} onChange={this.search} placeholder="Search" />
@@ -23,7 +31,7 @@ export default class Search extends Component {
                 return (
                     <li key={node.id}>
                         <Link to={node.slug}>
-                            {/* <img src={node.heroImage} /> */}
+                            {this.getImage(node)}
                             {node.title}
                         </Link>
                     </li>
@@ -33,22 +41,17 @@ export default class Search extends Component {
         </div>
       )
     }
-    getOrCreateIndex = () =>
-      this.index
-        ? this.index
-        : // Create an elastic lunr index and hydrate with graphql query results
-          Index.load(this.props.searchIndex)
+
+    getSearchResults(query) {
+      if (!query || !window.__LUNR__) return []
+      const results = window.__LUNR__.index.search(query)
+      return results.map(({ ref }) => window.__LUNR__.store[ref])
+    }
   
-    search = evt => {
-      const query = evt.target.value
-      this.index = this.getOrCreateIndex()
-      this.setState({
-        query,
-        // Query the index with search string to get an [] of IDs
-        results: this.index
-          .search(query, {})
-          // Map over each ID and return the full document
-          .map(({ ref }) => this.index.documentStore.getDoc(ref)),
-      })
+    search = event => {
+      const query = event.target.value
+      const results = this.getSearchResults(query)
+      console.log(results)
+      this.setState({ results, query })
     }
   }
