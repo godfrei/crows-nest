@@ -7,6 +7,8 @@ module.exports = {
     // pathPrefix: `/missions`,
     plugins: [
         'gatsby-plugin-sass',
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {

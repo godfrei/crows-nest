@@ -1,7 +1,7 @@
 const path = require('path')
 const _ = require('lodash')
 const fs = require('fs-extra')
-const lunr = require('lunr')
+const elasticlunr = require('elasticlunr')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -35,6 +35,11 @@ exports.createPages = ({ graphql, actions }) => {
                 description
                 heroImage {
                   publicURL
+                  childImageSharp {
+                    fixed(width: 200) {
+                      src
+                    }
+                  }
                 }
               }
               fields {
@@ -63,27 +68,28 @@ exports.createPages = ({ graphql, actions }) => {
         let authors = []
 
         const store = {}
-        const index = lunr(function() {
-          this.ref('id')
-          this.field('title')
-          this.field('slug')
-          this.field('authors')
-          this.field('heroImage')
-          this.field('description')
 
-          result.data.missions.edges.forEach(({node}) => {
-            const id = node.id
-            const doc = {
-              id: id,
-              title: node.frontmatter.title,
-              slug: node.fields.slug,
-              authors: node.frontmatter.authors,
-              heroImage: (node.frontmatter.heroImage) ? node.frontmatter.heroImage.publicURL : null,
-              description: node.frontmatter.description,
-            }
-            this.add(doc)
-            store[id] = doc
-          })
+        const index = elasticlunr(function () {
+          this.setRef('id');
+          this.addField('title');
+          this.addField('description');
+          this.addField('slug');
+          this.addField('authors');
+          this.addField('heroImage');
+        });
+        result.data.missions.edges.forEach(({node}) => {
+          const id = node.id
+          // console.log(node.frontmatter.heroImage)
+          const doc = {
+            id: id,
+            title: node.frontmatter.title,
+            slug: node.fields.slug,
+            authors: node.frontmatter.authors,
+            heroImage: (node.frontmatter.heroImage) ? node.frontmatter.heroImage.childImageSharp.fixed.src : null,
+            description: node.frontmatter.description,
+          }
+          index.addDoc(doc)
+          store[id] = doc
         })
         fullIndex = { index, store }
         fs.writeFileSync(`public/search_index.json`, JSON.stringify(fullIndex))

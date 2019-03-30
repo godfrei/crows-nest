@@ -1,6 +1,6 @@
 import './src/styles/main.scss'
 
-import lunr from 'lunr'
+// import elasticlunr from 'elasticlunr'
 
 export function onClientEntry() {
     console.log("We're doomed.")
@@ -8,11 +8,8 @@ export function onClientEntry() {
     .then(function(response) {
       return response.json()
     })
-    .then(function(fullIndex) {
-      window.__LUNR__ = {
-        index: lunr.Index.load(fullIndex.index),
-        store: fullIndex.store,
-      }
+    .then(function(searchIndex) {
+      window.__ELASTICLUNR__ = searchIndex
     })
     .catch(e => console.error('Failed fetch search index'))
 }
