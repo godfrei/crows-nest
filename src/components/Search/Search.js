@@ -5,6 +5,18 @@ import blank from '../../images/blank.gif'
 import EditorsChoiceBadge from '../EditorsChoiceBadge'
 import searchStyles from "./search.module.scss"
 
+class AuthorResult extends Component {
+  render() {
+    const { node } = this.props
+
+    return (
+      <Link to={node.slug} className={searchStyles.result}>
+        {node.title}
+      </Link>
+    )
+  }
+}
+
 class MissionResult extends Component {
   getImage(node) {
     if(node.heroImage) {
@@ -60,6 +72,17 @@ export default class Search extends Component {
       }
     }
 
+    getResultType(node) {
+      switch(node.type) {
+        case "mission":
+          return (<MissionResult node={node} />)
+        case "author":
+          return (<AuthorResult node={node} />)
+        default:
+          return null
+      }
+    }
+
     renderResults() {
       if(this.state.query === '') {
         return null
@@ -77,7 +100,7 @@ export default class Search extends Component {
             {this.state.results.map(node => {
               return (
                 <li key={node.id}>
-                  <MissionResult node={node} />
+                  {this.getResultType(node)}
                 </li>
               )
             })}
