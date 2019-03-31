@@ -5,16 +5,15 @@ const elasticlunr = require('elasticlunr')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-    const { createNodeField } = actions
-    if(node.internal.type === 'MarkdownRemark') {
-        // console.log(createFilePath({ node, getNode, basePath: `pages` }))
-        const slug = createFilePath({ node, getNode, basePath: 'pages' })
-        createNodeField({
-            node,
-            name: 'slug',
-            value: slug,
-        })
-    }
+  const { createNodeField } = actions
+  if(node.internal.type === 'MarkdownRemark') {
+    const slug = createFilePath({ node, getNode, basePath: 'pages' })
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug,
+    })
+  }
 }
 
 exports.createPages = ({ graphql, actions }) => {
@@ -33,6 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
                 filename
                 authors
                 description
+                editorsChoice
                 heroImage {
                   publicURL
                   childImageSharp {
@@ -65,74 +65,75 @@ exports.createPages = ({ graphql, actions }) => {
       reject(result.errors)
     }
 
-        let authors = []
+    // Build search Index (just missons for now)
+    let authors = []
+    const store = {}
+    const index = elasticlunr(function () {
+      this.setRef('id')
+      this.addField('title')
+      this.addField('description')
+      this.addField('slug')
+      this.addField('authors')
+      this.addField('heroImage')
+      this.addField('editorsChoice')
+    })
+    result.data.missions.edges.forEach(({node}) => {
+      const id = node.id
+      const doc = {
+        id: id,
+        title: node.frontmatter.title,
+        slug: node.fields.slug,
+        authors: node.frontmatter.authors,
+        heroImage: (node.frontmatter.heroImage) ? node.frontmatter.heroImage.childImageSharp.fixed.src : null,
+        description: node.frontmatter.description,
+        editorsChoice: node.frontmatter.editorsChoice
+      }
+      index.addDoc(doc)
+      store[id] = doc
+    })
+    fullIndex = { index, store }
+    // Write the index file when building for loading into the site (see gatsby-browser)
+    fs.writeFileSync(`public/search_index.json`, JSON.stringify(fullIndex))
 
-        const store = {}
-
-        const index = elasticlunr(function () {
-          this.setRef('id');
-          this.addField('title');
-          this.addField('description');
-          this.addField('slug');
-          this.addField('authors');
-          this.addField('heroImage');
-        });
-        result.data.missions.edges.forEach(({node}) => {
-          const id = node.id
-          // console.log(node.frontmatter.heroImage)
-          const doc = {
-            id: id,
-            title: node.frontmatter.title,
-            slug: node.fields.slug,
-            authors: node.frontmatter.authors,
-            heroImage: (node.frontmatter.heroImage) ? node.frontmatter.heroImage.childImageSharp.fixed.src : null,
-            description: node.frontmatter.description,
-          }
-          index.addDoc(doc)
-          store[id] = doc
-        })
-        fullIndex = { index, store }
-        fs.writeFileSync(`public/search_index.json`, JSON.stringify(fullIndex))
-
-        // Create mission pages and fill authors array
-        result.data.missions.edges.forEach(({node}) => {
-            const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
-            const reviewRegex = `/${node.fields.slug}review.*/`
-            authors = authors.concat(node.frontmatter.authors)
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve('./src/templates/mission.js'),
-                context: {
-                    slug: node.fields.slug,
-                    reviewRegex: reviewRegex,
-                    filename: node.frontmatter.filename
-                },
-            })
-        })
-
-        // Eliminate duplicate authors
-        authors = _.uniq(authors)
-
-        // Make author pages
-        authors.forEach(author => {
-          createPage({
-            path: `/authors/${_.kebabCase(author)}/`,
-            component: path.resolve('./src/templates/author.js'),
-            context: {
-              author,
-            },
-          })
-        })
-
-        // Create blog post pages
-        result.data.posts.edges.forEach(({node}) => {
-          createPage({
-              path: node.fields.slug,
-              component: path.resolve('./src/templates/post.js'),
-              context: {
-                  slug: node.fields.slug
-              },
-          })
+    // Create mission pages and fill authors array
+    result.data.missions.edges.forEach(({node}) => {
+      const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
+      const reviewRegex = `/${node.fields.slug}review.*/`
+      authors = authors.concat(node.frontmatter.authors)
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/mission.js'),
+        context: {
+          slug: node.fields.slug,
+          reviewRegex: reviewRegex,
+          filename: node.frontmatter.filename
+        },
       })
     })
-  }
+
+    // Eliminate duplicate authors
+    authors = _.uniq(authors)
+
+    // Make author pages
+    authors.forEach(author => {
+      createPage({
+        path: `/authors/${_.kebabCase(author)}/`,
+        component: path.resolve('./src/templates/author.js'),
+        context: {
+          author,
+        },
+      })
+    })
+
+    // Create blog post pages
+    result.data.posts.edges.forEach(({node}) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/post.js'),
+        context: {
+          slug: node.fields.slug
+        },
+      })
+    })
+  })
+}

@@ -1,7 +1,54 @@
 import React, { Component } from "react"
 import { Link, withPrefix } from "gatsby"
 import { Index } from "elasticlunr"
+import blank from '../../images/blank.gif'
+import EditorsChoiceBadge from '../EditorsChoiceBadge'
 import searchStyles from "./search.module.scss"
+
+class MissionResult extends Component {
+  getImage(node) {
+    if(node.heroImage) {
+      return (
+        <img src={withPrefix(node.heroImage)} alt="" />
+      )
+    }
+    return (<img src={blank} alt="" />)
+  }
+
+  getEditorsChoice(node) {
+    let editorsChoice = null
+    console.log(node)
+    if(node.editorsChoice === "yes") {
+      editorsChoice = (
+        <EditorsChoiceBadge />
+      )
+    }
+    return editorsChoice
+  }
+
+  render() {
+    const { node } = this.props
+    return (
+      <Link to={node.slug} className={searchStyles.result}>
+        {this.getImage(node)}
+        <div>
+          <span className={searchStyles.title}>{node.title}</span>
+          <small className={searchStyles.authors}>
+            { node.authors.map((author, index) => {
+              return (
+                <React.Fragment key={`${node.title}-${author}`}>
+                  { (index >=1) ? `, ` : `` }
+                  {author}
+                </React.Fragment>
+              )
+            })}
+          </small>
+        </div>
+        {this.getEditorsChoice(node)}
+      </Link>
+    )
+  }
+}
 
 export default class Search extends Component {
     constructor(props) {
@@ -13,31 +60,37 @@ export default class Search extends Component {
       }
     }
 
-    getImage(node) {
-      if(node.heroImage) {
+    renderResults() {
+      if(this.state.query === '') {
+        return null
+      }
+      else if (this.state.results.length <= 0) {
         return (
-          <img src={withPrefix(node.heroImage)} alt="" />
+          <div className={searchStyles.results}>
+            <p className={searchStyles.empty}>No results found.</p>
+          </div>
         )
       }
-      return ("")
+      return (
+        <div className={searchStyles.results}>
+          <ul>
+            {this.state.results.map(node => {
+              return (
+                <li key={node.id}>
+                  <MissionResult node={node} />
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )
     }
   
     render() {
       return (
         <div className={searchStyles.search}>
           <input type="text" className={searchStyles.input} value={this.state.query} onChange={this.search} placeholder="Search" />
-          <ul className={searchStyles.results}>
-            {this.state.results.map(node => {
-                return (
-                    <li key={node.id}>
-                        <Link to={node.slug}>
-                            {this.getImage(node)}
-                            {node.title}
-                        </Link>
-                    </li>
-                )
-            })}
-          </ul>
+          {this.renderResults()}
         </div>
       )
     }

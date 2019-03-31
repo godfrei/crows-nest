@@ -1,0 +1,30 @@
+@import '../../styles/colors';
+
+.editorsChoice {
+    position: relative;
+    background-color: rgba($teal, 0.1);
+    // width: 3px;
+    padding: 1px 18px 1px 3px;
+    line-height: 1;
+    font-family: "Engravers Gothic";
+    font-size: 12px;
+    border: 1px solid rgba($teal, 0.5);
+    border-radius: 4px;
+    box-shadow: inset 0 0 2px black, inset 0 0 80px rgba(0,0,0,0.5);
+    color: $teal;
+    overflow: hidden;
+
+    &:after {
+        background-image: url("../../images/editors_choice_crow.png");
+        background-size: auto 10px;
+        background-repeat: no-repeat;
+        content: "";
+        display: block;
+        top: 0;
+        right: 2px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-position: right 45%;
+    }
+}

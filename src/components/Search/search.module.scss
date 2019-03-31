@@ -20,30 +20,78 @@
 
 .results {
     position: absolute;
+    width: 100%;
     right: 0;
     z-index: 10;
     background-color: $gray;
     backdrop-filter: blur(5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.8);
     border: 1px solid $glow-border;
     padding: 0;
     margin: 0;
 
+    @media (min-width: 767px) {
+        width: 500px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
     li {
         text-align: left;
         list-style: none;
-        width: 300px;
+    }
 
-        a:link, a:visited {
-            padding: 5px 20px;
-            color: white;
-            display: block;
-            text-decoration: none;
-            font-family: "Engravers Gothic";
-        }
+    li + li {
+        border-top: 1px solid $glow-border;
+    }
+}
 
-        a:hover {
-            color: $teal;
-            background-color: lighten($gray, 10%);
+.empty {
+    font-style: italic;
+    color: $glow-border;
+    margin: 10px;
+}
+
+.result {
+    padding: 10px;
+    font-family: "Engravers Gothic";
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.2;
+
+    &:link, &:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $teal;
+        background-color: rgba($teal, 0.1);
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    > * {
+        margin-left: 10px;
+        &:first-child {
+            margin-left: 0;
         }
     }
+
+    abbr {
+        align-self: center;
+    }
+}
+
+.authors {
+    display: block;
+    color: $glow-border;
 }
