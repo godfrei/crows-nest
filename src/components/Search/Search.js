@@ -46,14 +46,16 @@ class MissionResult extends Component {
         <div>
           <span className={searchStyles.title}>{node.title}</span>
           <small className={searchStyles.authors}>
-            { node.authors.map((author, index) => {
-              return (
-                <React.Fragment key={`${node.title}-${author}`}>
-                  { (index >=1) ? `, ` : `` }
-                  {author}
-                </React.Fragment>
-              )
-            })}
+            { 
+              node.authors.map((author, index) => {
+                return (
+                  <React.Fragment key={`${node.title}-${author}`}>
+                    { (index >=1) ? `, ` : `` }
+                    {author}
+                  </React.Fragment>
+                )
+              })
+            }
           </small>
         </div>
         {this.getEditorsChoice(node)}
@@ -126,10 +128,22 @@ export default class Search extends Component {
             boost: 2,
             bool: "AND",
             expand: true
+          },
+          authors: {
+            boost: 1,
+            expand: true
+          },
+          description: {
+            boost: 1,
+            expand: true
           }
         },
       })
-      return results.map(({ ref }) => window.__ELASTICLUNR__.store[ref])
+      let docList = results.map(({ ref }) => window.__ELASTICLUNR__.store[ref])
+      docList.sort((a, b) => {
+        return a.type <= b.type
+      })
+      return docList
     }
 
     getOrCreateIndex() {
