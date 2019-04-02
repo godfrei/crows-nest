@@ -14,6 +14,7 @@ export default () => (
     <img src={storage} alt="" className="section_icon" />
     <GradientTitle title="Storage" />
     <p>Files to come.</p>
-    <Link to="/missions/">Missions</Link>
+    <p><Link to="/missions/">Missions</Link></p>
+    <p><Link to="/3dos/">3DOs</Link></p>
   </Layout>
 )
