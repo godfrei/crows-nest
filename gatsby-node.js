@@ -23,6 +23,30 @@ exports.createPages = ({ graphql, actions }) => {
     let fullIndex = {}
     return graphql(`
       {
+        three_dos: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/3dos\/.*\/index/" }}) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                filename
+                authors
+                description
+                heroImage {
+                  publicURL
+                  childImageSharp {
+                    fixed(width: 200) {
+                      src
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
         missions: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/index/" }}) {
           edges {
             node {
@@ -76,6 +100,19 @@ exports.createPages = ({ graphql, actions }) => {
       this.addField('authors')
       this.addField('heroImage')
       this.addField('editorsChoice')
+    })
+
+    result.data.three_dos.edges.forEach(({node}) => {
+      const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
+      authors = authors.concat(node.frontmatter.authors)
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/component.js'),
+        context: {
+          slug: node.fields.slug,
+          filename: node.frontmatter.filename
+        },
+      })
     })
 
     result.data.missions.edges.forEach(({node}) => {

@@ -38,6 +38,13 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+              name: `3do-files`,
+              path: `${__dirname}/static/3dos/`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
               name: `content`,
               path: `${__dirname}/content/`,
             },
