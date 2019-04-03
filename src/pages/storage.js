@@ -16,5 +16,6 @@ export default () => (
     <p>Files to come.</p>
     <p><Link to="/missions/">Missions</Link></p>
     <p><Link to="/3dos/">3DOs</Link></p>
+    <p><Link to="/waxes/">WAXes</Link></p>
   </Layout>
 )

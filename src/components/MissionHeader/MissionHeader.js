@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-import _ from "lodash"
 import EditorsChoice from "../EditorsChoice"
+import AuthorLinks from "../AuthorLinks"
 import headerStyles from "./missionheader.module.scss"
 
 export default ({ node }) => {
@@ -21,14 +20,7 @@ export default ({ node }) => {
             <div className={`content ${headerStyles.content}`}>
                 <div className={headerStyles.headGroup}>
                     <h1>{ node.frontmatter.title }</h1>
-                    Author(s): { node.frontmatter.authors.map((author, index) => {
-                        return (
-                            <React.Fragment key={`${node.frontmatter.title}-${author}`}>
-                                { (index >=1) ? `, ` : `` }
-                                <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
-                            </React.Fragment>
-                        )
-                    })}
+                    <AuthorLinks node={node} />
                 </div>
                 <div className={headerStyles.awards}>
                     {getEditorsChoice(node)}
