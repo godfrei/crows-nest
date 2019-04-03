@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql, Link, withPrefix } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Layout from "../components/layout"
@@ -24,8 +24,10 @@ export default ({ data }) => {
           {data.waxes.edges.map(({ node }) => {
             return (
               <li key={node.id}>
-                <AnimatedSprite spritePath={node.frontmatter.heroImage.publicURL} width={node.frontmatter.width} height={node.frontmatter.height} scale={2} />
-                <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                <a href={ withPrefix(`/waxs/${node.frontmatter.filename}`) } className="download">
+                  <AnimatedSprite spritePath={node.frontmatter.heroImage.publicURL} width={node.frontmatter.width} height={node.frontmatter.height} scale={2} />
+                  {node.frontmatter.title}
+                </a>
                 <p><AuthorLinks node={node} /></p>
                 <p>{node.frontmatter.description}</p>
               </li>
@@ -60,6 +62,7 @@ export const query = graphql`
             authors
             width
             height
+            filename
           }
           fields {
               slug

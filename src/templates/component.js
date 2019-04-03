@@ -9,7 +9,7 @@ export default ({ pageContext, data }) => {
   function getDownloadLink(data) {
     const post = data.markdownRemark
     const file = data.file
-    console.log(data)
+    // console.log(data)
     if(file) {
       return (
         <a href={ withPrefix(`/${post.frontmatter.component_type}s/${post.frontmatter.filename}`) } className="download">
