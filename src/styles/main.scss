@@ -61,21 +61,23 @@ a:link, a:visited {
     color: $teal;
 }
 
-figure {
-    width: 320px;
-    float: right;
-    margin: 0;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    // margin-right: -100px;
-}
+.mission {
+    figure {
+        width: 320px;
+        float: right;
+        margin: 0;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        // margin-right: -100px;
+    }
 
-figcaption {
-    color: $teal;
-    font-family: "Engravers Gothic";
-    font-size: 14px;
-    line-height: 1.25;
-    margin-top: 5px;
+    figcaption {
+        color: $teal;
+        font-family: "Engravers Gothic";
+        font-size: 14px;
+        line-height: 1.25;
+        margin-top: 5px;
+    }
 }
 
 header.nestHeader {
