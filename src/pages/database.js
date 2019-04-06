@@ -18,7 +18,7 @@ export default () => (
 
     <ul>
       <li>General Info</li>
-      <li>Demo</li>
+      <li><Link to="database/demo">Demo</Link></li>
       <li><Link to="/database/enemies">Enemies</Link></li>
       <li><Link to="/database/weapons">Weapons</Link></li>
       <li><Link to="/database/cheats">Cheat Codes</Link></li>

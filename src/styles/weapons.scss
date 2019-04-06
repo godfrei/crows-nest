@@ -39,6 +39,7 @@ section.weapon {
     .weaponImage {
         width: 200px;
         image-rendering: pixelated;
+        display: inline-block;
 
         &.td {
             width: 40px;
