@@ -275,3 +275,9 @@ header.nestHeader {
         max-width: 320px;
     }
 }
+
+code {
+    color: $amber;
+}
+
+@import "./weapons.scss";

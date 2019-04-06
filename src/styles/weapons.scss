@@ -1,0 +1,64 @@
+body {
+    scroll-snap-type: y proximity;
+}
+
+section.weapon {
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.8);
+        content: "";
+        display: block;
+    }
+
+    video {
+        position: absolute;
+        object-fit: cover;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+    }
+
+    .weaponContent {
+        position: relative;
+        z-index: 2;
+    }
+
+    .weaponImage {
+        width: 200px;
+        image-rendering: pixelated;
+
+        &.td {
+            width: 40px;
+        }
+
+        &.td-belt {
+            width: 120px;
+        }
+
+        &.fusion {
+            width: 100px;
+        }
+
+        &.mine {
+            width: 50px;
+        }
+
+        &.mine-pack {
+            width: 80px;
+        }
+    }
+}
+
