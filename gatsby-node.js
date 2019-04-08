@@ -81,6 +81,15 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        specs: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/specs/" }}) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
       }
     `
   ).then(result => {
@@ -181,6 +190,17 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve('./src/templates/post.js'),
+        context: {
+          slug: node.fields.slug
+        },
+      })
+    })
+
+    // Create spec pages
+    result.data.specs.edges.forEach(({node}) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/spec.js'),
         context: {
           slug: node.fields.slug
         },

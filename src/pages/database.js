@@ -27,7 +27,7 @@ export default () => (
     <h2>Add-Ons</h2>
     
     <ul>
-      <li>Code Alliance Documentation</li>
+      <li><Link to="/database/specs">Dark Forces Unofficial Specifications</Link></li>
       <li>Launching Add-On Missions</li>
     </ul>
 
