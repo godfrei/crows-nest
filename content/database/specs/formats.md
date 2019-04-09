@@ -4,11 +4,11 @@ title: File Formats
 
 ||||
 |--- |--- |--- |
-||In 3D Engine|Out of 3D engine|
+|                       |In 3D Engine                                   |Out of 3D engine                           |
 |Container/Distribution |[GOB](/database/specs/gob)                     |[LFD](/database/specs/lfd)                 |
 |Level Related          |[LEV](/database/specs/lev)                     |[JEDI.LVL](/database/specs/lvl)            |
-|                       |* [Sector Flags](/database/specs/lev#flags)    |[BRIEFING.LST](/database/specs/briefing)   |
-|                       |* [Wall Flags](/database/specs/wall#flags)     |[CUTSCENE.TXT](/database/specs/cutscene)   |
+|                       |* [Sector Flags](/database/specs/lev#sectorflags)    |[BRIEFING.LST](/database/specs/briefing)   |
+|                       |* [Wall Flags](/database/specs/lev#wallflags)     |[CUTSCENE.TXT](/database/specs/cutscene)   |
 |                       |[INF](/database/specs/inf)                     |[CUTMUSE.TXT](/database/specs/cutmuse)     |
 |                       |[GOL](/database/specs/gol)                     |                                           |
 |                       |[O](/database/specs/o)                         |                                           |  
