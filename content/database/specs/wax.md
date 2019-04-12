@@ -90,16 +90,15 @@ All enemies apart from the REMOTE follow this general pattern:
 |2	    |dying (from punch)
 |3	    |dying (from shot or explosion)
 |4	    |lying dead
-|5	    |staying still (i.e. not sited player yet)
+|5	    |staying still (i.e. not sighted player yet)
 |6	    |follow through of primary attack -- eg. kick from gun
 |7	    |secondary attack -- eg. TD for reeyees, green junk for int. droid, ..
 |8	    |follow through of secondary attack
 |9	    |jump (Kell Dragon)
-|10	
-|11	
+|10	    |
+|11	    |
 |12	    |getting injured (dianoga looking around)
-|13	    |special action
-Using shield for D_TROOP1, flying for D_TROOP2 and D_TROOP3, submerging for dianoga, ...
+|13	    |special action - Using shield for D\_TROOP1, flying for D\_TROOP2 and D\_TROOP3, submerging for dianoga...
 
 **Note:** The Phase 3 varies from this pattern quite a bit.
 Where a state doesn't apply for a particular enemy logic, the WAX will usually just be the enemy walking or moving towards you. It won't be called for by the logic.
