@@ -7,3 +7,14 @@
     // transform: scale(5);
     transform-origin: top left;
 }
+
+.active {
+    animation: play 1s steps(4) infinite;
+}
+
+
+
+@keyframes play {
+    0% { background-position: 0px 0px };
+    // The 100% value comes from the inline style which is provided by the component props
+}

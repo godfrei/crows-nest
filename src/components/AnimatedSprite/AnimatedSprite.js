@@ -6,6 +6,7 @@ export default class AnimatedSprite extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      active: props.active,
       spritePos: { 
         x: parseInt(props.width, 10),
         y: 0
@@ -18,12 +19,12 @@ export default class AnimatedSprite extends React.Component {
   }
 
   componentDidMount() {
-    document.addEventListener('mousemove', this.onMouseMove)
+    // document.addEventListener('mousemove', this.onMouseMove)
 
-    const interval = 250 /* Quarter second, so one walk cycle takes a second */
-    this.timer = setInterval ( () => {
-      this.animate()
-      }, interval )
+    // const interval = 250 /* Quarter second, so one walk cycle takes a second */
+    // this.timer = setInterval( () => {
+    //   // if(this.state.active) this.animate()
+    // }, interval )
   }
 
   componentWillUnmount() {
@@ -74,16 +75,15 @@ export default class AnimatedSprite extends React.Component {
     });
   }
 
-
   render() {
     const waxStyles = {
       width: `${this.state.width}px`,
       height: `${this.state.height}px`,
-      backgroundPosition: `-${this.state.spritePos.x}px ${this.state.spritePos.y}px`,
+      // backgroundPosition: `-${this.state.spritePos.x * 4}px ${this.state.spritePos.y}px`,
+      backgroundPosition: `-${this.state.spritePos.x * 4}px 0`,
       backgroundImage: `url(${this.props.spritePath})`,
       transform: `scale(${this.props.scale})`
     }
-
     const scaledWidth = this.state.width * this.props.scale;
     const scaledHeight = this.state.height * this.props.scale;
     const containerStyles = {
@@ -91,15 +91,21 @@ export default class AnimatedSprite extends React.Component {
       height: `${scaledHeight}px`,
     }
 
+    let containerClass = "spriteContainer"
+    console.log(this.props.active)
+    if (this.props.active) containerClass += " active"
+    console.log(containerClass)
+
     return (
-      <div className="spriteContainer" style={containerStyles}>
-        <div className={spriteStyles.wax} style={waxStyles}></div>
+      <div className={containerClass} style={containerStyles}>
+        <div className={`${spriteStyles.wax} ${this.props.active && spriteStyles.active}`} style={waxStyles}></div>
       </div>
     )
   }
 }
 
 AnimatedSprite.propTypes = {
+  active: PropTypes.bool,
   spritePath: PropTypes.string.isRequired,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
@@ -107,5 +113,6 @@ AnimatedSprite.propTypes = {
 }
 
 AnimatedSprite.defaultProps = {
-  scale: 1
+  scale: 1,
+  active: false
 }
