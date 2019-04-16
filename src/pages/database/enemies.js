@@ -7,6 +7,7 @@ import AnimatedSprite from "../../components/AnimatedSprite"
 import Bossk from "../../images/bossk_sprite.png"
 import Commando from "../../images/commando_sprite.png"
 import Officer from "../../images/officer_sprite.png"
+import Trooper from "../../images/trooper_sprite.png"
 
 function filterObject(obj) {
   const ret = {};
@@ -104,7 +105,7 @@ export default () => (
 
     <div className="enemy-grid">
       <Enemy className="imperial">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Trooper} width={46} height={68} scale={3} steps={6} />
         <h1>Stormtrooper</h1>
 
         <p>"Only Imperial Stormtroopers are so precise."</p>

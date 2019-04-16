@@ -80,9 +80,10 @@ export default class AnimatedSprite extends React.Component {
       width: `${this.state.width}px`,
       height: `${this.state.height}px`,
       // backgroundPosition: `-${this.state.spritePos.x * 4}px ${this.state.spritePos.y}px`,
-      backgroundPosition: `-${this.state.spritePos.x * 4}px 0`,
+      backgroundPosition: `-${this.state.spritePos.x * this.props.steps}px 0`,
       backgroundImage: `url(${this.props.spritePath})`,
-      transform: `scale(${this.props.scale})`
+      transform: `scale(${this.props.scale})`,
+      animationTimingFunction: `steps(${this.props.steps})`
     }
     const scaledWidth = this.state.width * this.props.scale;
     const scaledHeight = this.state.height * this.props.scale;
@@ -109,10 +110,12 @@ AnimatedSprite.propTypes = {
   spritePath: PropTypes.string.isRequired,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
-  scale: PropTypes.number
+  scale: PropTypes.number,
+  steps: PropTypes.number
 }
 
 AnimatedSprite.defaultProps = {
   scale: 1,
-  active: false
+  active: false,
+  steps: 4
 }
