@@ -8,6 +8,9 @@ import Bossk from "../../images/bossk_sprite.png"
 import Commando from "../../images/commando_sprite.png"
 import Officer from "../../images/officer_sprite.png"
 import Trooper from "../../images/trooper_sprite.png"
+import Phase1 from "../../images/phase1_sprite.png"
+import Phase2 from "../../images/phase2_sprite.png"
+import Phase3 from "../../images/phase3_sprite.png"
 
 function filterObject(obj) {
   const ret = {};
@@ -134,7 +137,7 @@ export default () => (
       </Enemy>
 
       <Enemy className="imperial">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Phase1} width={97} height={129} scale={3} steps={6} />
         <h1>Phase I Dark Trooper</h1>
 
         <p>The Phase I is the first stage of Dark Trooper construction and is essentially an endoskeleton. It attacks with a metal blade that your shields can do nothing against, and also has the ability to block energy weapons with a small shield on the left arm. Fast and deadly - listen for the tell-tale buzz to announce their activation.</p>
@@ -143,7 +146,7 @@ export default () => (
       </Enemy>
 
       <Enemy className="imperial">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Phase2} width={131} height={115} scale={3} steps={5} />
         <h1>Phase II Dark Trooper</h1>
 
         <p>The Phase II represents the second stage of Dark Trooper construction. They are armed with an assault cannon which fires plasma and missiles; combine that with their jet packs and high speed attacks and you get a very vicious foe. They like to fire off steady streams of plasma but have to stand still to do so; a missile is usually launched immediately upon noticing you, unless they're close enough that they'd damage themselves.</p>
@@ -152,7 +155,7 @@ export default () => (
       </Enemy>
 
       <Enemy className="imperial">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Phase3} width={147} height={140} scale={3} steps={5} />
         <h1>Phase III Dark Trooper</h1>
 
         <p>The most deadly soldier the Empire has ever come up with, the Phase III is the final stage in Dark Trooper construction. Brain child of General Mohc, the Phase III has the same weapons as the Phase II plus some energy orbs that seek you out until destroyed. The Phase III appears slightly slower than the Phase II, but the extra armor and weaponry make up for the loss in speed.</p>
