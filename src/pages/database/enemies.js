@@ -11,6 +11,9 @@ import Trooper from "../../images/trooper_sprite.png"
 import Phase1 from "../../images/phase1_sprite.png"
 import Phase2 from "../../images/phase2_sprite.png"
 import Phase3 from "../../images/phase3_sprite.png"
+import Gamguard from "../../images/gamguard_sprite.png"
+import Reeyees from "../../images/reeyees_sprite.png"
+import BobaFett from "../../images/bobafett_sprite.png"
 
 function filterObject(obj) {
   const ret = {};
@@ -166,7 +169,7 @@ export default () => (
 
     <div className="enemy-grid">
       <Enemy className="independent">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Reeyees} width={81} height={77} scale={3} />
         <h1>Gran</h1>
 
         <p>The Gran has a long association with the underworld, particularly in the service of the Hutts. The most distinguishing feature is the three eye stalks on the head. The primary weapon of a Gran is the Thermal Detonator and over long distances this can be devastating. But in close range they'll switch to fists to avoid damaging themselves in a TD explosion.</p>
@@ -184,7 +187,7 @@ export default () => (
       </Enemy>
 
       <Enemy className="independent">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Gamguard} width={79} height={90} scale={3} />
         <h1>Gamorrean Guard</h1>
 
         <p>These pig-like guards are slow to move and attack, but when they swing their battle-axes they can be very deadly. Shields won't do you any good if they get close enough to attack, and they can take quite a beating before they finally keel over.</p>
@@ -193,7 +196,7 @@ export default () => (
       </Enemy>
 
       <Enemy className="independent">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={BobaFett} width={129} height={91} scale={3} />
         <h1>Boba Fett</h1>
 
         <p>Has anyone in the galaxy not heard of this legendary bounty hunter? Quite easily the most famous mercenary of his time, Boba Fett lives up to the reputation given him. Fast moving and firing, he can kill before you even know he's there. His jet pack gives him the upper hand(literally) and his rockets are devastating. If this guy have been assigned to hunt you down, the best advice is to run.</p>
