@@ -14,6 +14,9 @@ import Phase3 from "../../images/phase3_sprite.png"
 import Gamguard from "../../images/gamguard_sprite.png"
 import Reeyees from "../../images/reeyees_sprite.png"
 import BobaFett from "../../images/bobafett_sprite.png"
+import IntDroid from "../../images/intdroid_sprite.png"
+import Probe from "../../images/probe_sprite.png"
+import Remote from "../../images/remote_sprite.png"
 
 function filterObject(obj) {
   const ret = {};
@@ -207,7 +210,7 @@ export default () => (
 
     <div className="enemy-grid">
       <Enemy className="droid">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={IntDroid} width={106} height={82} scale={3} />
         <h1>Interrogation Droid</h1>
 
         <p>These spherical orbs are the Empire's primary tool in extracting information or confessions from helpless prisoners. They hover above the ground and have pretty good vertical motion, but their horizontal speed is fairly slow. They come equipped with a stun device and a power blast.</p>
@@ -216,7 +219,7 @@ export default () => (
       </Enemy>
 
       <Enemy className="droid">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Probe} width={87} height={89} scale={3} steps={21} />
         <h1>Probe Droid</h1>
 
         <p>These droids are used by the Empire and various other factions as an early detection and warning device. They fly above the ground and fire with a laser that has roughly the same power as a standard Stormtrooper Rifle. The speed of these droids is nothing to worry about but you should be carfeul of the secondary explosion when they are destroyed.</p>
@@ -225,7 +228,7 @@ export default () => (
       </Enemy>
 
       <Enemy className="droid">
-        <AnimatedSprite spritePath={Bossk} width={55} height={99} scale={3} />
+        <AnimatedSprite spritePath={Remote} width={309} height={197} scale={3} />
         <h1>Remote</h1>
 
         <p>Remotes are small spherical droids that move with quick jerks. They don't pack much of a punch with their laser, but they are very good at avoiding incoming fire. Mostly they're just a large annoyance.</p>
