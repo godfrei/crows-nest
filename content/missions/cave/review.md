@@ -1,8 +1,10 @@
 ---
 mission: cave
-reviewer: "Geoff Elliott"
-date: "1996-11-18"
-rating: 79
+title: "Underground Research Facility Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-11-18
+rating: "79"
 ---
 
 ![Cave screenshot](./cave.png "Don't worry, they don't bite. In this level you infiltrate the facility believed to have created the first DT prototype.")

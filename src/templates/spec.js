@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
-import Layout from "../components/layout"
+import Layout from "../layout"
 import SpecNav from "../components/SpecNav"
 
 export default ({ data }) => {
@@ -30,8 +30,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        author
-        date(formatString: "MMMM Do, YYYY")
+        date
       }
     }
   }

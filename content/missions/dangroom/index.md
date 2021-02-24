@@ -7,7 +7,7 @@ authors:
 date:
 filename: "dangroom.zip"
 description: "The Danger Room is a custom level set in the Marvel Universe.  You play the X-Man Cable, armed to the hilt and honing his skills in the X-Men's renowned \"Danger Room\"."
-heroImage: "./dangroom.png"
+cover: "dangroom.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

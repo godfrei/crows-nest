@@ -6,10 +6,10 @@ authors:
     - "Patrick Haslow"
     - "Matthew Hallaron"
     - "Barry Brien"
-date: "2006-08"
+date: 2006-08-01
 filename: "dtide3.zip"
 description: "After attempting to free his partner Jan Ors from the wily and corrupt Prefect Talmont, Kyle Katarn was captured by the Imperial forces of the Tatooine Garrison. Katarn discovered that the sinister Prince Xizor had nearly complete control over the garrison, but his motives for capturing Jan remain a mystery. Being held captive on board the Imperial Shuttle Phormaishue, Katarn's plans to liberate his friend face a grim ending..."
-heroImage:
+cover:
 levelReplaced:	JABSHIP
 difficulty: yes
 bm:	yes

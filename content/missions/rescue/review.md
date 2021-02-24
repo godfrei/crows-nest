@@ -1,8 +1,10 @@
 ---
 mission: rescue
-reviewer: "Geoff Elliott"
-date: "1996-11-22"
-rating: 74
+title: "Impossible Rescue Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-22
+rating: "74"
 ---
 
 ![Impossible Rescue screenshot](./rescue.png "Even though the author has recycled his previous Tatooine level, he still adds several new surprises to give the experience some freshness.")

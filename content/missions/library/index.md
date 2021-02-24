@@ -8,7 +8,7 @@ authors:
 date:
 filename: "library.zip"
 description: "You have been selected to raid an Imperial Library for information."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

@@ -4,10 +4,10 @@ editorsChoice:
 title: "The Fall of Thrawn"
 authors: 
     - "Desmond Shepherd"
-date: "1996-08-16"
+date: 1996-08-16
 filename: "fthrawn.zip"
 description: "After the demise of the Emperor, the massive forces of the Empire were scattered across the galaxy. But now the single remaining Grand Admiral, Thrawn, is attempting to reunite the Fleet under his control. His goal: the complete, total and utter destruction of the Rebellion. Your job, Kyle Katarn, is to find information on the massing of the Fleet, and eventually to kill Thrawn himself."
-heroImage: "./fthrawn1.png"
+cover: "fthrawn1.png"
 levelReplaced:	"SECBASE, TALAY, SEWERS"
 difficulty: yes
 bm:	yes

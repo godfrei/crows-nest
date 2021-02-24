@@ -6,9 +6,9 @@ authors:
     - "Ken Swope"
     - "Ron Swope"
 date:
-filename: ""
+filename: 
 description: "The Empire has agreed to give the Imperial Star Destroyer Thunder to a nearby planetary system engaged in a local war. Your job is to stop this technology transfer by destroying the Thunder. You need to place three charges throughout the ship and then get out using an escape pod."
-heroImage: "./opqstorm.png"
+cover: "opqstorm.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

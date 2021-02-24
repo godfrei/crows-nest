@@ -1,11 +1,14 @@
 ---
 mission: parux
-reviewer: "Jeff Walters"
-date: "1997-04-10"
-rating: 91
+title: "Energy Mine on Parux Review"
+reviewers: 
+  -  "Jeff Walters"
+date: 1997-04-10
+rating: "91"
 ---
 
 You know how sometimes you get a level that's been hyped up and you're sure will be great, but turns out to be ordinary.........well this level is the oppostie.
+
 I'd played this author's previous two levels a couple of times and while they had the odd interesting part they were fairly ordinary. Bearing this in mind, I wasn't getting my hopes up when I downloaded this level, especially because the name - Energy Mine on Parux - is hardly an innovative attention grabber.
 
 ![Energy Mine on Parux screenshot 2](./parux2.png "Nicely done new rock and sky textures really enhance the level's atmosphere.")

@@ -1,8 +1,10 @@
 ---
 mission: cargobay
-reviewer: "Geoff Elliott"
-date: "1996-11-05"
-rating: 76
+title: "Cargo Bay 5 Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-11-05
+rating: "76"
 ---
 
 As soon as I read the description for the level I was mentally setting this review down a couple notches. Not only does the idea of another "rescue Madine from a detention center" make my stomach turn, but the word bounty hunter immediately sent visions of Boba Fett flying through my head. In these two regards, I wasn't wrong with my original impressions. Boba Fett is here, locked up in an Imperial cell for some reason. And while this level isn't just a detention center, that's the main focus, and it's unimaginative.

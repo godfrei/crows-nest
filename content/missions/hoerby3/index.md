@@ -7,7 +7,7 @@ authors:
 date:
 filename: "hoerby3.zip"
 description: "You've just received the Star of Alderaan. Shortly after leaving Mon Mothma and the Rebel fleet, your ship comes under fire from Imperial forces. You are no match for them, and eventually you power down and are taken via shuttle to Imperial Outpost D-42. There you will reside until Darth Vader determines your fate. Not willing to wait around that long, you manage to steal a blaster from an officer on board the shuttle, and once in your cell begin your escape."
-heroImage: "./hoerby2.png"
+cover: "hoerby2.png"
 levelReplaced: "SECBASE, TALAY, SEWERS"
 difficulty: yes
 bm:	yes

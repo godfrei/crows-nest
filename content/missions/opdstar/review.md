@@ -1,8 +1,10 @@
 ---
 mission: opdstar
-reviewer: "Geoff Elliott"
-date: "1996-11-22"
-rating: 91
+title: "Operation Death Star Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-22
+rating: "91"
 ---
 
 ![Operation Death Star screenshot](./opdstar.png "You've been captured on your way back with the plans; now you have to get them back and escape.")

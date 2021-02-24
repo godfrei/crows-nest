@@ -1,8 +1,10 @@
 ---
 mission: secbase2
-reviewer: "Geoff Elliott"
-date: "1996-11-22"
-rating: 84
+title: "Escape from Secret Base II Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-22
+rating: "84"
 ---
 
 ![Escape from Secret Base 2 screenshot](./secbase2.png "This hangar is an example of the wide open places the author has managed to create without any HOMing.")

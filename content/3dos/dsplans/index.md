@@ -3,10 +3,10 @@ component_id: dsplans
 title: "Death Star Plans"
 authors: 
     - "Barry Brien"
-date: "2003-04-29"
+date: 2003-04-29
 filename: "dsplans.zip"
 component_type: "3do"
-heroImage: 
+cover: 
 description: "Texture-mapped Death Star plans to replace the original WAX."
 ---
 

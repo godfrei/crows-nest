@@ -1,8 +1,10 @@
 ---
 mission: fthrawn
-reviewer: "Geoff Elliott"
-date: "1996-12-07"
-rating: 66
+title: "The Fall of Thrawn Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-12-07
+rating: "66"
 ---
 
 

@@ -1,86 +1,74 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
 import BodyClassName from "react-body-classname"
-import Helmet from "react-helmet"
-import config from "../../data/SiteConfig"
-import Navigation from "../components/Navigation"
-import GradientTitle from "../components/GradientTitle"
-import crow from "../images/crow.png"
-import Footer from "../components/Footer";
+import GradientTitle from '../components/GradientTitle'
+import Navigation from '../components/Navigation'
+import Footer from '../components/Footer'
+import PostListing from '../components/PostListing'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
+import crow from '../images/crow.png'
 
-export default ({ data }) => {
-  console.log(data)
-  return (
-    <BodyClassName className="home">
-      <main>
-        <Helmet>
-          <title>{config.siteTitle}</title>
-          <meta name="description" content={config.siteDescription} />
-        </Helmet>
-        <header id="homepage_header">
-          <img src={crow} alt="The Moldy Crow" id="crow" />
-          <GradientTitle title="The Crow's Nest" />
-          <Navigation />
-        </header>
+const Index = ({ data }) => (
+  <BodyClassName className="home">
+    <main>
+      <Helmet>
+        <title>{config.siteTitle}</title>
+        <meta name="description" content={config.siteDescription} />
+      </Helmet>
+      <SEO />
+      <header id="homepage_header">
+        <img src={crow} alt="The Moldy Crow" id="crow" />
+        <GradientTitle title={config.siteTitle} />
+        <Navigation />
+      </header>
 
-        <div className="content">
+      <div className="content">
 
-          <p>Welcome to the Crow's Nest, the most complete and up-to-date site on the web for reviews and downloads of add-on levels for the LucasArts 3D first-person game Dark Forces. If you're a Dark Forces newbie or have never been to the Nest before, you should access the <Link to="/database">Database</Link>. To read a review on a level select it from the <Link to="/reviews">Review List</Link>. You can also download the levels and other files for Dark Forces including patches, FMEs, WAXes and more from <Link to="/storage">Storage</Link>. If you want to find other Dark Forces or Jedi Knight pages, head to the <Link to="/launchpad">Launch Pad</Link> for immediate departure.</p>
+        <p>Welcome to the Crow's Nest, the most complete and up-to-date site on the web for reviews and downloads of add-on levels for the LucasArts 3D first-person game Dark Forces. If you're a Dark Forces newbie or have never been to the Nest before, you should access the <Link to="/database">Database</Link>. To read a review on a level select it from the <Link to="/reviews">Review List</Link>. You can also download the levels and other files for Dark Forces including patches, FMEs, WAXes and more from <Link to="/storage">Storage</Link>. If you want to find other Dark Forces or Jedi Knight pages, head to the <Link to="/launchpad">Launch Pad</Link> for immediate departure.</p>
 
-          <p>Looking for the <a href="/vintage">vintage Crow's Nest</a>?</p>
+        <p>Looking for the <a href="/vintage">vintage Crow's Nest</a>?</p>
 
-          {data.allMarkdownRemark.edges.map(({ node }) => {
-            if(node.frontmatter.title) {
-              return (
-                <div key={node.id}>
-                  <Link to={node.fields.slug }>
-                      <h3>{node.frontmatter.title}</h3>
-                      <p>{node.excerpt}</p>
-                  </Link>
-                </div>
-              )
-            }
-            else {
-              return (
-                <div key={node.id}>
-                  <Link to={node.fields.slug }>
-                      <h3>{node.frontmatter.title}</h3>
-                      <p>{node.excerpt}</p>
-                  </Link>
-                </div>
-              )
-            }
-          })}
-        </div>
-        <Footer />
-      </main>
-    </BodyClassName>
-  )
-}
-// filter: { fileAbsolutePath: { regex: "/(missions|posts)\/.*\/(?:review)?.*/" }}
+        <PostListing postEdges={data.allMarkdownRemark.edges} />
+      </div>
+      <Footer />
+    </main>
+  </BodyClassName>
+  // <Layout>
+  //   <main>
+  //     <Helmet title={config.siteTitle} />
+  //     <SEO />
+  //     <PostListing postEdges={data.allMarkdownRemark.edges} />
+  //   </main>
+  // </Layout>
+)
 
-export const query = graphql`
-  query {
+export default Index
+
+/* eslint no-undef: "off" */
+export const pageQuery = graphql`
+  query IndexQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/(\/missions\/.*\/review.*)|(\/posts\/.*\/)/" }}
-      limit:5
-      sort: {
-        fields: frontmatter___date
-        order:DESC
-      }
+      limit: 2000
+      sort: { fields: [fields___date], order: DESC }
+      filter: {fields: {collection: {eq: "posts"}}}
     ) {
       edges {
         node {
-          id
-          frontmatter {
-            title
-            author
-            date(formatString: "MMMM Do, YYYY")
-          }
           fields {
-              slug
+            slug
+            date(formatString: "MMMM DD, YYYY")
           }
           excerpt
+          frontmatter {
+            title
+            cover {
+              name
+              publicURL
+            }
+            date
+          }
         }
       }
     }

@@ -1,8 +1,10 @@
 ---
 mission: iceworld
-reviewer: "Geoff Elliott"
-date: "1997-05-10"
-rating: 81
+title: "Ice World Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-05-10
+rating: "81"
 ---
 
 This level looks good. I mean that literally; the author has spent time going over the place to make sure textures fit and 3DOs are positioned correctly. And the choice of textures is pretty good too. There are a few new ones in addition to the dozens that have been modified to give the base the cold blue look you generally associate with ice. It makes the base feel icy, and it almost makes a shiver run up your spine.

@@ -1,8 +1,10 @@
 ---
 mission: borea
-reviewer: "Geoff Elliott"
-date: "1996-11-13"
-rating: 80
+title: "Operation Borea Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-11-13
+rating: "80"
 ---
 
 ![Operation Borea screenshot 1](./borea.png "The author seems quite fond of large open spaces and huge chasms, and uses them to accent the mood of the level.")

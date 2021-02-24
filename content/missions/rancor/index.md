@@ -5,9 +5,9 @@ title: "Rancor Base"
 authors: 
     - "Jason Muhs"
 date:
-filename: ""
+filename: 
 description: "Rancor Squad has decided that it's imperative that you invade Rancor Base and steal a sample of the Phrix Metal. Your tactical officer has warned you that the base is filled with troops and you'll need all the ammo you can get."
-heroImage: "./rancor.png"
+cover: "rancor.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

@@ -1,8 +1,10 @@
 ---
 mission: 3dmad
-reviewer: "Geoff Elliott"
+title: "3D Mad Review"
+reviewers: 
+  - "Geoff Elliott"
 date: 
-rating: 
+rating: ""
 ---
 
 Due to the extraordinary nature of the level, this review will differ in format from the rest. There is no plot, and there are no goals to be accomplished. The only difficulty stems from a squad of stormtroopers, and in being able to figure out what exactly is going on.

@@ -1,8 +1,10 @@
 ---
 mission: outbase
-reviewer: "Geoff Elliott"
-date: "1997-04-09"
-rating: 50
+title: "OutBase Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-04-09
+rating: "50"
 ---
 
 ![OutBase screenshot](./outbase.png "One of the more interesting areas.")

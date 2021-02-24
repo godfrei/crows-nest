@@ -7,7 +7,7 @@ authors:
 date:
 filename: "reunion.zip"
 description: "Having obtained the location of the hidden Jedi Comunity from Goatha, Marek Sunrider has located an uncharted planet and is preparing to land when he is struck with a sudden vision. He learns of a younger sister who lives in a Jedi community who may be willing to meet him if he can prove himself worthy."
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

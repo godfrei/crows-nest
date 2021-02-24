@@ -7,7 +7,7 @@ authors:
 date:
 filename: "faust.zip"
 description: "An Imperial base lies deep within the city of Faust, and in it are data tapes detailing future Imperial tactics and weaponry. These tapes were recently stolen by an Alliance operative, but he was captured soon after. He did manage to hide the tapes somewhere in the base. Your job is to find a way into the base and recover the Imperial tapes."
-heroImage: "./faust.png"
+cover: "faust.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

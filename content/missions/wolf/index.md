@@ -5,9 +5,9 @@ title: "Castle Wolfenstein"
 authors: 
     - "Steven Scott"
 date:
-filename: ""
+filename: 
 description: "This is the same mission as Wolfenstein 3D level 1. Your objective is to get to the elevator, hit the switch and grab the plans."
-heroImage: "./wolf.png"
+cover: "wolf.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

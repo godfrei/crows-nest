@@ -1,8 +1,10 @@
 ---
 mission: octagone
-reviewer: "Geoff Elliott"
-date: "1997-04-02"
-rating: 64
+title: "Octagone 8 Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-04-02
+rating: "64"
 ---
 
 Does this level answer the question? Well one could say that if there were Dark Troopers around when the Alliance was trying to get the plans for the Death Star then the base where they were kept would be filled with them, and Rebel commandos would have a much more difficult time getting to the plans. While this level is considerably more difficult then SECBASE, I much prefer the original to this. Here's why:

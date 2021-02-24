@@ -9,7 +9,7 @@ authors:
 date:
 filename: "infil-lb.zip"
 description: "Your task is to infiltrate the laboratory and retrieve a sample of the Phrik metal being used in new weapon construction."
-heroImage:
+cover:
 levelReplaced:	TESTBASE
 difficulty: yes
 bm:	yes

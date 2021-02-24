@@ -7,7 +7,7 @@ authors:
 date:
 filename: "biohazrd.zip"
 description: "The Empire is producing nasty chemical warfare agents at a newly built facility.  As Kyle, you are assigned to infiltrate the facility, locate the main power coupling, place a single sequencer charge at the base of it and get back to the ship safely."
-heroImage: "./biohazrd.png"
+cover: "biohazrd.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

@@ -7,7 +7,7 @@ authors:
 date:
 filename: "memorial.zip"
 description: "The plans for the Third Death Star have been completed.  They have been duplicated and delegated to three Imperial Officers to Guard.  Rumor is one of the Officers keeps it at the Death Star Memorial Factory. Find those plans!"
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

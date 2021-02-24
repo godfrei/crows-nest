@@ -7,7 +7,7 @@ authors:
 date:
 filename: "imation2.zip"
 description: "Well the reason you are back is because you grabbed the wrong data tape. The empire has also moved the data tape to a new location, there are new rooms and more traps."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

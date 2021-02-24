@@ -1,8 +1,10 @@
 ---
 mission: academy
-reviewer: "Geoff Elliott"
-date: "1996-10-25"
-rating: 94
+reviewers: 
+  - "Geoff Elliott"
+title: "Imperial Academy Review"
+date: 1996-10-25
+rating: "94"
 ---
 
 This is a challenging level. 

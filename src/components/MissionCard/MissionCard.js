@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import cardStyles from "./missioncard.module.scss"
 
 export default ({ node }) => {
-    const heroImage = (node.frontmatter.heroImage) ? node.frontmatter.heroImage.publicURL : "";
+    const cover = (node.frontmatter.cover) ? node.frontmatter.cover.publicURL : "";
     return (
         <Link to={node.fields.slug} className={cardStyles.card}>
-            <div className={cardStyles.heroImage} style={{ backgroundImage: `url(${heroImage})`}} />
+            <div className={cardStyles.cover} style={{ backgroundImage: `url(${cover})`}} />
             <strong>{node.frontmatter.title}</strong>
         </Link>
     )

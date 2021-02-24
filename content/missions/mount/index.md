@@ -7,7 +7,7 @@ authors:
 date:
 filename: "mount.zip"
 description: "The plans for the Death Star have been found. Their current location is hidden deep within one of the Empire's coordinating centers in a mountain range on Relion. Your mission is to steal the plans and make it back to your ship."
-heroImage: "./mount.png"
+cover: "mount.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

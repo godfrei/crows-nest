@@ -5,9 +5,9 @@ title: "3D Mad"
 authors: 
     - "Len Bowers"
 date:
-filename: ""
-description: ""
-heroImage: 
+filename: 
+description:
+cover: 
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

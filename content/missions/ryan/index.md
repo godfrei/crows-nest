@@ -7,7 +7,7 @@ authors:
 date:
 filename: "ryan.zip"
 description: "Kyle Katarn has been tasked with retrieving the plans for the deployment of the Imperial Fleet from the military headquarters building on Coruscant. You will then need to take them to the Imperial Security Agency in order to decode the data before escaping the planet."
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

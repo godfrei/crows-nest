@@ -5,9 +5,9 @@ title: "Perplexion"
 authors: 
     - "Jereth Kok"
 date:
-filename: ""
+filename: 
 description: ""
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

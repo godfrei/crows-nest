@@ -1,75 +1,55 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Helmet from "react-helmet"
-import config from "../../data/SiteConfig"
-import Layout from "../components/layout"
-import MissionCard from "../components/MissionCard"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../layout'
+import MissionListing from '../components/MissionListing'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
+import GradientTitle from "../components/GradientTitle"
+import reviewList from "../images/reviews.png"
 
-export default ({ data }) => {
-  // console.log(data)
+const Missions = ({ data }) => (
+  <Layout>
+    <main>
+      <Helmet title={`Missions | ${config.siteTitle}`} />
+      <SEO />
+      <img src={reviewList} alt="" className="section_icon" />
+      <GradientTitle title="Missions" />
+      <MissionListing missionEdges={data.allMarkdownRemark.edges} />
+    </main>
+  </Layout>
+)
 
-  // function getReviewInfo(node) {
-  //   if (node.frontmatter.mission_id && node.frontmatter.mission_id.frontmatter.rating) {
-  //     return ( <strong>{node.frontmatter.mission_id.frontmatter.rating}</strong>)
-  //   }
-  //   return null;
-  // }
+export default Missions
 
-  return (
-    <Layout>
-      <Helmet>
-        <title>Missions | {config.siteTitle}</title>
-      </Helmet>
-      <div>
-        <h1>Missions</h1>
-        <ul className="mission-grid">
-          {data.levels.edges.map(({ node }) => {
-            // const review_info = getReviewInfo(node);
-            return (
-              <li key={node.id}>
-                <MissionCard node={node} />
-                {/* <Link to={node.fields.slug}>{node.frontmatter.title}</Link> */}
-                {/* {review_info} */}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </Layout>
-  )
-}
-
-export const query = graphql`
-  query {
-    levels:allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/\/missions\/.*\/(?!review.*)/" }}
-      sort: {
-        fields: frontmatter___title
-        order:ASC
+/* eslint no-undef: "off" */
+export const missionsQuery = graphql`
+  query MissionsQuery {
+    allMarkdownRemark(
+      limit: 2000
+      sort: { fields: [fields___date], order: DESC }
+      filter: {
+        # Only from the missions collection
+        fields: {collection: {eq: "missions"}},
+        # Not files that include "review" in their file path
+        fileAbsolutePath: { regex: "/missions\/.*\/index/" }
       }
     ) {
-      totalCount
       edges {
         node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-            description
-            heroImage {
-              publicURL
-            }
-            author
-            mission_id {
-              frontmatter {
-                rating
-              }
-            }
-          }
           fields {
-              slug
+            slug
+            date(formatString: "MMMM DD, YYYY")
           }
           excerpt
+          frontmatter {
+            title
+            cover {
+              name
+              publicURL
+            }
+            date
+          }
         }
       }
     }

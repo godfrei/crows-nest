@@ -1,72 +1,54 @@
-import React from "react"
-import { graphql, withPrefix } from "gatsby"
-import Helmet from "react-helmet"
-import config from "../../data/SiteConfig"
-import Layout from "../components/layout"
-import AuthorLinks from "../components/AuthorLinks"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../layout'
+import VocListing from '../components/VocListing'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
 
-export default ({ data }) => {
-  // console.log(data)
+const vocs = ({ data }) => (
+  <Layout>
+    <main>
+      <Helmet title={`VOCs | ${config.siteTitle}`} />
+      <SEO />
+      <h1>VOCs</h1>
 
-  return (
-    <Layout>
-      <Helmet>
-        <title>VOCs | {config.siteTitle}</title>
-      </Helmet>
-      <div>
-        <h1>VOCs</h1>
+      <p>You know that ferocious Dark Trooper that's looming over you, rushing forward at an incredible pace to speed your journey to the land beyond? You really have nothing to fear because it's just a grouping of 8 flat images with some logic applied; known otherwise as a WAX. All enemies in Dark Forces are WAXes with the exception of the welders, mousebots and turrets which are 3DOs. Waxes also include moving textures or other stationary objects that have different views as you move around them to give you the sensation that you're actually walking around an object.</p>
 
-        <p>VOCs are the sounds that you hear in the background, the sound of a blaster or detonator, a door opening, or somebody talking. In short any sound you hear in Dark Forces is a VOC file(except for the MIDI music). Here you can find some files of new sounds created for use in Dark Forces levels.</p>
+      <p>The files below are available for download and use in custom levels or your own Dark Forces gaming. Please respect the author's creation and follow any guidelines included in attached text files.</p>
 
-        <p>The files below are available for download and use in custom levels or your own Dark Forces gaming. Please respect the author's property and follow any guidelines included in attached text files.</p>
-        <ul>
-          {data.vocs.edges.map(({ node }) => {
-            return (
-              <li key={node.id}>
-                <a href={ withPrefix(`/vocs/${node.frontmatter.filename}`) } className="download">
-                  {node.frontmatter.title}
-                </a>
-                <p><AuthorLinks node={node} /></p>
-                <figure>
-                    <audio src={node.frontmatter.preview.publicURL} controls>
-                        Your browser doesn't support the <code>audio</code> element.
-                    </audio>
-                    <figcaption>{node.frontmatter.description}</figcaption>
-                </figure>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </Layout>
-  )
-}
+      <VocListing vocEdges={data.allMarkdownRemark.edges} />
+    </main>
+  </Layout>
+)
 
-export const query = graphql`
-  query {
-    vocs:allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/\/vocs\/.*\/index/" }}
-      sort: {
-        fields: frontmatter___title
-        order:ASC
+export default vocs
+
+/* eslint no-undef: "off" */
+export const vocQuery = graphql`
+  query VocQuery {
+    allMarkdownRemark(
+      limit: 2000
+      sort: { fields: [fields___date], order: DESC }
+      filter: {
+        # Only from the missions collection
+        fields: {collection: {eq: "vocs"}},
       }
     ) {
-      totalCount
       edges {
         node {
-          id
+          fields {
+            slug
+            date(formatString: "MMMM DD, YYYY")
+          }
+          excerpt
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
-            description
-            preview {
+            cover {
+              name
               publicURL
             }
-            authors
-            filename
-          }
-          fields {
-              slug
+            date
           }
         }
       }

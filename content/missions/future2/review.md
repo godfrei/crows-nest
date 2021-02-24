@@ -1,8 +1,10 @@
 ---
 mission: future2
-reviewer: "Geoff Elliott"
-date: "1997-01-11"
-rating: 86
+title: "Future Present Part II Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-01-11
+rating: "86"
 ---
 
 As Part II in a trilogy, this level had something to live up to. In true sequel fashion, it doesn't quite match it's predecessor.

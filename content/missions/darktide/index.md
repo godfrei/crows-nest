@@ -4,10 +4,10 @@ editorsChoice:
 title: "Dark Tide: Episode I - Wasteland Survivor"
 authors: 
     - "Patrick Haslow"
-date: "1999-12"
+date: 1999-12-01
 filename: "darktide.zip"
 description: "Kyle Katarn and Jan Ors are forced to crash land in the badlands of Tatooine. Armed only with a bryar pistol and  thermal detonators, Katarn must forge his way through a land ruled by villainous bandits and fearsome Sandpeople, in the hope that he can locate the key to his escape..."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

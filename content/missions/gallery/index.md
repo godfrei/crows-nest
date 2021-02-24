@@ -7,7 +7,7 @@ authors:
 date:
 filename: "gallery.zip"
 description: "A showcase of the add-on component work by the author."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

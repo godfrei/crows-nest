@@ -1,8 +1,10 @@
 ---
 mission: mount
-reviewer: "Geoff Elliott"
-date: "1997-03-07"
-rating: 87
+title: "The Mountains of Relion Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-03-07
+rating: "87"
 ---
 
 Save me from an endless supply of Death Star plans levels! PLEASE!

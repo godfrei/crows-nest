@@ -7,7 +7,7 @@ authors:
 date:
 filename: "infinit.zip"
 description: "These are demo levels, which show how you can make an infinate staircase or tower of doom. Thats right I've included two versions one with baddies in BinfiniT.gob and one version with out enemys AinfiniT.gob."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

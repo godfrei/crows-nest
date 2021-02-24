@@ -8,7 +8,7 @@ date:
 filename: "depot.zip"
 description: "There was no story included in the text file, but the basis of the level is clear enough from the title. Kyle has been given the task of destroying an Imperial supply depot by the usual procedure.
 "
-heroImage: "./depot.png"
+cover: "depot.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

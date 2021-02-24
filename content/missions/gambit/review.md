@@ -1,8 +1,10 @@
 ---
 mission: gambit
-reviewer: "Geoff Elliott"
-date: "1997-04-14"
-rating: 82
+title: "The Emperor's Gambit Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-04-14
+rating: "82"
 ---
 
 **gambit**(gam'bit) **n.** || **1** Chess an opening in which a pawn or other piece is sacrificed to get an advantage in position **2** an opening maneuver, action, or remark intended to gain an advantage

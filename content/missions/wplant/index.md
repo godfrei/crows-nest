@@ -5,9 +5,9 @@ title: "Operation: Nar Shaddaa Water Treatment Plant"
 authors: 
     - "Michael Messer"
 date:
-filename: ""
+filename: 
 description: "An Imperial data tape has been stolen by smugglers and taken to a Nar Shaddaa Water Treamtment Plant. This tape contains information relating to the creation of Dark Troopers. Enraged by this the Empire has sent an entire legion of Stormtroopers there. The Rebels must have these data tapes, and you are sent to retrieve them. You are warned that there may be Dark Troopers present."
-heroImage: "./wplant.png"
+cover: "wplant.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

@@ -1,8 +1,10 @@
 ---
 mission: arcadia
-reviewer: "Geoff Elliott"
-date: "1996-10-30"
-rating: 76
+title: "Arcadia: Imperial Prison Planet Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-10-30
+rating: "76"
 ---
 
 The story that sets the base for this level has some flaws, and the level doesn't do much to grow beyond it. It starts out great, with some edited cutscenes from TIE Fighter, and some altered sections from Dark Forces. It sets the beginning of a mood that really fails to continue.
@@ -16,6 +18,6 @@ There are several things that the author did do well. The atmosphere in some pla
 The player feels a little empty by the time he/she reaches the landing platform again. You've recovered the navigation data, but there's no sense of accomplishment. That's due in part to the fact that the level isn't diffcult, but also to the story. Now that you've retrieved the NavaCard the Rebels can plan a rescue, but I left feeling like I'd abandoned the prisoners to their fate. I was all geared up to go after the shuttle and wreak havoc on the Imps, but there was nothing left to do.
 
 
-##Overall
+## Overall
 
 In short, the level has been done before, and it's been done better, not only by LucasArts, but by other independent level designers. Perhaps with another level or two to advance the story and bring it to a real conclusion this level could really be great. But for now, if you want to infiltrate a prison, find a different way or play level 6 over again.

@@ -1,7 +1,10 @@
 ---
 mission: archangel
-reviewer: "Geoff Elliott"
-date: "1997-01-09"
+title: "Operation Archangel Episode I - Mos Eisley: The Maze Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1997-01-09
+rating: ""
 ---
 
 I'll add my own comments in here. The author has done an absolutely fantastic job on this level. The textures he's come up with are great, and the subtle shading used in areas is really incredible. I can't imagine how much time this must have taken. If you want an example of how to give your level an added sense of realism, this is where to look.

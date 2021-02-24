@@ -7,7 +7,7 @@ authors:
 date:
 filename: "ravenbase.zip"
 description: "Kyle and Jan have discovered the Imperial Commando base on Desal, where the strongest and most elite storm troopers go. But as Kyle lands on an asteroid just outside Desal where he was to make a operations base for his mission, he realizes how wrong his reserch had been..."
-heroImage: "./dangroom.png"
+cover: "dangroom.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

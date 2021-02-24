@@ -1,40 +1,64 @@
-import React from "react"
-import { graphql, withPrefix } from "gatsby"
-import Helmet from "react-helmet"
-import config from "../../data/SiteConfig"
-import Layout from "../components/layout"
-import Review from "../components/Review"
-import TechSpecs from "../components/TechSpecs"
-import MissionHeader from "../components/MissionHeader"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
+import Layout from '../layout'
+import TechSpecs from '../components/TechSpecs';
+import EditorsChoice from '../components/EditorsChoice';
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
+import moment from 'moment';
+import styles from './post.module.scss'
+import './prism-okaidia.css'
 
-export default ({ pageContext, data }) => {
-  // console.log(data)
+export default ({ data, pageContext }) => {
+  const { slug, reviewRegex } = pageContext;
+  const postNode = data.markdownRemark;
+  const post = postNode.frontmatter;
+  const date = postNode.fields.date || '';
+
+  const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
 
   function getReviewContent(reviews) {
-    let reviewContent = null
+    let reviewContent = null;
     if(reviews.length >= 1) {
       reviewContent = (
-        <div>
-          <h2>Review</h2>
+        <>
           {reviews.map(({ node }) => {
+            const review = node.frontmatter;
+            const date = new Date(review.date);
+            const dateString = moment(date).format("MMMM DD, YYYY");
+
             return (
-              <Review key={node.id} node={node} />
+              <>
+                <div>
+                  <p className={styles.postMeta}>{dateString} | Reviewed by: {review.reviewers.join(', ')}</p>
+                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
+                  <p>Rating: <strong>{review.rating}</strong></p>
+                </div>
+                <hr />
+              </>
             )
           })}
-        </div>
+        </>
+      );
+    }
+    else {
+      reviewContent = (
+        <p>No reviews yet.</p>
       )
     }
     return reviewContent
   }
 
   function getDownloadLink(data) {
-    const post = data.markdownRemark;
-    const file = data.file;
-    if(file) {
+    const file = data.markdownRemark.frontmatter.filename;
+    const title = data.markdownRemark.frontmatter.title;
+
+    if(file?.publicURL) {
       return (
-        <a href={ withPrefix(`/missions/${post.frontmatter.filename}`) } className="download">
-          <strong>Download {post.frontmatter.title}</strong>
-          ({post.frontmatter.filename}, {data.file.prettySize}) 
+        <a href={file.publicURL} className="download">
+          <strong>Download {title}</strong>
+          {` (${file.name}.${file.extension}, ${file.prettySize})`} 
         </a>
       )
     }
@@ -48,48 +72,54 @@ export default ({ pageContext, data }) => {
     }
   }
 
-  const post = data.markdownRemark
-  const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
-  const heroImage = (post.frontmatter.heroImage) ? post.frontmatter.heroImage.publicURL : "";
-  const hasHeroImage = (post.frontmatter.heroImage) ? "hasHeroImage" : "";
+  if (!post.id) {
+    post.id = slug
+  }
   return (
     <Layout>
       <Helmet>
-        <title>{`${post.frontmatter.title} | ${config.siteTitle}`}</title>
+        <title>Mission {`${post.title} | ${config.siteTitle}`}</title>
       </Helmet>
-      <div className={`mission ${hasHeroImage}`}>
-        <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
-        <MissionHeader node={post} />
-        <div className="content">
-          <div className="descAndReviews">
-            <h2>Plot</h2>
-            <p className="plot">{post.frontmatter.description}</p>
-            {getReviewContent(reviews)}
-          </div>
-          <div className="supplemental">
-            {getDownloadLink(data)}
-            <TechSpecs node={post} />
-          </div>
-        </div>
+      <SEO postPath={slug} postNode={postNode} postSEO />
+      <div>
+        <h1>{post.title}</h1>
+        <EditorsChoice />
+        <p className={styles.postMeta}>
+          {date} | Author(s): {post.authors.join(', ')}
+        </p>
+        <p>{post.description}</p>
+        {getDownloadLink(data)}
+        <TechSpecs node={post} />
+
+        <hr />
+        <h2>Reviews</h2>
+        {getReviewContent(reviews)}
       </div>
     </Layout>
   )
 }
 
-export const query = graphql`
-  query($slug: String!, $reviewRegex: String!, $filename: String!) {
+/* eslint no-undef: "off" */
+export const pageQuery = graphql`
+  query MissionBySlug($slug: String!, $reviewRegex: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
+      html
+      excerpt
       frontmatter {
         title
-        editorsChoice
-        authors
-        description
-        date(formatString: "MMMM Do, YYYY")
-        heroImage {
+        cover {
+          name
           publicURL
         }
-        filename
+        date
+        description
+        authors
+        filename {
+          name
+          extension
+          prettySize
+          publicURL
+        }
         levelReplaced
         difficulty
         bm
@@ -102,6 +132,10 @@ export const query = graphql`
         lfd
         base
         editors
+      }
+      fields {
+        slug
+        date(formatString: "MMMM DD, YYYY")
       }
     }
     allMarkdownRemark(
@@ -120,16 +154,12 @@ export const query = graphql`
           id
           html
           frontmatter {
-            reviewer
+            reviewers
             rating
-            date(formatString: "MMMM Do, YYYY")
+            date
           }
         }
       }
-    }
-    file(relativePath: { eq: $filename }) {
-      absolutePath
-      prettySize
     }
   }
 `

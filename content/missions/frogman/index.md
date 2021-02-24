@@ -7,7 +7,7 @@ authors:
 date:
 filename: "frogmod.zip"
 description: "You are Ken Katarn, younger brother of the famous Kyle Katarn. You've just defected to the Rebels in the hopes of following in your brothers footsteps. You are assigned to the submarine R.A.S. Default as a frogman, and have just received notice that an Imperial shuttle has landed on the far side of the peninsula your ship is patrolling. Your job is to rescue the hostages the Imperials are holding."
-heroImage: "./frogman.png"
+cover: "frogman.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

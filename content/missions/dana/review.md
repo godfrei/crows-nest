@@ -1,8 +1,10 @@
 ---
 mission: dana
-reviewer: "Geoff Elliott"
-date: "1996-11-15"
-rating: 85
+title: "M/CRV Dana Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-11-15
+rating: "85"
 ---
 
 ![M/CRV Dana screenshot](./dana.png "In this level you get to fight for the Dark Side for a change.")

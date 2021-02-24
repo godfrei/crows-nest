@@ -10,7 +10,7 @@ authors:
 date:
 filename: "df96.zip"
 description: "The Empire is threatening Kyle and his wife Jan, and has kidnapped Kyle's son Dack. Now Kyle must scour the galaxy for information on his son's whereabouts, and find a way to stop the remnants of the Empire."
-heroImage: "./df963.png"
+cover: "df963.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

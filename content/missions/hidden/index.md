@@ -7,7 +7,7 @@ authors:
 date:
 filename: "hidden.zip"
 description: "An Imperial spy has informed the Alliance of a gathering of high-ranking Imperial officials at a hidden base on the planet Hoth. Your job is to secure a data tape being carried by one of the officials before overloading the power generator and destroying the base."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

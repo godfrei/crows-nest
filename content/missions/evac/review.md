@@ -1,8 +1,10 @@
 ---
 mission: evac
-reviewer: "Geoff Elliott"
-date: "1996-11-24"
-rating: 87
+title: "The Evacuation of Hoth Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-24
+rating: "87"
 ---
 
 ![Evacuation of Hoth screenshot 1](./evac1.png "You've got to watch out; the Imperial attack continues to pound the base as you try to escape.")

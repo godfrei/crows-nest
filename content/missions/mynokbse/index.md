@@ -7,7 +7,7 @@ authors:
 date:
 filename: "mynokbse.zip"
 description: "Retrieve the Spectra System Map plans."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

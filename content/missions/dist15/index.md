@@ -4,10 +4,10 @@ editorsChoice:
 title: "Distribution Center"
 authors: 
     - "Tim Smulders"
-date: "1996-06-01"
+date: 1996-06-01
 filename: "dist15.zip"
 description: "Your copilot, Jan Ors, has stolen the Death Star plans, but has become trapped in an Imperial Distribution Center. Your job is to make your way through the center, find her and the plans, and escape with a stolen shuttle."
-heroImage: "./dist15.png"
+cover: "dist15.png"
 levelReplaced:	JABSHIP
 difficulty: yes
 bm:	yes

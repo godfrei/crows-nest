@@ -7,7 +7,7 @@ authors:
 date:
 filename: "relic.zip"
 description: "Ceph Roean, one of the Empire's elite, and an expert in the field of espionage, is sent to the Forest Moon of Endor to search out an abandoned Imperial facility."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

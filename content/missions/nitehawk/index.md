@@ -7,7 +7,7 @@ authors:
 date:
 filename: "nitehawk.zip"
 description: "An X-wing from Nitehawks Squadron was shot down investigating and Imperial Weapons Production Facility on Dalron 5. Kyle's mission is to locate the X-wing and destroy the facility."
-heroImage: "./dangroom.png"
+cover: "dangroom.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yws

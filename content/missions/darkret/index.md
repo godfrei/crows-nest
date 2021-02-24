@@ -4,10 +4,10 @@ editorsChoice:
 title: "Dark Retaliation"
 authors: 
     - "Donny Versigar"
-date: "2000-08-25"
+date: 2000-08-25
 filename: "darkret.zip"
 description: "A group of Bothan Spies working for the Rebellion have just sent in a distress signal of their capture by an Imperial Star Destroyer.  They have information vital to the survival of the Rebellion.  It is your job, Kyle, to rescue these prisoners and retrieve any information they have."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

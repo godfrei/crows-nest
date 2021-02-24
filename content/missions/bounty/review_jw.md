@@ -1,8 +1,10 @@
 ---
 mission: bounty
-reviewer: "Jeff Walters"
-date: "1997-03-04"
-rating: 90
+title: "The Bounty Hunt Review"
+reviewers: 
+  - "Jeff Walters"
+date: 1997-03-04
+rating: "90"
 ---
 
 In the Bounty Hunt, the author has strived to create a completely original piece of work, with an involving storyline and intricately detaild design. He has, for the most part, been successful.

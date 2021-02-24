@@ -1,8 +1,10 @@
 ---
 mission: sandcraw
-reviewer: "Geoff Elliott"
-date: "1997-02-15"
-rating: 78
+title: "Jawa Sandcrawler Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-02-15
+rating: "78"
 ---
 
 ![Jawa Sandcrawler screenshot](./sandcraw.png "You get to run around inside a jawa sandcrawler. And that's about it.")

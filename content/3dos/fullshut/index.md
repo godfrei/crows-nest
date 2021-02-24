@@ -3,10 +3,10 @@ component_id: fullshut
 title: "Lambda-class Shuttle"
 authors: 
     - "Matt Hallaron"
-date: "2001-09-20"
+date: 2001-09-20
 filename: "fullshut.zip"
 component_type: "3do"
-heroImage: 
+cover: 
 description: "A texture-mapped Lambda-class shuttle."
 ---
 

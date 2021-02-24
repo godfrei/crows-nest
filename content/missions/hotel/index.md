@@ -7,7 +7,7 @@ authors:
 date:
 filename: "hotel.zip"
 description: "Several foreign diplomats who are sympathetic to the Rebel cause have been taken hostage by Imperial troops and are being held in the Lahara Hotel. Your job as Kyle Katarn is to infiltrate the hotel, locate the diplomats, and bring them out safely."
-heroImage: "./hotel.png"
+cover: "hotel.png"
 levelReplaced:	None
 difficulty: yes
 bm:	yes

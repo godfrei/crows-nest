@@ -9,7 +9,7 @@ authors:
 date:
 filename: "cond-red.zip"
 description: "Unknown."
-heroImage:
+cover:
 levelReplaced: JABSHIP
 difficulty: yes
 bm:	yes

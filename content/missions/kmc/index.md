@@ -7,7 +7,7 @@ authors:
 date:
 filename: "kmc.zip"
 description: "Run around and destroy some daleks."
-heroImage: "./kmc.png"
+cover: "kmc.png"
 levelReplaced:	JABSHIP
 difficulty: yes
 bm:	yes

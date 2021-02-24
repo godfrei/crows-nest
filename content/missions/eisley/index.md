@@ -7,7 +7,7 @@ authors:
 date:
 filename: "eisley.zip"
 description: "The familiar Mos Eisley space port from the movie, sort of."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

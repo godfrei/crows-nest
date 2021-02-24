@@ -1,8 +1,10 @@
 ---
 mission: df96
-reviewer: "Geoff Elliott"
-date: "1996-11-18"
-rating: 98
+title: "DF96 - The Ties That Bind Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-18
+rating: "98"
 ---
 
 

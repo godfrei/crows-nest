@@ -1,8 +1,10 @@
 ---
 mission: parux
-reviewer: "Geoff Elliott"
-date: "1997-04-10"
-rating: 94
+title: "Energy Mine on Parux Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-04-10
+rating: "94"
 ---
 
 

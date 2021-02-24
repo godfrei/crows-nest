@@ -1,8 +1,10 @@
 ---
 mission: biohazrd
-reviewer: "Geoff Elliott"
-date: "1996-10-15"
-rating: 65
+title: "Operation: Chemical Warfare Facility Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-10-15
+rating: "65"
 ---
 
 When I started this level, I was geared up for a good time. The plot seemed sound, not incredibly elaborate, but simple and concrete. It promised action, toxic areas, some machinery, and plenty of enemies to mow down. There was no mention of the dreaded duo, Dark Troopers and Boba Fett, so I figured this might have some thought put into it. When I finished, I was disappointed. It wasn't a total bust, but it left me thinking the author didn't run it through enough tests.
@@ -15,6 +17,6 @@ Maybe it has to do with the plot. It's simple, and could fit in anywhere in the 
 
 The worst part about the level is that it's impossible to finish without cheating. The last key is contained in a room high above the ground, and there's no way in or out except via the LAPOGO command. The author claims the level is possible to complete without using a cheat, but I searched high and low, and couldn't find any secret to enable me to make it up there.
 
-##Overall
+## Overall
 
 I wouldn't suggest bothering with this level. The architcture is lousy, the plot unimaginative, and there's nothing you can't find somewhere else. It's not that it feels slapstick, it just is poorly done. If I'm wrong about it being impossible, somebody email me, and I'll take another look at the level. But until that happens, the rating to the right says it all for this one.

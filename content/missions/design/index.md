@@ -7,7 +7,7 @@ authors:
 date:
 filename: "design.zip"
 description: "The Design Center is hiding the Blueprints to all the levels ever created in Dark Forces. Your mission is to get through the base, destroy the enemies in each room, then collect the Blueprints."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

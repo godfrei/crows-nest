@@ -11,6 +11,7 @@ to take care of some business in the city of Nar Shaddaa. It seems an arrogant y
 muscling in on Jabba's trade. Priga's been making quite a name for himself on the Smugglers Moon, and Jabba is not happy. 
 Rather than share his trade with Priga, Jabba has decided that the galaxy isn't big enough for the both of them. Jabba has 
 hired you to assassinate Priga the Hutt."
+cover:
 levelReplaced:	JABSHIP
 difficulty: yes
 bm:	yes

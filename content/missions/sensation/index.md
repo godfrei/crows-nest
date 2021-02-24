@@ -5,9 +5,9 @@ title: "Sensation"
 authors: 
     - "Peter Klassen"
 date:
-filename: ""
+filename: 
 description: ""
-heroImage: "./sensation.png"
+cover: "sensation.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

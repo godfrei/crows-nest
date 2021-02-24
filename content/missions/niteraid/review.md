@@ -1,8 +1,10 @@
 ---
 mission: niteraid
-reviewer: "Geoff Elliott"
-date: "1996-11-14"
-rating: 72
+title: "Night Raid Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-14
+rating: "72"
 ---
 
 This level is a wonderful example of misplaced priorities and foolish ideals. In it the authors have paid careful attention to the texture placement and fitting in individual rooms. There are new things here and while the level is not very tough there is enough to keep you on your toes.

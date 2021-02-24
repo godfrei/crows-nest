@@ -7,7 +7,7 @@ authors:
 date: 
 filename: "blacksun.zip"
 description: "Find your smuggler mate, who will show you a path you must follow to infiltrate the Imperial facility somewhere in the desert, steal the datatapes and get the hell out. You will have to find alternative ways in and out of the base as it will be too well-guarded otherwise."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

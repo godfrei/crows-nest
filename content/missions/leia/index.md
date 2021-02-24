@@ -7,7 +7,7 @@ authors:
 date:
 filename: "leia.zip"
 description: "A disk containing compromising pictures of Princess Leia has been stolen by the Imperials. Your mission is to retrieve that disk before it reaches the Empire's main disk pirating facility."
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

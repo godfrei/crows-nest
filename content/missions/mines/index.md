@@ -7,7 +7,7 @@ authors:
 date:
 filename: "mine.zip"
 description: "A first level."
-heroImage: "./mines.png"
+cover: "mines.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

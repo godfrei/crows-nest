@@ -7,7 +7,7 @@ authors:
 date:
 filename: "storage.zip"
 description: "Unknown"
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

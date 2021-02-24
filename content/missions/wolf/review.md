@@ -1,8 +1,10 @@
 ---
 mission: wolf
-reviewer: "Geoff Elliott"
-date: "1997-09-16"
-rating: 70
+title: "Castle Wolfenstein Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-09-16
+rating: "70"
 ---
 
 ![Castle Wolfenstein screenshot](./wolf.png "Flat, boring, easy. Yup, it's Wolfenstein.")

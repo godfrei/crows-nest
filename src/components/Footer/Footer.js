@@ -1,4 +1,5 @@
 import React from "react"
+import config from '../../../data/SiteConfig'
 import footerStyles from "./footer.module.scss"
 
 export default () => {
@@ -8,10 +9,19 @@ export default () => {
                 <ul>
                     <li>About</li>
                     <li>Social Links</li>
-                    <li>Etc</li>
+                    <li>
+                        <a
+                            href={config.siteUrl + config.siteRss}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            RSS
+                        </a>
+                    </li>
                 </ul>
 
-                <p><small><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span property="dct:title">The Crow's Nest</span> by <span property="cc:attributionName">Geoff Elliott</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</small></p>
+                <p><small><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span property="dct:title">{config.siteTitle}</span> by <span property="cc:attributionName">{config.userName}</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</small></p>
+                <p>{config.copyright}</p>
             </div>
         </footer>
     )

@@ -1,8 +1,10 @@
 ---
 mission: rancor
-reviewer: "Geoff Elliott"
-date: "1997-04-14"
-rating: 73
+title: "Rancor Base Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-04-14
+rating: "73"
 ---
 
 ![Rancor Base screenshot](./rancor.png "Get used to seeing lots of scenes like this if you try Rancor Base.")

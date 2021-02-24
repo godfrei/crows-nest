@@ -8,7 +8,7 @@ authors:
 date:
 filename: "energy.zip"
 description: "Kyle goes on a mission to destroy power plant using new source of energy."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

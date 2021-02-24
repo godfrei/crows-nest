@@ -1,8 +1,10 @@
 ---
 mission: kilvader
-reviewer: "Geoff Elliott"
-date: "1996-11-05"
-rating: 97
+title: "Assassinate Darth Vader Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-05
+rating: "97"
 ---
 
 First, the obvious: the plot is nothing more than a way to get Vader into a level. The rest is there to give it some validity but it violates so many constants in the Star Wars universe it's unbelievable. Apparently this takes place before the Battle of Yavin, when Vader and the Emperor are hunting down the Jedi Knights. Of course Katarn would still be in Imperial service at this point; and why Vader only merits a Victory-Class Star Destroyer with no escort is unknown. The good news is, after the first few steps through the level, most of the plot is forgotten. The level envelops you in the Star Wars universe, and there's really only one thing on your mind: Vader.

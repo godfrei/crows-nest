@@ -1,8 +1,10 @@
 ---
 mission: mines
-reviewer: "Geoff Elliott"
-date: "1997-04-12"
-rating: 12
+title: "Mines Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-04-12
+rating: "12"
 ---
 
 ![Mines screenshot](./mines.png "This is the more interesting half of the 'level'.")

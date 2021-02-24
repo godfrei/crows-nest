@@ -3,10 +3,10 @@ component_id: at-st3
 title: "AT-ST"
 authors: 
     - "Matt Hallaron"
-date: "2001-07"
+date: 2001-07-01
 filename: "at-st3.zip"
 component_type: "3do"
-heroImage: 
+cover: 
 description: "A texture-mapped AT-ST with separate head and red laser bolt for use with turret logic."
 ---
 

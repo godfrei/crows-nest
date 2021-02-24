@@ -1,8 +1,10 @@
 ---
 mission: defbase
-reviewer: "Jeff Walters"
-date: "1996-11-17"
-rating: 97
+title: "TIE Defender Base Review"
+reviewers: 
+  -  "Jeff Walters"
+date: 1996-11-17
+rating: "97"
 ---
 
 This is one of my favourites and regarded by a lot of people as the best add-on level. What really sets this level apart from others is the atmosphere created by the numerous intricate VUEs the author has made. They are all smooth and extremely precise in construction and makes you want to sit back and admire them.

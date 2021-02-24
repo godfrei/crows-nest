@@ -7,7 +7,7 @@ authors:
 date:
 filename: "outbase.zip"
 description: "Kyle has landed on OutSpace station; he's there to recover the Death Star plans."
-heroImage: "./outbase.png"
+cover: "outbase.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

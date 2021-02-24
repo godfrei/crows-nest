@@ -1,8 +1,10 @@
 ---
 mission: dsplans
-reviewer: "Geoff Elliott"
-date: "1996-11-20"
-rating: 40
+title: "Death Star Plans Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-20
+rating: "40"
 ---
 
 I really have to feel sorry for anyone who downloaded this level, myself included. The entire thing consists of a few rooms conencted by large doors. There are no challenges to this level, no puzzles to figure out, and no interesting architecture. The texture choice was either poor, or very little thought went into the construction of this base.

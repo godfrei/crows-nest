@@ -1,8 +1,10 @@
 ---
 mission: daedalus
-reviewer: "Geoff Elliott"
-date: "1996-11-05"
-rating: 75
+title: "Daedalus Platform Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-11-05
+rating: "75"
 ---
 
 This is a training mission for the Internet group Commando Division of the Rebel Squadrons. It consists of a large platform with hangars and about a billion stormtroopers. You need to fight your way through the station to reach the plans. Nothing could be simpler. Right?

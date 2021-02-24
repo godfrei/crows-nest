@@ -1,71 +1,54 @@
-import React from "react"
-import { graphql, withPrefix } from "gatsby"
-import Helmet from "react-helmet"
-import config from "../../data/SiteConfig"
-import Layout from "../components/layout"
-import AnimatedSprite from "../components/AnimatedSprite"
-import AuthorLinks from "../components/AuthorLinks"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../layout'
+import WaxListing from '../components/WaxListing'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
 
-export default ({ data }) => {
-  // console.log(data)
+const waxes = ({ data }) => (
+  <Layout>
+    <main>
+      <Helmet title={`WAXes | ${config.siteTitle}`} />
+      <SEO />
+      <h1>WAXes</h1>
 
-  return (
-    <Layout>
-      <Helmet>
-        <title>WAXes | {config.siteTitle}</title>
-      </Helmet>
-      <div>
-        <h1>WAXes</h1>
+      <p>You know that ferocious Dark Trooper that's looming over you, rushing forward at an incredible pace to speed your journey to the land beyond? You really have nothing to fear because it's just a grouping of 8 flat images with some logic applied; known otherwise as a WAX. All enemies in Dark Forces are WAXes with the exception of the welders, mousebots and turrets which are 3DOs. Waxes also include moving textures or other stationary objects that have different views as you move around them to give you the sensation that you're actually walking around an object.</p>
 
-        <p>You know that ferocious Dark Trooper that's looming over you, rushing forward at an incredible pace to speed your journey to the land beyond? You really have nothing to fear because it's just a grouping of 8 flat images with some logic applied; known otherwise as a WAX. All enemies in Dark Forces are WAXes with the exception of the welders, mousebots and turrets which are 3DOs. Waxes also include moving textures or other stationary objects that have different views as you move around them to give you the sensation that you're actually walking around an object.</p>
+      <p>The files below are available for download and use in custom levels or your own Dark Forces gaming. Please respect the author's creation and follow any guidelines included in attached text files.</p>
 
-        <p>The files below are available for download and use in custom levels or your own Dark Forces gaming. Please respect the author's property and follow any guidelines included in attached text files.</p>
-        <ul>
-          {data.waxes.edges.map(({ node }) => {
-            return (
-              <li key={node.id}>
-                <a href={ withPrefix(`/waxs/${node.frontmatter.filename}`) } className="download">
-                  <AnimatedSprite spritePath={node.frontmatter.heroImage.publicURL} width={node.frontmatter.width} height={node.frontmatter.height} scale={2} />
-                  {node.frontmatter.title}
-                </a>
-                <p><AuthorLinks node={node} /></p>
-                <p>{node.frontmatter.description}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </Layout>
-  )
-}
+      <WaxListing waxEdges={data.allMarkdownRemark.edges} />
+    </main>
+  </Layout>
+)
 
-export const query = graphql`
-  query {
-    waxes:allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/\/waxes\/.*\/index/" }}
-      sort: {
-        fields: frontmatter___title
-        order:ASC
+export default waxes
+
+/* eslint no-undef: "off" */
+export const waxQuery = graphql`
+  query WaxQuery {
+    allMarkdownRemark(
+      limit: 2000
+      sort: { fields: [fields___date], order: DESC }
+      filter: {
+        # Only from the missions collection
+        fields: {collection: {eq: "waxes"}},
       }
     ) {
-      totalCount
       edges {
         node {
-          id
+          fields {
+            slug
+            date(formatString: "MMMM DD, YYYY")
+          }
+          excerpt
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
-            description
-            heroImage {
+            cover {
+              name
               publicURL
             }
-            authors
-            width
-            height
-            filename
-          }
-          fields {
-              slug
+            date
           }
         }
       }

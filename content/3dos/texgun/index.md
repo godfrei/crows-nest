@@ -3,10 +3,10 @@ component_id: textgun
 title: "Gun Turret"
 authors: 
     - "Barry Brien"
-date: "2000-12-21"
+date: 2000-12-21
 filename: "texgun.zip"
 component_type: "3do"
-heroImage: 
+cover: 
 description: "A texture-mapped gun turret and base."
 ---
 

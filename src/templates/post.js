@@ -1,31 +1,74 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Helmet from "react-helmet"
-import config from "../../data/SiteConfig"
-import Layout from "../components/layout"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
+import Layout from '../layout'
+import PostTags from '../components/PostTags'
+import SocialLinks from '../components/SocialLinks'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
+import styles from './post.module.scss'
+import './prism-okaidia.css'
 
-export default ({ data }) => {
-    const post = data.markdownRemark
-    return (
-      <Layout>
-        <Helmet>
-          <title>{`${post.frontmatter.title} | ${config.siteTitle}`}</title>
-        </Helmet>
-        <h1>{ post.frontmatter.title }</h1>
-        Posted: {post.frontmatter.date} by { post.frontmatter.author }
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Layout>
-    )
+export default ({ data, pageContext }) => {
+  const { slug, nexttitle, nextslug, prevtitle, prevslug } = pageContext
+  const postNode = data.markdownRemark
+  const post = postNode.frontmatter
+  const date = postNode.fields.date
+  if (!post.id) {
+    post.id = slug
+  }
+  return (
+    <Layout>
+      <Helmet>
+        <title>{`${post.title} | ${config.siteTitle}`}</title>
+      </Helmet>
+      <SEO postPath={slug} postNode={postNode} postSEO />
+      <div>
+        <h1>{post.title}</h1>
+        <p className={styles.postMeta}>
+          {date}
+        </p>
+        <div className={styles.postMeta}>
+          <PostTags tags={post.tags} />
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+
+        <hr />
+        <div className={styles.postMeta}>
+          <SocialLinks postPath={slug} postNode={postNode} />
+        </div>
+      </div>
+      <nav>
+        <ul className={styles.pagination}>
+          <li>
+            <Link to={prevslug} rel="prev">
+              ← {prevtitle}
+            </Link>
+          </li>
+          <li>
+            <Link to={nextslug} rel="next">
+              {nexttitle}→
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </Layout>
+  )
 }
 
-export const query = graphql`
-  query($slug: String!) {
+/* eslint no-undef: "off" */
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       frontmatter {
         title
-        author
-        date(formatString: "MMMM Do, YYYY")
+        date
+      }
+      fields {
+        slug
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

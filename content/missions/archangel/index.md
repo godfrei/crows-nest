@@ -4,10 +4,10 @@ editorsChoice: yes
 title: "Operation Archangel Episode I - Mos Eisley: The Maze"
 authors: 
     - "Lionel Fouillen"
-date: "1996"
+date: 1996-01-01
 filename: "arcmp.zip"
 description: "Trem Goltend, an Imperial engineer, has defected from the empire and is hiding in Mos Eisley Spaceport. Kyle's mission is to find him and try to recover any technical data that Trem might have taken with him after his defection. However, Trem has made friends with the local rifraff who will protect him and preserve his anonymity."
-heroImage: "./archangel.png"
+cover: "archangel.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

@@ -7,7 +7,7 @@ authors:
 date:
 filename: "fortquad.zip"
 description: "The Imperial threat, although heavily hindered through the Dark Trooper project termination, continues. This time, the Rebel Intelligence has identified a double spy, whose existence is a serious danger to the Alliance. Once again, the Rebel Command decides to hire Kyle Katarn, whose mission will be to stop the spy's activity permanently..."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

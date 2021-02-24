@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Aurebesh';
-    src: url('../fonts/aurebesh-webfont.woff2') format('woff2'),
-         url('../fonts/aurebesh-webfont.woff') format('woff');
+    src: url('/public/fonts/aurebesh-webfont.woff2') format('woff2'),
+         url('/public/fonts/aurebesh-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Engravers Gothic';
-    src: url('../fonts/engravers_gothic_regular-webfont.woff2') format('woff2'),
-         url('../fonts/engravers_gothic_regular-webfont.woff') format('woff');
+    src: url('/public/fonts/engravers_gothic_regular-webfont.woff2') format('woff2'),
+         url('/public/fonts/engravers_gothic_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

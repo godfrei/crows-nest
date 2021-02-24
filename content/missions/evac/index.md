@@ -4,10 +4,10 @@ editorsChoice:
 title: "The Evacuation of Hoth"
 authors: 
     - "Adam Shane"
-date: "1996-06"
+date: 1996-06-01
 filename: "evac.zip"
 description: "The Imperials are in the midst of their attack on Hoth. Out on the front line, you receive word that the last transport has left. You immediately pull out, rushing back to find an X-wing to leave in, plus the coordinates of the rendevous with the rest of the Rebel Fleet."
-heroImage: "./evac1.png"
+cover: "evac1.png"
 levelReplaced:	EXECUTOR
 difficulty: yes
 bm:	yes

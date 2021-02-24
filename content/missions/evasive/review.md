@@ -1,8 +1,10 @@
 ---
 mission: evasive
-reviewer: "Geoff Elliott"
-date: "1996-11-16"
-rating: 82
+title: "Operation: Evasive Action Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-16
+rating: "82"
 ---
 
 ![Operation: Evasive Action screenshot](./evasive.png "An entire legion of my best troops awaits them...")

@@ -7,7 +7,7 @@ authors:
 date:
 filename: "ruins.zip"
 description: "Grand Admiral Thrawn has directed you to investigate the ancient ruins on Talos XII and uncover what Dark Jedi C'Boath is doing there. While en route to the site your ship was destroyed. Your gear is scattered across the ruins and you must take on C'Boath's army alone."
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

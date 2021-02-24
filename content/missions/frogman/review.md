@@ -1,8 +1,10 @@
 ---
 mission: frogman
-reviewer: "Geoff Elliott"
-date: "1996-12-05"
-rating: 54
+title: "Frogman Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-12-05
+rating: "54"
 ---
 
 ![Frogman screenshot](./frogman.png "These new graphics are a lot like the level; an interesting attempt, but they fall short.")

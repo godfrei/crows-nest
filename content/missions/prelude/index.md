@@ -7,7 +7,7 @@ authors:
 date:
 filename: "rpg-df20.zip"
 description: "This is a continuing story that's divided into two levels and deals with Kyle's defection from the Empire, brought on by Jan Ors' capture by the Imperials."
-heroImage: "./prelude.png"
+cover: "prelude.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

@@ -1,8 +1,10 @@
 ---
 mission: hoerby3
-reviewer: "Anonymous"
-date: "1997-01-14"
-rating:
+title: "The Hoerby Trilogy: Imperial Outpost D-42 Review"
+reviewers: 
+  -  "Anonymous"
+date: 1997-01-14
+rating: ""
 ---
 
 This is a set of three levels, and probably one of the best things it has going for it is the continuity between the levels. I'll review them all at the same time, but each of the levels is very different. This is an excellent continuing mission and just about everyone will want to download it.

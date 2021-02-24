@@ -1,8 +1,10 @@
 ---
 mission: rock
-reviewer: "Geoff Elliott"
-date: "1997-09-14"
-rating: 84
+title: "The Rock: Episode 1-Gandolo IV Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-09-14
+rating: "84"
 ---
 
 My initial reaction to the title of the level was that the authors had enjoyed last summer's "The Rock" movie so much that they wanted to name their mission after it. Unfotunately it appears that the authors have gone far beyond just using the name: they've appropriated the entire plot.

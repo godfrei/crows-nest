@@ -1,8 +1,10 @@
 ---
 mission: opqstorm
-reviewer: "Geoff Elliott"
-date: "1997-06-06"
-rating: 75
+title: "Operation Quiet Storm Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-06-06
+rating: "75"
 ---
 
 Where should I begin? The obvious holes in the plot(since when would the Empire sell one of it's SSDs, much less GIVE it away) or the problems with the level? Because just like the plot this level has quite a few holes in it all of which combine to condemn this level to the middle of the stack where it likely be forgotten soon.

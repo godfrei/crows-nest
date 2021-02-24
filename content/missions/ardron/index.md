@@ -7,6 +7,7 @@ authors:
 date: 
 filename: "ardron.zip"
 description: "A passing Rebel ship has detected something on an old, long-deserted base on planet Ardron. Two X-Wings were sent to investigate but they never came back. Your mission is to explore the base, eliminate any threat you find, and locate the missing X-Wing pilots."
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

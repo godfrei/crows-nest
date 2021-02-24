@@ -1,8 +1,10 @@
 ---
 mission: castle
-reviewer: "Geoff Elliott"
-date: "1996-11-05"
-rating: 75
+title: "Castle Review"
+reviewers: 
+  - "Geoff Elliott"
+date: 1996-11-05
+rating: "75"
 ---
 
 ![Castle screenshot 1](./castle1.png "New and old textures find their way into this level with some good results...")

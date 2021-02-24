@@ -7,7 +7,7 @@ authors:
 date:
 filename: "lasthope.zip"
 description: ""
-heroImage: 
+cover: 
 levelReplaced:	"SECBASE, TALAY"
 difficulty: no
 bm:	no

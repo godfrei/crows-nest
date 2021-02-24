@@ -1,8 +1,10 @@
 ---
 mission: starsend
-reviewer: "Geoff Elliott"
-date: "1997-03-07"
-rating: 97
+title: "Stars End - The Cloak Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-03-07
+rating: "97"
 ---
 
 I will warn you right away that I beta-tested this level and one or two of my suggestions were actually deemed worthy to be used in it. So there may be a bit of bias in my review. I'll try to stay legitimate however.

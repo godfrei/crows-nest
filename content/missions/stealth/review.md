@@ -1,8 +1,10 @@
 ---
 mission: stealth
-reviewer: "Geoff Elliott"
-date: "1997-03-07"
-rating: 88
+title: "Operation Stealth Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-03-07
+rating: "88"
 ---
 
 

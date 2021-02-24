@@ -7,7 +7,7 @@ authors:
 date:
 filename: "dsiege.zip"
 description: "The Empire has set up a base on the planet Dentron to trade weaponry with smugglers in an effort to gain more powerful artillery for their stormtroopers. This brave and deadly move could mean certain doom for the Rebellion. Your goal, Kyle, is to invade the station, set a sequencer charge in it, and steal one of the traded test weapons for further study by the Rebellion."
-heroImage:
+cover:
 levelReplaced:	JABSHIP
 difficulty: yes
 bm:	yes

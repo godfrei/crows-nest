@@ -1,8 +1,10 @@
 ---
 mission: optat
-reviewer: "Geoff Elliott"
-date: "1996-11-22"
-rating: 79
+title: "Operation Tatooine Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-11-22
+rating: "79"
 ---
 
 ![Operation Tatooine screenshot](./optat.png "The author has created a wonderful Tatooine atmosphere, complete with new WAXs, 3DOs, and VUEs.")

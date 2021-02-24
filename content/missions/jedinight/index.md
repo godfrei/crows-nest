@@ -7,7 +7,7 @@ authors:
 date:
 filename: "jedinight.zip"
 description: "You are Kyle Katarn, who has been chosen to travel back through time with Jan to the Clone Wars. Your mission is retrieve the data tapes which contain The Book of Anger. The Book of Anger is a book that it so influential upon the thoughts of Jedi Knights, that it can literally turn them toward the dark side of the Force."
-heroImage: "./jedinight.png"
+cover: "jedinight.png"
 levelReplaced:	IMPCITY
 difficulty: yes
 bm:	yes

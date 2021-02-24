@@ -7,7 +7,7 @@ authors:
 date:
 filename: "coober.zip"
 description: "Showcase."
-heroImage: "./coober.png"
+cover: "coober.png"
 levelReplaced: SECBASE
 difficulty: no
 bm:	no

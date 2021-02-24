@@ -1,8 +1,10 @@
 ---
 mission: spice
-reviewer: "Geoff Elliott"
+title: "Kyle On Spice Review"
+reviewers: 
+  -  "Geoff Elliott"
 date:
-rating: 
+rating: ""
 ---
 
 ![Kyle On Spice screenshot](./spice.png "Uhm, Jan, I don't think we're in Kansas anymore.")

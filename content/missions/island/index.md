@@ -7,7 +7,7 @@ authors:
 date:
 filename: "island.zip"
 description: "Find the Death star plans, its hidden in a recuiting base on an island on a small planet."
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

@@ -3,10 +3,10 @@ component_id: artoo
 title: "R2 Unit"
 authors: 
     - "Jereth Kok"
-date: "1997-03"
+date: 1997-03-01
 filename: "artoo.zip"
 component_type: "3do"
-heroImage: 
+cover:
 description: "A texture-mapped R2 unit with separate objects for animating with VUEs."
 ---
 

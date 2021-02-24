@@ -4,11 +4,11 @@ editorsChoice: yes
 title: "The Bounty Hunt"
 authors: 
     - "Peter Klassen"
-date: "1997-06"
+date: 1997-06-01
 filename: "bhse.zip"
 description: "
 Kyle is rather desperate for work, having received nothing further from the Rebellion since the Dark Trooper conflict. He receives a message from Jabba the Hutt in which the smuggler lord details his plans to trap Han Solo on the station Vanguard near Ord Mantell and offers a substantial bounty on his head. Numerous other bounty hunters have gotten the message as well. Kyle sees this as an opportunity to make peace with an old enemy and perhaps make some money as well. Little does he know the truth..."
-heroImage: "./bounty1.png"
+cover: "bounty1.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

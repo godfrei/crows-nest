@@ -5,9 +5,9 @@ title: "Kyle's Nightmare"
 authors: 
     - "Alexi Novikov"
 date:
-filename: ""
+filename: 
 description: "Kyle has fallen asleep after a hard day's work. And he's having a terrible nightmare. Your job is simple(or is it?): just survive..."
-heroImage: "./nightmare.png"
+cover: "nightmare.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

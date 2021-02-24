@@ -5,9 +5,9 @@ title: "Dark Trooper Search"
 authors: 
     - "Hunter"
 date:
-filename: ""
+filename: 
 description: "While working on a mission on Tatooine, Kyle ran into a bounty hunter with a Dark Trooper suit. Though he was able to defeat him, the existence of a Dark Trooper suit was very unsettling, as he had thought all of them had gone up with the Arc Hammer. He headed to Murdock Station to find out what he could, determined to track down the source of the suits and destroy them."
-heroImage: "./dtsearch.png"
+cover: "dtsearch.png"
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

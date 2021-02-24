@@ -7,7 +7,7 @@ authors:
 date:
 filename: "opjust1a.zip"
 description: " Infiltrate and destroy an Imperial Research Station that is being used conduct Cyborg research on humans."
-heroImage:
+cover:
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes

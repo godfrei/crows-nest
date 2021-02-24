@@ -7,7 +7,7 @@ authors:
 date:
 filename: "lambda.zip"
 description: ""
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	yes

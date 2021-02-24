@@ -1,210 +1,265 @@
-const path = require('path')
-const _ = require('lodash')
-const fs = require('fs-extra')
-const elasticlunr = require('elasticlunr')
-const { createFilePath } = require('gatsby-source-filesystem')
+const path = require("path");
+const _ = require("lodash");
+const moment = require("moment");
+const siteConfig = require("./data/SiteConfig");
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-  if(node.internal.type === 'MarkdownRemark') {
-    const slug = createFilePath({ node, getNode, basePath: 'pages' })
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug,
-    })
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+  let slug;
+  if (node.internal.type === "MarkdownRemark") {
+    const fileNode = getNode(node.parent);
+    const parsedFilePath = path.parse(fileNode.relativePath);
+
+    const collection = _.get(fileNode, "sourceInstanceName");
+
+    createNodeField({ node, name: "collection", value: collection});
+    
+    if (
+      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
+    ) {
+      slug = `/${collection}/${_.kebabCase(node.frontmatter.title)}`;
+    } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
+      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
+    } else if (parsedFilePath.dir === "") {
+      slug = `/${parsedFilePath.name}/`;
+    } else {
+      slug = `/${parsedFilePath.dir}/`;
+    }
+
+    if (Object.prototype.hasOwnProperty.call(node, "frontmatter")) {
+      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
+        slug = `/${_.kebabCase(node.frontmatter.slug)}`;
+      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "date")) {
+        const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
+        if (!date.isValid)
+          console.warn(`WARNING: Invalid date.`, node.frontmatter);
+
+        createNodeField({
+          node,
+          name: "date",
+          value: date.toISOString()
+        });
+      }
+    }
+    createNodeField({ node, name: "slug", value: slug });
   }
-}
+};
 
-exports.createPages = ({ graphql, actions }) => {
-    // **Note:** The graphql function call returns a Promise
-    // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
-    const { createPage } = actions
-    let fullIndex = {}
-    return graphql(`
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+  const postPage = path.resolve("src/templates/post.js");
+  // const tagPage = path.resolve("src/templates/tag.js");
+  // const categoryPage = path.resolve("src/templates/category.js");
+  const missionPage = path.resolve("src/templates/mission.js");
+  const componentPage = path.resolve("src/templates/component.js");
+  const specPage = path.resolve("src/templates/spec.js");
+
+  // Query all the markdown files
+
+  // NEED TO FLESH OUT THE FRONTMATTER COLLECTED HERE TO INCLUDE MISSION/FILE INFO
+  const markdownQueryResult = await graphql(
+    `
       {
-        three_dos: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/3dos\/.*\/index/" }}) {
+        allMarkdownRemark {
           edges {
             node {
-              id
               fields {
                 slug
+                collection
               }
               frontmatter {
                 title
-                filename
-                authors
-                description
-                heroImage {
-                  publicURL
-                  childImageSharp {
-                    fixed(width: 200) {
-                      src
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        missions: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/missions\/.*\/index/" }}) {
-          edges {
-            node {
-              id
-              frontmatter {
-                title
-                filename
-                authors
-                description
-                editorsChoice
-                heroImage {
-                  publicURL
-                  childImageSharp {
-                    fixed(width: 200) {
-                      src
-                    }
-                  }
-                }
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        posts: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/posts/" }}) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        specs: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/specs/" }}) {
-          edges {
-            node {
-              fields {
-                slug
+                date
               }
             }
           }
         }
       }
     `
-  ).then(result => {
-    if (result.errors) {
-      console.log(result.errors)
-      reject(result.errors)
+  );
+
+  if (markdownQueryResult.errors) {
+    console.error(markdownQueryResult.errors);
+    throw markdownQueryResult.errors;
+  }
+
+  // const tagSet = new Set();
+  // const categorySet = new Set();
+  const missionAuthorSet = new Set();
+
+
+  // Get all Markdown edges from the query
+  const markdownEdges = markdownQueryResult.data.allMarkdownRemark.edges;
+
+  markdownEdges.sort((postA, postB) => {
+    const dateA = moment(
+      postA.node.frontmatter.date,
+      siteConfig.dateFromFormat
+    );
+
+    const dateB = moment(
+      postB.node.frontmatter.date,
+      siteConfig.dateFromFormat
+    );
+
+    if (dateA.isBefore(dateB)) return -1;
+    if (dateB.isBefore(dateA)) return 1;
+
+    return 0;
+  });
+
+
+  // POSTS
+
+  let postEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === 'posts') return edge;
+  });
+
+  postEdges.forEach((edge, index) => {
+    // if (edge.node.frontmatter.tags) {
+    //   edge.node.frontmatter.tags.forEach(tag => {
+    //     tagSet.add(tag);
+    //   });
+    // }
+
+    // if (edge.node.frontmatter.categories) {
+    //   edge.node.frontmatter.categories.forEach(category => {
+    //     categorySet.add(category)
+    //   })
+    // }
+
+    const nextID = index + 1 < markdownEdges.length ? index + 1 : 0;
+    const prevID = index - 1 >= 0 ? index - 1 : markdownEdges.length - 1;
+    const nextEdge = markdownEdges[nextID];
+    const prevEdge = markdownEdges[prevID];
+
+    createPage({
+      path: edge.node.fields.slug,
+      component: postPage,
+      context: {
+        slug: edge.node.fields.slug,
+        nexttitle: nextEdge.node.frontmatter.title,
+        nextslug: nextEdge.node.fields.slug,
+        prevtitle: prevEdge.node.frontmatter.title,
+        prevslug: prevEdge.node.fields.slug,
+      }
+    });
+  });
+
+
+  // MISSIONS
+
+  let missionEdges = markdownEdges.filter((edge) => {
+    // Filter out only the missions, not the reviews
+    if (edge.node.fields.collection === 'missions' && edge.node.fields.slug.indexOf('review') === -1) 
+      return edge;
+  });
+
+  missionEdges.forEach((edge, index) => {
+    if (edge.node.frontmatter.authors) {
+      edge.node.frontmatter.authors.forEach(author => {
+        missionAuthorSet.add(author);
+      });
     }
 
-    // Build search Index
-    let authors = []
-    const store = {}
-    const index = elasticlunr(function () {
-      this.setRef('id')
-      this.addField('title')
-      this.addField('description')
-      this.addField('slug')
-      this.addField('authors')
-      this.addField('heroImage')
-      this.addField('editorsChoice')
-    })
-
-    result.data.three_dos.edges.forEach(({node}) => {
-      const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
-      authors = authors.concat(node.frontmatter.authors)
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve('./src/templates/component.js'),
-        context: {
-          slug: node.fields.slug,
-          filename: node.frontmatter.filename
-        },
-      })
-    })
-
-    result.data.missions.edges.forEach(({node}) => {
-      // Create mission pages and fill authors array
-      const escapedSlug = node.fields.slug.replace(/\//g, '\\$&');
-      const reviewRegex = `/${node.fields.slug}review.*/`
-      authors = authors.concat(node.frontmatter.authors)
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve('./src/templates/mission.js'),
-        context: {
-          slug: node.fields.slug,
-          reviewRegex: reviewRegex,
-          filename: node.frontmatter.filename
-        },
-      })
-
-      // Build Search Index for missions
-      const id = node.id
-      const doc = {
-        id: id,
-        title: node.frontmatter.title,
-        slug: node.fields.slug,
-        authors: node.frontmatter.authors,
-        heroImage: (node.frontmatter.heroImage) ? node.frontmatter.heroImage.childImageSharp.fixed.src : null,
-        description: node.frontmatter.description,
-        editorsChoice: node.frontmatter.editorsChoice,
-        type: "mission"
+    createPage({
+      path: edge.node.fields.slug,
+      component: missionPage,
+      context: {
+        slug: edge.node.fields.slug,
+        reviewRegex: `/${edge.node.fields.slug}-review.*/`
       }
-      index.addDoc(doc)
-      store[id] = doc
-    })
+    });
+  });
 
-    // Eliminate duplicate authors
-    authors = _.uniq(authors)
+  // 3DOs
 
-    authors.forEach(author => {
-      const id = _.kebabCase(author)
-      const slug = `/authors/${id}/`
-      // Make author pages
-      createPage({
-        path: slug,
-        component: path.resolve('./src/templates/author.js'),
-        context: {
-          author,
-        },
-      })
+  let threeDOEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === '3dos') 
+      return edge;
+  });
 
-      // Add authors to search index
-      const doc = {
-        id: id,
-        title: author,
-        slug: slug,
-        type: "author"
+  threeDOEdges.forEach((edge, index) => {
+    createPage({
+      path: edge.node.fields.slug,
+      component: componentPage,
+      context: {
+        slug: edge.node.fields.slug,
       }
-      index.addDoc(doc)
-      store[id] = doc
-    })
+    });
+  });
 
-    fullIndex = { index, store }
-    // Write the index file when building for loading into the site (see gatsby-browser)
-    fs.writeFileSync(`public/search_index.json`, JSON.stringify(fullIndex))
+  // VOCs
 
-    // Create blog post pages
-    result.data.posts.edges.forEach(({node}) => {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve('./src/templates/post.js'),
-        context: {
-          slug: node.fields.slug
-        },
-      })
-    })
+  let vocEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === 'vocs') 
+      return edge;
+  });
 
-    // Create spec pages
-    result.data.specs.edges.forEach(({node}) => {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve('./src/templates/spec.js'),
-        context: {
-          slug: node.fields.slug
-        },
-      })
-    })
-  })
-}
+  vocEdges.forEach((edge, index) => {
+    createPage({
+      path: edge.node.fields.slug,
+      component: componentPage,
+      context: {
+        slug: edge.node.fields.slug,
+      }
+    });
+  });
+
+  // WAXes
+
+  let waxEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === 'waxes') 
+      return edge;
+  });
+
+  waxEdges.forEach((edge, index) => {
+    createPage({
+      path: edge.node.fields.slug,
+      component: componentPage,
+      context: {
+        slug: edge.node.fields.slug,
+      }
+    });
+  });
+
+  // Specs
+
+  let specEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === 'specs') 
+      return edge;
+  });
+
+  specEdges.forEach((edge, index) => {
+    createPage({
+      path: edge.node.fields.slug,
+      component: specPage,
+      context: {
+        slug: edge.node.fields.slug,
+      }
+    });
+  });
+
+ // Generate link foreach tag page
+  // tagSet.forEach(tag => {
+  //   createPage({
+  //     path: `/tags/${_.kebabCase(tag)}/`,
+  //     component: tagPage,
+  //     context: {
+  //       tag
+  //     }
+  //   });
+  // });
+
+  // // Generate link foreach category page
+  // categorySet.forEach(category => {
+  //   createPage({
+  //     path: `/${_.kebabCase(category)}/`,
+  //     component: categoryPage,
+  //     context: {
+  //       category
+  //     }
+  //   });
+  // });
+};

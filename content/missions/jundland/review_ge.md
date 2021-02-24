@@ -1,8 +1,10 @@
 ---
 mission: jundland
-reviewer: "Geoff Elliott"
-date: "1997-04-06"
-rating: 88
+title: "Jundland Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1997-04-06
+rating: "88"
 ---
 
 ![Jundland screenshot](./jundland.png "For the second time you fight for the Empire, still trying to track down the plans for the SSSD Sovereign; this time on Tatooine.")

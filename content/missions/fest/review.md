@@ -1,8 +1,10 @@
 ---
 mission: fest
-reviewer: "Geoff Elliott"
-date: "1996-12-05"
-rating: 87
+title: "Fest Revisited Review"
+reviewers: 
+  -  "Geoff Elliott"
+date: 1996-12-05
+rating: "87"
 ---
 
 ![Fest Revisited screenshot](./fest.png "The old facility has been given a new look, and new areas have been added to revive this old level.")

@@ -6,9 +6,9 @@ authors:
     - "Jason Burton"
     - "Arthur Sharp"
 date:
-filename: ""
+filename: 
 description: ""
-heroImage: "./spice.png"
+cover: "spice.png"
 levelReplaced:	SECBASE
 difficulty: no
 bm:	no

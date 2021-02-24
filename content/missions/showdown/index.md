@@ -7,7 +7,7 @@ authors:
 date:
 filename: "showdown.zip"
 description: "A first level."
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: yes
 bm:	no

@@ -7,7 +7,7 @@ authors:
 date:
 filename: "hutplace.zip"
 description: "Imperials kidnapped... er, HUTTnapped Jabba. His cronies are offering a reward for his safe return. Rescue Jabba and get back to the Crow. This won't be easy. The Imperials want Jabba bad. I mean real bad. I mean REALLY, REALLY BAD!"
-heroImage: 
+cover: 
 levelReplaced:	SECBASE
 difficulty: no
 bm:	yes
