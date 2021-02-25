@@ -12,10 +12,23 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     line-height: 1.5;
+
+    &:after {
+        content: "";
+        display: block;
+        background-image: url("../images/topographic-map.gif");
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1;
+    }
 }
 
 main {
-    background-color: black;
+    // background-color: black;
     padding-top: 64px;
 }
 
@@ -163,6 +176,8 @@ header.nestHeader {
     grid-template-areas: "... padding content sidebar ...";
     position: relative;
     z-index: 1;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
 }
 
 .mission {

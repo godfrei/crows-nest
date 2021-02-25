@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../layout'
 import TechSpecs from '../components/TechSpecs';
-import EditorsChoice from '../components/EditorsChoice';
+import MissionHeader from '../components/MissionHeader';
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import moment from 'moment';
@@ -17,6 +17,9 @@ export default ({ data, pageContext }) => {
   const date = postNode.fields.date || '';
 
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
+
+  const heroImage = (post.cover) ? post.cover.publicURL : "";
+  const hasHeroImage = (post.cover) ? "hasHeroImage" : "";
 
   function getReviewContent(reviews) {
     let reviewContent = null;
@@ -81,19 +84,20 @@ export default ({ data, pageContext }) => {
         <title>Mission {`${post.title} | ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <div>
-        <h1>{post.title}</h1>
-        <EditorsChoice />
-        <p className={styles.postMeta}>
-          {date} | Author(s): {post.authors.join(', ')}
-        </p>
-        <p>{post.description}</p>
-        {getDownloadLink(data)}
-        <TechSpecs node={post} />
-
-        <hr />
-        <h2>Reviews</h2>
-        {getReviewContent(reviews)}
+      <div className={`mission ${hasHeroImage}`}>
+        <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
+        <MissionHeader node={postNode} />
+        <div className="content">
+          <div className="descAndReviews">
+            <h2>Plot</h2>
+            <p className="plot">{post.description}</p>
+            {getReviewContent(reviews)}
+          </div>
+          <div className="supplemental">
+            {getDownloadLink(data)}
+            <TechSpecs node={post} />
+          </div>
+        </div>
       </div>
     </Layout>
   )
