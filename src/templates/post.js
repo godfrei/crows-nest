@@ -23,7 +23,7 @@ export default ({ data, pageContext }) => {
         <title>{`${post.title} | ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <div>
+      <article>
         <h1>{post.title}</h1>
         <p className={styles.postMeta}>
           {date}
@@ -32,12 +32,7 @@ export default ({ data, pageContext }) => {
           <PostTags tags={post.tags} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-
-        <hr />
-        <div className={styles.postMeta}>
-          <SocialLinks postPath={slug} postNode={postNode} />
-        </div>
-      </div>
+      </article>
       <nav>
         <ul className={styles.pagination}>
           <li>

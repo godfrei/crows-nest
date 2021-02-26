@@ -1,14 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../layout'
 import TechSpecs from '../components/TechSpecs';
 import MissionHeader from '../components/MissionHeader';
+import Rating from '../components/Rating';
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import moment from 'moment';
-import styles from './post.module.scss'
-import './prism-okaidia.css'
 
 export default ({ data, pageContext }) => {
   const { slug, reviewRegex } = pageContext;
@@ -34,9 +33,9 @@ export default ({ data, pageContext }) => {
             return (
               <>
                 <div>
-                  <p className={styles.postMeta}>{dateString} | Reviewed by: {review.reviewers.join(', ')}</p>
+                  <p>Reviewed by: {review.reviewers.join(', ')} | {dateString}</p>
                   <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                  <p>Rating: <strong>{review.rating}</strong></p>
+                  <Rating score={review.rating} />
                 </div>
                 <hr />
               </>
@@ -91,6 +90,7 @@ export default ({ data, pageContext }) => {
           <div className="descAndReviews">
             <h2>Plot</h2>
             <p className="plot">{post.description}</p>
+            <h2>Review</h2>
             {getReviewContent(reviews)}
           </div>
           <div className="supplemental">
