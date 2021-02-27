@@ -10,13 +10,10 @@
         background: none;
         background-color: transparent;
         content: attr(data-text);
-        // left: 0;
-        // position: absolute;
         text-shadow: 0 0 3px rgba(255,255,255, 0.8), 0 0 6px rgba(255,255,255,0.8), 1px 1px 0 $glow-border, -1px -1px 0 $glow-border, -1px 1px 0 $glow-border, 1px -1px 0 $glow-border;
-        // top: 0;
-        // z-index: -1;
         position: relative;
         z-index: 0;
+        white-space: nowrap;
     }
 
     span {
@@ -29,5 +26,6 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        white-space: nowrap;
     }
 }

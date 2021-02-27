@@ -21,7 +21,7 @@
         content: "";
         grid-column: 2 / 6;
         background-color: rgba($gray,0.85);
-        backdrop-filter: blur(3px);
+        // backdrop-filter: blur(3px);
         border-left: 10px solid $teal;
         z-index: 0;
     }

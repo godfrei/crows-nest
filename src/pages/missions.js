@@ -10,13 +10,11 @@ import reviewList from "../images/reviews.png"
 
 const Missions = ({ data }) => (
   <Layout>
-    <main>
-      <Helmet title={`Missions | ${config.siteTitle}`} />
-      <SEO />
-      <img src={reviewList} alt="" className="section_icon" />
-      <GradientTitle title="Missions" />
-      <MissionListing missionEdges={data.allMarkdownRemark.edges} />
-    </main>
+    <Helmet title={`Missions | ${config.siteTitle}`} />
+    <SEO />
+    {/* <img src={reviewList} alt="" className="section_icon" /> */}
+    <GradientTitle title="Missions" />
+    <MissionListing missionEdges={data.allMarkdownRemark.edges} />
   </Layout>
 )
 

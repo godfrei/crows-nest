@@ -1,13 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import MissionCard from '../components/MissionCard'
-import styles from './PostsListing.module.scss'
 
 const MissionListing = ({ missionEdges }) => {
   const getMissionList = () => {
     const missionList = []
-    missionEdges.forEach(postEdge => {
-      missionList.push(postEdge.node)
+    missionEdges.forEach(edge => {
+      missionList.push(edge.node)
     })
     return missionList
   }

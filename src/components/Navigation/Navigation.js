@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import navStyles from "./navigation.module.scss"
+import styles from "./navigation.module.scss"
 import launchPad from "../../images/launch_pad.png"
 import reviewList from "../../images/reviews.png"
 import storage from "../../images/storage.png"
@@ -8,12 +8,12 @@ import database from "../../images/database.png"
 
 export default () => {
     const linkProps = {
-        activeClassName: navStyles.active,
+        activeClassName: styles.active,
         partiallyActive: true
     }
     return (
-        <nav className={navStyles.navigation}>
-            <ul> 
+        <nav className={styles.navigation}>
+            {/* <ul> 
                 <li className="review_link">
                     <Link to="/missions/" {...linkProps}>
                         <img src={reviewList} alt="" />
@@ -37,6 +37,20 @@ export default () => {
                         <img src={database} alt="" />
                         <span>Database</span>
                     </Link>
+                </li>
+            </ul> */}
+            <ul>
+                <li>
+                    <Link to="/blog" {...linkProps}>Blog</Link>
+                </li>
+                <li>
+                    <Link to="/missions" {...linkProps}>Missions</Link>
+                </li>
+                <li>
+                    <Link to="/database" {...linkProps}>Database</Link>
+                </li>
+                <li>
+                    <Link to="/storage" {...linkProps}>Files</Link>
                 </li>
             </ul>
         </nav>

@@ -1,88 +1,124 @@
+@import '../../styles/vars';
 @import '../../styles/colors';
 
 .navigation {
-    clear: both;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-image: linear-gradient(to top, black, black 40px, transparent);
+    // clear: both;
+    // position: fixed;
+    // bottom: 0;
+    // width: 100%;
+    // text-align: center;
+    // background-image: linear-gradient(to top, black, black 40px, transparent);
 
-    // &:after {
-    //     content: "";
-    //     display: block;
-    //     height: 1px;
-    //     background-image: linear-gradient(to left, $glow-border, $glow-border 200px, transparent);
+    // // &:after {
+    // //     content: "";
+    // //     display: block;
+    // //     height: 1px;
+    // //     background-image: linear-gradient(to left, $glow-border, $glow-border 200px, transparent);
+    // // }
+
+    // ul {
+    //     padding: 20px 10px 0;
+    //     margin: 0;
+    //     text-align: center;
     // }
 
-    ul {
-        padding: 20px 10px 0;
-        margin: 0;
-        text-align: center;
-    }
+    // li {
+    //     display: inline-block;
+    //     text-align: center;
+    //     margin: 0 10px;
+    //     min-width: 80px;
 
-    li {
-        display: inline-block;
-        text-align: center;
-        margin: 0 10px;
-        min-width: 80px;
+    //     a:link, a:visited {
+    //         text-decoration: none;
+    //         color: white;
+    //         font-family: "Engravers Gothic";
+    //         font-size: 12px;
+    //         display: block;
+    //         transition: color 0.2s ease;
+    //         border-bottom: 4px solid transparent;
+    //     }
 
-        a:link, a:visited {
-            text-decoration: none;
-            color: white;
-            font-family: "Engravers Gothic";
-            font-size: 12px;
-            display: block;
-            transition: color 0.2s ease;
-            border-bottom: 4px solid transparent;
-        }
+    //     a:hover {
+    //         color: $teal;
+    //     }
 
-        a:hover {
-            color: $teal;
-        }
+    //     img {
+    //         display: block;
+    //         margin: auto;
+    //         max-height: 40px;
+    //     }
 
-        img {
-            display: block;
-            margin: auto;
-            max-height: 40px;
-        }
+    //     span {
+    //         line-height: 2;
+    //     }
+    // }
 
-        span {
-            line-height: 2;
-        }
-    }
-
-    [aria-current=page] {
-        &:link, &:visited, &.hover {
-            color: white;
-            cursor: default;
-            opacity: 0.3;
-        }
-    }
+    // [aria-current=page] {
+    //     &:link, &:visited, &.hover {
+    //         color: white;
+    //         cursor: default;
+    //         opacity: 0.3;
+    //     }
+    // }
 }
 
 .active {
-    border-bottom-color: $teal !important;
+    // border-bottom-color: $teal !important;
 }
 
 @media (min-width: 769px) {
     .navigation {
-        position: static;
-        // width: auto;
-        background-image: none;
+        // position: static;
+        // // width: auto;
+        // background-image: none;
 
-         ul {
-             text-align: right;
+        //  ul {
+        //      text-align: right;
 
-             li {
-                 a:link, a:visited {
-                     font-size: 14px;
-                 }
+        //      li {
+        //          a:link, a:visited {
+        //              font-size: 14px;
+        //          }
 
-                 img {
-                    max-height: 60px;
-                 }
-             }
-         }
+        //          img {
+        //             max-height: 60px;
+        //          }
+        //      }
+        //  }
+        display: flex;
+        align-items: flex-end;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            // padding-left: $spacing-7;
+            display: flex;
+            background-color: $black;
+            margin-right: -#{$spacing-5};
+            align-items: center;
+
+            &:before {
+                content: '';
+                display: block;
+                width: $spacing-8;
+                height: $spacing-8;
+                border: $spacing-8/2 solid $gray;
+                border-bottom-color: $black;
+                border-right-color: $black;
+            }
+        }
+
+        li {
+            font-family: "Engravers Gothic";
+        }
+
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: $spacing-3 $spacing-5;
+            height: $spacing-8;
+        }
     }
 }

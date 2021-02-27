@@ -12,7 +12,7 @@ import crow from '../images/crow.png'
 
 const Index = ({ data }) => (
   <BodyClassName className="home">
-    <main>
+    <>
       <Helmet>
         <title>{config.siteTitle}</title>
         <meta name="description" content={config.siteDescription} />
@@ -23,17 +23,15 @@ const Index = ({ data }) => (
         <GradientTitle title={config.siteTitle} />
         <Navigation />
       </header>
-
-      <div className="content">
-
+      <main>
         <p>Welcome to the Crow's Nest, the most complete and up-to-date site on the web for reviews and downloads of add-on levels for the LucasArts 3D first-person game Dark Forces. If you're a Dark Forces newbie or have never been to the Nest before, you should access the <Link to="/database">Database</Link>. To read a review on a level select it from the <Link to="/reviews">Review List</Link>. You can also download the levels and other files for Dark Forces including patches, FMEs, WAXes and more from <Link to="/storage">Storage</Link>. If you want to find other Dark Forces or Jedi Knight pages, head to the <Link to="/launchpad">Launch Pad</Link> for immediate departure.</p>
 
         <p>Looking for the <a href="/vintage">vintage Crow's Nest</a>?</p>
 
         <PostListing postEdges={data.allMarkdownRemark.edges} />
-      </div>
+      </main>
       <Footer />
-    </main>
+    </>
   </BodyClassName>
   // <Layout>
   //   <main>
