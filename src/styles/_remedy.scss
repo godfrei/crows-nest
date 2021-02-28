@@ -1,102 +1,232 @@
 
 /* As seen at https://github.com/mozdevs/cssremedy */
 
-/* This project is under construction. It's not ready for release yet. As of Feb 11, 2019. */
+/* @docs
+label: Core Remedies
+version: 0.1.0-beta.2
 
+note: |
+  These remedies are recommended
+  as a starter for any project.
 
-
-*, ::before, ::after { box-sizing: border-box; } /* Switch to border-box for box-sizing. */
-
-/* Immediately jump any animation to the end point if the user has set their device to "prefers reduced motion". */
-/* This could create bad, unintended consequences. Remove as needed, and write your own appropriate code for prefers-reduced-motion. */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.001s !important;
-    transition-duration: 0.001s !important;
-  }
-}
-
-body {
-  margin: 0; /* Remove the tiny space around the edge of the page */
-}
-
-/* Switch to using rem units for typography. Fix line-height on headlines. */
-h1 {
-  font-size: 2rem; /* Make all H1 large, remove nested-shrinking sizes. */
-  margin: 0.67em 0;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.17rem;
-}
-h4 {
-  font-size: 1.00rem;
-}
-h5 {
-  font-size: 0.83rem;
-}
-h6 {
-  font-size: 0.67rem;
-}
-
-h2, h3, h4, h5, h6{
-  line-height: 1;
-}
-
-/* Improve readability */
-p, ul, ol, dl, address {
-  line-height: 1.5;
-}
-
-
-pre {
-  white-space: pre-wrap; /* Overflow by default is bad. */
-}
-
-hr {
-  border: .5px solid;
-}
-
-
-/* Are browsers now consistent with margin & padding on lists?
-  See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation  */
-nav ul {
-  list-style: none;
-}
-
-img, video, canvas, audio, iframe, embed, object  { 
-  display: block; /* Switch display mode to block, since that's what we usually want for images. */
-  vertical-align: middle;  /* If you override, and make an image inline, it's likely you'll want middle vertical alignment. */
-}
-img, video {
-  max-width: 100%; /* Make images and video flexible by default. */
-  height: auto; /* Ensure images and video maintain their aspect ratio when max-width comes into play. */
-}
-img {
-  border-style: none; /* Remove the border on images inside links in IE 10 and earlier. */
-}
-
-/* In English, when styling the <q> element, use curly quotes instead of straight quotes. */
-
-/* Code for this is now in the quotes.css file */
-
-
-
-
-/* Support upcoming properties that haven't been broadly implemented yet,
-   but for which the initial value and legacy behavior is not be the best behavior.
+category: file
 */
 
-/* Consistent line spacing, which does not unnecessarily grow to accommodate things that would fit anyway */
-/* From CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property */
-:root {
-  line-sizing: normal;
+
+/* @docs
+label: Box Sizing
+
+note: |
+  Use border-box by default, globally.
+
+category: global
+*/
+*, ::before, ::after { box-sizing: border-box; }
+
+
+/* @docs
+label: Line Sizing
+
+note: |
+  Consistent line-spacing,
+  even when inline elements have different line-heights.
+
+links:
+  - https://drafts.csswg.org/css-inline-3/#line-sizing-property
+
+category: global
+*/
+html { line-sizing: normal; }
+
+
+/* @docs
+label: Body Margins
+
+note: |
+  Remove the tiny space around the edge of the page.
+
+category: global
+*/
+body { margin: 0; }
+
+
+/* @docs
+label: Hidden Attribute
+
+note: |
+  Maintain `hidden` behaviour when overriding `display` values.
+
+  category: global
+*/
+[hidden] { display: none; }
+
+
+/* @docs
+label: Heading Sizes
+
+note: |
+  Switch to rem units for headings
+
+category: typography
+*/
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17rem; }
+h4 { font-size: 1.00rem; }
+h5 { font-size: 0.83rem; }
+h6 { font-size: 0.67rem; }
+
+
+/* @docs
+label: H1 Margins
+
+note: |
+  Keep h1 margins consistent, even when nested.
+
+category: typography
+*/
+h1 { margin: 0.67em 0; }
+
+
+/* @docs
+label: Pre Wrapping
+
+note: |
+  Overflow by default is bad...
+
+category: typography
+*/
+pre { white-space: pre-wrap; }
+
+
+/* @docs
+label: Horizontal Rule
+
+note: |
+  1. Solid, thin horizontal rules
+  2. Remove Firefox `color: gray`
+  3. Remove default `1px` height, and common `overflow: hidden`
+
+category: typography
+*/
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
 }
 
-/* Improve spacing of punctuation marks and at script changes in CJK languages */
-/* From CSS Text Module Level 4: https://drafts.csswg.org/css-text-4/#text-spacing-property */
-:root {
-  text-spacing: trim-start allow-end trim-adjacent ideograph-alpha ideograph-numeric;
+
+/* @docs
+label: Responsive Embeds
+
+note: |
+  1. Block display is usually what we want
+  2. Remove strange space-below in case authors overwrite the display value
+  3. Responsive by default
+  4. Audio without `[controls]` remains hidden by default
+
+category: embedded elements
+*/
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+audio:not([controls]) { display:none; }
+
+
+/* @docs
+label: Responsive Images
+
+note: |
+  These new elements display inline by default,
+  but that's not the expected behavior for either one.
+  This can interfere with proper layout and aspect-ratio handling.
+
+  1. Remove the unnecessary wrapping `picture`, while maintaining contents
+  2. Source elements have nothing to display, so we hide them entirely
+
+category: embedded elements
+*/
+picture { display: contents; }
+source { display: none; }
+
+
+/* @docs
+label: Aspect Ratios
+
+note: |
+  Maintain intrinsic aspect ratios when `max-width` is applied.
+  `iframe`, `embed`, and `object` are also embedded,
+  but have no intrinsic ratio,
+  so their `height` needs to be set explicitly.
+
+category: embedded elements
+*/
+img, svg, video, canvas {
+  height: auto;
+}
+
+
+/* @docs
+label: Audio Width
+
+note: |
+  There is no good reason elements default to 300px,
+  and audio files are unlikely to come with a width attribute.
+
+category: embedded elements
+*/
+audio { width: 100%; }
+
+/* @docs
+label: Image Borders
+
+note: |
+  Remove the border on images inside links in IE 10 and earlier.
+
+category: legacy browsers
+*/
+img { border-style: none; }
+
+
+/* @docs
+label: SVG Overflow
+
+note: |
+  Hide the overflow in IE 10 and earlier.
+
+category: legacy browsers
+*/
+svg { overflow: hidden; }
+
+
+/* @docs
+label: HTML5 Elements
+
+note: |
+  Default block display on HTML5 elements
+
+category: legacy browsers
+*/
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+
+/* @docs
+label: Checkbox & Radio Inputs
+
+note: |
+  1. Add the correct box sizing in IE 10
+  2. Remove the padding in IE 10
+
+category: legacy browsers
+*/
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
 }

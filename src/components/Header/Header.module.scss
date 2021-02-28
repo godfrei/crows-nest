@@ -77,11 +77,12 @@ header {
 
 .header {
   display: flex;
-  position: fixed;
+  // position: fixed;
   z-index: 100;
   width: 100%;
   background-color: $gray;
-  border-bottom: $spacing-3 solid $black;
+  // background-image: url('../../images/sidebar_bg.png');
+  // border-bottom: $spacing-3 solid $black;
 
 
   > div {
@@ -91,12 +92,57 @@ header {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    width: 160px;
+    margin-left: -#{$spacing-9};
+    margin-top: $spacing-4;
+    transform: rotate(15deg);
   }
 }
 
 .title {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+  padding: $spacing-6 $spacing-7 $spacing-4;
+  padding-right: 0;
+  // background-color: $black;
+  margin-bottom: $spacing-2;
+  height: 80px;
+  position: relative;
+
+  // &:before {
+  //   position: absolute;
+  //   content: '';
+  //   display: block;
+  //   height: $spacing-10;
+  //   width: 100vw;
+  //   top: 0;
+  //   left: 0;
+  //   margin-left: -100vw;
+  //   background-color: $black;
+  // }
+
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   width: $spacing-10;
+  //   height: $spacing-10;
+  //   border: $spacing-10/2 solid $black;
+  //   border-bottom-color: $gray;
+  //   border-right-color: $gray;
+  // }
+
+  h1 {
+    margin: 0;
+    margin-left: 80px;
+    margin-right: $spacing-9;
+  }
 }
 
 @media (max-width: 1000px) {

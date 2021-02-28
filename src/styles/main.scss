@@ -4,7 +4,7 @@
 @import 'vars';
 
 body {
-    background-color: $gray;
+    background-color: $black;
     // background-image: url("../images/sidebar_bg.png");
     // background-size: auto;
     // background-repeat: repeat-y;
@@ -30,7 +30,7 @@ body {
 
 main {
     // background-color: black;
-    padding: $spacing-9 $spacing-7;
+    padding: $spacing-3 $spacing-7;
     z-index: 1;
     background-color: $black;
     // backdrop-filter: blur(10px);
@@ -38,7 +38,7 @@ main {
 
 @media (min-width: 769px) {
     main {
-        padding: 110px $spacing-10;
+        padding: $spacing-6 $spacing-10;
         max-width: $max-width;
         margin: auto;
     }

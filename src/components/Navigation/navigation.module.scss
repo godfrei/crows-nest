@@ -63,7 +63,7 @@
 }
 
 .active {
-    // border-bottom-color: $teal !important;
+    border-bottom-color: $teal !important;
 }
 
 @media (min-width: 769px) {
@@ -96,6 +96,19 @@
             background-color: $black;
             margin-right: -#{$spacing-5};
             align-items: center;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: '';
+                display: block;
+                height: $spacing-8;
+                width: 100vw;
+                top: 0;
+                right: 0;
+                margin-right: -100vw;
+                background-color: $black;
+            }
 
             &:before {
                 content: '';
@@ -110,6 +123,7 @@
 
         li {
             font-family: "Engravers Gothic";
+            list-style: none;
         }
 
         a:link, a:visited {
@@ -119,6 +133,8 @@
             align-items: center;
             padding: $spacing-3 $spacing-5;
             height: $spacing-8;
+            border-bottom: $spacing-2 solid transparent;
+            margin-bottom: -#{$spacing-3};
         }
     }
 }
