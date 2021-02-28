@@ -77,8 +77,8 @@ header {
 
 .header {
   display: flex;
-  // position: fixed;
-  z-index: 100;
+  position: fixed;
+  z-index: 103;
   width: 100%;
   background-color: $gray;
   // background-image: url('../../images/sidebar_bg.png');

@@ -3,8 +3,12 @@
 @import 'fonts';
 @import 'vars';
 
+html {
+    background-color: $black;    
+}
+
 body {
-    background-color: $black;
+    // background-color: $black;
     // background-image: url("../images/sidebar_bg.png");
     // background-size: auto;
     // background-repeat: repeat-y;
@@ -13,6 +17,20 @@ body {
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     line-height: 1.5;
+
+    &:before {
+        content: '';
+        position: fixed;
+        top: 92px;
+        right: 8px;
+        bottom: 8px;
+        left: 8px;
+        z-index: 100;
+        border: 2px solid rgba(255,255,255,0.8);
+        border-radius: 20px;
+        box-shadow: inset 0 0 10vw rgba($blue, 0.7), 0 0 10vw rgba($blue, 0.8), 0 0 0 10vw $black;
+        pointer-events: none;
+    }
 
     // &:after {
     //     content: "";
@@ -31,14 +49,15 @@ body {
 main {
     // background-color: black;
     padding: $spacing-3 $spacing-7;
-    z-index: 1;
-    background-color: $black;
+    position: relative;
+    // z-index: 102;
     // backdrop-filter: blur(10px);
 }
 
 @media (min-width: 769px) {
     main {
-        padding: $spacing-6 $spacing-10;
+        padding: $spacing-6 $spacing-10 $spacing-10;
+        padding-top: 150px;
         max-width: $max-width;
         margin: auto;
     }
@@ -104,81 +123,136 @@ a:hover {
     }
 }
 
-header.nestHeader {
-    // border-top: 5px solid $teal;
-    display: flex;
-    align-items: center;
-    // background-image: url("../images/planet.png");
-    // background-color: rgba(0,0,0,0.8);
-    // background-size: 200px;
-    // background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    // backdrop-filter: blur(10px);
-    z-index: 10;
-    border-bottom: 1px solid $glow-border;
+// header.nestHeader {
+//     // border-top: 5px solid $teal;
+//     display: flex;
+//     align-items: center;
+//     // background-image: url("../images/planet.png");
+//     // background-color: rgba(0,0,0,0.8);
+//     // background-size: 200px;
+//     // background-repeat: no-repeat;
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     // backdrop-filter: blur(10px);
+//     z-index: 10;
+//     border-bottom: 1px solid $glow-border;
 
-    > * {
-        flex-grow: 1;
-    }
+//     > * {
+//         flex-grow: 1;
+//     }
 
-    .site_title {
-        a:link {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-    }
+//     .site_title {
+//         a:link {
+//             text-decoration: none;
+//             display: flex;
+//             align-items: center;
+//         }
+//     }
 
-    h1 {
-        margin: 0;
-        font-size: 36px;
+//     h1 {
+//         margin: 0;
+//         font-size: 36px;
 
-        @media (min-width: 769px) {
-            font-size: 48px;
-        }
-    }
+//         @media (min-width: 769px) {
+//             font-size: 48px;
+//         }
+//     }
 
-    #crow {
-        width: 100px;  
-        margin-left: 10px;
-        margin-right: 20px;
-    }
-}
+//     #crow {
+//         width: 100px;  
+//         margin-left: 10px;
+//         margin-right: 20px;
+//     }
+// }
 
 #homepage_header {
-    height: 170px;
-    background: none !important;
+    // height: 170px;
+    // background: none !important;
     // backdrop-filter: none;
-    border-bottom: none;
+    // border-bottom: none;
+    background-color: $gray;
+    border-bottom: $spacing-3 solid $black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 103;
 
-    #crow {
-        position: absolute;
-        width: 215px;
-        top: 42px;
-        left: 100px;
+    > div {
+        width: 100%;
+        max-width: $max-width;
+        padding: 0 $spacing-10;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
     }
 
-    h1 {
-        position: absolute;
-        left: 334px;
-        top: 58px;
-        font-size: 60px;
+}
+
+.home {
+    background-image: url('../images/planet_right.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 700px 293px;
+
+    &:before {
+        top: 64px;
+    }
+
+    &:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('../images/starfield.gif');
+        z-index: -1;
+    }
+
+    main {
+        background-color: transparent;
+    }
+
+    #site-title {
+        height: 200px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-end;
+        margin-top: $spacing-10;
+        margin-bottom: $spacing-10;
 
         &:after {
-            text-shadow: 0 0 4px rgba(255,255,255, 0.8), 0 0 7px rgba(255,255,255,0.8), 1px 1px 0 $glow-border, -1px -1px 0 $glow-border, -1px 1px 0 $glow-border, 1px -1px 0 $glow-border;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 314px;
+            height: 200px;
+            top: -#{$spacing-7};
+            right: $spacing-10;
+            background-image: url('../images/crow.png');
+            background-size: 314px 200px;
+            background-repeat: no-repeat;
+            background-position: top right;
+            transform: scaleX(-1) rotate(30deg);
+            z-index: 1;
+        }
+
+        h1 {
+            position: relative;
+            font-size: 80px;
+            margin-bottom: 0;
+        }
+
+        > * {
+            position: relative;
+            max-width: 34em;
+            z-index: 2;
         }
     }
 }
-
-// .content {
-//     max-width: 44em;
-//     padding: 2em;
-//     margin: auto;
-//     position: relative;
-//     z-index: 2;
-// }
 
 .content {
     display: grid;
@@ -192,7 +266,7 @@ header.nestHeader {
 .mission {
     position: relative;
     z-index: 1;
-    text-shadow: 1px 1px 0 black, 0 0 40px rgba(0,0,0,0.6);
+    // text-shadow: 1px 1px 0 black, 0 0 40px rgba(0,0,0,0.6);
     padding-top: 10vh;
 
     &:after {
@@ -203,7 +277,7 @@ header.nestHeader {
         content: "";
         display: block;
         bottom: 0;
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 10vh, rgba(0,0,0,0.75) 40vh, black);
+        // background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 10vh, rgba(0,0,0,0.75) 40vh, black);
     }
 
     h2 {
@@ -217,13 +291,13 @@ header.nestHeader {
     }
 
     @media (min-width: 769px) {
-        &.hasHeroImage {
-            padding-top: 40vh;
+        // &.hasHeroImage {
+        //     padding-top: 40vh;
 
-            &:after {
-                background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 40vh, rgba(0,0,0,0.75) 75vh, black);
-            }
-        }
+        //     &:after {
+        //         background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 40vh, rgba(0,0,0,0.75) 75vh, black);
+        //     }
+        // }
 
         .descAndReviews {
             grid-column: 3 / 4;
@@ -270,20 +344,20 @@ header.nestHeader {
         }
     }
 
-    .heroImage {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        // right: 0;
-        // bottom: 0;
-        background-size: cover;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        image-rendering: pixelated; // Use pixelated instead of crisp-edges to support Chrome
-        z-index: -1;
-    }
+    // .heroImage {
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100vh;
+    //     width: 100vw;
+    //     // right: 0;
+    //     // bottom: 0;
+    //     background-size: cover;
+    //     background-position: center bottom;
+    //     background-repeat: no-repeat;
+    //     image-rendering: pixelated; // Use pixelated instead of crisp-edges to support Chrome
+    //     z-index: -1;
+    // }
 }
 
 .mission-grid {

@@ -1,13 +1,47 @@
 @import '../../styles/colors';
+@import '../../styles/vars';
 
 .footer {
-    // background-color: rgba(0,0,0,0.3);
+    background-color: $gray;
     // backdrop-filter: blur(10px);
-    // border-top: 1px solid lighten($gray, 10%);
-    padding: 1em;
-    padding-bottom: 100px;
+    border-top: 8px solid $black;
     position: relative;
-    z-index: 5;
+    z-index: 102;
+
+    &:before {
+        content: '';
+        height: calc(5vw);
+        border: 2px solid rgba(255,255,255,0.8);
+        border-radius: 20px;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: calc(-5vw - 8px);
+        background-image: linear-gradient(bottom, rgba($blue, 0.4), transparent);
+        z-index: 103;
+    }
+
+    &:after {
+        content: '';
+        height: calc(5vw);
+        position: absolute;
+        left: -16px;
+        right: -16px;
+        top: -5vw;
+        background-image: linear-gradient(bottom, $black, transparent);
+        z-index: 102;
+    }
+
+    .content {
+        max-width: $max-width;
+        margin: auto;
+        padding: $spacing-6 $spacing-10;
+        display: flex;
+        justify-content: space-between;
+    }
 
     @media (min-width: 769px) {
         padding-bottom: 1em;
