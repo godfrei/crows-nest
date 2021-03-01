@@ -20,7 +20,7 @@
         left: 8px;
         right: 8px;
         top: calc(-5vw - 8px);
-        background-image: linear-gradient(bottom, rgba($blue, 0.4), transparent);
+        background-image: linear-gradient(to top, rgba($blue, 0.4), transparent);
         z-index: 103;
     }
 
@@ -31,7 +31,7 @@
         left: -16px;
         right: -16px;
         top: -5vw;
-        background-image: linear-gradient(bottom, $black, transparent);
+        background-image: linear-gradient(to top, $black, transparent);
         z-index: 102;
     }
 
