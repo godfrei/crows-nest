@@ -57,7 +57,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Query all the markdown files
 
-  // NEED TO FLESH OUT THE FRONTMATTER COLLECTED HERE TO INCLUDE MISSION/FILE INFO
   const markdownQueryResult = await graphql(
     `
       {
@@ -92,7 +91,13 @@ exports.createPages = async ({ graphql, actions }) => {
   // Get all Markdown edges from the query
   const markdownEdges = markdownQueryResult.data.allMarkdownRemark.edges;
 
-  markdownEdges.sort((postA, postB) => {
+  // POSTS
+
+  let postEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === 'posts') return edge;
+  });
+
+  postEdges.sort((postA, postB) => {
     const dateA = moment(
       postA.node.frontmatter.date,
       siteConfig.dateFromFormat
@@ -107,13 +112,6 @@ exports.createPages = async ({ graphql, actions }) => {
     if (dateB.isBefore(dateA)) return 1;
 
     return 0;
-  });
-
-
-  // POSTS
-
-  let postEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'posts') return edge;
   });
 
   postEdges.forEach((edge, index) => {
