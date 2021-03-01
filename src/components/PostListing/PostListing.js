@@ -22,7 +22,7 @@ const PostListing = ({ postEdges }) => {
   const postList = getPostList()
   return (
     <div className={styles.articleList}>
-      {/* Your post list here. */
+      {
       postList.map(post => (
         <Link to={post.path} key={post.title}>
           <article className={styles.articleBox}>

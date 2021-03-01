@@ -8,7 +8,6 @@ import Footer from '../components/Footer'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
-import crow from '../images/crow.png'
 
 const Index = ({ data }) => (
   <BodyClassName className="home">
@@ -33,13 +32,6 @@ const Index = ({ data }) => (
       <Footer />
     </>
   </BodyClassName>
-  // <Layout>
-  //   <main>
-  //     <Helmet title={config.siteTitle} />
-  //     <SEO />
-  //     <PostListing postEdges={data.allMarkdownRemark.edges} />
-  //   </main>
-  // </Layout>
 )
 
 export default Index
