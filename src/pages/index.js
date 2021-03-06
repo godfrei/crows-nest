@@ -29,6 +29,8 @@ const Index = ({ data }) => (
           <p>The most complete and up-to-date site for reviews and downloads of add-on levels for the LucasArts 3D first-person game <em>Dark Forces</em>. At least, it used to be. Getting back to it.</p>
         </div>
         <PostListing postEdges={data.allMarkdownRemark.edges} />
+
+        <h2>Recent Reviews</h2>
         <ReviewListing />
       </main>
       <Footer />
@@ -43,7 +45,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [fields___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: {fields: {collection: {eq: "posts"}}}
     ) {
       edges {

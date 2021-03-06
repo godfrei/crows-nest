@@ -1,17 +1,18 @@
 import React from 'react'
-import { useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
+import ReviewCard from '../ReviewCard'
 
 const ReviewListing = ({ reviewEdges }) => {
     const data = useStaticQuery(graphql`
     query ReviewQuery {
         allMarkdownRemark(
           limit: 4
-          sort: { fields: [fields___date], order: DESC }
+          sort: { fields: [frontmatter___date], order: DESC }
           filter: {
             # Only from the missions collection
             fields: {collection: {eq: "missions"}},
-            # Not files that include "review" in their file path
-            fileAbsolutePath: { regex: "/missions\/.*\/index/" }
+            # Only files that include "review" in their file path
+            fileAbsolutePath: { regex: "/missions\/.*\/review/" }
           }
         ) {
           edges {
@@ -23,6 +24,8 @@ const ReviewListing = ({ reviewEdges }) => {
               excerpt
               frontmatter {
                 title
+                reviewers
+                rating
                 cover {
                   name
                   publicURL
@@ -40,7 +43,7 @@ const ReviewListing = ({ reviewEdges }) => {
       {
           data.allMarkdownRemark.edges.map(review => {
               return (
-                  <li>{review.node.fields.slug}</li>
+                  <li><ReviewCard review={review} /></li>
               )
           })
       }
