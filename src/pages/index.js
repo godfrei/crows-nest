@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
+import ReviewListing from '../components/ReviewListing'
 
 const Index = ({ data }) => (
   <BodyClassName className="home">
@@ -28,6 +29,7 @@ const Index = ({ data }) => (
           <p>The most complete and up-to-date site for reviews and downloads of add-on levels for the LucasArts 3D first-person game <em>Dark Forces</em>. At least, it used to be. Getting back to it.</p>
         </div>
         <PostListing postEdges={data.allMarkdownRemark.edges} />
+        <ReviewListing />
       </main>
       <Footer />
     </>
