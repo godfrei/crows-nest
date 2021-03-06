@@ -3,7 +3,7 @@ mission: perplex
 title: "Perplexion Review"
 reviewers: 
   -  "Geoff Elliott"
-date: 
+date: 1997-09-07
 rating: ""
 ---
 

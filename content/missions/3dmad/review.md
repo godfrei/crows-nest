@@ -3,7 +3,7 @@ mission: 3dmad
 title: "3D Mad Review"
 reviewers: 
   - "Geoff Elliott"
-date: 
+date: 1997-08-31
 rating: ""
 ---
 

@@ -3,7 +3,7 @@ mission: nightmare
 title: "Kyle's Nightmare Review"
 reviewers: 
   -  "Geoff Elliott"
-date: 
+date: 1997-09-07
 rating: ""
 ---
 

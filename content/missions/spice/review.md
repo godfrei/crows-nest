@@ -3,7 +3,7 @@ mission: spice
 title: "Kyle On Spice Review"
 reviewers: 
   -  "Geoff Elliott"
-date:
+date: 1997-09-08
 rating: ""
 ---
 
