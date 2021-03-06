@@ -10,10 +10,9 @@ import config from '../../data/SiteConfig'
 import moment from 'moment';
 
 export default ({ data, pageContext }) => {
-  const { slug, reviewRegex } = pageContext;
+  const { slug } = pageContext;
   const postNode = data.markdownRemark;
   const post = postNode.frontmatter;
-  const date = postNode.fields.date || '';
 
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
 

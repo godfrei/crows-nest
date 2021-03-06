@@ -13,7 +13,7 @@ const MissionListing = ({ missionEdges }) => {
   const missionList = getMissionList()
   return (
     <ul className="mission-grid">
-      {/* Your post list here. */
+      {
       missionList.map(mission => {
         return (
           <li key={mission.fields.slug}>
