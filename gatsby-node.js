@@ -154,6 +154,18 @@ exports.createPages = async ({ graphql, actions }) => {
       return edge;
   });
 
+  // Create Missions page
+  createPage({
+    path: '/missions',
+    component: path.resolve('./src/templates/mission-list.js'),
+    context: {
+      'sort': {
+        'fields': 'frontmatter___title',
+        'order': 'ASC',
+      },
+    },
+  });
+
   missionEdges.forEach((edge, index) => {
     if (edge.node.frontmatter.authors) {
       edge.node.frontmatter.authors.forEach(author => {

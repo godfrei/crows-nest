@@ -22,10 +22,10 @@ export default Missions
 
 /* eslint no-undef: "off" */
 export const missionsQuery = graphql`
-  query MissionsQuery {
+  query MissionsQuery($sort: MarkdownRemarkSortInput ) {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [fields___date], order: DESC }
+      sort: $sort
       filter: {
         # Only from the missions collection
         fields: {collection: {eq: "missions"}},
