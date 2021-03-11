@@ -28,7 +28,7 @@ const siteConfig = require("./data/SiteConfig");
 //   createTypes(typeDefs);
 // }
 
-exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
+exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   let slug;
   if (node.internal.type === "MarkdownRemark") {
