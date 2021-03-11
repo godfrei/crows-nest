@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../layout'
 import MissionListing from '../components/MissionListing'
 import SEO from '../components/SEO'
@@ -12,8 +12,11 @@ const Missions = ({ data }) => (
   <Layout>
     <Helmet title={`Missions | ${config.siteTitle}`} />
     <SEO />
-    {/* <img src={reviewList} alt="" className="section_icon" /> */}
+    <img src={reviewList} alt="" className="section_icon" />
     <GradientTitle title="Missions" />
+    Sort: <Link to="/missions">Alphabetical</Link> | 
+      <Link to="/missions/rating">Rating</Link> | 
+      <Link to="/missions/date">Date</Link>
     <MissionListing missionEdges={data.allMarkdownRemark.edges} />
   </Layout>
 )

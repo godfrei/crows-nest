@@ -3,7 +3,32 @@ const _ = require("lodash");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type Review implements Node @infer {
+      frontmatter: ReviewFM
+    }
+
+    type ReviewFM @infer {
+      mission: Mission @link(by: "missionId")
+      rating: String
+    }
+
+    type Mission implements Node @infer {
+      frontmatter: MissionFM
+      title: String
+    }
+
+    type MissionFM @infer {
+      title: String!
+      reviews: [Review] @link(by: "review.mission", from: "missionId")
+    }
+  `;
+  createTypes(typeDefs);
+}
+
+exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
   const { createNodeField } = actions;
   let slug;
   if (node.internal.type === "MarkdownRemark") {
@@ -154,7 +179,7 @@ exports.createPages = async ({ graphql, actions }) => {
       return edge;
   });
 
-  // Create Missions page
+  // Create Missions page(s)
   createPage({
     path: '/missions',
     component: path.resolve('./src/templates/mission-list.js'),
@@ -162,6 +187,29 @@ exports.createPages = async ({ graphql, actions }) => {
       'sort': {
         'fields': 'frontmatter___title',
         'order': 'ASC',
+      },
+    },
+  });
+
+  // How to do this? Need to get rating from reviews, but...
+  createPage({
+    path: '/missions/rating',
+    component: path.resolve('./src/templates/mission-list.js'),
+    context: {
+      'sort': {
+        'fields': 'frontmatter___rating',
+        'order': 'DESC',
+      },
+    },
+  });
+
+  createPage({
+    path: '/missions/date',
+    component: path.resolve('./src/templates/mission-list.js'),
+    context: {
+      'sort': {
+        'fields': 'frontmatter___date',
+        'order': 'DESC',
       },
     },
   });
