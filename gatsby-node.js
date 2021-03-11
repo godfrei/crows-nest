@@ -3,30 +3,20 @@ const _ = require("lodash");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
 
-// exports.createSchemaCustomization = ({ actions }) => {
-//   const { createTypes } = actions;
-//   const typeDefs = `
-//     type Review implements Node @infer {
-//       frontmatter: ReviewFM
-//     }
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
 
-//     type ReviewFM @infer {
-//       mission: Mission @link(by: "missionId")
-//       rating: String
-//     }
-
-//     type Mission implements Node @infer {
-//       frontmatter: MissionFM
-//       title: String
-//     }
-
-//     type MissionFM @infer {
-//       title: String!
-//       reviews: [Review] @link(by: "review.mission", from: "missionId")
-//     }
-//   `;
-//   createTypes(typeDefs);
-// }
+    type Frontmatter {
+      mission: MarkdownRemark @link(by: "frontmatter.mission_id", from: "mission")
+      reviews: [MarkdownRemark] @link(by: "frontmatter.mission", from: "mission_id")
+    }
+  `;
+  createTypes(typeDefs);
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
