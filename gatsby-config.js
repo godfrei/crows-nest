@@ -17,6 +17,15 @@ module.exports = {
       copyright: config.copyright
     }
   },
+  // THIS DOESN'T WORK
+  // mapping: {
+  //   'MarkdownRemark.frontmatter.mission': `MarkdownRemark.frontmatter.mission_id`,
+  //   'MarkdownRemark.frontmatter.mission_id': `MarkdownRemark.frontmatter.mission`,
+  // },
+  mapping: {
+    'MarkdownRemark.frontmatter.mission': `MarkdownRemark.frontmatter.mission_id`,
+    // 'MarkdownRemark.frontmatter.mission_id': `MarkdownRemark.frontmatter.mission`,
+  },
   plugins: [
     
     "gatsby-plugin-react-helmet",
