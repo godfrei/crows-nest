@@ -7,7 +7,6 @@ import styles from '../styles/main.scss'
 
 const MainLayout = ({ children }) => (
   <>
-    {/* <Header /> */}
     <Helmet>
       <meta name="description" content={config.siteDescription} />
     </Helmet>
