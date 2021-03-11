@@ -16,7 +16,7 @@ import {
 } from 'react-share'
 import urljoin from 'url-join'
 import config from '../../data/SiteConfig'
-import styles from './SocialLinks.module.scss'
+import { socialLinks, shareCount } from './SocialLinks.module.scss'
 
 const SocialLinks = ({ postNode, postPath, mobile }) => {
   const post = postNode.frontmatter
@@ -24,11 +24,11 @@ const SocialLinks = ({ postNode, postPath, mobile }) => {
   const iconSize = mobile ? 32 : 32
   const filter = count => (count > 0 ? count : '')
   const renderShareCount = count => (
-    <div className={styles.shareCount}>{filter(count)}</div>
+    <div className={shareCount}>{filter(count)}</div>
   )
 
   return (
-    <div className={styles.socialLinks}>
+    <div className={socialLinks}>
       <RedditShareButton url={url} title={post.title}>
         <RedditIcon round size={iconSize} />
         <RedditShareCount url={url}>

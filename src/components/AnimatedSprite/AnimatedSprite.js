@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from 'prop-types';
-import spriteStyles from "./animatedsprite.module.scss"
+import * as spriteStyles from "./animatedsprite.module.scss"
 
 export default class AnimatedSprite extends React.Component {
   constructor(props) {
@@ -93,9 +93,7 @@ export default class AnimatedSprite extends React.Component {
     }
 
     let containerClass = "spriteContainer"
-    console.log(this.props.active)
     if (this.props.active) containerClass += " active"
-    console.log(containerClass)
 
     return (
       <div className={containerClass} style={containerStyles}>

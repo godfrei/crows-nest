@@ -1,6 +1,6 @@
 import React from "react"
 import _ from "lodash"
-import styles from './TechSpecs.module.scss'
+import { techspecs, components } from './TechSpecs.module.scss'
 import checkmark from '../../images/checkmark.png'
 import blank from '../../images/blank.gif'
 
@@ -14,7 +14,7 @@ export default ({ node }) => {
     }
 
     return(
-        <aside className={styles.techspecs}>
+        <aside className={techspecs}>
             <h2>Tech Specs</h2>
             <ul>
                 <li><strong>Level(s) Replaced:</strong> {node.levelReplaced}</li>
@@ -24,7 +24,7 @@ export default ({ node }) => {
             </ul>
 
             <h3>New Stuff</h3>
-            <ul className={styles.components}>
+            <ul className={components}>
                 <li>{checkMarkOrNot(node.bm)} <strong>BM</strong> </li>
                 <li>{checkMarkOrNot(node.fme)} <strong>FME</strong> </li>
                 <li>{checkMarkOrNot(node.wax)} <strong>WAX</strong> </li>

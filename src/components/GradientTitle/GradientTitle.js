@@ -1,8 +1,8 @@
 import React from "react"
-import titleStyles from "./gradienttitle.module.scss"
+import { gradientTitle } from "./gradienttitle.module.scss"
 
 export default ({ title }) => {
     return (
-        <h1 className={titleStyles.title} data-text={title}><span>{title}</span></h1>
+        <h1 className={gradientTitle} data-text={title}><span>{title}</span></h1>
     )
 }

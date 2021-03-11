@@ -1,7 +1,7 @@
 import React from "react"
 import EditorsChoice from "../EditorsChoice"
 import AuthorLinks from "../AuthorLinks"
-import headerStyles from "./missionheader.module.scss"
+import { header, content, headGroup, awards } from "./missionheader.module.scss"
 
 export default ({ node }) => {
 
@@ -16,13 +16,13 @@ export default ({ node }) => {
     }
 
     return (
-        <header className={headerStyles.header}>
-            <div className={`content ${headerStyles.content}`}>
-                <div className={headerStyles.headGroup}>
+        <header className={header}>
+            <div className={`content ${content}`}>
+                <div className={headGroup}>
                     <h1>{ node.frontmatter.title }</h1>
                     <AuthorLinks node={node} />
                 </div>
-                <div className={headerStyles.awards}>
+                <div className={awards}>
                     {getEditorsChoice(node)}
                 </div>
             </div>

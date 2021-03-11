@@ -3,14 +3,14 @@ import { Link, withPrefix } from "gatsby"
 import { Index } from "elasticlunr"
 import blank from '../../images/blank.gif'
 import EditorsChoiceBadge from '../EditorsChoiceBadge'
-import searchStyles from "./search.module.scss"
+import { result, title, authors, results, empty, input, search } from "./search.module.scss"
 
 class AuthorResult extends Component {
   render() {
     const { node } = this.props
 
     return (
-      <Link to={node.slug} className={searchStyles.result}>
+      <Link to={node.slug} className={result}>
         {node.title}
       </Link>
     )
@@ -41,11 +41,11 @@ class MissionResult extends Component {
   render() {
     const { node } = this.props
     return (
-      <Link to={node.slug} className={searchStyles.result}>
+      <Link to={node.slug} className={result}>
         {this.getImage(node)}
         <div>
-          <span className={searchStyles.title}>{node.title}</span>
-          <small className={searchStyles.authors}>
+          <span className={title}>{node.title}</span>
+          <small className={authors}>
             { 
               node.authors.map((author, index) => {
                 return (
@@ -91,13 +91,13 @@ export default class Search extends Component {
       }
       else if (this.state.results.length <= 0) {
         return (
-          <div className={searchStyles.results}>
-            <p className={searchStyles.empty}>No results found.</p>
+          <div className={results}>
+            <p className={empty}>No results found.</p>
           </div>
         )
       }
       return (
-        <div className={searchStyles.results}>
+        <div className={results}>
           <ul>
             {this.state.results.map(node => {
               return (
@@ -113,8 +113,8 @@ export default class Search extends Component {
   
     render() {
       return (
-        <div className={searchStyles.search}>
-          <input type="text" className={searchStyles.input} value={this.state.query} onChange={this.search} placeholder="Search" />
+        <div className={search}>
+          <input type="text" className={input} value={this.state.query} onChange={this.search} placeholder="Search" />
           {this.renderResults()}
         </div>
       )

@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import specNavStyles from "./specnav.module.scss"
+import { specnav } from "./specnav.module.scss"
 
 export default () => {
 
     return (
-        <nav className={specNavStyles.specnav}>
+        <nav className={specnav}>
             <strong>Specifications Navigation</strong>
             <ul>
                 <li><Link to="/specs/welcome">Welcome</Link></li>

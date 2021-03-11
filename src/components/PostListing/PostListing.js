@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './PostsListing.module.scss'
+import { articleList, articleBox, right, meta } from './PostsListing.module.scss'
 
 const PostListing = ({ postEdges }) => {
   const getPostList = () => {
@@ -21,14 +21,14 @@ const PostListing = ({ postEdges }) => {
 
   const postList = getPostList()
   return (
-    <div className={styles.articleList}>
+    <div className={articleList}>
       {
       postList.map(post => (
         <Link to={post.path} key={post.title}>
-          <article className={styles.articleBox}>
-            <div className={styles.right}>
+          <article className={articleBox}>
+            <div className={right}>
               <h3>{post.title}</h3>
-              <div className={styles.meta}>
+              <div className={meta}>
                 {post.date} &mdash; <span>{post?.categories?.join(' / ')}</span>
               </div>
               <p>{post.excerpt}</p>

@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from 'gatsby'
 import config from '../../../data/SiteConfig'
-import footerStyles from "./footer.module.scss"
+import { footer, content } from "./footer.module.scss"
 
 export default () => {
     return (
-        <footer className={footerStyles.footer}>
-            <div className={footerStyles.content}>
+        <footer className={footer}>
+            <div className={content}>
                 <ul>
                     <li><Link to="/about">About</Link></li>
                     <li>Social Links</li>

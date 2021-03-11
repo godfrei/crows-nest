@@ -4,12 +4,12 @@ import config from '../../../data/SiteConfig'
 import Navigation from '../Navigation'
 import GradientTitle from '../GradientTitle'
 import crow from '../../images/crow.png'
-import styles from './Header.module.scss'
+import { header, title } from './Header.module.scss'
 
 const Header = () => (
-  <header className={styles.header}>
+  <header className={header}>
     <div>      
-      <Link to="/" className={styles.title}>
+      <Link to="/" className={title}>
         <img src={crow} alt="The Moldy Crow" id="crow" />
         <GradientTitle title={config.siteTitle} />
         {/* <h1>{config.siteTitle}</h1> */}

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "./navigation.module.scss"
+import { active, navigation } from "./navigation.module.scss"
 import launchPad from "../../images/launch_pad.png"
 import reviewList from "../../images/reviews.png"
 import storage from "../../images/storage.png"
@@ -8,11 +8,11 @@ import database from "../../images/database.png"
 
 export default () => {
     const linkProps = {
-        activeClassName: styles.active,
+        activeClassName: active,
         partiallyActive: true
     }
     return (
-        <nav className={styles.navigation}>
+        <nav className={navigation}>
             {/* <ul> 
                 <li className="review_link">
                     <Link to="/missions/" {...linkProps}>

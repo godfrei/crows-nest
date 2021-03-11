@@ -3,10 +3,9 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../layout'
 import PostTags from '../components/PostTags'
-import SocialLinks from '../components/SocialLinks'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
-import styles from './post.module.scss'
+import { pagination, postMeta } from './post.module.scss'
 import './prism-okaidia.css'
 
 export default ({ data, pageContext }) => {
@@ -25,16 +24,16 @@ export default ({ data, pageContext }) => {
       <SEO postPath={slug} postNode={postNode} postSEO />
       <article>
         <h1>{post.title}</h1>
-        <p className={styles.postMeta}>
+        <p className={postMeta}>
           {date}
         </p>
-        <div className={styles.postMeta}>
+        <div className={postMeta}>
           <PostTags tags={post.tags} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
       </article>
       <nav>
-        <ul className={styles.pagination}>
+        <ul className={pagination}>
           <li>
             <Link to={prevslug} rel="prev">
               ← {prevtitle}
