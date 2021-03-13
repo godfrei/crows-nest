@@ -17,9 +17,12 @@
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         position: absolute;
+        width: calc(100% - 16px);
+        max-width: $max-width;
         left: 8px;
         right: 8px;
         top: calc(-5vw - 8px);
+        margin: 0 auto;
         background-image: linear-gradient(to top, rgba($blue, 0.4), transparent);
         z-index: 103;
     }

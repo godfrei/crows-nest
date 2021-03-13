@@ -23,6 +23,7 @@ const Index = ({ data }) => (
           <Navigation />
         </div>
       </header>
+      <div className="glow"></div>
       <main>
         <div id="site-title">
           <GradientTitle title={config.siteTitle} />
