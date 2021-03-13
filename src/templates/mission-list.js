@@ -8,18 +8,54 @@ import config from '../../data/SiteConfig'
 import GradientTitle from "../components/GradientTitle"
 import reviewList from "../images/reviews.png"
 
-const Missions = ({ data }) => (
+const Missions = ({ data }) => {
+  // console.log(data);
+
+  let missionsArray = new Array;
+  data.allMarkdownRemark.missions.map(mission => {
+    missionsArray.push({
+      ...mission.edges[0].node,
+      reviews: []
+    });
+  });
+  // console.log(missionsArray);
+  data.allMarkdownRemark.reviews.map(mission => {
+    console.log(mission);
+    mission.edges.map(review => {
+      const missionIndex = missionsArray.findIndex(item => item.frontmatter.mission_id === review.node.frontmatter.mission.frontmatter.mission_id);
+      missionsArray[missionIndex].reviews.push(review);
+    });
+  })
+
+  console.log(missionsArray);
+
+  return (
   <Layout>
     <Helmet title={`Missions | ${config.siteTitle}`} />
     <SEO />
     <img src={reviewList} alt="" className="section_icon" />
     <GradientTitle title="Missions" />
-    Sort: <Link to="/missions">Alphabetical</Link> | 
+    {/* Sort: <Link to="/missions">Alphabetical</Link> | 
       <Link to="/missions/rating">Rating</Link> | 
       <Link to="/missions/date">Date</Link>
-    <MissionListing missionEdges={data.allMarkdownRemark.edges} />
+    <MissionListing missionEdges={data.allMarkdownRemark.edges} /> */}
+    <ul>
+      {
+        missionsArray.map(mission => {
+          console.log(mission);
+          return (
+            <li>
+              <Link to={mission.fields.slug}><strong>{mission.frontmatter.title}</strong></Link>
+              {mission.reviews.map(review => (
+                <span className="rating">{review.node.frontmatter.rating}</span>
+              ))}
+            </li>
+          )
+        })
+      }
+    </ul>
   </Layout>
-)
+)}
 
 export default Missions
 
@@ -33,23 +69,36 @@ export const missionsQuery = graphql`
         # Only from the missions collection
         fields: {collection: {eq: "missions"}},
         # Not files that include "review" in their file path
-        fileAbsolutePath: { regex: "/missions\/.*\/index/" }
+        fileAbsolutePath: { regex: "/missions\/.*\/.*/" }
       }
     ) {
-      edges {
-        node {
-          fields {
-            slug
-            date(formatString: "MMMM DD, YYYY")
-          }
-          excerpt
-          frontmatter {
-            title
-            cover {
-              name
-              publicURL
+      reviews: group(field: frontmatter___mission___id) {
+        edges {
+          node {
+            frontmatter {
+              rating
+              mission {
+                frontmatter {
+                  mission_id
+                  title
+                  authors
+                }
+              }
             }
-            date
+          }
+        }
+      }
+      missions: group(field: frontmatter___mission_id) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              mission_id
+              title
+              authors
+            }
           }
         }
       }
