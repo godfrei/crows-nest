@@ -31,6 +31,17 @@ const ReviewListing = ({ reviewEdges }) => {
                   publicURL
                 }
                 date
+                mission {
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    cover {
+                      publicURL
+                    }
+                  }
+                }
               }
             }
           }

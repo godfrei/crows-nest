@@ -5,11 +5,9 @@ import defaultImage from '../../images/reviews.png'
 
 const ReviewCard = ({ review }) => {
     console.log(review);
-    let slug = review.node.fields.slug;
-    slug = slug.slice(0, slug.indexOf('-review'));
-    let title = review.node.frontmatter.title;
-    title = title.slice(0, title.indexOf(' Review'));
-    const cover = (review.node.frontmatter.cover) ? review.node.frontmatter.cover.publicURL : defaultImage;
+    let slug = review.node.frontmatter.mission.fields.slug;
+    let title = review.node.frontmatter.mission.frontmatter.title;
+    const cover = (review.node.frontmatter.mission.frontmatter.cover) ? review.node.frontmatter.mission.frontmatter.cover.publicURL : defaultImage;
 
     return (
         <Link to={slug} className={link}>
