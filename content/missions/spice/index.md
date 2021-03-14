@@ -6,8 +6,8 @@ authors:
     - "Jason Burton"
     - "Arthur Sharp"
 date:
-filename: 
-description: ""
+filename: spice.zip
+description: "Ever wondered what that stuff Solo smuggles actually does to you? Well two authors have decided to make their own stab at the effects of spice, and now you can try it out in a safe environment."
 cover: "spice.png"
 levelReplaced:	SECBASE
 difficulty: no

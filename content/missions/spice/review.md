@@ -9,8 +9,6 @@ rating: ""
 
 ![Kyle On Spice screenshot](./spice.png "Uhm, Jan, I don't think we're in Kansas anymore.")
 
-Ever wondered what that stuff Solo smuggles actually does to you? Well two authors have decided to make their own stab at the effects of spice, and now you can try it out in a safe environment.
-
 The entire world swirls with nifty colors and you have trouble staying on your feet. Motion is difficult and it seems like everything is moving in different directions. You're attacked by floating green men who seem to be there and not there at the same time. And for some reason Jan isn't her usual cheerful self.
 
 Yep, it's definitely Kyle on spice. The texturing is atrocious, the enemy placement is really awful, and there isn't a semblance of reality throughout the entire level. It's absolutely perfect.
