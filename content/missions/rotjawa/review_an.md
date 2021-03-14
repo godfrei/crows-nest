@@ -22,5 +22,3 @@ Amid all this criticism, I must praise one truly excellent design feature that t
 ## Overall
 
 It doesn't suck. It's an adequate obstacle course and time killer, but there's not much more to it. The text file features some dialogue between Kyle and Jan that is amusing, though it establishes immediately that the author isn't going to give us a fully dressed *Star Wars* experience. I wish he hadn't mentioned that he spent over a year making this, because that knowledge only intensifies my disappointment over how two-dimensional the product is -- a point of wonder that is, tellingly, the most memorable thing about this mission.
-
-![Return of the Jawa screenshot](./rotjawa.png "What's your poison? In this hallway you select your opponents.")
