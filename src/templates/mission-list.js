@@ -39,21 +39,44 @@ const Missions = ({ data }) => {
       <Link to="/missions/rating">Rating</Link> | 
       <Link to="/missions/date">Date</Link>
     <MissionListing missionEdges={data.allMarkdownRemark.edges} /> */}
-    <ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th></th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
       {
         missionsArray.map(mission => {
           console.log(mission);
           return (
-            <li>
-              <Link to={mission.fields.slug}><strong>{mission.frontmatter.title}</strong></Link>
-              {mission.reviews.map(review => (
-                <span className="rating">{review.node.frontmatter.rating}</span>
-              ))}
-            </li>
+            <tr>
+              <td>
+                <Link to={mission.fields.slug}>
+                  <strong>{mission.frontmatter.title}</strong>
+                  <div>{mission.frontmatter.authors.join(', ')}</div>
+                </Link>
+              </td>
+              <td>
+                {
+                  mission.frontmatter.cover?.publicURL ? 
+                    (<img src={mission.frontmatter.cover.publicURL} />)
+                    : <span></span>
+                }
+              </td>
+              <td>
+                {mission.reviews.map(review => (
+                  <span className="rating">{review.node.frontmatter.rating}</span>
+                ))}
+              </td>
+            </tr>
           )
         })
       }
-    </ul>
+      </tbody>
+    </table>
   </Layout>
 )}
 
@@ -98,6 +121,9 @@ export const missionsQuery = graphql`
               mission_id
               title
               authors
+              cover {
+                publicURL
+              }
             }
           }
         }
