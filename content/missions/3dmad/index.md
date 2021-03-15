@@ -4,9 +4,9 @@ editorsChoice:
 title: "3D Mad"
 authors: 
     - "Len Bowers"
-date:
-filename: 
-description:
+date: 1995-08-31
+filename: "3dmad.zip"
+description: "A little joke level that exploits a feature of the Dark Forces engine to create some truly weird rooms. See for yourself!"
 cover: 
 levelReplaced:	SECBASE
 difficulty: no

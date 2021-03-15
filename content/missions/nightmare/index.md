@@ -4,8 +4,8 @@ editorsChoice:
 title: "Kyle's Nightmare"
 authors: 
     - "Alexi Novikov"
-date:
-filename: 
+date: 1995-11-07
+filename: "night.zip"
 description: "Kyle has fallen asleep after a hard day's work. And he's having a terrible nightmare. Your job is simple(or is it?): just survive..."
 cover: "nightmare.png"
 levelReplaced:	SECBASE

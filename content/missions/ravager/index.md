@@ -4,8 +4,8 @@ editorsChoice:
 title: "Ravager Outpost"
 authors: 
     - "Rick Schmidt"
-date:
-filename: 
+date: 1995-06-29
+filename: "ravage15.zip"
 description: "On your way back to regroup with the Rebels after stealing the Death Star plans you are captured by Boba Fett. He hands you over to the Imperials who in turn transport you to Ravager Outpost to await execution via Kell Dragon for crimes against the Empire. Your job is to somehow avoid certain death, make your way into the outpost to recover the plans and then find your way to your ship to escape."
 cover: "ravager.png"
 levelReplaced:	JABSHIP

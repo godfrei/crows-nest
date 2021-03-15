@@ -4,9 +4,9 @@ editorsChoice:
 title: "Star Base"
 authors: 
     - "Sean Baker"
-date:
+date: 1995-05-16
 filename: 
-description: "ou have just delivered the Death Star plans to the Rebel Alliance. While you are having dinner in a neutral system, the Empire attacks. You have been captured trying to escape from the system and left at a run down, under-manned Imperial prison. Your objective is to escape before they realize who they have captured."
+description: "You have just delivered the Death Star plans to the Rebel Alliance. While you are having dinner in a neutral system, the Empire attacks. You have been captured trying to escape from the system and left at a run down, under-manned Imperial prison. Your objective is to escape before they realize who they have captured."
 cover: "starbase.png"
 levelReplaced:	TALAY
 difficulty: no
