@@ -13,6 +13,17 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       mission: MarkdownRemark @link(by: "frontmatter.mission_id", from: "mission")
       reviews: [MarkdownRemark] @link(by: "frontmatter.mission", from: "mission_id")
+      screenshots: ScreenshotJson @link(by: "mission", from: "mission_id")
+    }
+    
+    type ScreenshotJson {
+      mission: MarkdownRemark @link(by: "frontmatter.mission_id", from: "mission")
+      captures: Capture
+    }
+
+    type Capture {
+      file: File
+      caption: String
     }
   `;
   createTypes(typeDefs);
@@ -33,7 +44,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
     ) {
-      slug = `/${collection}/${_.kebabCase(node.frontmatter.title)}`;
+      slug = `${_.kebabCase(node.frontmatter.title)}`;
     } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
     } else if (parsedFilePath.dir === "") {
@@ -212,7 +223,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
 
     createPage({
-      path: edge.node.fields.slug,
+      path: `/missions/${edge.node.fields.slug}`,
       component: missionPage,
       context: {
         slug: edge.node.fields.slug,
@@ -230,7 +241,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   threeDOEdges.forEach((edge, index) => {
     createPage({
-      path: edge.node.fields.slug,
+      path: `/3dos/${edge.node.fields.slug}`,
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,
@@ -247,7 +258,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   vocEdges.forEach((edge, index) => {
     createPage({
-      path: edge.node.fields.slug,
+      path: `/vocs/${edge.node.fields.slug}`,
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,
@@ -264,7 +275,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   waxEdges.forEach((edge, index) => {
     createPage({
-      path: edge.node.fields.slug,
+      path: `/waxes/${edge.node.fields.slug}`,
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,

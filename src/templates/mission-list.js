@@ -20,14 +20,14 @@ const Missions = ({ data }) => {
   });
   // console.log(missionsArray);
   data.allMarkdownRemark.reviews.map(mission => {
-    console.log(mission);
+    // console.log(mission);
     mission.edges.map(review => {
       const missionIndex = missionsArray.findIndex(item => item.frontmatter.mission_id === review.node.frontmatter.mission.frontmatter.mission_id);
       missionsArray[missionIndex].reviews.push(review);
     });
   })
 
-  console.log(missionsArray);
+  // console.log(missionsArray);
 
   return (
   <Layout>

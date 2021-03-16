@@ -112,25 +112,6 @@ a:hover {
     color: $teal;
 }
 
-.mission {
-    figure {
-        width: 320px;
-        float: right;
-        margin: 0;
-        margin-left: 1em;
-        margin-bottom: 1em;
-        // margin-right: -100px;
-    }
-
-    figcaption {
-        color: $teal;
-        font-family: "Engravers Gothic";
-        font-size: 14px;
-        line-height: 1.25;
-        margin-top: 5px;
-    }
-}
-
 // header.nestHeader {
 //     // border-top: 5px solid $teal;
 //     display: flex;
@@ -264,7 +245,7 @@ a:hover {
 
 .content {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 0 30px;
     grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
     grid-template-areas: "... padding content sidebar ...";
     position: relative;
@@ -275,7 +256,7 @@ a:hover {
     position: relative;
     z-index: 1;
     // text-shadow: 1px 1px 0 black, 0 0 40px rgba(0,0,0,0.6);
-    padding-top: 10vh;
+    // padding-top: 10vh;
 
     &:after {
         position: absolute;

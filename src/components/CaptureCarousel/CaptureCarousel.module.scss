@@ -1,0 +1,124 @@
+$captureWidth: 560px;
+
+.captureScroll {
+    width: $captureWidth;
+    height: 349px;
+    overflow: hidden;
+}
+
+.captureList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: 0.2s transform ease-in-out;
+
+    li {
+        list-style: none;
+        position: relative;
+    }
+
+    img {
+        width: 560px;
+        height: 349px;
+        image-rendering: pixelated;
+    }
+
+    p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // background-color: rgba(0,0,0,0.5);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8) 16px, transparent);
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+        // backdrop-filter: blur(10px);
+        font-size: 14px;
+        // font-family: "Engravers Gothic";
+        margin: 0;
+        padding: 16px;
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    &.offset0 {
+        transform: translateX(0);
+    }
+
+    &.offset1 {
+        transform: translateX($captureWidth * -1);
+    }
+
+    &.offset2 {
+        transform: translateX($captureWidth * -2);
+    }
+
+    &.offset3 {
+        transform: translateX($captureWidth * -3);
+    }
+
+    &.offset4 {
+        transform: translateX($captureWidth * -4);
+    }
+
+    &.offset5 {
+        transform: translateX($captureWidth * -5);
+    }
+
+    &.offset6 {
+        transform: translateX($captureWidth * -6);
+    }
+
+    &.offset7 {
+        transform: translateX($captureWidth * -7);
+    }
+
+    &.stack1 {
+        width: $captureWidth;
+    }
+
+    &.stack2 {
+        width: $captureWidth * 2;
+    }
+
+    &.stack3 {
+        width: $captureWidth * 3;
+    }
+
+    &.stack4 {
+        width: $captureWidth * 4;
+    }
+
+    &.stack5 {
+        width: $captureWidth * 5;
+    }
+
+    &.stack6 {
+        width: $captureWidth * 6;
+    }
+
+    &.stack7 {
+        width: $captureWidth * 7;
+    }
+
+    &.stack8 {
+        width: $captureWidth * 8;
+    }
+}
+
+.buttons {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 100px;
+    }
+}

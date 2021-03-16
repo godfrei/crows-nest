@@ -18,7 +18,13 @@ module.exports = {
     }
   },
   plugins: [
-    
+    {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        path: `${__dirname}/content/`,
+        typeName: `Json`,
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",

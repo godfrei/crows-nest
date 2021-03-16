@@ -8,6 +8,7 @@ import Rating from '../components/Rating';
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import moment from 'moment';
+import CaptureCarousel from '../components/CaptureCarousel';
 
 export default ({ data, pageContext }) => {
   const { slug } = pageContext;
@@ -16,8 +17,7 @@ export default ({ data, pageContext }) => {
 
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
 
-  const heroImage = (post.cover) ? post.cover.publicURL : "";
-  const hasHeroImage = (post.cover) ? "hasHeroImage" : "";
+  const captures = data?.allJson?.nodes[0]?.captures || [];
 
   function getReviewContent(reviews) {
     let reviewContent = null;
@@ -82,13 +82,13 @@ export default ({ data, pageContext }) => {
         <title>Mission {`${post.title} | ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <div className={`mission ${hasHeroImage}`}>
-        <div className="heroImage" style={{ backgroundImage: `url(${heroImage})`}} />
+      <div className="mission">
         <MissionHeader node={postNode} />
         <div className="content">
           <div className="descAndReviews">
             <h2>Plot</h2>
             <p className="plot">{post.description}</p>
+            { captures.length > 0 ? <CaptureCarousel captures={captures} /> : null }
             <h2>Review</h2>
             {getReviewContent(reviews)}
           </div>
@@ -160,6 +160,17 @@ export const pageQuery = graphql`
             reviewers
             rating
             date
+          }
+        }
+      }
+    }
+    allJson(filter: {mission: {eq: $slug}}) {
+      nodes {
+        mission
+        captures {
+          caption
+          file {
+            publicURL
           }
         }
       }
