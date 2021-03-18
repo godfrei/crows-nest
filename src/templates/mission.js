@@ -58,7 +58,7 @@ export default ({ data, pageContext }) => {
     if(file?.publicURL) {
       return (
         <a href={file.publicURL} className="download">
-          <strong>Download {title}</strong>
+          <strong>Download <span className="sr-only">{title}</span></strong>
           {` (${file.name}.${file.extension}, ${file.prettySize})`} 
         </a>
       )

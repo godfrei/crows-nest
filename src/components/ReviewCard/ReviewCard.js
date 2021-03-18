@@ -10,7 +10,7 @@ const ReviewCard = ({ review }) => {
     const cover = (review.node.frontmatter.mission.frontmatter.cover) ? review.node.frontmatter.mission.frontmatter.cover.publicURL : defaultImage;
 
     return (
-        <Link to={slug} className={link}>
+        <Link to={`/missions/${slug}`} className={link}>
             <article className={card} style={{ backgroundImage: `url(${cover})` }}>
                 {/* <img src={cover} /> */}
                 <h1 title={title}>{title}</h1>

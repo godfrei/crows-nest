@@ -1,5 +1,5 @@
 import React from "react"
-import { ratingScore, rating } from "./rating.module.scss"
+import { ratingScore, rating } from "./Rating.module.scss"
 
 export default ({ score }) => {
     if (!score) return null

@@ -35,6 +35,17 @@ body {
     // }
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 main {
     // background-color: black;
     padding: $spacing-3 $spacing-7;
@@ -338,11 +349,17 @@ a:hover {
 
         strong {
             color: $red;
+            text-transform: uppercase;
         }
 
         p {
             margin-top: 0;
+            line-height: 1.4;
+            font-size: 14px;
+        }
 
+        a {
+            display: block;
         }
     }
 
