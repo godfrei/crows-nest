@@ -1,7 +1,7 @@
 @import '../../styles/vars';
 @import '../../styles/colors';
 
-.navigation {
+// .navigation {
     // clear: both;
     // position: fixed;
     // bottom: 0;
@@ -60,10 +60,11 @@
     //         opacity: 0.3;
     //     }
     // }
-}
+// }
 
 .active {
     border-bottom-color: $teal !important;
+    font-weight: 500;
 }
 
 @media (min-width: 769px) {
@@ -122,7 +123,7 @@
         }
 
         li {
-            font-family: "Engravers Gothic";
+            // font-family: "Engravers Gothic";
             list-style: none;
         }
 

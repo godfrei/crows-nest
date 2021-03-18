@@ -1,8 +1,8 @@
-$captureWidth: 560px;
+$captureWidth: 674px;
 
 .captureScroll {
     width: $captureWidth;
-    height: 349px;
+    height: 420px;
     overflow: hidden;
 }
 
@@ -18,8 +18,8 @@ $captureWidth: 560px;
     }
 
     img {
-        width: 560px;
-        height: 349px;
+        width: $captureWidth;
+        // height: 420px;
         image-rendering: pixelated;
     }
 

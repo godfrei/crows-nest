@@ -12,11 +12,14 @@ body {
     // background-image: url("../images/sidebar_bg.png");
     // background-size: auto;
     // background-repeat: repeat-y;
-    color: white;
+    color: #d2d2d2;
     margin: 0;
-    font-family: "Times New Roman", Times, serif;
+    // font-family: "Times New Roman", Times, serif;
+    // font-family: "Ford Antenna", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
 
     // &:after {
     //     content: "";
@@ -38,6 +41,10 @@ main {
     position: relative;
     // z-index: 102;
     // backdrop-filter: blur(10px);
+}
+
+strong {
+    font-weight: 600;
 }
 
 @media (min-width: 769px) {
@@ -78,9 +85,13 @@ main {
 // }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Engravers Gothic";
-    font-weight: 400;
+    // font-family: "Engravers Gothic";
+    // font-family: "Ford Antenna", Helvetica, Arial, sans-serif;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 700;
     line-height: 1.1;
+    letter-spacing: 1px;
+    color: white;
 }
 
 h1 {
@@ -270,8 +281,10 @@ a:hover {
     }
 
     h2 {
-        margin-bottom: 5px;
-        border-bottom: 1px solid $glow-border;
+        margin-top: 40px;
+        margin-bottom: 8px;
+        // border-bottom: 1px solid $glow-border;
+        text-transform: uppercase;
     }
 
     h2 + p,
@@ -297,7 +310,7 @@ a:hover {
         }
 
         .supplemental {
-            border-left: 1px solid $glow-border;
+            // border-left: 1px solid $glow-border;
         }
     }
 
