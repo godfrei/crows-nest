@@ -80,6 +80,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const missionPage = path.resolve("src/templates/mission.js");
   const componentPage = path.resolve("src/templates/component.js");
   const specPage = path.resolve("src/templates/spec.js");
+  const authorPage = path.resolve("src/templates/author.js");
 
   // Query all the markdown files
 
@@ -96,6 +97,7 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 title
                 date
+                authors
               }
             }
           }
@@ -111,7 +113,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // const tagSet = new Set();
   // const categorySet = new Set();
-  const missionAuthorSet = new Set();
+  
 
 
   // Get all Markdown edges from the query
@@ -216,12 +218,6 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   missionEdges.forEach((edge, index) => {
-    if (edge.node.frontmatter.authors) {
-      edge.node.frontmatter.authors.forEach(author => {
-        missionAuthorSet.add(author);
-      });
-    }
-
     createPage({
       path: `/missions/${edge.node.fields.slug}`,
       component: missionPage,
@@ -299,6 +295,29 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     });
   });
+
+  // Authors
+
+  const authorSet = new Set();
+
+  markdownEdges.forEach((edge) => {
+    if (edge.node.frontmatter.authors) {
+      edge.node.frontmatter.authors.forEach(author => {
+        authorSet.add(author);
+      });
+    }
+  });
+
+  authorSet.forEach(author => {
+    createPage({
+      path: `/authors/${_.kebabCase(author)}`,
+      component: authorPage,
+      context: {
+        author
+      }
+    });
+  });
+
 
  // Generate link foreach tag page
   // tagSet.forEach(tag => {
