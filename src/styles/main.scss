@@ -8,31 +8,12 @@ html {
 }
 
 body {
-    // background-color: $black;
-    // background-image: url("../images/sidebar_bg.png");
-    // background-size: auto;
-    // background-repeat: repeat-y;
     color: #d2d2d2;
     margin: 0;
-    // font-family: "Times New Roman", Times, serif;
-    // font-family: "Ford Antenna", Helvetica, Arial, sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 16px;
     line-height: 1.6;
-
-    // &:after {
-    //     content: "";
-    //     display: block;
-    //     background-image: url("../images/topographic-map.gif");
-    //     background-size: cover;
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100vh;
-    //     width: 100vw;
-    //     z-index: -1;
-    // }
 }
 
 .sr-only {
@@ -47,11 +28,8 @@ body {
 }
 
 main {
-    // background-color: black;
     padding: $spacing-3 $spacing-7;
     position: relative;
-    // z-index: 102;
-    // backdrop-filter: blur(10px);
 }
 
 strong {
@@ -68,36 +46,23 @@ strong {
     }
 
     .glow {
-        // &:before {
-        //     content: '';
-            position: fixed;
-            margin: 0 auto;
-            top: 92px;
-            left: 8px;
-            right: 8px;
-            width: calc(100% - 16px);
-            max-width: $max-width;
-            // right: 8px;
-            bottom: 8px;
-            // left: 8px;
-            z-index: 100;
-            border: 2px solid rgba(255,255,255,0.8);
-            border-radius: 20px;
-            box-shadow: inset 0 0 10vw rgba($blue, 0.7), 0 0 10vw rgba($blue, 0.8), 0 0 0 10vw $black;
-            pointer-events: none;
-        // }
+        position: fixed;
+        margin: 0 auto;
+        top: 92px;
+        left: 8px;
+        right: 8px;
+        width: calc(100% - 16px);
+        max-width: $max-width;
+        bottom: 8px;
+        z-index: 100;
+        border: 2px solid rgba(255,255,255,0.8);
+        border-radius: 20px;
+        box-shadow: inset 0 0 10vw rgba($blue, 0.7), 0 0 10vw rgba($blue, 0.8), 0 0 0 10vw $black;
+        pointer-events: none;
     }
 }
 
-// body.home main {
-//     background-image: url("../images/planet.png");
-//     background-size: 500px;
-//     background-repeat: no-repeat;
-// }
-
 h1, h2, h3, h4, h5, h6 {
-    // font-family: "Engravers Gothic";
-    // font-family: "Ford Antenna", Helvetica, Arial, sans-serif;
     font-family: "Encode Sans Condensed", sans-serif;
     font-weight: 700;
     line-height: 1.1;
@@ -134,54 +99,7 @@ a:hover {
     color: $teal;
 }
 
-// header.nestHeader {
-//     // border-top: 5px solid $teal;
-//     display: flex;
-//     align-items: center;
-//     // background-image: url("../images/planet.png");
-//     // background-color: rgba(0,0,0,0.8);
-//     // background-size: 200px;
-//     // background-repeat: no-repeat;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//     // backdrop-filter: blur(10px);
-//     z-index: 10;
-//     border-bottom: 1px solid $glow-border;
-
-//     > * {
-//         flex-grow: 1;
-//     }
-
-//     .site_title {
-//         a:link {
-//             text-decoration: none;
-//             display: flex;
-//             align-items: center;
-//         }
-//     }
-
-//     h1 {
-//         margin: 0;
-//         font-size: 36px;
-
-//         @media (min-width: 769px) {
-//             font-size: 48px;
-//         }
-//     }
-
-//     #crow {
-//         width: 100px;  
-//         margin-left: 10px;
-//         margin-right: 20px;
-//     }
-// }
-
 #homepage_header {
-    // height: 170px;
-    // background: none !important;
-    // backdrop-filter: none;
-    // border-bottom: none;
     background-color: $gray;
     border-bottom: $spacing-3 solid $black;
     position: fixed;
@@ -202,10 +120,12 @@ a:hover {
 }
 
 .home {
-    background-image: url('../images/planet_right.png');
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 700px 293px;
+    main {
+        background-image: url('../images/planet_right.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 700px 293px;
+    }
 
     &:before {
         top: 64px;
@@ -274,116 +194,10 @@ a:hover {
     z-index: 1;
 }
 
-.mission {
-    position: relative;
-    z-index: 1;
-    // text-shadow: 1px 1px 0 black, 0 0 40px rgba(0,0,0,0.6);
-    // padding-top: 10vh;
-
-    &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        content: "";
-        display: block;
-        bottom: 0;
-        // background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 10vh, rgba(0,0,0,0.75) 40vh, black);
-    }
-
-    h2 {
-        margin-top: 40px;
-        margin-bottom: 8px;
-        // border-bottom: 1px solid $glow-border;
-        text-transform: uppercase;
-    }
-
-    h2 + p,
-    h2 + ul {
-        margin-top: 0;
-    }
-
-    @media (min-width: 769px) {
-        // &.hasHeroImage {
-        //     padding-top: 40vh;
-
-        //     &:after {
-        //         background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent 100px, transparent 40vh, rgba(0,0,0,0.75) 75vh, black);
-        //     }
-        // }
-
-        .descAndReviews {
-            grid-column: 3 / 4;
-        }
-
-        .plot {
-            color: $gold;
-        }
-
-        .supplemental {
-            // border-left: 1px solid $glow-border;
-        }
-    }
-
-    .download {
-        display: block;
-        margin-top: 20px;
-        margin-left: 20px;
-        color: white;
-        font-size: 14px;
-        text-decoration: none;
-
-        strong {
-            font-size: 20px;
-            color: $teal;
-            text-decoration: underline;
-            display: block;
-            line-height: 1.2;
-            margin-bottom: 0.2em;
-        }
-    }
-
-    .missingFile {
-        margin-left: 20px;
-        margin-top: 20px;
-
-        strong {
-            color: $red;
-            text-transform: uppercase;
-        }
-
-        p {
-            margin-top: 0;
-            line-height: 1.4;
-            font-size: 14px;
-        }
-
-        a {
-            display: block;
-        }
-    }
-
-    // .heroImage {
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100vh;
-    //     width: 100vw;
-    //     // right: 0;
-    //     // bottom: 0;
-    //     background-size: cover;
-    //     background-position: center bottom;
-    //     background-repeat: no-repeat;
-    //     image-rendering: pixelated; // Use pixelated instead of crisp-edges to support Chrome
-    //     z-index: -1;
-    // }
-}
-
 .mission-grid {
     padding: 0;
     list-style: none;
     display: grid;
-    // max-width: 1200px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 2rem;
     margin: 0 auto;

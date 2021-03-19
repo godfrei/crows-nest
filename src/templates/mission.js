@@ -9,6 +9,7 @@ import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import moment from 'moment';
 import CaptureCarousel from '../components/CaptureCarousel';
+import { mission, missingFile, download, descAndReviews, plot } from './mission.module.scss';
 
 export default ({ data, pageContext }) => {
   const { slug } = pageContext;
@@ -57,7 +58,7 @@ export default ({ data, pageContext }) => {
 
     if(file?.publicURL) {
       return (
-        <a href={file.publicURL} className="download">
+        <a href={file.publicURL} className={download}>
           <strong>Download <span className="sr-only">{title}</span></strong>
           {` (${file.name}.${file.extension}, ${file.prettySize})`} 
         </a>
@@ -65,7 +66,7 @@ export default ({ data, pageContext }) => {
     }
     else {
       return (
-        <div className="missingFile">
+        <div className={missingFile}>
           <strong>File Missing</strong>
           <p>Do you have a copy of this mission? <a href="mailto:godfrei@gmail.com">Let us know!</a></p>
         </div>
@@ -82,12 +83,12 @@ export default ({ data, pageContext }) => {
         <title>Mission {`${post.title} | ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <div className="mission">
+      <div className={mission}>
         <MissionHeader node={postNode} />
         <div className="content">
-          <div className="descAndReviews">
+          <div className={descAndReviews}>
             <h2>Plot</h2>
-            <p className="plot">{post.description}</p>
+            <p className={plot}>{post.description}</p>
             { captures.length > 0 ? <CaptureCarousel captures={captures} /> : null }
             <h2>Review</h2>
             {getReviewContent(reviews)}
