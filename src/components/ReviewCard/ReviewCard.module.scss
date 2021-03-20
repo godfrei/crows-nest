@@ -55,18 +55,25 @@
         margin-bottom: 12px;
         transition: all 0.2s ease;
 
-        &:before {
-            content: attr(title);
+        small { //Aurebesh
             font-size: 12px;
-            color: rgba(255,255,255,0.5);
-            font-family: Aurebesh;
-            display: block;
             line-height: 14px;
-            white-space: nowrap;
-            overflow: hidden;
             padding-top: 12px;
             background-image: linear-gradient(to bottom, transparent, $black 12px, $black);
         }
+
+        // &:before {
+        //     content: attr(title);
+        //     font-size: 12px;
+        //     color: rgba(255,255,255,0.5);
+        //     font-family: Aurebesh;
+        //     display: block;
+        //     line-height: 14px;
+        //     white-space: nowrap;
+        //     overflow: hidden;
+        //     padding-top: 12px;
+        //     background-image: linear-gradient(to bottom, transparent, $black 12px, $black);
+        // }
     }
 
     p {
