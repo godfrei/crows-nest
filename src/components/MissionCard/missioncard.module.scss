@@ -1,44 +1,97 @@
 @import '../../styles/colors';
 
-
-.card {
-    border: 1px solid rgba($teal, 0.5);
-    background-color: rgba($teal, 0.1);
+.card, .card:link, .card:visited {
     position: relative;
     display: block;
-    width: 100%;
-    height: 200px;
-    transition: all 0.2s ease;
-
-    &:hover {
-        border-color: $teal;
-    }
+    border: 1px solid $glow-border;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 100%;
+    padding: 16px 24px;
+    padding-right: 200px;
+    background-image: linear-gradient(to left, transparent, transparent 150px, $black 250px, $black);
+    color: $default-text;
 
     strong {
-        font-family: "Engravers Gothic";
+        font-family: "Encode Sans Condensed", sans-serif;
+        font-weight: 700;
         line-height: 1.1;
-        min-width: 66%;
-        position: absolute;
-        z-index: 2;
-        bottom: 1em;
-        right: 0;
-        padding: 0.5em 1em;
-        margin-left: 1em;
-        border-left: 2px solid $teal;
-        background-color: rgba($gray, 0.8);
-        // backdrop-filter: blur(5px);
+        letter-spacing: 1px;
         color: white;
-        text-decoration: none;
+        font-size: 24px;
+        display: block;
+
+        small {
+            font-size: 12px;
+        }
+    }
+
+    &:hover {
+        color: $default-text;
+        border-color: $teal;
+
+        strong {
+            color: $teal;
+        }
     }
 }
 
-.coverImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center center;
-    z-index: 1;
+.authorList {
+    font-size: 14px;
 }
+
+.cover {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
+
+// .card {
+//     border: 1px solid rgba($teal, 0.5);
+//     background-color: rgba($teal, 0.1);
+//     position: relative;
+//     display: block;
+//     width: 100%;
+//     height: 200px;
+//     transition: all 0.2s ease;
+
+//     &:hover {
+//         border-color: $teal;
+//     }
+
+//     strong {
+//         font-family: "Engravers Gothic";
+//         line-height: 1.1;
+//         min-width: 66%;
+//         position: absolute;
+//         z-index: 2;
+//         bottom: 1em;
+//         right: 0;
+//         padding: 0.5em 1em;
+//         margin-left: 1em;
+//         border-left: 2px solid $teal;
+//         background-color: rgba($gray, 0.8);
+//         // backdrop-filter: blur(5px);
+//         color: white;
+//         text-decoration: none;
+//     }
+// }
+
+// .coverImage {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-size: cover;
+//     background-position: center center;
+//     z-index: 1;
+// }

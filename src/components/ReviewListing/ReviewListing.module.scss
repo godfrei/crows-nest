@@ -1,0 +1,14 @@
+.reviewGrid {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 2rem;
+    margin: 0 auto;
+    padding-bottom: 2em;
+
+    li {
+        position: relative;
+        max-width: 320px;
+    }
+}

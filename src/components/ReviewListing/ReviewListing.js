@@ -1,8 +1,9 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import ReviewCard from '../ReviewCard'
+import { reviewGrid } from './ReviewListing.module.scss';
 
-const ReviewListing = ({ reviewEdges }) => {
+const ReviewListing = () => {
     const data = useStaticQuery(graphql`
     query ReviewQuery {
         allMarkdownRemark(
@@ -50,7 +51,7 @@ const ReviewListing = ({ reviewEdges }) => {
     `)
 
   return (
-    <ul className="mission-grid">
+    <ul className={reviewGrid}>
       {
           data.allMarkdownRemark.edges.map(review => {
               return (

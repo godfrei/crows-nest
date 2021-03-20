@@ -5,8 +5,6 @@ import Layout from '../layout'
 import MissionListing from '../components/MissionListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
-import GradientTitle from "../components/GradientTitle"
-import reviewList from "../images/reviews.png"
 
 const Missions = ({ data }) => {
   // console.log(data);
@@ -14,16 +12,18 @@ const Missions = ({ data }) => {
   let missionsArray = new Array;
   data.allMarkdownRemark.missions.map(mission => {
     missionsArray.push({
-      ...mission.edges[0].node,
-      reviews: []
+      node: {
+        ...mission.edges[0].node,
+        reviews: []
+      }
     });
   });
   // console.log(missionsArray);
   data.allMarkdownRemark.reviews.map(mission => {
     // console.log(mission);
     mission.edges.map(review => {
-      const missionIndex = missionsArray.findIndex(item => item.frontmatter.mission_id === review.node.frontmatter.mission.frontmatter.mission_id);
-      missionsArray[missionIndex].reviews.push(review);
+      const missionIndex = missionsArray.findIndex(item => item.node.frontmatter.mission_id === review.node.frontmatter.mission.frontmatter.mission_id);
+      missionsArray[missionIndex].node.reviews.push(review);
     });
   })
 
@@ -33,13 +33,16 @@ const Missions = ({ data }) => {
   <Layout>
     <Helmet title={`Missions | ${config.siteTitle}`} />
     <SEO />
-    <img src={reviewList} alt="" className="section_icon" />
-    <GradientTitle title="Missions" />
+    {/* <img src={reviewList} alt="" className="section_icon" />
+    <GradientTitle title="Missions" /> */}
+    <h1>Missions</h1>
     {/* Sort: <Link to="/missions">Alphabetical</Link> | 
       <Link to="/missions/rating">Rating</Link> | 
-      <Link to="/missions/date">Date</Link>
-    <MissionListing missionEdges={data.allMarkdownRemark.edges} /> */}
-    <table>
+      <Link to="/missions/date">Date</Link>*/}
+
+    <MissionListing missionEdges={missionsArray} />
+    
+    {/* <table>
       <thead>
         <tr>
           <th>Mission</th>
@@ -76,7 +79,7 @@ const Missions = ({ data }) => {
         })
       }
       </tbody>
-    </table>
+    </table> */}
   </Layout>
 )}
 
@@ -105,6 +108,7 @@ export const missionsQuery = graphql`
                   mission_id
                   title
                   authors
+                  description
                 }
               }
             }
@@ -120,6 +124,7 @@ export const missionsQuery = graphql`
             frontmatter {
               mission_id
               title
+              description
               authors
               cover {
                 publicURL
