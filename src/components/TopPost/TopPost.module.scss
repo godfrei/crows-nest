@@ -1,0 +1,35 @@
+@import '../../styles/colors';
+
+.top {
+    position: relative;
+    display: block;
+    border: 1px solid $glow-border;
+    text-decoration: none;
+    color: $default-text;
+    z-index: 10;
+    margin-bottom: 32px;
+}
+
+.content {
+    position: relative;
+    padding: 16px 24px;
+    padding-top: 200px;
+    background-image: linear-gradient(to bottom, transparent, transparent 150px, $black 250px, $black);
+    
+    h1 {
+        text-shadow: 1px 1px 0 $black, 0 0 16px rgba($black,0.2);
+    }
+}
+
+.cover {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // image-rendering: pixelated;
+}

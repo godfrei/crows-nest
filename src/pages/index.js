@@ -9,35 +9,48 @@ import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import ReviewListing from '../components/ReviewListing'
+import TopPost from '../components/TopPost';
 
-const Index = ({ data }) => (
-  <BodyClassName className="home">
-    <>
-      <Helmet>
-        <title>{config.siteTitle}</title>
-        <meta name="description" content={config.siteDescription} />
-      </Helmet>
-      <SEO />
-      <header id="homepage_header">
-        <div>
-          <Navigation />
-        </div>
-      </header>
-      <div className="glow"></div>
-      <main>
-        <div id="site-title">
-          <GradientTitle title={config.siteTitle} />
-          <p>The most complete and up-to-date site for reviews and downloads of add-on levels for the LucasArts 3D first-person game <em>Dark Forces</em>. At least, it used to be. Getting back to it.</p>
-        </div>
-        <PostListing postEdges={data.allMarkdownRemark.edges} />
+const Index = ({ data }) => {
 
-        <h2>Recent Reviews</h2>
-        <ReviewListing />
-      </main>
-      <Footer />
-    </>
-  </BodyClassName>
-)
+  const topPost = data.allMarkdownRemark.edges[0];
+  const otherPosts = data.allMarkdownRemark.edges.slice(1);
+  return (
+    <BodyClassName className="home">
+      <>
+        <Helmet>
+          <title>{config.siteTitle}</title>
+          <meta name="description" content={config.siteDescription} />
+        </Helmet>
+        <SEO />
+        <header id="homepage_header">
+          <div>
+            <Navigation />
+          </div>
+        </header>
+        <div className="glow"></div>
+        <main>
+          <div id="site-title">
+            <GradientTitle title={config.siteTitle} />
+            <p>The most complete and up-to-date site for reviews and downloads of add-on levels for the LucasArts 3D first-person game <em>Dark Forces</em>. At least, it used to be. Getting back to it.</p>
+          </div>
+          <div className="home-grid">
+            <div>
+              <h2>Recent Posts</h2>
+              <TopPost post={topPost} />
+              <PostListing postEdges={otherPosts} />
+            </div>
+            <div>
+              <h2>Recent Reviews</h2>
+              <ReviewListing />
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </>
+    </BodyClassName>
+  );
+}
 
 export default Index
 
@@ -45,7 +58,7 @@ export default Index
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 5
+      limit: 4
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {fields: {collection: {eq: "posts"}}}
     ) {
@@ -56,6 +69,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
           }
           excerpt
+          html
           frontmatter {
             title
             cover {

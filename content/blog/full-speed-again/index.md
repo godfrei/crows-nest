@@ -2,6 +2,7 @@
 title: "Full Speed Again"
 date: 1997-09-13
 author: Geoff Elliott
+cover: star-wars-empire-han-hits-falcon.jpeg
 categories:
 tags:
 ---

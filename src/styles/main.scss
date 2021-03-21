@@ -152,8 +152,8 @@ a:hover {
         display: flex;
         flex-direction: column;
         // align-items: flex-end;
-        margin-top: $spacing-10;
-        margin-bottom: $spacing-10;
+        margin-top: $spacing-9;
+        margin-bottom: $spacing-8;
 
         &:after {
             content: '';
@@ -183,6 +183,12 @@ a:hover {
             z-index: 2;
         }
     }
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 32px;
 }
 
 .content {

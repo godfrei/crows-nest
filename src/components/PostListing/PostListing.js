@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { articleList, articleBox, right, meta } from './PostsListing.module.scss'
+import { articleList, articleBox, cover, meta } from './PostsListing.module.scss'
 
 const PostListing = ({ postEdges }) => {
   const getPostList = () => {
@@ -21,22 +21,27 @@ const PostListing = ({ postEdges }) => {
 
   const postList = getPostList()
   return (
-    <div className={articleList}>
+    <ul className={articleList}>
       {
-      postList.map(post => (
-        <Link to={post.path} key={post.title}>
-          <article className={articleBox}>
-            <div className={right}>
-              <h3>{post.title}</h3>
-              <div className={meta}>
-                {post.date} &mdash; <span>{post?.categories?.join(' / ')}</span>
-              </div>
-              <p>{post.excerpt}</p>
-            </div>
-          </article>
-        </Link>
-      ))}
-    </div>
+        postList.map(post => {
+          const coverUrl = (post.cover) ? post.cover.publicURL : '/images/dark-forces-cover.jpg';
+          return (
+            <li>
+              <Link to={post.path} key={post.title} className={articleBox}>
+                <article>
+                  <div className={cover} style={{ backgroundImage: `url(${coverUrl})` }}></div>
+                  <h3>{post.title}</h3>
+                  <div className={meta}>
+                    {post.date}
+                  </div>
+                  <p>{post.excerpt}</p>
+                </article>
+              </Link>
+            </li>
+          );
+        })
+      }
+    </ul>
   )
 }
 
