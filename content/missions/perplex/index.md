@@ -4,7 +4,7 @@ editorsChoice:
 title: "Perplexion"
 authors: 
     - "Jereth Kok"
-date:
+date: 1997-09-07
 filename: 
 description: ""
 cover:

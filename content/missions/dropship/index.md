@@ -4,7 +4,7 @@ editorsChoice:
 title: "Dropship"
 authors:
     - "Anton Frost"
-date: 
+date: 1997-06-06
 filename: "dropship.zip"
 description: "Kyle is being sent to an imperial dropship which the Alliance has learned is currently transporting the top secret Death Star Plans."
 cover:

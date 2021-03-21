@@ -4,7 +4,7 @@ editorsChoice:
 title: "Operation: Lasthope"
 authors: 
     - "Jeff Byrd"
-date:
+date: 1996-07-20
 filename: "lasthope.zip"
 description: ""
 cover: 

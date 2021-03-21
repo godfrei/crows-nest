@@ -4,7 +4,7 @@ editorsChoice:
 title: "Coober"
 authors: 
     - "Ted Imboden"
-date:
+date: 1996-12-21
 filename: "coober.zip"
 description: "Showcase."
 cover: "coober.png"

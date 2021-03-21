@@ -4,7 +4,7 @@ editorsChoice:
 title: "Island Invasion"
 authors: 
     - "Andy Stubbs"
-date:
+date: 1996-01-19
 filename: "island.zip"
 description: "Find the Death star plans, its hidden in a recuiting base on an island on a small planet."
 cover: 

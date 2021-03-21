@@ -4,7 +4,7 @@ editorsChoice:
 title: "Jedi Crystal Series Level 1"
 authors: 
     - "James Milne"
-date:
+date: 2004-05-01
 filename: "jclevel1.zip"
 description: "Recently, a mining facility on the planet Terrak VI unearthed an ancient citadel containing manuscripts of what appears to be writings about a Jedi Crystal. Even as we speak, the Empire is translating and encoding the manuscripts to the facility's central mainframe. Gain access to the base and find the main computer, make a copy of the information on a tape and leave with little evidence you were there."
 cover:

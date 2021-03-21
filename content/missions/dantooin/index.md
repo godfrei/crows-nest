@@ -4,7 +4,7 @@ editorsChoice:
 title: "Assault on Dantooine"
 authors: 
     - "Alex Conrad"
-date:
+date: 1997-03-01
 filename: "dantooin.zip"
 description: "Alliance Intelligence agents have found evidence of Imperial activity on the Dantooine, a remote planet far from the centers of civilization.  This outpost was previously thought deserted by the Imperials after Palpatine died.  Deeper intelligence surveillance scans reveal that the master bounty hunter himself, Boba Fett is personally overseeing this operation for Warlord Zinj.  You will be inserted on the world on an unmarked Correllian stock freighter YT-1300, posing as a cargo deliverer.  Your mission, should you decide to accept it, is to find out what is going on down there and destroy the outpost by planting a sequencer charge that will detonate after you have left the planet."
 cover:

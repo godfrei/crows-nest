@@ -4,7 +4,7 @@ editorsChoice:
 title: "Boba Fett's Gone Mental"
 authors: 
     - "Matthew Horrocks"
-date: 
+date: 2003-03-02
 filename: "bgm.zip"
 description: "You have been sent on a dangerous mission to kill Boba Fett. The name is the only information they have about him."
 cover:

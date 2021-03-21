@@ -4,7 +4,7 @@ editorsChoice:
 title: "Jungles of Caldoun"
 authors: 
     - "Mark A. Haidekker"
-date:
+date: 1997-09-17
 filename: "jungles.zip"
 description: "While traveling past the jungle planet of Caldoun IV, the Crow is knocked out of hyperspace. Kyle is forced to jump out before it crashes, and now he must make his way back to the ship, find a way to repair it and get off the planet."
 cover: 

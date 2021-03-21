@@ -4,7 +4,7 @@ editorsChoice:
 title: "Reunion 2"
 authors: 
     - "John Johnson"
-date:
+date: 1999-03-01
 filename: "reunion2.zip"
 description: "This is the forth and final level in the Marek Sunrider Story."
 cover: 

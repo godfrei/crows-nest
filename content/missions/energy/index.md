@@ -5,7 +5,7 @@ title: "Energy"
 authors: 
     - "Ken Swope"
     - "Ron Swope"
-date:
+date: 1998-04-03
 filename: "energy.zip"
 description: "Kyle goes on a mission to destroy power plant using new source of energy."
 cover:

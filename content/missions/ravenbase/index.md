@@ -4,7 +4,7 @@ editorsChoice:
 title: "Raven Base"
 authors: 
     - "Ross Sheddon"
-date:
+date: 1999-10-24
 filename: "ravenbase.zip"
 description: "Kyle and Jan have discovered the Imperial Commando base on Desal, where the strongest and most elite storm troopers go. But as Kyle lands on an asteroid just outside Desal where he was to make a operations base for his mission, he realizes how wrong his reserch had been..."
 cover: "dangroom.png"

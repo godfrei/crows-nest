@@ -4,7 +4,7 @@ editorsChoice:
 title: "For Leia's Honor"
 authors: 
     - "Gary Console"
-date:
+date: 1996-02-12
 filename: "leia.zip"
 description: "A disk containing compromising pictures of Princess Leia has been stolen by the Imperials. Your mission is to retrieve that disk before it reaches the Empire's main disk pirating facility."
 cover: 

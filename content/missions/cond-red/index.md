@@ -6,7 +6,7 @@ authors:
     - "Peter Klassen"
     - "Jereth Kok"
     - "Steve Miller"
-date:
+date: 1998-03-01
 filename: "cond-red.zip"
 description: "Unknown."
 cover:

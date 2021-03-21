@@ -7,7 +7,7 @@ authors:
     - "Rick Schmidt"
     - "Rich Snodgrass"
     - "Jason Terhune"
-date:
+date: 1996-08-12
 filename: "df96.zip"
 description: "The Empire is threatening Kyle and his wife Jan, and has kidnapped Kyle's son Dack. Now Kyle must scour the galaxy for information on his son's whereabouts, and find a way to stop the remnants of the Empire."
 cover: "df963.png"

@@ -4,7 +4,7 @@ editorsChoice:
 title: "Castle Wolfenstein"
 authors: 
     - "Steven Scott"
-date:
+date: 1997-09-16
 filename: 
 description: "This is the same mission as Wolfenstein 3D level 1. Your objective is to get to the elevator, hit the switch and grab the plans."
 cover: "wolf.png"

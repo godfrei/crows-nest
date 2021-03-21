@@ -4,7 +4,7 @@ editorsChoice:
 title: "Boba Fett Storage Facility"
 authors: 
     - "David Arandle"
-date:
+date: 1996-08-30
 filename: "storage.zip"
 description: "Unknown"
 cover: 

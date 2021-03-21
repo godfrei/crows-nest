@@ -4,7 +4,7 @@ editorsChoice:
 title: "Port of Eisley"
 authors: 
     - "Christian Imboden"
-date:
+date: 1996-12-30
 filename: "eisley.zip"
 description: "The familiar Mos Eisley space port from the movie, sort of."
 cover:

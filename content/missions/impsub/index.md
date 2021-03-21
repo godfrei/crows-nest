@@ -4,7 +4,7 @@ editorsChoice:
 title: "impsub"
 authors: 
     - "Daniel Welander"
-date:
+date: 1997-02-28
 filename: "impsub.zip"
 description: "Unknown"
 cover: 

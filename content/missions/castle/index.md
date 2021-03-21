@@ -4,7 +4,7 @@ editorsChoice:
 title: "Castle"
 authors: 
     - "Andy Stubbs"
-date:
+date: 1996-05-09
 filename: "castle.zip"
 description: "Kyle You are being sent to rescue rebel prisoners that have been captured by the empire. The base that the prisoners have been sent to is one that we are unfamiliar with. You will not have proper maps for this prison."
 cover: "castle1.png"

@@ -4,7 +4,7 @@ editorsChoice:
 title: "Operation Just Cause"
 authors: 
     - "Matthew E. Neuman"
-date:
+date: 1994-08-27
 filename: "opjust1a.zip"
 description: " Infiltrate and destroy an Imperial Research Station that is being used conduct Cyborg research on humans."
 cover:

@@ -4,7 +4,7 @@ editorsChoice:
 title: "Hidden Enemies"
 authors: 
     - "Ryan Briggs"
-date:
+date: 1999-02-01
 filename: "hidden.zip"
 description: "An Imperial spy has informed the Alliance of a gathering of high-ranking Imperial officials at a hidden base on the planet Hoth. Your job is to secure a data tape being carried by one of the officials before overloading the power generator and destroying the base."
 cover:

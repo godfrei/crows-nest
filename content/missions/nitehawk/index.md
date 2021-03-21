@@ -4,7 +4,7 @@ editorsChoice:
 title: "Operation Nitehawk"
 authors: 
     - "Commander Krud"
-date:
+date: 1995-08-14
 filename: "nitehawk.zip"
 description: "An X-wing from Nitehawks Squadron was shot down investigating and Imperial Weapons Production Facility on Dalron 5. Kyle's mission is to locate the X-wing and destroy the facility."
 cover: "dangroom.png"

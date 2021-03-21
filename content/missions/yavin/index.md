@@ -4,7 +4,7 @@ editorsChoice: yes
 title: "Back to Yavin"
 authors: 
     - "Peter Klassen"
-date:
+date: 1996-08-01
 filename: "yavin.zip"
 description: "The Death Star has been destroyed, and the Rebels have recently evacuated their base on Yavin. General Jan Dodonna created data tapes of future fleet locations for each ship commander, and a copy was also made for Dodonna's assistant Whix Gardine. However Gardine failed to escape with the rest of the Alliance, and is now a prisoner of the Imperials. Gardine managed to hide the tape somewhere in the base. Seeing that they cannot allow the tape to fall into Imperial hands, and that they also cannot alert the Imperials to the existence of the tape, the Rebellion has hired Kyle Katarn to rescue Gardine, locate the tape, and blow up the base."    
 cover: "yavin.png"

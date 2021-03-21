@@ -4,11 +4,9 @@ editorsChoice:
 title: "Icky Not-Real-Level Funtime"
 authors: 
     - "Tom Resnick"
-date:
+date: 2007-07-21
 filename: "icky.zip"
-description: "Please don't think this level is supposed
-to be serious; it was originally just a testing ground for other components
--n- stuff"
+description: "Please don't think this level is supposed to be serious; it was originally just a testing ground for other components -n- stuff"
 cover:
 levelReplaced:	SECBASE
 difficulty: no

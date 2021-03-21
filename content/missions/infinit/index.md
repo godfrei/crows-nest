@@ -4,7 +4,7 @@ editorsChoice:
 title: "Infinite Tower of Doom"
 authors: 
     - "Fenir Stardust"
-date:
+date: 2012-10-20
 filename: "infinit.zip"
 description: "These are demo levels, which show how you can make an infinate staircase or tower of doom. Thats right I've included two versions one with baddies in BinfiniT.gob and one version with out enemys AinfiniT.gob."
 cover:

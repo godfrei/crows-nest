@@ -4,7 +4,7 @@ editorsChoice:
 title: "Sensation"
 authors: 
     - "Peter Klassen"
-date:
+date: 1997-09-08
 filename: 
 description: ""
 cover: "sensation.png"

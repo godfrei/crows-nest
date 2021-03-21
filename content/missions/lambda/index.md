@@ -4,7 +4,7 @@ editorsChoice:
 title: "Lambda Base"
 authors: 
     - "David Lovejoy"
-date:
+date: 1996-01-26
 filename: "lambda.zip"
 description: ""
 cover: 

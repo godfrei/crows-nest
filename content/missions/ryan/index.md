@@ -4,7 +4,7 @@ editorsChoice:
 title: "Coruscant - The Imperial Capital"
 authors: 
     - "Ryan Bickhart"
-date:
+date: 1998-06-12
 filename: "ryan.zip"
 description: "Kyle Katarn has been tasked with retrieving the plans for the deployment of the Imperial Fleet from the military headquarters building on Coruscant. You will then need to take them to the Imperial Security Agency in order to decode the data before escaping the planet."
 cover: 

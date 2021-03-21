@@ -4,7 +4,7 @@ editorsChoice:
 title: "The Gallery"
 authors: 
     - "Mart"
-date:
+date: 1999-08-12
 filename: "gallery.zip"
 description: "A showcase of the add-on component work by the author."
 cover:

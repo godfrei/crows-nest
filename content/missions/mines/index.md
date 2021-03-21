@@ -4,7 +4,7 @@ editorsChoice:
 title: "Mines"
 authors: 
     - "Ari G"
-date:
+date: 1997-04-12
 filename: "mine.zip"
 description: "A first level."
 cover: "mines.png"

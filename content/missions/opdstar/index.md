@@ -4,7 +4,7 @@ editorsChoice:
 title: "Operation Death Star"
 authors: 
     - "Don Sielke"
-date:
+date: 1996-01-23
 filename: "don-df42.zip"
 description: "After securing the Death Star plans from the secret base, you have an unfortunate run-in with the Death Star itself, and are captured. Your goal is to escape the detention center, retrieve your gear, get back the plans, deactivate the tractor beam holding your ship, and get out of there."
 cover: "opdstar.png"

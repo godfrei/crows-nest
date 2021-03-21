@@ -4,7 +4,7 @@ editorsChoice:
 title: "Dark Trooper Showdown"
 authors: 
     - "Mr. Terhune"
-date:
+date: 1995-11-25
 filename: "showdown.zip"
 description: "A first level."
 cover: 

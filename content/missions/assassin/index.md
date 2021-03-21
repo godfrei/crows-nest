@@ -4,7 +4,7 @@ editorsChoice:
 title: "Assassination at Nar Shaddaa - Boba Fett Episode I"
 authors: 
     - "Barry Brien"
-date: 
+date: 2006-05-03
 filename: "assassin.zip"
 description: "You play the part of Boba Fett. You have just been hired by your long time client Jabba The Hutt
 to take care of some business in the city of Nar Shaddaa. It seems an arrogant young relative of his named Priga has been

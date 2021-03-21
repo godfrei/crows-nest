@@ -6,7 +6,7 @@ authors:
     - "David Banz"
     - "Gregor Banz"
     - "Markus Banz"
-date:
+date: 1996-12-19
 filename: "nraid133.zip"
 description: "You are being sent to an Imperial techbase that is suspected to be involved in reaserch on the Dark Trooper project. Your job is to get in, find whatever you can and get back out. Caution is advised because some of the DT prototypes may already be operational."
 cover: "niteraid.png"

@@ -4,7 +4,7 @@ editorsChoice:
 title: "OutBase"
 authors: 
     - "Ole Thomasen"
-date:
+date: 1996-07-28
 filename: "outbase.zip"
 description: "Kyle has landed on OutSpace station; he's there to recover the Death Star plans."
 cover: "outbase.png"

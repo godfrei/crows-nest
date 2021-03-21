@@ -4,7 +4,7 @@ editorsChoice:
 title: "Kyle Meets Kaled"
 authors: 
     - "Troy Nathan Robeck"
-date:
+date: 1996-12-01
 filename: "kmc.zip"
 description: "Run around and destroy some daleks."
 cover: "kmc.png"
