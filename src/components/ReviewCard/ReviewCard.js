@@ -1,17 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
 import Aurebesh from '../Aurebesh';
-import { link, card } from "./ReviewCard.module.scss"
+import { card, cover, vertical, horizontal } from "./ReviewCard.module.scss"
 import defaultImage from '../../images/reviews.png'
 
-const ReviewCard = ({ review }) => {
-    let slug = review.node.frontmatter.mission.fields.slug;
-    let title = review.node.frontmatter.mission.frontmatter.title;
-    const cover = (review.node.frontmatter.mission.frontmatter.cover) ? review.node.frontmatter.mission.frontmatter.cover.publicURL : defaultImage;
+const ReviewCard = ({ review, orientation }) => {
+    const mission = review.node.frontmatter.mission;
+    let slug = mission.fields.slug;
+    let title = mission.frontmatter.title;
+    const coverUrl = (mission.frontmatter.cover) ? mission.frontmatter.cover.publicURL : defaultImage;
+    const orientationClass = orientation === 'vertical' ? vertical : horizontal;
 
     return (
-        <Link to={`/missions/${slug}`} className={link}>
-            <article className={card} style={{ backgroundImage: `url(${cover})` }}>
+        <Link to={`/missions/${slug}`} className={`${card} ${orientationClass}`}>
+            <div className={cover} style={{ backgroundImage: `url(${coverUrl})` }}></div>
+            <article>
                 <h1>
                     <Aurebesh text={title} />
                     {title}

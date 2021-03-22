@@ -1,15 +1,16 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import BodyClassName from "react-body-classname"
-import GradientTitle from '../components/GradientTitle'
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
-import PostListing from '../components/PostListing'
-import SEO from '../components/SEO'
-import config from '../../data/SiteConfig'
-import ReviewListing from '../components/ReviewListing'
+import React from 'react';
+import Helmet from 'react-helmet';
+import { graphql, Link } from 'gatsby';
+import BodyClassName from "react-body-classname";
+import GradientTitle from '../components/GradientTitle';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import PostListing from '../components/PostListing';
+import SEO from '../components/SEO';
+import config from '../../data/SiteConfig';
+import ReviewListing from '../components/ReviewListing';
 import TopPost from '../components/TopPost';
+import EditorsChoiceListing from '../components/EditorsChoiceListing';
 
 const Index = ({ data }) => {
 
@@ -36,15 +37,27 @@ const Index = ({ data }) => {
           </div>
           <div className="home-grid">
             <div>
-              <h2>Recent Posts</h2>
+              <h2 className="uppercase">Recent Posts</h2>
               <TopPost post={topPost} />
               <PostListing postEdges={otherPosts} />
             </div>
             <div>
-              <h2>Recent Reviews</h2>
+              <h2 className="uppercase">Recent Reviews</h2>
               <ReviewListing />
             </div>
           </div>
+
+          <hr />
+
+          <h2>Looking for a guaranteed mission to try?</h2>
+          <p>The Editor's Choice missions have been selected by reviewers at The Crow's Nest as the best the Dark Forces community has to offer.</p>
+          <EditorsChoiceListing />
+          <Link to="/missions/editors-choice">All Editor's Choice Missions</Link>
+
+          <hr />
+
+          <h2>Everything You Need To Build The Next Great Mission</h2>
+          <p>Editors, textures, sounds, enemies, and more are all available in the <Link to="/storage">Files</Link> area. Here are a few of the latest additions.</p>
         </main>
         <Footer />
       </>
