@@ -78,6 +78,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "enemies",
+        path: `${__dirname}/content/enemies`
+      }
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [

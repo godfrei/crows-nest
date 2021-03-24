@@ -81,6 +81,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const componentPage = path.resolve("src/templates/component.js");
   const specPage = path.resolve("src/templates/spec.js");
   const authorPage = path.resolve("src/templates/author.js");
+  const enemyPage = path.resolve('src/templates/enemies/index.js');
 
   // Query all the markdown files
 
@@ -314,6 +315,23 @@ exports.createPages = async ({ graphql, actions }) => {
       component: authorPage,
       context: {
         author
+      }
+    });
+  });
+
+  // Enemies
+
+  let enemyEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === 'enemies') 
+      return edge;
+  });
+
+  enemyEdges.forEach((edge, index) => {
+    createPage({
+      path: `/database/enemies/${edge.node.fields.slug}`,
+      component: enemyPage,
+      context: {
+        slug: edge.node.fields.slug,
       }
     });
   });

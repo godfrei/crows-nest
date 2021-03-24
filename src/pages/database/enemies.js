@@ -1,120 +1,34 @@
-import React, { Component, Children } from "react"
-import PropTypes from 'prop-types';
+import React from "react"
 import Helmet from "react-helmet"
 import config from "../../../data/SiteConfig"
 import Layout from "../../layout"
-import AnimatedSprite from "../../components/AnimatedSprite"
-import Bossk from "../../images/bossk_sprite.png"
-import Commando from "../../images/commando_sprite.png"
-import Officer from "../../images/officer_sprite.png"
-import Trooper from "../../images/trooper_sprite.png"
-import Phase1 from "../../images/phase1_sprite.png"
-import Phase2 from "../../images/phase2_sprite.png"
-import Phase3 from "../../images/phase3_sprite.png"
-import Gamguard from "../../images/gamguard_sprite.png"
-import Reeyees from "../../images/reeyees_sprite.png"
-import BobaFett from "../../images/bobafett_sprite.png"
-import IntDroid from "../../images/intdroid_sprite.png"
-import Probe from "../../images/probe_sprite.png"
-import Remote from "../../images/remote_sprite.png"
-import Dianoga from "../../images/dianoga_sprite.png"
+import DatabaseLayout from '../../layout/database';
+import EnemiesLayout from '../../layout/enemies';
 
-function filterObject(obj) {
-  const ret = {};
-  Object.keys(obj)
-    .filter(key => obj[key] !== undefined)
-    .forEach((key) => { ret[key] = obj[key]; });
-  return ret;
-}
-
-class Enemy extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-    }
-    this.handleMouseOut = this.handleMouseOut.bind(this);
-    this.handleMouseOver = this.handleMouseOver.bind(this);
-  }
-
-  handleMouseOver() {
-    console.log("mouseover")
-    this.setState({
-      active: true
-    })
-  }
-  
-  handleMouseOut() {
-    this.setState({
-      active: false
-    })
-  }
-
-  render() {
-    const { children, className } = this.props
-    const enemyChildren = []
-    Children.forEach(children, (child, index) => {
-      const controlProps = { index }
-      controlProps.active = this.state.active
-      const definedProps = filterObject(child.props)
-      enemyChildren.push(React.cloneElement(child, Object.assign(definedProps, controlProps)))
-      console.log(enemyChildren)
-    })
-    return (
-      <section className={className} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
-        {enemyChildren}
-      </section>
-    )
-  }
-}
-Enemy.propTypes = {
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string
-}
-
-Enemy.defaultProps = {
-  className: "imperial"
-}
 
 export default () => (
   <Layout>
-    <main>
-      <Helmet>
-        <title>Enemies | {config.siteTitle}</title>
-      </Helmet>
+    <Helmet>
+      <title>Enemies | {config.siteTitle}</title>
+    </Helmet>
+
+    <DatabaseLayout>
+      <EnemiesLayout>
+        <article>
+          <h1>Enemies</h1>
+
+          <p>What would a game be without some adversaries to stand between you and your goals? Dark Forces has Imperials, bouty hunters, strange and exotic animals and droids whose sole objective is your destruction. So you'll want to be smart and read up on them here before heading out on your missions.</p>
+
+          <p>A lot of this information is from common knowledge on Star Wars, some comes from hearsay and some of it is off the top of my head. If I made a blatant error with the information let me know so I can correct it. But it should be pretty accurate. The shot table at the bottom was compiled by Paulius Stepanas and is courtesy of the Dark Forces FAQList.</p>
+
+        </article>
+      </EnemiesLayout>
+    </DatabaseLayout>
+
       
-      <h1>Enemies</h1>
+      {/* Imperial Troops */}
 
-      <p>What would a game be without some adversaries to stand between you and your goals? Dark Forces has Imperials, bouty hunters, strange and exotic animals and droids whose sole objective is your destruction. So you'll want to be smart and read up on them here before heading out on your missions.</p>
-
-      <p>A lot of this information is from common knowledge on Star Wars, some comes from hearsay and some of it is off the top of my head. If I made a blatant error with the information let me know so I can correct it. But it should be pretty accurate. The shot table at the bottom was compiled by Paulius Stepanas and is courtesy of the Dark Forces FAQList.</p>
-
-      Imperial Troops
-      Stormtrooper
-      Imperial Officer
-      Imperial Commando
-      Phase I Dark Trooper
-      Phase II Dark Trooper
-      Phase III Dark Trooper 
-      Independents
-      Gran
-      Trandoshan
-      Gamorrean Guard
-      Boba Fett
-      Mechanicals
-      Interrogation Droid
-      Probe Droid
-      Remote
-      QS100 Welding Arm
-      Gun Turret
-      Power Generating Unit
-      MouseBot 
-      Others
-      Dianoga
-      Kell Dragon
-      Imperial Troops
-
-      <div className="enemy-grid">
+      {/* <div className="enemy-grid">
         <Enemy className="imperial">
           <AnimatedSprite spritePath={Trooper} width={46} height={68} scale={3} steps={6} />
           <h1>Stormtrooper</h1>
@@ -297,7 +211,6 @@ export default () => (
 
   Shot Table
 
-  The following table was compiled by Paulius Stepanas and displays the minimum number of shots required to kill an enemy. One thing to note: these numbers are valid only for point-blank direct shots. Lasers lose power over distance and explosions have an 'area' effect in which the damage done to an object is dependent upon the object's proximity to the explosion, so for varying distances these numbers will change. For the most part they are accurate. According to Paulius some trouble was had in compiling the numbers for some weapons on the Dark Troopers and Boba Fett; therefore numbers with a '~' represent approximations. The data for Kyle Katarn(bottom row) is assuming that the shot is bounced off a wall or the explosion is nearby.
-    </main>
+  The following table was compiled by Paulius Stepanas and displays the minimum number of shots required to kill an enemy. One thing to note: these numbers are valid only for point-blank direct shots. Lasers lose power over distance and explosions have an 'area' effect in which the damage done to an object is dependent upon the object's proximity to the explosion, so for varying distances these numbers will change. For the most part they are accurate. According to Paulius some trouble was had in compiling the numbers for some weapons on the Dark Troopers and Boba Fett; therefore numbers with a '~' represent approximations. The data for Kyle Katarn(bottom row) is assuming that the shot is bounced off a wall or the explosion is nearby. */}
   </Layout>
 )
