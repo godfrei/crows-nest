@@ -85,6 +85,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "weapons",
+        path: `${__dirname}/content/weapons`
+      }
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
