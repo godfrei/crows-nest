@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 import config from "../../data/SiteConfig"
 import Layout from "../layout"
 import SpecNav from "../components/SpecNav"
+import DatabaseLayout from '../layout/database';
 
 export default ({ data }) => {
     const post = data.markdownRemark
@@ -12,14 +13,18 @@ export default ({ data }) => {
         <Helmet>
           <title>{`${post.frontmatter.title} | DF Specs | ${config.siteTitle}`}</title>
         </Helmet>
-        <header>
-            <small>Dark Forces Unofficial Specifications v3.2</small>
-            <h1>{ post.frontmatter.title }</h1>
-        </header>
+        <DatabaseLayout>
+          <article>
+            <header>
+                <small>Dark Forces Unofficial Specifications v3.2</small>
+                <h1>{ post.frontmatter.title }</h1>
+            </header>
 
-        <SpecNav />
+            <SpecNav />
 
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </article>
+        </DatabaseLayout>
       </Layout>
     )
 }

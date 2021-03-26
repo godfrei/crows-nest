@@ -290,7 +290,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   specEdges.forEach((edge, index) => {
     createPage({
-      path: edge.node.fields.slug,
+      path: `/database/specs/${edge.node.fields.slug}`,
       component: specPage,
       context: {
         slug: edge.node.fields.slug,
