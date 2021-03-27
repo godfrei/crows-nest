@@ -1,11 +1,12 @@
 ---
 mission_id: jundland
+slug: "jundland"
 editorsChoice:
 title: "Jundland"
 authors: 
     - "David Arandle"
 date: 1996-12-13
-filename: "jundland.zip"
+filename: "/missions/jundland.zip"
 description: "Closer scrutiny of the stolen plans for the SSSD Sovereign recovered from M/CRV Dana has revealed they were in fact a decoy. The ship's log shows that an A-wing left the ship over the planet of Tatooine. Intelligence is confident that the fighter was carrying the real plans; your platoon has been assigned the job of locating the A-wing and recovering the stolen plans."
 cover: "jundland.png"
 levelReplaced:	SECBASE

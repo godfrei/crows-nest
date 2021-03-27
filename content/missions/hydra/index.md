@@ -1,11 +1,12 @@
 ---
 mission_id: hydra
+slug: "hydra"
 editorsChoice:
 title: "Hydra"
 authors: 
     - "Mike Neugebauer"
 date: 1996-12-08
-filename: "hydra.zip"
+filename: "/missions/hydra.zip"
 description: "The Empire has constructed a base inside a hollowed asteroid located above a planet housing a Rebel Army base. While the asteroid base is primarily there to gain information, it is also defended with 14 bombs that could spew radioactive material across the base and the planet. Your job is to get inside the asteroid, deactivate the bombs and kill everyone inside. The Crow will be waiting for you outside when you finish."
 cover: "hydra.png"
 levelReplaced:	SECBASE

@@ -1,5 +1,5 @@
 ---
-mission: frogman
+mission-slug: "frogman"
 title: "Frogman Review"
 reviewers: 
   -  "Geoff Elliott"

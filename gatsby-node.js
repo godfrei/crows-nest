@@ -11,13 +11,13 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Frontmatter {
-      mission: MarkdownRemark @link(by: "frontmatter.mission_id", from: "mission")
-      reviews: [MarkdownRemark] @link(by: "frontmatter.mission", from: "mission_id")
-      screenshots: ScreenshotJson @link(by: "mission", from: "mission_id")
+      mission: MarkdownRemark @link(by: "frontmatter.slug", from: "mission-slug")
+      reviews: [MarkdownRemark] @link(by: "frontmatter.mission-slug", from: "slug")
+      screenshots: ScreenshotJson @link(by: "mission", from: "slug")
     }
     
     type ScreenshotJson {
-      mission: MarkdownRemark @link(by: "frontmatter.mission_id", from: "mission")
+      mission: MarkdownRemark @link(by: "frontmatter.slug", from: "mission")
       captures: Capture
     }
 
@@ -55,7 +55,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     if (Object.prototype.hasOwnProperty.call(node, "frontmatter")) {
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
-        slug = `/${_.kebabCase(node.frontmatter.slug)}`;
+        slug = `${_.kebabCase(node.frontmatter.slug)}`;
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "date")) {
         const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
         if (!date.isValid)

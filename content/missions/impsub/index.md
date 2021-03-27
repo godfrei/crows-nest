@@ -1,11 +1,12 @@
 ---
 mission_id: impsub
+slug: "impsub"
 editorsChoice:
 title: "impsub"
 authors: 
     - "Daniel Welander"
 date: 1997-02-28
-filename: "impsub.zip"
+filename: "/missions/impsub.zip"
 description: "Unknown"
 cover: 
 levelReplaced:	SECBASE

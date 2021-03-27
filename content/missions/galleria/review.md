@@ -1,5 +1,5 @@
 ---
-mission: galleria
+mission-slug: "galleria"
 title: "Galleria Review"
 reviewers: 
   -  "Geoff Elliott"

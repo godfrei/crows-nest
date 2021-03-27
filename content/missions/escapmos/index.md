@@ -1,11 +1,12 @@
 ---
 mission_id: escapmos
+slug: "escapmos"
 editors_choice:
 title: "escapmos"
 authors: 
     - "Unknown"
 date: 1995-09-09
-filename: "escapmos.zip"
+filename: "/missions/escapmos.zip"
 description:
 cover:
 levelReplaced: SECBASE

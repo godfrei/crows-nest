@@ -1,5 +1,5 @@
 ---
-mission: hydra
+mission-slug: "hydra"
 title: "Hydra Review"
 reviewers: 
   -  "Geoff Elliott"

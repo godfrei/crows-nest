@@ -1,11 +1,12 @@
 ---
 mission_id: danuta
+slug: "danuta"
 editorsChoice:
 title: "Danuta"
 authors: 
     - "Unknown"
 date: 1995-08-09
-filename: "DANUTA.ZIP"
+filename: "/missions/DANUTA.ZIP"
 description: "A modification of the Secret Base mission that adds different enemies and items."
 cover:
 levelReplaced: SECBASE

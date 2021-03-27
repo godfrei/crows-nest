@@ -1,5 +1,5 @@
 ---
-mission: jundland
+mission-slug: "jundland"
 title: "Jundland Review"
 reviewers: 
   -  "Geoff Elliott"

@@ -1,11 +1,12 @@
 ---
 mission_id: mines
+slug: "mines"
 editorsChoice:
 title: "Mines"
 authors: 
     - "Ari G"
 date: 1997-04-12
-filename: "mine.zip"
+filename: "/missions/mine.zip"
 description: "A first level."
 cover: "mines.png"
 levelReplaced:	SECBASE

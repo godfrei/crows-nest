@@ -1,5 +1,6 @@
 ---
 mission_id: sensation
+slug: "sensation"
 editorsChoice:
 title: "Sensation"
 authors: 

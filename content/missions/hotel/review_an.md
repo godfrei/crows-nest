@@ -1,5 +1,5 @@
 ---
-mission: hotel
+mission-slug: "lahara-hotel"
 title: "Lahara Hotel Review"
 reviewers: 
   -  "Anonymous"

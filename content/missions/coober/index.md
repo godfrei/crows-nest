@@ -1,11 +1,12 @@
 ---
 mission_id: coober
+slug: "coober"
 editorsChoice:
 title: "Coober"
 authors: 
     - "Ted Imboden"
 date: 1996-12-21
-filename: "coober.zip"
+filename: "/missions/coober.zip"
 description: "Showcase."
 cover: "coober.png"
 levelReplaced: SECBASE

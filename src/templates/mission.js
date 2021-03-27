@@ -56,11 +56,10 @@ export default ({ data, pageContext }) => {
     const file = data.markdownRemark.frontmatter.filename;
     const title = data.markdownRemark.frontmatter.title;
 
-    if(file?.publicURL) {
+    if(file) {
       return (
-        <a href={file.publicURL} className={download}>
+        <a href={file} className={download}>
           <strong>Download <span className="sr-only">{title}</span></strong>
-          {` (${file.name}.${file.extension}, ${file.prettySize})`} 
         </a>
       )
     }
@@ -118,12 +117,7 @@ export const pageQuery = graphql`
         date
         description
         authors
-        filename {
-          name
-          extension
-          prettySize
-          publicURL
-        }
+        filename
         levelReplaced
         difficulty
         bm

@@ -1,11 +1,12 @@
 ---
 mission_id: hotel
+slug: "lahara-hotel"
 editorsChoice:
 title: "Lahara Hotel"
 authors: 
     - "Michael Messer"
 date: 1996-11-13
-filename: "hotel.zip"
+filename: "/missions/hotel.zip"
 description: "Several foreign diplomats who are sympathetic to the Rebel cause have been taken hostage by Imperial troops and are being held in the Lahara Hotel. Your job as Kyle Katarn is to infiltrate the hotel, locate the diplomats, and bring them out safely."
 cover: "hotel.png"
 levelReplaced:	None
