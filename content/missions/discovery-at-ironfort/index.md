@@ -6,7 +6,7 @@ title: "Discovery at Ironfort"
 authors: 
     - "Kevin Buscemi"
 date: 2000-03-26
-filename: "/missions/ironfort.zip"
+filename: "ironfort.zip"
 description: "Ironfort, an aging mining colony in a backwater star system, has never been of much strategic interest to either the Empire nor the Rebel Alliance.  Circumstances have changed, however. Deep beneath the surface, an ancient, and technologically advanced, alien installation has been discovered intact. It is unknown what treasures or weaponry are stored within, but the Alliance can not afford to allow anything of value to fall into Imperial hands."
 cover:
 levelReplaced:	SECBASE

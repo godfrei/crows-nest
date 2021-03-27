@@ -6,7 +6,7 @@ title: "Imperial Space Dock"
 authors: 
     - "Glenn Edmiston"
 date: 1997-08-23
-filename: "/missions/spdock.zip"
+filename: "spdock.zip"
 description: "Jan has been captured and is being held on an Imperial Space Dock."
 cover:
 levelReplaced:	SECBASE

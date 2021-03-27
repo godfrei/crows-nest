@@ -6,7 +6,7 @@ title: "Black Sun"
 authors: 
     - "Rhys Copeland"
 date: 1998-06-01
-filename: "/missions/blacksun.zip"
+filename: "blacksun.zip"
 description: "Find your smuggler mate, who will show you a path you must follow to infiltrate the Imperial facility somewhere in the desert, steal the datatapes and get the hell out. You will have to find alternative ways in and out of the base as it will be too well-guarded otherwise."
 cover:
 levelReplaced:	SECBASE

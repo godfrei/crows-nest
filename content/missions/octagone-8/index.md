@@ -6,7 +6,7 @@ title: "Octagone 8"
 authors: 
     - "James McMahon"
 date: 1996-11-03
-filename: "/missions/newdspf.zip"
+filename: "newdspf.zip"
 description: "This level supposedly poses the question, what would it be like if there were Dark Troopers around before the Alliance had captured the plans for the first Death Star? Your job is to find the Death Star plans and get back to your ship."
 cover: "octagone.png"
 levelReplaced:	SECBASE

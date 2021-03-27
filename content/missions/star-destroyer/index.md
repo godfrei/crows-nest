@@ -6,7 +6,7 @@ title: "Star Destroyer"
 authors: 
     - "Claude Pradervand"
 date: 1995-10-29
-filename: "/missions/stardest.zip"
+filename: "stardest.zip"
 description: "The final remaining copy of the Dark Trooper plans is being transported aboard a star destroyer. Kyle's mission is to retrieve the plans before destroying the ship. But be warned, he's not the only one after those plans..."
 cover: 
 levelReplaced:	SECBASE

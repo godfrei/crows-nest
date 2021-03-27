@@ -13,7 +13,7 @@ This is just one of the levels to attempt to construct a death star, but it's by
 
 This level is also not that easy to get through. You start off without any weapons, hard enough against a single Kell dragon, but surely deadly in an Imperial detention center. After appropriating some weapons, you get to make your way through a station filled with troopers. There are generators to keep them coming so the action never stops.
 
-There are a few little details I noticed that seemed out of place. Whay is the door to my cell unlocked? And why can I open it from the inside anyway? This is a question we could ask of Dark Forces as well, but it's made worse when you are meant to be a prisoner placed in that cell. I also would have expected the Death Star to have a few more troops in it to throw at an intruder. It's tough as it is, but the whole place seemed a little sparse to me.
+There are a few little details I noticed that seemed out of place. Why is the door to my cell unlocked? And why can I open it from the inside anyway? This is a question we could ask of Dark Forces as well, but it's made worse when you are meant to be a prisoner placed in that cell. I also would have expected the Death Star to have a few more troops in it to throw at an intruder. It's tough as it is, but the whole place seemed a little sparse to me.
 
 ## Overall
 

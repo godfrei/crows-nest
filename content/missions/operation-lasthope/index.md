@@ -6,7 +6,7 @@ title: "Operation: Lasthope"
 authors: 
     - "Jeff Byrd"
 date: 1996-07-20
-filename: "/missions/lasthope.zip"
+filename: "lasthope.zip"
 description: ""
 cover: 
 levelReplaced:	"SECBASE, TALAY"

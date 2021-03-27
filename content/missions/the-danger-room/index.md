@@ -6,7 +6,7 @@ title: "The Danger Room"
 authors: 
     - "Mike Neugebauer"
 date: 1996-03-03
-filename: "/missions/dangroom.zip"
+filename: "dangroom.zip"
 description: "The Danger Room is a custom level set in the Marvel Universe.  You play the X-Man Cable, armed to the hilt and honing his skills in the X-Men's renowned \"Danger Room\"."
 cover: "dangroom.png"
 levelReplaced:	SECBASE

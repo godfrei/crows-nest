@@ -6,7 +6,7 @@ title: "Mynok Commando Base"
 authors: 
     - "Douglas E. Haynes"
 date: 1996-02-03
-filename: "/missions/mynokbse.zip"
+filename: "mynokbse.zip"
 description: "Retrieve the Spectra System Map plans."
 cover:
 levelReplaced:	SECBASE

@@ -7,7 +7,7 @@ authors:
     - "GAdRS"
     - "Maverick"
 date: 2000-01-16
-filename: "/missions/library.zip"
+filename: "library.zip"
 description: "You have been selected to raid an Imperial Library for information."
 cover:
 levelReplaced:	SECBASE

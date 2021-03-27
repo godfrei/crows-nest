@@ -6,7 +6,7 @@ title: "Scrolly's Lair"
 authors: 
     - "Gavin Parker"
 date: 1995-11-01
-filename: "/missions/scrolly.zip"
+filename: "scrolly.zip"
 description: "Locate the Death Star plans and kill General Mohc."
 cover:
 levelReplaced: SECBASE

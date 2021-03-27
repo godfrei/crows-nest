@@ -6,7 +6,7 @@ title: "Imperial Destroyer"
 authors: 
     - "Eric Pauker"
 date: 1997-03-04
-filename: "/missions/impdest.zip"
+filename: "impdest.zip"
 description: "The plans for the Death Star are being transported to the Emperor by means of Imperial Star Destroyer. Your job is to get onto the ship, steal the plans and get back to the Crow."
 cover: "impdest.png"
 levelReplaced:	SECBASE

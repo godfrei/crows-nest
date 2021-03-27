@@ -8,7 +8,7 @@ authors:
     - "Jereth Kok"
     - "Steve Miller"
 date: 1998-03-01
-filename: "/missions/cond-red.zip"
+filename: "cond-red.zip"
 description: "Unknown."
 cover:
 levelReplaced: JABSHIP

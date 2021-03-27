@@ -6,7 +6,7 @@ title: "Omega Red"
 authors: 
     - "Jacob Lachance"
 date: 2000-09-09
-filename: "/missions/orspecial.zip"
+filename: "orspecial.zip"
 description: "Thomas Gant of Rogue Squadron has been selected to perform the task of infiltrating and discovering what the Omega Red base is up to. If the research being held there poses a threat, then destroy the base. Good Luck!"
 cover: 
 levelReplaced:	SECBASE

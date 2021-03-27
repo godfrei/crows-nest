@@ -6,7 +6,7 @@ title: "The Emperor's Gambit"
 authors: 
     - "Kevin M. Rusnak"
 date: 1996-05-28
-filename: "/missions/gambit.zip"
+filename: "gambit.zip"
 description: "Years after the destruction of the first Death Star the Rebels have learned of the creation of a second of the terrible weapons. Her Bothan spies having failed her, Mon Mothma calls again upon Kyle Katarn to locate the plans for the Death Star. Kyle needs to find an entrance to the base, find the plans and then pirate a ship to get out of there."
 cover: "gambit.png"
 levelReplaced:	SECBASE

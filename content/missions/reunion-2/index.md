@@ -6,7 +6,7 @@ title: "Reunion 2"
 authors: 
     - "John Johnson"
 date: 1999-03-01
-filename: "/missions/reunion2.zip"
+filename: "reunion2.zip"
 description: "This is the fourth and final level in the Marek Sunrider Story."
 cover: 
 levelReplaced:	SECBASE

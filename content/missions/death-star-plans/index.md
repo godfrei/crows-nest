@@ -6,7 +6,7 @@ title: "Death Star Plans"
 authors: 
     - "Doug Vader"
 date: 1995-12-18
-filename: "/missions/dsplans.zip"
+filename: "dsplans.zip"
 description: "Like the title suggests, Kyle Katarn is needed to acquire a second set of Death Star Plans from an Imperial base. You have heard that Boba Fett and Dark Troopers are present at the base, and that the Imperials are fond of Kell Dragons."
 cover: 
 levelReplaced:	SECBASE

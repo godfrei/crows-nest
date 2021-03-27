@@ -6,7 +6,7 @@ title: "Reciprocity"
 authors: 
     - "Roger T.L. Ward"
 date: 1995-12-26
-filename: "/missions/recipoc.zip"
+filename: "recipoc.zip"
 description: "In a heroic effort to save mankind the rebel mercenary Kyle Katarn must infiltrate the evil empire's secret base to find the plans to destroy the death star."
 cover:
 levelReplaced: TALAY

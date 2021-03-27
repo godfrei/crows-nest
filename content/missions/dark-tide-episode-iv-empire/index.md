@@ -8,7 +8,7 @@ authors:
     - "Patrick Haslow"
     - "Matthew Hallaron"
 date: 2007-10-01
-filename: "/missions/dtide4.zip"
+filename: "dtide4.zip"
 description: "It is a time of great danger for Kyle Katarn. Having just espaced the INVISOR he makes his way into the heart of the Empire. His friend and co-pilot Jan Ors has been taken to a secret location somewhere in the Imperial Capitol. In order to find her Kyle must evade the legions of imperial forces and locate the shady information dealer TELL TRESSING. But little does Kyle know that another, more sinister element is about to make it's presence felt..."
 cover:
 levelReplaced: GROMAS

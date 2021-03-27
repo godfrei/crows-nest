@@ -6,7 +6,7 @@ title: "Imation: All Over Again"
 authors: 
     - "Palmer"
 date: 2002-01-11
-filename: "/missions/imation2.zip"
+filename: "imation2.zip"
 description: "Well the reason you are back is because you grabbed the wrong data tape. The empire has also moved the data tape to a new location, there are new rooms and more traps."
 cover:
 levelReplaced:	SECBASE

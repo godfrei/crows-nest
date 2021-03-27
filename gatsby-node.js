@@ -100,6 +100,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 title
                 date
                 authors
+                filename
               }
             }
           }
@@ -225,7 +226,8 @@ exports.createPages = async ({ graphql, actions }) => {
       component: missionPage,
       context: {
         slug: edge.node.fields.slug,
-        reviewRegex: `/${edge.node.fields.slug}-review.*/`
+        reviewRegex: `/${edge.node.fields.slug}-review.*/`,
+        fileRegex: `/${edge.node.frontmatter.filename}/`
       }
     });
   });

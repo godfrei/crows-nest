@@ -6,7 +6,7 @@ title: "Operation Retrieve"
 authors: 
     - "Istvan Galambos"
 date: 1995-09-28
-filename: "/missions/rtrive.zip"
+filename: "rtrive.zip"
 description: "Your Imperial spy Crix Madine has been captured and sent to an Imperial Detention Center on a Correlian Moon. Apart from being a Detention Center many old rebel craft are also kept here. BEWARE Boba Fett makes many stops at this Prison."
 cover:
 levelReplaced:	SECBASE

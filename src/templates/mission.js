@@ -10,6 +10,7 @@ import config from '../../data/SiteConfig'
 import moment from 'moment';
 import CaptureCarousel from '../components/CaptureCarousel';
 import { mission, missingFile, download, descAndReviews, plot } from './mission.module.scss';
+import { fil } from 'date-fns/locale';
 
 export default ({ data, pageContext }) => {
   const { slug } = pageContext;
@@ -53,13 +54,15 @@ export default ({ data, pageContext }) => {
   }
 
   function getDownloadLink(data) {
-    const file = data.markdownRemark.frontmatter.filename;
+    const file = data?.allFile?.edges[0]?.node || null;
+    // const filename = data.markdownRemark.frontmatter.filename;
     const title = data.markdownRemark.frontmatter.title;
 
     if(file) {
       return (
-        <a href={file} className={download}>
+        <a href={file.publicURL} className={download}>
           <strong>Download <span className="sr-only">{title}</span></strong>
+          ({`${file.name}.${file.extension}`}, {file.prettySize})
         </a>
       )
     }
@@ -104,7 +107,7 @@ export default ({ data, pageContext }) => {
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query MissionBySlug($slug: String!, $reviewRegex: String!) {
+  query MissionBySlug($slug: String!, $reviewRegex: String!, $fileRegex: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
@@ -167,6 +170,16 @@ export const pageQuery = graphql`
           file {
             publicURL
           }
+        }
+      }
+    }
+    allFile(filter: {publicURL: {regex: $fileRegex}}) {
+      edges {
+        node {
+          extension
+          name
+          publicURL
+          prettySize
         }
       }
     }

@@ -6,7 +6,7 @@ title: "HitNRun"
 authors: 
     - "DarthDoctor"
 date: 2002-03-19
-filename: "/missions/hitnrun.zip"
+filename: "hitnrun.zip"
 description: "A spiral Imperial base. Smugglers are fighting them, and have been driven to the heart of the base, where you are."
 cover: 
 levelReplaced:	SECBASE

@@ -6,7 +6,7 @@ title: "Hidden Jawa Base"
 authors:
     - "John Teske"
 date: 1999-12-29
-filename: "/missions/jawabase.zip"
+filename: "jawabase.zip"
 description: "After rescuing R2-D2, the Rebellion suspects that the plans to the Death Star had been removed from the droid, and kept by the Jawas. Your mission is to get them back, of course."
 cover:
 levelReplaced: SECBASE

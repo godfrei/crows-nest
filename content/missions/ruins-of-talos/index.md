@@ -6,7 +6,7 @@ title: "Ruins of Talos"
 authors: 
     - "John Johnson"
 date: 1998-02-01
-filename: "/missions/ruins.zip"
+filename: "ruins.zip"
 description: "Grand Admiral Thrawn has directed you to investigate the ancient ruins on Talos XII and uncover what Dark Jedi C'Boath is doing there. While en route to the site your ship was destroyed. Your gear is scattered across the ruins and you must take on C'Boath's army alone."
 cover: 
 levelReplaced:	SECBASE

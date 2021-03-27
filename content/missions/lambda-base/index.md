@@ -6,7 +6,7 @@ title: "Lambda Base"
 authors: 
     - "David Lovejoy"
 date: 1996-01-26
-filename: "/missions/lambda.zip"
+filename: "lambda.zip"
 description: ""
 cover: 
 levelReplaced:	SECBASE

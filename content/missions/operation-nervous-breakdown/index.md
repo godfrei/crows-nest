@@ -6,7 +6,7 @@ title: "Operation Nervous Breakdown"
 authors: 
     - "japh"
 date: 2001-07-01
-filename: "/missions/nerv.zip"
+filename: "nerv.zip"
 description: "The Empire is rumoured to be storing nerve gas in Ects Base. Get in, get information, get out."
 cover:
 levelReplaced:	SECBASE

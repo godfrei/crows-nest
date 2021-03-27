@@ -6,7 +6,7 @@ title: "Shockwave"
 authors: 
     - "Jason Muhs"
 date: 1995-11-29
-filename: "/missions/shockw.zip"
+filename: "shockw.zip"
 description: "Kyle Katarn must travel to Shockwave Station on the rocky, sunny planet of Crussh. There he must recover stolen data tapes that contain every security clearance code and battle plan the Alliance has. And while he's there Kyle should obtain a sample of the Phrix metal being used to manufacture Dark Troopers."
 cover:
 levelReplaced: SECBASE

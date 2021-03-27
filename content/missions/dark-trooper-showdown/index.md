@@ -6,7 +6,7 @@ title: "Dark Trooper Showdown"
 authors: 
     - "Mr. Terhune"
 date: 1995-11-25
-filename: "/missions/showdown.zip"
+filename: "showdown.zip"
 description: "A first level."
 cover: 
 levelReplaced:	SECBASE

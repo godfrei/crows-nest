@@ -6,7 +6,7 @@ title: "impsub"
 authors: 
     - "Daniel Welander"
 date: 1997-02-28
-filename: "/missions/impsub.zip"
+filename: "impsub.zip"
 description: "Unknown"
 cover: 
 levelReplaced:	SECBASE

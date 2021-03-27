@@ -6,7 +6,7 @@ title: "Rescue Willot"
 authors: 
     - "David Andersen"
 date: 1999-04-19
-filename: "/missions/willot.zip"
+filename: "willot.zip"
 description: "A New Republic ewok agent called Willot was send to investigate a rumor of an Imperial spaceship hidden in the mountains of Gothal 5. But soon after he arrived, the Republic lost all contact with the ewok. He can be badly injured or maybe he just got lost in the maintains. You have been send to Gothal 5 to rescue agent Willot."
 cover: 
 levelReplaced:	SECBASE

@@ -6,7 +6,7 @@ title: "Boba Fett Storage Facility"
 authors: 
     - "David Arandle"
 date: 1996-08-30
-filename: "/missions/storage.zip"
+filename: "storage.zip"
 description: "Unknown"
 cover: 
 levelReplaced:	SECBASE

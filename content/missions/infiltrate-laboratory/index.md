@@ -8,7 +8,7 @@ authors:
     - "Sam Bowers"
     - "Jessica Bowers"
 date: 1995-11-01
-filename: "/missions/infil-lb.zip"
+filename: "infil-lb.zip"
 description: "Your task is to infiltrate the laboratory and retrieve a sample of the Phrik metal being used in new weapon construction."
 cover:
 levelReplaced:	TESTBASE

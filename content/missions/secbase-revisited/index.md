@@ -7,7 +7,7 @@ authors:
     - "Serge Debroeyer"
     - "Yves Borckmans"
 date: 1995-06-08
-filename: "/missions/secrev01.zip"
+filename: "secrev01.zip"
 description: "As Kyle Katarn, former Imperial Special Ops, now working for the Rebel Alliance, you have been given the delicate mission to steal the plans of the new Imperial secret weapon code named DEATHSTAR. You will be dropped at the cargo entrance of the Imperial base where Rebel Intelligence suspects the plans are stored. You must then find the plans, and return to the drop zone where your assistant Jan Ors will bring back your ship."
 cover:
 levelReplaced: SECBASE

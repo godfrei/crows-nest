@@ -6,7 +6,7 @@ title: "Port of Eisley"
 authors: 
     - "Christian Imboden"
 date: 1996-12-30
-filename: "/missions/eisley.zip"
+filename: "eisley.zip"
 description: "The familiar Mos Eisley space port from the movie, sort of."
 cover:
 levelReplaced:	SECBASE

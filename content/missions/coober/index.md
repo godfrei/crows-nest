@@ -6,7 +6,7 @@ title: "Coober"
 authors: 
     - "Ted Imboden"
 date: 1996-12-21
-filename: "/missions/coober.zip"
+filename: "coober.zip"
 description: "Showcase."
 cover: "coober.png"
 levelReplaced: SECBASE

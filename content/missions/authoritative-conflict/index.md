@@ -6,7 +6,7 @@ title: "Authoritative Conflict"
 authors: 
     - "Michael W. Moss"
 date: 1995-06-26
-filename: "/missions/authcon.zip"
+filename: "authcon.zip"
 description: "A modification of the Ramsees Hed mission that adds different enemies and items."
 cover:
 levelReplaced: RAMSHED

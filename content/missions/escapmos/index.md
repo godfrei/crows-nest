@@ -6,7 +6,7 @@ title: "escapmos"
 authors: 
     - "Unknown"
 date: 1995-09-09
-filename: "/missions/escapmos.zip"
+filename: "escapmos.zip"
 description:
 cover:
 levelReplaced: SECBASE

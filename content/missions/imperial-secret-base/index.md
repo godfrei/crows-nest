@@ -6,7 +6,7 @@ title: "Imperial Secret Base"
 authors: 
     - "Mike Rajotte"
 date: 1996-02-23
-filename: "/missions/imperial.zip"
+filename: "imperial.zip"
 description: "The Empire has just caputred Admiral Ackbar. The Imperials are transporting him off on shuttle to meet the Executor. The Executor will then escort this important prisoner to an Imperial prison planet. You are to infiltrate a Imperial base on Sullust and find the data tapes contaning the destination of the shuttle. Once you find the data tapes, you then must escape off the planet and return to the Rebel fleet by stealing an Imperial shuttle."
 cover:
 levelReplaced:	SECBASE

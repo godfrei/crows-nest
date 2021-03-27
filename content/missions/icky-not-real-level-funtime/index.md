@@ -6,7 +6,7 @@ title: "Icky Not-Real-Level Funtime"
 authors: 
     - "Tom Resnick"
 date: 2007-07-21
-filename: "/missions/icky.zip"
+filename: "icky.zip"
 description: "Please don't think this level is supposed to be serious; it was originally just a testing ground for other components -n- stuff"
 cover:
 levelReplaced:	SECBASE

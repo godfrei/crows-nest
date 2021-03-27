@@ -6,7 +6,7 @@ title: "Imperial Station B-24"
 authors:
     - "Geoffrey Simpson"
 date: 2005-08-18
-filename: "/missions/space.zip"
+filename: "space.zip"
 description: "After a covert mission Kyle and Jan find themselves caught in an Imperial tractor beam and drawn into station B-24 for a routine security search."
 cover:
 levelReplaced: SECBASE

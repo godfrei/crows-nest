@@ -6,7 +6,7 @@ title: "Mines"
 authors: 
     - "Ari G"
 date: 1997-04-12
-filename: "/missions/mine.zip"
+filename: "mine.zip"
 description: "A first level."
 cover: "mines.png"
 levelReplaced:	SECBASE

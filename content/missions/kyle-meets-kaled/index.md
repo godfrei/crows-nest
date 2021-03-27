@@ -6,7 +6,7 @@ title: "Kyle Meets Kaled"
 authors: 
     - "Troy Nathan Robeck"
 date: 1996-12-01
-filename: "/missions/kmc.zip"
+filename: "kmc.zip"
 description: "Run around and destroy some daleks."
 cover: "kmc.png"
 levelReplaced:	JABSHIP

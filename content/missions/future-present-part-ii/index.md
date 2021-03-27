@@ -6,7 +6,7 @@ title: "Future Present Part II"
 authors: 
     - "Rick Horack"
 date: 1996-08-27
-filename: "/missions/future2.zip"
+filename: "future2.zip"
 description: "After discovering the threat of your old academy \"friend\", Tyco Daralyn, you're heading to Coruscant to try to find more information on his whereabouts. A slicer named Gant has offered to contact you in a bar, but Rebel Intel believes he may have been captured. If so, you will need to break him out of the detention center."
 cover: "future2.png"
 levelReplaced: TALAY

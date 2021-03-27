@@ -6,7 +6,7 @@ title: "Dark Prelude - The Early Missions of Kyle Katarn"
 authors: 
     - "Randy Greene"
 date: 1996-03-31
-filename: "/missions/rpg-df20.zip"
+filename: "rpg-df20.zip"
 description: "This is a continuing story that's divided into two levels and deals with Kyle's defection from the Empire, brought on by Jan Ors' capture by the Imperials."
 cover: "prelude.png"
 levelReplaced:	SECBASE

@@ -6,7 +6,7 @@ title: "Rendezvous"
 authors: 
     - "Jason Muhs"
 date: 1995-08-22
-filename: "/missions/rendev.zip"
+filename: "rendev.zip"
 description: "You are on a Rebel Cargo ship when the ship's computer picks up a strange reading. After a bit of decoding you realize that you've intercepted new, updated plans for the Death Star. The Imperials, realizing what has happened, board your ship and steal the plans from your commander. Now your job is to steal the plans back and escape."
 cover:
 levelReplaced: SECBASE
