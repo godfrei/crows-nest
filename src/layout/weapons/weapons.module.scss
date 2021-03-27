@@ -2,7 +2,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 270px auto;
+    grid-template-columns: 200px auto;
     column-gap: 32px;
 
     article {
@@ -50,7 +50,7 @@
     }
 
     img {
-        height: 32px;
+        height: 40px;
         image-rendering: pixelated;
     }
 }
