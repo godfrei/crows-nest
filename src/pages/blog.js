@@ -8,13 +8,11 @@ import config from '../../data/SiteConfig'
 
 const posts = ({ data }) => (
   <Layout>
-    <main>
-      <Helmet title={`Blog | ${config.siteTitle}`} />
-      <SEO />
-      <h1>Blog</h1>
+    <Helmet title={`Blog | ${config.siteTitle}`} />
+    <SEO />
+    <h1>Blog</h1>
 
-      <PostListing postEdges={data.allMarkdownRemark.edges} />
-    </main>
+    <PostListing postEdges={data.allMarkdownRemark.edges} />
   </Layout>
 )
 
