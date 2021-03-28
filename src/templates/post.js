@@ -35,12 +35,12 @@ export default ({ data, pageContext }) => {
       <nav>
         <ul className={pagination}>
           <li>
-            <Link to={prevslug} rel="prev">
+            <Link to={`/blog/${prevslug}`} rel="prev">
               ← {prevtitle}
             </Link>
           </li>
           <li>
-            <Link to={nextslug} rel="next">
+            <Link to={`/blog/${nextslug}`} rel="next">
               {nexttitle}→
             </Link>
           </li>

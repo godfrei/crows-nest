@@ -159,13 +159,13 @@ exports.createPages = async ({ graphql, actions }) => {
     //   })
     // }
 
-    const nextID = index + 1 < markdownEdges.length ? index + 1 : 0;
-    const prevID = index - 1 >= 0 ? index - 1 : markdownEdges.length - 1;
-    const nextEdge = markdownEdges[nextID];
-    const prevEdge = markdownEdges[prevID];
+    const nextID = index + 1 < postEdges.length ? index + 1 : 0;
+    const prevID = index - 1 >= 0 ? index - 1 : postEdges.length - 1;
+    const nextEdge = postEdges[nextID];
+    const prevEdge = postEdges[prevID];
 
     createPage({
-      path: edge.node.fields.slug,
+      path: `/blog/${edge.node.fields.slug}`,
       component: postPage,
       context: {
         slug: edge.node.fields.slug,
