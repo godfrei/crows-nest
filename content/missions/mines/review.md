@@ -1,5 +1,5 @@
 ---
-mission: mines
+mission-slug: "mines"
 title: "Mines Review"
 reviewers: 
   -  "Geoff Elliott"

@@ -1,5 +1,5 @@
 ---
-mission: nightmare
+mission-slug: "kyles-nightmare"
 title: "Kyle's Nightmare Review"
 reviewers: 
   -  "Geoff Elliott"

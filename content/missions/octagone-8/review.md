@@ -1,5 +1,5 @@
 ---
-mission: octagone
+mission-slug: "octagone-8"
 title: "Octagone 8 Review"
 reviewers: 
   -  "Geoff Elliott"

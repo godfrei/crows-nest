@@ -1,5 +1,5 @@
 ---
-mission: opdstar
+mission-slug: "operation-death-star"
 title: "Operation Death Star Review"
 reviewers: 
   -  "Geoff Elliott"
