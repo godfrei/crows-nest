@@ -1,14 +1,17 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import MissionCard from '../MissionCard';
-import { ecGrid } from './EditorsChoiceListing.module.scss';
+import Helmet from 'react-helmet';
+import Layout from '../../layout';
+import config from '../../../data/SiteConfig';
+import MissionListing from '../../components/MissionListing';
 
-const EditorsChoiceListing = () => {
+const EditorsChoicePage = () => {
+
     const data = useStaticQuery(graphql`
-        query HomepageECQuery {
+        query ECQuery {
             allMarkdownRemark(
-                limit: 5
-                sort: {fields: [fields___date], order: DESC}
+                limit: 100
+                sort: {fields: [frontmatter___title], order: ASC}
                 filter: {frontmatter: {editorsChoice: {eq: "yes"}}}
             ) {
                 edges {
@@ -34,20 +37,16 @@ const EditorsChoiceListing = () => {
     `);
 
     return (
-        // <MissionListing missionEdges={data.allMarkdownRemark.edges} />
-        <ul className={ecGrid}>
-            {
-                data.allMarkdownRemark.edges.map(mission => {
-                    console.log(mission);
-                    return (
-                        <li key={mission.node.fields.slug}>
-                            <MissionCard node={mission.node} orientation="vertical" />
-                        </li>
-                    );
-                })
-            }
-        </ul>
+        <Layout>
+            <Helmet title={`Editor's Choice | ${config.siteTitle}`} />
+            <h1>Editor's Choice</h1>
+    
+            <p>These missions have been selected as the best-of-the-best the Dark Forces community has to offer.</p>
+    
+            <MissionListing missionEdges={data.allMarkdownRemark.edges} />
+        </Layout>
+
     );
 }
 
-export default EditorsChoiceListing;
+export default EditorsChoicePage
