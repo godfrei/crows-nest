@@ -3,7 +3,7 @@
 .header {
     position: relative;
     z-index: 3;
-    text-shadow: 1px 1px 0 black, 0 0 40px rgba(0,0,0,0.6);
+    text-shadow: 1px 1px 0 $black, 0 0 40px rgba(0,0,0,0.6);
 }
 
 .content {
@@ -20,7 +20,7 @@
         display: block;
         content: "";
         grid-column: 2 / 6;
-        background-color: rgba($gray,0.85);
+        background-color: rgba($black,0.5);
         // backdrop-filter: blur(3px);
         border-left: 10px solid $teal;
         z-index: 0;

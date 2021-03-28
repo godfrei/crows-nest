@@ -1,8 +1,15 @@
 @import '../styles/colors';
+@import '../styles/vars';
 
 .mission {
     position: relative;
     z-index: 1;
+    padding-top: 25vh;
+    background-image: linear-gradient(to bottom, transparent 25vh, $black 75vh);
+    margin-left: -#{$spacing-10};
+    margin-right: -#{$spacing-10};
+    margin-bottom: -#{$spacing-10};
+    padding-bottom: $spacing-10;
 
     &:after {
         position: absolute;
@@ -72,4 +79,18 @@
             display: block;
         }
     }
+}
+
+.coverImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    image-rendering: pixelated;
+    background-position: bottom;
+    background-color: $teal;
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: 0.5;
 }

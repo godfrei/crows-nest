@@ -9,8 +9,7 @@ import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import moment from 'moment';
 import CaptureCarousel from '../components/CaptureCarousel';
-import { mission, missingFile, download, descAndReviews, plot } from './mission.module.scss';
-import { fil } from 'date-fns/locale';
+import { mission, missingFile, download, descAndReviews, plot, coverImage } from './mission.module.scss';
 
 export default ({ data, pageContext }) => {
   const { slug } = pageContext;
@@ -76,6 +75,10 @@ export default ({ data, pageContext }) => {
     }
   }
 
+  console.log(data);
+  const cover = data.markdownRemark.frontmatter.cover ? data.markdownRemark.frontmatter.cover.publicURL : '';
+  console.log(cover);
+
   if (!post.id) {
     post.id = slug
   }
@@ -85,6 +88,7 @@ export default ({ data, pageContext }) => {
         <title>Mission {`${post.title} | ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
+      <div className={coverImage} style={{ backgroundImage: `url(${cover})` }}></div>
       <div className={mission}>
         <MissionHeader node={postNode} />
         <div className="content">
