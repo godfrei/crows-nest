@@ -1,10 +1,10 @@
 ---
-mission-slug: "return-of-the-jawa"
+missionSlug: "return-of-the-jawa"
 title: "Return of the Jawa Review"
 reviewers: 
   -  "Allen Newman"
 date: 1997-04-18
-rating: "75"
+rating: 75
 ---
 
 This is the second level from the author of "For Leia's Honor", a small level with the dubious premise that Kyle had to recover Han Solo's private snapshots of the Princess' drunken indiscretions. Since that first project, the author worked for more than a year to bring us "Return of the Jawa". I only wish the wait had been more worthwhile.

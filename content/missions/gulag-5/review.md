@@ -1,10 +1,10 @@
 ---
-mission-slug: "gulag-5"
+missionSlug: "gulag-5"
 title: "Gulag 5 Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-02-9
-rating: "40"
+rating: 40
 ---
 
 If the plot above is enough to make you yawn, you're not the only one. The first blow to this level is the incredible mundane premise behind it. You can imagine the conversation:

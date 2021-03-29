@@ -11,8 +11,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Frontmatter {
-      mission: MarkdownRemark @link(by: "frontmatter.slug", from: "mission-slug")
-      reviews: [MarkdownRemark] @link(by: "frontmatter.mission-slug", from: "slug")
+      mission: MarkdownRemark @link(by: "frontmatter.slug", from: "missionSlug")
+      reviews: [MarkdownRemark] @link(by: "frontmatter.missionSlug", from: "slug")
       screenshots: ScreenshotJson @link(by: "mission", from: "slug")
     }
     
@@ -191,10 +191,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: '/missions',
     component: path.resolve('./src/templates/mission-list.js'),
     context: {
-      'sort': {
-        'fields': 'frontmatter___title',
-        'order': 'ASC',
-      },
+      'sort': 'title',
     },
   });
 
@@ -203,10 +200,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: '/missions/rating',
     component: path.resolve('./src/templates/mission-list.js'),
     context: {
-      'sort': {
-        'fields': 'frontmatter___rating',
-        'order': 'DESC',
-      },
+      'sort': 'rating',
     },
   });
 
@@ -214,10 +208,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: '/missions/date',
     component: path.resolve('./src/templates/mission-list.js'),
     context: {
-      'sort': {
-        'fields': 'frontmatter___date',
-        'order': 'DESC',
-      },
+      'sort': 'date',
     },
   });
 

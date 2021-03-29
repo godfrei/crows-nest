@@ -1,10 +1,10 @@
 ---
-mission-slug: "sensation"
+missionSlug: "sensation"
 title: "Sensation Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-09-08
-rating: ""
+rating:
 ---
 
 There seem to be more levels coming out that don't really have a plot but just like to showcase something that the author managed to figure out. Previously it was just some loopholes in the Dark Forces engine that were featured in the levels. This time the author shows you something that might be useful in future levels.

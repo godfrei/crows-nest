@@ -1,10 +1,10 @@
 ---
-mission-slug: "return-to-bespin"
+missionSlug: "return-to-bespin"
 title: "Return to Bespin Review"
 reviewers: 
   - "Jeff Walters"
 date: 1996-09-29
-rating: "96"
+rating: 96
 ---
 
 From the moment you walk through the landing pad door at the start of this level you can tell that a lot of work has gone into making this level accurately resemble the Bespin from The Empire Strikes Back. The architecture for this level is simply breath-taking, out of all levels made, no other level captures the SW universe this well....you'd swear you're in the movie, expecting to see Lando, Han & Leia strolling down the corridors at any time.

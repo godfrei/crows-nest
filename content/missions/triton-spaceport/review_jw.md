@@ -1,10 +1,10 @@
 ---
-mission-slug: "triton-spaceport"
+missionSlug: "triton-spaceport"
 title: "Triton Spaceport Review"
 reviewers: 
   -  "Jeff Walters"
 date: 1997-04-26
-rating: "87"
+rating: 87
 ---
 
 Sound interesting?......well, the level for the most part is very interesting.

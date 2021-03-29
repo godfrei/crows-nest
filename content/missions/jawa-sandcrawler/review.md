@@ -1,10 +1,10 @@
 ---
-mission-slug: "jawa-sandcrawler"
+missionSlug: "jawa-sandcrawler"
 title: "Jawa Sandcrawler Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-02-15
-rating: "78"
+rating: 78
 ---
 
 ![Jawa Sandcrawler screenshot](./sandcraw.png "You get to run around inside a jawa sandcrawler. And that's about it.")

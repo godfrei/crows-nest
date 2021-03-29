@@ -1,10 +1,10 @@
 ---
-mission-slug: "the-hoerby-trilogy-imperial-outpost-d-42"
+missionSlug: "the-hoerby-trilogy-imperial-outpost-d-42"
 title: "The Hoerby Trilogy: Imperial Outpost D-42 Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-01-14
-rating: "90"
+rating: 90
 ---
 
 The story picks up right where Dark Forces left off, and the quality of the levels does a pretty good job of picking up there too. The three levels in this set tell the story of Kyle's escape from prison, the destruction of the base and the recovery of his ship.

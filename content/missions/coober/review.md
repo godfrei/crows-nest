@@ -1,10 +1,10 @@
 ---
-mission-slug: "coober"
+missionSlug: "coober"
 title: "Coober Review"
 reviewers: 
   - "Geoff Elliott"
 date: 1996-11-14
-rating: "25"
+rating: 25
 ---
 
 ![Coober screenshot](./coober.png "Coober: what you see is what you get. I can't even come up with something funny to say.")

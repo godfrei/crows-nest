@@ -1,5 +1,5 @@
 ---
-mission_id: darktide
+mission_id: darktide2
 slug: "dark-tide-episode-ii-nightfall"
 editorsChoice:
 title: "Dark Tide: Episode II - Nightfall"

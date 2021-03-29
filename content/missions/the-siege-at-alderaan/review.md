@@ -1,10 +1,10 @@
 ---
-mission-slug: "the-siege-at-alderaan"
+missionSlug: "the-siege-at-alderaan"
 title: "The Siege at Alderaan Review"
 reviewers: 
   - "Geoff Elliott"
 date: 1996-11-01
-rating: "82"
+rating: 82
 ---
 
 ![TIE hangar screenshot](./alderaan.png "Kyle must steal the plans for the Emperor's new starfighter.")

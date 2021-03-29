@@ -1,10 +1,10 @@
 ---
-mission-slug: "a-jedi-night"
+missionSlug: "a-jedi-night"
 title: "A Jedi Night Review"
 reviewers: 
   -  "Steve Noall"
 date: 1997-09-15
-rating: "70"
+rating: 70
 ---
 
 The idea of playing the role of a Jedi Knight during the Clone Wars was fun, but the level itself is a big letdown. The level is basically just the level Imperial City with one new WAX. The new WAX is a just Boba Fett with stormtrooper logic. I have to say that the WAX does fit perfectly into the level, since the Clone Wars were fought between Jedi Knights and Mandalorian Warriors. I'm just grateful the author had sense enough to use stormtrooper logic for the Mandalorians, rather than Boba Fett logic.

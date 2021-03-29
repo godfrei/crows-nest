@@ -1,10 +1,10 @@
 ---
-mission-slug: "boba-fetts-revenge"
+missionSlug: "boba-fetts-revenge"
 title: "Boba Fett's Revenge Review"
 reviewers: 
   - "Geoff Elliott"
 date: 1997-02-08
-rating: "98"
+rating: 98
 ---
 ![Boba Fett's Revenge screenshot 1](./bfrvng1.png "The architecture in this level is beautifully done, with textures well done and placed wisely to give the right look.")
 

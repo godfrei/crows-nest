@@ -1,10 +1,10 @@
 ---
-mission-slug: "operation-archangel-episode-i-mos-eisley-the-maze"
+missionSlug: "operation-archangel-episode-i-mos-eisley-the-maze"
 title: "Operation Archangel Episode I - Mos Eisley: The Maze Review"
 reviewers: 
   - "Anonymous"
 date: 1997-01-08
-rating: "93"
+rating: 93
 ---
 
 ![Archangel screenshot](./archangel.png "As with many levels based in the movies, this one recreates what we all know well, adding in subtle twists to bend it to the author's wishes.")

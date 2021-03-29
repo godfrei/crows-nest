@@ -1,10 +1,10 @@
 ---
-mission-slug: "hydra"
+missionSlug: "hydra"
 title: "Hydra Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-04-02
-rating: "74"
+rating: 74
 ---
 
 This is a level that should have succeeded. There's a cool story behind it that would make for some great action and fun in the right hands. But this level fails to execute, making some pretty obvious mistakes and also not taking advantage of several opportunities.

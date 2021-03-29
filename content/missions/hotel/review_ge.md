@@ -1,10 +1,10 @@
 ---
-mission-slug: "lahara-hotel"
+missionSlug: "lahara-hotel"
 title: "Lahara Hotel Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-12-03
-rating: "90"
+rating: 90
 ---
 
 ![Lahara Hotel screenshot](./hotel.png "The author has doen a great job with this hotel, expertly combining familiar ideas with new ones.")

@@ -1,10 +1,10 @@
 ---
-mission-slug: "lahara-hotel"
+missionSlug: "lahara-hotel"
 title: "Lahara Hotel Review"
 reviewers: 
   -  "Anonymous"
 date: 1996-12-03
-rating: ""
+rating:
 ---
 
 This is, in my opinion, one of the best homemade Dark Forces levels ever made. Many new WAXes and other components are woven into the level, but with nothing in excess. The plot involves Kyle's attempt to rescue four diplomats (jokingly labeled figures already seen in the original game, such as Moff Rebus' and Crix Madine's relatives) who are sympathetic to the rebellion. The empire has captured them and is holding them in the Lahara Hotel, a deluxe highrise building known throughout the galaxy.

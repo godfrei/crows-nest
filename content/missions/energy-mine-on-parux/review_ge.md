@@ -1,10 +1,10 @@
 ---
-mission-slug: "energy-mine-on-parux"
+missionSlug: "energy-mine-on-parux"
 title: "Energy Mine on Parux Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-04-10
-rating: "94"
+rating: 94
 ---
 
 

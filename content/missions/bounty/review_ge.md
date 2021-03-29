@@ -1,10 +1,10 @@
 ---
-mission-slug: "the-bounty-hunt"
+missionSlug: "the-bounty-hunt"
 title: "The Bounty Hunt Review"
 reviewers: 
   - "Geoff Elliott"
 date: 1997-03-04
-rating: "95"
+rating: 95
 ---
 
 **Leia:** "I though you had decided to stay..."

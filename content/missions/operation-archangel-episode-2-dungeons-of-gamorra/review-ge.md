@@ -1,10 +1,10 @@
 ---
-mission-slug: "operation-archangel-episode-2-dungeons-of-gamorra"
+missionSlug: "operation-archangel-episode-2-dungeons-of-gamorra"
 title: "Operation Archangel Episode 2 - Dungeons of Gamorra Review"
 reviewers: 
   - "Geoff Elliott"
 date: 1997-03-18
-rating: "96"
+rating: 96
 ---
 
 This has been, for me, one of the most anticipated levels for a long time. I loved the first and was anxious to devour the next offering. And this level doesn't disappoint.

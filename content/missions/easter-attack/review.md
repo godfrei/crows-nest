@@ -1,10 +1,10 @@
 ---
-mission-slug: "easter-attack"
+missionSlug: "easter-attack"
 title: "Easter Attack Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-21
-rating: "78"
+rating: 78
 ---
 
 ![Easter Attack screenshot](./easter.png "The monastary has been done very well, and almost has a gothic feel to it.")

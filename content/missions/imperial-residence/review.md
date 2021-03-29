@@ -1,10 +1,10 @@
 ---
-mission-slug: "imperial-residence"
+missionSlug: "imperial-residence"
 title: "Imperial Residence Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-09-04
-rating: ""
+rating:
 ---
 
 Using only regular sectors, the author has taken the time to create some new and interesting features in this level.

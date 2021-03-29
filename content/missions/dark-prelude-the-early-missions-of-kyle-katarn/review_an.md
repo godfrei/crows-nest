@@ -1,10 +1,10 @@
 ---
-mission-slug: "dark-prelude-the-early-missions-of-kyle-katarn"
+missionSlug: "dark-prelude-the-early-missions-of-kyle-katarn"
 title: "Dark Prelude - The Early Missions of Kyle Katarn Review"
 reviewers: 
   -  "Anonymous"
 date: 1997-02-04
-rating: ""
+rating:
 ---
 
 The first level does a great job, the plot being that Kyle must infiltrate the base where Jan is being held, find the detention block, and rescue her. The idea of doing a prequel is, in true George Lucas style, a great idea, and the plot is excellent to match. Everything is so thoughtfully planned out, with Kyle discreetly sneaking onto the planet, unarmed, and then buying a secondhand Bryar pistol on the black market, the weapon that will become his trusty standby. Another brilliant and realistic twist on the plan of the level is the way Kyle infiltrates the base. Knowing that attacking from the heavily fortified gate's front door is a bad idea (something which other levels seem to forget) Kyle, upon studying a blueprint of the base, notices a sewage treatment center that the base operates near a large mountainous ravine, and this is how you must enter the base.

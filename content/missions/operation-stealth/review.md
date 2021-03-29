@@ -1,10 +1,10 @@
 ---
-mission-slug: "operation-stealth"
+missionSlug: "operation-stealth"
 title: "Operation Stealth Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-03-07
-rating: "88"
+rating: 88
 ---
 
 

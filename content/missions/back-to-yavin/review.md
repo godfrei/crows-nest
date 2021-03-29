@@ -1,10 +1,10 @@
 ---
-mission-slug: "back-to-yavin"
+missionSlug: "back-to-yavin"
 title: "Back to Yavin Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-10
-rating: "94"
+rating: 94
 ---
 
 I love it when level authors manage to use locations from the movies and wrap a story around them. It allows us to walk through the areas we saw on the big screen or TV, and experience them again in a new way. Return to Bespin was the first to do this, and now Back to Yavin has succeeded brilliantly with the same notion.

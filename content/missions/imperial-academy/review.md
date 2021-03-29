@@ -1,10 +1,10 @@
 ---
-mission-slug: "imperial-academy"
+missionSlug: "imperial-academy"
 reviewers: 
   - "Geoff Elliott"
 title: "Imperial Academy Review"
 date: 1996-10-25
-rating: "94"
+rating: 94
 ---
 
 This is a challenging level. 

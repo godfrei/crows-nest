@@ -1,10 +1,10 @@
 ---
-mission-slug: "galleria"
+missionSlug: "galleria"
 title: "Galleria Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-01-09
-rating: "40"
+rating: 40
 ---
 
 ![Galleria screenshot](./galleria.png "A statement about the level of commercialization in society today? This level is nothing more than a large advertisement.")

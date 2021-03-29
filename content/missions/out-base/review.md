@@ -1,10 +1,10 @@
 ---
-mission-slug: "out-base"
+missionSlug: "out-base"
 title: "OutBase Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-04-09
-rating: "50"
+rating: 50
 ---
 
 ![OutBase screenshot](./outbase.png "One of the more interesting areas.")

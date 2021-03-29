@@ -1,10 +1,10 @@
 ---
-mission-slug: "df-96-the-ties-that-bind"
+missionSlug: "df-96-the-ties-that-bind"
 title: "DF96 - The Ties That Bind Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-18
-rating: "98"
+rating: 98
 ---
 
 ![DF96 screenshot 1](./df961.png "The Crow waits to be liberated from its docking bay in the first level of this extensive set.")

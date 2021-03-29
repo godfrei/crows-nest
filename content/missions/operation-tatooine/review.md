@@ -1,10 +1,10 @@
 ---
-mission-slug: "operation-tatooine"
+missionSlug: "operation-tatooine"
 title: "Operation Tatooine Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-22
-rating: "79"
+rating: 79
 ---
 
 ![Operation Tatooine screenshot](./optat.png "The author has created a wonderful Tatooine atmosphere, complete with new WAXs, 3DOs, and VUEs.")

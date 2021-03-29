@@ -1,10 +1,10 @@
 ---
-mission-slug: "distribution-center"
+missionSlug: "distribution-center"
 title: "Distribution Center Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-23
-rating: "69"
+rating: 69
 ---
 
 This is one tough level to get through. Not only are there more enemies and death traps than you'd find in several other levels combined, but the author has put in several puzzles for you to figure out. This level will tax your skills as a Dark Forces player, and I doubt anyone will complete it on the first try. As the author says, this level will require you to play it several times before you finally master it. But after running through it, I can't help but wonder why anyone would really want to.

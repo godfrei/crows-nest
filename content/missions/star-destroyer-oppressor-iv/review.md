@@ -1,10 +1,10 @@
 ---
-mission-slug: "star-destroyer-oppressor-iv"
+missionSlug: "star-destroyer-oppressor-iv"
 title: "Star Destroyer/\"Oppressor IV\" Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-25
-rating: "60"
+rating: 60
 ---
 
 I was very excited about the level for the first few sentences of the description. But then my enthusiasm quickly went downhill. The plot seemed great up until he included that bit about Palpatine's brother. I'd like to think I'm fairly inclusive when it comes to plot ideas, but this seems a little out of reach. I wonder why he couldn't leave well enough alone and turn out a great level.

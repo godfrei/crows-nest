@@ -1,10 +1,10 @@
 ---
-mission-slug: "perplexion"
+missionSlug: "perplexion"
 title: "Perplexion Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-09-07
-rating: ""
+rating:
 ---
 
 per-plex(per pleks'e te) **n.** | **1** to make (a person) uncertain, doubtful, or hesitant; confuse; puzzle **2** to make intricate or complicated; make confusing or hard to understand

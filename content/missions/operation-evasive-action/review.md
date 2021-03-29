@@ -1,10 +1,10 @@
 ---
-mission-slug: "operation-evasive-action"
+missionSlug: "operation-evasive-action"
 title: "Operation: Evasive Action Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-16
-rating: "82"
+rating: 82
 ---
 
 ![Operation: Evasive Action screenshot](./evasive.png "An entire legion of my best troops awaits them...")

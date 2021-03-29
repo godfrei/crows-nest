@@ -1,10 +1,10 @@
 ---
-mission-slug: "jundland"
+missionSlug: "jundland"
 title: "Jundland Review"
 reviewers: 
   -  "Lionel Fouillen"
 date: 1997-04-06
-rating: ""
+rating:
 ---
 
 This is the second mission from the Hammer's Fist, a group of add-on levels creators who decided to make you play the role of a stormtrooper instead of Kyle Katarn. This alone deserves to be encouraged, for it shows one way among others to set farther the limits of the game, and to challenge the player on unexploited gaming territories. The briefing is personalized, with typical colors, Imperial insigna and mission reference code. Once you're in the game, you can appreciate to see that Kyle's hands were replaced with stormtrooper ones, which demonstrates that the author paid attention to the every single detail.

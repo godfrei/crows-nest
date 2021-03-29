@@ -1,10 +1,10 @@
 ---
-mission-slug: "kyle-meets-kaled"
+missionSlug: "kyle-meets-kaled"
 title: "Kyle Meets Kaled Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-02-08
-rating: "61"
+rating: 61
 ---
 
 ![Kyle Meets Kaled screenshot](./kmc.png "Most of the areas in this level are pretty bland and disimilar. Others, like this one, are just plain ugly.")

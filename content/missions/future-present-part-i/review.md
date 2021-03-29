@@ -1,10 +1,10 @@
 ---
-mission-slug: "future-present-part-i"
+missionSlug: "future-present-part-i"
 title: "Future Present Part I Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-01-11
-rating: "90"
+rating: 90
 ---
 
 ![Future Present Part I screenshot](./future1.png "Grandiose architecture, a suspenseful story, and an excellent feel for what works well in a level combine to make this a great play.")

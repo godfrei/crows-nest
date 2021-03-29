@@ -1,10 +1,10 @@
 ---
-mission-slug: "frogman-modified"
+missionSlug: "frogman-modified"
 title: "Frogman Modified Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-04-06
-rating: "35"
+rating: 35
 ---
 
 This is a modification of the [original level](/missions/frogman/). The author has taken the story and parts of the level and integrated them with his own new ideas. I have to say that the final outcome is less than exceptional.

@@ -1,10 +1,10 @@
 ---
-mission-slug: "kyle-on-spice"
+missionSlug: "kyle-on-spice"
 title: "Kyle On Spice Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-09-08
-rating: ""
+rating:
 ---
 
 ![Kyle On Spice screenshot](./spice.png "Uhm, Jan, I don't think we're in Kansas anymore.")

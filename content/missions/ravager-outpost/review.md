@@ -1,10 +1,10 @@
 ---
-mission-slug: "ravager-outpost"
+missionSlug: "ravager-outpost"
 title: "Ravager Outpost Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-04-09
-rating: "80"
+rating: 80
 ---
 
 The story sounds great. It makes sense and is a good area for some new action to take place. All we ever get to hear is that Kyle delivered the plans. But why does it have to be so easy for him? I think that some kind of intervention there is a great idea. But unfortunately this level doesn't quite make good on the story.

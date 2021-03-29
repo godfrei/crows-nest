@@ -1,10 +1,10 @@
 ---
-mission-slug: "tie-defender-base"
+missionSlug: "tie-defender-base"
 title: "TIE Defender Base Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-17
-rating: "96"
+rating: 96
 ---
 
 ![TIE Defender Base screenshot 1](./defbase1.png "New ideas and creations abound in this level.")

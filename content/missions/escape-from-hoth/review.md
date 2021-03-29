@@ -1,10 +1,10 @@
 ---
-mission-slug: "escape-from-hoth"
+missionSlug: "escape-from-hoth"
 title: "Escape from Hoth Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-25
-rating: "85"
+rating: 85
 ---
 
 ![Escape from Hoth screenshot](./escape.png "You round the corner to see a large metal structure. You raise your head and look up, and up...")

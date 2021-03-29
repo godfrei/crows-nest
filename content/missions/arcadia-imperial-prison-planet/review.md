@@ -1,10 +1,10 @@
 ---
-mission-slug: "arcadia-imperial-prison-planet"
+missionSlug: "arcadia-imperial-prison-planet"
 title: "Arcadia: Imperial Prison Planet Review"
 reviewers: 
   - "Geoff Elliott"
 date: 1996-10-30
-rating: "76"
+rating: 76
 ---
 
 The story that sets the base for this level has some flaws, and the level doesn't do much to grow beyond it. It starts out great, with some edited cutscenes from TIE Fighter, and some altered sections from Dark Forces. It sets the beginning of a mood that really fails to continue.

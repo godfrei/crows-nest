@@ -1,10 +1,10 @@
 ---
-mission-slug: "the-mountains-of-relion"
+missionSlug: "the-mountains-of-relion"
 title: "The Mountains of Relion Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-03-07
-rating: "87"
+rating: 87
 ---
 
 Save me from an endless supply of Death Star plans levels! PLEASE!

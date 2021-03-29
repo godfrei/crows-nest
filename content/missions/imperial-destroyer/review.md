@@ -1,10 +1,10 @@
 ---
-mission-slug: "imperial-destroyer"
+missionSlug: "imperial-destroyer"
 title: "Imperial Destroyer Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-04-09
-rating: "65"
+rating: 65
 ---
 
 It sounds simple enough. Just break into a Star Destroyer and steal the Death Star plans. Piece of cake right?

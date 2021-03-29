@@ -1,10 +1,10 @@
 ---
-mission-slug: "the-evacuation-of-hoth"
+missionSlug: "the-evacuation-of-hoth"
 title: "The Evacuation of Hoth Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1996-11-24
-rating: "87"
+rating: 87
 ---
 
 ![Evacuation of Hoth screenshot 1](./evac1.png "You've got to watch out; the Imperial attack continues to pound the base as you try to escape.")

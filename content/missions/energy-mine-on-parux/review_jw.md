@@ -1,10 +1,10 @@
 ---
-mission-slug: "energy-mine-on-parux"
+missionSlug: "energy-mine-on-parux"
 title: "Energy Mine on Parux Review"
 reviewers: 
   -  "Jeff Walters"
 date: 1997-04-10
-rating: "91"
+rating: 91
 ---
 
 You know how sometimes you get a level that's been hyped up and you're sure will be great, but turns out to be ordinary.........well this level is the oppostie.

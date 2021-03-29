@@ -1,10 +1,10 @@
 ---
-mission-slug: "the-great-escape"
+missionSlug: "the-great-escape"
 title: "The Great Escape Review"
 reviewers: 
   -  "Anonymous"
 date: 1997-01-08
-rating: "94"
+rating: 94
 ---
 
 ![Great Escape screenshot](./greatesc.png "The author has managed to go beyond the normal confines of a "prison" level, adding in several new ideas.")

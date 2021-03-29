@@ -1,10 +1,10 @@
 ---
-mission-slug: "mission-impossible-operation-suicide"
+missionSlug: "mission-impossible-operation-suicide"
 title: "Mission Impossible: Operation Suicide Review"
 reviewers: 
   -  "Geoff Elliott"
 date: 1997-03-07
-rating: "69"
+rating: 69
 ---
 
 This level sounds pretty average, and that's really all it turns out to be. While the story COULD have provided some really neat sites if used properly, perhaps, say a really cool computer core or maybe a well thought out construction facility where we get to see the various stages of DT construction(something we never saw in Dark Forces), instead the author squanders his opportunity. He focuses on infesting the level with lots of traps designed to kill the player. It feels a lot like he's decided to make it the most difficult level anyone has ever played. He's partially succeeded, since I didn't make it through the first time, but after one time through it isn't tough. What he's really done is forgotten one of the objectives when creating a level: to make the experience enjoyable for somebody else.
