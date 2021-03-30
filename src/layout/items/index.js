@@ -15,6 +15,7 @@ const ItemsLayout = ({children}) => {
                     <ul className={navigation}>
                         <li><Link to="/database/items/shield-units" {...linkProps}><img src="/images/items/shield.png" alt="Shield Units" /></Link></li>
                         <li><Link to="/database/items/med-kit" {...linkProps}><img src="/images/items/medkit.png" alt="Med Kit" /></Link></li>
+                        <li><Link to="/database/items/key" {...linkProps}><img src="/images/items/key-red.png" alt="Key" /></Link></li>
                         <li><Link to="/database/items/battery" {...linkProps}><img src="/images/items/battery.png" alt="Battery" /></Link></li>
                         <li><Link to="/database/items/air-mask" {...linkProps}><img src="/images/items/air-mask.png" alt="Air Mask" /></Link></li>
                         <li><Link to="/database/items/ice-cleats" {...linkProps}><img src="/images/items/ice-cleats.png" alt="Ice Cleats" /></Link></li>
