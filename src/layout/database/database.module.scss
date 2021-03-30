@@ -37,6 +37,8 @@
         &.active {
             color: $teal;
             border-color: $teal;
+            background-color: rgba($teal, 0.1);
+            font-weight: 600;
         }
     }
 }

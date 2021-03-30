@@ -42,10 +42,27 @@
         font-size: 14px;
         font-weight: 500;
         text-decoration: none;
+        position: relative;
 
         &.active {
             color: $teal;
             border-color: $teal;
+            
+            img {
+                filter: saturate(0);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $teal;
+                background-blend-mode: multiply;
+                opacity: 0.1;
+            }
         }
     }
 
