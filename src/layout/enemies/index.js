@@ -85,7 +85,7 @@ const EnemiesLayout = ({children}) => {
                         </li>
                         <li>
                             <Link to="/database/enemies/kell-dragon" {...linkProps}>
-                                Kell Dragon
+                                <img src="/images/profiles/kell-dragon.png" alt="Kell Dragon" />
                             </Link>
                         </li>
                     </ul>
@@ -104,7 +104,7 @@ const EnemiesLayout = ({children}) => {
                         </li>
                         <li>
                             <Link to="/database/enemies/power-generating-unit-pgu" {...linkProps}>
-                                Power Generating Unit
+                                <img src="/images/profiles/pgu.png" alt="Power Generating Unit" />
                             </Link>
                         </li>
                         <li>
