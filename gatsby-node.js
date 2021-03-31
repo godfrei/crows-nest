@@ -6,17 +6,41 @@ const siteConfig = require("./data/SiteConfig");
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
+    type MissionsJson implements Node {
+      id:             String
+      slug:           String
+      title:          String
+      date:           Date
+      editorsChoice:  Boolean
+      filename:       String
+      authors:        [String]
+      description:    String
+      cover:          String
+      levelReplaced:  String
+      difficulty:     Boolean
+      bm:             Boolean
+      fme:            Boolean
+      wax:            Boolean
+      three_do:       Boolean
+      voc:            Boolean
+      gmd:            Boolean
+      vue:            Boolean
+      lfd:            Boolean
+      base:           String
+      editors:        String
+      reviews:        [MarkdownRemark] @link(by: "frontmatter.mission.slug", from: "slug")
+    }
+
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter
     }
 
     type Frontmatter {
-      mission: MarkdownRemark @link(by: "frontmatter.slug", from: "missionSlug")
-      reviews: [MarkdownRemark] @link(by: "frontmatter.missionSlug", from: "slug")
-      screenshots: ScreenshotJson @link(by: "mission", from: "slug")
+      mission: MissionsJson @link(by: "slug")
+      screenshots: ScreenshotsJson @link(by: "mission", from: "slug")
     }
     
-    type ScreenshotJson {
+    type ScreenshotsJson {
       mission: MarkdownRemark @link(by: "frontmatter.slug", from: "mission")
       captures: Capture
     }

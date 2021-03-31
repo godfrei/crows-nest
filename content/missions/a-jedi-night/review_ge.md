@@ -1,5 +1,5 @@
 ---
-missionSlug: "a-jedi-night"
+mission: "a-jedi-night"
 title: "A Jedi Night Review"
 reviewers: 
   -  "Geoff Elliott"

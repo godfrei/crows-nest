@@ -18,13 +18,28 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-transformer-json`,
     {
-      resolve: `gatsby-transformer-json`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/`,
-        typeName: `Json`,
+        path: `${__dirname}/data/missions.json`,
+        name: `missions`,
       },
     },
+    // {
+    //   resolve: `gatsby-transformer-json`,
+    //   options: {
+    //     path: `${__dirname}/content/`,
+    //     typeName: `Json`,
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-transformer-json`,
+    //   options: {
+    //     path: `${__dirname}/content/missions.json`,
+    //     name: `missions`,
+    //   },
+    // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
@@ -45,7 +60,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "missions",
+        name: "reviews",
         path: `${__dirname}/content/missions`
       }
     },
