@@ -118,7 +118,9 @@ export const pageQuery = graphql`
         date
         slug
         editorsChoice
-        cover
+        cover {
+          publicURL
+        }
         description
         authors
         filename

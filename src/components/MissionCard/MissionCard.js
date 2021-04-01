@@ -4,12 +4,12 @@ import Aurebesh from '../Aurebesh';
 import { card, authorList, cover, horizontal, vertical } from "./missioncard.module.scss"
 
 function averageRating(mission) {
-    if(!mission.node.reviews || mission.node.reviews.length <= 0) return 0;
+    if(!mission.reviews || mission.reviews.length <= 0) return 0;
     let ratingTotal = 0;
     let numberOfReviews = 0;
-    mission.node.reviews.forEach(review => {
-      if(typeof review.node.frontmatter.rating === "number") {
-        ratingTotal += review.node.frontmatter.rating;
+    mission.reviews.forEach(review => {
+      if(typeof review.frontmatter.rating === "number") {
+        ratingTotal += review.frontmatter.rating;
         numberOfReviews++;
       }
     });
@@ -18,20 +18,19 @@ function averageRating(mission) {
 }
 
 export default ({ node, orientation }) => {
-    const mission = node.frontmatter;
-    const coverUrl = (mission.cover) ? mission.cover.publicURL : '';
-    const authors = mission.authors ? mission.authors.join(', ') : 'Unknown';
-    const excerpt = mission.description ? mission.description.split(' ').slice(0, 30).join(' ') : '';
+    const coverUrl = (node.cover) ? node.cover.publicURL : '';
+    const authors = node.authors ? node.authors.join(', ') : 'Unknown';
+    const excerpt = node.description ? node.description.split(' ').slice(0, 30).join(' ') : '';
     const orientationClass = orientation === 'vertical' ? vertical : horizontal;
     const rating = averageRating({ node: node });
 
     return (
-        <Link to={`/missions/${node.fields.slug}`} className={`${card} ${orientationClass}`}>
+        <Link to={`/missions/${node.slug}`} className={`${card} ${orientationClass}`}>
             <div className={cover} style={{ backgroundImage: `url(${coverUrl})` }}></div>
             <article>
                 <h1>
-                    <Aurebesh text={node.frontmatter.title} />
-                    {node.frontmatter.title}
+                    <Aurebesh text={node.title} />
+                    {node.title}
                 </h1>
                 <span title="Authors" className={authorList}>{authors}</span>
                 <p>{excerpt}&hellip;</p>
