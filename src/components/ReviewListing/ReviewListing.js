@@ -18,10 +18,6 @@ const ReviewListing = () => {
         ) {
           edges {
             node {
-              fields {
-                slug
-                date(formatString: "MMMM DD, YYYY")
-              }
               excerpt
               frontmatter {
                 title
@@ -33,15 +29,8 @@ const ReviewListing = () => {
                 }
                 date
                 mission {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                    cover {
-                      publicURL
-                    }
-                  }
+                  slug
+                  title
                 }
               }
             }

@@ -1,0 +1,12 @@
+[
+    {
+        "mission": "a-jedi-night",
+        "file": "./images/jedinight.png",
+        "caption": "It's still the same Coruscant, but there have been a few changes since...er.. before you saw it last."
+    },
+    {
+        "mission": "imperial-destroyer",
+        "file": "./images/impdest.png",
+        "caption": "A lack of good texture choices and bad architecture leaves this level floundering."
+    }
+]

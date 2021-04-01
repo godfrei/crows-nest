@@ -18,7 +18,7 @@ export default ({ data, pageContext }) => {
 
   const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
 
-  const captures = data?.allJson?.nodes[0]?.captures || [];
+  const captures = data?.allScreenshots?.nodes[0]?.captures || [];
 
   function getReviewContent(reviews) {
     let reviewContent = null;
@@ -111,17 +111,14 @@ export default ({ data, pageContext }) => {
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query MissionBySlug($slug: String!, $reviewRegex: String!, $fileRegex: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      excerpt
-      frontmatter {
+  query MissionBySlug($slug: String!, $fileRegex: String!) {
+    allMissionsJson(filter: {slug: {eq: $slug} }) {
+      nodes {
         title
-        cover {
-          name
-          publicURL
-        }
         date
+        slug
+        editorsChoice
+        cover
         description
         authors
         filename
@@ -137,39 +134,15 @@ export const pageQuery = graphql`
         lfd
         base
         editors
-      }
-      fields {
-        slug
-        date(formatString: "MMMM DD, YYYY")
-      }
-    }
-    allMarkdownRemark(
-      limit: 2000
-      filter: { 
-        fields: { slug: { regex: $reviewRegex } }
-      }
-      sort: {
-        fields: frontmatter___date
-        order:ASC
-      }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
+        reviews {
           html
           frontmatter {
-            reviewers
             rating
+            reviewers
             date
           }
         }
-      }
-    }
-    allJson(filter: {mission: {eq: $slug}}) {
-      nodes {
-        mission
-        captures {
+        screenshots {
           caption
           file {
             publicURL

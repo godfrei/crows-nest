@@ -43,7 +43,6 @@ const Index = ({ data }) => {
             </div>
             <div>
               <h2 className="uppercase">Recent Reviews</h2>
-              <ReviewListing />
             </div>
           </div>
 
@@ -51,7 +50,6 @@ const Index = ({ data }) => {
 
           <h2>Looking for a guaranteed mission to try?</h2>
           <p>The Editor's Choice missions have been selected by reviewers at The Crow's Nest as the best the Dark Forces community has to offer.</p>
-          <EditorsChoiceListing />
           <Link to="/missions/editors-choice">All Editor's Choice Missions</Link>
 
           <hr />

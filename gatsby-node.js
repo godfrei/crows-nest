@@ -12,10 +12,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       title:          String
       date:           Date
       editorsChoice:  Boolean
-      filename:       String
       authors:        [String]
       description:    String
-      cover:          String
       levelReplaced:  String
       difficulty:     Boolean
       bm:             Boolean
@@ -29,6 +27,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       base:           String
       editors:        String
       reviews:        [MarkdownRemark] @link(by: "frontmatter.mission.slug", from: "slug")
+      screenshots:    [ScreenshotsJson] @link(by: "mission.slug", from: "slug")
     }
 
     type MarkdownRemark implements Node {
@@ -37,16 +36,10 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Frontmatter {
       mission: MissionsJson @link(by: "slug")
-      screenshots: ScreenshotsJson @link(by: "mission", from: "slug")
     }
     
-    type ScreenshotsJson {
-      mission: MarkdownRemark @link(by: "frontmatter.slug", from: "mission")
-      captures: Capture
-    }
-
-    type Capture {
-      file: File
+    type ScreenshotsJson implements Node {
+      mission: MissionsJson @link(by: "slug")
       caption: String
     }
   `;

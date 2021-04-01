@@ -26,20 +26,20 @@ module.exports = {
         name: `missions`,
       },
     },
-    // {
-    //   resolve: `gatsby-transformer-json`,
-    //   options: {
-    //     path: `${__dirname}/content/`,
-    //     typeName: `Json`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-transformer-json`,
-    //   options: {
-    //     path: `${__dirname}/content/missions.json`,
-    //     name: `missions`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/screenshots.json`,
+        name: `screenshots`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/images`,
+        name: `images`,
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
