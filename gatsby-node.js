@@ -102,6 +102,74 @@ exports.createPages = async ({ graphql, actions }) => {
   const itemPage = path.resolve('src/templates/items/index.js');
   const weaponPage = path.resolve('src/templates/weapons/index.js');
 
+  // Create Mission Lists page
+  createPage({
+    path: '/missions',
+    component: path.resolve('./src/templates/mission-list.js'),
+    context: {
+      'sort': 'title',
+    },
+  });
+
+  // How to do this? Need to get rating from reviews, but...
+  createPage({
+    path: '/missions/rating',
+    component: path.resolve('./src/templates/mission-list.js'),
+    context: {
+      'sort': 'rating',
+    },
+  });
+
+  createPage({
+    path: '/missions/date',
+    component: path.resolve('./src/templates/mission-list.js'),
+    context: {
+      'sort': 'date',
+    },
+  });
+
+  // Query Missions JSON
+
+  const missionQueryResult = await graphql(
+    `
+      {
+        allMissionsJson {
+          nodes {
+            slug
+            cover {
+							publicURL
+            }
+          }
+        }
+      }
+    `
+  );
+
+  if (missionQueryResult.errors) {
+    console.error(missionQueryResult.errors);
+    throw missionQueryResult.errors;
+  }
+
+  const missionNodes = missionQueryResult.data.allMissionsJson.nodes;
+
+  // MISSIONS
+
+  // let missionEdges = markdownEdges.filter((edge) => {
+  //   // Filter out only the missions, not the reviews
+  //   if (edge.node.fields.collection === 'missions' && edge.node.fields.slug.indexOf('review') === -1) 
+  //     return edge;
+  // });
+
+  missionNodes.forEach((node, index) => {
+    createPage({
+      path: `/missions/${node.slug}`,
+      component: missionPage,
+      context: {
+        slug: node.slug,
+      }
+    });
+  });
+
   // Query all the markdown files
 
   const markdownQueryResult = await graphql(
@@ -190,53 +258,6 @@ exports.createPages = async ({ graphql, actions }) => {
         nextslug: nextEdge.node.fields.slug,
         prevtitle: prevEdge.node.frontmatter.title,
         prevslug: prevEdge.node.fields.slug,
-      }
-    });
-  });
-
-
-  // MISSIONS
-
-  let missionEdges = markdownEdges.filter((edge) => {
-    // Filter out only the missions, not the reviews
-    if (edge.node.fields.collection === 'missions' && edge.node.fields.slug.indexOf('review') === -1) 
-      return edge;
-  });
-
-  // Create Missions page(s)
-  createPage({
-    path: '/missions',
-    component: path.resolve('./src/templates/mission-list.js'),
-    context: {
-      'sort': 'title',
-    },
-  });
-
-  // How to do this? Need to get rating from reviews, but...
-  createPage({
-    path: '/missions/rating',
-    component: path.resolve('./src/templates/mission-list.js'),
-    context: {
-      'sort': 'rating',
-    },
-  });
-
-  createPage({
-    path: '/missions/date',
-    component: path.resolve('./src/templates/mission-list.js'),
-    context: {
-      'sort': 'date',
-    },
-  });
-
-  missionEdges.forEach((edge, index) => {
-    createPage({
-      path: `/missions/${edge.node.fields.slug}`,
-      component: missionPage,
-      context: {
-        slug: edge.node.fields.slug,
-        reviewRegex: `/${edge.node.fields.slug}-review.*/`,
-        fileRegex: `/${edge.node.frontmatter.filename}/`
       }
     });
   });

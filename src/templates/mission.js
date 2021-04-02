@@ -13,29 +13,27 @@ import { mission, missingFile, download, descAndReviews, plot, coverImage } from
 
 export default ({ data, pageContext }) => {
   const { slug } = pageContext;
-  const postNode = data.markdownRemark;
-  const post = postNode.frontmatter;
-
-  const reviews = (data.allMarkdownRemark) ? data.allMarkdownRemark.edges : []
-
-  const captures = data?.allScreenshots?.nodes[0]?.captures || [];
+  const missionNode = data.allMissionsJson.nodes[0];
+  console.log(missionNode);
 
   function getReviewContent(reviews) {
     let reviewContent = null;
     if(reviews.length >= 1) {
       reviewContent = (
         <>
-          {reviews.map(({ node }) => {
-            const review = node.frontmatter;
-            const date = new Date(review.date);
+          {reviews.map((review) => {
+            console.log(review);
+            const rating = review.frontmatter.rating;
+            const reviewers = review.frontmatter.reviewers;
+            const date = new Date(review.frontmatter.date);
             const dateString = moment(date).format("MMMM DD, YYYY");
 
             return (
               <>
                 <div>
-                  <p>Reviewed by: {review.reviewers.join(', ')} | {dateString}</p>
-                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                  <Rating score={review.rating} />
+                  <p>Reviewed by: {reviewers.join(', ')} | {dateString}</p>
+                  <div dangerouslySetInnerHTML={{ __html: review.html }} />
+                  <Rating score={rating} />
                 </div>
                 <hr />
               </>
@@ -52,15 +50,13 @@ export default ({ data, pageContext }) => {
     return reviewContent
   }
 
-  function getDownloadLink(data) {
-    const file = data?.allFile?.edges[0]?.node || null;
-    // const filename = data.markdownRemark.frontmatter.filename;
-    const title = data.markdownRemark.frontmatter.title;
+  function getDownloadLink(missionNode) {
+    const file = missionNode.filename || null;
 
     if(file) {
       return (
         <a href={file.publicURL} className={download}>
-          <strong>Download <span className="sr-only">{title}</span></strong>
+          <strong>Download <span className="sr-only">{missionNode.title}</span></strong>
           ({`${file.name}.${file.extension}`}, {file.prettySize})
         </a>
       )
@@ -75,33 +71,29 @@ export default ({ data, pageContext }) => {
     }
   }
 
-  console.log(data);
-  const cover = data.markdownRemark.frontmatter.cover ? data.markdownRemark.frontmatter.cover.publicURL : '';
-  console.log(cover);
+  // console.log(data);
+  const cover = missionNode.cover ? missionNode.cover.publicURL : '';
+  // console.log(cover);
 
-  if (!post.id) {
-    post.id = slug
-  }
   return (
     <Layout>
       <Helmet>
-        <title>Mission {`${post.title} | ${config.siteTitle}`}</title>
+        <title>Mission {`${missionNode.title} | ${config.siteTitle}`}</title>
       </Helmet>
-      <SEO postPath={slug} postNode={postNode} postSEO />
       <div className={coverImage} style={{ backgroundImage: `url(${cover})` }}></div>
       <div className={mission}>
-        <MissionHeader node={postNode} />
+        <MissionHeader node={missionNode} />
         <div className="content">
           <div className={descAndReviews}>
             <h2>Plot</h2>
-            <p className={plot}>{post.description}</p>
-            { captures.length > 0 ? <CaptureCarousel captures={captures} /> : null }
+            <p className={plot}>{missionNode.description}</p>
+            { missionNode.screenshots.length > 0 ? <CaptureCarousel captures={missionNode.screenshots} /> : null }
             <h2>Review</h2>
-            {getReviewContent(reviews)}
+            {getReviewContent(missionNode.reviews)}
           </div>
           <div className="supplemental">
-            {getDownloadLink(data)}
-            <TechSpecs node={post} />
+            {getDownloadLink(missionNode)}
+            <TechSpecs node={missionNode} />
           </div>
         </div>
       </div>
@@ -111,19 +103,18 @@ export default ({ data, pageContext }) => {
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query MissionBySlug($slug: String!, $fileRegex: String!) {
+  query MissionBySlug($slug: String!) {
     allMissionsJson(filter: {slug: {eq: $slug} }) {
       nodes {
         title
         date
         slug
-        editorsChoice
         cover {
           publicURL
         }
+        editorsChoice
         description
         authors
-        filename
         levelReplaced
         difficulty
         bm
@@ -149,16 +140,6 @@ export const pageQuery = graphql`
           file {
             publicURL
           }
-        }
-      }
-    }
-    allFile(filter: {publicURL: {regex: $fileRegex}}) {
-      edges {
-        node {
-          extension
-          name
-          publicURL
-          prettySize
         }
       }
     }

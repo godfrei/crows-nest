@@ -8,7 +8,7 @@ export default ({ node }) => {
 
     function getEditorsChoice(node) {
         let editorsChoice = null
-        if(node.frontmatter.editorsChoice === "yes") {
+        if(node.editorsChoice) {
           editorsChoice = (
             <EditorsChoice />
           )
@@ -21,8 +21,8 @@ export default ({ node }) => {
             <div className={`content ${content}`}>
                 <div className={headGroup}>
                     <h1>
-                        <Aurebesh text={node.frontmatter.title} />
-                        { node.frontmatter.title }
+                        <Aurebesh text={node.title} />
+                        { node.title }
                     </h1>
                     <AuthorLinks node={node} />
                 </div>

@@ -5,9 +5,9 @@ import _ from "lodash"
 export default ({ node }) => {
     return (
         <>
-            Author(s): { node.frontmatter.authors.map((author, index) => {
+            Author(s): { node.authors.map((author, index) => {
                 return (
-                    <React.Fragment key={`${node.frontmatter.title}-${author}`}>
+                    <React.Fragment key={`${node.title}-${author}`}>
                         { (index >=1) ? `, ` : `` }
                         <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
                     </React.Fragment>
