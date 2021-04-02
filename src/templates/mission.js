@@ -5,16 +5,13 @@ import Layout from '../layout'
 import TechSpecs from '../components/TechSpecs';
 import MissionHeader from '../components/MissionHeader';
 import Rating from '../components/Rating';
-import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import moment from 'moment';
 import CaptureCarousel from '../components/CaptureCarousel';
 import { mission, missingFile, download, descAndReviews, plot, coverImage } from './mission.module.scss';
 
-export default ({ data, pageContext }) => {
-  const { slug } = pageContext;
+export default ({ data }) => {
   const missionNode = data.allMissionsJson.nodes[0];
-  console.log(missionNode);
 
   function getReviewContent(reviews) {
     let reviewContent = null;
@@ -22,7 +19,6 @@ export default ({ data, pageContext }) => {
       reviewContent = (
         <>
           {reviews.map((review) => {
-            console.log(review);
             const rating = review.frontmatter.rating;
             const reviewers = review.frontmatter.reviewers;
             const date = new Date(review.frontmatter.date);
@@ -71,9 +67,7 @@ export default ({ data, pageContext }) => {
     }
   }
 
-  // console.log(data);
   const cover = missionNode.cover ? missionNode.cover.publicURL : '';
-  // console.log(cover);
 
   return (
     <Layout>
@@ -109,6 +103,12 @@ export const pageQuery = graphql`
         title
         date
         slug
+        filename {
+          publicURL
+          name
+          prettySize
+          extension
+        }
         cover {
           publicURL
         }

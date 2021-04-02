@@ -40,6 +40,13 @@ module.exports = {
         name: `images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/missions`,
+        name: `missionFiles`,
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
