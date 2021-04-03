@@ -6,7 +6,11 @@ import { ecGrid } from './EditorsChoiceListing.module.scss';
 const EditorsChoiceListing = () => {
     const data = useStaticQuery(graphql`
         query HomepageECQuery {
-            allMissionsJson(filter: {editorsChoice: {eq: true}}) {
+            allMissionsJson(
+                filter: {editorsChoice: {eq: true}}
+                sort: {fields: date, order: DESC}
+                limit: 5
+            ) {
                 nodes {
                     slug
                     title
@@ -20,16 +24,18 @@ const EditorsChoiceListing = () => {
             }
         }
     `);
+    
+    console.log(data);
 
     return (
         // <MissionListing missionEdges={data.allMarkdownRemark.edges} />
         <ul className={ecGrid}>
             {
-                data.allMarkdownRemark.edges.map(mission => {
-                    console.log(mission);
+                data.allMissionsJson.nodes.map(mission => {
+                    // console.log(mission);
                     return (
-                        <li key={mission.node.fields.slug}>
-                            <MissionCard node={mission.node} orientation="vertical" />
+                        <li key={mission.slug}>
+                            <MissionCard node={mission} orientation="vertical" />
                         </li>
                     );
                 })

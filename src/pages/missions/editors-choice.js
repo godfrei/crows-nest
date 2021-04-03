@@ -31,7 +31,7 @@ const EditorsChoicePage = () => {
     
             <p>These missions have been selected as the best-of-the-best the Dark Forces community has to offer.</p>
     
-            <MissionListing missionEdges={data.allMarkdownRemark.edges} />
+            <MissionListing missionNodes={data.allMissionsJson.nodes} />
         </Layout>
 
     );
