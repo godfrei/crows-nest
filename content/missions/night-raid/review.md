@@ -1,5 +1,5 @@
 ---
-missionSlug: "night-raid"
+mission: "night-raid"
 title: "Night Raid Review"
 reviewers: 
   -  "Geoff Elliott"

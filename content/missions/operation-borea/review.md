@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-borea"
+mission: "operation-borea"
 title: "Operation Borea Review"
 reviewers: 
   - "Geoff Elliott"

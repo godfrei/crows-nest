@@ -1,5 +1,5 @@
 ---
-missionSlug: "death-star-plans"
+mission: "death-star-plans"
 title: "Death Star Plans Review"
 reviewers: 
   -  "Geoff Elliott"

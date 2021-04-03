@@ -1,5 +1,5 @@
 ---
-missionSlug: "return-to-bespin"
+mission: "return-to-bespin"
 title: "Return to Bespin Review"
 reviewers: 
   - "Jeff Walters"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "imperial-recreation-center"
+mission: "imperial-recreation-center"
 title: "Imperial Recreation Center Review"
 reviewers: 
   -  "Geoff Elliott"

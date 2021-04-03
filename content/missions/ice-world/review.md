@@ -1,5 +1,5 @@
 ---
-missionSlug: "ice-world"
+mission: "ice-world"
 title: "Ice World Review"
 reviewers: 
   -  "Geoff Elliott"

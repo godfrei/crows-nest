@@ -1,5 +1,5 @@
 ---
-missionSlug: "jawa-sandcrawler"
+mission: "jawa-sandcrawler"
 title: "Jawa Sandcrawler Review"
 reviewers: 
   -  "Geoff Elliott"

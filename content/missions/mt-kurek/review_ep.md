@@ -1,5 +1,5 @@
 ---
-missionSlug: "mt-kurek"
+mission: "mt-kurek"
 title: "Mt. Kurek Review"
 reviewers: 
   -  "Eric Pauker"

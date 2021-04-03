@@ -1,5 +1,5 @@
 ---
-missionSlug: "star-destroyer-oppressor-iv"
+mission: "star-destroyer-oppressor-iv"
 title: "Star Destroyer/\"Oppressor IV\" Review"
 reviewers: 
   -  "Geoff Elliott"

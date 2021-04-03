@@ -1,5 +1,5 @@
 ---
-missionSlug: "out-base"
+mission: "out-base"
 title: "OutBase Review"
 reviewers: 
   -  "Geoff Elliott"

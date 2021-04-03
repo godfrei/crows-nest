@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-chemical-warfare-facility"
+mission: "operation-chemical-warfare-facility"
 title: "Operation: Chemical Warfare Facility Review"
 reviewers: 
   - "Geoff Elliott"

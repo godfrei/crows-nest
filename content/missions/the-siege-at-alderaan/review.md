@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-siege-at-alderaan"
+mission: "the-siege-at-alderaan"
 title: "The Siege at Alderaan Review"
 reviewers: 
   - "Geoff Elliott"

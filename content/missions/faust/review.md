@@ -1,5 +1,5 @@
 ---
-missionSlug: "faust"
+mission: "faust"
 title: "Faust Review"
 reviewers: 
   -  "Geoff Elliott"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "kyle-meets-kaled"
+mission: "kyle-meets-kaled"
 title: "Kyle Meets Kaled Review"
 reviewers: 
   -  "Geoff Elliott"

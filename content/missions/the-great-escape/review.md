@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-great-escape"
+mission: "the-great-escape"
 title: "The Great Escape Review"
 reviewers: 
   -  "Anonymous"

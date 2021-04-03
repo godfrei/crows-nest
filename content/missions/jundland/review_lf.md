@@ -1,5 +1,5 @@
 ---
-missionSlug: "jundland"
+mission: "jundland"
 title: "Jundland Review"
 reviewers: 
   -  "Lionel Fouillen"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-hunt-for-the-arc-hammer"
+mission: "the-hunt-for-the-arc-hammer"
 title: "The Hunt for the Arc Hammer Review"
 reviewers: 
   - "Geoff Elliott"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "castle"
+mission: "castle"
 title: "Castle Review"
 reviewers: 
   - "Geoff Elliott"

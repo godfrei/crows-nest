@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-rock-episode-1-gandolo-iv"
+mission: "the-rock-episode-1-gandolo-iv"
 title: "The Rock: Episode 1-Gandolo IV Review"
 reviewers: 
   -  "Steve Noall"

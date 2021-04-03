@@ -1,5 +1,5 @@
 ---
-missionSlug: "impossible-rescue"
+mission: "impossible-rescue"
 title: "Impossible Rescue Review"
 reviewers: 
   -  "Geoff Elliott"

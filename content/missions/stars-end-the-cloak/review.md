@@ -1,5 +1,5 @@
 ---
-missionSlug: "stars-end-the-cloak"
+mission: "stars-end-the-cloak"
 title: "Stars End - The Cloak Review"
 reviewers: 
   -  "Geoff Elliott"

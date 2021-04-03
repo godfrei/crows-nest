@@ -1,5 +1,5 @@
 ---
-missionSlug: "distribution-center"
+mission: "distribution-center"
 title: "Distribution Center Review"
 reviewers: 
   -  "Geoff Elliott"

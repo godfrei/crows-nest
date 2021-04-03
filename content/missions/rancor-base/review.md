@@ -1,5 +1,5 @@
 ---
-missionSlug: "rancor-base"
+mission: "rancor-base"
 title: "Rancor Base Review"
 reviewers: 
   -  "Geoff Elliott"

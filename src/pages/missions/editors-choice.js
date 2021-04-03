@@ -9,28 +9,16 @@ const EditorsChoicePage = () => {
 
     const data = useStaticQuery(graphql`
         query ECQuery {
-            allMarkdownRemark(
-                limit: 100
-                sort: {fields: [frontmatter___title], order: ASC}
-                filter: {frontmatter: {editorsChoice: {eq: "yes"}}}
-            ) {
-                edges {
-                    node {
-                        fields {
-                            slug
-                            date(formatString: "MMMM DD, YYYY")
-                        }
-                        frontmatter {
-                            title
-                            cover {
-                                name
-                                publicURL
-                            }
-                            description
-                            date
-                            authors
-                        }
+            allMissionsJson(filter: {editorsChoice: {eq: true}}) {
+                nodes {
+                    slug
+                    title
+                    cover {
+                        publicURL
                     }
+                    description
+                    date
+                    authors
                 }
             }
         }

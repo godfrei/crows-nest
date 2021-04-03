@@ -1,5 +1,5 @@
 ---
-missionSlug: "sensation"
+mission: "sensation"
 title: "Sensation Review"
 reviewers: 
   -  "Geoff Elliott"

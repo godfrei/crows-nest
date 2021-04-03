@@ -1,5 +1,5 @@
 ---
-missionSlug: "gulag-5"
+mission: "gulag-5"
 title: "Gulag 5 Review"
 reviewers: 
   -  "Geoff Elliott"

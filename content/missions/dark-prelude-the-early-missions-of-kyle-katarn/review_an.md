@@ -1,5 +1,5 @@
 ---
-missionSlug: "dark-prelude-the-early-missions-of-kyle-katarn"
+mission: "dark-prelude-the-early-missions-of-kyle-katarn"
 title: "Dark Prelude - The Early Missions of Kyle Katarn Review"
 reviewers: 
   -  "Anonymous"

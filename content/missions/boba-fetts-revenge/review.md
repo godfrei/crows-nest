@@ -1,5 +1,5 @@
 ---
-missionSlug: "boba-fetts-revenge"
+mission: "boba-fetts-revenge"
 title: "Boba Fett's Revenge Review"
 reviewers: 
   - "Geoff Elliott"

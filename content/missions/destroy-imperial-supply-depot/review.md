@@ -1,5 +1,5 @@
 ---
-missionSlug: "destroy-imperial-supply-depot"
+mission: "destroy-imperial-supply-depot"
 title: "Destroy Imperial Supply Depot Review"
 reviewers: 
   -  "Geoff Elliott"

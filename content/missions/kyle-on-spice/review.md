@@ -1,5 +1,5 @@
 ---
-missionSlug: "kyle-on-spice"
+mission: "kyle-on-spice"
 title: "Kyle On Spice Review"
 reviewers: 
   -  "Geoff Elliott"

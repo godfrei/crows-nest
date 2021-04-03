@@ -1,5 +1,5 @@
 ---
-missionSlug: "df-96-the-ties-that-bind"
+mission: "df-96-the-ties-that-bind"
 title: "DF96 - The Ties That Bind Review"
 reviewers: 
   -  "Geoff Elliott"

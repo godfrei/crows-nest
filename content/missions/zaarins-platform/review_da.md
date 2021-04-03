@@ -1,5 +1,5 @@
 ---
-missionSlug: "zaarins-platform"
+mission: "zaarins-platform"
 title: "Zaarin's Platform Review"
 reviewers: 
   -  "David Arandle"

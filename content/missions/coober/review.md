@@ -1,5 +1,5 @@
 ---
-missionSlug: "coober"
+mission: "coober"
 title: "Coober Review"
 reviewers: 
   - "Geoff Elliott"

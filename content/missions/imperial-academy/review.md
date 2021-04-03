@@ -1,5 +1,5 @@
 ---
-missionSlug: "imperial-academy"
+mission: "imperial-academy"
 reviewers: 
   - "Geoff Elliott"
 title: "Imperial Academy Review"

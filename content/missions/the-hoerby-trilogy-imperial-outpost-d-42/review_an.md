@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-hoerby-trilogy-imperial-outpost-d-42"
+mission: "the-hoerby-trilogy-imperial-outpost-d-42"
 title: "The Hoerby Trilogy: Imperial Outpost D-42 Review"
 reviewers: 
   -  "Anonymous"

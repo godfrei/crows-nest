@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-fall-of-thrawn"
+mission: "the-fall-of-thrawn"
 title: "The Fall of Thrawn Review"
 reviewers: 
   -  "Geoff Elliott"

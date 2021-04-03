@@ -1,5 +1,5 @@
 ---
-missionSlug: "frogman-modified"
+mission: "frogman-modified"
 title: "Frogman Modified Review"
 reviewers: 
   -  "Geoff Elliott"

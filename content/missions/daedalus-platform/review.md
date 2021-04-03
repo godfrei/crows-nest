@@ -1,5 +1,5 @@
 ---
-missionSlug: "daedalus-platform"
+mission: "daedalus-platform"
 title: "Daedalus Platform Review"
 reviewers: 
   - "Geoff Elliott"

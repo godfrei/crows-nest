@@ -1,5 +1,5 @@
 ---
-missionSlug: "imperial-destroyer"
+mission: "imperial-destroyer"
 title: "Imperial Destroyer Review"
 reviewers: 
   -  "Geoff Elliott"

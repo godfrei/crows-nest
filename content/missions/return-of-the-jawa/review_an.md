@@ -1,5 +1,5 @@
 ---
-missionSlug: "return-of-the-jawa"
+mission: "return-of-the-jawa"
 title: "Return of the Jawa Review"
 reviewers: 
   -  "Allen Newman"

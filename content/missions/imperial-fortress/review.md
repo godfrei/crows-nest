@@ -1,5 +1,5 @@
 ---
-missionSlug: "imperial-fortress"
+mission: "imperial-fortress"
 title: "Imperial Fortress Review"
 reviewers: 
   -  "Geoff Elliott"

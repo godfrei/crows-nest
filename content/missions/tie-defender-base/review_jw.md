@@ -1,5 +1,5 @@
 ---
-missionSlug: "tie-defender-base"
+mission: "tie-defender-base"
 title: "TIE Defender Base Review"
 reviewers: 
   -  "Jeff Walters"

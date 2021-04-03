@@ -1,5 +1,5 @@
 ---
-missionSlug: "back-to-yavin"
+mission: "back-to-yavin"
 title: "Back to Yavin Review"
 reviewers: 
   -  "Geoff Elliott"

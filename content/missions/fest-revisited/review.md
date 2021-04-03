@@ -1,5 +1,5 @@
 ---
-missionSlug: "fest-revisited"
+mission: "fest-revisited"
 title: "Fest Revisited Review"
 reviewers: 
   -  "Geoff Elliott"

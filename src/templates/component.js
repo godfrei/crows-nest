@@ -10,7 +10,7 @@ export default ({ data, pageContext }) => {
     const file = data.markdownRemark.frontmatter.filename
     if(file) {
       return (
-        <a href={file} className="download">
+        <a href={file.publicURL} className="download">
           <strong>Download {data.markdownRemark.frontmatter.title}</strong>
         </a>
       )
@@ -51,7 +51,9 @@ export const query = graphql`
         date
         description
         component_type
-        filename
+        filename {
+          publicURL
+        }
       }
     }
   }

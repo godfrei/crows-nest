@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-quiet-storm"
+mission: "operation-quiet-storm"
 title: "Operation Quiet Storm Review"
 reviewers: 
   -  "Geoff Elliott"

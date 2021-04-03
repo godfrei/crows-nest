@@ -1,5 +1,5 @@
 ---
-missionSlug: "mission-impossible-operation-suicide"
+mission: "mission-impossible-operation-suicide"
 title: "Mission Impossible: Operation Suicide Review"
 reviewers: 
   -  "Geoff Elliott"

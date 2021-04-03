@@ -1,5 +1,5 @@
 ---
-missionSlug: "asteroid"
+mission: "asteroid"
 title: "Asteroid Review"
 reviewers: 
   - "Jeff Walters"

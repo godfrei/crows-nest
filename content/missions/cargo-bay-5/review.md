@@ -1,5 +1,5 @@
 ---
-missionSlug: "cargo-bay-5"
+mission: "cargo-bay-5"
 title: "Cargo Bay 5 Review"
 reviewers: 
   - "Geoff Elliott"

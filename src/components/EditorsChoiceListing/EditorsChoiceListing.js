@@ -6,28 +6,16 @@ import { ecGrid } from './EditorsChoiceListing.module.scss';
 const EditorsChoiceListing = () => {
     const data = useStaticQuery(graphql`
         query HomepageECQuery {
-            allMarkdownRemark(
-                limit: 5
-                sort: {fields: [fields___date], order: DESC}
-                filter: {frontmatter: {editorsChoice: {eq: "yes"}}}
-            ) {
-                edges {
-                    node {
-                        fields {
-                            slug
-                            date(formatString: "MMMM DD, YYYY")
-                        }
-                        frontmatter {
-                            title
-                            cover {
-                                name
-                                publicURL
-                            }
-                            description
-                            date
-                            authors
-                        }
+            allMissionsJson(filter: {editorsChoice: {eq: true}}) {
+                nodes {
+                    slug
+                    title
+                    cover {
+                        publicURL
                     }
+                    description
+                    date
+                    authors
                 }
             }
         }

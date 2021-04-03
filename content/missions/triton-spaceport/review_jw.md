@@ -1,5 +1,5 @@
 ---
-missionSlug: "triton-spaceport"
+mission: "triton-spaceport"
 title: "Triton Spaceport Review"
 reviewers: 
   -  "Jeff Walters"

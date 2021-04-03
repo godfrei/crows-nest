@@ -1,5 +1,5 @@
 ---
-missionSlug: "future-present-part-i"
+mission: "future-present-part-i"
 title: "Future Present Part I Review"
 reviewers: 
   -  "Geoff Elliott"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-archangel-episode-i-mos-eisley-the-maze"
+mission: "operation-archangel-episode-i-mos-eisley-the-maze"
 title: "Operation Archangel Episode I - Mos Eisley: The Maze Review"
 reviewers: 
   - "Anonymous"

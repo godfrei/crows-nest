@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-bounty-hunt"
+mission: "the-bounty-hunt"
 title: "The Bounty Hunt Review"
 reviewers: 
   - "Geoff Elliott"

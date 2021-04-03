@@ -1,5 +1,5 @@
 ---
-missionSlug: "escape-from-secret-base-ii"
+mission: "escape-from-secret-base-ii"
 title: "Escape from Secret Base II Review"
 reviewers: 
   -  "Geoff Elliott"

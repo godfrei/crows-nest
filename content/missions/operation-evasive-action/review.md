@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-evasive-action"
+mission: "operation-evasive-action"
 title: "Operation: Evasive Action Review"
 reviewers: 
   -  "Geoff Elliott"

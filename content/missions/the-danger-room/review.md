@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-danger-room"
+mission: "the-danger-room"
 title: "The Danger Room Review"
 reviewers: 
   -  "Geoff Elliott"

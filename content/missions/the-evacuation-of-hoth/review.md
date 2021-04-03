@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-evacuation-of-hoth"
+mission: "the-evacuation-of-hoth"
 title: "The Evacuation of Hoth Review"
 reviewers: 
   -  "Geoff Elliott"

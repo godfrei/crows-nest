@@ -1,5 +1,5 @@
 ---
-missionSlug: "arcadia-imperial-prison-planet"
+mission: "arcadia-imperial-prison-planet"
 title: "Arcadia: Imperial Prison Planet Review"
 reviewers: 
   - "Geoff Elliott"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-archangel-episode-2-dungeons-of-gamorra"
+mission: "operation-archangel-episode-2-dungeons-of-gamorra"
 title: "Operation Archangel Episode 2 - Dungeons of Gamorra Review"
 reviewers: 
   - "David Arandle"

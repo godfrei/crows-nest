@@ -1,5 +1,5 @@
 ---
-missionSlug: "commenor-station-pursuit-of-cycy-loctob"
+mission: "commenor-station-pursuit-of-cycy-loctob"
 title: "Commenor Station: Pursuit of Cycy Loctob Review"
 reviewers: 
   - "Geoff Elliott"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "star-base"
+mission: "star-base"
 title: "Star Base Review"
 reviewers: 
   -  "David Arandle"

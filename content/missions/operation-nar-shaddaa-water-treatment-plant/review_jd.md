@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-nar-shaddaa-water-treatment-plant"
+mission: "operation-nar-shaddaa-water-treatment-plant"
 title: "Operation: Nar Shaddaa Water Treatment Plant Review"
 reviewers: 
   -  "John Dagen"

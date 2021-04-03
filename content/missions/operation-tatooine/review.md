@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-tatooine"
+mission: "operation-tatooine"
 title: "Operation Tatooine Review"
 reviewers: 
   -  "Geoff Elliott"

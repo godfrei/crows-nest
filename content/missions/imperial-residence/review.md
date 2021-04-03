@@ -1,5 +1,5 @@
 ---
-missionSlug: "imperial-residence"
+mission: "imperial-residence"
 title: "Imperial Residence Review"
 reviewers: 
   -  "Geoff Elliott"

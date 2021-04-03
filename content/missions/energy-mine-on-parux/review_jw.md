@@ -1,5 +1,5 @@
 ---
-missionSlug: "energy-mine-on-parux"
+mission: "energy-mine-on-parux"
 title: "Energy Mine on Parux Review"
 reviewers: 
   -  "Jeff Walters"

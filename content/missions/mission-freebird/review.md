@@ -1,5 +1,5 @@
 ---
-missionSlug: "mission-freebird"
+mission: "mission-freebird"
 title: "Mission: Freebird Review"
 reviewers: 
   -  "Christopher Elliott"

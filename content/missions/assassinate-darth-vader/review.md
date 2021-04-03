@@ -1,5 +1,5 @@
 ---
-missionSlug: "assassinate-darth-vader"
+mission: "assassinate-darth-vader"
 title: "Assassinate Darth Vader Review"
 reviewers: 
   -  "Geoff Elliott"

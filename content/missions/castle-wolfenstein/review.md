@@ -1,5 +1,5 @@
 ---
-missionSlug: "castle-wolfenstein"
+mission: "castle-wolfenstein"
 title: "Castle Wolfenstein Review"
 reviewers: 
   -  "Geoff Elliott"

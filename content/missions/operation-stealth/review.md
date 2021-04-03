@@ -1,5 +1,5 @@
 ---
-missionSlug: "operation-stealth"
+mission: "operation-stealth"
 title: "Operation Stealth Review"
 reviewers: 
   -  "Geoff Elliott"

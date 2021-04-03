@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-mountains-of-relion"
+mission: "the-mountains-of-relion"
 title: "The Mountains of Relion Review"
 reviewers: 
   -  "Geoff Elliott"

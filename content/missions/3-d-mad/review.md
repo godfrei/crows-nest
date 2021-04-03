@@ -1,5 +1,5 @@
 ---
-missionSlug: "3-d-mad"
+mission: "3-d-mad"
 title: "3D Mad Review"
 reviewers: 
   - "Geoff Elliott"

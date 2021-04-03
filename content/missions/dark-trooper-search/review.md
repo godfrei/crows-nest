@@ -1,5 +1,5 @@
 ---
-missionSlug: "dark-trooper-search"
+mission: "dark-trooper-search"
 title: "Dark Trooper Search Review"
 reviewers: 
   -  "Geoff Elliott"

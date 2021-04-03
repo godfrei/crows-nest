@@ -1,5 +1,5 @@
 ---
-missionSlug: "underground-research-facility"
+mission: "underground-research-facility"
 title: "Underground Research Facility Review"
 reviewers: 
   - "Geoff Elliott"

@@ -1,5 +1,5 @@
 ---
-missionSlug: "perplexion"
+mission: "perplexion"
 title: "Perplexion Review"
 reviewers: 
   -  "Geoff Elliott"

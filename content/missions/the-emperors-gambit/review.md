@@ -1,5 +1,5 @@
 ---
-missionSlug: "the-emperors-gambit"
+mission: "the-emperors-gambit"
 title: "The Emperor's Gambit Review"
 reviewers: 
   -  "Geoff Elliott"

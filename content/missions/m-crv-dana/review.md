@@ -1,5 +1,5 @@
 ---
-missionSlug: "m-crv-dana"
+mission: "m-crv-dana"
 title: "M/CRV Dana Review"
 reviewers: 
   - "Geoff Elliott"

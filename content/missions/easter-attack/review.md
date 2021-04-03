@@ -1,5 +1,5 @@
 ---
-missionSlug: "easter-attack"
+mission: "easter-attack"
 title: "Easter Attack Review"
 reviewers: 
   -  "Geoff Elliott"

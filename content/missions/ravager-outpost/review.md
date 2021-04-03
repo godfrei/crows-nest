@@ -1,5 +1,5 @@
 ---
-missionSlug: "ravager-outpost"
+mission: "ravager-outpost"
 title: "Ravager Outpost Review"
 reviewers: 
   -  "Geoff Elliott"

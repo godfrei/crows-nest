@@ -1,5 +1,5 @@
 ---
-missionSlug: "escape-from-hoth"
+mission: "escape-from-hoth"
 title: "Escape from Hoth Review"
 reviewers: 
   -  "Geoff Elliott"
