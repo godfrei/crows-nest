@@ -5,10 +5,10 @@ import { card, cover, vertical, horizontal } from "./ReviewCard.module.scss"
 import defaultImage from '../../images/reviews.png'
 
 const ReviewCard = ({ review, orientation }) => {
-    const mission = review.node.frontmatter.mission;
-    let slug = mission.fields.slug;
-    let title = mission.frontmatter.title;
-    const coverUrl = (mission.frontmatter.cover) ? mission.frontmatter.cover.publicURL : defaultImage;
+    const mission = review.frontmatter.mission;
+    let slug = mission.slug;
+    let title = mission.title;
+    const coverUrl = (mission.cover) ? mission.cover.publicURL : defaultImage;
     const orientationClass = orientation === 'vertical' ? vertical : horizontal;
 
     return (
@@ -19,9 +19,9 @@ const ReviewCard = ({ review, orientation }) => {
                     <Aurebesh text={title} />
                     {title}
                 </h1>
-                <p>{review.node.excerpt}</p>
-                <small>Reviewed by {review.node.frontmatter.reviewers.join(', ')}</small>
-                <small>Rating: {review.node.frontmatter.rating}</small>
+                <p>{review.excerpt}</p>
+                <small>Reviewed by {review.frontmatter.reviewers.join(', ')}</small>
+                <small>Rating: {review.frontmatter.rating}</small>
             </article>
         </Link>
     )

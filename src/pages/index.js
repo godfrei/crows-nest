@@ -43,6 +43,7 @@ const Index = ({ data }) => {
             </div>
             <div>
               <h2 className="uppercase">Recent Reviews</h2>
+              <ReviewListing />
             </div>
           </div>
 
