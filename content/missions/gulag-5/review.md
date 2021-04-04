@@ -19,8 +19,6 @@ If the plot above is enough to make you yawn, you're not the only one. The first
 
 Unfortunately, as weird as this conversation might seem, it's really all that can be expected.
 
-![Gulag 5 screenshot](./gulag5.png "Well... to each their own, I guess.")
-
 This level really hits rock bottom. Weapons are around every corner, so are the enemies, and while the plot might have been pulled off with interesting architecture and decent puzzles, alas, they aren't to be found here. I can't believe any decent architect would ever put something together like this, with Imperial standards being mixed in with Jabba's own personal preferences, and the Emperor's own designs. The worst is that it's all random. "Let's do this room in the Tatooine rugged design..." The place doesn't even begin to resemble an Imperial prison, with the doors little more than different textures in line with the wall. While it's always a good idea to stray a bit from the norm and introduce new ideas, I have to say that some designs might be better left untouched.
 
 The texture placement is some of the most horrid I've seen for a level. Anything will work for a door, and everything else gets slapped in as a wall at some point in time. Why an entire wall should be devoted to code symbols, I have no idea, especially when they don't work and serve no useful purpose. I could insert another pseudo-conversation here, but I think you get the point.

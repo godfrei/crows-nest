@@ -7,9 +7,6 @@ date: 1997-03-07
 rating: 88
 ---
 
-
-![Operation Stealth screenshot](./stealth.png "Those Imperials work fast! They've converted Tak Base to their own uses.")
-
 There have been lots of reworks on the idea of stealing the Death Star plans, so it's somewhat refreshing to see that somebody has tried to retool Tak Base. It's always been one of my favorite levels, largely due to its dark mood, and that it's one level where you don't have to blast your way through it. So when I saw the name "stealth", I was excited.
 
 The level failed to live up to my expectations. I was hoping to find another level with lots of small buildings and corridors to duck in and out of and pick off the Imps one at a time. But this level doesn't work by the name. It's not a bad level; on the contrary, I really enjoyed it. The puzzles are difficult, almost too tough, and there are lots of bad guys to deal with, thanks to several generators. There's also a lot of new things and ideas incorporated here. But it doesn't have the same feel to it.

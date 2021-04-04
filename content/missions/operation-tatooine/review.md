@@ -7,8 +7,6 @@ date: 1996-11-22
 rating: 79
 ---
 
-![Operation Tatooine screenshot](./optat.png "The author has created a wonderful Tatooine atmosphere, complete with new WAXs, 3DOs, and VUEs.")
-
 I'm sure that it was bound to come that somebody would create a level on Tatooine. After, the planet figured rather prominently in the first three movies and promises to do so in the prequels as well. What wasn't bound to come was a good level out of it; after all, just taking a good atmosphere and slapping a plot on it does not a good level make. But here the author has managed to pull it off.
 
 There are lots of new WAXes and 3DOs to help out this level. And the place really feels like Tatooine. You can almost feel a bead of sweat dripping off your face as you run through the cliffs and caverns. One thing that the author should be especially commended on is that he doesn't throw in a lot of stuff that isn't crucial to the level just for the sake of having it in there. Everything new has a purpose to it: to make the level more interesting and create a more realistic Tatooine.

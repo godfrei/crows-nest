@@ -11,8 +11,6 @@ Yet another brilliant level from Eric Pauker that seemed to come out of nowhere.
 
 The texturing and architectural design is beautiful and each room not only has a different feel to the previous one, but seems to have a purpose....a very realistic design. The author shows a knack for finding new ways to use textures and the new space texture works exceptionally well, and including a planet in the texture was a brilliant idea.
 
-![Asteroid screenshot](./asteroid.png "Superb lighting and texturing really allow this level to shine.")
-
 The use of light shading with the rock textures is so effective in simulating caves within an asteroid that I almost got claustrophobic! :) In fact the lighting throughout the level is flawless. The author has spent a lot of time gauging where light sources are and how they would effect upon the design.
 
 There are some neat special effects, like the fuel explosion near the end which is well done and sounds great as well, though you would have to be very slow to be caught in the blast. Squads of troopers appear post-explosion as you'd expect, but there are a few too many of these re-generating troops appearing out of thin air, though it does quicken the pace nicely. Two other effects of note are the power coupling disabling sequence and the cargo ship disappearing once you disembark it.......they add to the already great atmosphere of the level.

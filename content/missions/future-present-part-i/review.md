@@ -7,8 +7,6 @@ date: 1997-01-11
 rating: 90
 ---
 
-![Future Present Part I screenshot](./future1.png "Grandiose architecture, a suspenseful story, and an excellent feel for what works well in a level combine to make this a great play.")
-
 After having gone through so many levels where the story seems to be tacked on as an excuse to build a level, or as an afterthought, it's with a very pleasant feeling that I can review this level. The author has a talent for a good storyline, and an excellent feel for drama. I can't say too much without giving away surprises of this story(of which there are several), but suffice to say that you will be held in suspense throughout the level.
 
 But even with a wonderful storyline and nice dramatic effects, a level is worth nothing unless the architecture is sound, attention is paid to the texture placement, and the author offers up plenty of action and puzzles to keep you on your toes. Well, never fear, you won't be disappointed. The temple itself starts out in classic Indiana Jones style with traps, and as you descend into the depths of the mines, you can feel the change in mood from an ancient temple to what seems like a tomb. The textures convey the different styles of the level, from ancient architecture, to carved out caverns, to Imperialistic sterility. The way the areas are constructed is also very nice. Large waterfalls, control rooms, worshipping areas in the temples.... you won't have to look far to find something in particular you like.

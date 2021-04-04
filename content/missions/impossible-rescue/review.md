@@ -7,8 +7,6 @@ date: 1996-11-22
 rating: 74
 ---
 
-![Impossible Rescue screenshot](./rescue.png "Even though the author has recycled his previous Tatooine level, he still adds several new surprises to give the experience some freshness.")
-
 The first level to use Tatooine as a setting was original; it had lots of new things to keep you interested. This level has some new things too, but you can't seem to get past the feeling that it's just a rerun.
 
 First off, the author recycles a lot of his previous level. While this is good, as it increases the believability that you're actually visiting the same place, and increases the continuity between levels, it also deadens the interest, especially if you just completed the previous mission. By having gone through it all before, you know your way around, know a lot of the puzzles, and even the new items don't seem quite as eye-catching. It's a lot like running through an adaption of the original Dark Forces levels. The second time is not nearly as fun.

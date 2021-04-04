@@ -186,7 +186,9 @@ exports.createPages = async ({ graphql, actions }) => {
                 title
                 date
                 authors
-                filename
+                filename {
+                  publicURL
+                }
               }
             }
           }

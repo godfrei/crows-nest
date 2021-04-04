@@ -7,8 +7,6 @@ date: 1997-04-06
 rating: 88
 ---
 
-![Jundland screenshot](./jundland.png "For the second time you fight for the Empire, still trying to track down the plans for the SSSD Sovereign; this time on Tatooine.")
-
 "The Jundland wastes are not to be traveled lightly." - Obi-Wan Kenobi
 
 No truer does that ring true than in this level. There's no city where you can meet people, no ship to pull you out if things get bad. It's just you and your platoon(some dewbacks, but they don't count) against the Jundland wastes. And that includes all of the inhabitants as well. The author has done a very nice job of recreating those few scenes we saw in ANH, and uses the stuff he's been supplied with in junction with his story and new materials.

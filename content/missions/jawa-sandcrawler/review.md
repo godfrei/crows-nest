@@ -7,8 +7,6 @@ date: 1997-02-15
 rating: 78
 ---
 
-![Jawa Sandcrawler screenshot](./sandcraw.png "You get to run around inside a jawa sandcrawler. And that's about it.")
-
 The plot has been done before, but the change of setting adds a new perspective to the idea. The sandcrawler is quite well done, even down to the low ceilings one would expect the jawas to use. The textures all suit the setting, mostly being the same ones you can find in Jabba's Ship, but varying to other parts like control rooms, elevator shafts, machinery, etc. You'll also find a good number of droids in this level, as would be expected.
 
 But I found myself not enjoying the level that much, for a number of reasons. The first is the difficulty. It's nothing. A bunch of small jawas running around with blasters, how tough can that be? It might have been more interesting if the author had forced you to crawl through some mashers, or furnaces to get to where you wanted to go, but you won't find that in here. The architecture is pretty cramped and mostly consists of sharp angles. This is necessary to stay within the confines of a sandcrawler, but it really makes for a boring level.

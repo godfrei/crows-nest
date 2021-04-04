@@ -7,10 +7,7 @@ date: 1997-04-10
 rating: 94
 ---
 
-
 I think that we'll have to ignore the obvious misinterpretation of energy. After all, this is Star Wars, so physics and reality don't play as big of roles here as they might in the real world. And the level does just fine without all the accuracy in the world being shoved inside.
-
-![Energy Mine on Parux screenshot 1](./parux1.png "You can note how the textures and architecture are lined up very precisely and accurately.")
 
 The first thing anyone will probably notice about the level is how great it looks. The architecture is really fantastic, and each and every texture is lined up just perfectly. I can't find fault with any of the display choices; everything fits just like it should and looks just like what you'd expect. The construction of the mine is also top notch. Massive areas of machinery and equipment and high tech devices to harness the energy flow are always present. And the author has also managed to make the place feel like a single unit. You won't find yourself thinking "here's the hangar part, and here's the tap part, and here's the outside..." All the parts have simlar architecture, starting with doors that all look about the same, and the author has also constructed a ventilation system that runs the span of the mine, not just the few areas you need to gain access to. And the new things the author has made fit in with the old material. You won't be struck or dazzled by anything new, but at the same time it will make an effect on the level that would be conspicuously absent if the items were removed.
 

@@ -7,8 +7,6 @@ date: 1997-02-08
 rating: 61
 ---
 
-![Kyle Meets Kaled screenshot](./kmc.png "Most of the areas in this level are pretty bland and disimilar. Others, like this one, are just plain ugly.")
-
 The failure to find a story is a serious detractor when playing anything. However, I don't think that the best story in the world could have saved this level.
 
 You begin in a detention center for some reason, use the standard methods to escape and then need to make your way through a maze. For the most part, it consists of running through dark, narrow corridors, flipping switches to allow yourself access to other areas. This might be interesting if all you're looking for is a maze to find your way through, but when you have all the tools of the Star Wars universe at your fingertips, I would expect a little more from the author.

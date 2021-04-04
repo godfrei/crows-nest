@@ -7,15 +7,11 @@ date: 1996-11-24
 rating: 87
 ---
 
-![Evacuation of Hoth screenshot 1](./evac1.png "You've got to watch out; the Imperial attack continues to pound the base as you try to escape.")
-
 I've always loved the Battle of Hoth. It's been a great example of action, drama, and pure excitement in movies for a long time. And aside from the abscence of John Williams' pounding soundtrack, here I think the author has managed to capture what the battle must have been like for those frantic Rebels trying to find some way to escape.
 
 Quite easily the best thing about this level is the mood it puts you in right from the beginning. Your first instinct when you see the walkers on the horizon is to run, and as Imperials come at you from left and right, you never lose that first feeling of panic. The author has also made you feel like you're in the middle of an attack. Taking some cues from movies and the Talay level, there are passages blocked with ice and snow, and bodies of the dead rebels lying around. There are also blast marks, smoke trails, and explosions raining all around you.
 
 The feeling that you are being hunted is also present throughout the level. Walls explode as you approach to reveal Imperial troops pouring through a gap in the defenses, and you need to either stop and fight, or try to push forward.
-
-![Evacuation of Hoth screenshot 2](./evac2.png "The author has done a beautiful job of recreating the Hoth base, right done to the ice caves it consisted of.")
 
 You can't go through this level without hitting the ice caves, and they happen to be my favorite part. The textures have been altered and combined with original Dark Forces ones to create dark caverns complete with the soft blue glow of ice. It's really impressive for such a simple trick.
 

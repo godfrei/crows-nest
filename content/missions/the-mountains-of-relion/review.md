@@ -11,8 +11,6 @@ Save me from an endless supply of Death Star plans levels! PLEASE!
 
 Well, I really can't gripe. It's been a long time since I've even run through SECBASE, so the Death Star plan idea while still stale and unimaginative is not quite as loathed as it might otherwise be. Especially considering that the level is really well constructed.
 
-![The Mountains of Relion screenshot](./mount.png "The mountain range of Relion has been beautifully rendered and meshed with the Imperial center.")
-
 Quite easily the best thing about the mission is the mountain range itself. The author has created a very impressive setting for you to work in and splendidly depicts the massive surroundings complete with waterfalls, lakes, rivers, caverns and lots of other things to see. I think that this is the first time I've fallen out a window looking at the scenery. Which brings me to another point: the architecture is also very nice with lots of open windows to view the mountain range, although not quite as widespaced as I might like. You can't look out over the horizon which would have been nice, but the closed in feeling doesn't detract at all from the level.
 
 A nice idea that keeps this level away from monotony is that there is more than one way into the Imperial center. Numerous caverns wind their way through the mountains so while the overall feeling might be one of enclosure, you also can tell that there's a lot more to the place than you might have the chance to explore.

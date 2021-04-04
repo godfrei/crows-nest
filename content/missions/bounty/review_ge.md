@@ -12,15 +12,11 @@ rating: 95
 
 Not many people notice this short exchange between Han and Leia in ESB, and even less understand what it means. Somewhere along the way to Hoth Solo ran into a bounty hunter from Jabba the Hutt, who convinced him he needed to pay up soon. Now we finally get to hear(and interact with) the story of that incident.
 
-![Bounty Hunt screenshot 1](./bounty1.png "The Imperials have decided to crash the party.")
-
 Without giving too much away, I can safely say that you get to go up against just about every bounty hunter in the book in this level, each one of them competing for the same prize. Not only does the story the author has crafted fit well with what we know from Star Wars, it also gives us a nice idea of what happened to Kyle later on. And the story gets deeper and more complex (read: interesting) as you progress through the level.
 
 But enough of that. This level has a lot of stuff you'll want to check out. Lots of really nice architecture is employed around the station. The whole level is constructed to fit the design of the station, which keeps the level from feeling random. And contrary to lots of other levels where the design is fixed, you can see different parts from windows, look back to where you've been, and it all continues without giving you a sense of monotony. That's a flaw most levels can't seem to overcome, but the author here does a good job.
 
 There are lots of other nice touches that keep you from getting bored. My personal favorite is an elevator stretching from the main section to a tower. One side is open to the outside and you can watch the lower half of the station fall away as you rise. It's rather reminiscient of the Space Needle here in Seattle, or other towers where you reach the top via elevator. It's a pretty impressive piece of work that looks great in motion, not to mention the Imperial Star Destroyer hovering just outside.
-
-![Bounty Hunt screenshot 2](./bounty2.png "Little touches in the architecture and design(note the see-through grating) pay off big in this level.")
 
 Another nice bit is a grate that you can walk across over some sewage. Other authors might have been content to make it a platform, but here you can look down and see the sludge below. It's a small touch that pays off big.
 

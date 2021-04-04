@@ -7,8 +7,6 @@ date: 1996-12-05
 rating: 87
 ---
 
-![Fest Revisited screenshot](./fest.png "The old facility has been given a new look, and new areas have been added to revive this old level.")
-
 I usually don't like levels where the author takes one of the originals and modifies it. Even if extensive work has been done, I find myself looking at it and thinking to myself, "Here's where this used to be, this is where this happened," etc. It spoils the fun to not be treated to a new idea. So you can imagine my initial reaction upon looking at the title.
 
 Hopefully you can also imagine my delight as I worked my way deeper and deeper into this level. The author has left the original base, for the most part, just the way it was before. What he has done with it is exactly what was described in the text file. The entire base is empty, abandoned, and you get the feeling the whole place has been closed down for a number of years. About the only thing that could have made it better would be to add a layer of dust over the floor, and have it kick up as you walked.

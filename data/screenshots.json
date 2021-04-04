@@ -5,8 +5,458 @@
         "caption": "It's still the same Coruscant, but there have been a few changes since...er.. before you saw it last."
     },
     {
+        "mission": "arcadia-imperial-prison-planet",
+        "file": "./images/arcadia.png",
+        "caption": "The Imperials in this level do their best, but in the end it's not quite enough."
+    },
+    {
+        "mission": "assassinate-darth-vader",
+        "file": "./images/kilvader1.png",
+        "caption": "The bridge is just one example of the detail and accuracy the author put into this level."
+    },
+    {
+        "mission": "assassinate-darth-vader",
+        "file": "./images/kilvader2.png",
+        "caption": "\"The Force is with you Katarn... but you are not a Jedi yet.\""
+    },
+    {
+        "mission": "asteroid",
+        "file": "./images/asteroid.png",
+        "caption": "Superb lighting and texturing really allow this level to shine."
+    },
+    {
+        "mission": "back-to-yavin",
+        "file": "./images/yavin.png",
+        "caption": "There's no mistaking this scene. The Imperials are renovating Yavin, and you have to stop them."
+    },
+    {
+        "mission": "boba-fetts-revenge",
+        "file": "./images/bfrvng1.png",
+        "caption": "The architecture in this level is beautifully done, with textures well done and placed wisely to give the right look."
+    },
+    {
+        "mission": "boba-fetts-revenge",
+        "file": "./images/bfrvng2.png",
+        "caption": "Again, wonderful texture placement sets the mood, along with good lighting to accent. Notice also how the textures line up very nicely and accurately."
+    },
+    {
+        "mission": "the-bounty-hunt",
+        "file": "./images/bounty1.png",
+        "caption": "The Imperials have decided to crash the party."
+    },
+    {
+        "mission": "the-bounty-hunt",
+        "file": "./images/bounty2.png",
+        "caption": "Little touches in the architecture and design(note the see-through grating) pay off big in this level."
+    },
+    {
+        "mission": "cargo-bay-5",
+        "file": "./images/cargobay.png",
+        "caption": "A Mos Eisley stormtrooper complete with larger rifle and a new \"dark\" trooper are nice touches to this level."
+    },
+    {
+        "mission": "castle",
+        "file": "./images/castle1.png",
+        "caption": "New and old textures find their way into this level with some good results..."
+    },
+    {
+        "mission": "castle",
+        "file": "./images/castle2.png",
+        "caption": "...and some not so good results."
+    },
+    {
+        "mission": "castle-wolfenstein",
+        "file": "./images/wolf.png",
+        "caption": "Flat, boring, easy. Yup, it's Wolfenstein."
+    },
+    {
+        "mission": "coober",
+        "file": "./images/coober.png",
+        "caption": "Coober: what you see is what you get. I can't even come up with something funny to say."
+    },
+    {
+        "mission": "dark-prelude-the-early-missions-of-kyle-katarn",
+        "file": "./images/prelude.png",
+        "caption": "Your job in the second level is to steal an Imperial IFF device, hidden somewhere in this docking facility."
+    },
+    {
+        "mission": "dark-trooper-search",
+        "file": "./images/dtsearch.png",
+        "caption": "In the first level, Kyle needs to make his way onto a Corvette (left side) carrying a deadly cargo."
+    },
+    {
+        "mission": "destroy-imperial-supply-depot",
+        "file": "./images/depot.png",
+        "caption": "Several different styles, including many large open areas, are combined with thought and skill to form the depot."
+    },
+    {
+        "mission": "df-96-the-ties-that-bind",
+        "file": "./images/df961.png",
+        "caption": "The Crow waits to be liberated from its docking bay in the first level of this extensive set."
+    },
+    {
+        "mission": "df-96-the-ties-that-bind",
+        "file": "./images/df962.png",
+        "caption": "Nice looking WAXs help to bring the new characters of DF96 to life."
+    },
+    {
+        "mission": "df-96-the-ties-that-bind",
+        "file": "./images/df963.png",
+        "caption": "Is this familiar to you? New ideas are combined with old to create a truly unique experience."
+    },
+    {
+        "mission": "distribution-center",
+        "file": "./images/dist15.png",
+        "caption": "The author has set up many great looking areas in this level, and most are very difficult to reach. They also fail to serve a purpose."
+    },
+    {
+        "mission": "easter-attack",
+        "file": "./images/easter.png",
+        "caption": "The monastary has been done very well, and almost has a gothic feel to it."
+    },
+    {
+        "mission": "energy-mine-on-parux",
+        "file": "./images/parux1.png",
+        "caption": "You can note how the textures and architecture are lined up very precisely and accurately."
+    },
+    {
+        "mission": "energy-mine-on-parux",
+        "file": "./images/parux2.png",
+        "caption": "Nicely done new rock and sky textures really enhance the level's atmosphere."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape.png",
+        "caption": "You round the corner to see a large metal structure. You raise your head and look up, and up..."
+    },
+    {
+        "mission": "escape-from-secret-base-ii",
+        "file": "./images/secbase2.png",
+        "caption": "This hangar is an example of the wide open places the author has managed to create without any HOMing."
+    },
+    {
+        "mission": "faust",
+        "file": "./images/faust.png",
+        "caption": "The author is very fond of large windows, many of which overlook huge open areas of the city."
+    },
+    {
+        "mission": "fest-revisited",
+        "file": "./images/fest.png",
+        "caption": "The old facility has been given a new look, and new areas have been added to revive this old level."
+    },
+    {
+        "mission": "frogman",
+        "file": "./images/frogman.png",
+        "caption": "These new graphics are a lot like the level; an interesting attempt, but they fall short."
+    },
+    {
+        "mission": "future-present-part-i",
+        "file": "./images/future1.png",
+        "caption": "Grandiose architecture, a suspenseful story, and an excellent feel for what works well in a level combine to make this a great play."
+    },
+    {
+        "mission": "future-present-part-ii",
+        "file": "./images/future2.png",
+        "caption": "Ah, Coruscant! This level does a nice job of depicting the huge bustling city with close-packed buildings, and typical sterile Imperial architecture."
+    },
+    {
+        "mission": "galleria",
+        "file": "./images/galleria.png",
+        "caption": "A statement about the level of commercialization in society today? This level is nothing more than a large advertisement."
+    },
+    {
+        "mission": "gulag-5",
+        "file": "./images/gulag5.png",
+        "caption": "Well... to each their own, I guess."
+    },
+    {
+        "mission": "hydra",
+        "file": "./images/hydra.png",
+        "caption": "There are lots of problems with this level; unfortunately many, like this one, are very obvious."
+    },
+    {
+        "mission": "ice-world",
+        "file": "./images/iceworld.png",
+        "caption": "There are several large open areas with lots of detail and no HOMing."
+    },
+    {
+        "mission": "imperial-academy",
+        "file": "./images/academy1.png",
+        "caption": "One of the deep access elevators is located near the sewer system; but where is it?"
+    },
+    {
+        "mission": "imperial-academy",
+        "file": "./images/academy2.png",
+        "caption": "The choice of textures and attention to details (note the shading) is what really makes the Academy come to life."
+    },
+    {
+        "mission": "imperial-academy",
+        "file": "./images/academy3.png",
+        "caption": "The Imperials throw everything at you in a last ditch effort to stop your plans to destroy the Academy."
+    },
+    {
         "mission": "imperial-destroyer",
         "file": "./images/impdest.png",
         "caption": "A lack of good texture choices and bad architecture leaves this level floundering."
+    },
+    {
+        "mission": "lahara-hotel",
+        "file": "./images/hotel.png",
+        "caption": "The author has doen a great job with this hotel, expertly combining familiar ideas with new ones."
+    },
+    {
+        "mission": "imperial-fortress",
+        "file": "./images/fortress.png",
+        "caption": "An example of a typical room. There's some detail to keep each room alive, but they're all pretty blocky."
+    },
+    {
+        "mission": "imperial-recreation-center",
+        "file": "./images/imprec.png",
+        "caption": "There are some intersting ideas in this level but nothing really spectacular."
+    },
+    {
+        "mission": "impossible-rescue",
+        "file": "./images/rescue.png",
+        "caption": "Even though the author has recycled his previous Tatooine level, he still adds several new surprises to give the experience some freshness."
+    },
+    {
+        "mission": "jawa-sandcrawler",
+        "file": "./images/sandcraw.png",
+        "caption": "You get to run around inside a jawa sandcrawler. And that's about it."
+    },
+    {
+        "mission": "jundland",
+        "file": "./images/jundland.png",
+        "caption": "For the second time you fight for the Empire, still trying to track down the plans for the SSSD Sovereign; this time on Tatooine."
+    },
+    {
+        "mission": "kyle-meets-kaled",
+        "file": "./images/kmc.png",
+        "caption": "Most of the areas in this level are pretty bland and disimilar. Others, like this one, are just plain ugly."
+    },
+    {
+        "mission": "kyle-on-spice",
+        "file": "./images/spice.png",
+        "caption": "Uhm, Jan, I don't think we're in Kansas anymore."
+    },
+    {
+        "mission": "kyles-nightmare",
+        "file": "./images/nightmare.png",
+        "caption": "Enemies enhanced with multiple logics now have the ability to blow you sky high."
+    },
+    {
+        "mission": "m-crv-dana",
+        "file": "./images/dana.png",
+        "caption": "In this level you get to fight for the Dark Side for a change."
+    },
+    {
+        "mission": "mines",
+        "file": "./images/mines.png",
+        "caption": "This is the more interesting half of the 'level'."
+    },
+    {
+        "mission": "mission-impossible-operation-suicide",
+        "file": "./images/misimp10.png",
+        "caption": "Poor texture decisions and the addition of dozens of new files weigh this level down."
+    },
+    {
+        "mission": "night-raid",
+        "file": "./images/niteraid.png",
+        "caption": "This area might look nice but it serves no purpose other than to slow down the computer."
+    },
+    {
+        "mission": "octagone-8",
+        "file": "./images/octagone.png",
+        "caption": "Here's a shot that's pretty standard. Right angles, poor texture placing... pretty boring."
+    },
+    {
+        "mission": "operation-archangel-episode-2-dungeons-of-gamorra",
+        "file": "./images/black_whirlwind.png",
+        "caption": "The castle and other settings may be great, but what steals the show is the new weapon you find: The Black Whirlwind."
+    },
+    {
+        "mission": "operation-archangel-episode-i-mos-eisley-the-maze",
+        "file": "./images/archangel.png",
+        "caption": "As with many levels based in the movies, this one recreates what we all know well, adding in subtle twists to bend it to the author's wishes."
+    },
+    {
+        "mission": "operation-borea",
+        "file": "./images/borea.png",
+        "caption": "The author seems quite fond of large open spaces and huge chasms, and uses them to accent the mood of the level."
+    },
+    {
+        "mission": "operation-chemical-warfare-facility",
+        "file": "./images/biohazrd.png",
+        "caption": "This new TIE Fighter 3DO is great, but the rest of the level doesn't tend to fare as well."
+    },
+    {
+        "mission": "operation-death-star",
+        "file": "./images/opdstar.png",
+        "caption": "You've been captured on your way back with the plans; now you have to get them back and escape."
+    },
+    {
+        "mission": "operation-evasive-action",
+        "file": "./images/evasive.png",
+        "caption": "An entire legion of my best troops awaits them..."
+    },
+    {
+        "mission": "operation-nar-shaddaa-water-treatment-plant",
+        "file": "./images/wplant.png",
+        "caption": "One of the more interesting parts of the level is here in this large water tank."
+    },
+    {
+        "mission": "operation-quiet-storm",
+        "file": "./images/opqstorm.png",
+        "caption": "Actually I didn't know one could venture out into space through a hangar door. Certainly not without health hazards."
+    },
+    {
+        "mission": "operation-stealth",
+        "file": "./images/stealth.png",
+        "caption": "Those Imperials work fast! They've converted Tak Base to their own uses."
+    },
+    {
+        "mission": "operation-tatooine",
+        "file": "./images/optat.png",
+        "caption": "The author has created a wonderful Tatooine atmosphere, complete with new WAXs, 3DOs, and VUEs."
+    },
+    {
+        "mission": "out-base",
+        "file": "./images/outbase.png",
+        "caption": "One of the more interesting areas."
+    },
+    {
+        "mission": "rancor-base",
+        "file": "./images/rancor.png",
+        "caption": "Get used to seeing lots of scenes like this if you try Rancor Base."
+    },
+    {
+        "mission": "ravager-outpost",
+        "file": "./images/ravager.png",
+        "caption": "Like most of the level: it's a nice idea, but ultimately it falls a little short."
+    },
+    {
+        "mission": "return-of-the-jawa",
+        "file": "./images/rotjawa.png",
+        "caption": "\"Are we there yet?\" The fleet is on its way to blast this place, so it's just as well if you don't feel compelled to stop and admire the craftsmanship."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin.png",
+        "caption": "New, artfully done waxes add to the Bespin experience."
+    },
+    {
+        "mission": "sensation",
+        "file": "./images/sensation.png",
+        "caption": "Your job is to hitch a ride on this crane."
+    },
+    {
+        "mission": "star-base",
+        "file": "./images/starbase.png",
+        "caption": "The architecture and texturing isn't too bad, but doesn't even slightly resemble the prison it's supposed to."
+    },
+    {
+        "mission": "star-destroyer-oppressor-iv",
+        "file": "./images/destroy.png",
+        "caption": "This level is a combo of good ideas, good ideas gone bad, and just plain BAD ideas."
+    },
+    {
+        "mission": "stars-end-the-cloak",
+        "file": "./images/starsend.png",
+        "caption": "Stormtroopers armed with cloaking devices are your new nemesis in this level."
+    },
+    {
+        "mission": "the-danger-room",
+        "file": "./images/dangroom.png",
+        "caption": "What's your poison? In this hallway you select your opponents."
+    },
+    {
+        "mission": "the-emperors-gambit",
+        "file": "./images/gambit.png",
+        "caption": "This scene is cool, but totally unnecessary, and it tends to blow what was looking really promising."
+    },
+    {
+        "mission": "the-evacuation-of-hoth",
+        "file": "./images/evac1.png",
+        "caption": "You've got to watch out; the Imperial attack continues to pound the base as you try to escape."
+    },
+    {
+        "mission": "the-evacuation-of-hoth",
+        "file": "./images/evac2.png",
+        "caption": "The author has done a beautiful job of recreating the Hoth base, right done to the ice caves it consisted of."
+    },
+    {
+        "mission": "the-fall-of-thrawn",
+        "file": "./images/fthrawn1.png",
+        "caption": "Instances where the author overlooked important details destroy any chance these levels ever had."
+    },
+    {
+        "mission": "the-fall-of-thrawn",
+        "file": "./images/fthrawn2.png",
+        "caption": "Endor? Looks more like a swamp on Dagobah. Perhaps the author needs to review his Star Wars again..."
+    },
+    {
+        "mission": "the-great-escape",
+        "file": "./images/greatesc.png",
+        "caption": "The author has managed to go beyond the normal confines of a \"prison\" level, adding in several new ideas."
+    },
+    {
+        "mission": "the-hoerby-trilogy-imperial-outpost-d-42",
+        "file": "./images/hoerby1.png",
+        "caption": "Good choice in textures gives exterior locations interest and some believability."
+    },
+    {
+        "mission": "the-hoerby-trilogy-imperial-outpost-d-42",
+        "file": "./images/hoerby2.png",
+        "caption": "The hangars have the same standard features we expect, but the author still makes sure you don't go by without a second look."
+    },
+    {
+        "mission": "the-hunt-for-the-arc-hammer",
+        "file": "./images/arc-hunt.png",
+        "caption": "The author has taken cues from Dark Forces and other Star Wars experiences to expand the Arc Hammer and Executor, as well as modify the atmosphere to suit the level."
+    },
+    {
+        "mission": "the-mountains-of-relion",
+        "file": "./images/mount.png",
+        "caption": "The mountain range of Relion has been beautifully rendered and meshed with the Imperial center."
+    },
+    {
+        "mission": "the-rock-episode-1-gandolo-iv",
+        "file": "./images/rock1.png",
+        "caption": "Have we seen this before? This level shares more than a name with a certain movie."
+    },
+    {
+        "mission": "the-rock-episode-1-gandolo-iv",
+        "file": "./images/rock2.png",
+        "caption": "Landspeeders help populate the city in this mission; too bad you can't take one for a spin."
+    },
+    {
+        "mission": "the-siege-at-alderaan",
+        "file": "./images/alderaan.png",
+        "caption": "Kyle must steal the plans for the Emperor's new starfighter."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase1.png",
+        "caption": "New ideas and creations abound in this level."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase2.png",
+        "caption": "You are to infiltrate a base and secure the plans for the Empire's newest weapon, the TIE Defender."
+    },
+    {
+        "mission": "triton-spaceport",
+        "file": "./images/triton.png",
+        "caption": "The entrance to the freighter is nicely done."
+    },
+    {
+        "mission": "underground-research-facility",
+        "file": "./images/cave.png",
+        "caption": "Don't worry, they don't bite. In this level you infiltrate the facility believed to have created the first DT prototype."
+    },
+    {
+        "mission": "zaarins-platform",
+        "file": "./images/zaarin.png",
+        "caption": "You'll find this style of room repeated quite often."
     }
 ]

@@ -7,8 +7,6 @@ date: 1996-11-22
 rating: 84
 ---
 
-![Escape from Secret Base 2 screenshot](./secbase2.png "This hangar is an example of the wide open places the author has managed to create without any HOMing.")
-
 This is an interesting level. It's not hard, it's not easy, and it doesn't use a whole lot of complex puzzles in it. The basic stance is that you are required to find the correct key to unlock the hangar holding the Crow. But even with the standard basis, this level does make playing it worthwhile, and enjoyable.
 
 The design of the base is nicely done, and seems to be well thought out. You have an exterior, and landing pad, and lots of other features that fill out all the holes other levels seem to fall into. Unlike others, this base feels natural, like it was built, not slapped together. Other levels have a sloppy feeling to them, but this base is precise.

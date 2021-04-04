@@ -7,8 +7,6 @@ date: 1996-11-16
 rating: 82
 ---
 
-![Operation: Evasive Action screenshot](./evasive.png "An entire legion of my best troops awaits them...")
-
 This level takes us back to Return of the Jedi. Apparently the Emperor has stockpiled the last of his Dark Troopers, and is preparing to use to stop the Rebel attack on Endor. This seems to bend several of the storylines in ROTJ, but it's only bending. This level is fun, and it gives us a little history of what Kyle might have been doing in the years between the Arc Hammer and the upcoming Jedi Knight. The author uses the textures that we've come to associate with the Death Star to provide an accurate environment to work in.
 
 One of the things I enjoyed the most is the author's use of messages to continue the action from the movies while you go about your business. Updates from Endor serve to add urgency to your quest, and also help to make this new chapter of the Battle of Endor find its niche.

@@ -11,8 +11,6 @@ I will warn you right away that I beta-tested this level and one or two of my su
 
 I don't think that many will be able to argue when I say that this is one of the better levels to be built for Dark Forces. An eveloping plot pulls you in right from the start, and the level takes over from there. I can't tell too much without giving a lot away, but here are a few points you'll enjoy.
 
-![Stars End screenshot](./starsend.png "Stormtroopers armed with cloaking devices are your new nemesis in this level.")
-
 First, the new WAXes for the cloaked troopers look great. Very nicely done and the way they work with the logic makes them top-notch. If you thought stormtroopers were a pain before, now they're twice as tough. And that isn't the only thing that's new: several new VUEs are in here that look absolutely incredible. Dare I say better than those put out by LucasArts? In the case of the first Crow flight, very much so. Smooth and realistic looking, they really add to the place.
 
 Lots of new textures, designs and ideas abound in this level, some of which are best left for you to discover. They look great and really I wish more authors would put in the time to do these kind of things. The architecture is also very nice, combining lots of new stuff with bits and pieces from the original Dark Trooper construction facility on the Arc Hammer to ensure a sense of deja vu but without making it feel too stale.

@@ -7,8 +7,6 @@ date: 1996-12-03
 rating: 90
 ---
 
-![Lahara Hotel screenshot](./hotel.png "The author has doen a great job with this hotel, expertly combining familiar ideas with new ones.")
-
 This is one of the better levels I've played as of yet, and for several reasons. The first is the plot. While it really boils down to another recuse the prisoner idea, the author has replaced the prisoner with hostages, and that is somewhat unique. When combined with his setting, this idea takes on a whole new perspective as we are placed in a situation that can be all too real for us in our world.
 
 The second is undoubtedly the great new ideas that the author has added. There are several original things combined with lots of adaptations of old ideas. One of the best things about all this stuff is that the author has included it to serve a purpose, not just be around for the player to see. Examples are the Sam and Max tune he's converted, plus textures, 3DOs, and lots more.

@@ -9,8 +9,6 @@ rating:
 
 There seem to be more levels coming out that don't really have a plot but just like to showcase something that the author managed to figure out. Previously it was just some loopholes in the Dark Forces engine that were featured in the levels. This time the author shows you something that might be useful in future levels.
 
-![Sensation screenshot](./sensation.png "Your job is to hitch a ride on this crane.")
-
 The idea is to hitch a ride on a crane hanging above a chasm. That's really all there is to it. It was a little difficult for me to figure out how to get on the crane at first, but practice makes perfect and soon it was pretty easy. There are a couple flaws with the current setup: you can't move or turn while on the crane, and if you try the movements are translated to you after you're dropped from the crane. But the idea is good and the execution is decent. You'd probably be a sitting duck for any Imperials around at the time, but I think it would be pretty cool to need to use the crane to get across some large hole at a factory or something. Maybe next time the crane could do more than just go back and forth.
 
 Peter Klassen(the author) has told me that this GOB was an experiment in controlling the player object with a VUE. He explained to me some things about why it reacts the way it does:

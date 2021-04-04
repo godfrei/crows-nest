@@ -7,13 +7,9 @@ date: 1996-11-17
 rating: 96
 ---
 
-![TIE Defender Base screenshot 1](./defbase1.png "New ideas and creations abound in this level.")
-
 This is one of the largest and most detailed levels ever created for Dark Forces. It was also one of the first ones, and I first tried it about a year ago. I was enthralled by all the new things packed into this level. I never got a chance to play the first version, but the Collector's Edition has so many creative ideas and settings to enhance gameplay that I will never tire of playing this level.
 
 The story itself offers up so many oppoortunities for the author to add little details to the level, and he takes full advantage of them. He also puts in several areas which can help you along the way, but are in no way necessary to completing the level. There's at least one building that the first time I skipped right by, but when coming back to play again, I noticed several additional things to explore. I don't doubt that I'll find something new every time I play this level, because not everything is obvious at first. There are lots of new WAXs and 3DOs that you can find, but you might miss some of the more subtle things; I'll let you play the level rather than cover them all here.
-
-![TIE Defender Base screenshot 2](./defbase2.png "You are to infiltrate a base and secure the plans for the Empire's newest weapon, the TIE Defender.")
 
 The design of this level is one of the best things about it. You get to see waterfalls, cliffs and you need to work your way into the base rather than get plopped right into it at the begining. It takes you back to level four of Dark Forces, and I think this author has improved substantially on the original in ways.
 

@@ -9,8 +9,6 @@ rating: 65
 
 This is a fairly competent attempt at recreating a space station of sorts. There are a few nice touches such as the landing platforms extending out into space and the overall texturing which while simple gives the really cold atmosphere of an Imperial facility.
 
-![Zaarin's Platform screenshot](./zaarin.png "You'll find this style of room repeated quite often.")
-
 There are no rooms in this level which feel out of place. However this level does suffer from deja vu. Walking around you get the feeling you've seen it all before; the reason being - you have. There are numerous rooms in this level that are all identical and many that are similar with only slight variation. While they all fit in with the overall concept they don't really do anything for the level other than make it a little tedious. (This level probably holds the record for number of troop sleeping quarters ever placed in a level).
 
 There are also a few obvious texture stitching problems (mostly above doors) and a few spots in really long corridors that suffer from bad HOM effects.

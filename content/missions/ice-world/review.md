@@ -9,8 +9,6 @@ rating: 81
 
 This level looks good. I mean that literally; the author has spent time going over the place to make sure textures fit and 3DOs are positioned correctly. And the choice of textures is pretty good too. There are a few new ones in addition to the dozens that have been modified to give the base the cold blue look you generally associate with ice. It makes the base feel icy, and it almost makes a shiver run up your spine.
 
-![Danger Room screenshot](./iceworld.png "There are several large open areas with lots of detail and no HOMing.")
-
 There are also several large open places where there is a lot of detail and a lot going on. And in most of these places I couldn't detect any HOMing at all, and only small bits of slowdown. In their anxiousness to fill the level with all kinds of things and set up cool looking architecture many authors don't take into account what the level will play like and when we get it there could be HOMs galore or slowdown enough to bring any action to a standstill. But here the author has provided elaborate areas with out sacrificing any gameplay.
 
 That said, there are lots of problems with the concept of the level that should be addressed. The idea of needing to take out the shield for an attack is great. No more hitting a self-destruct switch or bringing the base crashing to the ground by yourself; this time you get to do it in a more feasible manner. Unfortunately the level doesn't carry the story over much. I would have liked to see some radio updates to keep you appraised of the attacking fleet's progress toward their goal. But you carry out your mission in silence, without any sense of anticipation of the attack or the need to get your mission done quickly so the bombardment can begin.

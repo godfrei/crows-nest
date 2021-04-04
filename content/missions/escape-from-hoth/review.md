@@ -7,8 +7,6 @@ date: 1996-11-25
 rating: 85
 ---
 
-![Escape from Hoth screenshot](./escape.png "You round the corner to see a large metal structure. You raise your head and look up, and up...")
-
 It was probably a foregone conclusion that Hoth levels would be common in the Dark Forces universe. The Robotics level was little more than Hoth level with a new twist, and included all the features Dark Forces level authors could use to create their own Hoth levels. Escape from Hoth was one of the first to come out, and it's done a good job of building off the Robotics level.
 
 The level has a lot of cool stuff in it, and tons of extra space for you to explore. You can literally spend hours crawling through the ice caves of Hoth, and you never know what you might find. The problem with all this extra space is that it really serves no purpose other than to make the level larger. If you know your way around, you can complete this level in a few minutes, otherwise it could take, as I mentioned above, a few hours. However, the hundreds of corridors to search through do increase the difficulty of the level, and also give you something to do.

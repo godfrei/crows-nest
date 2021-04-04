@@ -9,8 +9,6 @@ rating: 75
 
 Where should I begin? The obvious holes in the plot(since when would the Empire sell one of it's SSDs, much less GIVE it away) or the problems with the level? Because just like the plot this level has quite a few holes in it all of which combine to condemn this level to the middle of the stack where it likely be forgotten soon.
 
-![Operation Quiet Storm screenshot](./opqstorm.png "Actually I didn't know one could venture out into space through a hangar door. Certainly not without health hazards.")
-
 The very first thing you'll notice is the new VUE. Not bad, but not great, especially when you discover you can see the ship sitting in space from the hangar door. Then imagine my surprise when I fall a few feet and find myself standing out in space. Without any life seeping away either! You can walk out in space just as is if it were a normal setting in this mission. Not the most auspicious start I've seen for a level.
 
 The mission gets better from there until you reach another place where you can jump out the windows, again with no repercussions. But this time the windows don't even empty into the same area. As a whole the areas open to space only serve to reveal the authors don't really know how to work with exterior architecture when it comes to space. That's really too bad since the open areas looking out to space are the only really good looking parts of the level.

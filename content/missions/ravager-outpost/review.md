@@ -9,8 +9,6 @@ rating: 80
 
 The story sounds great. It makes sense and is a good area for some new action to take place. All we ever get to hear is that Kyle delivered the plans. But why does it have to be so easy for him? I think that some kind of intervention there is a great idea. But unfortunately this level doesn't quite make good on the story.
 
-![Ravager Outpost screenshot](./ravager.png "Like most of the level: it's a nice idea, but ultimately it falls a little short.")
-
 Which isn't to say that it doesn't try. There are a lot of good ideas in here. In many places the architecture is very nice, and texturing overall matches like it should. What really hurts this mission is that ever present factor of monotony. The textures on the walls, however fitting, are almost always the same muted greys and blacks interspersed with little bits of color here and there. That gets real dull after a while, especially when most of the level is just running from corridor to corridor, trying to find your way around. It can be confusing and frustrating at times. Some other flaws are present in large open areas, where the same texture runs over and over again. Even large textures don't quite flesh this place out.
 
 The puzzles aren't that challenging either. Once you find your way around the base it's just a matter of locating the keys and getting out. The opening sequence of your execution is really nice and tense with you needing to scramble for weapons and space to move with Kell Dragons on your tail and Imps up above. But after you actually get into the base the stimulation and challenge disappears.
