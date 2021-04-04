@@ -7,7 +7,7 @@ import blank from '../../images/blank.gif'
 export default ({ node }) => {
     function checkMarkOrNot(value) {
         let checkMark = (<img src={blank} alt="No new" />)
-        if(value === "yes") {
+        if(value) {
             checkMark = (<img src={checkmark} alt="New" />)
         }
         return checkMark
