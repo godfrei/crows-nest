@@ -107,7 +107,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: '/missions',
     component: path.resolve('./src/templates/mission-list.js'),
     context: {
-      'sort': 'title',
+      'sort': { "fields": ["title"], "order": "ASC" },
     },
   });
 
@@ -116,7 +116,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: '/missions/rating',
     component: path.resolve('./src/templates/mission-list.js'),
     context: {
-      'sort': 'rating',
+      'sort': { "fields": ["reviews___frontmatter___rating"], "order": "DESC" },
     },
   });
 
@@ -124,7 +124,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: '/missions/date',
     component: path.resolve('./src/templates/mission-list.js'),
     context: {
-      'sort': 'date',
+      'sort': { "fields": ["date"], "order": "DESC" },
     },
   });
 

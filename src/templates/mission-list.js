@@ -46,8 +46,11 @@ export default Missions
 
 /* eslint no-undef: "off" */
 export const missionsQuery = graphql`
-  query MissionsQuery {
-    allMissionsJson {
+  query MissionsQuery($sort: MissionsJsonSortInput) {
+    allMissionsJson(
+      limit: 1000
+      sort: $sort
+    ) {
       nodes {
         slug
         title
