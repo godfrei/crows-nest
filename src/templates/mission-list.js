@@ -22,7 +22,6 @@ function averageRating(mission) {
 }
 
 const Missions = ({ data, pageContext }) => {
-  console.log(data);
   const linkProps = {
     activeClassName: active,
     partiallyActive: true

@@ -22,7 +22,7 @@ export default ({ node, orientation }) => {
     const authors = node.authors ? node.authors.join(', ') : 'Unknown';
     const excerpt = node.description ? node.description.split(' ').slice(0, 30).join(' ') : '';
     const orientationClass = orientation === 'vertical' ? vertical : horizontal;
-    const rating = averageRating({ node: node });
+    const rating = averageRating(node);
 
     return (
         <Link to={`/missions/${node.slug}`} className={`${card} ${orientationClass}`}>
