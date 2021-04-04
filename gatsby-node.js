@@ -135,6 +135,7 @@ exports.createPages = async ({ graphql, actions }) => {
       {
         allMissionsJson {
           nodes {
+            authors
             slug
             cover {
 							publicURL
@@ -341,6 +342,14 @@ exports.createPages = async ({ graphql, actions }) => {
       edge.node.frontmatter.authors.forEach(author => {
         authorSet.add(author);
       });
+    }
+  });
+
+  missionNodes.forEach((node) => {
+    if(node.authors) {
+      node.authors.forEach(author => {
+        authorSet.add(author);
+      })
     }
   });
 

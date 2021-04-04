@@ -5,18 +5,43 @@ import Layout from '../layout'
 import MissionListing from '../components/MissionListing'
 import config from '../../data/SiteConfig'
 
-const AuthorTemplate = ({ data, pageContext }) => (
-  <Layout>
-    <Helmet title={` "${pageContext.author}" - ${config.siteTitle}`} />
-    <h1>{`Author: ${pageContext.author}`}</h1>
-    <MissionListing missionEdges={data.allMarkdownRemark.edges} />
-  </Layout>
-)
+const AuthorTemplate = ({ data, pageContext }) => {
+  console.log(data);
+  
+  return (
+    <Layout>
+      <Helmet title={` "${pageContext.author}" - ${config.siteTitle}`} />
+      <h1>{`Author: ${pageContext.author}`}</h1>
+      <MissionListing missionNodes={data.allMissionsJson.nodes} />
+    </Layout>
+  );
+}
 
 export default AuthorTemplate
 
 export const pageQuery = graphql`
   query AuthorPage($author: String) {
+    allMissionsJson(
+      limit: 1000
+      sort: { fields: [date], order: DESC }
+      filter: { authors: { in: [$author] } }
+    ) {
+      nodes {
+        slug
+        title
+        description
+        date
+        cover {
+          publicURL
+        }
+        authors
+        reviews {
+          frontmatter {
+            rating
+          }
+        }
+      }
+    }
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [fields___date], order: DESC }
