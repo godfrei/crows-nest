@@ -7,7 +7,7 @@ import DatabaseLayout from "../layout/database";
 // import GradientTitle from "../components/GradientTitle"
 // import database from "../images/database.png"
 
-export default () => (
+const Database = () => (
   <Layout>
     <Helmet>
       <title>Database | {config.siteTitle}</title>
@@ -25,3 +25,5 @@ export default () => (
     </DatabaseLayout>
   </Layout>
 );
+
+export default Database;

@@ -17,7 +17,7 @@ import {
   coverImage,
 } from "./mission.module.scss";
 
-export default ({ data }) => {
+const MissionTemplate = ({ data }) => {
   const missionNode = data.allMissionsJson.nodes[0];
 
   function getReviewContent(reviews) {
@@ -160,3 +160,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default MissionTemplate;

@@ -6,7 +6,7 @@ import Layout from "../layout";
 import SpecNav from "../components/SpecNav";
 import DatabaseLayout from "../layout/database";
 
-export default ({ data }) => {
+const SpecTemplate = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout>
@@ -40,3 +40,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default SpecTemplate;

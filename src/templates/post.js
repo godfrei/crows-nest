@@ -8,7 +8,7 @@ import config from "../../data/SiteConfig";
 import { pagination, postMeta } from "./post.module.scss";
 import "./prism-okaidia.css";
 
-export default ({ data, pageContext }) => {
+const PostTemplate = ({ data, pageContext }) => {
   const { slug, nexttitle, nextslug, prevtitle, prevslug } = pageContext;
   const postNode = data.markdownRemark;
   const post = postNode.frontmatter;
@@ -65,3 +65,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default PostTemplate;

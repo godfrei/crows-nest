@@ -6,7 +6,7 @@ import SpecNav from "../../components/SpecNav";
 import Layout from "../../layout";
 import DatabaseLayout from "../../layout/database";
 
-export default () => (
+const Specs = () => (
   <Layout>
     <Helmet>
       <title>Dark Forces Unofficial Specifications | {config.siteTitle}</title>
@@ -49,3 +49,5 @@ export default () => (
     </DatabaseLayout>
   </Layout>
 );
+
+export default Specs;

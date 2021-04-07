@@ -5,7 +5,7 @@ import Layout from "../../layout";
 import DatabaseLayout from "../../layout/database";
 import WeaponsLayout from "../../layout/weapons";
 
-export default () => (
+const Weapons = () => (
   <Layout>
     <Helmet>
       <title>Weapons | {config.siteTitle}</title>
@@ -38,3 +38,5 @@ export default () => (
     </DatabaseLayout>
   </Layout>
 );
+
+export default Weapons;

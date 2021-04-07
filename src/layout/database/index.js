@@ -4,7 +4,6 @@ import {
   title,
   grid,
   navigation,
-  content,
   active,
 } from "./database.module.scss";
 
@@ -63,7 +62,7 @@ const DatabaseLayout = ({ children }) => {
             </Link>
           </li>
         </ul>
-        <div className={content}>{children}</div>
+        <div>{children}</div>
       </div>
     </>
   );

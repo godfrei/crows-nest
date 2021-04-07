@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
 import Layout from "../layout";
 
-export default ({ data, pageContext }) => {
+const ComponentTemplate = ({ data, pageContext }) => {
   function getDownloadLink(data) {
     const file = data.markdownRemark.frontmatter.filename;
     if (file) {
@@ -61,3 +61,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ComponentTemplate;

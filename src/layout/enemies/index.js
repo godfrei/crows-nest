@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { grid, navigation, content, active } from "./enemies.module.scss";
+import { grid, navigation, active } from "./enemies.module.scss";
 
 const EnemiesLayout = ({ children }) => {
   const linkProps = {
@@ -159,7 +159,7 @@ const EnemiesLayout = ({ children }) => {
             </li>
           </ul>
         </div>
-        <div className={content}>{children}</div>
+        <div>{children}</div>
       </div>
     </>
   );

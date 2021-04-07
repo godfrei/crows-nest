@@ -5,7 +5,7 @@ import SEO from "../../components/SEO";
 import Layout from "../../layout";
 import DatabaseLayout from "../../layout/database";
 
-export default () => (
+const Demo = () => (
   <Layout>
     <Helmet>
       <title>Demo | {config.siteTitle}</title>
@@ -59,3 +59,5 @@ export default () => (
     </DatabaseLayout>
   </Layout>
 );
+
+export default Demo;

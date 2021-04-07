@@ -7,7 +7,7 @@ import Layout from "../layout";
 import GradientTitle from "../components/GradientTitle";
 import storage from "../images/storage.png";
 
-export default () => (
+const Storage = () => (
   <Layout>
     <main>
       <Helmet>
@@ -31,3 +31,5 @@ export default () => (
     </main>
   </Layout>
 );
+
+export default Storage;

@@ -5,7 +5,7 @@ import SEO from "../../components/SEO";
 import Layout from "../../layout";
 import DatabaseLayout from "../../layout/database";
 
-export default () => (
+const Cheats = () => (
   <Layout>
     <Helmet>
       <title>Cheat Codes | {config.siteTitle}</title>
@@ -165,3 +165,5 @@ export default () => (
     </DatabaseLayout>
   </Layout>
 );
+
+export default Cheats;
