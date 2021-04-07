@@ -1,1 +1,1 @@
-export { default } from './TechSpecs';
+export { default } from "./TechSpecs";

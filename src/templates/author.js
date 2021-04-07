@@ -1,13 +1,13 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../layout'
-import MissionListing from '../components/MissionListing'
-import config from '../../data/SiteConfig'
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../layout";
+import MissionListing from "../components/MissionListing";
+import config from "../../data/SiteConfig";
 
 const AuthorTemplate = ({ data, pageContext }) => {
   console.log(data);
-  
+
   return (
     <Layout>
       <Helmet title={` "${pageContext.author}" - ${config.siteTitle}`} />
@@ -15,9 +15,9 @@ const AuthorTemplate = ({ data, pageContext }) => {
       <MissionListing missionNodes={data.allMissionsJson.nodes} />
     </Layout>
   );
-}
+};
 
-export default AuthorTemplate
+export default AuthorTemplate;
 
 export const pageQuery = graphql`
   query AuthorPage($author: String) {
@@ -69,4 +69,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

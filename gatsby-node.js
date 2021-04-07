@@ -44,7 +44,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `;
   createTypes(typeDefs);
-}
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -55,8 +55,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     const collection = _.get(fileNode, "sourceInstanceName");
 
-    createNodeField({ node, name: "collection", value: collection});
-    
+    createNodeField({ node, name: "collection", value: collection });
+
     if (
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
@@ -81,7 +81,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         createNodeField({
           node,
           name: "date",
-          value: date.toISOString()
+          value: date.toISOString(),
         });
       }
     }
@@ -98,33 +98,33 @@ exports.createPages = async ({ graphql, actions }) => {
   const componentPage = path.resolve("src/templates/component.js");
   const specPage = path.resolve("src/templates/spec.js");
   const authorPage = path.resolve("src/templates/author.js");
-  const enemyPage = path.resolve('src/templates/enemies/index.js');
-  const itemPage = path.resolve('src/templates/items/index.js');
-  const weaponPage = path.resolve('src/templates/weapons/index.js');
+  const enemyPage = path.resolve("src/templates/enemies/index.js");
+  const itemPage = path.resolve("src/templates/items/index.js");
+  const weaponPage = path.resolve("src/templates/weapons/index.js");
 
   // Create Mission Lists page
   createPage({
-    path: '/missions',
-    component: path.resolve('./src/templates/mission-list.js'),
+    path: "/missions",
+    component: path.resolve("./src/templates/mission-list.js"),
     context: {
-      'sort': { "fields": ["title"], "order": "ASC" },
+      sort: { fields: ["title"], order: "ASC" },
     },
   });
 
   // How to do this? Need to get rating from reviews, but...
   createPage({
-    path: '/missions/rating',
-    component: path.resolve('./src/templates/mission-list.js'),
+    path: "/missions/rating",
+    component: path.resolve("./src/templates/mission-list.js"),
     context: {
-      'sort': { "fields": ["reviews___frontmatter___rating"], "order": "DESC" },
+      sort: { fields: ["reviews___frontmatter___rating"], order: "DESC" },
     },
   });
 
   createPage({
-    path: '/missions/date',
-    component: path.resolve('./src/templates/mission-list.js'),
+    path: "/missions/date",
+    component: path.resolve("./src/templates/mission-list.js"),
     context: {
-      'sort': { "fields": ["date"], "order": "DESC" },
+      sort: { fields: ["date"], order: "DESC" },
     },
   });
 
@@ -138,7 +138,7 @@ exports.createPages = async ({ graphql, actions }) => {
             authors
             slug
             cover {
-							publicURL
+              publicURL
             }
           }
         }
@@ -157,7 +157,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // let missionEdges = markdownEdges.filter((edge) => {
   //   // Filter out only the missions, not the reviews
-  //   if (edge.node.fields.collection === 'missions' && edge.node.fields.slug.indexOf('review') === -1) 
+  //   if (edge.node.fields.collection === 'missions' && edge.node.fields.slug.indexOf('review') === -1)
   //     return edge;
   // });
 
@@ -167,7 +167,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: missionPage,
       context: {
         slug: node.slug,
-      }
+      },
     });
   });
 
@@ -205,8 +205,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // const tagSet = new Set();
   // const categorySet = new Set();
-  
-
 
   // Get all Markdown edges from the query
   const markdownEdges = markdownQueryResult.data.allMarkdownRemark.edges;
@@ -214,7 +212,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // POSTS
 
   let postEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'posts') return edge;
+    if (edge.node.fields.collection === "posts") return edge;
   });
 
   postEdges.sort((postA, postB) => {
@@ -261,15 +259,14 @@ exports.createPages = async ({ graphql, actions }) => {
         nextslug: nextEdge.node.fields.slug,
         prevtitle: prevEdge.node.frontmatter.title,
         prevslug: prevEdge.node.fields.slug,
-      }
+      },
     });
   });
 
   // 3DOs
 
   let threeDOEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === '3dos') 
-      return edge;
+    if (edge.node.fields.collection === "3dos") return edge;
   });
 
   threeDOEdges.forEach((edge, index) => {
@@ -278,15 +275,14 @@ exports.createPages = async ({ graphql, actions }) => {
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,
-      }
+      },
     });
   });
 
   // VOCs
 
   let vocEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'vocs') 
-      return edge;
+    if (edge.node.fields.collection === "vocs") return edge;
   });
 
   vocEdges.forEach((edge, index) => {
@@ -295,15 +291,14 @@ exports.createPages = async ({ graphql, actions }) => {
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,
-      }
+      },
     });
   });
 
   // WAXes
 
   let waxEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'waxes') 
-      return edge;
+    if (edge.node.fields.collection === "waxes") return edge;
   });
 
   waxEdges.forEach((edge, index) => {
@@ -312,15 +307,14 @@ exports.createPages = async ({ graphql, actions }) => {
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,
-      }
+      },
     });
   });
 
   // Specs
 
   let specEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'specs') 
-      return edge;
+    if (edge.node.fields.collection === "specs") return edge;
   });
 
   specEdges.forEach((edge, index) => {
@@ -329,7 +323,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: specPage,
       context: {
         slug: edge.node.fields.slug,
-      }
+      },
     });
   });
 
@@ -339,35 +333,34 @@ exports.createPages = async ({ graphql, actions }) => {
 
   markdownEdges.forEach((edge) => {
     if (edge.node.frontmatter.authors) {
-      edge.node.frontmatter.authors.forEach(author => {
+      edge.node.frontmatter.authors.forEach((author) => {
         authorSet.add(author);
       });
     }
   });
 
   missionNodes.forEach((node) => {
-    if(node.authors) {
-      node.authors.forEach(author => {
+    if (node.authors) {
+      node.authors.forEach((author) => {
         authorSet.add(author);
-      })
+      });
     }
   });
 
-  authorSet.forEach(author => {
+  authorSet.forEach((author) => {
     createPage({
       path: `/authors/${_.kebabCase(author)}`,
       component: authorPage,
       context: {
-        author
-      }
+        author,
+      },
     });
   });
 
   // Enemies
 
   let enemyEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'enemies') 
-      return edge;
+    if (edge.node.fields.collection === "enemies") return edge;
   });
 
   enemyEdges.forEach((edge, index) => {
@@ -376,15 +369,14 @@ exports.createPages = async ({ graphql, actions }) => {
       component: enemyPage,
       context: {
         slug: edge.node.fields.slug,
-      }
+      },
     });
   });
 
   // Items
 
   let itemEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'items') 
-      return edge;
+    if (edge.node.fields.collection === "items") return edge;
   });
 
   itemEdges.forEach((edge, index) => {
@@ -393,15 +385,14 @@ exports.createPages = async ({ graphql, actions }) => {
       component: itemPage,
       context: {
         slug: edge.node.fields.slug,
-      }
+      },
     });
   });
 
   // Weapons
 
   let weaponEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === 'weapons') 
-      return edge;
+    if (edge.node.fields.collection === "weapons") return edge;
   });
 
   weaponEdges.forEach((edge, index) => {
@@ -410,12 +401,11 @@ exports.createPages = async ({ graphql, actions }) => {
       component: weaponPage,
       context: {
         slug: edge.node.fields.slug,
-      }
+      },
     });
   });
 
-
- // Generate link foreach tag page
+  // Generate link foreach tag page
   // tagSet.forEach(tag => {
   //   createPage({
   //     path: `/tags/${_.kebabCase(tag)}/`,

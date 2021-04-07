@@ -1,10 +1,10 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../layout'
-import LaunchPad from '../components/LaunchPad'
-import config from '../../data/SiteConfig'
-import GradientTitle from "../components/GradientTitle"
-import launchPad from "../images/launch_pad.png"
+import React from "react";
+import Helmet from "react-helmet";
+import Layout from "../layout";
+import LaunchPad from "../components/LaunchPad";
+import config from "../../data/SiteConfig";
+import GradientTitle from "../components/GradientTitle";
+import launchPad from "../images/launch_pad.png";
 
 const LaunchpadPage = () => (
   <Layout>
@@ -15,6 +15,6 @@ const LaunchpadPage = () => (
       <LaunchPad />
     </main>
   </Layout>
-)
+);
 
-export default LaunchpadPage
+export default LaunchpadPage;

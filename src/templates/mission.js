@@ -1,21 +1,28 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../layout'
-import TechSpecs from '../components/TechSpecs';
-import MissionHeader from '../components/MissionHeader';
-import Rating from '../components/Rating';
-import config from '../../data/SiteConfig'
-import moment from 'moment';
-import CaptureCarousel from '../components/CaptureCarousel';
-import { mission, missingFile, download, descAndReviews, plot, coverImage } from './mission.module.scss';
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../layout";
+import TechSpecs from "../components/TechSpecs";
+import MissionHeader from "../components/MissionHeader";
+import Rating from "../components/Rating";
+import config from "../../data/SiteConfig";
+import moment from "moment";
+import CaptureCarousel from "../components/CaptureCarousel";
+import {
+  mission,
+  missingFile,
+  download,
+  descAndReviews,
+  plot,
+  coverImage,
+} from "./mission.module.scss";
 
 export default ({ data }) => {
   const missionNode = data.allMissionsJson.nodes[0];
 
   function getReviewContent(reviews) {
     let reviewContent = null;
-    if(reviews.length >= 1) {
+    if (reviews.length >= 1) {
       reviewContent = (
         <>
           {reviews.map((review) => {
@@ -27,61 +34,69 @@ export default ({ data }) => {
             return (
               <>
                 <div>
-                  <p>Reviewed by: {reviewers.join(', ')} | {dateString}</p>
+                  <p>
+                    Reviewed by: {reviewers.join(", ")} | {dateString}
+                  </p>
                   <div dangerouslySetInnerHTML={{ __html: review.html }} />
                   <Rating score={rating} />
                 </div>
                 <hr />
               </>
-            )
+            );
           })}
         </>
       );
+    } else {
+      reviewContent = <p>No reviews yet.</p>;
     }
-    else {
-      reviewContent = (
-        <p>No reviews yet.</p>
-      )
-    }
-    return reviewContent
+    return reviewContent;
   }
 
   function getDownloadLink(missionNode) {
     const file = missionNode.filename || null;
 
-    if(file) {
+    if (file) {
       return (
         <a href={file.publicURL} className={download}>
-          <strong>Download <span className="sr-only">{missionNode.title}</span></strong>
+          <strong>
+            Download <span className="sr-only">{missionNode.title}</span>
+          </strong>
           ({`${file.name}.${file.extension}`}, {file.prettySize})
         </a>
-      )
-    }
-    else {
+      );
+    } else {
       return (
         <div className={missingFile}>
           <strong>File Missing</strong>
-          <p>Do you have a copy of this mission? <a href="mailto:godfrei@gmail.com">Let us know!</a></p>
+          <p>
+            Do you have a copy of this mission?{" "}
+            <a href="mailto:godfrei@gmail.com">Let us know!</a>
+          </p>
         </div>
       );
     }
   }
 
-  const cover = missionNode.cover ? missionNode.cover.publicURL : '';
+  const cover = missionNode.cover ? missionNode.cover.publicURL : "";
 
   return (
     <Layout>
       <Helmet>
         <title>Mission {`${missionNode.title} | ${config.siteTitle}`}</title>
       </Helmet>
-      <div className={coverImage} style={{ backgroundImage: `url(${cover})` }}></div>
+      <div
+        className={coverImage}
+        style={{ backgroundImage: `url(${cover})` }}
+      ></div>
       <div className={mission}>
         <MissionHeader node={missionNode} />
         <div className="content">
           <div className={descAndReviews}>
             <h2>Description</h2>
             <p className={plot}>{missionNode.description}</p>
-            { missionNode.screenshots.length > 0 ? <CaptureCarousel captures={missionNode.screenshots} /> : null }
+            {missionNode.screenshots.length > 0 ? (
+              <CaptureCarousel captures={missionNode.screenshots} />
+            ) : null}
             <h2>Review</h2>
             {getReviewContent(missionNode.reviews)}
           </div>
@@ -92,13 +107,13 @@ export default ({ data }) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query MissionBySlug($slug: String!) {
-    allMissionsJson(filter: {slug: {eq: $slug} }) {
+    allMissionsJson(filter: { slug: { eq: $slug } }) {
       nodes {
         title
         date
@@ -144,4 +159,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,7 +1,7 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../layout'
-import config from '../../data/SiteConfig'
+import React from "react";
+import Helmet from "react-helmet";
+import Layout from "../layout";
+import config from "../../data/SiteConfig";
 
 const ContactPage = () => (
   <Layout>
@@ -11,5 +11,5 @@ const ContactPage = () => (
       <p>Contact informations</p>
     </main>
   </Layout>
-)
-export default ContactPage
+);
+export default ContactPage;

@@ -1,1 +1,1 @@
-export { default } from './AnimatedSprite';
+export { default } from "./AnimatedSprite";

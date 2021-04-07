@@ -1,1 +1,1 @@
-export { default } from './MissionCard';
+export { default } from "./MissionCard";

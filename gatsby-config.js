@@ -14,8 +14,8 @@ module.exports = {
         config.siteUrl,
         config.pathPrefix
       )}/logos/logo-48.png`,
-      copyright: config.copyright
-    }
+      copyright: config.copyright,
+    },
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -54,71 +54,71 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",
-        path: `${__dirname}/static/`
-      }
+        path: `${__dirname}/static/`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
-        path: `${__dirname}/content/blog`
-      }
+        path: `${__dirname}/content/blog`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "reviews",
-        path: `${__dirname}/content/missions`
-      }
+        path: `${__dirname}/content/missions`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "3dos",
-        path: `${__dirname}/content/3dos`
-      }
+        path: `${__dirname}/content/3dos`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "specs",
-        path: `${__dirname}/content/specs`
-      }
+        path: `${__dirname}/content/specs`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "waxes",
-        path: `${__dirname}/content/waxes`
-      }
+        path: `${__dirname}/content/waxes`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "vocs",
-        path: `${__dirname}/content/vocs`
-      }
+        path: `${__dirname}/content/vocs`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "enemies",
-        path: `${__dirname}/content/enemies`
-      }
+        path: `${__dirname}/content/enemies`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "items",
-        path: `${__dirname}/content/items`
-      }
+        path: `${__dirname}/content/items`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "weapons",
-        path: `${__dirname}/content/weapons`
-      }
+        path: `${__dirname}/content/weapons`,
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -127,17 +127,17 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 690
-            }
+              maxWidth: 690,
+            },
           },
           {
-            resolve: "gatsby-remark-responsive-iframe"
+            resolve: "gatsby-remark-responsive-iframe",
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers"
-        ]
-      }
+          "gatsby-remark-autolink-headers",
+        ],
+      },
     },
     // {
     //   resolve: "gatsby-plugin-google-analytics",
@@ -148,8 +148,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-nprogress",
       options: {
-        color: config.themeColor
-      }
+        color: config.themeColor,
+      },
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -178,7 +178,7 @@ module.exports = {
           //   type: 'image/png',
           // },
         ],
-      }
+      },
     },
     "gatsby-plugin-offline",
     {
@@ -210,7 +210,7 @@ module.exports = {
           {
             serialize(ctx) {
               const { rssMetadata } = ctx.query.site.siteMetadata;
-              return ctx.query.allMarkdownRemark.edges.map(edge => ({
+              return ctx.query.allMarkdownRemark.edges.map((edge) => ({
                 categories: edge.node.frontmatter.tags,
                 date: edge.node.fields.date,
                 title: edge.node.frontmatter.title,
@@ -219,8 +219,8 @@ module.exports = {
                 guid: rssMetadata.site_url + edge.node.fields.slug,
                 custom_elements: [
                   { "content:encoded": edge.node.html },
-                  { author: config.userEmail }
-                ]
+                  { author: config.userEmail },
+                ],
               }));
             },
             query: `
@@ -250,11 +250,10 @@ module.exports = {
             }
           `,
             output: config.siteRss,
-            title: config.siteRss
-          }
-        ]
-      }
-    }
-  ]
+            title: config.siteRss,
+          },
+        ],
+      },
+    },
+  ],
 };
-

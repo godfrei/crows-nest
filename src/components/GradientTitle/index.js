@@ -1,1 +1,1 @@
-export { default } from './GradientTitle';
+export { default } from "./GradientTitle";

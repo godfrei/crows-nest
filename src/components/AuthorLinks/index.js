@@ -1,1 +1,1 @@
-export { default } from './AuthorLinks';
+export { default } from "./AuthorLinks";

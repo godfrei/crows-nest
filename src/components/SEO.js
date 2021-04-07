@@ -1,72 +1,74 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import urljoin from 'url-join'
-import config from '../../data/SiteConfig'
+import React from "react";
+import Helmet from "react-helmet";
+import urljoin from "url-join";
+import config from "../../data/SiteConfig";
 
 const SEO = ({ postNode, postPath, postSEO }) => {
-  let title
-  let description
-  let image
-  let postURL
+  let title;
+  let description;
+  let image;
+  let postURL;
 
   if (postSEO) {
-    const postMeta = postNode.frontmatter
-    ;({ title } = postMeta)
-    description = postMeta.description ? postMeta.description : postNode.excerpt
-    image = postMeta?.cover?.publicURL
-    postURL = urljoin(config.siteUrl, config.pathPrefix, postPath)
+    const postMeta = postNode.frontmatter;
+    ({ title } = postMeta);
+    description = postMeta.description
+      ? postMeta.description
+      : postNode.excerpt;
+    image = postMeta?.cover?.publicURL;
+    postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
   }
   //   title = config.siteTitle
   //   description = config.siteDescription
   //   image = config.siteLogo
   // }
   // Protect against lack of content, not just undefined postSEO
-  if (!title) title = config.siteTitle
-  if (!description) description = config.siteDescription
+  if (!title) title = config.siteTitle;
+  if (!description) description = config.siteDescription;
   if (!image) image = config.siteLogo;
 
-  image = urljoin(config.siteUrl, config.pathPrefix, image)
-  const blogURL = urljoin(config.siteUrl, config.pathPrefix)
+  image = urljoin(config.siteUrl, config.pathPrefix, image);
+  const blogURL = urljoin(config.siteUrl, config.pathPrefix);
   const schemaOrgJSONLD = [
     {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
+      "@context": "http://schema.org",
+      "@type": "WebSite",
       url: blogURL,
       name: title,
-      alternateName: config.siteTitleAlt ? config.siteTitleAlt : ''
-    }
-  ]
+      alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
+    },
+  ];
   if (postSEO) {
     schemaOrgJSONLD.push(
       {
-        '@context': 'http://schema.org',
-        '@type': 'BreadcrumbList',
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
         itemListElement: [
           {
-            '@type': 'ListItem',
+            "@type": "ListItem",
             position: 1,
             item: {
-              '@id': postURL,
+              "@id": postURL,
               name: title,
-              image
-            }
-          }
-        ]
+              image,
+            },
+          },
+        ],
       },
       {
-        '@context': 'http://schema.org',
-        '@type': 'BlogPosting',
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
         url: blogURL,
         name: title,
-        alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+        alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
         headline: title,
         image: {
-          '@type': 'ImageObject',
-          url: image
+          "@type": "ImageObject",
+          url: image,
         },
-        description
+        description,
       }
-    )
+    );
   }
   return (
     <Helmet>
@@ -87,20 +89,20 @@ const SEO = ({ postNode, postPath, postSEO }) => {
       <meta property="og:image" content={image} />
       <meta
         property="fb:app_id"
-        content={config.siteFBAppID ? config.siteFBAppID : ''}
+        content={config.siteFBAppID ? config.siteFBAppID : ""}
       />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:creator"
-        content={config.userTwitter ? config.userTwitter : ''}
+        content={config.userTwitter ? config.userTwitter : ""}
       />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
     </Helmet>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

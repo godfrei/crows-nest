@@ -1,8 +1,8 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../layout/index'
-import config from '../../data/SiteConfig'
-import trooper from '../images/trooper_sprite.png'
+import React from "react";
+import Helmet from "react-helmet";
+import Layout from "../layout/index";
+import config from "../../data/SiteConfig";
+import trooper from "../images/trooper_sprite.png";
 
 const NotFoundPage = () => (
   <Layout>
@@ -13,6 +13,6 @@ const NotFoundPage = () => (
       <p>...because there's nothing here to see.</p>
     </main>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

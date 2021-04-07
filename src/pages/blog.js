@@ -1,10 +1,10 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../layout'
-import PostListing from '../components/PostListing'
-import SEO from '../components/SEO'
-import config from '../../data/SiteConfig'
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../layout";
+import PostListing from "../components/PostListing";
+import SEO from "../components/SEO";
+import config from "../../data/SiteConfig";
 
 const posts = ({ data }) => (
   <Layout>
@@ -14,9 +14,9 @@ const posts = ({ data }) => (
 
     <PostListing postEdges={data.allMarkdownRemark.edges} />
   </Layout>
-)
+);
 
-export default posts
+export default posts;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
@@ -24,7 +24,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
-      filter: {fields: {collection: {eq: "posts"}}}
+      filter: { fields: { collection: { eq: "posts" } } }
     ) {
       edges {
         node {
@@ -45,4 +45,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

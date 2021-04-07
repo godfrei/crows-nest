@@ -1,15 +1,15 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import ReviewCard from '../ReviewCard'
-import { reviewGrid } from './ReviewListing.module.scss';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import ReviewCard from "../ReviewCard";
+import { reviewGrid } from "./ReviewListing.module.scss";
 
 const ReviewListing = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query ReviewQuery {
       allMarkdownRemark(
         limit: 4
-        filter: {frontmatter: {mission: {id: {ne: null}}}}
-        sort: {fields: frontmatter___date, order: DESC}
+        filter: { frontmatter: { mission: { id: { ne: null } } } }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         nodes {
           frontmatter {
@@ -28,19 +28,19 @@ const ReviewListing = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <ul className={reviewGrid}>
-      {
-          data.allMarkdownRemark.nodes.map(review => {
-              return (
-                  <li><ReviewCard review={review} /></li>
-              )
-          })
-      }
+      {data.allMarkdownRemark.nodes.map((review) => {
+        return (
+          <li>
+            <ReviewCard review={review} />
+          </li>
+        );
+      })}
     </ul>
-  )
-}
+  );
+};
 
-export default ReviewListing
+export default ReviewListing;

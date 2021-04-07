@@ -1,1 +1,1 @@
-export { default } from './Aurebesh';
+export { default } from "./Aurebesh";

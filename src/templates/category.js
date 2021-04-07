@@ -1,23 +1,19 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../layout'
-import PostListing from '../components/PostListing'
-import config from '../../data/SiteConfig'
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../layout";
+import PostListing from "../components/PostListing";
+import config from "../../data/SiteConfig";
 
 const CategoryTemplate = ({ data, pageContext }) => (
   <Layout>
     <Helmet title={` "${pageContext.category}" - ${config.siteTitle}`} />
-    <h1>
-Category:
-{' '}
-{pageContext.category}
-</h1>
+    <h1>Category: {pageContext.category}</h1>
     <PostListing postEdges={data.allMarkdownRemark.edges} />
   </Layout>
-)
+);
 
-export default CategoryTemplate
+export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
 // export const pageQuery = graphql`

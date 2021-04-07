@@ -1,1 +1,1 @@
-export { default } from './CaptureCarousel';
+export { default } from "./CaptureCarousel";
