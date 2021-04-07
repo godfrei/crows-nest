@@ -19,6 +19,7 @@ const EditorsChoicePage = () => {
                     description
                     date
                     authors
+                    editorsChoice
                 }
             }
         }
@@ -26,8 +27,8 @@ const EditorsChoicePage = () => {
 
     return (
         <Layout>
-            <Helmet title={`Editor's Choice | ${config.siteTitle}`} />
-            <h1>Editor's Choice</h1>
+            <Helmet title={`Editors' Choice | ${config.siteTitle}`} />
+            <h1>Editors' Choice</h1>
     
             <p>These missions have been selected as the best-of-the-best the Dark Forces community has to offer.</p>
     

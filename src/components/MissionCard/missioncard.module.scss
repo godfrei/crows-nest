@@ -77,3 +77,15 @@
 .authorList {
     font-size: 14px;
 }
+
+.ecClass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 12px 32px 32px;
+    background-image: radial-gradient(at 52px 32px, rgba($black, 0.8), rgba($black, 0.6) 30%, transparent 70%, transparent), linear-gradient(to bottom left, $black, transparent 50%, transparent);
+    
+    svg {
+        width: 40px;
+    }
+}

@@ -13,7 +13,7 @@
     &:after {
         grid-row: row 1;
         z-index: 1;
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     &:after {
@@ -31,7 +31,7 @@
     grid-column: 3 / 4;
     
     h1 {
-        margin-top: 0;
+        margin-top: 20px;
         margin-bottom: 0.2em;
 
         small { // Aurebesh
@@ -42,6 +42,13 @@
 
 .awards {
     grid-column: 4 / 5;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+.ecLink {
+    text-decoration: none;
+    
+    &, & svg {
+        width: 145px;
+    }
 }

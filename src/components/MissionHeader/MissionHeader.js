@@ -1,16 +1,20 @@
-import React from "react"
-import EditorsChoice from "../EditorsChoice"
-import AuthorLinks from "../AuthorLinks"
-import Aurebesh from '../Aurebesh';
-import { header, content, headGroup, awards } from "./missionheader.module.scss"
+import React from "react";
+import { Link } from 'gatsby';
+import EditorsChoice from "../EditorsChoice";
 
-export default ({ node }) => {
+import AuthorLinks from "../AuthorLinks";
+import Aurebesh from '../Aurebesh';
+import { header, content, headGroup, awards, ecLink } from "./missionheader.module.scss";
+
+const MissionHeader = ({ node }) => {
 
     function getEditorsChoice(node) {
         let editorsChoice = null
         if(node.editorsChoice) {
           editorsChoice = (
-            <EditorsChoice />
+            <Link to="/missions/editors-choice" className={ecLink}>
+                <EditorsChoice />
+            </Link>
           )
         }
         return editorsChoice
@@ -33,3 +37,5 @@ export default ({ node }) => {
         </header>
     )
 }
+
+export default MissionHeader;

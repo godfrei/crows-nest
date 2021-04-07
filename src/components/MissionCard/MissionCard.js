@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Aurebesh from '../Aurebesh';
-import { card, authorList, cover, horizontal, vertical } from "./missioncard.module.scss"
+import EditorsChoice from '../EditorsChoice';
+import { card, authorList, cover, horizontal, vertical, ecClass } from "./missioncard.module.scss"
 
 function averageRating(mission) {
     if(!mission.reviews || mission.reviews.length <= 0) return 0;
@@ -17,7 +18,19 @@ function averageRating(mission) {
     return Math.round(ratingTotal / numberOfReviews);
 }
 
-export default ({ node, orientation }) => {
+function getEditorsChoice(node) {
+    let editorsChoice = null
+    if(node.editorsChoice) {
+        editorsChoice = (
+            <div className={ecClass} title="Editors' Choice">
+                <EditorsChoice />
+            </div>
+        )
+    }
+    return editorsChoice
+}
+
+const MissionCard = ({ node, orientation }) => {
     const coverUrl = (node.cover) ? node.cover.publicURL : '';
     const authors = node.authors ? node.authors.join(', ') : 'Unknown';
     const excerpt = node.description ? node.description.split(' ').slice(0, 30).join(' ') : '';
@@ -32,10 +45,13 @@ export default ({ node, orientation }) => {
                     <Aurebesh text={node.title} />
                     {node.title}
                 </h1>
+                {getEditorsChoice(node)}
                 <span title="Authors" className={authorList}>{authors}</span>
                 <p>{excerpt}&hellip;</p>
                 {rating > 0 ? `Rating: ${rating}` : ""}
             </article>
         </Link>
     )
-}
+};
+
+export default MissionCard;

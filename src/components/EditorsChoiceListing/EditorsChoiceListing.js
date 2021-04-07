@@ -20,12 +20,13 @@ const EditorsChoiceListing = () => {
                     description
                     date
                     authors
+                    editorsChoice
                 }
             }
         }
     `);
     
-    console.log(data);
+    // console.log(data);
 
     return (
         // <MissionListing missionEdges={data.allMarkdownRemark.edges} />

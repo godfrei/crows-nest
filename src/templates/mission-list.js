@@ -56,6 +56,7 @@ export const missionsQuery = graphql`
         title
         authors
         description
+        editorsChoice
         reviews {
           frontmatter {
             rating
