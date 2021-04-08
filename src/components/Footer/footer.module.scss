@@ -8,36 +8,6 @@
     position: relative;
     z-index: 102;
 
-    &:before {
-        content: '';
-        height: calc(5vw);
-        border: 2px solid rgba(255,255,255,0.8);
-        border-radius: 20px;
-        border-top: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        position: absolute;
-        width: calc(100% - 16px);
-        max-width: $max-width;
-        left: 8px;
-        right: 8px;
-        top: calc(-5vw - 8px);
-        margin: 0 auto;
-        background-image: linear-gradient(to top, rgba($blue, 0.4), transparent);
-        z-index: 103;
-    }
-
-    &:after {
-        content: '';
-        height: calc(5vw);
-        position: absolute;
-        left: -16px;
-        right: -16px;
-        top: -5vw;
-        background-image: linear-gradient(to top, $black, transparent);
-        z-index: 102;
-    }
-
     .content {
         max-width: $max-width;
         margin: auto;
@@ -45,12 +15,43 @@
         display: flex;
         justify-content: space-between;
     }
-
-    @media (min-width: 769px) {
-        padding-bottom: 1em;
-    }
     
     ul {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .footer {
+        padding-bottom: 1em;
+        &:before {
+            content: '';
+            height: calc(5vw);
+            border: 2px solid rgba(255,255,255,0.8);
+            border-radius: 20px;
+            border-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            position: absolute;
+            width: calc(100% - 16px);
+            max-width: $max-width;
+            left: 8px;
+            right: 8px;
+            top: calc(-5vw - 8px);
+            margin: 0 auto;
+            background-image: linear-gradient(to top, rgba($blue, 0.4), transparent);
+            z-index: 103;
+        }
+    
+        &:after {
+            content: '';
+            height: calc(5vw);
+            position: absolute;
+            left: -16px;
+            right: -16px;
+            top: -5vw;
+            background-image: linear-gradient(to top, $black, transparent);
+            z-index: 102;
+        }
     }
 }

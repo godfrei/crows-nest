@@ -1,14 +1,20 @@
+
 .reviewGrid {
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 2rem;
     margin: 0 auto;
+    padding: 0;
     padding-bottom: 2em;
 
     li {
+        list-style: none;
         position: relative;
         // max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .reviewGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 2rem;
     }
 }

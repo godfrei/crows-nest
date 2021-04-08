@@ -13,8 +13,8 @@
 .content {
     position: relative;
     padding: 16px 24px;
-    padding-top: 200px;
-    background-image: linear-gradient(to bottom, transparent, transparent 150px, $black 250px, $black);
+    padding-top: 70px;
+    background-image: linear-gradient(to bottom, transparent, transparent 60px, $black 100px, $black);
     
     h1 {
         text-shadow: 1px 1px 0 $black, 0 0 16px rgba($black,0.2);
@@ -27,9 +27,20 @@
     top: 0;
     right: 0;
     left: 0;
-    height: 250px;
+    height: 100px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     // image-rendering: pixelated;
+}
+
+@media screen and (min-width: 767px) {
+    .cover {
+        height: 250px;
+    }
+
+    .content {
+        padding-top: 200px;
+        background-image: linear-gradient(to bottom, transparent, transparent 150px, $black 250px, $black);
+    }
 }

@@ -1,106 +1,21 @@
 @import '../../styles/vars';
 @import '../../styles/colors';
 
-// header {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding: 1rem;
-  // position: sticky;
-  // top: 0;
-  // background: hsla(0, 0%, 100%, 0.75);
-  // // -webkit-backdrop-filter: blur(7px);
-  // // backdrop-filter: blur(7px);
-  // z-index: 9;
-  // margin-left: auto;
-  // margin-right: auto;
-  // height: 70px;
-
-  // a {
-  //   text-decoration: none;
-  //   color: #3c4856;
-  //   font-size: 1.1rem;
-  //   margin-top: 0;
-  // }
-
-  // h1 {
-  //   margin-top: 5px;
-  // }
-
-  // nav a {
-  //   color: #757575;
-  //   transition: color 0.2s ease;
-  //   text-decoration: none;
-  //   display: inline-block;
-  //   position: relative;
-  //   font-size: 16px;
-
-  //   &:hover {
-  //     color: #4f647d;
-  //   }
-
-  //   strong {
-  //     margin: 1px;
-  //     color: #4f647d;
-  //     font-size: 0.8rem;
-  //   }
-  // }
-
-  // .activeNav {
-  //   color: #4f647d;
-  //   font-weight: 700;
-  // }
-// }
-
-// .main-nav {
-//   display: flex;
-//   list-style: none;
-//   padding: 0;
-//   margin-top: 30px;
-//   overflow: auto;
-//   overflow: -moz-scrollbars-none;
-//   scrollbar-width: none;
-//   -ms-overflow-style: none !important;
-
-//   &::-webkit-scrollbar {
-//     width: 0 !important;
-//   }
-
-//   li {
-//     font-size: 1.3rem;
-
-//     &+li {
-//       margin-left: 1.5rem;
-//     }
-//   }
-// }
 
 .header {
-  display: flex;
-  position: fixed;
   z-index: 103;
   width: 100%;
   background-color: $gray;
-  // background-image: url('../../images/sidebar_bg.png');
-  // border-bottom: $spacing-3 solid $black;
-
 
   > div {
-    width: 100%;
-    max-width: $max-width;
-    padding: 0 $spacing-10;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
     position: relative;
   }
 
   img {
     position: absolute;
-    width: 160px;
-    margin-left: -#{$spacing-9};
-    margin-top: $spacing-4;
     transform: rotate(15deg);
+    width: 80px;
+    margin-top: $spacing-2;
   }
 }
 
@@ -109,78 +24,45 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  padding: $spacing-6 $spacing-7 $spacing-4;
-  padding-right: 0;
-  // background-color: $black;
+  padding: $spacing-3 $spacing-5;
   margin-bottom: $spacing-2;
-  height: 80px;
+  height: 48px;
   position: relative;
-
-  // &:before {
-  //   position: absolute;
-  //   content: '';
-  //   display: block;
-  //   height: $spacing-10;
-  //   width: 100vw;
-  //   top: 0;
-  //   left: 0;
-  //   margin-left: -100vw;
-  //   background-color: $black;
-  // }
-
-  // &:after {
-  //   content: '';
-  //   display: block;
-  //   width: $spacing-10;
-  //   height: $spacing-10;
-  //   border: $spacing-10/2 solid $black;
-  //   border-bottom-color: $gray;
-  //   border-right-color: $gray;
-  // }
+  font-size: 32px;
 
   h1 {
     margin: 0;
     margin-left: 80px;
-    margin-right: $spacing-9;
+    // margin-right: $spacing-9;
   }
 }
 
-@media (max-width: 1000px) {
-  // header {
-  //   display: block;
-  //   height: 120px;
-  // }
+@media screen and (min-width: 767px) {
+  .header {
+    display: flex;
+    position: fixed;
 
-  // nav {
-  //   margin-top: -20px;
+    > div {
+      width: 100%;
+      max-width: $max-width;
+      padding: 0 $spacing-10;
+      margin: auto;
+      display: flex;
+      align-items: flex-end;
+      // justify-content: space-between;
+    }
 
-  //   ul {
-  //     margin: 0;
-  //   }
-  // }
-}
+    img {
+      width: 160px;
+      margin-left: -#{$spacing-9};
+      margin-top: $spacing-4;
+    }
+  }
 
-@media (max-width: 768px) {
-  // header {
-  //   strong {
-  //     display: none;
-  //   }
-  // }
-
-  // .main-nav {
-  //   li {
-  //     &+li {
-  //       margin-left: 1rem;
-  //     }
-  //   }
-  // }
-}
-
-@media (max-width: 520px) {
-  // header nav a {
-  //   font-size: 0.7rem;
-  //   border: 1px solid #eee;
-  //   padding: 2px;
-  //   border-radius: 5px;
-  // }
+  .title {
+    font-size: 48px;
+    height: 80px;
+    padding: $spacing-6 0 $spacing-4 $spacing-7;
+    margin-right: 40px;
+  }
 }

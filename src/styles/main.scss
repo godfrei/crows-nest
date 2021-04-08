@@ -12,8 +12,8 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .uppercase {
@@ -32,38 +32,12 @@ body {
 }
 
 main {
-    padding: $spacing-3 $spacing-7;
+    padding: $spacing-3 $spacing-5;
     position: relative;
 }
 
 strong {
     font-weight: 600;
-}
-
-@media (min-width: 769px) {
-    main {
-        padding: $spacing-6 $spacing-10 $spacing-10;
-        padding-top: 150px;
-        max-width: $max-width;
-        margin: auto;
-        position: relative;
-    }
-
-    .glow {
-        position: fixed;
-        margin: 0 auto;
-        top: 92px;
-        left: 8px;
-        right: 8px;
-        width: calc(100% - 16px);
-        max-width: $max-width;
-        bottom: 8px;
-        z-index: 100;
-        border: 2px solid rgba(255,255,255,0.8);
-        border-radius: 20px;
-        box-shadow: inset 0 0 10vw rgba($blue, 0.7), 0 0 10vw rgba($blue, 0.8), 0 0 0 10vw $black;
-        pointer-events: none;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,11 +46,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     letter-spacing: 1px;
     color: white;
-}
-
-h1 {
-    font-size: 48px;
-    margin: 0.2em 0 0.4em;
 }
 
 .section_icon {
@@ -103,10 +72,23 @@ a:hover {
     color: $teal;
 }
 
+.content {
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
+    grid-template-areas: "... padding content sidebar ...";
+    position: relative;
+    z-index: 1;
+}
+
+code {
+    color: $amber;
+}
+
 #homepage_header {
     background-color: $gray;
     border-bottom: $spacing-3 solid $black;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -114,27 +96,16 @@ a:hover {
 
     > div {
         width: 100%;
-        max-width: $max-width;
-        padding: 0 $spacing-10;
+        // max-width: $max-width;
+        // padding: 0 $spacing-10;
         margin: auto;
         display: flex;
-        justify-content: flex-end;
+        // justify-content: flex-end;
     }
-
 }
 
 .home {
     .glow {
-        top: 64px;
-    }
-    main {
-        background-image: url('../images/planet_right.png');
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 700px 293px;
-    }
-
-    &:before {
         top: 64px;
     }
 
@@ -151,32 +122,101 @@ a:hover {
 
     main {
         background-color: transparent;
+        background-image: url('../images/planet_right.png');
+        background-repeat: no-repeat;
+        background-position: top right -50px;
+        background-size: 300px auto;
+    }
+}
+
+#site-title {
+    position: relative;
+    margin-top: 160px;
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+
+        span {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url('../images/crow.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        transform: rotate(20deg);
+        z-index: 1;
+        width: 157px;
+        height: 100px;
+        top: -105px;
+        left: $spacing-5;
+        background-size: 157px 100px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin: 0.2em 0 0.4em;
+    }
+
+    main {
+        padding: $spacing-6 $spacing-10 $spacing-10;
+        padding-top: 150px;
+        max-width: $max-width;
+        margin: auto;
+        position: relative;
+    }
+
+    .glow {
+        position: fixed;
+        margin: 0 auto;
+        top: 92px;
+        left: 8px;
+        right: 8px;
+        width: calc(100% - 16px);
+        max-width: $max-width;
+        bottom: 8px;
+        z-index: 100;
+        border: 2px solid rgba(255,255,255,0.8);
+        border-radius: 20px;
+        box-shadow: inset 0 0 10vw rgba($blue, 0.7), 0 0 10vw rgba($blue, 0.8), 0 0 0 10vw $black;
+        pointer-events: none;
+    }
+
+    .home {
+        main {
+            background-size: 700px 293px;
+            background-position: top right;
+        }
+    
+        &:before {
+            top: 64px;
+        }
+    }
+
+    #homepage_header {
+        position: fixed;
     }
 
     #site-title {
         height: 200px;
-        position: relative;
         display: flex;
         flex-direction: column;
         // align-items: flex-end;
         margin-top: $spacing-8;
         margin-bottom: $spacing-8;
-
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 314px;
-            height: 200px;
-            top: -#{$spacing-7};
-            right: $spacing-10;
-            background-image: url('../images/crow.png');
-            background-size: 314px 200px;
-            background-repeat: no-repeat;
-            background-position: top right;
-            transform: scaleX(-1) rotate(30deg);
-            z-index: 1;
-        }
 
         h1 {
             position: relative;
@@ -188,28 +228,26 @@ a:hover {
             position: relative;
             max-width: 34em;
             z-index: 2;
+            margin-left: auto;
+            margin-right: auto;
         }
+
+        &:after {
+            width: 314px;
+            height: 200px;
+            top: -#{$spacing-9};
+            left: -#{$spacing-7};
+            background-size: 314px 200px;
+        }
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 32px;
     }
 }
 
-.home-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 32px;
-}
-
-.content {
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
-    grid-template-areas: "... padding content sidebar ...";
-    position: relative;
-    z-index: 1;
-}
-
-code {
-    color: $amber;
-}
 
 @import "./weapons.scss";
 @import "./enemies.scss";
