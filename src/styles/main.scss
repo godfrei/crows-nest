@@ -73,10 +73,6 @@ a:hover {
 }
 
 .content {
-    display: grid;
-    grid-gap: 0 30px;
-    grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
-    grid-template-areas: "... padding content sidebar ...";
     position: relative;
     z-index: 1;
 }
@@ -245,6 +241,13 @@ code {
         display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 32px;
+    }
+
+    .content {
+        display: grid;
+        grid-gap: 0 30px;
+        grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
+        grid-template-areas: "... padding content sidebar ...";
     }
 }
 

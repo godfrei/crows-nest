@@ -15,6 +15,7 @@ import {
   descAndReviews,
   plot,
   coverImage,
+  content,
 } from "./mission.module.scss";
 
 const MissionTemplate = ({ data }) => {
