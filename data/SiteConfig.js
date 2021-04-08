@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: "Crow's Nest", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "The Crow's Nest", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://gatsby-markdown-blog-starter.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://darkforces.reviews", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:
     "Reviews for community-made add-on levels for the LucasArts game *Dark Forces*.", // Website description used for RSS feeds/meta description tag.

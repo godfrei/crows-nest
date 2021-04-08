@@ -14,7 +14,7 @@ export default () => {
           <li>Social Links</li>
           <li>
             <a
-              href={config.siteUrl + config.siteRss}
+              href={config.siteRss}
               target="_blank"
               rel="noopener noreferrer"
             >
