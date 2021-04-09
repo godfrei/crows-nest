@@ -1,7 +1,7 @@
 ---
 mission: "cargo-bay-5"
-title: "Cargo Bay 5 Review"
-reviewers: 
+title: "REVIEW: Cargo Bay 5"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-05
 rating: 76

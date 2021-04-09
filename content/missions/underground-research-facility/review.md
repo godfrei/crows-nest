@@ -1,7 +1,7 @@
 ---
 mission: "underground-research-facility"
-title: "Underground Research Facility Review"
-reviewers: 
+title: "REVIEW: Underground Research Facility"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-18
 rating: 79

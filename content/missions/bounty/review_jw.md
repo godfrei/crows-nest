@@ -1,7 +1,7 @@
 ---
 mission: "the-bounty-hunt"
-title: "The Bounty Hunt Review"
-reviewers: 
+title: "REVIEW: The Bounty Hunt"
+authors: 
   - "Jeff Walters"
 date: 1997-03-04
 rating: 90

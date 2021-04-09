@@ -13,7 +13,7 @@ const ReviewListing = () => {
       ) {
         nodes {
           frontmatter {
-            reviewers
+            authors
             mission {
               slug
               title

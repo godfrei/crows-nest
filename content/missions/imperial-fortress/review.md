@@ -1,7 +1,7 @@
 ---
 mission: "imperial-fortress"
-title: "Imperial Fortress Review"
-reviewers: 
+title: "REVIEW: Imperial Fortress"
+authors: 
   -  "Geoff Elliott"
 date: 1997-03-04
 rating: 83

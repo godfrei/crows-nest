@@ -1,7 +1,7 @@
 ---
 mission: "assassinate-darth-vader"
-title: "Assassinate Darth Vader Review"
-reviewers: 
+title: "REVIEW: Assassinate Darth Vader"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-05
 rating: 97

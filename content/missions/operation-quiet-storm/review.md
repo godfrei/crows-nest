@@ -1,7 +1,7 @@
 ---
 mission: "operation-quiet-storm"
-title: "Operation Quiet Storm Review"
-reviewers: 
+title: "REVIEW: Operation Quiet Storm"
+authors: 
   -  "Geoff Elliott"
 date: 1997-06-06
 rating: 75

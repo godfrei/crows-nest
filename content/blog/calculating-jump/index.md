@@ -1,7 +1,8 @@
 ---
 title: "Calculating the Jump"
 date: 2021-03-20
-author: Geoff Elliott
+authors: 
+  - "Geoff Elliott"
 cover: hyperspace.jpg
 categories:
 tags:

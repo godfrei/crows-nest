@@ -1,7 +1,7 @@
 ---
 mission: "the-great-escape"
-title: "The Great Escape Review"
-reviewers: 
+title: "REVIEW: The Great Escape"
+authors: 
   -  "Anonymous"
 date: 1997-01-08
 rating: 94

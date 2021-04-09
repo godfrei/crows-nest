@@ -1,7 +1,7 @@
 ---
 mission: "gulag-5"
-title: "Gulag 5 Review"
-reviewers: 
+title: "REVIEW: Gulag 5"
+authors: 
   -  "Geoff Elliott"
 date: 1997-02-9
 rating: 40

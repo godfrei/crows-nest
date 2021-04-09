@@ -1,7 +1,7 @@
 ---
 mission: "operation-death-star"
-title: "Operation Death Star Review"
-reviewers: 
+title: "REVIEW: Operation Death Star"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-22
 rating: 91

@@ -1,7 +1,7 @@
 ---
 mission: "star-base"
-title: "Star Base Review"
-reviewers: 
+title: "REVIEW: Star Base"
+authors: 
   -  "David Arandle"
 date: 1997-04-22
 rating: 45

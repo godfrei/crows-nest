@@ -1,7 +1,7 @@
 ---
 mission: "coober"
-title: "Coober Review"
-reviewers: 
+title: "REVIEW: Coober"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-14
 rating: 25

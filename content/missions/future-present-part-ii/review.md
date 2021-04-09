@@ -1,7 +1,7 @@
 ---
 mission: "future-present-part-ii"
-title: "Future Present Part II Review"
-reviewers: 
+title: "REVIEW: Future Present Part II"
+authors: 
   -  "Geoff Elliott"
 date: 1997-01-11
 rating: 86

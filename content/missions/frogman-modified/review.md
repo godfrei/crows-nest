@@ -1,7 +1,7 @@
 ---
 mission: "frogman-modified"
-title: "Frogman Modified Review"
-reviewers: 
+title: "REVIEW: Frogman Modified"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-06
 rating: 35

@@ -1,7 +1,7 @@
 ---
 mission: "galleria"
-title: "Galleria Review"
-reviewers: 
+title: "REVIEW: Galleria"
+authors: 
   -  "Geoff Elliott"
 date: 1997-01-09
 rating: 40

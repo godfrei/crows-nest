@@ -1,7 +1,7 @@
 ---
 mission: "3-d-mad"
-title: "3D Mad Review"
-reviewers: 
+title: "REVIEW: 3D Mad"
+authors: 
   - "Geoff Elliott"
 date: 1997-08-31
 rating:

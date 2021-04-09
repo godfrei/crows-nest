@@ -1,7 +1,7 @@
 ---
 mission: "jundland"
-title: "Jundland Review"
-reviewers: 
+title: "REVIEW: Jundland"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-06
 rating: 88

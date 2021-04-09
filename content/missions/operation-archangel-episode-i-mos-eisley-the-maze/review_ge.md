@@ -1,7 +1,7 @@
 ---
 mission: "operation-archangel-episode-i-mos-eisley-the-maze"
-title: "Operation Archangel Episode I - Mos Eisley: The Maze Review"
-reviewers: 
+title: "REVIEW: Operation Archangel Episode I - Mos Eisley: The Maze"
+authors: 
   - "Geoff Elliott"
 date: 1997-01-09
 rating:

@@ -1,7 +1,7 @@
 ---
 mission: "the-danger-room"
-title: "The Danger Room Review"
-reviewers: 
+title: "REVIEW: The Danger Room"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-14
 rating: 90

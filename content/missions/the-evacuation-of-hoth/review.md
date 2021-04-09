@@ -1,7 +1,7 @@
 ---
 mission: "the-evacuation-of-hoth"
-title: "The Evacuation of Hoth Review"
-reviewers: 
+title: "REVIEW: The Evacuation of Hoth"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-24
 rating: 87

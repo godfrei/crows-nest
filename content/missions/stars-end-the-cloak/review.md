@@ -1,7 +1,7 @@
 ---
 mission: "stars-end-the-cloak"
-title: "Stars End - The Cloak Review"
-reviewers: 
+title: "REVIEW: Stars End - The Cloak"
+authors: 
   -  "Geoff Elliott"
 date: 1997-03-07
 rating: 97

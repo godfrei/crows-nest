@@ -1,7 +1,8 @@
 ---
 title: Energy Mine on Parux and Mt. Kurek Receive Editor's Choice Awards
 date: 1997-09-14
-author: Geoff Elliott
+authors: 
+  - "Geoff Elliott"
 categories:
 tags:
 ---

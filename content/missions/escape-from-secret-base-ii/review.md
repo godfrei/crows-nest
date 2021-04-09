@@ -1,7 +1,7 @@
 ---
 mission: "escape-from-secret-base-ii"
-title: "Escape from Secret Base II Review"
-reviewers: 
+title: "REVIEW: Escape from Secret Base II"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-22
 rating: 84

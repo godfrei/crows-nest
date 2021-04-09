@@ -1,7 +1,7 @@
 ---
 mission: "easter-attack"
-title: "Easter Attack Review"
-reviewers: 
+title: "REVIEW: Easter Attack"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-21
 rating: 78

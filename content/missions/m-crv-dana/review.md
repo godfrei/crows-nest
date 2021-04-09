@@ -1,7 +1,7 @@
 ---
 mission: "m-crv-dana"
-title: "M/CRV Dana Review"
-reviewers: 
+title: "REVIEW: M/CRV Dana"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-15
 rating: 85

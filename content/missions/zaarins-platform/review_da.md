@@ -1,7 +1,7 @@
 ---
 mission: "zaarins-platform"
-title: "Zaarin's Platform Review"
-reviewers: 
+title: "REVIEW: Zaarin's Platform"
+authors: 
   -  "David Arandle"
 date: 1997-04-22
 rating: 65

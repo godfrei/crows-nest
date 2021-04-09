@@ -1,7 +1,7 @@
 ---
 mission: "boba-fetts-revenge"
-title: "Boba Fett's Revenge Review"
-reviewers: 
+title: "REVIEW: Boba Fett's Revenge"
+authors: 
   - "Geoff Elliott"
 date: 1997-02-08
 rating: 98

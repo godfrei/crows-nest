@@ -1,7 +1,7 @@
 ---
 mission: "back-to-yavin"
-title: "Back to Yavin Review"
-reviewers: 
+title: "REVIEW: Back to Yavin"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-10
 rating: 94

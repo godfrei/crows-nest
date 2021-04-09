@@ -1,7 +1,7 @@
 ---
 mission: "the-siege-at-alderaan"
-title: "The Siege at Alderaan Review"
-reviewers: 
+title: "REVIEW: The Siege at Alderaan"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-01
 rating: 82

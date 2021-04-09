@@ -1,7 +1,7 @@
 ---
 mission: "ice-world"
-title: "Ice World Review"
-reviewers: 
+title: "REVIEW: Ice World"
+authors: 
   -  "Geoff Elliott"
 date: 1997-05-10
 rating: 81

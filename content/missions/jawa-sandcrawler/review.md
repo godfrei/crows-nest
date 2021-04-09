@@ -1,7 +1,7 @@
 ---
 mission: "jawa-sandcrawler"
-title: "Jawa Sandcrawler Review"
-reviewers: 
+title: "REVIEW: Jawa Sandcrawler"
+authors: 
   -  "Geoff Elliott"
 date: 1997-02-15
 rating: 78

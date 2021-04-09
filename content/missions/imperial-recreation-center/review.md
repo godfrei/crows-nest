@@ -1,7 +1,7 @@
 ---
 mission: "imperial-recreation-center"
-title: "Imperial Recreation Center Review"
-reviewers: 
+title: "REVIEW: Imperial Recreation Center"
+authors: 
   -  "Geoff Elliott"
 date: 1997-05-16
 rating: 78

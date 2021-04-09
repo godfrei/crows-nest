@@ -1,7 +1,7 @@
 ---
 mission: "operation-archangel-episode-2-dungeons-of-gamorra"
-title: "Operation Archangel Episode 2 - Dungeons of Gamorra Review"
-reviewers: 
+title: "REVIEW: Operation Archangel Episode 2 - Dungeons of Gamorra"
+authors: 
   - "David Arandle"
 date: 1997-03-18
 rating: 95

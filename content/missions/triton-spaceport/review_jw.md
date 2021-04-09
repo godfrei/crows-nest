@@ -1,7 +1,7 @@
 ---
 mission: "triton-spaceport"
-title: "Triton Spaceport Review"
-reviewers: 
+title: "REVIEW: Triton Spaceport"
+authors: 
   -  "Jeff Walters"
 date: 1997-04-26
 rating: 87

@@ -1,7 +1,7 @@
 ---
 mission: "operation-evasive-action"
-title: "Operation: Evasive Action Review"
-reviewers: 
+title: "REVIEW: Operation: Evasive Action"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-16
 rating: 82

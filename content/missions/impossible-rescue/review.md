@@ -1,7 +1,7 @@
 ---
 mission: "impossible-rescue"
-title: "Impossible Rescue Review"
-reviewers: 
+title: "REVIEW: Impossible Rescue"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-22
 rating: 74

@@ -1,7 +1,7 @@
 ---
 mission: "a-jedi-night"
-title: "A Jedi Night Review"
-reviewers: 
+title: "REVIEW: A Jedi Night"
+authors: 
   -  "Geoff Elliott"
 date: 1997-09-15
 rating: 65

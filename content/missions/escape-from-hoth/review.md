@@ -1,7 +1,7 @@
 ---
 mission: "escape-from-hoth"
-title: "Escape from Hoth Review"
-reviewers: 
+title: "REVIEW: Escape from Hoth"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-25
 rating: 85

@@ -1,7 +1,7 @@
 ---
 mission: "dark-trooper-search"
-title: "Dark Trooper Search Review"
-reviewers: 
+title: "REVIEW: Dark Trooper Search"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-25
 rating: 85

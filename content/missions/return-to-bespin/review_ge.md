@@ -1,7 +1,7 @@
 ---
 mission: "return-to-bespin"
-title: "Return to Bespin Review"
-reviewers: 
+title: "REVIEW: Return to Bespin"
+authors: 
   - "Geoff Elliott"
 date: 1996-09-29
 rating: 88

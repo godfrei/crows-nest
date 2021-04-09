@@ -1,7 +1,7 @@
 ---
 mission: "octagone-8"
-title: "Octagone 8 Review"
-reviewers: 
+title: "REVIEW: Octagone 8"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-02
 rating: 64

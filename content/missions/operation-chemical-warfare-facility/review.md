@@ -1,7 +1,7 @@
 ---
 mission: "operation-chemical-warfare-facility"
-title: "Operation: Chemical Warfare Facility Review"
-reviewers: 
+title: "REVIEW: Operation: Chemical Warfare Facility"
+authors: 
   - "Geoff Elliott"
 date: 1996-10-15
 rating: 65

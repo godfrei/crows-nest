@@ -1,7 +1,7 @@
 ---
 mission: "arcadia-imperial-prison-planet"
-title: "Arcadia: Imperial Prison Planet Review"
-reviewers: 
+title: "REVIEW: Arcadia: Imperial Prison Planet"
+authors: 
   - "Geoff Elliott"
 date: 1996-10-30
 rating: 76

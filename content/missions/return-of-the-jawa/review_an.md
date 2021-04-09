@@ -1,7 +1,7 @@
 ---
 mission: "return-of-the-jawa"
-title: "Return of the Jawa Review"
-reviewers: 
+title: "REVIEW: Return of the Jawa"
+authors: 
   -  "Allen Newman"
 date: 1997-04-18
 rating: 75

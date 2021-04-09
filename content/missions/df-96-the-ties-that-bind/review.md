@@ -1,7 +1,7 @@
 ---
 mission: "df-96-the-ties-that-bind"
-title: "DF96 - The Ties That Bind Review"
-reviewers: 
+title: "REVIEW: DF96 - The Ties That Bind"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-18
 rating: 98

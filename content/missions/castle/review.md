@@ -1,7 +1,7 @@
 ---
 mission: "castle"
-title: "Castle Review"
-reviewers: 
+title: "REVIEW: Castle"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-05
 rating: 75

@@ -1,7 +1,8 @@
 ---
 title: Darkness Falls Issue 2 Is Out
 date: 1997-09-15
-author: Geoff Elliott
+authors: 
+  - "Geoff Elliott"
 categories:
 tags:
 ---
