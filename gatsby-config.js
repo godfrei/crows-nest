@@ -1,5 +1,17 @@
 const urljoin = require("url-join");
 const config = require("./data/SiteConfig");
+const _ = require("lodash");
+
+function getGuidSuffix(edge) {
+  const authors = edge.node.frontmatter.authors.join('-');
+  return edge.node.fields.slug + _.kebabCase(authors);
+}
+
+function getCoverImage(edge) {
+  const cover = edge.node.frontmatter.cover || edge.node.frontmatter?.mission?.cover;
+  if (!cover || typeof cover === "undefined") return '';
+  return `<img src="${config.siteUrl}${cover.publicURL}" alt="" />`;
+}
 
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
@@ -217,9 +229,9 @@ module.exports = {
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
                 url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
+                guid: rssMetadata.site_url + getGuidSuffix(edge),
                 custom_elements: [
-                  { "content:encoded": edge.node.html },
+                  { "content:encoded": getCoverImage(edge) + edge.node.html },
                   { author: edge.node.frontmatter.authors.join(', ') },
                 ],
               }));
@@ -243,9 +255,23 @@ module.exports = {
                       title
                       cover {
                         publicURL
+                        internal {
+                          mediaType
+                        }
                       }
                       date
                       authors
+                      mission {
+                        title
+                        description
+                        authors
+                        cover {
+                          publicURL
+                          internal {
+                            mediaType
+                          }
+                        }
+                      }
                     }
                   }
                 }

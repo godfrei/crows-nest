@@ -87,8 +87,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
     let fullSlug = '';
     switch(collection) {
-      case "missions":
-        fullSlug = `missions/${slug}`;
+      case "reviews":
+        fullSlug = `missions/${node.frontmatter.mission}`;
         break;
       case "posts":
         fullSlug = `blog/${slug}`;
