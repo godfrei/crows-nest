@@ -8,7 +8,7 @@ function getGuidSuffix(edge) {
 }
 
 function getCoverImage(edge) {
-  const cover = edge.node.frontmatter.cover || edge.node.frontmatter?.mission?.cover;
+  const cover = edge.node.frontmatter.cover || (edge.node.frontmatter.mission && edge.node.frontmatter.mission.cover);
   if (!cover || typeof cover === "undefined") return '';
   return `<img src="${config.siteUrl}${cover.publicURL}" alt="" />`;
 }
