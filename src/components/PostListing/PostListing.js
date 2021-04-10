@@ -33,7 +33,7 @@ const PostListing = ({ postEdges }) => {
           : "/images/dark-forces-cover.jpg";
         return (
           <li>
-            <Link to={post.path} key={post.title} className={articleBox}>
+            <Link to={`/${post.path}`} key={post.title} className={articleBox}>
               <article>
                 <div
                   className={cover}
