@@ -96,6 +96,7 @@ export const pageQuery = graphql`
           html
           frontmatter {
             title
+            description
             cover {
               name
               publicURL

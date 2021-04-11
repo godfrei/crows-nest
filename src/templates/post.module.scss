@@ -1,6 +1,17 @@
+@import '../styles/colors';
+@import '../styles/vars';
+
 .postClass {
     max-width: 70ch;
     margin: auto;
+
+    h1, .post-meta {
+        text-align: center;
+    }
+    
+    img {
+        margin-bottom: 32px;
+    }
 }
 
 .coverClass {
@@ -20,4 +31,17 @@
     list-style: none;
     padding: 0;
     margin-top: 4rem;
+}
+
+.postContent {
+    p:first-child:first-letter {
+        color: $teal;
+        float: left;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 60px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+    }
 }

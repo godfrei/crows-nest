@@ -5,7 +5,7 @@ import Layout from "../layout";
 import PostTags from "../components/PostTags";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { pagination, postMeta, postClass, coverClass } from "./post.module.scss";
+import { pagination, postMeta, postClass, coverClass, postContent } from "./post.module.scss";
 import "./prism-okaidia.css";
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -25,13 +25,13 @@ const PostTemplate = ({ data, pageContext }) => {
       <SEO postPath={slug} postNode={postNode} postSEO />
       <div class={postClass}>
         <article>
+          <img src={cover} className={coverClass} alt="" />
           <h1>{post.title}</h1>
           <p className={postMeta}>{date}</p>
           <div className={postMeta}>
             <PostTags tags={post.tags} />
           </div>
-          <img src={cover} className={coverClass} alt="" />
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          <div dangerouslySetInnerHTML={{ __html: postNode.html }} className={postContent} />
         </article>
         <nav>
           <ul className={pagination}>

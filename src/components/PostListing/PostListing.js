@@ -18,7 +18,7 @@ const PostListing = ({ postEdges }) => {
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
-        excerpt: postEdge.node.excerpt,
+        description: postEdge.node.frontmatter.description || postEdge.node.excerpt,
       });
     });
     return postList;
@@ -41,7 +41,8 @@ const PostListing = ({ postEdges }) => {
                 ></div>
                 <h3>{post.title}</h3>
                 <div className={meta}>{post.date}</div>
-                <p>{post.excerpt}</p>
+                <p>{post.description}</p>
+                <a className="fauxLink">Read More</a>
               </article>
             </Link>
           </li>

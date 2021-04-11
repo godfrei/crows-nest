@@ -1,11 +1,12 @@
 ---
-title: "Calculating the Jump"
-date: 2021-03-20
+title: "Punch It!"
+date: 2021-04-20
 authors: 
   - "Geoff Elliott"
 cover: hyperspace.jpg
 categories:
 tags:
+description: "The Nest is coming back. Here's a little bit about what you can expect."
 ---
 
 Get ready.
