@@ -3,6 +3,10 @@
 @import 'fonts';
 @import 'vars';
 
+:root {
+    font-size: 10px;
+}
+
 html {
     background-color: $black;    
 }
@@ -12,8 +16,8 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 1.6rem;
+    line-height: 1.4;
 }
 
 .uppercase {
@@ -48,21 +52,6 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-.section_icon {
-    max-width: 100px;
-    float: left;
-    margin-right: 20px;
-}
-
-.section_icon + h1 {
-    margin-left: 120px;
-
-    &:after {
-        clear: both;
-    }
-}
-
-
 a:link, a:visited {
     color: white;
     text-decoration-color: $teal;
@@ -92,11 +81,8 @@ code {
 
     > div {
         width: 100%;
-        // max-width: $max-width;
-        // padding: 0 $spacing-10;
         margin: auto;
         display: flex;
-        // justify-content: flex-end;
     }
 }
 
@@ -131,7 +117,7 @@ code {
     text-align: center;
 
     h1 {
-        font-size: 40px;
+        font-size: 4rem;
 
         span {
             width: 100%;
@@ -162,13 +148,13 @@ code {
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-color: $teal;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 @media screen and (min-width: 767px) {
     h1 {
-        font-size: 48px;
+        font-size: 4.7rem;
         margin: 0.2em 0 0.4em;
     }
 
@@ -221,7 +207,7 @@ code {
 
         h1 {
             position: relative;
-            font-size: 80px;
+            font-size: 8rem;
             margin-bottom: 0;
         }
 

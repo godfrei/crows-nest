@@ -37,15 +37,15 @@
     margin-top: 20px;
     margin-left: 20px;
     color: white;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
 
     strong {
-        font-size: 20px;
+        font-size: 2rem;
+        line-height: 1.2;
         color: $teal;
         text-decoration: underline;
         display: block;
-        line-height: 1.2;
         margin-bottom: 0.2em;
     }
 }
@@ -62,7 +62,7 @@
     p {
         margin-top: 0;
         line-height: 1.4;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     a {
