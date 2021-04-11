@@ -39,10 +39,10 @@ const PostListing = ({ postEdges }) => {
                   className={cover}
                   style={{ backgroundImage: `url(${coverUrl})` }}
                 ></div>
-                <h3>{post.title}</h3>
+                <h1>{post.title}</h1>
                 <div className={meta}>{post.date}</div>
                 <p>{post.description}</p>
-                <a className="fauxLink">Read More</a>
+                <span className="fauxLink">Read More</span>
               </article>
             </Link>
           </li>

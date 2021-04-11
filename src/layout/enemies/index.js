@@ -11,7 +11,7 @@ const EnemiesLayout = ({ children }) => {
     <>
       <div className={grid}>
         <div>
-          <h3>Imperial</h3>
+          <h2>Imperial</h2>
           <ul className={navigation}>
             <li>
               <Link to="/database/enemies/imperial-officer" {...linkProps}>
@@ -66,7 +66,7 @@ const EnemiesLayout = ({ children }) => {
             </li>
           </ul>
 
-          <h3>Independent</h3>
+          <h2>Independent</h2>
           <ul className={navigation}>
             <li>
               <Link to="/database/enemies/gran" {...linkProps}>
@@ -93,7 +93,7 @@ const EnemiesLayout = ({ children }) => {
             </li>
           </ul>
 
-          <h3>Droids</h3>
+          <h2>Droids</h2>
           <ul className={navigation}>
             <li>
               <Link to="/database/enemies/interrogation-droid" {...linkProps}>
@@ -115,7 +115,7 @@ const EnemiesLayout = ({ children }) => {
             </li>
           </ul>
 
-          <h3>Creatures</h3>
+          <h2>Creatures</h2>
           <ul className={navigation}>
             <li>
               <Link to="/database/enemies/dianoga" {...linkProps}>
@@ -129,7 +129,7 @@ const EnemiesLayout = ({ children }) => {
             </li>
           </ul>
 
-          <h3>Environmental</h3>
+          <h2>Environmental</h2>
           <ul className={navigation}>
             <li>
               <Link to="/database/enemies/qs-100-welding-arm" {...linkProps}>

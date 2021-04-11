@@ -23,7 +23,7 @@ const TopPost = ({ post }) => {
 
           <p>{description}</p>
           {/* <div dangerouslySetInnerHTML={{ __html: post.node.html }} /> */}
-          <a className="fauxLink">Read More</a>
+          <span className="fauxLink">Read More</span>
         </div>
       </article>
     </Link>

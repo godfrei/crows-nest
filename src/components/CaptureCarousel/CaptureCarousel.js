@@ -25,7 +25,7 @@ const CaptureCarousel = ({ captures }) => {
         >
           {captures.map((capture) => (
             <li>
-              <img src={capture.file.publicURL} />
+              <img src={capture.file.publicURL} alt="" />
               <p>{capture.caption}</p>
             </li>
           ))}

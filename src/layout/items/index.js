@@ -11,7 +11,7 @@ const ItemsLayout = ({ children }) => {
     <>
       <div className={grid}>
         <div>
-          <h3>Powerups</h3>
+          <h2>Powerups</h2>
           <ul className={navigation}>
             <li>
               <Link to="/database/items/shield-units" {...linkProps}>
@@ -76,7 +76,7 @@ const ItemsLayout = ({ children }) => {
             </li>
           </ul>
 
-          <h3>Ammunition</h3>
+          <h2>Ammunition</h2>
           <ul className={navigation}>
             <li>
               <Link to="/database/items/energy-units" {...linkProps}>
