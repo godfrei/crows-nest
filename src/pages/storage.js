@@ -38,6 +38,11 @@ const Storage = ({ data }) => {
                 </Link>
               </li>
               <li>
+                <Link to="/bms"  {...linkProps}>
+                  BMs
+                </Link>
+              </li>
+              <li>
                 <Link to="/fmes" {...linkProps}>
                   FMEs
                 </Link>
