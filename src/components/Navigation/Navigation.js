@@ -13,32 +13,6 @@ export default () => {
   };
   return (
     <nav className={navigation}>
-      {/* <ul> 
-                <li className="review_link">
-                    <Link to="/missions/" {...linkProps}>
-                        <img src={reviewList} alt="" />
-                        <span>Missions</span>
-                    </Link>
-                </li>
-                <li className="storage_link">
-                    <Link to="/storage" {...linkProps}>
-                        <img src={storage} alt="" />
-                        <span>Storage</span>
-                    </Link>
-                </li>
-                <li className="launchpad_link">
-                    <Link to="/launchpad" {...linkProps}>
-                        <img src={launchPad} alt="" />
-                        <span>Launch Pad</span>
-                    </Link>
-                </li>
-                <li className="database_link">
-                    <Link to="/database" {...linkProps}>
-                        <img src={database} alt="" />
-                        <span>Database</span>
-                    </Link>
-                </li>
-            </ul> */}
       <ul>
         <li>
           <Link to="/blog" {...linkProps}>
@@ -57,7 +31,7 @@ export default () => {
         </li>
         <li>
           <Link to="/storage" {...linkProps}>
-            Files
+            Storage
           </Link>
         </li>
       </ul>
