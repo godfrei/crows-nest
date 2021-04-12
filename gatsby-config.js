@@ -114,6 +114,20 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "bms",
+        path: `${__dirname}/content/bms`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fmes",
+        path: `${__dirname}/content/fmes`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "enemies",
         path: `${__dirname}/content/enemies`,
       },

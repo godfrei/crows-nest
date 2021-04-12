@@ -74,6 +74,9 @@ const Storage = ({ data }) => {
         {data.allMarkdownRemark.edges.map(edge => {
           let type = "";
           switch (edge.node.fields.collection) {
+            case "bms":
+              type = "BM";
+              break;
             case "fmes":
               type = "FME";
               break;
@@ -120,7 +123,7 @@ export const storageQuery = graphql`
       sort: { fields: [frontmatter___title], order: ASC }
       filter: {
         # Only from the missions collection
-        fields: { collection: { in: ["3dos", "fmes", "vocs", "waxes"] } }
+        fields: { collection: { in: ["3dos", "fmes", "vocs", "waxes", "bms"] } }
       }
     ) {
       edges {
