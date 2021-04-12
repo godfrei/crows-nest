@@ -7,7 +7,11 @@ import * as styles from "../styles/main.scss";
 
 const MainLayout = ({ children }) => (
   <>
-    <Helmet>
+    <Helmet
+      htmlAttributes={{
+        lang: 'en',
+      }}
+    >
       <meta name="description" content={config.siteDescription} />
     </Helmet>
     <Header />

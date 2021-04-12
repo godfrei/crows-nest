@@ -1,7 +1,7 @@
 ---
 mission: "distribution-center"
-title: "Distribution Center Review"
-reviewers: 
+title: "REVIEW: Distribution Center"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-23
 rating: 69

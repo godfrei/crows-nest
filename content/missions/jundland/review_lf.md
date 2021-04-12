@@ -1,7 +1,7 @@
 ---
 mission: "jundland"
-title: "Jundland Review"
-reviewers: 
+title: "REVIEW: Jundland"
+authors: 
   -  "Lionel Fouillen"
 date: 1997-04-06
 rating:

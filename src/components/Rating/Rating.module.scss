@@ -1,15 +1,13 @@
 @import '../../styles/colors';
 
 .rating span {
-    // font-family: "Engravers Gothic";
-    // font-size: 18px;
     text-transform: uppercase;
     color: white;
     display: block;
 }
 
 .ratingScore {
-    font-size: 42px;
+    font-size: 4.2rem;
     color: $red;
     line-height: 1;
 }

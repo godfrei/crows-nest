@@ -13,7 +13,7 @@ const config = {
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Geoff Elliott", // Username to display in the author segment.
-  userEmail: "godfrei@gmail.com", // Email used for RSS feed's author segment
+  userEmail: "geoff@darkforces.reviews", // Email used for RSS feed's author segment
   userTwitter: "godfrei", // Optionally renders "Follow Me" in the Bio segment.
   userGitHub: "godfrei", // Optionally renders "Follow Me" in the Bio segment.
   userLocation: "Earth", // User location to display in the author segment.

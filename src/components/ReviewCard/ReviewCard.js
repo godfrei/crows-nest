@@ -23,7 +23,7 @@ const ReviewCard = ({ review, orientation }) => {
           {title}
         </h1>
         <p>{review.excerpt}</p>
-        <small>Reviewed by {review.frontmatter.reviewers.join(", ")}</small>
+        <small>Reviewed by {review.frontmatter.authors.join(", ")}</small>
         <small>Rating: {review.frontmatter.rating}</small>
       </article>
     </Link>

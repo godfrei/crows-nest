@@ -1,7 +1,7 @@
 ---
 mission: "mt-kurek"
-title: "Mt. Kurek Review"
-reviewers: 
+title: "REVIEW: Mt. Kurek"
+authors: 
   -  "Eric Pauker"
 date: 1997-06-20
 rating: 99

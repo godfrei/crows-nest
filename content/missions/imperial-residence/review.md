@@ -1,7 +1,7 @@
 ---
 mission: "imperial-residence"
-title: "Imperial Residence Review"
-reviewers: 
+title: "REVIEW: Imperial Residence"
+authors: 
   -  "Geoff Elliott"
 date: 1997-09-04
 rating:

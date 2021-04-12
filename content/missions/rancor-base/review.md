@@ -1,7 +1,7 @@
 ---
 mission: "rancor-base"
-title: "Rancor Base Review"
-reviewers: 
+title: "REVIEW: Rancor Base"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-14
 rating: 73

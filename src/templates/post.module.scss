@@ -1,7 +1,27 @@
+@import '../styles/colors';
+@import '../styles/vars';
+
+.postClass {
+    max-width: 70ch;
+    margin: auto;
+
+    h1, .post-meta {
+        text-align: center;
+    }
+    
+    img {
+        margin-bottom: 32px;
+    }
+}
+
+.coverClass {
+    width: 100%;
+}
+
 .post-meta {
     color: #757575;
     margin-bottom: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
 }
 
 .pagination {
@@ -11,4 +31,17 @@
     list-style: none;
     padding: 0;
     margin-top: 4rem;
+}
+
+.postContent {
+    p:first-child:first-letter {
+        color: $teal;
+        float: left;
+        font-size: 7.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        padding-top: 0.4rem;
+        padding-right: 0.8rem;
+        padding-left: 0.3rem;
+    }
 }

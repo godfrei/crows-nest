@@ -1,7 +1,7 @@
 ---
 mission: "dark-prelude-the-early-missions-of-kyle-katarn"
-title: "Dark Prelude - The Early Missions of Kyle Katarn Review"
-reviewers: 
+title: "REVIEW: Dark Prelude - The Early Missions of Kyle Katarn"
+authors: 
   -  "Anonymous"
 date: 1997-02-04
 rating:

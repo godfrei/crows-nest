@@ -1,7 +1,7 @@
 ---
 mission: "castle-wolfenstein"
-title: "Castle Wolfenstein Review"
-reviewers: 
+title: "REVIEW: Castle Wolfenstein"
+authors: 
   -  "Geoff Elliott"
 date: 1997-09-16
 rating: 70

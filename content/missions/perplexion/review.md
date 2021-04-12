@@ -1,7 +1,7 @@
 ---
 mission: "perplexion"
-title: "Perplexion Review"
-reviewers: 
+title: "REVIEW: Perplexion"
+authors: 
   -  "Geoff Elliott"
 date: 1997-09-07
 rating:

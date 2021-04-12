@@ -1,5 +1,17 @@
 const urljoin = require("url-join");
 const config = require("./data/SiteConfig");
+const _ = require("lodash");
+
+function getGuidSuffix(edge) {
+  const authors = edge.node.frontmatter.authors.join('-');
+  return edge.node.fields.slug + _.kebabCase(authors);
+}
+
+function getCoverImage(edge) {
+  const cover = edge.node.frontmatter.cover || (edge.node.frontmatter.mission && edge.node.frontmatter.mission.cover);
+  if (!cover || typeof cover === "undefined") return '';
+  return `<img src="${config.siteUrl}${cover.publicURL}" alt="" />`;
+}
 
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
@@ -13,7 +25,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-48.png`,
+      )}logos/logo-48.png`,
       copyright: config.copyright,
     },
   },
@@ -166,18 +178,19 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "minimal-ui",
-        icons: [
-          // {
-          //   src: '/logos/logo-48.png',
-          //   sizes: '48x48',
-          //   type: 'image/png',
-          // },
-          // {
-          //   src: '/logos/logo-1024.png',
-          //   sizes: '1024x1024',
-          //   type: 'image/png',
-          // },
-        ],
+        icon: `static/logos/logo-1024.png`,
+        // icons: [
+        //   // {
+        //   //   src: '/logos/logo-48.png',
+        //   //   sizes: '48x48',
+        //   //   type: 'image/png',
+        //   // },
+        //   {
+        //     src: '/logos/logo-1024.png',
+        //     sizes: '1024x1024',
+        //     type: 'image/png',
+        //   },
+        // ],
       },
     },
     "gatsby-plugin-offline",
@@ -216,10 +229,10 @@ module.exports = {
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
                 url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
+                guid: rssMetadata.site_url + getGuidSuffix(edge),
                 custom_elements: [
-                  { "content:encoded": edge.node.html },
-                  { author: config.userEmail },
+                  { "content:encoded": getCoverImage(edge) + edge.node.html },
+                  { author: edge.node.frontmatter.authors.join(', ') },
                 ],
               }));
             },
@@ -227,7 +240,8 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { order: DESC, fields: [fields___date] },
+                sort: {order: DESC, fields: frontmatter___date}
+                filter: {fields: {collection: {in: ["reviews", "posts"]}}}
               ) {
                 edges {
                   node {
@@ -241,8 +255,23 @@ module.exports = {
                       title
                       cover {
                         publicURL
+                        internal {
+                          mediaType
+                        }
                       }
                       date
+                      authors
+                      mission {
+                        title
+                        description
+                        authors
+                        cover {
+                          publicURL
+                          internal {
+                            mediaType
+                          }
+                        }
+                      }
                     }
                   }
                 }

@@ -12,13 +12,13 @@ const PostListing = ({ postEdges }) => {
     const postList = [];
     postEdges.forEach((postEdge) => {
       postList.push({
-        path: `/blog/${postEdge.node.fields.slug}`,
+        path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
         categories: postEdge.node.frontmatter.categories,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
-        excerpt: postEdge.node.excerpt,
+        description: postEdge.node.frontmatter.description || postEdge.node.excerpt,
       });
     });
     return postList;
@@ -33,15 +33,16 @@ const PostListing = ({ postEdges }) => {
           : "/images/dark-forces-cover.jpg";
         return (
           <li>
-            <Link to={post.path} key={post.title} className={articleBox}>
+            <Link to={`/${post.path}`} key={post.title} className={articleBox}>
               <article>
                 <div
                   className={cover}
                   style={{ backgroundImage: `url(${coverUrl})` }}
                 ></div>
-                <h3>{post.title}</h3>
+                <h1>{post.title}</h1>
                 <div className={meta}>{post.date}</div>
-                <p>{post.excerpt}</p>
+                <p>{post.description}</p>
+                <span className="fauxLink">Read More</span>
               </article>
             </Link>
           </li>

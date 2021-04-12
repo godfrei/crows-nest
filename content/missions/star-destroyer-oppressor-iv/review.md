@@ -1,7 +1,7 @@
 ---
 mission: "star-destroyer-oppressor-iv"
-title: "Star Destroyer/\"Oppressor IV\" Review"
-reviewers: 
+title: "REVIEW: Star Destroyer/\"Oppressor IV\""
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-25
 rating: 60

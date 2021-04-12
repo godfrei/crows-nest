@@ -1,7 +1,7 @@
 ---
 mission: "energy-mine-on-parux"
-title: "Energy Mine on Parux Review"
-reviewers: 
+title: "REVIEW: Energy Mine on Parux"
+authors: 
   -  "Jeff Walters"
 date: 1997-04-10
 rating: 91

@@ -1,7 +1,7 @@
 ---
 mission: "daedalus-platform"
-title: "Daedalus Platform Review"
-reviewers: 
+title: "REVIEW: Daedalus Platform"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-05
 rating: 75

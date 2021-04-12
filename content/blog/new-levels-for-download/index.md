@@ -1,7 +1,8 @@
 ---
 title: New Levels for Download
 date: 1997-09-17
-author: Geoff Elliott
+authors: 
+  - "Geoff Elliott"
 categories:
 tags:
 ---

@@ -1,7 +1,7 @@
 ---
 mission: "sensation"
-title: "Sensation Review"
-reviewers: 
+title: "REVIEW: Sensation"
+authors: 
   -  "Geoff Elliott"
 date: 1997-09-08
 rating:

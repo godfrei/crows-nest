@@ -1,7 +1,7 @@
 ---
 mission: "mt-kurek"
-title: "Mt. Kurek Review"
-reviewers: 
+title: "REVIEW: Mt. Kurek"
+authors: 
   -  "Geoff Elliott"
 date: 1997-06-21
 rating:

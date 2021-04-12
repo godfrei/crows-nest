@@ -28,7 +28,7 @@ const MissionTemplate = ({ data }) => {
         <>
           {reviews.map((review) => {
             const rating = review.frontmatter.rating;
-            const reviewers = review.frontmatter.reviewers;
+            const reviewers = review.frontmatter.authors;
             const date = new Date(review.frontmatter.date);
             const dateString = moment(date).format("MMMM DD, YYYY");
 
@@ -147,7 +147,7 @@ export const pageQuery = graphql`
           html
           frontmatter {
             rating
-            reviewers
+            authors
             date
           }
         }

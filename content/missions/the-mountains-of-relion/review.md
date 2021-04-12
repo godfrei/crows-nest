@@ -1,7 +1,7 @@
 ---
 mission: "the-mountains-of-relion"
-title: "The Mountains of Relion Review"
-reviewers: 
+title: "REVIEW: The Mountains of Relion"
+authors: 
   -  "Geoff Elliott"
 date: 1997-03-07
 rating: 87

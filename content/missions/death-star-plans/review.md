@@ -1,7 +1,7 @@
 ---
 mission: "death-star-plans"
-title: "Death Star Plans Review"
-reviewers: 
+title: "REVIEW: Death Star Plans"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-20
 rating: 40

@@ -1,7 +1,7 @@
 ---
 mission: "fest-revisited"
-title: "Fest Revisited Review"
-reviewers: 
+title: "REVIEW: Fest Revisited"
+authors: 
   -  "Geoff Elliott"
 date: 1996-12-05
 rating: 87

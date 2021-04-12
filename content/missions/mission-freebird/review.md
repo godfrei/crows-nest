@@ -1,7 +1,7 @@
 ---
 mission: "mission-freebird"
-title: "Mission: Freebird Review"
-reviewers: 
+title: "REVIEW: Mission: Freebird"
+authors: 
   -  "Christopher Elliott"
 date: 1997-04-06
 rating: 78

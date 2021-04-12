@@ -1,7 +1,7 @@
 ---
 mission: "lahara-hotel"
-title: "Lahara Hotel Review"
-reviewers: 
+title: "REVIEW: Lahara Hotel"
+authors: 
   -  "Anonymous"
 date: 1996-12-03
 rating:

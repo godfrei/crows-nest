@@ -1,7 +1,7 @@
 ---
 mission: "kyle-on-spice"
-title: "Kyle On Spice Review"
-reviewers: 
+title: "REVIEW: Kyle On Spice"
+authors: 
   -  "Geoff Elliott"
 date: 1997-09-08
 rating:

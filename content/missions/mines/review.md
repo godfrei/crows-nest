@@ -1,7 +1,7 @@
 ---
 mission: "mines"
-title: "Mines Review"
-reviewers: 
+title: "REVIEW: Mines"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-12
 rating: 12

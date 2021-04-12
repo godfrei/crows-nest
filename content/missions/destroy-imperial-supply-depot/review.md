@@ -1,7 +1,7 @@
 ---
 mission: "destroy-imperial-supply-depot"
-title: "Destroy Imperial Supply Depot Review"
-reviewers: 
+title: "REVIEW: Destroy Imperial Supply Depot"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-16
 rating: 93

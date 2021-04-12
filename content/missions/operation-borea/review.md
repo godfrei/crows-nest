@@ -1,7 +1,7 @@
 ---
 mission: "operation-borea"
-title: "Operation Borea Review"
-reviewers: 
+title: "REVIEW: Operation Borea"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-13
 rating: 80

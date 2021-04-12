@@ -1,7 +1,7 @@
 ---
 mission: "kyle-meets-kaled"
-title: "Kyle Meets Kaled Review"
-reviewers: 
+title: "REVIEW: Kyle Meets Kaled"
+authors: 
   -  "Geoff Elliott"
 date: 1997-02-08
 rating: 61

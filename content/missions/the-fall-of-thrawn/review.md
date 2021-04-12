@@ -1,7 +1,7 @@
 ---
 mission: "the-fall-of-thrawn"
-title: "The Fall of Thrawn Review"
-reviewers: 
+title: "REVIEW: The Fall of Thrawn"
+authors: 
   -  "Geoff Elliott"
 date: 1996-12-07
 rating: 66

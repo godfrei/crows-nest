@@ -85,7 +85,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         });
       }
     }
-    createNodeField({ node, name: "slug", value: slug });
+    let fullSlug = '';
+    switch(collection) {
+      case "reviews":
+        fullSlug = `missions/${node.frontmatter.mission}`;
+        break;
+      case "posts":
+        fullSlug = `blog/${slug}`;
+        break;
+      default:
+        fullSlug = slug;
+    }
+    createNodeField({ node, name: "slug", value: fullSlug });
   }
 };
 
@@ -251,7 +262,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const prevEdge = postEdges[prevID];
 
     createPage({
-      path: `/blog/${edge.node.fields.slug}`,
+      path: edge.node.fields.slug,
       component: postPage,
       context: {
         slug: edge.node.fields.slug,

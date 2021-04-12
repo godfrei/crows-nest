@@ -1,7 +1,7 @@
 ---
 mission: "kyles-nightmare"
-title: "Kyle's Nightmare Review"
-reviewers: 
+title: "REVIEW: Kyle's Nightmare"
+authors: 
   -  "Geoff Elliott"
 date: 1997-09-07
 rating:

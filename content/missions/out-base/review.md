@@ -1,7 +1,7 @@
 ---
 mission: "out-base"
-title: "OutBase Review"
-reviewers: 
+title: "REVIEW: OutBase"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-09
 rating: 50

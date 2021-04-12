@@ -1,7 +1,7 @@
 ---
 mission: "commenor-station-pursuit-of-cycy-loctob"
-title: "Commenor Station: Pursuit of Cycy Loctob Review"
-reviewers: 
+title: "REVIEW: Commenor Station: Pursuit of Cycy Loctob"
+authors: 
   - "Geoff Elliott"
 date: 1996-11-10
 rating: 74

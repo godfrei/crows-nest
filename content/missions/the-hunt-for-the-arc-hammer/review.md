@@ -1,7 +1,7 @@
 ---
 mission: "the-hunt-for-the-arc-hammer"
-title: "The Hunt for the Arc Hammer Review"
-reviewers: 
+title: "REVIEW: The Hunt for the Arc Hammer"
+authors: 
   - "Geoff Elliott"
 date: 1997-02-06
 rating: 93

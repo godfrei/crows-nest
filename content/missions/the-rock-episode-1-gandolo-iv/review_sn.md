@@ -1,7 +1,7 @@
 ---
 mission: "the-rock-episode-1-gandolo-iv"
-title: "The Rock: Episode 1-Gandolo IV Review"
-reviewers: 
+title: "REVIEW: The Rock: Episode 1-Gandolo IV"
+authors: 
   -  "Steve Noall"
 date: 1997-09-14
 rating: 95

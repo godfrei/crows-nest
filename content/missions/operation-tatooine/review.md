@@ -1,7 +1,7 @@
 ---
 mission: "operation-tatooine"
-title: "Operation Tatooine Review"
-reviewers: 
+title: "REVIEW: Operation Tatooine"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-22
 rating: 79

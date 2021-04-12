@@ -1,8 +1,8 @@
 ---
 mission: "imperial-academy"
-reviewers: 
+authors: 
   - "Geoff Elliott"
-title: "Imperial Academy Review"
+title: "REVIEW: Imperial Academy"
 date: 1996-10-25
 rating: 94
 ---

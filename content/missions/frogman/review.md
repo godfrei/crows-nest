@@ -1,7 +1,7 @@
 ---
 mission: "frogman"
-title: "Frogman Review"
-reviewers: 
+title: "REVIEW: Frogman"
+authors: 
   -  "Geoff Elliott"
 date: 1996-12-05
 rating: 54

@@ -18,7 +18,11 @@ const Index = ({ data }) => {
   return (
     <BodyClassName className="home">
       <>
-        <Helmet>
+        <Helmet
+          htmlAttributes={{
+            lang: 'en',
+          }}
+        >
           <title>{config.siteTitle}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
@@ -96,6 +100,7 @@ export const pageQuery = graphql`
           html
           frontmatter {
             title
+            description
             cover {
               name
               publicURL

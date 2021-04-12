@@ -5,7 +5,8 @@ import Layout from "../layout";
 import MissionListing from "../components/MissionListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { active } from "./mission-list.module.scss";
+import { active, pageHeader, sortOptions } from "./mission-list.module.scss";
+import GradientTitle from "../components/GradientTitle";
 
 function averageRating(mission) {
   if (mission.reviews.length <= 0) return 0;
@@ -31,21 +32,37 @@ const Missions = ({ data, pageContext }) => {
     <Layout>
       <Helmet title={`Missions | ${config.siteTitle}`} />
       <SEO />
-      <h1>Missions</h1>
-      <p>
-        Sort by:{" "}
-        <Link to="/missions" activeClassName={active}>
-          Title
-        </Link>{" "}
-        |
-        <Link to="/missions/rating" {...linkProps}>
-          Rating
-        </Link>{" "}
-        |
-        <Link to="/missions/date" {...linkProps}>
-          Date
-        </Link>
-      </p>
+      <div className={pageHeader}>
+        <div>
+          {/* <GradientTitle title="Missions" /> */}
+          <h1>Missions</h1>
+
+          <p>For years independent creators have expanded on the original levels in <em>Dark Forces</em>, using community-developed tools to construct their own missions to continue the story of Kyle Katarn (and others!). These missions sometimes went well beyond what LucasArts produced and are a great showcase of the talent and creativity that lives in the DF community.</p>
+
+          <p>Below you'll find a collection of those missions, most of them available to download and many with reviews to help you find the very best. More reviews will show up over time.</p>
+        </div>
+        <div className={sortOptions}>
+            Sort by:{" "}
+            <ul>
+              <li>
+                <Link to="/missions" activeClassName={active}>
+                  Title
+                </Link>{" "}
+              </li>
+              <li>
+                <Link to="/missions/rating" {...linkProps}>
+                  Rating
+                </Link>{" "}
+              </li>
+              <li>
+                <Link to="/missions/date" {...linkProps}>
+                  Date
+                </Link>
+              </li>
+            </ul>
+        </div>
+
+      </div>
 
       <MissionListing missionNodes={data.allMissionsJson.nodes} />
     </Layout>

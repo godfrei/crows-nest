@@ -1,7 +1,7 @@
 ---
 mission: "imperial-destroyer"
-title: "Imperial Destroyer Review"
-reviewers: 
+title: "REVIEW: Imperial Destroyer"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-09
 rating: 65

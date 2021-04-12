@@ -1,7 +1,7 @@
 ---
 mission: "asteroid"
-title: "Asteroid Review"
-reviewers: 
+title: "REVIEW: Asteroid"
+authors: 
   - "Jeff Walters"
 date: 1997-06-25
 rating: 96

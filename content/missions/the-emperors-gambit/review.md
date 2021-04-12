@@ -1,7 +1,7 @@
 ---
 mission: "the-emperors-gambit"
-title: "The Emperor's Gambit Review"
-reviewers: 
+title: "REVIEW: The Emperor's Gambit"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-14
 rating: 82

@@ -1,7 +1,7 @@
 ---
 mission: "operation-nar-shaddaa-water-treatment-plant"
-title: "Operation: Nar Shaddaa Water Treatment Plant Review"
-reviewers: 
+title: "REVIEW: Operation: Nar Shaddaa Water Treatment Plant"
+authors: 
   -  "John Dagen"
 date: 1997-04-09
 rating: 83

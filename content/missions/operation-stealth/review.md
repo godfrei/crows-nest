@@ -1,7 +1,7 @@
 ---
 mission: "operation-stealth"
-title: "Operation Stealth Review"
-reviewers: 
+title: "REVIEW: Operation Stealth"
+authors: 
   -  "Geoff Elliott"
 date: 1997-03-07
 rating: 88

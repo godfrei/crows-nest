@@ -1,7 +1,7 @@
 ---
 mission: "the-hoerby-trilogy-imperial-outpost-d-42"
-title: "The Hoerby Trilogy: Imperial Outpost D-42 Review"
-reviewers: 
+title: "REVIEW: The Hoerby Trilogy: Imperial Outpost D-42"
+authors: 
   -  "Anonymous"
 date: 1997-01-14
 rating:

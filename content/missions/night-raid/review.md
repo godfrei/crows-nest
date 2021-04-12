@@ -1,7 +1,7 @@
 ---
 mission: "night-raid"
-title: "Night Raid Review"
-reviewers: 
+title: "REVIEW: Night Raid"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-14
 rating: 72

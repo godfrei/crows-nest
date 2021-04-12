@@ -1,7 +1,7 @@
 ---
 mission: "faust"
-title: "Faust Review"
-reviewers: 
+title: "REVIEW: Faust"
+authors: 
   -  "Geoff Elliott"
 date: 1997-02-15
 rating: 89

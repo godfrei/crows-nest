@@ -1,7 +1,7 @@
 ---
 mission: "tie-defender-base"
-title: "TIE Defender Base Review"
-reviewers: 
+title: "REVIEW: TIE Defender Base"
+authors: 
   -  "Geoff Elliott"
 date: 1996-11-17
 rating: 96

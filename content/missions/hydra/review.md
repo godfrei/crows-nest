@@ -1,7 +1,7 @@
 ---
 mission: "hydra"
-title: "Hydra Review"
-reviewers: 
+title: "REVIEW: Hydra"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-02
 rating: 74

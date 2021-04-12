@@ -1,7 +1,7 @@
 ---
 mission: "ravager-outpost"
-title: "Ravager Outpost Review"
-reviewers: 
+title: "REVIEW: Ravager Outpost"
+authors: 
   -  "Geoff Elliott"
 date: 1997-04-09
 rating: 80

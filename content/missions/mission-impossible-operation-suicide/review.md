@@ -1,7 +1,7 @@
 ---
 mission: "mission-impossible-operation-suicide"
-title: "Mission Impossible: Operation Suicide Review"
-reviewers: 
+title: "REVIEW: Mission Impossible: Operation Suicide"
+authors: 
   -  "Geoff Elliott"
 date: 1997-03-07
 rating: 69
