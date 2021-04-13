@@ -5,12 +5,15 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
+import { pageHeader } from './blog.module.scss';
 
 const posts = ({ data }) => (
   <Layout>
     <Helmet title={`Blog | ${config.siteTitle}`} />
     <SEO />
-    <h1>Blog</h1>
+    <div className={pageHeader}>
+      <h1>Blog</h1>
+    </div>
 
     <PostListing postEdges={data.allMarkdownRemark.edges} />
   </Layout>
