@@ -153,6 +153,13 @@ code {
 }
 
 @media screen and (min-width: 767px) {
+    .cn-layout {
+        display: grid;
+        grid-template-columns: 1fr minmax(320px, $max-width) 1fr;
+        grid-template-rows: min-content auto min-content;
+        gap: 0px 0px;
+    }
+
     h1 {
         font-size: 4.7rem;
         margin: 0.2em 0 0.4em;
@@ -162,24 +169,64 @@ code {
         padding: $spacing-6 $spacing-10 $spacing-10;
         padding-top: 150px;
         max-width: $max-width;
-        margin: auto;
+        // margin: auto;
         position: relative;
+        height: 100%;
+        grid-column: 2 / 3;
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 103;
+            background-color: $gray;
+        }
+
+        &:before {
+            left: 0;
+            margin-left: calc(-100% - 24px);
+        }
+
+        &:after {
+            right: 0;
+            margin-right: calc(-100% - 24px);
+        }
     }
 
     .glow {
         position: fixed;
         margin: 0 auto;
-        top: 92px;
+        top: 108px;
         left: 8px;
         right: 8px;
         width: calc(100% - 16px);
         max-width: $max-width;
-        bottom: 8px;
+        bottom: 24px;
         z-index: 100;
         border: 2px solid rgba(255,255,255,0.8);
         border-radius: 20px;
         box-shadow: inset 0 0 10vw rgba($blue, 0.7), 0 0 10vw rgba($blue, 0.8), 0 0 0 10vw $black;
         pointer-events: none;
+        grid-column: 2 / 3;
+
+        &:before {
+            content: '';
+            position: fixed;
+            margin: 0 auto;
+            top: calc(84px);
+            left: -32px;
+            right: -32px;
+            bottom: 0;
+            width: calc(100% + 32px);
+            max-width: calc(#{$max-width} + 48px);
+            border: 14px solid $black;
+            border-radius: 40px;
+            pointer-events: none;
+            z-index: 200;
+            box-shadow: 0 0 0 60px $gray;
+        }
     }
 
     .home {

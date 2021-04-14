@@ -15,9 +15,12 @@ const MainLayout = ({ children }) => (
       <meta name="description" content={config.siteDescription} />
     </Helmet>
     <Header />
-    <div className="glow"></div>
-    <main>{children}</main>
+    <div className="cn-layout">
+      <div className="glow"></div>
+      <main>{children}</main>
+    </div>
     <Footer />
+
   </>
 );
 
