@@ -10,6 +10,7 @@
 .navigation {
     display: flex;
     width: 100%;
+    justify-content: center;
 
     ul {
         width: 100%;
@@ -24,9 +25,9 @@
         &:before, &:after {
             content: '';
             display: block;
-            width: $spacing-8;
-            height: $spacing-8;
-            border: $spacing-8/2 solid $gray;
+            width: $spacing-7;
+            height: $spacing-7;
+            border: $spacing-7/2 solid $gray;
             border-bottom-color: $black;
         }
 
@@ -47,14 +48,15 @@
         color: white;
         font-family: "Encode Sans Condensed", sans-serif;
         font-weight: 400;
+        font-size: 1.4rem;
         text-transform: uppercase;
         text-decoration: none;
         display: flex;
         align-items: center;
         border-bottom: $spacing-2 solid transparent;
         margin-bottom: -#{$spacing-3};
-        padding: $spacing-3 $spacing-5;
-        height: $spacing-8;
+        padding: $spacing-3 $spacing-4;
+        height: $spacing-7;
     }
 }
 
@@ -64,11 +66,18 @@
         ul {
             width: auto;
             justify-content: center;
+
+            &:before, &:after {
+                width: $spacing-8;
+                height: $spacing-8;
+                border-width: $spacing-8/2;
+            }
         }
 
         a:link, a:visited {
             padding: $spacing-3 $spacing-5;
             height: $spacing-8;
+            font-size: 1.8rem;
         }
     }
 }

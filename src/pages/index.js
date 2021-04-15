@@ -28,53 +28,53 @@ const Index = ({ data }) => {
         </Helmet>
         <SEO />
         <header id="homepage_header">
-          <div>
             <Navigation />
-          </div>
         </header>
-        <div className="glow"></div>
-        <main>
-          <div id="site-title">
-            <GradientTitle title={config.siteTitle} />
+        <div className="cn-layout">
+          <div className="glow"></div>
+          <main>
+            <div id="site-title">
+              <GradientTitle title={config.siteTitle} />
+              <p>
+                The most complete and up-to-date site for reviews and downloads of
+                add-on levels for the LucasArts 3D first-person game{" "}
+                <em>Dark Forces</em>. At least, it used to be. Getting back to it.
+              </p>
+            </div>
+            <div className="home-grid">
+              <div>
+                <h2 className="uppercase">Recent Posts</h2>
+                <TopPost post={topPost} />
+                <PostListing postEdges={otherPosts} />
+              </div>
+              <div>
+                <h2 className="uppercase">Recent Reviews</h2>
+                <ReviewListing />
+              </div>
+            </div>
+
+            <hr />
+
+            <h2>Looking for a guaranteed mission to try?</h2>
             <p>
-              The most complete and up-to-date site for reviews and downloads of
-              add-on levels for the LucasArts 3D first-person game{" "}
-              <em>Dark Forces</em>. At least, it used to be. Getting back to it.
+              The Editor's Choice missions have been selected by reviewers at The
+              Crow's Nest as the best the Dark Forces community has to offer.
             </p>
-          </div>
-          <div className="home-grid">
-            <div>
-              <h2 className="uppercase">Recent Posts</h2>
-              <TopPost post={topPost} />
-              <PostListing postEdges={otherPosts} />
-            </div>
-            <div>
-              <h2 className="uppercase">Recent Reviews</h2>
-              <ReviewListing />
-            </div>
-          </div>
+            <Link to="/missions/editors-choice">
+              All Editor's Choice Missions
+            </Link>
+            <EditorsChoiceListing />
+            <hr />
 
-          <hr />
-
-          <h2>Looking for a guaranteed mission to try?</h2>
-          <p>
-            The Editor's Choice missions have been selected by reviewers at The
-            Crow's Nest as the best the Dark Forces community has to offer.
-          </p>
-          <Link to="/missions/editors-choice">
-            All Editor's Choice Missions
-          </Link>
-          <EditorsChoiceListing />
-          <hr />
-
-          <h2>Everything You Need To Build The Next Great Mission</h2>
-          <p>
-            Editors, textures, sounds, enemies, and more are all available in
-            the <Link to="/storage">Files</Link> area. Here are a few of the
-            latest additions.
-          </p>
-        </main>
-        <Footer />
+            <h2>Everything You Need To Build The Next Great Mission</h2>
+            <p>
+              Editors, textures, sounds, enemies, and more are all available in
+              the <Link to="/storage">Files</Link> area. Here are a few of the
+              latest additions.
+            </p>
+          </main>
+          <Footer />
+        </div>
       </>
     </BodyClassName>
   );

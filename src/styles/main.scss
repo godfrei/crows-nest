@@ -8,11 +8,13 @@
 }
 
 html {
-    background-color: $black;    
+    // background-color: $black;    
+    background-color: $gray;
 }
 
 body {
     color: $default-text;
+    background-color: $black;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -72,25 +74,19 @@ code {
 
 #homepage_header {
     background-color: $gray;
-    border-bottom: $spacing-3 solid $black;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 103;
-
-    > div {
-        width: 100%;
-        margin: auto;
-        display: flex;
-    }
+    margin: auto;
+    width: 100%;
+    max-width: $max-width;
+    display: flex;
+    justify-content: center;
 }
 
 .home {
-    .glow {
-        top: 64px;
-    }
-
     &:after {
         content: '';
         position: fixed;
@@ -99,22 +95,26 @@ code {
         bottom: 0;
         left: 0;
         background-image: url('../images/starfield.gif');
-        z-index: -1;
+        z-index: 0;
     }
 
     main {
-        background-color: transparent;
-        background-image: url('/images/planet_hologram.webp');
-        background-repeat: no-repeat;
-        background-position: top right -50px;
-        background-size: 300px auto;
+        > * {
+            position: relative;
+            z-index: 1;
+        }
     }
 }
 
 #site-title {
-    position: relative;
+    position: static;
     margin-top: 160px;
     text-align: center;
+
+    > * {
+        position: relative;
+        z-index: 1;
+    }
 
     h1 {
         font-size: 4rem;
@@ -123,6 +123,22 @@ code {
             width: 100%;
             text-align: center;
         }
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        background-image: url('/images/planet_hologram.webp');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 40vw auto;
+        top: 56px;
+        right: 0;
+        width: 100%;
+        height: 20vw;
+        z-index: 1;
     }
 
     &:after {
@@ -136,7 +152,7 @@ code {
         z-index: 1;
         width: 157px;
         height: 100px;
-        top: -105px;
+        top: 56px;
         left: $spacing-5;
         background-size: 157px 100px;
     }
@@ -169,16 +185,15 @@ code {
         padding: $spacing-6 $spacing-10 $spacing-10;
         padding-top: 150px;
         max-width: $max-width;
-        // margin: auto;
         position: relative;
         height: 100%;
         grid-column: 2 / 3;
 
         &:before, &:after {
             content: '';
-            position: absolute;
+            position: fixed;
             top: 0;
-            width: 100%;
+            width: calc(((100% - 1600px) / 2) - 24px);
             height: 100%;
             z-index: 103;
             background-color: $gray;
@@ -186,24 +201,22 @@ code {
 
         &:before {
             left: 0;
-            margin-left: calc(-100% - 24px);
         }
 
         &:after {
             right: 0;
-            margin-right: calc(-100% - 24px);
         }
     }
 
     .glow {
         position: fixed;
         margin: 0 auto;
-        top: 108px;
+        top: 104px;
         left: 8px;
         right: 8px;
         width: calc(100% - 16px);
         max-width: $max-width;
-        bottom: 24px;
+        bottom: 32px;
         z-index: 100;
         border: 2px solid rgba(255,255,255,0.8);
         border-radius: 20px;
@@ -215,17 +228,17 @@ code {
             content: '';
             position: fixed;
             margin: 0 auto;
-            top: calc(84px);
+            top: 80px;
             left: -32px;
             right: -32px;
-            bottom: 0;
+            bottom: 8px;
             width: calc(100% + 32px);
             max-width: calc(#{$max-width} + 48px);
             border: 14px solid $black;
             border-radius: 40px;
             pointer-events: none;
             z-index: 200;
-            box-shadow: 0 0 0 60px $gray;
+            box-shadow: 0 0 0 80px $gray;
         }
     }
 
@@ -238,6 +251,14 @@ code {
         &:before {
             top: 64px;
         }
+
+        .glow {
+            top: 72px;
+    
+            &:before {
+                top: 48px;
+            }
+        }
     }
 
     #homepage_header {
@@ -249,7 +270,7 @@ code {
         display: flex;
         flex-direction: column;
         // align-items: flex-end;
-        margin-top: $spacing-8;
+        margin-top: $spacing-10;
         margin-bottom: $spacing-8;
 
         h1 {
@@ -266,11 +287,20 @@ code {
             margin-right: auto;
         }
 
+        &:before {
+            background-size: 40vw auto;
+            top: 0px;
+            right: 0;
+            width: 100%;
+            height: 20vw;
+            z-index: 1;
+        }
+
         &:after {
             width: 314px;
             height: 200px;
-            top: -#{$spacing-9};
-            left: -#{$spacing-7};
+            top: $spacing-10 * 2;
+            left: $spacing-10 + $spacing-5;
             background-size: 314px 200px;
         }
     }

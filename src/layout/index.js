@@ -18,8 +18,8 @@ const MainLayout = ({ children }) => (
     <div className="cn-layout">
       <div className="glow"></div>
       <main>{children}</main>
+      <Footer />
     </div>
-    <Footer />
 
   </>
 );

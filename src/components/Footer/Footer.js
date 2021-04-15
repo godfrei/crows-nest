@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
 import config from "../../../data/SiteConfig";
-import { footer, content } from "./footer.module.scss";
+import { footer } from "./footer.module.scss";
 
 export default () => {
   return (
     <footer className={footer}>
-      <div className={content}>
+      <div className="content">
         <ul>
           <li>
             <Link to="/about">About</Link>
