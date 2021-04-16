@@ -109,20 +109,23 @@ code {
 #site-title {
     position: static;
     margin-top: 160px;
-    text-align: center;
+    // text-align: center;
 
     > * {
         position: relative;
-        z-index: 1;
+        max-width: 10em;
+        z-index: 2;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     h1 {
         font-size: 4rem;
 
-        span {
-            width: 100%;
-            text-align: center;
-        }
+        // span {
+        //     width: 100%;
+        //     // text-align: center;
+        // }
     }
 
     &:before {
@@ -182,7 +185,7 @@ code {
     }
 
     main {
-        padding: $spacing-6 $spacing-10 $spacing-10;
+        padding: $spacing-5 $spacing-8 $spacing-8;
         padding-top: 150px;
         max-width: $max-width;
         position: relative;
@@ -211,7 +214,7 @@ code {
     .glow {
         position: fixed;
         margin: 0 auto;
-        top: 104px;
+        top: 88px;
         left: 8px;
         right: 8px;
         width: calc(100% - 16px);
@@ -228,7 +231,7 @@ code {
             content: '';
             position: fixed;
             margin: 0 auto;
-            top: 80px;
+            top: 64px;
             left: -32px;
             right: -32px;
             bottom: 8px;
@@ -270,21 +273,17 @@ code {
         display: flex;
         flex-direction: column;
         // align-items: flex-end;
-        margin-top: $spacing-10;
-        margin-bottom: $spacing-8;
+        margin-top: $spacing-9;
+        margin-bottom: $spacing-10;
 
         h1 {
             position: relative;
-            font-size: 8rem;
+            font-size: 10rem;
             margin-bottom: 0;
         }
 
         > * {
-            position: relative;
             max-width: 34em;
-            z-index: 2;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         &:before {
@@ -316,6 +315,24 @@ code {
         grid-gap: 0 30px;
         grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
         grid-template-areas: "... padding content sidebar ...";
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .main {
+        padding: $spacing-6 $spacing-10 $spacing-10;
+    }
+
+    .glow {
+        top: 104px;
+
+        &:before {
+            top: 80px;
+        }
+    }
+
+    #site-title h1 {
+        font-size: 12rem;
     }
 }
 

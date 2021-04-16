@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import config from "../../../data/SiteConfig";
 import Navigation from "../Navigation";
-import GradientTitle from "../GradientTitle";
+import SiteTitle from "../SiteTitle";
+import Search from "../Search";
 import crow from "../../images/crow.png";
 import { header, title } from "./Header.module.scss";
 
@@ -11,11 +11,10 @@ const Header = () => (
     <div>
       <Link to="/" className={title}>
         <img src={crow} alt="The Moldy Crow" id="crow" />
-        <GradientTitle title={config.siteTitle} />
-        {/* <h1>{config.siteTitle}</h1> */}
+        <SiteTitle />
       </Link>
       <Navigation />
-      {/* <Search /> */}
+      <Search />
     </div>
   </header>
 );

@@ -62,11 +62,28 @@
 
 @media screen and (min-width: 767px) {
     .navigation {
-
         ul {
             width: auto;
             justify-content: center;
 
+            &:before, &:after {
+                width: $spacing-7;
+                height: $spacing-7;
+                border-width: $spacing-7/2;
+            }
+        }
+
+        a:link, a:visited {
+            padding: $spacing-3 $spacing-5;
+            height: $spacing-7;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .navigation {
+        ul {
             &:before, &:after {
                 width: $spacing-8;
                 height: $spacing-8;
@@ -75,7 +92,6 @@
         }
 
         a:link, a:visited {
-            padding: $spacing-3 $spacing-5;
             height: $spacing-8;
             font-size: 1.8rem;
         }

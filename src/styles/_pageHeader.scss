@@ -95,6 +95,15 @@
         margin-top: -150px;
         margin-left: -#{$spacing-10};
         margin-right: -#{$spacing-10};
+
+        &:before, &:after {
+            height: 70%;
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .pageHeader {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -124,3 +133,4 @@
         margin-left: $spacing-8;
     }
 }
+
