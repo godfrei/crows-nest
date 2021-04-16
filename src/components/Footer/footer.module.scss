@@ -3,7 +3,7 @@
 
 .footer {
     background-color: $gray;
-    padding: $spacing-3 $spacing-5;
+    padding: $spacing-5;
     position: relative;
     z-index: 1;
     
@@ -12,20 +12,9 @@
     }
 }
 
-// .content {
-//     max-width: $max-width;
-//     margin: auto;
-//     display: flex;
-//     justify-content: space-between;
-// }
-
 @media screen and (min-width: 767px) {
     .footer {
         padding: $spacing-6 $spacing-10 $spacing-10;
         grid-column: 2 / 3;
     }
-
-    // .content {
-    //     // padding: $spacing-6 $spacing-10;
-    // }
 }

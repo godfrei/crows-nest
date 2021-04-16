@@ -1,95 +1,8 @@
-@import '../styles/colors';
-@import '../styles/vars';
+@import '../styles/pageHeader';
 
 .pageHeader {
-    position: relative;
-    padding: $spacing-3 $spacing-5;
-    margin-top: -#{$spacing-3};
-    margin-left: -#{$spacing-5};
-    margin-right: -#{$spacing-5};
-    padding-top: 100px;
-    text-shadow: 0.1rem 0.1rem 0 rgba($black, 0.8), 0 0 2rem rgba($black, 0.5);
-
-    > * {
-        position: relative;
-        z-index: 1;
-    }
-
-    h1 {
-        color: $teal; 
-        margin-bottom: 1rem;
-
-        &, & span {
-            text-transform: uppercase;
-            font-size: 6rem;
-            letter-spacing: 0.4rem;
-        }
-    }
-
     &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
         background-image: url('/images/vault-tunnel.jpg');
-    }
-
-    &:after {
-        content: '';
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        z-index: 0;
-        position: absolute;
-        background-color: rgba($black, 0.5);
-        background-image: linear-gradient(to top, $black, $black 5px, transparent 60%, transparent);
-    }
-
-    p {
-        font-weight: 300;
-        text-shadow: 0.1rem 0.1rem 0 rgba($black, 0.8), 0 0 2rem rgba($black, 0.5);
-    }
-}
-
-.sortOptions {
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    
-    ul {
-        margin: 0;
-        padding: 0;
-        margin-left: $spacing-4;
-        display: inline-flex;
-        border: 1px solid $glow-border;
-        justify-content: flex-start;
-    }
-
-    li {
-        list-style: none;
-        margin: 0;
-    }
-
-    li + li a {
-        border-left: 1px solid $glow-border;
-    }
-
-    a {
-        text-decoration: none;
-        display: block;
-        padding: $spacing-3 $spacing-5;
-        font-size: 1.6rem;
-    }
-
-    .active {
-        font-weight: 600;
-        color: $teal;
-        background-color: rgba($teal, 0.3);
     }
 }
 
@@ -142,30 +55,4 @@
 .authors {
     color: #AAA;
     font-size: 1.4rem;
-}
-
-@media screen and (min-width: 767px) {
-    .pageHeader {
-        padding: $spacing-6 $spacing-10;
-        padding-top: 300px;
-        margin-top: -150px;
-        margin-left: -#{$spacing-10};
-        margin-right: -#{$spacing-10};
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
-        p {
-            font-size: 2rem;
-            line-height: 1.5;
-        }
-
-        > * {
-            max-width: 80ch;
-        }
-    }
-
-    .sortOptions {
-        margin-left: $spacing-8;
-    }
 }

@@ -5,8 +5,7 @@ import Layout from "../layout";
 import MissionListing from "../components/MissionListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { active, pageHeader, sortOptions } from "./mission-list.module.scss";
-import GradientTitle from "../components/GradientTitle";
+import { active, pageHeader, sortOptions, missionListHeader } from './mission-list.module.scss';
 
 function averageRating(mission) {
   if (mission.reviews.length <= 0) return 0;
@@ -32,9 +31,8 @@ const Missions = ({ data, pageContext }) => {
     <Layout>
       <Helmet title={`Missions | ${config.siteTitle}`} />
       <SEO />
-      <div className={pageHeader}>
+      <div className={`${pageHeader} ${missionListHeader}`}>
         <div>
-          {/* <GradientTitle title="Missions" /> */}
           <h1>Missions</h1>
 
           <p>For years independent creators have expanded on the original levels in <em>Dark Forces</em>, using community-developed tools to construct their own missions to continue the story of Kyle Katarn (and others!). These missions sometimes went well beyond what LucasArts produced and are a great showcase of the talent and creativity that lives in the DF community.</p>
@@ -61,7 +59,6 @@ const Missions = ({ data, pageContext }) => {
               </li>
             </ul>
         </div>
-
       </div>
 
       <MissionListing missionNodes={data.allMissionsJson.nodes} />
