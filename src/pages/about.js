@@ -16,7 +16,7 @@ const AboutPage = () => (
 
         <figure>
           <img src="/images/crows-nest-97.jpg" alt="Recreation of roughly what the Crow's Nest looked like in 1997." />
-          <caption>Blast from the past: what the Nest looked like near the end of its first life.</caption>
+          <figcaption>Blast from the past: what the Nest looked like near the end of its first life.</figcaption>
         </figure>
         
         <p>The Nest began life in 1996 as a way for me (Geoff Elliott) to share my love of Dark Forces. I was a year into a job building websites, excited about this new world-spanning thing and eager to build something of my own. When the university I was attending presented me with free web hosting it was too good an opportunity to pass up.</p>
