@@ -19,7 +19,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 1.6rem;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .uppercase {
@@ -306,7 +306,7 @@ code {
 
     .home-grid {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         column-gap: 32px;
     }
 
@@ -336,6 +336,24 @@ code {
     }
 }
 
+.text {
+    max-width: 70ch;
+    margin: auto;
 
-@import "./weapons.scss";
-@import "./enemies.scss";
+    h1 {
+        text-align: center;
+    }
+
+    figure {
+        float: right;
+        margin-left: 32px;
+        width: 300px;
+
+        caption {
+            display: block;
+            font-size: 14px;
+            color: #aaa;
+            width: 100%;
+        }
+    }
+}

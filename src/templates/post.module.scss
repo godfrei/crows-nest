@@ -1,24 +1,13 @@
 @import '../styles/colors';
 @import '../styles/vars';
 
-.postClass {
-    max-width: 70ch;
-    margin: auto;
-
-    h1, .post-meta {
-        text-align: center;
-    }
-    
-    img {
-        margin-bottom: 32px;
-    }
-}
-
 .coverClass {
     width: 100%;
+    margin-bottom: 32px;
 }
 
 .post-meta {
+    text-align: center;
     color: #757575;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;

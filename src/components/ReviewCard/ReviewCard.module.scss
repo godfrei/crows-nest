@@ -58,12 +58,12 @@
 
 .card.horizontal {
     article {
-        padding-right: 200px;
-        background-image: linear-gradient(to left, transparent, transparent 150px, $black 250px, $black);
+        padding-right: 100px;
+        background-image: linear-gradient(to left, transparent, transparent 50px, $black 150px, $black);
     }
 
     .cover {
-        width: 250px;
+        width: 150px;
         bottom: 0;
     }
 }
@@ -77,5 +77,19 @@
     .cover {
         height: 250px;
         left: 0;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .card.horizontal {
+        article {
+            padding-right: 200px;
+            background-image: linear-gradient(to left, transparent, transparent 150px, $black 250px, $black);
+        }
+    
+        .cover {
+            width: 250px;
+            bottom: 0;
+        }
     }
 }
