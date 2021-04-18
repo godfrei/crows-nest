@@ -1,5 +1,5 @@
 ---
-component_id: echobase
+slug: "echo-base"
 title: "Echo Base Background"
 authors: 
     - "Allen Newman"

@@ -274,6 +274,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+
   // 3DOs
 
   let threeDOEdges = markdownEdges.filter((edge) => {
@@ -315,6 +316,38 @@ exports.createPages = async ({ graphql, actions }) => {
   waxEdges.forEach((edge, index) => {
     createPage({
       path: `/waxes/${edge.node.fields.slug}`,
+      component: componentPage,
+      context: {
+        slug: edge.node.fields.slug,
+      },
+    });
+  });
+
+  // BMs
+
+  let bmEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === "bms") return edge;
+  });
+
+  bmEdges.forEach((edge, index) => {
+    createPage({
+      path: `/bms/${edge.node.fields.slug}`,
+      component: componentPage,
+      context: {
+        slug: edge.node.fields.slug,
+      },
+    });
+  });
+
+  // FMEs
+
+  let fmeEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === "fmes") return edge;
+  });
+
+  fmeEdges.forEach((edge, index) => {
+    createPage({
+      path: `/fmes/${edge.node.fields.slug}`,
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,
