@@ -3,6 +3,15 @@
 .search {
     display: flex;
     justify-self: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 767px) {
+    .search {
+        position: static;
+    }
 }
 
 // .search {
