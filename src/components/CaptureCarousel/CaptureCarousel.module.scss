@@ -1,9 +1,53 @@
 $captureWidth: 674px;
 
+@import '../../styles/colors';
+@import '../../styles/vars';
+
 .captureScroll {
+    position: relative;
     width: $captureWidth;
     height: 420px;
     overflow: hidden;
+
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-color: $black;
+        color: white;
+        overflow: hidden;
+        top: 50%;
+        margin-top: -20px;
+        opacity: 0.5;
+        font-family: sans-serif;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .next {
+        right: 8px;
+
+        &:before {
+            content: '>';
+        }
+    }
+
+    .prev {
+        left: 8px;
+        
+        &:before {
+            content: '<';
+        }
+    }
 }
 
 .captureList {
@@ -17,22 +61,26 @@ $captureWidth: 674px;
         position: relative;
     }
 
+    figure {
+        margin: 0;
+    }
+
     img {
         width: $captureWidth;
         // height: 420px;
         image-rendering: pixelated;
     }
 
-    p {
+    figcaption {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: linear-gradient(to top, rgba(0,0,0,0.8) 16px, transparent);
-        text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8) 32px, transparent);
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.9);
         font-size: 1.4rem;
         margin: 0;
-        padding: 16px;
+        padding: 20px 16px 8px;
 
         &:empty {
             display: none;
@@ -113,6 +161,34 @@ $captureWidth: 674px;
         list-style: none;
         margin: 0;
         padding: 0;
+        position: relative;
+
+        &.active {
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid $teal;
+                background-color: rgba($teal, 0.2);
+            }
+
+            img {
+                filter: saturate(0);
+            }
+        }
+    }
+
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 0;
+        border: none;
+        margin: 0;
+        display: block;
     }
 
     img {
