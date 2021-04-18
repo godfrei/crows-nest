@@ -34,7 +34,7 @@
 }
 
 .postContent {
-    p:first-child:first-letter {
+    div > p:first-child:first-letter:not() {
         color: $teal;
         float: left;
         font-size: 7.5rem;

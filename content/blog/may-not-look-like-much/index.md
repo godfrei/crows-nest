@@ -27,29 +27,29 @@ Self-motivation was the catalyst for the site, and also the reason for its hiber
 
 Over the years I've toyed with the idea of resurrecting the Nest, if only to pull some of these historical records from the Internet Archive's shelves and shake off the cobwebs. None of those attempts went much further than Photoshop experimentation, until the anxiety accompanying a pandemic set my brain afire.
 
---
+===
 
 Once it became clear I was really going to do this, I set out a few goals for myself.
 
 1. I want the site to be current, technologically, and to experiment with some web tech that I don't get to work with during my day job. Part of this is professional curiosity, and part of it is practical security. I want to be sure I'm knowledgable about new-ish things and if my job won't provide the opportunities for inquiry I need to do it for myself. Just in case I need to go job hunting some day.
 
-The early foundations of the site were plain HTML with a sprinkling of Javascript, all of it written by hand and each page done individually. This was in the days before CSS, so lots of font tags and layout tables were used. I think it was pretty good for the day.
+    The early foundations of the site were plain HTML with a sprinkling of Javascript, all of it written by hand and each page done individually. This was in the days before CSS, so lots of font tags and layout tables were used. I think it was pretty good for the day.
 
-But not good enough for now. I'm very comfortable with React and SASS, so learning more about Gatsby and the whole JAMstack, static website thing seemed like a good combination. Plus, the kind of content I'm going to be featuring here isn't high on interactivity. Being able to keep all the writing as Markdown files and have the site build and deploy automatically based on a Git push will make everything easy to maintain.
+    But not good enough for now. I'm very comfortable with React and SASS, so learning more about Gatsby and the whole JAMstack, static website thing seemed like a good combination. Plus, the kind of content I'm going to be featuring here isn't high on interactivity. Being able to keep all the writing as Markdown files and have the site build and deploy automatically based on a Git push will make everything easy to maintain.
 
-Accessibility, in all its meanings, is important to me, so I want to take the time to make the site work for everybody, on any kind of device. Doing that right is a lot of work that sometimes gets short shrift in the crush of deadlines. But here the only boss is me, so I get the time to built the site the best way I know how.
+    Accessibility, in all its meanings, is important to me, so I want to take the time to make the site work for everybody, on any kind of device. Doing that right is a lot of work that sometimes gets short shrift in the crush of deadlines. But here the only boss is me, so I get the time to built the site the best way I know how.
 
-If you're curious about how I've put the site together [the code is available at Github](https://github.com/godfrei/crows-nest)
+    If you're curious about how I've put the site together [the code is available at Github](https://github.com/godfrei/crows-nest).
 
 2. I want to brush up my writing skills. I used to write almost every day, both for school assignments and for fun. Level reviews and the ancillary creative bits for the Nest and the Academy gave me regular opportunity to stretch those muscles, and without that kind of outlet those skills have lost their edge. I do more speaking in public than I do writing nowadays, and while that's definitely an enjoyable form of storytelling I'm feeling the pull to get my chops back. Writing this one post I can feel myself struggling to organize my thoughts, form a cohesive through-line for the content, flow from one idea to the next. 
 
-Just as with the programming end of things, the prose in my reviews from long ago leaves something to be desired when I read it now. There's a challenge waiting for me in finding new and interesting ways to level the same critiques over and over again, and these blog posts that lack an obvious focus like a mission review are going to be an entirely different beast to tackle. But those are the kinds of hurdles I'm looking foward to clearing (or, more likely, to stumbling over, picking myself up, and then trying to do better on the next one).
+    Just as with the programming end of things, the prose in my reviews from long ago leaves something to be desired when I read it now. There's a challenge waiting for me in finding new and interesting ways to level the same critiques over and over again, and these blog posts that lack an obvious focus like a mission review are going to be an entirely different beast to tackle. But those are the kinds of hurdles I'm looking foward to clearing (or, more likely, to stumbling over, picking myself up, and then trying to do better on the next one).
 
 3. I want to preserve a bit of history. The Dark Forces online community from 1995-97 was really special and I find it sad that so much of it has disappeared from the web. It's clear from many of the retrospectives that have been written in recent years that lots of people have fond memories of Dark Forces and its sequels, though I'm saddened to see barely a mention of the mission authors that extended that narrative before Kyle Katarn ever picked up a lightsaber. These missions were fan fiction writ out in 2.5 dimensions and I loved it.
 
-Instead of leaving the Nest as a hidden relic in the Internet Archive or a mirror site on [DF-21](https://df-21.net/) I want to rebuild my piece of that community, celebrate the parts that were important to me. I've got over a hundred new-to-me missions to play and reviews to write. My completionist streak won't let me leave it that way.
+    Instead of leaving the Nest as a hidden relic in the Internet Archive or a mirror site on [DF-21](https://df-21.net/) I want to rebuild my piece of that community, celebrate the parts that were important to me. I've got over a hundred new-to-me missions to play and reviews to write. My completionist streak won't let me leave it that way.
 
---
+===
 
 This endeavor is clearly an anxiety-fueled attempt to reclaim a part of my past when things were a little clearer, and I had control over a project that felt at least a little bit important to myself and others. No illusions there. But if I can channel that anxiety into something creative and constructive that teaches me some stuff leaves a little corner of the web better than it was, that's a win.
 
