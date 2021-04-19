@@ -1,5 +1,5 @@
 ---
-slug: "cantina-pack
+slug: "cantina-pack"
 title: "Catina Resources"
 authors: 
     - "Charles Upton"
