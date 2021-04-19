@@ -90,12 +90,21 @@
 
 @media screen and (min-width: 767px) {
     .mission {
+        margin-left: -#{$spacing-8};
+        margin-right: -#{$spacing-8};
+        margin-bottom: -#{$spacing-8};
+        padding-top: 25vh;
+        padding-bottom: $spacing-8;
+        background-image: linear-gradient(to bottom, transparent 25vh, $black 75vh);
+    }
+}
+
+
+@media screen and (min-width: 1023px) {
+    .mission {
         margin-left: -#{$spacing-10};
         margin-right: -#{$spacing-10};
         margin-bottom: -#{$spacing-10};
-        padding-top: 25vh;
-        padding-bottom: $spacing-10;
-        background-image: linear-gradient(to bottom, transparent 25vh, $black 75vh);
     }
 
     .descAndReviews {
