@@ -27,25 +27,37 @@ $captureWidth: 674px;
         margin-top: -20px;
         opacity: 0.5;
         font-family: sans-serif;
+        cursor: pointer;
 
         &:hover {
             opacity: 1;
+        }
+
+        &:after {
+            content: '';
+            background-color: white;
+            mask-size: cover;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
     }
 
     .next {
         right: 8px;
-
-        &:before {
-            content: '>';
+        
+        &:after {
+            mask: url('/images/arrow-right.svg');
         }
     }
 
     .prev {
         left: 8px;
-        
-        &:before {
-            content: '<';
+
+        &:after {
+            mask: url('/images/arrow-left.svg');
         }
     }
 }
@@ -189,6 +201,7 @@ $captureWidth: 674px;
         border: none;
         margin: 0;
         display: block;
+        cursor: pointer;
     }
 
     img {
