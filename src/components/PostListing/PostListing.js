@@ -18,7 +18,8 @@ const PostListing = ({ postEdges }) => {
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
-        description: postEdge.node.frontmatter.description || postEdge.node.excerpt,
+        description:
+          postEdge.node.frontmatter.description || postEdge.node.excerpt,
       });
     });
     return postList;

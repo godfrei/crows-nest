@@ -13,11 +13,7 @@ export default () => {
           </li>
           <li>Social Links</li>
           <li>
-            <a
-              href={config.siteRss}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={config.siteRss} target="_blank" rel="noopener noreferrer">
               RSS
             </a>
           </li>

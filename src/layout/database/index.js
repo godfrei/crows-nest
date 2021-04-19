@@ -1,11 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import {
-  title,
-  grid,
-  navigation,
-  active,
-} from "./database.module.scss";
+import { title, grid, navigation, active } from "./database.module.scss";
 
 const DatabaseLayout = ({ children }) => {
   const linkProps = {

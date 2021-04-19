@@ -3,13 +3,15 @@ const config = require("./data/SiteConfig");
 const _ = require("lodash");
 
 function getGuidSuffix(edge) {
-  const authors = edge.node.frontmatter.authors.join('-');
+  const authors = edge.node.frontmatter.authors.join("-");
   return edge.node.fields.slug + _.kebabCase(authors);
 }
 
 function getCoverImage(edge) {
-  const cover = edge.node.frontmatter.cover || (edge.node.frontmatter.mission && edge.node.frontmatter.mission.cover);
-  if (!cover || typeof cover === "undefined") return '';
+  const cover =
+    edge.node.frontmatter.cover ||
+    (edge.node.frontmatter.mission && edge.node.frontmatter.mission.cover);
+  if (!cover || typeof cover === "undefined") return "";
   return `<img src="${config.siteUrl}${cover.publicURL}" alt="" />`;
 }
 
@@ -246,7 +248,7 @@ module.exports = {
                 guid: rssMetadata.site_url + getGuidSuffix(edge),
                 custom_elements: [
                   { "content:encoded": getCoverImage(edge) + edge.node.html },
-                  { author: edge.node.frontmatter.authors.join(', ') },
+                  { author: edge.node.frontmatter.authors.join(", ") },
                 ],
               }));
             },

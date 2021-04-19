@@ -5,7 +5,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { pageHeader } from './blog.module.scss';
+import { pageHeader } from "./blog.module.scss";
 
 const posts = ({ data }) => (
   <Layout>

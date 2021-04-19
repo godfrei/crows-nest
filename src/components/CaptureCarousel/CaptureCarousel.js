@@ -11,8 +11,7 @@ const CaptureCarousel = ({ captures }) => {
       newOffset = offset + 1;
     if (newOffset > captures.length - 1) {
       newOffset = 0;
-    }
-    else if (newOffset < 0) {
+    } else if (newOffset < 0) {
       newOffset = captures.length - 1;
     }
     setOffset(newOffset);
@@ -21,12 +20,12 @@ const CaptureCarousel = ({ captures }) => {
   const nextCapture = () => {
     const newOffset = offset + 1;
     updateOffset(newOffset);
-  }
+  };
 
   const prevCapture = () => {
     const newOffset = offset - 1;
     updateOffset(newOffset);
-  }
+  };
 
   return (
     <>
@@ -54,20 +53,20 @@ const CaptureCarousel = ({ captures }) => {
       </div>
       {captures.length > 1 && (
         <ul className={styles.buttons}>
-        {captures.map((capture, index) => {
-          const activeClass = index === offset ? styles.active : null;
-          return (
-            <li className={activeClass}>
-              <button onClick={() => updateOffset(index)}>
-                <img
-                  src={capture.file.publicURL}
-                  alt={`Jump to image ${index + 1}`}
-                />
-              </button>
-            </li>
-          );
-        })}
-      </ul>
+          {captures.map((capture, index) => {
+            const activeClass = index === offset ? styles.active : null;
+            return (
+              <li className={activeClass}>
+                <button onClick={() => updateOffset(index)}>
+                  <img
+                    src={capture.file.publicURL}
+                    alt={`Jump to image ${index + 1}`}
+                  />
+                </button>
+              </li>
+            );
+          })}
+        </ul>
       )}
     </>
   );

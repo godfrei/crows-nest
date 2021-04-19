@@ -20,7 +20,7 @@ const Index = ({ data }) => {
       <>
         <Helmet
           htmlAttributes={{
-            lang: 'en',
+            lang: "en",
           }}
         >
           <title>{config.siteTitle}</title>
@@ -28,7 +28,7 @@ const Index = ({ data }) => {
         </Helmet>
         <SEO />
         <header id="homepage_header">
-            <Navigation />
+          <Navigation />
         </header>
         <div className="cn-layout">
           <div className="glow"></div>
@@ -36,9 +36,10 @@ const Index = ({ data }) => {
             <div id="site-title">
               <SiteTitle title={config.siteTitle} />
               <p>
-                The most complete and up-to-date site for reviews and downloads of
-                add-on levels for the LucasArts 3D first-person game{" "}
-                <em>Dark Forces</em>. At least, it used to be. Getting back to it.
+                The most complete and up-to-date site for reviews and downloads
+                of add-on levels for the LucasArts 3D first-person game{" "}
+                <em>Dark Forces</em>. At least, it used to be. Getting back to
+                it.
               </p>
             </div>
             <div className="home-grid">
@@ -57,8 +58,9 @@ const Index = ({ data }) => {
 
             <h2>Looking for a guaranteed mission to try?</h2>
             <p>
-              The Editor's Choice missions have been selected by reviewers at The
-              Crow's Nest as the best the Dark Forces community has to offer.
+              The Editor's Choice missions have been selected by reviewers at
+              The Crow's Nest as the best the Dark Forces community has to
+              offer.
             </p>
             <Link to="/missions/editors-choice">
               All Editor's Choice Missions
