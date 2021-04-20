@@ -30,12 +30,16 @@ const CaptureCarousel = ({ captures }) => {
   return (
     <>
       <div className={styles.captureScroll}>
-        <button onClick={prevCapture} className={styles.prev}>
-          <span className="sr-only">Previous</span>
-        </button>
-        <button onClick={nextCapture} className={styles.next}>
-          <span className="sr-only">Next</span>
-        </button>
+        {captures.length > 1 && (
+          <>
+            <button onClick={prevCapture} className={styles.prev}>
+              <span className="sr-only">Previous</span>
+            </button>
+            <button onClick={nextCapture} className={styles.next}>
+              <span className="sr-only">Next</span>
+            </button>
+          </>
+        )}
         <ul
           className={`${styles.captureList} ${styles[stackClass]} ${
             styles[`offset${offset}`]
