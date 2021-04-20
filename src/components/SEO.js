@@ -4,9 +4,10 @@ import urljoin from "url-join";
 import config from "../../data/SiteConfig";
 
 const SEO = ({ postNode, postPath, postSEO }) => {
-  let title;
-  let description;
-  let image;
+  let title = config.siteTitle;
+  let description = config.siteDescription;
+  let image = config.siteLogo;
+  let imageDesc = "The Crow's Nest logo.";
   let postURL;
 
   if (postSEO) {
@@ -16,16 +17,9 @@ const SEO = ({ postNode, postPath, postSEO }) => {
       ? postMeta.description
       : postNode.excerpt;
     image = postMeta?.cover?.publicURL;
+    imageDesc = postNode?.coverAlt || postNode.frontmatter?.coverAlt || "The Crow's Nest logo.";
     postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
   }
-  //   title = config.siteTitle
-  //   description = config.siteDescription
-  //   image = config.siteLogo
-  // }
-  // Protect against lack of content, not just undefined postSEO
-  if (!title) title = config.siteTitle;
-  if (!description) description = config.siteDescription;
-  if (!image) image = config.siteLogo;
 
   image = urljoin(config.siteUrl, config.pathPrefix, image);
   const blogURL = urljoin(config.siteUrl, config.pathPrefix);
@@ -95,12 +89,13 @@ const SEO = ({ postNode, postPath, postSEO }) => {
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
-        name="twitter:creator"
+        name="twitter:site"
         content={config.userTwitter ? config.userTwitter : ""}
       />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={imageDesc} />
     </Helmet>
   );
 };

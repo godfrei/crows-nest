@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import SEO from "../components/SEO";
 import Layout from "../layout";
 import TechSpecs from "../components/TechSpecs";
 import MissionHeader from "../components/MissionHeader";
@@ -79,12 +80,26 @@ const MissionTemplate = ({ data }) => {
   }
 
   const cover = missionNode.cover ? missionNode.cover.publicURL : "";
+  let coverDescription = missionNode.coverAlt || null;
+  if (coverDescription === null) {
+    const coverScreen = missionNode.screenshots.find((element) => {
+      return element.file.publicURL === cover;
+    });
+    coverDescription = coverScreen ? coverScreen.caption : null;
+  }
+
+  const seoNode = {
+    ...missionNode,
+    frontmatter: missionNode,
+    coverAlt: coverDescription,
+  };
 
   return (
     <Layout>
       <Helmet>
         <title>Mission {`${missionNode.title} | ${config.siteTitle}`}</title>
       </Helmet>
+      <SEO postNode={seoNode} postPath={missionNode.slug} postSEO />
       <div
         className={coverImage}
         style={{ backgroundImage: `url(${cover})` }}

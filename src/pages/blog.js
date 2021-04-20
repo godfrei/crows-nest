@@ -26,7 +26,7 @@ export const pageQuery = graphql`
   query BlogQuery {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [fields___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { fields: { collection: { eq: "posts" } } }
     ) {
       edges {
@@ -42,6 +42,7 @@ export const pageQuery = graphql`
               name
               publicURL
             }
+            coverAlt
             date
           }
         }
