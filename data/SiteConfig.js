@@ -14,7 +14,7 @@ const config = {
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Geoff Elliott", // Username to display in the author segment.
   userEmail: "geoff@darkforces.reviews", // Email used for RSS feed's author segment
-  userTwitter: "godfrei", // Optionally renders "Follow Me" in the Bio segment.
+  userTwitter: "DFCrowsNest", // Optionally renders "Follow Me" in the Bio segment.
   userGitHub: "godfrei", // Optionally renders "Follow Me" in the Bio segment.
   userLocation: "Earth", // User location to display in the author segment.
   userAvatar: "", // User avatar to display in the author segment.
