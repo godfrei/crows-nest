@@ -22,9 +22,23 @@ import {
 const MissionTemplate = ({ data }) => {
   const missionNode = data.allMissionsJson.nodes[0];
 
+  function getLastName(author) {
+    var names = author.split(' ');
+    return names[names.length - 1];
+  }
+
   function getReviewContent(reviews) {
     let reviewContent = null;
     if (reviews.length >= 1) {
+      
+      reviews.sort((a, b) => {
+        var nameA = getLastName(a.frontmatter.authors[0]).toUpperCase();
+        var nameB = getLastName(b.frontmatter.authors[0]).toUpperCase();
+        if (nameA < nameB) return -1;
+        if (nameA > nameB) return 1;
+        return 0;
+      });
+
       reviewContent = (
         <>
           {reviews.map((review) => {
