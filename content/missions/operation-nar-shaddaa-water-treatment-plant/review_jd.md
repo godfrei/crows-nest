@@ -4,7 +4,8 @@ title: "REVIEW: Operation: Nar Shaddaa Water Treatment Plant"
 authors: 
   -  "John Dagen"
 date: 1997-04-09
-rating: 83
+rating: 3
+classicRating: 83
 ---
 
 Right up front I had a problem with the story: I, too, don't like Dark Troopers being in a level without a good reason. On the other hand, if this level took place DURING the Dark Trooper crisis, it's been argued, this could make perfect sense. The problem with that is I'd kind of half expect them to be in the Arc Hammer. So it's hard to tell whether there are plot flaws or not...

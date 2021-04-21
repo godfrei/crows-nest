@@ -4,7 +4,8 @@ title: "REVIEW: Destroy Imperial Supply Depot"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-16
-rating: 93
+rating: 4
+classicRating: 93
 ---
 
 This is a very large level, and as I made my way through it, I was constantly amazed at the ability of the author to create so many different environments in one area, and yet manage to tie them all together. You need to find different keys to make your way through, but I found myself so entranced by the scope of the level and the detail involved that finding the keys became a secondary goal. My first was to explore the entire place and discover everything there was about it.

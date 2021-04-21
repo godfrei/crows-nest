@@ -88,6 +88,11 @@
     opacity: 0.5;
 }
 
+.missionRating {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 767px) {
     .mission {
         margin-left: -#{$spacing-8};

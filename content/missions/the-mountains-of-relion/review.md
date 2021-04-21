@@ -4,7 +4,8 @@ title: "REVIEW: The Mountains of Relion"
 authors: 
   -  "Geoff Elliott"
 date: 1997-03-07
-rating: 87
+rating: 3
+classicRating: 87
 ---
 
 Save me from an endless supply of Death Star plans levels! PLEASE!

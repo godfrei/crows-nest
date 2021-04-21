@@ -4,7 +4,8 @@ title: "REVIEW: Operation Tatooine"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-22
-rating: 79
+rating: 2
+classicRating: 79
 ---
 
 I'm sure that it was bound to come that somebody would create a level on Tatooine. After, the planet figured rather prominently in the first three movies and promises to do so in the prequels as well. What wasn't bound to come was a good level out of it; after all, just taking a good atmosphere and slapping a plot on it does not a good level make. But here the author has managed to pull it off.

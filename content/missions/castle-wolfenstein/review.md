@@ -4,7 +4,8 @@ title: "REVIEW: Castle Wolfenstein"
 authors: 
   -  "Geoff Elliott"
 date: 1997-09-16
-rating: 70
+rating: 2
+classicRating: 70
 ---
 
 Are you seriously expecting anything out of this level? Don't. This is a rehash of the original Wolfenstein level, which translates into 90 degree architecture, boring texturing(nods to those who hate it when I gripe about that :-) ), identical lighting schemes, minimal difficulty and a really short level with dubious objectives. Kill everything in sight and get out in under 1 minute is the goal that I place for you.

@@ -4,7 +4,8 @@ title: "REVIEW: Operation Borea"
 authors: 
   - "Geoff Elliott"
 date: 1996-11-13
-rating: 80
+rating: 3
+classicRating: 80
 ---
 
 From the moment you set foot in this level you can tell that the author doesn't plan to go halfway with it. The exterior architecture consists of huge corridors, with walls reaching towards the sky. And it didn't take long to find some stormies to extend my greetings to. So I decided that this level was going to turn out pretty good. And I was right. The story is very interesting; it's nice to have somebody take some of the other existing Star Wars media and use it for some ideas. The style of the facility is dark and menacing for the most part, although there are different moods for different areas. I found narrow ledges to crawl across, catwalks to run over while Imperials blast at me, and massive chasms intended to keep me away from the data tapes. None of it worked of course and I completed the level with a sense of satisfaction.

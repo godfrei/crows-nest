@@ -4,7 +4,8 @@ title: "REVIEW: Mines"
 authors: 
   -  "Geoff Elliott"
 date: 1997-04-12
-rating: 12
+rating: 1
+classicRating: 12
 ---
 
 ![Mines screenshot](./mines.png "This is the more interesting half of the 'level'.")

@@ -4,7 +4,8 @@ title: "REVIEW: Star Base"
 authors: 
   -  "David Arandle"
 date: 1997-04-22
-rating: 45
+rating: 1
+classicRating: 45
 ---
 
 The plot to this one is a good start; sure it's not really new but at least an attempt has been made to put a slightly different spin on it. Unfortunately the author seems to have left the storyline behind in creating the level.

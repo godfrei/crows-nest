@@ -16,7 +16,7 @@ import {
   descAndReviews,
   plot,
   coverImage,
-  content,
+  missionRating
 } from "./mission.module.scss";
 
 const MissionTemplate = ({ data }) => {
@@ -54,7 +54,7 @@ const MissionTemplate = ({ data }) => {
                     Reviewed by: {reviewers.join(", ")} | {dateString}
                   </p>
                   <div dangerouslySetInnerHTML={{ __html: review.html }} />
-                  <Rating score={rating} />
+                  <Rating score={rating} className={missionRating} />
                 </div>
                 <hr />
               </>

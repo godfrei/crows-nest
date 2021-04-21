@@ -4,7 +4,8 @@ title: "REVIEW: Underground Research Facility"
 authors: 
   - "Geoff Elliott"
 date: 1996-11-18
-rating: 79
+rating: 2
+classicRating: 79
 ---
 
 I was disappointed with this level. I enjoyed the premise of going back to the facility where the Dark Trooper first originated, but while going through the whole thing, I just felt like it failed to deliver. There are Dark Troopers of course, and even an interesting room with protoypes of them, but I never saw what I would think of as a great research facility. There where no construciton lines, or even a lab. After completion I was let down.

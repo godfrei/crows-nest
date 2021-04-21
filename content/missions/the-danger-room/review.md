@@ -4,7 +4,8 @@ title: "REVIEW: The Danger Room"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-14
-rating: 90
+rating: 4
+classicRating: 90
 ---
 
 There have been lots of training levels put out, mostly for use by internet groups. And all of them have had two things in common: lots of enemies and lots of guns. Unfortunately, usually they also had another thing in common, a lack of interesting gameplay, mostly brought about by a poor plot. This is one level that breaks the mold.

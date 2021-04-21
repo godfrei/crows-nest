@@ -4,7 +4,8 @@ authors:
   - "Geoff Elliott"
 title: "REVIEW: Imperial Academy"
 date: 1996-10-25
-rating: 94
+rating: 4
+classicRating: 94
 ---
 
 This is a challenging level. 

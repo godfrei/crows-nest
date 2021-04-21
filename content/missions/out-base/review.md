@@ -4,7 +4,8 @@ title: "REVIEW: OutBase"
 authors: 
   -  "Geoff Elliott"
 date: 1997-04-09
-rating: 50
+rating: 1
+classicRating: 50
 ---
 
 Shall we make this as quick and painless as possible?

@@ -5,6 +5,7 @@ authors:
   -  "Geoff Elliott"
 date: 1997-09-04
 rating:
+classicRating:
 ---
 
 Using only regular sectors, the author has taken the time to create some new and interesting features in this level.

@@ -4,7 +4,8 @@ title: "REVIEW: Faust"
 authors: 
   -  "Geoff Elliott"
 date: 1997-02-15
-rating: 89
+rating: 3
+classicRating: 89
 ---
 
 The plot for this level is not terribly imaginative. The author mentions there are some bugs in textures he couldn't fix. And this is his first level. I don't think there can be a much worse combination.

@@ -4,7 +4,8 @@ title: "REVIEW: Asteroid"
 authors: 
   - "Jeff Walters"
 date: 1997-06-25
-rating: 96
+rating: 4
+classicRating: 96
 ---
 
 Yet another brilliant level from Eric Pauker that seemed to come out of nowhere. Hot on the heels of his first really successful level 'Energy Mine on Parux', this level lives up to and exceeds the standard set by it's predecessor.

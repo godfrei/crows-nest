@@ -4,7 +4,8 @@ title: "REVIEW: Kyle Meets Kaled"
 authors: 
   -  "Geoff Elliott"
 date: 1997-02-08
-rating: 61
+rating: 2
+classicRating: 61
 ---
 
 The failure to find a story is a serious detractor when playing anything. However, I don't think that the best story in the world could have saved this level.

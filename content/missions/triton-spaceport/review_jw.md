@@ -4,7 +4,8 @@ title: "REVIEW: Triton Spaceport"
 authors: 
   -  "Jeff Walters"
 date: 1997-04-26
-rating: 87
+rating: 3
+classicRating: 87
 ---
 
 Sound interesting?......well, the level for the most part is very interesting.

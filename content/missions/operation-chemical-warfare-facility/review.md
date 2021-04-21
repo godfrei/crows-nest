@@ -4,7 +4,8 @@ title: "REVIEW: Operation: Chemical Warfare Facility"
 authors: 
   - "Geoff Elliott"
 date: 1996-10-15
-rating: 65
+rating: 2
+classicRating: 65
 ---
 
 When I started this level, I was geared up for a good time. The plot seemed sound, not incredibly elaborate, but simple and concrete. It promised action, toxic areas, some machinery, and plenty of enemies to mow down. There was no mention of the dreaded duo, Dark Troopers and Boba Fett, so I figured this might have some thought put into it. When I finished, I was disappointed. It wasn't a total bust, but it left me thinking the author didn't run it through enough tests.

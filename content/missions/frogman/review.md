@@ -4,7 +4,8 @@ title: "REVIEW: Frogman"
 authors: 
   -  "Geoff Elliott"
 date: 1996-12-05
-rating: 54
+rating: 1
+classicRating: 54
 ---
 
 This level has an interesting premise. The author has apprently gotten sick of being Kyle all the time and introduced his brother, Ken. That's fun, and it allows him to write a decent story. However, because he doesn't carry through with the same amount of detail in the level as he puts into the story, the whole thing is pretty much a bust.

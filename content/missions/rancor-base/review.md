@@ -4,7 +4,8 @@ title: "REVIEW: Rancor Base"
 authors: 
   -  "Geoff Elliott"
 date: 1997-04-14
-rating: 73
+rating: 2
+classicRating: 73
 ---
 
 You will need all the ammo you can get, but the base won't be that hard to get through. The level consists of not much more than a short approach to the base and a very small outpost. The level doesn't look bad texture or architecture wise, it's just pretty small. And it's also really simple.

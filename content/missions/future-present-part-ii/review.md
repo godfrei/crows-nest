@@ -4,7 +4,8 @@ title: "REVIEW: Future Present Part II"
 authors: 
   -  "Geoff Elliott"
 date: 1997-01-11
-rating: 86
+rating: 3
+classicRating: 86
 ---
 
 As Part II in a trilogy, this level had something to live up to. In true sequel fashion, it doesn't quite match it's predecessor.

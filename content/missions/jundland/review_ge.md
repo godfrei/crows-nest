@@ -4,7 +4,8 @@ title: "REVIEW: Jundland"
 authors: 
   -  "Geoff Elliott"
 date: 1997-04-06
-rating: 88
+rating: 3
+classicRating: 88
 ---
 
 "The Jundland wastes are not to be traveled lightly." - Obi-Wan Kenobi

@@ -4,7 +4,8 @@ title: "REVIEW: Operation: Evasive Action"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-16
-rating: 82
+rating: 3
+classicRating: 82
 ---
 
 This level takes us back to Return of the Jedi. Apparently the Emperor has stockpiled the last of his Dark Troopers, and is preparing to use to stop the Rebel attack on Endor. This seems to bend several of the storylines in ROTJ, but it's only bending. This level is fun, and it gives us a little history of what Kyle might have been doing in the years between the Arc Hammer and the upcoming Jedi Knight. The author uses the textures that we've come to associate with the Death Star to provide an accurate environment to work in.

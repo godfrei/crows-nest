@@ -4,7 +4,8 @@ title: "REVIEW: Boba Fett's Revenge"
 authors: 
   - "Geoff Elliott"
 date: 1997-02-08
-rating: 98
+rating: 4
+classicRating: 98
 ---
 
 I have often thought that the DF engine would allow for all kinds of cool things to be done with lighting, and lots of other interesting architecture bits. I've also noticed that lots of people don't spend the time to take full advantage of these properties. At last, here is a level whose author made the time, and it shows.

@@ -4,7 +4,8 @@ title: "REVIEW: TIE Defender Base"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-17
-rating: 96
+rating: 4
+classicRating: 96
 ---
 
 This is one of the largest and most detailed levels ever created for Dark Forces. It was also one of the first ones, and I first tried it about a year ago. I was enthralled by all the new things packed into this level. I never got a chance to play the first version, but the Collector's Edition has so many creative ideas and settings to enhance gameplay that I will never tire of playing this level.

@@ -4,7 +4,8 @@ title: "REVIEW: Coober"
 authors: 
   - "Geoff Elliott"
 date: 1996-11-14
-rating: 25
+rating: 1
+classicRating: 25
 ---
 
 It's been a long time since I've seen crap like this. I may get fussy about little things like texture placement and alignment, lighting, story, geometry, etc, but I don't think I've ever found a level as pointless as this one.

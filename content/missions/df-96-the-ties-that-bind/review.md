@@ -4,7 +4,8 @@ title: "REVIEW: DF96 - The Ties That Bind"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-18
-rating: 98
+rating: 4
+classicRating: 98
 ---
 
 I'm not going to try to put a thoughtful introduction into this review. I just can't figure out what I want to write. So I'll just give you my initial reaction to playing Dark Forces 96.

@@ -4,7 +4,8 @@ title: "REVIEW: Mt. Kurek"
 authors: 
   -  "Eric Pauker"
 date: 1997-06-20
-rating: 99
+rating: 4
+classicRating: 99
 ---
 
 When I first heard about this level a month or two ago I thought to myself, "How could anyone create a realistic volcano using the Dark Forces engine?". Well, I guess the answer is "Lots of INF programming". Which is what this level has.

@@ -4,7 +4,8 @@ title: "REVIEW: Castle"
 authors: 
   - "Geoff Elliott"
 date: 1996-11-05
-rating: 75
+rating: 2
+classicRating: 75
 ---
 
 First impression: this is one screwed up level. In parts it seems like the castle idea is actually going to work out, and in others the author seems to have lost all sense of the Star Wars universe and how it works, and what it means.

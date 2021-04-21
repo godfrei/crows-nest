@@ -4,7 +4,8 @@ title: "REVIEW: Lahara Hotel"
 authors: 
   -  "Geoff Elliott"
 date: 1996-12-03
-rating: 90
+rating: 4
+classicRating: 90
 ---
 
 This is one of the better levels I've played as of yet, and for several reasons. The first is the plot. While it really boils down to another recuse the prisoner idea, the author has replaced the prisoner with hostages, and that is somewhat unique. When combined with his setting, this idea takes on a whole new perspective as we are placed in a situation that can be all too real for us in our world.

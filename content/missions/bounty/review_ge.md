@@ -4,7 +4,8 @@ title: "REVIEW: The Bounty Hunt"
 authors: 
   - "Geoff Elliott"
 date: 1997-03-04
-rating: 95
+rating: 4
+classicRating: 95
 ---
 
 **Leia:** "I though you had decided to stay..."

@@ -5,6 +5,7 @@ authors:
   -  "Geoff Elliott"
 date: 1997-09-08
 rating:
+classicRating:
 ---
 
 The entire world swirls with nifty colors and you have trouble staying on your feet. Motion is difficult and it seems like everything is moving in different directions. You're attacked by floating green men who seem to be there and not there at the same time. And for some reason Jan isn't her usual cheerful self.
