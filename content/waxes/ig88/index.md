@@ -1,5 +1,5 @@
 ---
-slug: "ig88-2"
+slug: "ig88"
 title: "IG-88 Bounty Hunter Droid"
 authors: 
     - "Don Sielke"
