@@ -93,6 +93,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       case "posts":
         fullSlug = `blog/${slug}`;
         break;
+      case "3dos":
+      case "bms":
+      case "fmes":
+      case "vocs":
+      case "waxes":
+        fullSlug = `storage/${collection}/${slug}`;
+        break;
       default:
         fullSlug = slug;
     }
@@ -274,15 +281,16 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // 3DOs
 
-  let threeDOEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === "3dos") return edge;
+  // 3DOs, BMs, FMEs, VOCs, WAXes
+
+  let componentEdges = markdownEdges.filter((edge) => {
+    if (edge.node.fields.collection === "3dos" || edge.node.fields.collection === "bms" || edge.node.fields.collection === "fmes" || edge.node.fields.collection === "vocs" || edge.node.fields.collection === "waxes") return edge;
   });
 
-  threeDOEdges.forEach((edge, index) => {
+  componentEdges.forEach((edge) => {
     createPage({
-      path: `/3dos/${edge.node.fields.slug}`,
+      path: `/${edge.node.fields.slug}`,
       component: componentPage,
       context: {
         slug: edge.node.fields.slug,
@@ -290,69 +298,6 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // VOCs
-
-  let vocEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === "vocs") return edge;
-  });
-
-  vocEdges.forEach((edge, index) => {
-    createPage({
-      path: `/vocs/${edge.node.fields.slug}`,
-      component: componentPage,
-      context: {
-        slug: edge.node.fields.slug,
-      },
-    });
-  });
-
-  // WAXes
-
-  let waxEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === "waxes") return edge;
-  });
-
-  waxEdges.forEach((edge, index) => {
-    createPage({
-      path: `/waxes/${edge.node.fields.slug}`,
-      component: componentPage,
-      context: {
-        slug: edge.node.fields.slug,
-      },
-    });
-  });
-
-  // BMs
-
-  let bmEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === "bms") return edge;
-  });
-
-  bmEdges.forEach((edge, index) => {
-    createPage({
-      path: `/bms/${edge.node.fields.slug}`,
-      component: componentPage,
-      context: {
-        slug: edge.node.fields.slug,
-      },
-    });
-  });
-
-  // FMEs
-
-  let fmeEdges = markdownEdges.filter((edge) => {
-    if (edge.node.fields.collection === "fmes") return edge;
-  });
-
-  fmeEdges.forEach((edge, index) => {
-    createPage({
-      path: `/fmes/${edge.node.fields.slug}`,
-      component: componentPage,
-      context: {
-        slug: edge.node.fields.slug,
-      },
-    });
-  });
 
   // Specs
 

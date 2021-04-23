@@ -15,22 +15,22 @@ export default () => {
     <nav className={navigation}>
       <ul>
         <li>
-          <Link to="/blog" {...linkProps}>
+          <Link to="/blog/" {...linkProps}>
             Blog
           </Link>
         </li>
         <li>
-          <Link to="/missions" {...linkProps}>
+          <Link to="/missions/" {...linkProps}>
             Missions
           </Link>
         </li>
         <li>
-          <Link to="/database" {...linkProps}>
+          <Link to="/database/" {...linkProps}>
             Database
           </Link>
         </li>
         <li>
-          <Link to="/storage" {...linkProps}>
+          <Link to="/storage/" {...linkProps}>
             Storage
           </Link>
         </li>

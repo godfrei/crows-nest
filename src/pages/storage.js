@@ -43,32 +43,32 @@ const Storage = ({ data }) => {
           Show:
           <ul>
             <li>
-              <Link to="/storage" activeClassName={active}>
+              <Link to="/storage/" activeClassName={active}>
                 All
               </Link>
             </li>
             <li>
-              <Link to="/3dos" {...linkProps}>
+              <Link to="/3dos/" {...linkProps}>
                 3DOs
               </Link>
             </li>
             <li>
-              <Link to="/bms" {...linkProps}>
+              <Link to="/bms/" {...linkProps}>
                 BMs
               </Link>
             </li>
             <li>
-              <Link to="/fmes" {...linkProps}>
+              <Link to="/fmes/" {...linkProps}>
                 FMEs
               </Link>
             </li>
             <li>
-              <Link to="/vocs" {...linkProps}>
+              <Link to="/vocs/" {...linkProps}>
                 VOCs
               </Link>
             </li>
             <li>
-              <Link to="/waxes" {...linkProps}>
+              <Link to="/waxes/" {...linkProps}>
                 WAXes
               </Link>
             </li>
@@ -109,9 +109,9 @@ const Storage = ({ data }) => {
           return (
             <tr>
               <td>
-                <a href={edge.node.fields.slug}>
+                <Link to={`/${edge.node.fields.slug}`}>
                   {edge.node.frontmatter.title}
-                </a>
+                </Link>
                 <span className={authors}>
                   {edge.node.frontmatter.authors.join(", ")}
                 </span>
