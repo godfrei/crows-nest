@@ -4,7 +4,8 @@ title: "REVIEW: Energy Mine on Parux"
 authors: 
   -  "Geoff Elliott"
 date: 1997-04-10
-rating: 94
+rating: 4
+classicRating: 94
 ---
 
 I think that we'll have to ignore the obvious misinterpretation of energy. After all, this is Star Wars, so physics and reality don't play as big of roles here as they might in the real world. And the level does just fine without all the accuracy in the world being shoved inside.

@@ -4,7 +4,8 @@ title: "REVIEW: Impossible Rescue"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-22
-rating: 74
+rating: 2
+classicRating: 74
 ---
 
 The first level to use Tatooine as a setting was original; it had lots of new things to keep you interested. This level has some new things too, but you can't seem to get past the feeling that it's just a rerun.

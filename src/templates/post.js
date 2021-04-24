@@ -5,7 +5,12 @@ import Layout from "../layout";
 import PostTags from "../components/PostTags";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { pagination, postMeta, coverClass, postContent } from "./post.module.scss";
+import {
+  pagination,
+  postMeta,
+  coverClass,
+  postContent,
+} from "./post.module.scss";
 import "./prism-okaidia.css";
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -13,7 +18,7 @@ const PostTemplate = ({ data, pageContext }) => {
   const postNode = data.markdownRemark;
   const post = postNode.frontmatter;
   const date = postNode.fields.date;
-  const cover = post.cover ? post.cover.publicURL : '';
+  const cover = post.cover ? post.cover.publicURL : "";
   if (!post.id) {
     post.id = slug;
   }
@@ -31,7 +36,10 @@ const PostTemplate = ({ data, pageContext }) => {
           <div className={postMeta}>
             <PostTags tags={post.tags} />
           </div>
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} className={postContent} />
+          <div
+            dangerouslySetInnerHTML={{ __html: postNode.html }}
+            className={postContent}
+          />
         </article>
         <nav>
           <ul className={pagination}>
@@ -64,6 +72,7 @@ export const pageQuery = graphql`
         cover {
           publicURL
         }
+        coverAlt
       }
       fields {
         slug

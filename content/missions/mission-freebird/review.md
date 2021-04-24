@@ -4,7 +4,8 @@ title: "REVIEW: Mission: Freebird"
 authors: 
   -  "Christopher Elliott"
 date: 1997-04-06
-rating: 78
+rating: 2
+classicRating: 78
 ---
 
 The plot sounded good as soon as I read it. Unfortunately, the level had few tie-ins to the plot in it. You start in a sewer filled with tons of dianogas. Even on easy there are enough to drive you nuts. It's not hard to find a way into the complex and the rest of the level is simple. There are no real puzzles, except for one door that takes a key to open it. It's worth mentioning that you don't even need this door to complete the level.

@@ -4,7 +4,8 @@ title: "REVIEW: Imperial Fortress"
 authors: 
   -  "Geoff Elliott"
 date: 1997-03-04
-rating: 83
+rating: 3
+classicRating: 83
 ---
 
 *I raced down the canyon, data tapes in hand and Madine struggling to keep up. Behind me I could hear the shrill scream of the trandoshans and the equally shrill shriek of their concussion rifles. The walls of the canyon were exploding all around and I was wondering if the corridor of stone would ever end, when suddenly the Crow came into view ahead just beyond a ledge. With a final burst of speed we reached the ledge, and jumped aboard the ship, escaping just ahead of the Imperials and their bounty hunter hires...*

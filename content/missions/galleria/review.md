@@ -4,7 +4,8 @@ title: "REVIEW: Galleria"
 authors: 
   -  "Geoff Elliott"
 date: 1997-01-09
-rating: 40
+rating: 1
+classicRating: 40
 ---
 
 This author has accomplished something I never thought was possible. It had never occured to me that somebody would go to this much effort just to advertise. The author has populated his level with logos, slogans and other images in an effort to promote his favorite skateboarding companies. This entire level is a joke, and I don't regulate that to just the "art" on the walls.

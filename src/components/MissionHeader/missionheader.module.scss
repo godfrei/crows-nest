@@ -6,22 +6,23 @@
     z-index: 3;
     text-shadow: 1px 1px 0 $black, 0 0 40px rgba(0,0,0,0.6);
     margin-right: -#{$spacing-5};
+    margin-left: -#{$spacing-5};
+    background-color: rgba($black,0.5);
+    border-left: 10px solid $teal;
 }
 
 .content {
-    background-color: rgba($black,0.5);
-    border-left: 10px solid $teal;
     padding-left: $spacing-5;
+    display: grid;
+    // grid-template-columns: 1fr 100px;
 
-    > *, 
-    &:after {
+    > * {
+    // &:after {
         z-index: 1;
-        padding: 20px 0;
     }
 }
 
 .headGroup {
-    grid-column: 3 / 4;
     
     h1 {
         margin-top: 20px;
@@ -34,7 +35,6 @@
 }
 
 .awards {
-    grid-column: 4 / 5;
     margin-left: 10px;
 }
 
@@ -51,11 +51,36 @@
     .content {
         background-color: transparent;
         border-left: none;
-        padding: 0;
-        
+        padding: 20px 32px;
+    }
+
+    .ecLink {
+        &, & svg {
+            width: 145px;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1022px) {
+    .content {
+        grid-template-columns: 1fr 100px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .header {
+        background-color: transparent;
+        border-left: none;
+    }
+
+    .content {
+        padding-right: 0;
+        padding-left: 8px;
+
         > *, 
         &:after {
             grid-row: row 1;
+            padding: 20px 0;
         }
     
         &:after {
@@ -68,9 +93,11 @@
         }
     }
 
-    .ecLink {
-        &, & svg {
-            width: 145px;
-        }
+    .headGroup {
+        grid-column: 3 / 4;
+    }
+
+    .awards {
+        grid-column: 4 / 5;
     }
 }

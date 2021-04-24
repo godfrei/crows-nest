@@ -4,7 +4,8 @@ title: "REVIEW: Gulag 5"
 authors: 
   -  "Geoff Elliott"
 date: 1997-02-9
-rating: 40
+rating: 1
+classicRating: 40
 ---
 
 If the plot above is enough to make you yawn, you're not the only one. The first blow to this level is the incredible mundane premise behind it. You can imagine the conversation:

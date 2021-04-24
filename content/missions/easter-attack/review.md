@@ -4,7 +4,8 @@ title: "REVIEW: Easter Attack"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-21
-rating: 78
+rating: 2
+classicRating: 78
 ---
 
 The best part about this level is probably the design of the monastary. It's not huge, or overly complex, but it does have some secret rooms, passageways, and a large center chamber reminiscient of the massive cathedrals in Europe. One could argue that the author should have added a great deal more detail in order to enhance the experience, but I would say that the simplicity of the design works well when considering the lifestyle the monks would lead.

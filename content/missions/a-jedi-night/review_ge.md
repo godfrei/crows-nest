@@ -4,7 +4,8 @@ title: "REVIEW: A Jedi Night"
 authors: 
   -  "Geoff Elliott"
 date: 1997-09-15
-rating: 65
+rating: 2
+classicRating: 65
 ---
 
 Well, the story that the author has written is confusing but still interesting. Up to now all the levels have focused upon the present or the recent past. This mission takes us back to a distant time; one could say 'A long time ago...'

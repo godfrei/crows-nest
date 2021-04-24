@@ -4,7 +4,8 @@ title: "REVIEW: Jawa Sandcrawler"
 authors: 
   -  "Geoff Elliott"
 date: 1997-02-15
-rating: 78
+rating: 2
+classicRating: 78
 ---
 
 The plot has been done before, but the change of setting adds a new perspective to the idea. The sandcrawler is quite well done, even down to the low ceilings one would expect the jawas to use. The textures all suit the setting, mostly being the same ones you can find in Jabba's Ship, but varying to other parts like control rooms, elevator shafts, machinery, etc. You'll also find a good number of droids in this level, as would be expected.

@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import SEO from "../components/SEO";
 import Layout from "../layout";
 import TechSpecs from "../components/TechSpecs";
 import MissionHeader from "../components/MissionHeader";
@@ -15,15 +16,29 @@ import {
   descAndReviews,
   plot,
   coverImage,
-  content,
+  missionRating
 } from "./mission.module.scss";
 
 const MissionTemplate = ({ data }) => {
   const missionNode = data.allMissionsJson.nodes[0];
 
+  function getLastName(author) {
+    var names = author.split(' ');
+    return names[names.length - 1];
+  }
+
   function getReviewContent(reviews) {
     let reviewContent = null;
     if (reviews.length >= 1) {
+      
+      reviews.sort((a, b) => {
+        var nameA = getLastName(a.frontmatter.authors[0]).toUpperCase();
+        var nameB = getLastName(b.frontmatter.authors[0]).toUpperCase();
+        if (nameA < nameB) return -1;
+        if (nameA > nameB) return 1;
+        return 0;
+      });
+
       reviewContent = (
         <>
           {reviews.map((review) => {
@@ -39,7 +54,7 @@ const MissionTemplate = ({ data }) => {
                     Reviewed by: {reviewers.join(", ")} | {dateString}
                   </p>
                   <div dangerouslySetInnerHTML={{ __html: review.html }} />
-                  <Rating score={rating} />
+                  <Rating score={rating} className={missionRating} />
                 </div>
                 <hr />
               </>
@@ -79,12 +94,26 @@ const MissionTemplate = ({ data }) => {
   }
 
   const cover = missionNode.cover ? missionNode.cover.publicURL : "";
+  let coverDescription = missionNode.coverAlt || null;
+  if (coverDescription === null) {
+    const coverScreen = missionNode.screenshots.find((element) => {
+      return element.file.publicURL === cover;
+    });
+    coverDescription = coverScreen ? coverScreen.caption : null;
+  }
+
+  const seoNode = {
+    ...missionNode,
+    frontmatter: missionNode,
+    coverAlt: coverDescription,
+  };
 
   return (
     <Layout>
       <Helmet>
         <title>Mission {`${missionNode.title} | ${config.siteTitle}`}</title>
       </Helmet>
+      <SEO postNode={seoNode} postPath={missionNode.slug} postSEO />
       <div
         className={coverImage}
         style={{ backgroundImage: `url(${cover})` }}

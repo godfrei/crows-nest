@@ -4,7 +4,8 @@ title: "REVIEW: M/CRV Dana"
 authors: 
   - "Geoff Elliott"
 date: 1996-11-15
-rating: 85
+rating: 3
+classicRating: 85
 ---
 
 Ever wanted to fight for the Empire? Now's your chance. In this level you take on the role of an Imperial stormtrooper charged with the recovery of stolen plans. A precise, to-the-point briefing with some nice graphics sets you up for a good time. Very reminiscient of the opening scene from *A New Hope*, this level does a very good job of transferring the point of view away from Katarn. The author has retooled all the weapons to include white stormtrooper armor, which looks great, and the other members of your squadron are standing by on the transport in case you need the backup. And of course you can't have Imperial troops standing guard on the corvette, so the author has replaced all the waxes with Rebel troops from the movies, which look really good too.

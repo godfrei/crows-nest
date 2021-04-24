@@ -4,7 +4,8 @@ title: "REVIEW: The Fall of Thrawn"
 authors: 
   -  "Geoff Elliott"
 date: 1996-12-07
-rating: 66
+rating: 2
+classicRating: 66
 ---
 
 I am a huge fan of Timothy Zahn's Star Wars books. Actually, that's a very large understatement. Personally I believe them to be the only works to capture the same spirit of the original trilogy. So I have to say I was both excited and disturbed when I downloaded this set to review. I could find one of two things: I could find a great series of levels in which the author does a fantastic job of telling the story, or I could find some levels which squandered a big opportunity.

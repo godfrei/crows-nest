@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => (
   <>
     <Helmet
       htmlAttributes={{
-        lang: 'en',
+        lang: "en",
       }}
     >
       <meta name="description" content={config.siteDescription} />
@@ -20,7 +20,6 @@ const MainLayout = ({ children }) => (
       <main>{children}</main>
       <Footer />
     </div>
-
   </>
 );
 

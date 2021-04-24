@@ -5,6 +5,7 @@ authors:
   -  "Geoff Elliott"
 date: 1997-09-07
 rating:
+classicRating:
 ---
 
 To my knowledge this was the first level to utilize multiple logic enemies. And going by this assumption I can therefore say that it was this level which started what has become a serious scouge in add-on levels.

@@ -4,7 +4,8 @@ title: "REVIEW: Future Present Part I"
 authors: 
   -  "Geoff Elliott"
 date: 1997-01-11
-rating: 90
+rating: 4
+classicRating: 90
 ---
 
 After having gone through so many levels where the story seems to be tacked on as an excuse to build a level, or as an afterthought, it's with a very pleasant feeling that I can review this level. The author has a talent for a good storyline, and an excellent feel for drama. I can't say too much without giving away surprises of this story(of which there are several), but suffice to say that you will be held in suspense throughout the level.

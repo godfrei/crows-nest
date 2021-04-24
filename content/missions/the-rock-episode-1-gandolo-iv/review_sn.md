@@ -4,7 +4,8 @@ title: "REVIEW: The Rock: Episode 1-Gandolo IV"
 authors: 
   -  "Steve Noall"
 date: 1997-09-14
-rating: 95
+rating: 4
+classicRating: 95
 ---
 
 This was an excellent level. Right after I played this level, I was just so excited that I had to play it again and again. Not many people can successfully create an imperial city, but this author did a spectacular job of it in this level.

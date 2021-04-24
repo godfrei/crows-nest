@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Aurebesh from "../Aurebesh";
+import Rating from "../Rating";
 import { card, cover, vertical, horizontal } from "./ReviewCard.module.scss";
 import defaultImage from "../../images/reviews.png";
 
@@ -24,7 +25,7 @@ const ReviewCard = ({ review, orientation }) => {
         </h1>
         <p>{review.excerpt}</p>
         <small>Reviewed by {review.frontmatter.authors.join(", ")}</small>
-        <small>Rating: {review.frontmatter.rating}</small>
+        <Rating score={review.frontmatter.rating} />
       </article>
     </Link>
   );

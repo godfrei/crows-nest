@@ -4,7 +4,8 @@ title: "REVIEW: Return to Bespin"
 authors: 
   - "Geoff Elliott"
 date: 1996-09-29
-rating: 88
+rating: 3
+classicRating: 88
 ---
 
 This is one of the few levels which attempts to recreate scenes from the Star Wars movies. And so far it is the one which does the best job. The story is really quite pointless; the discrepancies are so numerous and obvious that it's really just an excuse for the player to get to work in Bespin. But that's really all it needs to be.

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Aurebesh from "../Aurebesh";
+import Rating from "../Rating";
 import EditorsChoice from "../EditorsChoice";
 import {
   card,
@@ -65,7 +66,7 @@ const MissionCard = ({ node, orientation }) => {
           {authors}
         </span>
         <p>{excerpt}&hellip;</p>
-        {rating > 0 ? `Rating: ${rating}` : ""}
+        <Rating score={rating} />
       </article>
     </Link>
   );

@@ -4,7 +4,8 @@ title: "REVIEW: Escape from Hoth"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-25
-rating: 85
+rating: 3
+classicRating: 85
 ---
 
 It was probably a foregone conclusion that Hoth levels would be common in the Dark Forces universe. The Robotics level was little more than Hoth level with a new twist, and included all the features Dark Forces level authors could use to create their own Hoth levels. Escape from Hoth was one of the first to come out, and it's done a good job of building off the Robotics level.

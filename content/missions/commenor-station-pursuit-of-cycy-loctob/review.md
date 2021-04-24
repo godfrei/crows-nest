@@ -4,7 +4,8 @@ title: "REVIEW: Commenor Station: Pursuit of Cycy Loctob"
 authors: 
   - "Geoff Elliott"
 date: 1996-11-10
-rating: 74
+rating: 2
+classicRating: 74
 ---
 
 Major plot problems aside, I like the story the author has come up with. The addition of the new alloy into the picture, along with his detailed description of its uses, adds a little life to what would otherwise be a pretty mediocre level. It shows some creativity on the author's part. Unfortunately, that creative streak doesn't carry through to the level.

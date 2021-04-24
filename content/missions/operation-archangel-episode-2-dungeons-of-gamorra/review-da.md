@@ -4,7 +4,8 @@ title: "REVIEW: Operation Archangel Episode 2 - Dungeons of Gamorra"
 authors: 
   - "David Arandle"
 date: 1997-03-18
-rating: 95
+rating: 4
+classicRating: 95
 ---
 
 This level is a worthy successor to Episode 1: Mos Eisley - The Maze. It continues on with the strong story line which although not entirely original plays a strong part in the success of both levels.

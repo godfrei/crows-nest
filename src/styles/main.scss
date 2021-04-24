@@ -171,6 +171,31 @@ code {
     font-weight: 600;
 }
 
+.text {
+    max-width: 70ch;
+    margin: auto;
+
+    h1 {
+        text-align: center;
+    }
+
+    figure {
+        figcaption {
+            display: block;
+            font-size: 14px;
+            color: #aaa;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        @media screen and (min-width: 767px) {
+            float: right;
+            margin-left: 32px;
+            width: 300px;
+        }
+    }
+}
+
 @media screen and (min-width: 767px) {
     .cn-layout {
         display: grid;
@@ -311,16 +336,16 @@ code {
     }
 
     .content {
-        display: grid;
-        grid-gap: 0 30px;
-        grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(145px, 2fr) 1fr;
-        grid-template-areas: "... padding content sidebar ...";
+        max-width: 70ch;
+        margin: auto;
+        padding: 0 32px;
     }
 }
 
 @media screen and (min-width: 1023px) {
-    .main {
+    main {
         padding: $spacing-6 $spacing-10 $spacing-10;
+        padding-top: 150px;
     }
 
     .glow {
@@ -334,26 +359,14 @@ code {
     #site-title h1 {
         font-size: 12rem;
     }
-}
 
-.text {
-    max-width: 70ch;
-    margin: auto;
-
-    h1 {
-        text-align: center;
-    }
-
-    figure {
-        float: right;
-        margin-left: 32px;
-        width: 300px;
-
-        caption {
-            display: block;
-            font-size: 14px;
-            color: #aaa;
-            width: 100%;
-        }
+    .content {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-gap: 0 30px;
+        grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(200px, 2fr) 1fr;
+        grid-template-areas: "... padding content sidebar ...";
     }
 }

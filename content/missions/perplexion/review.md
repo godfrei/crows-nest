@@ -5,6 +5,7 @@ authors:
   -  "Geoff Elliott"
 date: 1997-09-07
 rating:
+classicRating:
 ---
 
 per-plex(per pleks'e te) **n.** | **1** to make (a person) uncertain, doubtful, or hesitant; confuse; puzzle **2** to make intricate or complicated; make confusing or hard to understand

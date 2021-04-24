@@ -4,6 +4,7 @@ date: 2021-04-20
 authors: 
   - "Geoff Elliott"
 cover: hyperspace.jpg
+coverAlt: "Stars streaming into lines as a ship jumps to hyperspace."
 categories:
 tags:
 description: "The Nest is coming back. Here's a little bit about what you can expect."

@@ -4,7 +4,8 @@ title: "REVIEW: The Siege at Alderaan"
 authors: 
   - "Geoff Elliott"
 date: 1996-11-01
-rating: 82
+rating: 3
+classicRating: 82
 ---
 
 The story has some large conflicts, not only with the Dark Forces plot laid out by LucasArts, but also with the established sequence of events in Star Wars. For the most part, the problems with this level end there. The rest is a nice blend of tried and true design with new ideas.

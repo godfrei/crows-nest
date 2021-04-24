@@ -4,7 +4,8 @@ title: "REVIEW: Dark Trooper Search"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-25
-rating: 85
+rating: 3
+classicRating: 85
 ---
 
 I have no idea what this group of levels is really called, but the GOB is dtsearch, and so I named it Dark Trooper Search. The title is fitting, and the story to fit it is great. I love the idea of hunting down the remaining Dark Troopers. This idea could take Kyle all over the galaxy to complete his goals, and that promises a lot of new things, and a lot of action to go with them.

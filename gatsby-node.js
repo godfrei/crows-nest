@@ -85,8 +85,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         });
       }
     }
-    let fullSlug = '';
-    switch(collection) {
+    let fullSlug = "";
+    switch (collection) {
       case "reviews":
         fullSlug = `missions/${node.frontmatter.mission}`;
         break;
@@ -273,7 +273,6 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-
 
   // 3DOs
 

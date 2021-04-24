@@ -4,7 +4,8 @@ title: "REVIEW: The Emperor's Gambit"
 authors: 
   -  "Geoff Elliott"
 date: 1997-04-14
-rating: 82
+rating: 3
+classicRating: 82
 ---
 
 **gambit**(gam'bit) **n.** || **1** Chess an opening in which a pawn or other piece is sacrificed to get an advantage in position **2** an opening maneuver, action, or remark intended to gain an advantage

@@ -4,9 +4,10 @@ import urljoin from "url-join";
 import config from "../../data/SiteConfig";
 
 const SEO = ({ postNode, postPath, postSEO }) => {
-  let title;
-  let description;
+  let title = config.siteTitle;
+  let description = config.siteDescription;
   let image;
+  let imageDesc = "The Crow's Nest logo.";
   let postURL;
 
   if (postSEO) {
@@ -16,24 +17,19 @@ const SEO = ({ postNode, postPath, postSEO }) => {
       ? postMeta.description
       : postNode.excerpt;
     image = postMeta?.cover?.publicURL;
-    postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
+    imageDesc = postNode?.coverAlt || postNode.frontmatter?.coverAlt || "The Crow's Nest logo.";
+    if (typeof postPath !== 'string') postPath = config.pathPrefix;
+    postURL = urljoin(config.siteUrl, postPath);
   }
-  //   title = config.siteTitle
-  //   description = config.siteDescription
-  //   image = config.siteLogo
-  // }
-  // Protect against lack of content, not just undefined postSEO
-  if (!title) title = config.siteTitle;
-  if (!description) description = config.siteDescription;
-  if (!image) image = config.siteLogo;
 
-  image = urljoin(config.siteUrl, config.pathPrefix, image);
-  const blogURL = urljoin(config.siteUrl, config.pathPrefix);
+  if (typeof image !== 'string') image = config.siteLogo;
+  image = urljoin(config.siteUrl, image);
+  const siteURL = urljoin(config.siteUrl, config.pathPrefix);
   const schemaOrgJSONLD = [
     {
       "@context": "http://schema.org",
       "@type": "WebSite",
-      url: blogURL,
+      url: siteURL,
       name: title,
       alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
     },
@@ -58,7 +54,7 @@ const SEO = ({ postNode, postPath, postSEO }) => {
       {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        url: blogURL,
+        url: siteURL,
         name: title,
         alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
         headline: title,
@@ -82,25 +78,27 @@ const SEO = ({ postNode, postPath, postSEO }) => {
       </script>
 
       {/* OpenGraph tags */}
-      <meta property="og:url" content={postSEO ? postURL : blogURL} />
+      <meta property="og:url" content={postSEO ? postURL : siteURL} />
       {postSEO ? <meta property="og:type" content="article" /> : null}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta
+      <meta property="og:image:alt" content={imageDesc} />
+      {/* <meta
         property="fb:app_id"
         content={config.siteFBAppID ? config.siteFBAppID : ""}
-      />
+      /> */}
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
-        name="twitter:creator"
+        name="twitter:site"
         content={config.userTwitter ? config.userTwitter : ""}
       />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={imageDesc} />
     </Helmet>
   );
 };

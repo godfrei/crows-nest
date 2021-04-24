@@ -1,11 +1,9 @@
-import React from 'react';
-import { search } from './search.module.scss';
+import React from "react";
+import { search } from "./search.module.scss";
 
 const Search = () => {
-  return (
-    <div className={search}>Search</div>
-  );
-}
+  return <div className={search}>Search</div>;
+};
 
 export default Search;
 

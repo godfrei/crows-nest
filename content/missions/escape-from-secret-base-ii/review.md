@@ -4,7 +4,8 @@ title: "REVIEW: Escape from Secret Base II"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-22
-rating: 84
+rating: 3
+classicRating: 84
 ---
 
 This is an interesting level. It's not hard, it's not easy, and it doesn't use a whole lot of complex puzzles in it. The basic stance is that you are required to find the correct key to unlock the hangar holding the Crow. But even with the standard basis, this level does make playing it worthwhile, and enjoyable.

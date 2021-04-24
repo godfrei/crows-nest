@@ -5,7 +5,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import { pageHeader } from './blog.module.scss';
+import { pageHeader } from "./blog.module.scss";
 
 const posts = ({ data }) => (
   <Layout>
@@ -26,7 +26,7 @@ export const pageQuery = graphql`
   query BlogQuery {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [fields___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { fields: { collection: { eq: "posts" } } }
     ) {
       edges {
@@ -42,6 +42,7 @@ export const pageQuery = graphql`
               name
               publicURL
             }
+            coverAlt
             date
           }
         }

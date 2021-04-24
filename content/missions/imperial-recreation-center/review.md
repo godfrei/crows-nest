@@ -4,7 +4,8 @@ title: "REVIEW: Imperial Recreation Center"
 authors: 
   -  "Geoff Elliott"
 date: 1997-05-16
-rating: 78
+rating: 2
+classicRating: 78
 ---
 
 The plot is an interesting premise, and the level does a satifactory job of executing it. But there's a real problem with this level and that's that it doesn't reach out, grab you and make you say wow at any point during the mission. It's a pretty regular level.

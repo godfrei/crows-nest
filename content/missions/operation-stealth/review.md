@@ -4,7 +4,8 @@ title: "REVIEW: Operation Stealth"
 authors: 
   -  "Geoff Elliott"
 date: 1997-03-07
-rating: 88
+rating: 3
+classicRating: 88
 ---
 
 There have been lots of reworks on the idea of stealing the Death Star plans, so it's somewhat refreshing to see that somebody has tried to retool Tak Base. It's always been one of my favorite levels, largely due to its dark mood, and that it's one level where you don't have to blast your way through it. So when I saw the name "stealth", I was excited.

@@ -4,7 +4,8 @@ title: "REVIEW: Fest Revisited"
 authors: 
   -  "Geoff Elliott"
 date: 1996-12-05
-rating: 87
+rating: 3
+classicRating: 87
 ---
 
 I usually don't like levels where the author takes one of the originals and modifies it. Even if extensive work has been done, I find myself looking at it and thinking to myself, "Here's where this used to be, this is where this happened," etc. It spoils the fun to not be treated to a new idea. So you can imagine my initial reaction upon looking at the title.

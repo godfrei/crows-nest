@@ -4,7 +4,8 @@ title: "REVIEW: The Evacuation of Hoth"
 authors: 
   -  "Geoff Elliott"
 date: 1996-11-24
-rating: 87
+rating: 3
+classicRating: 87
 ---
 
 I've always loved the Battle of Hoth. It's been a great example of action, drama, and pure excitement in movies for a long time. And aside from the abscence of John Williams' pounding soundtrack, here I think the author has managed to capture what the battle must have been like for those frantic Rebels trying to find some way to escape.

@@ -4,7 +4,8 @@ title: "REVIEW: Energy Mine on Parux"
 authors: 
   -  "Jeff Walters"
 date: 1997-04-10
-rating: 91
+rating: 4
+classicRating: 91
 ---
 
 You know how sometimes you get a level that's been hyped up and you're sure will be great, but turns out to be ordinary.........well this level is the oppostie.

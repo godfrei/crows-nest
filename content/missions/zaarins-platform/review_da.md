@@ -4,7 +4,8 @@ title: "REVIEW: Zaarin's Platform"
 authors: 
   -  "David Arandle"
 date: 1997-04-22
-rating: 65
+rating: 2
+classicRating: 65
 ---
 
 This is a fairly competent attempt at recreating a space station of sorts. There are a few nice touches such as the landing platforms extending out into space and the overall texturing which while simple gives the really cold atmosphere of an Imperial facility.
