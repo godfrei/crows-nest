@@ -59,17 +59,17 @@ const Missions = ({ data, pageContext }) => {
           Sort by:{" "}
           <ul>
             <li>
-              <Link to="/missions" activeClassName={active}>
+              <Link to="/missions/" activeClassName={active}>
                 Title
               </Link>{" "}
             </li>
             <li>
-              <Link to="/missions/rating" {...linkProps}>
+              <Link to="/missions/rating/" {...linkProps}>
                 Rating
               </Link>{" "}
             </li>
             <li>
-              <Link to="/missions/date" {...linkProps}>
+              <Link to="/missions/date/" {...linkProps}>
                 Date
               </Link>
             </li>
