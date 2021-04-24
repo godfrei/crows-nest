@@ -11,6 +11,7 @@ import config from "../../data/SiteConfig";
 import ReviewListing from "../components/ReviewListing";
 import TopPost from "../components/TopPost";
 import EditorsChoiceListing from "../components/EditorsChoiceListing";
+import RecentComponents from "../components/RecentComponents";
 
 const Index = ({ data }) => {
   const topPost = data.allMarkdownRemark.edges[0];
@@ -74,6 +75,7 @@ const Index = ({ data }) => {
               the <Link to="/storage">Files</Link> area. Here are a few of the
               latest additions.
             </p>
+            <RecentComponents />
           </main>
           <Footer />
         </div>
