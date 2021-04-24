@@ -1,16 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
-import Aurebesh from "../Aurebesh";
+import Card from "../Card";
 import Rating from "../Rating";
 import EditorsChoice from "../EditorsChoice";
-import {
-  card,
-  authorList,
-  cover,
-  horizontal,
-  vertical,
-  ecClass,
-} from "./missioncard.module.scss";
+import { authorList, ecClass } from "./missioncard.module.scss";
 
 function averageRating(mission) {
   if (!mission.reviews || mission.reviews.length <= 0) return 0;
@@ -38,37 +30,23 @@ function getEditorsChoice(node) {
   return editorsChoice;
 }
 
-const MissionCard = ({ node, orientation }) => {
-  const coverUrl = node.cover ? node.cover.publicURL : "";
+const MissionCard = ({ node, orientation = "horizontal" }) => {
+  const coverURL = node.cover ? node.cover.publicURL : null;
   const authors = node.authors ? node.authors.join(", ") : "Unknown";
   const excerpt = node.description
     ? node.description.split(" ").slice(0, 30).join(" ")
     : "";
-  const orientationClass = orientation === "vertical" ? vertical : horizontal;
   const rating = averageRating(node);
 
   return (
-    <Link
-      to={`/missions/${node.slug}`}
-      className={`${card} ${orientationClass}`}
-    >
-      <div
-        className={cover}
-        style={{ backgroundImage: `url(${coverUrl})` }}
-      ></div>
-      <article>
-        <h1>
-          <Aurebesh text={node.title} />
-          {node.title}
-        </h1>
-        {getEditorsChoice(node)}
-        <span title="Authors" className={authorList}>
-          {authors}
-        </span>
-        <p>{excerpt}&hellip;</p>
-        <Rating score={rating} />
-      </article>
-    </Link>
+    <Card link={`/missions/${node.slug}`} coverURL={coverURL} title={node.title} orientation={orientation} type="mission">
+      {getEditorsChoice(node)}
+      <span title="Authors" className={authorList}>
+        {authors}
+      </span>
+      <p>{excerpt}&hellip;</p>
+      <Rating score={rating} />
+    </Card>
   );
 };
 

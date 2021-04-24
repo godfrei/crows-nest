@@ -7,7 +7,17 @@ import ComponentListing from "../components/ComponentListing";
 import config from "../../data/SiteConfig";
 
 const AuthorTemplate = ({ data, pageContext }) => {
-  console.log(data);
+  // console.log(data);
+
+  const componentEdges = data.allMarkdownRemark.edges.filter(edge => {
+    console.log(edge);
+    return (edge.node.fields.collection !== "reviews" && edge.node.fields.collection !== "posts");
+  });
+
+  const postEdges = data.allMarkdownRemark.edges.filter(edge => {
+    console.log(edge);
+    return (edge.node.fields.collection === "reviews" || edge.node.fields.collection === "posts");
+  });
 
   return (
     <Layout>
@@ -21,10 +31,17 @@ const AuthorTemplate = ({ data, pageContext }) => {
         </>
       }
 
-      {data.allMarkdownRemark.edges.length > 0 &&
+      {componentEdges.length > 0 &&
         <>
           <h2>Components</h2>
-          <ComponentListing edges={data.allMarkdownRemark.edges} />
+          <ComponentListing edges={componentEdges} />
+        </>
+      }
+
+      {postEdges.length > 0 &&
+        <>
+          <h2>Posts</h2>
+          <ComponentListing edges={postEdges} />
         </>
       }
 
@@ -67,6 +84,7 @@ export const pageQuery = graphql`
       edges {
         node {
           fields {
+            collection
             slug
             date(formatString: "MMMM DD, YYYY")
           }

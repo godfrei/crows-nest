@@ -71,9 +71,7 @@ const Index = ({ data }) => {
 
             <h2>Everything You Need To Build The Next Great Mission</h2>
             <p>
-              Editors, textures, sounds, enemies, and more are all available in
-              the <Link to="/storage">Files</Link> area. Here are a few of the
-              latest additions.
+              Editors, textures, sounds, enemies, and more are all available in <Link to="/storage">Storage</Link>. Here are a few of the latest additions.
             </p>
             <RecentComponents />
           </main>

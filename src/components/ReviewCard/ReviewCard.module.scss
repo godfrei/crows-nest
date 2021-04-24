@@ -1,95 +1,21 @@
 @import '../../styles/colors';
 
-.card {
-    text-decoration: none;
-    height: 100%;
-    border: 1px solid rgba(255,255,255,0.5);
-    position: relative;
+.authorList {
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.6);
     display: block;
-    color: $default-text;
-
-    &:hover {
-        border-color: $teal;
-        color: $default-text;
-
-        h1 {
-            color: $teal;
-        }
-    }
-
-    article {
-        padding: 16px 24px;
-        transition: all 0.2s ease;
-        position: relative;
-        height: 100%;
-        z-index: 1;
-    
-        h1 {
-            font-size: 3.2rem;
-            line-height: 1.1;
-            color: white;
-            margin-bottom: 12px;
-            transition: all 0.2s ease;
-    
-            small { //Aurebesh
-                font-size: 1.2rem;
-                line-height: 1.1;
-            }
-        }
-    
-        p {
-            line-height: 1.4;
-            margin-top: 0;
-        }
-    
-    }    
-
-    .cover {
-        position: absolute;
-        z-index: 0;
-        top: 0;
-        right: 0;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        image-rendering: pixelated;
-    }
+    margin-top: 8px;
 }
 
-.card.horizontal {
-    article {
-        padding-right: 100px;
-        background-image: linear-gradient(to left, transparent, transparent 50px, $black 150px, $black);
-    }
-
-    .cover {
-        width: 150px;
-        bottom: 0;
-    }
-}
-
-.card.vertical {
-    article {
-        padding-top: 200px;
-        background-image: linear-gradient(to bottom, transparent, transparent 150px, $black 220px, $black);
-    }
-
-    .cover {
-        height: 250px;
-        left: 0;
-    }
-}
-
-@media screen and (min-width: 1023px) {
-    .card.horizontal {
-        article {
-            padding-right: 200px;
-            background-image: linear-gradient(to left, transparent, transparent 150px, $black 250px, $black);
-        }
+.ecClass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 12px 32px 32px;
+    border-top-right-radius: 12px;
+    background-image: radial-gradient(at 52px 32px, rgba($black, 0.8), rgba($black, 0.6) 30%, transparent 70%, transparent), linear-gradient(to bottom left, $black, transparent 50%, transparent);
     
-        .cover {
-            width: 250px;
-            bottom: 0;
-        }
+    svg {
+        width: 40px;
     }
 }
