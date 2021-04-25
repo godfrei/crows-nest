@@ -1,5 +1,6 @@
 ---
 title: "Gran"
+cover: reeyees-idle.png
 ---
 
 The Gran has a long association with the underworld, particularly in the service of the Hutts. The most distinguishing feature is the three eye stalks on the head. The primary weapon of a Gran is the Thermal Detonator and over long distances this can be devastating. But in close range they'll switch to fists to avoid damaging themselves in a TD explosion.<

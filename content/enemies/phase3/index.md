@@ -1,5 +1,6 @@
 ---
 title: "Phase III Dark Trooper"
+cover: phase3-idle.png
 ---
 
 The most deadly soldier the Empire has ever come up with, the Phase III is the final stage in Dark Trooper construction. Brain child of General Mohc, the Phase III has the same weapons as the Phase II plus some energy orbs that seek you out until destroyed. The Phase III appears slightly slower than the Phase II, but the extra armor and weaponry make up for the loss in speed.

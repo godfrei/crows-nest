@@ -1,5 +1,6 @@
 ---
 title: "Boba Fett"
+cover: boba-fett-idle.png
 ---
 
 Has anyone in the galaxy not heard of this legendary bounty hunter? Quite easily the most famous mercenary of his time, Boba Fett lives up to the reputation given him. Fast moving and firing, he can kill before you even know he's there. His jet pack gives him the upper hand(literally) and his rockets are devastating. If this guy have been assigned to hunt you down, the best advice is to run.

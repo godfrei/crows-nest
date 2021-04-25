@@ -1,5 +1,6 @@
 ---
 title: "Phase I Dark Trooper"
+cover: phase1-idle.png
 ---
 
 The Phase I is the first stage of Dark Trooper construction and is essentially an endoskeleton. It attacks with a metal blade that your shields can do nothing against, and also has the ability to block energy weapons with a small shield on the left arm. Fast and deadly - listen for the tell-tale buzz to announce their activation.

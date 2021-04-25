@@ -85,11 +85,11 @@
 
 @media screen and (min-width: 767px) {
     .pageHeader {
-        padding: $spacing-6 $spacing-10;
+        padding: $spacing-6 $spacing-9;
         padding-top: 300px;
         margin-top: -150px;
-        margin-left: -#{$spacing-10};
-        margin-right: -#{$spacing-10};
+        margin-left: -#{$spacing-9};
+        margin-right: -#{$spacing-9};
 
         &:before, &:after {
             height: 70%;
@@ -129,3 +129,12 @@
     }
 }
 
+@media screen and (min-width: 1366px) {
+    .pageHeader {
+        padding: $spacing-6 $spacing-10;
+        padding-top: 300px;
+        margin-top: -150px;
+        margin-left: -#{$spacing-10};
+        margin-right: -#{$spacing-10};
+    }
+}

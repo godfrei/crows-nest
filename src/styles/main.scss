@@ -346,7 +346,7 @@ code {
 
 @media screen and (min-width: 1023px) {
     main {
-        padding: $spacing-6 $spacing-10 $spacing-10;
+        padding: $spacing-6 $spacing-9 $spacing-9;
         padding-top: 150px;
     }
 
@@ -370,5 +370,12 @@ code {
         grid-gap: 0 30px;
         grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(200px, 2fr) 1fr;
         grid-template-areas: "... padding content sidebar ...";
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    main {
+        padding: $spacing-6 $spacing-10 $spacing-10;
+        padding-top: 150px;
     }
 }

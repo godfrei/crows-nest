@@ -1,5 +1,6 @@
 ---
 title: "Imperial Officer"
+cover: officer-idle.png
 ---
 
 The Imperial Officer is a pretty weak adversary, but in numbers can pose a threat. They sport a pistol that makes them more accurate than their Stormtrooper comrades, but slightly less dangerous. They aren't very fast and have no special means of attack.

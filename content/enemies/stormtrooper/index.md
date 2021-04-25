@@ -1,5 +1,6 @@
 ---
 title: "Stormtrooper"
+cover: stormtrooper-idle.png
 ---
 
 "Only Imperial Stormtroopers are so precise."

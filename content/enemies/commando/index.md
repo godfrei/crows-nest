@@ -1,5 +1,6 @@
 ---
 title: "Imperial Commando"
+cover: commando-idle.png
 ---
 
 The Commandos are drawn from the Officer corps, but their physical training makes them faster and more agressive, and the laser rifle they use gives them a longer range but less accuracy. These gray-uniformed enemies are the toughest in the human Imperial ranks.

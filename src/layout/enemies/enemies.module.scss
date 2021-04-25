@@ -1,13 +1,12 @@
 @import '../../styles/colors';
 
 .grid {
-    display: grid;
-    grid-template-columns: 270px auto;
-    column-gap: 32px;
+    margin-right: -16px;
 
     article {
-        max-width: 50em;
-        margin: auto;
+        h1 {
+            text-transform: uppercase;
+        }
     }
 
     h2 {
@@ -70,5 +69,30 @@
         width: 80px;
         height: 80px;
         image-rendering: pixelated;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 192px auto;
+        column-gap: 32px;
+        margin-right: -38px;
+
+        > div:first-child {
+            grid-column: 2/3;
+        }
+
+        > div:last-child {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .grid {
+        margin-right: 0;
+        grid-template-columns: 270px auto;
     }
 }

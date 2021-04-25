@@ -1,5 +1,6 @@
 ---
 title: "Gamorrean Guard"
+cover: gamorrean-idle.png
 ---
 
 These pig-like guards are slow to move and attack, but when they swing their battle-axes they can be very deadly. Shields won't do you any good if they get close enough to attack, and they can take quite a beating before they finally keel over.

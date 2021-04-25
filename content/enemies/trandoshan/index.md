@@ -1,5 +1,6 @@
 ---
 title: "Trandoshan"
+cover: bossk-idle.png
 ---
 
 These reptilian humanoids, of which Bossk is the most famous, are skilled with a Concussion Rifle and are known to do the odd job for Darth Vader as a bounty hunter. They're also known to work for Hutts in the underworld - provided the price is right. Deadly at long range with the rifle, they move fairly slowly in order to keep their distance from you and maximize the rifle's effectiveness.

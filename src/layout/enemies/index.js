@@ -10,7 +10,9 @@ const EnemiesLayout = ({ children }) => {
   return (
     <>
       <div className={grid}>
+        <div>{children}</div>
         <div>
+          <h1>ENEMIES</h1>
           <h2>Imperial</h2>
           <ul className={navigation}>
             <li>
@@ -159,7 +161,6 @@ const EnemiesLayout = ({ children }) => {
             </li>
           </ul>
         </div>
-        <div>{children}</div>
       </div>
     </>
   );

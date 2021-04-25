@@ -1,5 +1,6 @@
 ---
 title: "Kell Dragon"
+cover: kell-idle.png
 ---
 
 Like its larger relative the Krayt Dragon, Kells are native to the wastelands of Tatooine. It's rare that anyone will encounter one in the wastes and live to tell about it, but Kells are often captured by well-armed parties and sold as pets to the more frivolent and sadistic underlord bosses who frequently use them to dispose of unwelcome guests or pit them against gladiators as entertainment. They are known to have tremendous jumping abilities and their jaw strength is very fearsome.

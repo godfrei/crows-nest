@@ -1,5 +1,6 @@
 ---
 title: "Phase II Dark Trooper"
+cover: phase2-idle.png
 ---
 
 The Phase II represents the second stage of Dark Trooper construction. They are armed with an assault cannon which fires plasma and missiles; combine that with their jet packs and high speed attacks and you get a very vicious foe. They like to fire off steady streams of plasma but have to stand still to do so; a missile is usually launched immediately upon noticing you, unless they're close enough that they'd damage themselves.

@@ -1,26 +1,29 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../../layout";
-import DatabaseLayout from "../../layout/database";
 import EnemiesLayout from "../../layout/enemies";
 import config from "../../../data/SiteConfig";
+import { cover, enemyContent } from "./enemies.module.scss"; 
 
 const EnemyTemplate = ({ data, pageContext }) => {
   console.log(data);
   const enemy = data.markdownRemark;
   return (
     <Layout>
-      <Helmet title={` ${enemy.frontmatter.title} - ${config.siteTitle}`} />
-      <DatabaseLayout>
-        <EnemiesLayout>
-          <article>
-            <h1>{enemy.frontmatter.title}</h1>
-
+      <Helmet title={`${enemy.frontmatter.title} - ${config.siteTitle}`} />
+      <EnemiesLayout>
+        <article>
+          <h1>{enemy.frontmatter.title}</h1>
+          <div className={enemyContent}>
             <div dangerouslySetInnerHTML={{ __html: enemy.html }} />
-          </article>
-        </EnemiesLayout>
-      </DatabaseLayout>
+            <div
+              className={cover}
+              style={{backgroundImage: `url(${enemy.frontmatter.cover.publicURL})`}}
+            />
+          </div>
+        </article>
+      </EnemiesLayout>
     </Layout>
   );
 };
@@ -33,6 +36,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        cover {
+          publicURL
+        }
       }
     }
   }

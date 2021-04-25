@@ -14,7 +14,18 @@
 
 @media screen and (min-width: 767px) {
     .footer {
-        padding: $spacing-6 $spacing-10 $spacing-10;
+        padding: $spacing-5 $spacing-8 $spacing-8;
         grid-column: 2 / 3;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .footer {
+        padding: $spacing-6 $spacing-9 $spacing-9;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .footer {
+        padding: $spacing-6 $spacing-10 $spacing-10;
     }
 }

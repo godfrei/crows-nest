@@ -1,0 +1,21 @@
+@import "../../styles/colors";
+
+.enemyContent {
+    display: grid;
+    grid-template-columns: auto 80px;
+}
+
+.cover {
+    // position: relative;
+    image-rendering: pixelated;
+    background-size: auto 33vh;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 32px rgba($blue,0.5));
+}
+
+@media screen and (min-width: 1023px) {
+    .enemyContent {
+        gap: 32px;
+        grid-template-columns: auto 140px;
+    }
+}
