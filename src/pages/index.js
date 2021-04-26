@@ -43,6 +43,7 @@ const Index = ({ data }) => {
                 it.
               </p>
             </div>
+            
             <div className="home-grid">
               <div>
                 <h2 className="uppercase">Recent Posts</h2>
@@ -55,25 +56,26 @@ const Index = ({ data }) => {
               </div>
             </div>
 
-            <hr />
+            <section>
+              <h2>Looking for a guaranteed mission to try?</h2>
+              <p>
+                The Editor's Choice missions have been selected by reviewers at
+                The Crow's Nest as the best the Dark Forces community has to
+                offer.
+              </p>
+              <Link to="/missions/editors-choice">
+                All Editor's Choice Missions
+              </Link>
+              <EditorsChoiceListing />
+            </section>
 
-            <h2>Looking for a guaranteed mission to try?</h2>
-            <p>
-              The Editor's Choice missions have been selected by reviewers at
-              The Crow's Nest as the best the Dark Forces community has to
-              offer.
-            </p>
-            <Link to="/missions/editors-choice">
-              All Editor's Choice Missions
-            </Link>
-            <EditorsChoiceListing />
-            <hr />
-
-            <h2>Everything You Need To Build The Next Great Mission</h2>
-            <p>
-              Editors, textures, sounds, enemies, and more are all available in <Link to="/storage">Storage</Link>. Here are a few of the latest additions.
-            </p>
-            <RecentComponents />
+            <section>
+              <h2>Everything You Need To Build The Next Great Mission</h2>
+              <p>
+                Editors, textures, sounds, enemies, and more are all available in <Link to="/storage">Storage</Link>. Here are a few of the latest additions.
+              </p>
+              <RecentComponents />
+            </section>
           </main>
           <Footer />
         </div>

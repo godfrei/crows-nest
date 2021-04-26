@@ -1,15 +1,11 @@
 @import "../../styles/colors";
 
-.enemyContent {
-    display: grid;
-    grid-template-columns: auto 80px;
-}
-
 .cover {
     // position: relative;
     image-rendering: pixelated;
-    background-size: auto 33vh;
+    background-size: auto 50vh;
     background-repeat: no-repeat;
+    max-height: 100%;
     filter: drop-shadow(0 0 32px rgba($blue,0.5));
 }
 

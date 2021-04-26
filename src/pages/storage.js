@@ -11,6 +11,7 @@ import {
   typeClass,
   storageTable,
   authors,
+  description,
 } from "./storage.module.scss";
 
 const Storage = ({ data }) => {
@@ -25,7 +26,7 @@ const Storage = ({ data }) => {
       </Helmet>
       <SEO />
       <div className={pageHeader}>
-        <div>
+        <div className={description}>
           <h1>Storage</h1>
 
           <p>

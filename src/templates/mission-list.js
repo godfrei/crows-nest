@@ -10,6 +10,7 @@ import {
   pageHeader,
   sortOptions,
   missionListHeader,
+  description,
 } from "./mission-list.module.scss";
 
 function averageRating(mission) {
@@ -37,7 +38,7 @@ const Missions = ({ data, pageContext }) => {
       <Helmet title={`Missions | ${config.siteTitle}`} />
       <SEO />
       <div className={`${pageHeader} ${missionListHeader}`}>
-        <div>
+        <div className={description}>
           <h1>Missions</h1>
 
           <p>

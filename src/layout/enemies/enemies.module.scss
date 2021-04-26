@@ -1,7 +1,7 @@
 @import '../../styles/colors';
 
 .grid {
-    margin-right: -16px;
+    display: contents;
 
     article {
         h1 {
@@ -20,6 +20,14 @@
     }
 }
 
+.enemyContent {
+    grid-column: 3 / -1;
+}
+
+.enemyNav {
+    grid-column: 2 / 3;
+}
+
 .navigation {
     margin: 0;
     padding: 0;
@@ -33,10 +41,8 @@
 
     a:link, a:visited {
         border: 1px solid $glow-border;
-        // padding: 12px 16px;
         text-transform: uppercase;
         display: block;
-        // margin-bottom: 4px;
         margin-right: 8px;
         font-size: 1.4rem;
         font-weight: 500;
@@ -74,17 +80,21 @@
 
 @media screen and (min-width: 767px) {
     .grid {
-        display: grid;
-        grid-template-columns: 192px auto;
-        column-gap: 32px;
-        margin-right: -38px;
+        .enemyContent {
+            display: contents;
 
-        > div:first-child {
-            grid-column: 2/3;
+            article {
+                grid-column: 3 / 4;
+                max-width: 60ch;
+                margin: 0 auto;
+            }
+
+            > div {
+                grid-column: 4 / -1;
+            }
         }
 
-        > div:last-child {
-            grid-column: 1/2;
+        .enemyNav {
             grid-row: 1;
         }
     }

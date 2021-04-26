@@ -15,14 +15,14 @@ const EnemyTemplate = ({ data, pageContext }) => {
       <EnemiesLayout>
         <article>
           <h1>{enemy.frontmatter.title}</h1>
-          <div className={enemyContent}>
+          {/* <div className={enemyContent}> */}
             <div dangerouslySetInnerHTML={{ __html: enemy.html }} />
-            <div
-              className={cover}
-              style={{backgroundImage: `url(${enemy.frontmatter.cover.publicURL})`}}
-            />
-          </div>
+          {/* </div> */}
         </article>
+        <div
+          className={cover}
+          style={{backgroundImage: `url(${enemy.frontmatter.cover.publicURL})`}}
+        />
       </EnemiesLayout>
     </Layout>
   );

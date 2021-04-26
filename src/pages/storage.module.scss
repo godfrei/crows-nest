@@ -16,6 +16,8 @@
 .storageTable {
     border-collapse: collapse;
     border: none;
+    grid-row: 2;
+    grid-column: 2 / 5;
 
     th {
         text-transform: uppercase;

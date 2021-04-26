@@ -7,8 +7,7 @@
     font-size: 10px;
 }
 
-html {
-    // background-color: $black;    
+html { 
     background-color: $gray;
 }
 
@@ -38,7 +37,6 @@ body {
 }
 
 main {
-    padding: $spacing-3 $spacing-5 0;
     position: relative;
 }
 
@@ -169,6 +167,7 @@ code {
 }
 
 .text {
+    grid-column: 3 / 4;
     max-width: 70ch;
     margin: auto;
 
@@ -207,11 +206,12 @@ code {
     }
 
     main {
-        padding: $spacing-5 $spacing-8 $spacing-8;
-        padding-top: 150px;
+        display: grid;
+        grid-template-columns: 5% 1fr 3fr 1fr 5%;
+        gap: 1.6rem;
+        margin-top: 88px;
         max-width: $max-width;
         position: relative;
-        height: 100%;
         grid-column: 2 / 3;
 
         &:before, &:after {
@@ -288,6 +288,11 @@ code {
                 top: 48px;
             }
         }
+
+        section {
+            grid-column: 2 / 5;
+            border-top: 2px solid $glow-border;
+        }
     }
 
     #homepage_header {
@@ -295,6 +300,7 @@ code {
     }
 
     #site-title {
+        grid-column: 2 / 5;
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -332,6 +338,7 @@ code {
     }
 
     .home-grid {
+        grid-column: 2 / 5;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 32px;
@@ -346,15 +353,14 @@ code {
 
 @media screen and (min-width: 1023px) {
     main {
-        padding: $spacing-6 $spacing-9 $spacing-9;
-        padding-top: 150px;
+        margin-top: 106px;
     }
 
     .glow {
-        top: 104px;
+        top: 108px;
 
         &:before {
-            top: 80px;
+            top: 84px;
         }
     }
 
@@ -370,12 +376,5 @@ code {
         grid-gap: 0 30px;
         grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(200px, 2fr) 1fr;
         grid-template-areas: "... padding content sidebar ...";
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    main {
-        padding: $spacing-6 $spacing-10 $spacing-10;
-        padding-top: 150px;
     }
 }

@@ -2,12 +2,10 @@
 @import '../styles/vars';
 
 .mission {
+    grid-column: 1  / -1;
     position: relative;
     z-index: 1;
-    margin-top: -#{$spacing-3};
-    margin-left: -#{$spacing-5};
-    margin-right: -#{$spacing-5};
-    padding: 10vh $spacing-5;
+    padding: 10vh 5%;
     background-image: linear-gradient(to bottom, transparent 10vh, $black 50vh);
 
     &:after {
@@ -76,10 +74,10 @@
 
 .coverImage {
     position: fixed;
-    top: 0;
+    top: 84px;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: calc(100vh - 84px);
     image-rendering: pixelated;
     background-position: bottom;
     background-color: $teal;
@@ -95,9 +93,6 @@
 
 @media screen and (min-width: 767px) {
     .mission {
-        margin-left: -#{$spacing-8};
-        margin-right: -#{$spacing-8};
-        margin-bottom: -#{$spacing-8};
         padding-top: 25vh;
         padding-bottom: $spacing-8;
         background-image: linear-gradient(to bottom, transparent 25vh, $black 75vh);
@@ -106,21 +101,7 @@
 
 
 @media screen and (min-width: 1023px) {
-    .mission {
-        margin-left: -#{$spacing-9};
-        margin-right: -#{$spacing-9};
-        margin-bottom: -#{$spacing-9};
-    }
-
     .descAndReviews {
         grid-column: 3 / 4;
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    .mission {
-        margin-left: -#{$spacing-10};
-        margin-right: -#{$spacing-10};
-        margin-bottom: -#{$spacing-10};
     }
 }

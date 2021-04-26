@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { grid, navigation, active } from "./enemies.module.scss";
+import { grid, navigation, active, enemyNav, enemyContent } from "./enemies.module.scss";
 
 const EnemiesLayout = ({ children }) => {
   const linkProps = {
@@ -10,9 +10,9 @@ const EnemiesLayout = ({ children }) => {
   return (
     <>
       <div className={grid}>
-        <div>{children}</div>
-        <div>
-          <h1>ENEMIES</h1>
+        <div className={enemyContent}>{children}</div>
+        <div className={enemyNav}>
+          {/* <h1>ENEMIES</h1> */}
           <h2>Imperial</h2>
           <ul className={navigation}>
             <li>
