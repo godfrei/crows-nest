@@ -4,6 +4,7 @@ import _ from "lodash";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
 import Layout from "../layout";
+import { component } from "./Component.module.scss";
 
 const ComponentTemplate = ({ data, pageContext }) => {
   function getDownloadLink(data) {
@@ -24,22 +25,26 @@ const ComponentTemplate = ({ data, pageContext }) => {
       <Helmet>
         <title>{`${node.frontmatter.title} | ${config.siteTitle}`}</title>
       </Helmet>
-      <h1>{node.frontmatter.title}</h1>
-      Author(s):{" "}
-      {node.frontmatter.authors.map((author, index) => {
-        return (
-          <React.Fragment
-            key={`${node.frontmatter.title}-${node.frontmatter.component_type}`}
-          >
-            {index >= 1 ? `, ` : ``}
-            <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
-          </React.Fragment>
-        );
-      })}
-      <p>{node.frontmatter.description}</p>
-      {getDownloadLink(data)}
-      <hr />
-      <div dangerouslySetInnerHTML={{ __html: node.html }} />
+      <div className={component}>
+        <article>
+          <h1>{node.frontmatter.title}</h1>
+          Author(s):{" "}
+          {node.frontmatter.authors.map((author, index) => {
+            return (
+              <React.Fragment
+                key={`${node.frontmatter.title}-${node.frontmatter.component_type}`}
+              >
+                {index >= 1 ? `, ` : ``}
+                <Link to={`/authors/${_.kebabCase(author)}`}>{author}</Link>
+              </React.Fragment>
+            );
+          })}
+          <p>{node.frontmatter.description}</p>
+          {getDownloadLink(data)}
+          <hr />
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+        </article>
+      </div>
     </Layout>
   );
 };
