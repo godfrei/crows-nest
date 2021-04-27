@@ -1,0 +1,15 @@
+.missions, .components, .posts {
+    grid-column: 2 / 5;
+}
+
+.missions {
+    grid-row: 2;
+}
+
+.components {
+    grid-row: 3;
+}
+
+.posts {
+    grid-row: 4;
+}

@@ -5,6 +5,7 @@ import Layout from "../layout";
 import MissionListing from "../components/MissionListing";
 import ComponentListing from "../components/ComponentListing";
 import config from "../../data/SiteConfig";
+import { missions, components, posts } from "./Author.module.scss";
 
 const AuthorTemplate = ({ data, pageContext }) => {
   // console.log(data);
@@ -22,27 +23,30 @@ const AuthorTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={` "${pageContext.author}" - ${config.siteTitle}`} />
-      <h1>{`Author: ${pageContext.author}`}</h1>
+
+      <div className="text">
+        <h1>{`Author: ${pageContext.author}`}</h1>
+      </div>
 
       {data.allMissionsJson.nodes.length > 0 &&
-        <>
+        <section className={missions}>
           <h2>Missions</h2>
           <MissionListing missionNodes={data.allMissionsJson.nodes} />
-        </>
+        </section>
       }
 
       {componentEdges.length > 0 &&
-        <>
+        <section className={components}>
           <h2>Components</h2>
           <ComponentListing edges={componentEdges} />
-        </>
+        </section>
       }
 
       {postEdges.length > 0 &&
-        <>
+        <section className={posts}>
           <h2>Posts</h2>
           <ComponentListing edges={postEdges} />
-        </>
+        </section>
       }
 
     </Layout>
