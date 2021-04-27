@@ -13,7 +13,7 @@ const SpecTemplate = ({ data }) => {
       <Helmet>
         <title>{`${post.frontmatter.title} | DF Specs | ${config.siteTitle}`}</title>
       </Helmet>
-      <DatabaseLayout>
+      <div className="text">
         <article>
           <header>
             <small>Dark Forces Unofficial Specifications v3.2</small>
@@ -24,7 +24,7 @@ const SpecTemplate = ({ data }) => {
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
-      </DatabaseLayout>
+      </div>
     </Layout>
   );
 };

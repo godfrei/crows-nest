@@ -11,7 +11,7 @@ const Demo = () => (
       <title>Demo | {config.siteTitle}</title>
     </Helmet>
     <SEO />
-    <DatabaseLayout>
+    <div className="text">
       <article>
         <h1>Demo</h1>
 
@@ -56,7 +56,7 @@ const Demo = () => (
           </li>
         </ul>
       </article>
-    </DatabaseLayout>
+    </div>
   </Layout>
 );
 

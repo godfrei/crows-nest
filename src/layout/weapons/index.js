@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { grid, navigation, active } from "./weapons.module.scss";
+import { grid, navigation, active, weaponContent, weaponNav } from "./weapons.module.scss";
 
 const WeaponsLayout = ({ children }) => {
   const linkProps = {
@@ -10,7 +10,8 @@ const WeaponsLayout = ({ children }) => {
   return (
     <>
       <div className={grid}>
-        <div>
+        <div className={weaponContent}>{children}</div>
+        <div className={weaponNav}>
           <ul className={navigation}>
             <li>
               <Link to="/database/weapons/fists" {...linkProps}>
@@ -100,7 +101,6 @@ const WeaponsLayout = ({ children }) => {
             </li>
           </ul>
         </div>
-        <div>{children}</div>
       </div>
     </>
   );

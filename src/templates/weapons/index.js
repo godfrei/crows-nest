@@ -11,15 +11,13 @@ const WeaponTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={` ${weapon.frontmatter.title} - ${config.siteTitle}`} />
-      <DatabaseLayout>
-        <WeaponsLayout>
-          <article>
-            <h1>{weapon.frontmatter.title}</h1>
+      <WeaponsLayout>
+        <article>
+          <h1>{weapon.frontmatter.title}</h1>
 
-            <div dangerouslySetInnerHTML={{ __html: weapon.html }} />
-          </article>
-        </WeaponsLayout>
-      </DatabaseLayout>
+          <div dangerouslySetInnerHTML={{ __html: weapon.html }} />
+        </article>
+      </WeaponsLayout>
     </Layout>
   );
 };

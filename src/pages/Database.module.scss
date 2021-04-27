@@ -1,0 +1,25 @@
+@import '../styles/pageHeader';
+
+.info, .play, .build {
+    grid-column: 2 / 5;
+    position: relative;
+    z-index: 1;
+}
+
+.info {
+    grid-row: 2;
+}
+
+.play {
+    grid-row: 3;
+}
+
+.build {
+    grid-row: 4;
+}
+
+.databaseHeader {
+    &:before {
+        background-image: url('/images/artoo-terminal.png');
+    }
+}

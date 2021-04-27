@@ -11,8 +11,7 @@ const Cheats = () => (
       <title>Cheat Codes | {config.siteTitle}</title>
     </Helmet>
     <SEO />
-
-    <DatabaseLayout>
+    <div className="text">
       <article>
         <h1>Cheat Codes</h1>
 
@@ -162,7 +161,7 @@ const Cheats = () => (
           </li>
         </ul>
       </article>
-    </DatabaseLayout>
+    </div>
   </Layout>
 );
 

@@ -1,24 +1,31 @@
 @import '../../styles/colors';
 
 .grid {
-    display: grid;
-    grid-template-columns: 270px auto;
-    column-gap: 32px;
+    display: contents;
 
     article {
-        max-width: 50em;
-        margin: auto;
+        h1 {
+            text-transform: uppercase;
+        }
     }
 
     h2 {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 1.6rem;
-        letter-spacing: 0.3rem;
+        letter-spacing: 3px;
         margin-top: 0;
         margin-bottom: 4px;
         color: $default-text;
     }
+}
+
+.itemContent {
+    grid-column: 3 / -1;
+}
+
+.itemNav {
+    grid-column: 2 / 3;
 }
 
 .navigation {
@@ -70,5 +77,27 @@
         width: 80px;
         height: 80px;
         image-rendering: pixelated;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .grid {
+        .itemContent {
+            display: contents;
+
+            article {
+                grid-column: 3 / 4;
+                max-width: 60ch;
+                margin: 0 auto;
+            }
+
+            > div {
+                grid-column: 4 / -1;
+            }
+        }
+
+        .itemNav {
+            grid-row: 1;
+        }
     }
 }

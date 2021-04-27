@@ -13,7 +13,7 @@ const Specs = () => (
     </Helmet>
     <SEO />
 
-    <DatabaseLayout>
+    <div className="text">
       <article>
         <h1>Dark Forces Unofficial Specifications</h1>
 
@@ -46,7 +46,7 @@ const Specs = () => (
 
         <SpecNav />
       </article>
-    </DatabaseLayout>
+    </div>
   </Layout>
 );
 

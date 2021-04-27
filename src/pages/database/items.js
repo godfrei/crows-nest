@@ -11,15 +11,13 @@ const Items = () => (
       <title>Items | {config.siteTitle}</title>
     </Helmet>
 
-    <DatabaseLayout>
-      <ItemsLayout>
-        <article>
-          <h1>Items</h1>
+    <ItemsLayout>
+      <article>
+        <h1>Items</h1>
 
-          <p>Lots of stuff to pick up. Learn about it.</p>
-        </article>
-      </ItemsLayout>
-    </DatabaseLayout>
+        <p>Lots of stuff to pick up. Learn about it.</p>
+      </article>
+    </ItemsLayout>
   </Layout>
 );
 

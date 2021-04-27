@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { grid, navigation, active } from "./items.module.scss";
+import { grid, navigation, active, itemContent, itemNav } from "./items.module.scss";
 
 const ItemsLayout = ({ children }) => {
   const linkProps = {
@@ -10,7 +10,8 @@ const ItemsLayout = ({ children }) => {
   return (
     <>
       <div className={grid}>
-        <div>
+        <div className={itemContent}>{children}</div>
+        <div className={itemNav}>
           <h2>Powerups</h2>
           <ul className={navigation}>
             <li>
@@ -108,7 +109,6 @@ const ItemsLayout = ({ children }) => {
             </li>
           </ul>
         </div>
-        <div>{children}</div>
       </div>
     </>
   );

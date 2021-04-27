@@ -12,15 +12,13 @@ const ItemTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={` ${item.frontmatter.title} - ${config.siteTitle}`} />
-      <DatabaseLayout>
-        <ItemsLayout>
-          <article>
-            <h1>{item.frontmatter.title}</h1>
+      <ItemsLayout>
+        <article>
+          <h1>{item.frontmatter.title}</h1>
 
-            <div dangerouslySetInnerHTML={{ __html: item.html }} />
-          </article>
-        </ItemsLayout>
-      </DatabaseLayout>
+          <div dangerouslySetInnerHTML={{ __html: item.html }} />
+        </article>
+      </ItemsLayout>
     </Layout>
   );
 };
