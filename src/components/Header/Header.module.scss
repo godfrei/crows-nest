@@ -14,9 +14,8 @@
 }
 
 .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  text-align: center;
   text-decoration: none;
   padding: $spacing-3 $spacing-5;
   margin-bottom: $spacing-2;
@@ -25,16 +24,14 @@
   font-size: 3.2rem;
 
   h1 {
+    display: inline-block;
     margin: 0;
     // margin-left: 80px;
     // margin-right: $spacing-9;
   }
 
   img {
-    position: absolute;
-    transform: rotate(15deg);
-    // width: 80px;
-    margin-top: $spacing-2;
+    display: none;
   }
 }
 
@@ -56,6 +53,9 @@
   }
 
   .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 64px;
     padding: $spacing-6 0 $spacing-4 $spacing-4;
     // margin-right: 40px;
@@ -63,10 +63,6 @@
 
     h1 {
       font-size: clamp(20px, 4vw, 50px);
-    }
-
-    img {
-      display: none;
     }
   }
 }
@@ -81,6 +77,8 @@
 
     img {
       display: block;
+      position: absolute;
+      transform: rotate(15deg);
       width: clamp(80px, 13vw, 160px);
       margin-left: clamp(-60px, -5vw, -80px);
       margin-top: $spacing-4;
