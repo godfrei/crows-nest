@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../../layout";
 import EnemiesLayout from "../../layout/enemies";
 import config from "../../../data/SiteConfig";
-import { cover, enemyContent } from "./enemies.module.scss"; 
+import { cover } from "./enemies.module.scss"; 
 
 const EnemyTemplate = ({ data, pageContext }) => {
   console.log(data);
@@ -15,14 +15,14 @@ const EnemyTemplate = ({ data, pageContext }) => {
       <EnemiesLayout>
         <article>
           <h1>{enemy.frontmatter.title}</h1>
-          {/* <div className={enemyContent}> */}
-            <div dangerouslySetInnerHTML={{ __html: enemy.html }} />
-          {/* </div> */}
+          <div dangerouslySetInnerHTML={{ __html: enemy.html }} />
         </article>
-        <div
-          className={cover}
-          style={{backgroundImage: `url(${enemy.frontmatter.cover.publicURL})`}}
-        />
+        {enemy.frontmatter.cover && (
+          <div
+            className={cover}
+            style={{backgroundImage: `url(${enemy.frontmatter.cover.publicURL})`}}
+          />
+        )}
       </EnemiesLayout>
     </Layout>
   );
