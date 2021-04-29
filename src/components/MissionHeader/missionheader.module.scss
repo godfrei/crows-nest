@@ -12,8 +12,8 @@
 }
 
 .content {
-    padding-left: $spacing-5;
-    display: grid;
+    padding: $spacing-5;
+    // padding-left: $spacing-5;
     // grid-template-columns: 1fr 100px;
 
     > * {
@@ -48,6 +48,10 @@
 
 
 @media screen and (min-width: 767px) {
+    .header {
+        margin-right: -5%;
+    }
+
     .content {
         background-color: transparent;
         border-left: none;
@@ -63,6 +67,7 @@
 
 @media screen and (min-width: 767px) and (max-width: 1022px) {
     .content {
+        display: grid;
         grid-template-columns: 1fr 100px;
     }
 }

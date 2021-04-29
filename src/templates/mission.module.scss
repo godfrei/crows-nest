@@ -5,8 +5,10 @@
     grid-column: 1  / -1;
     position: relative;
     z-index: 1;
-    padding: 10vh 5%;
-    background-image: linear-gradient(to bottom, transparent 10vh, $black 50vh);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 30vh 16px 0;
+    background-image: linear-gradient(to bottom, transparent 10vh, $black 40vh);
 
     &:after {
         position: absolute;
@@ -73,17 +75,18 @@
 }
 
 .coverImage {
-    position: fixed;
-    top: 84px;
+    position: absolute;
+    top: 4px;
     left: 0;
     right: 0;
-    height: calc(100vh - 84px);
+    height: 40vh;
+    // height: calc(100vh - 84px);
     image-rendering: pixelated;
-    background-position: bottom;
-    background-color: $teal;
+    background-position: center;
+    // background-color: $teal;
     background-size: cover;
-    background-blend-mode: multiply;
-    opacity: 0.5;
+    // background-blend-mode: multiply;
+    opacity: 0.9;
 }
 
 .missionRating {
@@ -93,9 +96,14 @@
 
 @media screen and (min-width: 767px) {
     .mission {
-        padding-top: 25vh;
-        padding-bottom: $spacing-8;
-        background-image: linear-gradient(to bottom, transparent 25vh, $black 75vh);
+        padding: 25vh 5% $spacing-8;
+        background-image: linear-gradient(to bottom, transparent 25vh, $black 50vh);
+    }
+
+    .coverImage {
+        position: fixed;
+        top: 88px;
+        height: 60vh;
     }
 }
 

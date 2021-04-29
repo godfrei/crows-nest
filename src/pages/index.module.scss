@@ -1,0 +1,215 @@
+@import "../styles/colors";
+@import "../styles/vars";
+
+.header {
+    background-color: $gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 103;
+    margin: auto;
+    width: 100%;
+    max-width: $max-width;
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    &:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('../images/starfield.gif');
+        z-index: 0;
+    }
+
+    main {
+        > * {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+:global(#site-title) {
+    position: static;
+    // margin-top: 160px;
+    text-align: center;
+
+    > * {
+        position: relative;
+        max-width: 60ch;
+        z-index: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 6rem;
+        text-align: left;
+        width: 300px;
+        margin-top: 144px;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        background-image: url('/images/planet_hologram.webp');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 40vw auto;
+        top: -124px;
+        right: 0;
+        width: 100%;
+        height: 20vw;
+        z-index: 1;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url('../images/crow.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        transform: rotate(20deg);
+        z-index: 1;
+        width: 157px;
+        height: 100px;
+        top: -100px;
+        left: $spacing-5;
+        background-size: 157px 100px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .home {
+        main {
+            margin-top: 54px;
+            background-size: 700px 293px;
+            background-position: top right;
+        }
+
+        &:before {
+            top: 64px;
+        }
+
+        :global(.glow) {
+            top: 54px;
+
+            &:before {
+                top: 32px;
+            }
+        }
+
+        section {
+            grid-column: 2 / 5;
+            border-top: 2px solid $glow-border;
+        }
+    }
+
+    .header {
+        position: fixed;
+    }
+
+    .grid {
+        grid-column: 2 / 5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+
+    :global(#site-title) {
+        grid-column: 2 / 5;
+        // height: 200px;
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-end;
+        margin-top: 0;
+        margin-bottom: $spacing-10 + $spacing-5;
+
+        h1 {
+            position: relative;
+            font-size: 10rem;
+            margin-bottom: 0;
+            margin-top: 100px;
+            width: auto;
+        }
+
+        > * {
+            max-width: 34em;
+        }
+
+        &:before {
+            background-size: 40vw auto;
+            top: 0px;
+            right: 0;
+            width: 100%;
+            height: 20vw;
+            z-index: 1;
+        }
+
+        &:after {
+            width: 314px;
+            height: 200px;
+            top: $spacing-10 * 3;
+            left: $spacing-7;
+            background-size: 314px 200px;
+        }
+
+        p {
+            text-shadow: 0 0 12px rgba(0,0,0,0.8);
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .home {
+        main {
+            margin-top: 72px;
+        }
+
+        :global(.glow) {
+            top: 72px;
+
+            &:before {
+                top: 48px;
+            }
+        }
+    }
+
+    :global(#site-title) {
+        // &:after {
+        //     top: $spacing-10 * 2;
+        // }
+
+        h1 {
+            font-size: 12rem;
+        }
+    } 
+}
+
+@media screen and (min-width: 1366px) {
+    .home {
+        main {
+            margin-top: 128px;
+        }
+    }
+
+    :global(#site-title) {
+        &:before {
+            top: -112px;
+        }
+
+        &:after {
+            top: $spacing-10 * 2;
+            left: $spacing-10;
+        }
+    }
+}

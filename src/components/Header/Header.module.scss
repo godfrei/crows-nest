@@ -26,8 +26,6 @@
   h1 {
     display: inline-block;
     margin: 0;
-    // margin-left: 80px;
-    // margin-right: $spacing-9;
   }
 
   img {
@@ -43,12 +41,10 @@
     > div {
       width: 100%;
       max-width: $max-width;
-      // padding: 0 $spacing-10;
       margin: auto;
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
       align-items: end;
-      // justify-content: space-between;
     }
   }
 

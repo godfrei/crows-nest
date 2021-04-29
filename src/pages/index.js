@@ -12,12 +12,13 @@ import ReviewListing from "../components/ReviewListing";
 import TopPost from "../components/TopPost";
 import EditorsChoiceListing from "../components/EditorsChoiceListing";
 import RecentComponents from "../components/RecentComponents";
+import { home, header, grid } from "./index.module.scss";
 
 const Index = ({ data }) => {
   const topPost = data.allMarkdownRemark.edges[0];
   const otherPosts = data.allMarkdownRemark.edges.slice(1);
   return (
-    <BodyClassName className="home">
+    <BodyClassName className={home}>
       <>
         <Helmet
           htmlAttributes={{
@@ -28,7 +29,7 @@ const Index = ({ data }) => {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <SEO />
-        <header id="homepage_header">
+        <header className={header}>
           <Navigation />
         </header>
         <div className="cn-layout">
@@ -44,7 +45,7 @@ const Index = ({ data }) => {
               </p>
             </div>
             
-            <div className="home-grid">
+            <div className={grid}>
               <div>
                 <h2 className="uppercase">Recent Posts</h2>
                 <TopPost post={topPost} />
