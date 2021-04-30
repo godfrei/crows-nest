@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
+import Card from "../Card";
 import {
   articleList,
-  articleBox,
-  cover,
   meta,
 } from "./PostsListing.module.scss";
 
@@ -34,18 +33,11 @@ const PostListing = ({ postEdges }) => {
           : "/images/dark-forces-cover.jpg";
         return (
           <li>
-            <Link to={`/${post.path}`} key={post.title} className={articleBox}>
-              <article>
-                <div
-                  className={cover}
-                  style={{ backgroundImage: `url(${coverUrl})` }}
-                ></div>
-                <h1>{post.title}</h1>
-                <div className={meta}>{post.date}</div>
-                <p>{post.description}</p>
-                <span className="fauxLink">Read More</span>
-              </article>
-            </Link>
+            <Card link={`/${post.path}`} title={post.title} coverURL={coverUrl}>
+              <div className={meta}>{post.date}</div>
+              <p>{post.description}</p>
+              <span className="fauxLink">Read More</span>
+            </Card>
           </li>
         );
       })}

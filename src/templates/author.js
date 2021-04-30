@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import MissionListing from "../components/MissionListing";
 import ComponentListing from "../components/ComponentListing";
+import PostListing from "../components/PostListing";
 import config from "../../data/SiteConfig";
 import { missions, components, posts } from "./Author.module.scss";
 
@@ -11,12 +12,10 @@ const AuthorTemplate = ({ data, pageContext }) => {
   // console.log(data);
 
   const componentEdges = data.allMarkdownRemark.edges.filter(edge => {
-    console.log(edge);
     return (edge.node.fields.collection !== "reviews" && edge.node.fields.collection !== "posts");
   });
 
   const postEdges = data.allMarkdownRemark.edges.filter(edge => {
-    console.log(edge);
     return (edge.node.fields.collection === "reviews" || edge.node.fields.collection === "posts");
   });
 
@@ -45,7 +44,7 @@ const AuthorTemplate = ({ data, pageContext }) => {
       {postEdges.length > 0 &&
         <section className={posts}>
           <h2>Posts</h2>
-          <ComponentListing edges={postEdges} />
+          <PostListing postEdges={postEdges} />
         </section>
       }
 
