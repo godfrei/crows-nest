@@ -108,6 +108,19 @@
     }
 }
 
+.componentCover {
+    position: absolute;
+    right: 24px;
+    height: calc(100% - 48px);
+    width: 30%;
+    top: 24px;
+    image-rendering: pixelated;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 8px rgba($amber, 0.6));
+}
+
 @media screen and (min-width: 767px) {
     .card.horizontal {
         article {

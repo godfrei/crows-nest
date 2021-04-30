@@ -6,7 +6,7 @@ authors:
 date:
 filename: "greyof.zip"
 component_type: "wax"
-cover: "greyof_sprite.png"
+cover: greyof.png
 width: 52
 height: 76
 description: "A re-colored (grey) Imperial Officer."
