@@ -18,7 +18,7 @@
         bottom: 0;
         box-shadow: inset 0 0 2px rgba(255,255,255,0.8);
         // background-color: rgba(0,0,0,0.2);
-        background-image: radial-gradient(ellipse at top left, rgba(white, 0.5), rgba($blue, 0.5) 2%, rgba($blue, 0.5) 10%, rgba($gray,0.1) 50%), linear-gradient(to right, rgba($gray,0.8), rgba($gray,0.6) 50%, transparent 75%);
+        background-image: radial-gradient(ellipse at top left, rgba(white, 0.5), rgba($blue, 0.5) 2%, rgba($dark-blue, 0.5) 10%, rgba($gray,0.1) 50%), linear-gradient(to right, rgba($gray,0.8), rgba($gray,0.6) 50%, transparent 75%);
         z-index: 0;
         border-radius: 16px;
         transition: all 0.1s ease-in-out;
@@ -85,7 +85,7 @@
     // position: absolute;
     padding: 2px 4px;
     border-radius: 2px;
-    background-color: $black;
+    background-color: $dark-blue;
     color: $blue;
 }
 
@@ -109,7 +109,7 @@
 
 .card.component {
     &:after {
-        background-image: radial-gradient(ellipse at top left, rgba(white, 0.5), rgba($gold, 0.5) 2%, rgba($amber, 0.5) 10%, rgba($gray,0.1) 50%), linear-gradient(to right, rgba($gray,0.8), rgba($gray,0.6) 50%, transparent 75%);
+        background-image: radial-gradient(ellipse at top left, rgba(white, 0.5), rgba($gold, 0.5) 2%, rgba($dark-amber, 0.5) 10%, rgba($gray,0.1) 50%), linear-gradient(to right, rgba($gray,0.8), rgba($gray,0.6) 50%, transparent 75%);
     }
 
     &:hover {
@@ -120,7 +120,7 @@
     }
 
     .tag {
-        background-color: $brown;
+        background-color: $dark-amber;
         color: $amber;
     }
 }
