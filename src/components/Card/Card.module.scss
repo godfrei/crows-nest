@@ -78,6 +78,17 @@
     }
 }
 
+.tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    // position: absolute;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: $black;
+    color: $blue;
+}
+
 .card.mission {
     &:after {
         background-image: radial-gradient(ellipse at top left, rgba(white, 0.5), rgba($teal, 0.5) 2%, rgba($dark-teal, 0.5) 10%, rgba($gray,0.1) 50%), linear-gradient(to right, rgba($gray,0.8), rgba($gray,0.6) 50%, transparent 75%);
@@ -88,6 +99,11 @@
             box-shadow: inset 0 0 8px rgba($teal, 0.5), inset 0 0 2px rgba($teal,0.8);
             background-color: rgba($teal,0.1);
         }
+    }
+
+    .tag {
+        background-color: $dark-teal;
+        color: $teal;
     }
 }
 
@@ -101,6 +117,11 @@
             box-shadow: inset 0 0 8px rgba($amber, 0.5), inset 0 0 2px rgba($amber,0.8);
             background-color: rgba($amber,0.1);
         }
+    }
+
+    .tag {
+        background-color: $brown;
+        color: $amber;
     }
 }
 
