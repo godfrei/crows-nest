@@ -7,9 +7,11 @@ import { footer, title, links, logo, map } from "./footer.module.scss";
 export default () => {
   return (
     <footer className={footer}>
-      <Link to="/" className={title}>
-        <SiteTitle />
-      </Link>
+      <div className={title}>
+        <Link to="/">
+          <SiteTitle />
+        </Link>
+      </div>
       <div className={links}>
         
         <ul className={map}>
