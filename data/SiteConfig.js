@@ -20,7 +20,7 @@ const config = {
   userAvatar: "", // User avatar to display in the author segment.
   userDescription:
     "Star Wars is the first movie I remember seeing, and the Dark Forces community was a wonderful place to meet kindred spirits from around the world. Just hoping that a few people still remember.", // User description to display in the author segment.
-  copyright: "Copyright © 1996. All rights reserved.", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 1996-2021. All rights reserved.", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#1FE071", // Used for setting manifest and progress theme colors.
   backgroundColor: "black", // Used for setting manifest background color.
 };
