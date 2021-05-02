@@ -10,6 +10,7 @@
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-google-analytics": "^3.0.0",
     "gatsby-plugin-htaccess": "^1.2.1",
+    "gatsby-plugin-local-search": "^2.0.1",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-nprogress": "^3.0.0",
     "gatsby-plugin-offline": "^4.0.0",
@@ -37,6 +38,7 @@
     "react-helmet": "^6.1.0",
     "react-share": "^4.4.0",
     "react-twitter-widgets": "^1.7.1",
+    "react-use-flexsearch": "^0.1.1",
     "url-join": "^4.0.1"
   },
   "devDependencies": {

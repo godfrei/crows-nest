@@ -1,8 +1,47 @@
-import React from "react";
-import { search } from "./search.module.scss";
+import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { useFlexSearch } from 'react-use-flexsearch';
+import { search, input, results, empty, result } from "./search.module.scss";
 
 const Search = () => {
-  return <div className={search}>Search</div>;
+  const data = useStaticQuery(graphql`
+    query SearchQuery {
+      localSearchPages {
+        index
+        store
+      }
+    }
+  `);
+
+  const query = new URLSearchParams(search).get('s');
+  const [searchQuery, setSearchQuery] = useState(query || '');
+  const { index, store } = data.localSearchPages;
+  const searchResults = useFlexSearch(searchQuery, index, store);
+
+  return (
+    <form className={search}>
+      <label htmlFor="cn-search">
+        <span className="sr-only">Search The Crow's Nest</span>
+      </label>
+      <input
+        type="text"
+        name="s"
+        id="cn-search"
+        className={input}
+        value={searchQuery}
+        onInput={e => setSearchQuery(e.target.value)}
+        placeholder="Search"
+      />
+      <button type="submit">Search</button>
+      <div className={results}>
+        <ul>
+          {searchResults.map(node => (
+              <li key={node.id}>{node.title}</li>
+          ))}
+        </ul>
+      </div>
+    </form>
+    );
 };
 
 export default Search;
