@@ -15,6 +15,18 @@ function getCoverImage(edge) {
   return `<img src="${config.siteUrl}${cover.publicURL}" alt="" />`;
 }
 
+function getCoverForSearchIndex(node) {
+  if (node.cover) {
+    console.log(node.cover.publicURL);
+    return node.cover.publicURL;
+  }
+  else if (node.frontmatter && node.frontmatter.cover) {
+    console.log(node.frontmatter.cover.publicURL);
+    return node.frontmatter.cover.publicURL;
+  }
+  return "/images/blank.gif";
+}
+
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
@@ -214,7 +226,7 @@ module.exports = {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
-        fields: [`title`],
+        fields: [`title`, `body`, `authors`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
@@ -222,14 +234,20 @@ module.exports = {
             title: node => node.frontmatter.title,
             // tags: node => node.frontmatter.tags,
             path: node => node.fields.slug,
+            body: node => node.html,
+            authors: node => node.frontmatter.authors,
+            // cover: node => getCoverForSearchIndex(node),
           },
-          // MissionsJson: {
-          //   title: node => node.title,
-          //   path: node => node.slug,
-          // }
+          MissionsJson: {
+            title: node => node.title,
+            path: node => `missions/${node.slug}/`,
+            body: node => node.description,
+            authors: node => node.authors,
+            // cover: (node, getNode) => getNode(node.cover___NODE),
+          }
         },
         // Optional filter to limit indexed nodes
-        // filter: (node, getNode) => node.frontmatter.tags !== "exempt",
+        filter: (node, getNode) => node.internal.type === "MissionsJson" || node.frontmatter.title.indexOf("REVIEW:") === -1,
       },
     },
     // {

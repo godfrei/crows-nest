@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Index } from "elasticlunr";
 import { Link } from "gatsby";
-// import { search, input, results, empty, result } from "./search.module.scss";
+import { search, input, results, empty, result } from "./search.module.scss";
 
 export default class Search extends Component {
   constructor(props) {
@@ -14,15 +14,30 @@ export default class Search extends Component {
 
   render() {
     return (
-      <div>
-        <input type="text" value={this.state.query} onChange={this.search} />
-        <ul>
-          {this.state.results.map(page => (
-            <li key={page.id}>
-              <Link to={"/" + page.path}>{page.title}</Link>
-            </li>
-          ))}
-        </ul>
+      <div className={search}>
+        <label htmlFor="cn-search" className="sr-only">
+          Search The Crow's Nest
+        </label>
+        <input
+          id="cn-search"
+          type="text"
+          value={this.state.query}
+          onChange={this.search}
+          className={input}
+          placeholder="Search"
+        />
+        {this.state.results.length > 0 && (
+          <ul className={results}>
+            {this.state.results.map(page => (
+              <li key={page.id} className={result}>
+                <Link to={"/" + page.path}>
+                  {/* <img src={page.cover} alt="" /> */}
+                  {page.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     )
   }
