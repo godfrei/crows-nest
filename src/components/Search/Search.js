@@ -1,50 +1,50 @@
-import React, { useState } from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { useFlexSearch } from 'react-use-flexsearch';
-import { search, input, results, empty, result } from "./search.module.scss";
+import React, { Component } from "react";
+import { Index } from "elasticlunr";
+import { Link } from "gatsby";
+// import { search, input, results, empty, result } from "./search.module.scss";
 
-const Search = () => {
-  const data = useStaticQuery(graphql`
-    query SearchQuery {
-      localSearchPages {
-        index
-        store
-      }
+export default class Search extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      query: ``,
+      results: [],
     }
-  `);
+  }
 
-  const query = new URLSearchParams(search).get('s');
-  const [searchQuery, setSearchQuery] = useState(query || '');
-  const { index, store } = data.localSearchPages;
-  const searchResults = useFlexSearch(searchQuery, index, store);
-
-  return (
-    <form className={search}>
-      <label htmlFor="cn-search">
-        <span className="sr-only">Search The Crow's Nest</span>
-      </label>
-      <input
-        type="text"
-        name="s"
-        id="cn-search"
-        className={input}
-        value={searchQuery}
-        onInput={e => setSearchQuery(e.target.value)}
-        placeholder="Search"
-      />
-      <button type="submit">Search</button>
-      <div className={results}>
+  render() {
+    return (
+      <div>
+        <input type="text" value={this.state.query} onChange={this.search} />
         <ul>
-          {searchResults.map(node => (
-              <li key={node.id}>{node.title}</li>
+          {this.state.results.map(page => (
+            <li key={page.id}>
+              <Link to={"/" + page.path}>{page.title}</Link>
+            </li>
           ))}
         </ul>
       </div>
-    </form>
-    );
-};
+    )
+  }
+  getOrCreateIndex = () =>
+    this.index
+      ? this.index
+      : // Create an elastic lunr index and hydrate with graphql query results
+        Index.load(this.props.searchIndex)
 
-export default Search;
+  search = evt => {
+    const query = evt.target.value
+    this.index = this.getOrCreateIndex()
+    this.setState({
+      query,
+      // Query the index with search string to get an [] of IDs
+      results: this.index
+        .search(query, {})
+        // Map over each ID and return the full document
+        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
+    })
+  }
+}
 
 // import React, { Component } from "react";
 // import { Link, withPrefix } from "gatsby";
@@ -198,10 +198,10 @@ export default Search;
 //   }
 
 //   getOrCreateIndex() {
-//     const searchIndex = window.__ELASTICLUNR__
+//     const elasticIndex = window.__ELASTICLUNR__
 //       ? window.__ELASTICLUNR__.index
 //       : [];
-//     return Index.load(searchIndex);
+//     return Index.load(elasticIndex);
 //   }
 
 //   search = (event) => {
