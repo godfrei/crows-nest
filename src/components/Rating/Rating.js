@@ -10,8 +10,8 @@ export default ({ score, className = "" }) => {
   return (
     <div className={`${rating} ${className}`}>
       <strong className={ratingScore} aria-label={`Rating: ${score} out of 4 stars`}>
-        {times(score, () => <span className={fullStar}>★</span>)}
-        {times(emptyStars, () => <span className={emptyStar}>☆</span>)}
+        {times(score, (i) => <span className={fullStar} key={`star${i}`}>★</span>)}
+        {times(emptyStars, (i) => <span className={emptyStar} key={`emptyStar${i}`}>☆</span>)}
       </strong>
     </div>
   );

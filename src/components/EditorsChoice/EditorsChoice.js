@@ -15,103 +15,103 @@ const EditorsChoice = () => (
     <circle className={background} cx="88.82" cy="88.82" r="88.82" />
     {/* <circle cx="88.82" cy="88.82" r="59.26"/> */}
     <text transform="scale(-1) rotate(-71.04 -53.9 -15.28)">
-      <tspan x="0" y="0" font-size="14.86">
+      <tspan x="0" y="0" fontSize="14.86">
         T
       </tspan>
-      <tspan x="10.21" y="-.07" font-size="14.86" rotate="-8.7">
+      <tspan x="10.21" y="-.07" fontSize="14.86" rotate="-8.7">
         H
       </tspan>
-      <tspan x="21.35" y="-1.94" font-size="14.86" rotate="-16.92">
+      <tspan x="21.35" y="-1.94" fontSize="14.86" rotate="-16.92">
         E
       </tspan>
-      <tspan x="29.94" y="-4.7" font-size="14.86" rotate="-22.04">
+      <tspan x="29.94" y="-4.7" fontSize="14.86" rotate="-22.04">
         {" "}
       </tspan>
-      <tspan x="33.7" y="-6.15" font-size="14.86" rotate="-27.11">
+      <tspan x="33.7" y="-6.15" fontSize="14.86" rotate="-27.11">
         C
       </tspan>
-      <tspan x="42.13" y="-10.54" font-size="14.86" rotate="-35.19">
+      <tspan x="42.13" y="-10.54" fontSize="14.86" rotate="-35.19">
         R
       </tspan>
-      <tspan x="50.64" y="-16.6" font-size="14.86" rotate="-43.86">
+      <tspan x="50.64" y="-16.6" fontSize="14.86" rotate="-43.86">
         O
       </tspan>
-      <tspan x="59.35" y="-24.92" font-size="14.86" rotate="-55.24">
+      <tspan x="59.35" y="-24.92" fontSize="14.86" rotate="-55.24">
         W
       </tspan>
-      <tspan x="68.13" y="-38.44" font-size="14.86" rotate="-63.66">
+      <tspan x="68.13" y="-38.44" fontSize="14.86" rotate="-63.66">
         ’
       </tspan>
-      <tspan x="70.25" y="-42.61" font-size="14.86" rotate="-68.83">
+      <tspan x="70.25" y="-42.61" fontSize="14.86" rotate="-68.83">
         S
       </tspan>
-      <tspan x="73.17" y="-50.5" font-size="14.86" rotate="-73.76">
+      <tspan x="73.17" y="-50.5" fontSize="14.86" rotate="-73.76">
         {" "}
       </tspan>
-      <tspan x="74.46" y="-54.48" font-size="14.86" rotate="-79.8">
+      <tspan x="74.46" y="-54.48" fontSize="14.86" rotate="-79.8">
         N
       </tspan>
-      <tspan x="76.33" y="-65.83" font-size="14.86" rotate="-88.19">
+      <tspan x="76.33" y="-65.83" fontSize="14.86" rotate="-88.19">
         E
       </tspan>
-      <tspan x="76.53" y="-75.18" font-size="14.86" rotate="-95.42">
+      <tspan x="76.53" y="-75.18" fontSize="14.86" rotate="-95.42">
         S
       </tspan>
-      <tspan x="75.66" y="-83.93" font-size="14.86" rotate="-102.8">
+      <tspan x="75.66" y="-83.93" fontSize="14.86" rotate="-102.8">
         T
       </tspan>
-      <tspan x="73.41" y="-93.09" font-size="14.86" rotate="-108.03">
+      <tspan x="73.41" y="-93.09" fontSize="14.86" rotate="-108.03">
         {" "}
       </tspan>
-      <tspan x="72.25" y="-96.63" font-size="14.86" rotate="-111.27">
+      <tspan x="72.25" y="-96.63" fontSize="14.86" rotate="-111.27">
         ·
       </tspan>
-      <tspan x="70.43" y="-101.18" font-size="14.86" rotate="-114.89">
+      <tspan x="70.43" y="-101.18" fontSize="14.86" rotate="-114.89">
         {" "}
       </tspan>
-      <tspan x="68.54" y="-105.39" font-size="14.86" rotate="-120.53">
+      <tspan x="68.54" y="-105.39" fontSize="14.86" rotate="-120.53">
         E
       </tspan>
-      <tspan x="63.67" y="-113.56" font-size="14.86" rotate="-128.72">
+      <tspan x="63.67" y="-113.56" fontSize="14.86" rotate="-128.72">
         D
       </tspan>
-      <tspan x="56.81" y="-121.78" font-size="14.86" rotate="-134.99">
+      <tspan x="56.81" y="-121.78" fontSize="14.86" rotate="-134.99">
         I
       </tspan>
-      <tspan x="52.95" y="-125.7" font-size="14.86" rotate="-141.17">
+      <tspan x="52.95" y="-125.7" fontSize="14.86" rotate="-141.17">
         T
       </tspan>
-      <tspan x="45.15" y="-131.92" font-size="14.86" rotate="-149.67">
+      <tspan x="45.15" y="-131.92" fontSize="14.86" rotate="-149.67">
         O
       </tspan>
-      <tspan x="35.58" y="-137.41" font-size="14.86" rotate="-158.04">
+      <tspan x="35.58" y="-137.41" fontSize="14.86" rotate="-158.04">
         R
       </tspan>
-      <tspan x="25.98" y="-141.15" font-size="14.86" rotate="-165.52">
+      <tspan x="25.98" y="-141.15" fontSize="14.86" rotate="-165.52">
         S
       </tspan>
-      <tspan x="17.75" y="-143.15" font-size="14.86" rotate="-170.75">
+      <tspan x="17.75" y="-143.15" fontSize="14.86" rotate="-170.75">
         ’
       </tspan>
-      <tspan x="13.48" y="-143.82" font-size="14.86" rotate="-173.95">
+      <tspan x="13.48" y="-143.82" fontSize="14.86" rotate="-173.95">
         {" "}
       </tspan>
-      <tspan x="9.47" y="-144.31" font-size="14.86" rotate="-179.07">
+      <tspan x="9.47" y="-144.31" fontSize="14.86" rotate="-179.07">
         C
       </tspan>
-      <tspan x="-.37" y="-144.41" font-size="14.86" rotate="172.29">
+      <tspan x="-.37" y="-144.41" fontSize="14.86" rotate="172.29">
         H
       </tspan>
-      <tspan x="-11.4" y="-142.83" font-size="14.86" rotate="163.42">
+      <tspan x="-11.4" y="-142.83" fontSize="14.86" rotate="163.42">
         O
       </tspan>
-      <tspan x="-22.01" y="-139.44" font-size="14.86" rotate="157.07">
+      <tspan x="-22.01" y="-139.44" fontSize="14.86" rotate="157.07">
         I
       </tspan>
-      <tspan x="-26.56" y="-137.57" font-size="14.86" rotate="151.61">
+      <tspan x="-26.56" y="-137.57" fontSize="14.86" rotate="151.61">
         C
       </tspan>
-      <tspan x="-35.09" y="-132.84" font-size="14.86" rotate="143.76">
+      <tspan x="-35.09" y="-132.84" fontSize="14.86" rotate="143.76">
         E
       </tspan>
     </text>
