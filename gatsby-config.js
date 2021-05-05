@@ -243,6 +243,7 @@ module.exports = {
             path: node => `missions/${node.slug}/`,
             body: node => node.description,
             authors: node => node.authors,
+            editorsChoice: node => node.editorsChoice,
             // cover: (node, getNode) => getNode(node.cover___NODE),
           }
         },
