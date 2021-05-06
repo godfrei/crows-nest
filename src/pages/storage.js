@@ -3,14 +3,12 @@ import { Link, graphql } from "gatsby";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
 import SEO from "../components/SEO";
+import ComponentListing from "../components/ComponentListing";
 import Layout from "../layout";
 import {
   pageHeader,
   sortOptions,
   active,
-  typeClass,
-  storageTable,
-  authors,
   description,
 } from "./storage.module.scss";
 
@@ -49,27 +47,27 @@ const Storage = ({ data }) => {
               </Link>
             </li>
             <li>
-              <Link to="/3dos/" {...linkProps}>
+              <Link to="/storage/3dos/" {...linkProps}>
                 3DOs
               </Link>
             </li>
             <li>
-              <Link to="/bms/" {...linkProps}>
+              <Link to="/storage/bms/" {...linkProps}>
                 BMs
               </Link>
             </li>
             <li>
-              <Link to="/fmes/" {...linkProps}>
+              <Link to="/storage/fmes/" {...linkProps}>
                 FMEs
               </Link>
             </li>
             <li>
-              <Link to="/vocs/" {...linkProps}>
+              <Link to="/storage/vocs/" {...linkProps}>
                 VOCs
               </Link>
             </li>
             <li>
-              <Link to="/waxes/" {...linkProps}>
+              <Link to="/storage/waxes/" {...linkProps}>
                 WAXes
               </Link>
             </li>
@@ -77,56 +75,7 @@ const Storage = ({ data }) => {
         </div>
       </div>
 
-      <table className={storageTable}>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Preview</th>
-            <th>Type</th>
-            <th>Description</th>
-            <th>Download</th>
-          </tr>
-        </thead>
-        {data.allMarkdownRemark.edges.map((edge) => {
-          let type = "";
-          switch (edge.node.fields.collection) {
-            case "bms":
-              type = "BM";
-              break;
-            case "fmes":
-              type = "FME";
-              break;
-            case "waxes":
-              type = "WAX";
-              break;
-            case "vocs":
-              type = "VOC";
-              break;
-            default:
-              type = "3DO";
-              break;
-          }
-          let downloadURL = edge.node.frontmatter.filename?.publicURL || null;
-          return (
-            <tr>
-              <td>
-                <Link to={`/${edge.node.fields.slug}`}>
-                  {edge.node.frontmatter.title}
-                </Link>
-                <span className={authors}>
-                  {edge.node.frontmatter.authors.join(", ")}
-                </span>
-              </td>
-              <td>Preview</td>
-              <td>
-                <span className={typeClass}>{type}</span>
-              </td>
-              <td>{edge.node.frontmatter.description}</td>
-              <td>{downloadURL && <a href={downloadURL}>Download</a>}</td>
-            </tr>
-          );
-        })}
-      </table>
+      <ComponentListing edges={data.allMarkdownRemark.edges} />
     </Layout>
   );
 };
