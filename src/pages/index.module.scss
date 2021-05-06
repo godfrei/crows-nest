@@ -1,20 +1,6 @@
 @import "../styles/colors";
 @import "../styles/vars";
 
-.header {
-    background-color: $gray;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 103;
-    margin: auto;
-    width: 100%;
-    max-width: $max-width;
-    display: flex;
-    justify-content: center;
-}
-
 .home {
     &:after {
         content: '';
@@ -31,6 +17,12 @@
         > * {
             position: relative;
             z-index: 1;
+        }
+    }
+
+    header[class^=Header] {
+        > div > a:first-child {
+            display: none;
         }
     }
 }
@@ -112,10 +104,6 @@
             grid-column: 2 / 5;
             border-top: 2px solid $glow-border;
         }
-    }
-
-    .header {
-        position: fixed;
     }
 
     .grid {

@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import BodyClassName from "react-body-classname";
 import SiteTitle from "../components/SiteTitle";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
@@ -29,9 +29,7 @@ const Index = ({ data }) => {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <SEO />
-        <header className={header}>
-          <Navigation />
-        </header>
+        <Header />
         <div className="cn-layout">
           <div className="glow"></div>
           <main>
