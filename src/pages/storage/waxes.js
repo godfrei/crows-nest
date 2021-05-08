@@ -56,6 +56,7 @@ export const waxesQuery = graphql`
           frontmatter {
             authors
             title
+            description
             cover {
               name
               publicURL

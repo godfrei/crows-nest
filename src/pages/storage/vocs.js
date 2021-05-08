@@ -56,6 +56,7 @@ export const vocsQuery = graphql`
           frontmatter {
             authors
             title
+            description
             cover {
               name
               publicURL

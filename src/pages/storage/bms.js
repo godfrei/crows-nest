@@ -56,6 +56,7 @@ export const bmsQuery = graphql`
           frontmatter {
             authors
             title
+            description
             cover {
               name
               publicURL

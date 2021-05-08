@@ -72,6 +72,7 @@ export const threeDosQuery = graphql`
               name
               publicURL
             }
+            description
             date
           }
         }

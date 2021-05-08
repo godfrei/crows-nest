@@ -56,6 +56,7 @@ export const fmesQuery = graphql`
           frontmatter {
             authors
             title
+            description
             cover {
               name
               publicURL
