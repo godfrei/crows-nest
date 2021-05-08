@@ -35,12 +35,15 @@ export default class Search extends Component {
     if (path.indexOf("waxes/") !== -1) {
       return "WAX";
     }
+    if (path.indexOf("database/") !== -1) {
+      return "database";
+    }
     return "";
   }
 
   getTypeClass(type) {
     if (type === "mission") return missionClass;
-    else if (type === "blog") return blogClass;
+    else if (type === "blog" || type === "database") return blogClass;
     return componentClass;
   }
 

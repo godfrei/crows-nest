@@ -100,6 +100,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       case "waxes":
         fullSlug = `storage/${collection}/${slug}`;
         break;
+      case "weapons":
+      case "items":
+      case "enemies":
+        fullSlug = `database/${collection}/${slug}`;
+        break;
       default:
         fullSlug = slug;
     }
@@ -353,7 +358,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   enemyEdges.forEach((edge, index) => {
     createPage({
-      path: `/database/enemies/${edge.node.fields.slug}`,
+      path: edge.node.fields.slug,
       component: enemyPage,
       context: {
         slug: edge.node.fields.slug,
@@ -369,7 +374,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   itemEdges.forEach((edge, index) => {
     createPage({
-      path: `/database/items/${edge.node.fields.slug}`,
+      path: edge.node.fields.slug,
       component: itemPage,
       context: {
         slug: edge.node.fields.slug,
@@ -385,7 +390,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   weaponEdges.forEach((edge, index) => {
     createPage({
-      path: `/database/weapons/${edge.node.fields.slug}`,
+      path: edge.node.fields.slug,
       component: weaponPage,
       context: {
         slug: edge.node.fields.slug,
