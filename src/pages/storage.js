@@ -107,6 +107,9 @@ export const storageQuery = graphql`
             filename {
               publicURL
             }
+            cover {
+              publicURL
+            }
             description
             date
           }
