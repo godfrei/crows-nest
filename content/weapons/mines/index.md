@@ -2,8 +2,8 @@
 title: "Imperial Machines (I.M.) Mines"
 ---
 
-Ammo Used: I.M. Mines 
-Secondary Fire: The mine is activated with a proximity trigger and motion sensor. 
+**Ammo Used:** I.M. Mines<br />
+**Secondary Fire:** The mine is activated with a proximity trigger and motion sensor. 
 
 One of the nastiest of weapons used in times of war, the mine is responsible for thousands of innocent casualties. Manufactured by Imperial Machines, a outside contractor of Imperial weapons, thousands of these mines are laid every day in battle regions. Hundreds never find their use combat and are left to be triggered by civilians. Worse yet, the unlucky person will often survive the experience only to lose parts of their body in the explosion. Modern cybernetics couple with advanced medical techniques can replace the limbs, but there are some scars that never quite go away.
 

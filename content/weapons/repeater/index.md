@@ -2,8 +2,8 @@
 title: "Imperial Repeater Rifle"
 ---
 
-Ammo Used: Power Cells (1 Cell per Fire, Primary; 3 per Fire, Secondary)
-Secondary Fire: Three bolts in a triangle formation. 
+**Ammo Used:** [Power Cells](/database/items/power-cells) (1 Cell per Fire, Primary; 3 per Fire, Secondary)<br />
+**Secondary Fire:** Three bolts in a triangle formation. 
 
 Also referred to commonly as the 'autogun' or simply 'repeater', the Imperial Repeater Rifle was developed for the Dark Trooper project. The original prototype was designed by weapons master Moff Rebus, but a scaled down version is what is in use today. The repeater uses standard power cells to fire a highly accurate blue bolt for the primary fire and a trio of bolts in a triangle formation for the secondary fire. It has a fast repeat-fire rate(5 shots/s) which in close or long range can be deadly.
 

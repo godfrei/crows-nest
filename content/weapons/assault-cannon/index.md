@@ -2,8 +2,8 @@
 title: "Assault Cannon"
 ---
 
-Ammo Used: Plasma Cartridges (1 Burst per Fire, Primary), Missiles (1 Missile per Fire, Secondary)
-Secondary Fire: Launches a long range missile. 
+**Ammo Used:** [Plasma Cartridges](/database/items/plasma-cartridges) (1 Burst per Fire, Primary), [Missiles](/database/items/missiles) (1 Missile per Fire, Secondary)<br />
+**Secondary Fire:** Launches a long range missile. 
 
 Very little is known about the Assault Cannon. You have first-hand knowledge that it was developed by the Empire for use with the Dark Trooper project. The cannon is so large that most people probably couldn't even lift it. The weapon fires bursts of plasma at a rapid rate(~4.2 shots/s) as it's primary capability. The secondary mode launches a long range incendiary rocket. The plasma is relatively accurate, but the missiles are best used for larger targets.
 
