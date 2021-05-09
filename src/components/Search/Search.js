@@ -1,8 +1,16 @@
 import React, { Component } from "react";
 import { Index } from "elasticlunr";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import EditorsChoice from "../EditorsChoice";
-import { search, input, results, empty, result, missionClass, blogClass, componentClass, ecClass, type } from "./search.module.scss";
+import { search, input, results as resultsClass, empty, result, missionClass, blogClass, componentClass, ecClass, type, selectedClass } from "./search.module.scss";
+
+const keyCodes = {
+  13: 'enter',
+  27: 'escape',
+  32: 'space',
+  38: 'up',
+  40: 'down'
+}
 
 export default class Search extends Component {
   constructor(props) {
@@ -10,8 +18,21 @@ export default class Search extends Component {
     this.state = {
       query: ``,
       results: [],
+      selectedResult: null,
+      menuOpen: false,
     }
+
+    this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.handleUpArrow = this.handleUpArrow.bind(this);
+    this.handleDownArrow = this.handleDownArrow.bind(this);
+    this.handleEnter = this.handleEnter.bind(this);
+    this.handleEsc = this.handleEsc.bind(this);
+    // this.handleBlur = this.handleBlur.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
+
+    this.inputRef = React.createRef();
   }
+  
 
   getResultType(path) {
     if (path.indexOf("missions/") !== -1) {
@@ -65,42 +86,75 @@ export default class Search extends Component {
     return editorsChoice;
   }
 
-  render() {
-    return (
-      <div className={search}>
-        <label htmlFor="cn-search" className="sr-only">
-          Search The Crow's Nest
-        </label>
-        <input
-          id="cn-search"
-          type="text"
-          value={this.state.query}
-          onChange={this.search}
-          className={input}
-          placeholder="Search"
-        />
-        {this.state.results.length > 0 && (
-          <ul className={results}>
-            {this.state.results.map(page => (
-              <li key={page.id} className={result}>
-                <Link to={"/" + page.path}>
-                  <div className={type}>
-                    {this.getTag(page.path)}
-                  </div>
-                  <div>
-                    <strong>{page.title}</strong>
-                    <small>{page.authors && page.authors.join(', ')}</small>
-                  </div>
-                  {this.getEditorsChoice(page)}
-                  {/* <img src={page.cover} alt="" /> */}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    )
+  handleUpArrow = (event) => {
+    event.preventDefault();
+    const { selectedResult } = this.state;
+    const isNotAtTop = selectedResult !== -1;
+    let newSelectedResult = selectedResult;
+    if (isNotAtTop) {
+      newSelectedResult = selectedResult - 1;
+      this.setState({
+        selectedResult: newSelectedResult
+      });
+    }
   }
+
+  handleDownArrow = (event) => {
+    event.preventDefault();
+    const { results, selectedResult } = this.state;
+    const isNotAtBottom = selectedResult !== results.length - 1;
+    let newSelectedResult = selectedResult;
+    if (isNotAtBottom) {
+      newSelectedResult = selectedResult + 1;
+      this.setState({
+        selectedResult: newSelectedResult
+      });
+    }
+    
+  }
+
+  handleKeyDown = (event) => {
+    switch (keyCodes[event.keyCode]) {
+      case "down":
+        this.handleDownArrow(event);
+        break;
+      case "up":
+        this.handleUpArrow(event);
+        break;
+      case "enter":
+        this.handleEnter(event);
+        break;
+      case "escape":
+        this.handleEsc(event);
+        break;
+      default:
+        break;
+    }
+  }
+
+  handleEnter = (event) => {
+    event.preventDefault();
+    const { results, selectedResult } = this.state;
+    navigate(`/${results[selectedResult].path}`);
+  }
+
+  handleEsc = (event) => {
+    this.setState({
+      query: "",
+    });
+    this.inputRef.current.blur();
+  }
+
+  handleBlur = (event) => {
+    this.setState({
+      menuOpen: false,
+    });
+  }
+
+  handleFocus = (event) => {
+    this.search(event);
+  }
+
   getOrCreateIndex = () =>
     this.index
       ? this.index
@@ -108,15 +162,87 @@ export default class Search extends Component {
         Index.load(this.props.searchIndex)
 
   search = evt => {
-    const query = evt.target.value
-    this.index = this.getOrCreateIndex()
+    const { selectedResult } = this.state;
+    const newQuery = evt.target.value
+    this.index = this.getOrCreateIndex();
+    const newResults = this.index
+      .search(newQuery, {})
+      // Map over each ID and return the full document
+      .map(({ ref }) => this.index.documentStore.getDoc(ref));
+    let newSelectedResult = null;
+    if (newResults.length > 0 && selectedResult === null) {
+      newSelectedResult = 0;
+    }
     this.setState({
-      query,
+      query: newQuery,
       // Query the index with search string to get an [] of IDs
-      results: this.index
-        .search(query, {})
-        // Map over each ID and return the full document
-        .map(({ ref }) => this.index.documentStore.getDoc(ref)),
-    })
+      results: newResults,
+      selectedResult: newSelectedResult,
+      menuOpen: true,
+    });
+  }
+
+  render() {
+    const { selectedResult, query, results, menuOpen } = this.state;
+
+    return (
+      <div
+        className={search}
+        onKeyDown={this.handleKeyDown}
+      >
+        <label htmlFor="cn-search" className="sr-only">
+          Search The Crow's Nest
+        </label>
+        <input
+          id="cn-search"
+          type="text"
+          value={query}
+          onChange={this.search}
+          className={input}
+          placeholder="Search"
+          ref={this.inputRef}
+          // onBlur={this.handleBlur}
+          onFocus={this.handleFocus}
+        />
+        {menuOpen && (
+          <div
+            role="listbox"
+            aria-live="polite"
+            aria-atomic="true"
+            className={resultsClass}
+          >
+            {(!results || results.length === 0) && query !== "" && (
+              <p className={empty}>No results found.</p>
+            )}
+            {results.length > 0 && menuOpen && (
+              <ul>
+                {results.map((page, index) => {
+                  const selected = selectedResult === index ? selectedClass : '';
+                  return (
+                    <li
+                      key={page.id}
+                      role="option"
+                      className={`${result} ${selected}`}
+                    >
+                      <Link to={"/" + page.path}>
+                        <div className={type}>
+                          {this.getTag(page.path)}
+                        </div>
+                        <div>
+                          <strong>{page.title}</strong>
+                          <small>{page.authors && page.authors.join(', ')}</small>
+                        </div>
+                        {this.getEditorsChoice(page)}
+                        {/* <img src={page.cover} alt="" /> */}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+        )}
+      </div>
+    )
   }
 }
