@@ -29,7 +29,6 @@ const Database = () => (
 
       <p>Learn about the game.</p>
 
-      <Link to="/database/history/">Dark Forces History</Link>
       <Link to="/database/characters/">Characters</Link>
       <Link to="/database/weapons/">Weapons</Link>
       <Link to="/database/enemies/">Enemies</Link>

@@ -76,6 +76,9 @@ const LaunchpadPage = () => (
             MagicAl's Dark Forces Niche
           </a>
         </li>
+        <li>
+          <a href="https://web.archive.org/web/19970626181405/http://www.swgamers.com/">www.swgamers.com</a>
+        </li>
       </ul>
     </div>
   </Layout>

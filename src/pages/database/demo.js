@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import config from "../../../data/SiteConfig";
 import SEO from "../../components/SEO";
 import Layout from "../../layout";
-import DatabaseLayout from "../../layout/database";
 
 const Demo = () => (
   <Layout>
