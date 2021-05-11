@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+@import '../../styles/vars';
+
+.tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: $dark-blue;
+    color: $blue;
+    margin-inline-end: 8px;
+}
+
+.mission {
+    background-color: $dark-teal;
+    color: $teal;
+}
+
+.component {
+    background-color: $dark-amber;
+    color: $amber;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import Rating from "../Rating";
+import Tag from "../Tag";
 import EditorsChoice from "../EditorsChoice";
 import { authorList, ecClass } from "./missioncard.module.scss";
 
@@ -41,9 +42,13 @@ const MissionCard = ({ node, orientation = "horizontal" }) => {
   return (
     <Card link={`/missions/${node.slug}`} coverURL={coverURL} title={node.title} orientation={orientation} type="mission">
       {getEditorsChoice(node)}
-      <span title="Authors" className={authorList}>
-        {authors}
-      </span>
+      <div className="secondary">
+        <Tag type="mission" text="Mission" />
+        <span title="Authors" className={authorList}>
+          {authors}
+        </span>
+      </div>
+
       <p>{excerpt}&hellip;</p>
       <Rating score={rating} />
     </Card>

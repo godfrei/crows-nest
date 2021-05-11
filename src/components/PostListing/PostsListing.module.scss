@@ -27,6 +27,11 @@
     }
 }
 
+.date {
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.6);
+}
+
 @media screen and (min-width: 767px) {
     .article-list {
         display: grid;

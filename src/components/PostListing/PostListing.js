@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
+import Tag from "../Tag";
 import Card from "../Card";
 import {
   articleList,
-  meta,
+  date,
 } from "./PostsListing.module.scss";
 
 const PostListing = ({ postEdges }) => {
@@ -34,7 +34,10 @@ const PostListing = ({ postEdges }) => {
         return (
           <li>
             <Card link={`/${post.path}`} title={post.title} coverURL={coverUrl}>
-              <div className={meta}>{post.date}</div>
+              <div className="secondary">
+                <Tag text="Blog" />
+                <span className={date}>{post.date}</span>
+              </div>
               <p>{post.description}</p>
               <span className="fauxLink">Read More</span>
             </Card>
