@@ -16,7 +16,8 @@ import {
   descAndReviews,
   plot,
   coverImage,
-  missionRating
+  missionRating,
+  meta,
 } from "./mission.module.scss";
 
 const MissionTemplate = ({ data }) => {
@@ -50,7 +51,7 @@ const MissionTemplate = ({ data }) => {
             return (
               <>
                 <div>
-                  <p>
+                  <p className={meta}>
                     Reviewed by: {reviewers.join(", ")} | {dateString}
                   </p>
                   <div dangerouslySetInnerHTML={{ __html: review.html }} />
