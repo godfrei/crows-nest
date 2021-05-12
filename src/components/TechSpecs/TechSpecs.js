@@ -27,7 +27,7 @@ export default ({ node }) => {
           <strong>Editor(s):</strong> {node.editors}
         </li>
         <li>
-          <strong>Difficulty Settings:</strong> {_.capitalize(node.difficulty)}
+          <strong>Difficulty Settings:</strong> {node.difficulty ? "Yes" : "No"}
         </li>
       </ul>
 
