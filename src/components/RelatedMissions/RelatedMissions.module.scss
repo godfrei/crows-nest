@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+
+.related {
+    padding: 24px calc(5% + 1.6rem);
+    grid-column: 1 / -1;
+    background-color: $black;
+    position: relative;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    section {
+        grid-column: 2 / 3;
+    }
+}

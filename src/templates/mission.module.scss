@@ -101,7 +101,7 @@
 
 @media screen and (min-width: 767px) {
     .mission {
-        padding: 25vh 5% $spacing-8;
+        padding: 25vh calc(5% + 3.2rem) $spacing-8;
         background-image: linear-gradient(to bottom, transparent 25vh, $black 50vh);
     }
 
@@ -115,6 +115,6 @@
 
 @media screen and (min-width: 1023px) {
     .descAndReviews {
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
     }
 }

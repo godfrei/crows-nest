@@ -5,6 +5,7 @@ import SEO from "../components/SEO";
 import Layout from "../layout";
 import TechSpecs from "../components/TechSpecs";
 import MissionHeader from "../components/MissionHeader";
+import RelatedMissions from "../components/RelatedMissions";
 import Rating from "../components/Rating";
 import config from "../../data/SiteConfig";
 import moment from "moment";
@@ -137,6 +138,7 @@ const MissionTemplate = ({ data }) => {
           </div>
         </div>
       </div>
+      <RelatedMissions origMission={missionNode} />
     </Layout>
   );
 };

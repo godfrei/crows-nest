@@ -127,7 +127,7 @@ code {
     main {
         display: grid;
         grid-template-columns: 5% 1fr 3fr 1fr 5%;
-        gap: 1.6rem;
+        gap: 0 1.6rem;
         margin: 0;
         margin-top: 88px;
         padding: 0;
@@ -222,8 +222,10 @@ code {
         margin: 0;
         padding: 0;
         display: grid;
-        grid-gap: 0 30px;
-        grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(200px, 2fr) 1fr;
-        grid-template-areas: "... padding content sidebar ...";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-gap: 0 1.6rem;
+        // grid-gap: 0 30px;
+        // grid-template-columns: 1fr 1fr minmax(40ch, 70ch) minmax(200px, 2fr) 1fr;
+        // grid-template-areas: "... padding content sidebar ...";
     }
 }
