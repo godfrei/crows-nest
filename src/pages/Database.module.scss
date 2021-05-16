@@ -1,9 +1,73 @@
 @import '../styles/pageHeader';
+@import '../styles/colors';
 
 .info, .play, .build {
-    grid-column: 2 / 5;
+    margin-top: 3.2rem;
+    grid-column: 1 / -1;
     position: relative;
     z-index: 1;
+    border-top: 1px solid $glow-border;
+
+    > * {
+        margin: 3.2rem calc(5% + 1.6rem) 0;
+    }
+
+    h2 {
+        margin-bottom: 1.2rem;
+        text-transform: uppercase;
+        font-size: 3.2rem;
+
+        & + p {
+            margin-top: 0;
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3.2rem;
+
+    a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: $default-text;
+        margin-top: 1.6rem;
+        position: relative;
+
+        img {
+            display: inline-block;
+            height: 100px;
+            margin-bottom: 1.2rem;
+            image-rendering: pixelated;
+        }
+
+        &:hover {
+            color: $teal;
+
+            strong {
+                color: $teal;
+            }
+
+            img {
+                filter: drop-shadow(0 0 12px rgba($teal, 0.8));
+            }
+        }
+
+        strong {
+            color: white;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            line-height: 2rem;
+            display: block;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-top: 0.4rem;
+        }
+    }
 }
 
 .info {

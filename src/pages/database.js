@@ -4,9 +4,7 @@ import { Link } from "gatsby";
 import config from "../../data/SiteConfig";
 import SEO from "../components/SEO";
 import Layout from "../layout";
-import { pageHeader, databaseHeader, description, info, play, build } from "./Database.module.scss";
-// import GradientTitle from "../components/GradientTitle"
-// import database from "../images/database.png"
+import { pageHeader, databaseHeader, description, info, play, build, grid } from "./Database.module.scss";
 
 const Database = () => (
   <Layout>
@@ -29,10 +27,27 @@ const Database = () => (
 
       <p>Learn about the game.</p>
 
-      <Link to="/database/characters/">Characters</Link>
-      <Link to="/database/weapons/">Weapons</Link>
-      <Link to="/database/enemies/">Enemies</Link>
-      <Link to="/database/items/">Items</Link>
+      <div className={grid}>
+        <Link to="/database/characters/">
+          <strong>Characters</strong>
+          <p>Heros and villains you'll encounter in the story</p>
+        </Link>
+        <Link to="/database/enemies/">
+          <img src="/images/profiles/stormtrooper.png" alt="" />
+          <strong>Enemies</strong>
+          <p>What you'll be using for target practice</p>
+        </Link>
+        <Link to="/database/weapons/">
+          <img src="/images/weapons/detonator-belt.png" alt="" />
+          <strong>Weapons</strong>
+          <p>Everything you'll need to fight the Empire</p>
+        </Link>
+        <Link to="/database/items/">
+          <img src="/images/items/shield.png" alt="" />
+          <strong>Items</strong>
+          <p>Equipment and powerups you'll use in your adventures</p>
+        </Link>
+      </div>
     </section>
 
     <section className={play}>
@@ -40,10 +55,25 @@ const Database = () => (
 
       <p>Everything you need to step into Kyle Katarn's boots and start blasting stormtroopers.</p>
 
-      <Link to="/database/demo/">Demo</Link>
-      <Link to="/database/get-dark-forces">Get Dark Forces</Link>
-      <Link to="/database/launch-missions/">Launch Custom Missions</Link>
-      <Link to="/database/cheats/">Cheat Codes</Link>
+      <div className={grid}>
+        <Link to="/database/demo/">
+          <strong>Demo</strong>
+          <p>Try out the first mission where you steal the Death Star plans</p>
+        </Link>
+        <Link to="/database/get-dark-forces">
+          <img src="/images/box-cover.jpg" alt="" />
+          <strong>Get Dark Forces</strong>
+          <p>Purchase and download the full game and battle the Dark Trooper threat</p>
+        </Link>
+        <Link to="/database/launch-missions/">
+          <img src="/images/reviews.png" alt="" />
+          <strong>Launch Custom Missions</strong>
+          <p>All you need to embark on new adventures</p>
+        </Link>
+        <Link to="/database/cheats/">
+          <strong>Cheat Codes</strong>
+          <p>For fun, or when you need a little help</p></Link>
+      </div>
     </section>
 
     <section className={build}>
@@ -51,8 +81,17 @@ const Database = () => (
 
       <p>Get started building your own Dark Forces missions or components.</p>
 
-      <Link to="/database/tools/">Tools</Link>
-      <Link to="/database/specs/">Tech Specs</Link>
+      <div className={grid}>
+        <Link to="/database/tools/">
+          <strong>Tools</strong>
+          <p>Editors for making your own missions and components</p>
+        </Link>
+        <Link to="/database/specs/">
+          <img src="/images/database.png" alt="" />
+          <strong>Tech Specs</strong>
+          <p>Dive into the details of how Dark Forces works</p>
+        </Link>
+      </div>
     </section>
   </Layout>
 );

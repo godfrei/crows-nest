@@ -39,7 +39,6 @@ export default () => {
           </li>
           <li><strong>Database</strong>
             <ul>
-              <li><Link to="/database/history/">Dark Forces History</Link></li>
               <li><Link to="/database/characters/">Characters</Link></li>
               <li><Link to="/database/enemies/">Enemies</Link></li>
               <li><Link to="/database/weapons/">Weapons</Link></li>
