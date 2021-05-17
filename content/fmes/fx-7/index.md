@@ -6,6 +6,6 @@ authors:
 date: 1995-06-25
 filename: "fx-7.zip"
 component_type: "fme"
-cover:
+cover: "fx-7.png"
 description: "A FME of everyone's favorite medical assistant droid, FX-7."
 ---

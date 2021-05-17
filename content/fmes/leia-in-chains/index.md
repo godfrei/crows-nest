@@ -6,6 +6,6 @@ authors:
 date: 1995-10-29
 filename: "leiajail.zip"
 component_type: "fme"
-cover:
+cover: "leia-in-chains.png"
 description: "Princess Leia Organa in chains."
 ---

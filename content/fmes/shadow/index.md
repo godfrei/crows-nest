@@ -6,6 +6,6 @@ authors:
 date: 1995-06-29
 filename: "shadow.zip"
 component_type: "fme"
-cover:
-description: "Random FMEs, including a couple R2 droids, a keg, and a toilet."
+cover: "tentacle.png"
+description: "Random FMEs, including a couple R2 droids, some plants, and a toilet."
 ---

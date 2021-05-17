@@ -6,6 +6,6 @@ authors:
 date: 1995-11-13
 filename: "rebpack.zip"
 component_type: "fme"
-cover:
+cover: "join-alliance.png"
 description: "A collection of textures and objects with a Rebel theme, including keys and comlink, and a Mon Calamari."
 ---
