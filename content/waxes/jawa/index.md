@@ -7,6 +7,6 @@ authors:
 date: 1995-10-31
 filename: "jawawax.zip"
 component_type: "wax"
-cover:
+cover: "jawa.png"
 description: "Jawa."
 ---

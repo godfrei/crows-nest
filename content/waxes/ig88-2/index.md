@@ -6,6 +6,6 @@ authors:
 date: 1996-02-25
 filename: "ig88ver1.zip"
 component_type: "wax"
-cover:
+cover: "ig88ver1.png"
 description: "A brand new IG-88 bounty hunter droid WAX."
 ---

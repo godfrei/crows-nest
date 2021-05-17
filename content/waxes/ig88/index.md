@@ -7,6 +7,6 @@ authors:
 date: 1996-01-31
 filename: "ig88.zip"
 component_type: "wax"
-cover:
+cover: "ig88.png"
 description: "A conversion of an IG-88 originally made by Jamie Evans for DOOM."
 ---
