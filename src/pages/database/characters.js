@@ -23,6 +23,8 @@ const Characters = () => (
 
         <h2>Jan Ors</h2>
 
+        <img src="/images/characters/jan-ors.png" alt="Jan Ors as she appears in the game, standing with hands on hips." />
+
         <h2>Mon Mothma</h2>
 
         <h2>Darth Vader</h2>
@@ -31,7 +33,11 @@ const Characters = () => (
 
         <h2>Moff Reebus</h2>
 
+        <img src="/images/characters/mof-rebus.png" alt="Moff Rebus as he appears in the game, seated holding a blaster rifle." />
+
         <h2>Crix Madine</h2>
+
+        <img src="/images/characters/crix-madine.png" alt="Crix Madine as he appears in the game, standing with his hands secured behind him." />
 
         <h2>Boba Fett</h2>
 

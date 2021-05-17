@@ -57,6 +57,7 @@ const Database = () => (
 
       <div className={grid}>
         <Link to="/database/demo/">
+          <img src="/images/items/death-star-plans.png" alt="" />
           <strong>Demo</strong>
           <p>Try out the first mission where you steal the Death Star plans</p>
         </Link>
@@ -71,6 +72,7 @@ const Database = () => (
           <p>All you need to embark on new adventures</p>
         </Link>
         <Link to="/database/cheats/">
+          <img src="/images/items/code-card.png" alt="" />
           <strong>Cheat Codes</strong>
           <p>For fun, or when you need a little help</p></Link>
       </div>
@@ -83,6 +85,7 @@ const Database = () => (
 
       <div className={grid}>
         <Link to="/database/tools/">
+          <img src="/images/items/gear.png" alt="" />
           <strong>Tools</strong>
           <p>Editors for making your own missions and components</p>
         </Link>
