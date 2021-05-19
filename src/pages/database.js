@@ -29,6 +29,7 @@ const Database = () => (
 
       <div className={grid}>
         <Link to="/database/characters/">
+          <img src="/images/characters/kyle-katarn.png" alt="" />
           <strong>Characters</strong>
           <p>Heros and villains you'll encounter in the story</p>
         </Link>

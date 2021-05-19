@@ -21,15 +21,23 @@ const Characters = () => (
 
         <h2>Kyle Katarn</h2>
 
+        <img src="/images/characters/kyle-katarn.png" alt="Kyle Katarn as he appears in the game, his face stern while listening to a briefing from Mon Mothma." />
+
         <h2>Jan Ors</h2>
 
         <img src="/images/characters/jan-ors.png" alt="Jan Ors as she appears in the game, standing with hands on hips." />
 
         <h2>Mon Mothma</h2>
 
+        <img src="/images/characters/mon-mothma.png" alt="Mon Mothma as she appears in the game, providing a briefing to Kyle Katarn." />
+
         <h2>Darth Vader</h2>
 
+        <img src="/images/characters/vader.png" alt="Darth Vader as he appears in the game." />
+
         <h2>General Mohc</h2>
+
+        <img src="/images/characters/mohc.png" alt="General Mohc as he appears in the game." />
 
         <h2>Moff Reebus</h2>
 
@@ -37,11 +45,13 @@ const Characters = () => (
 
         <h2>Crix Madine</h2>
 
-        <img src="/images/characters/crix-madine.png" alt="Crix Madine as he appears in the game, standing with his hands secured behind him." />
+        <img src="/images/characters/crix-madine.png" alt="Crix Madine as he appears in the game, standing with his hands secured in front of him." />
 
         <h2>Boba Fett</h2>
 
         <h2>Jabba the Hutt</h2>
+
+        <img src="/images/characters/jabba.png" alt="Jabba the Hutt as he appears in the game, a hologram projection." />
 
       </article>
     </div>
