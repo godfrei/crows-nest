@@ -28,7 +28,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <title>{`${post.title} | ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <div class="text">
+      <div className="text">
         <article>
           <img src={cover} className={coverClass} alt="" />
           <h1>{post.title}</h1>

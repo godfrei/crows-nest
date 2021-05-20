@@ -10,13 +10,13 @@ const TopPost = ({ post }) => {
   const description = post.node.frontmatter.description || post.node.excerpt;
 
   return (
-    <Link to={`/${post.node.fields.slug}`} key={post.title} class={top}>
+    <Link to={`/${post.node.fields.slug}`} key={post.title} className={top}>
       <article>
         <div
           className={cover}
           style={{ backgroundImage: `url(${coverUrl})` }}
         ></div>
-        <div class={content}>
+        <div className={content}>
           <h1>{post.node.frontmatter.title}</h1>
 
           <div>{post.node.fields.date}</div>
