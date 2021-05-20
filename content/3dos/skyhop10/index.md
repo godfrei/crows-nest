@@ -1,6 +1,6 @@
 ---
 component_id: skyhop10
-title: "Lambda-class Shuttle with Wings Spread"
+title: "T-16 Skyhopper"
 authors: 
     - "Tony Benge"
 date: 1995-12-31

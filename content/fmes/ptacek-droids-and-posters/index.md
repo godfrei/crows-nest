@@ -1,5 +1,5 @@
 ---
-slug: "ptacek-more-droids"
+slug: "droids-and-posters"
 title: "Droids and Posters"
 authors: 
     - "Ales Ptacek"
