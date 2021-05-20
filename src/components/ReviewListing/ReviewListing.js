@@ -34,7 +34,7 @@ const ReviewListing = () => {
     <ul className={reviewGrid}>
       {data.allMarkdownRemark.nodes.map((review) => {
         return (
-          <li>
+          <li key={`${review.frontmatter.mission.slug}-${review.frontmatter.authors.toString()}`}>
             <ReviewCard review={review} />
           </li>
         );

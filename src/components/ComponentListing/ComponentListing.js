@@ -7,7 +7,7 @@ const ComponentListing = ({ edges }) => {
     <ul className={componentList}>
       {edges.map((edge) => {
         return (
-          <li>
+          <li key={edge.node.fields.slug}>
             <ComponentCard node={edge.node} />
           </li>
         );

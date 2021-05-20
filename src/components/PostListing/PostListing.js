@@ -32,7 +32,7 @@ const PostListing = ({ postEdges }) => {
           ? post.cover.publicURL
           : "/images/dark-forces-cover.jpg";
         return (
-          <li>
+          <li key={post.path}>
             <Card link={`/${post.path}`} title={post.title} coverURL={coverUrl}>
               <div className="secondary">
                 <Tag text="Blog" />
