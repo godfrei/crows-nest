@@ -5,6 +5,7 @@ import EditorsChoice from "../EditorsChoice";
 import { search, input, results as resultsClass, empty, result, missionClass, blogClass, componentClass, ecClass, type, selectedClass } from "./search.module.scss";
 
 const keyCodes = {
+  9: 'tab',
   13: 'enter',
   27: 'escape',
   32: 'space',
@@ -27,8 +28,9 @@ export default class Search extends Component {
     this.handleDownArrow = this.handleDownArrow.bind(this);
     this.handleEnter = this.handleEnter.bind(this);
     this.handleEsc = this.handleEsc.bind(this);
-    // this.handleBlur = this.handleBlur.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
+    this.handleTab = this.handleTab.bind(this);
 
     this.inputRef = React.createRef();
   }
@@ -114,6 +116,7 @@ export default class Search extends Component {
   }
 
   handleKeyDown = (event) => {
+    // console.log(event);
     switch (keyCodes[event.keyCode]) {
       case "down":
         this.handleDownArrow(event);
@@ -126,6 +129,9 @@ export default class Search extends Component {
         break;
       case "escape":
         this.handleEsc(event);
+        break;
+      case "tab":
+        this.handleTab(event);
         break;
       default:
         break;
@@ -146,9 +152,15 @@ export default class Search extends Component {
   }
 
   handleBlur = (event) => {
-    this.setState({
-      menuOpen: false,
-    });
+    if(!event.relatedTarget) {
+      this.setState({
+        menuOpen: false,
+      });
+    }
+  }
+
+  handleTab = (event) => {
+    // console.log(event);
   }
 
   handleFocus = (event) => {
@@ -201,7 +213,7 @@ export default class Search extends Component {
           className={input}
           placeholder="Search"
           ref={this.inputRef}
-          // onBlur={this.handleBlur}
+          onBlur={this.handleBlur}
           onFocus={this.handleFocus}
         />
         {menuOpen && (
