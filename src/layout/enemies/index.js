@@ -135,12 +135,12 @@ const EnemiesLayout = ({ children }) => {
           <ul className={navigation}>
             <li>
               <Link to="/database/enemies/qs-100-welding-arm" {...linkProps}>
-                QS100 Welding Arm
+                <img src="/images/profiles/welder.png" alt="QS100 Welding Arm" />
               </Link>
             </li>
             <li>
               <Link to="/database/enemies/gun-turret" {...linkProps}>
-                Gun Turret
+                <img src="/images/profiles/turret.png" alt="Gun Turret" />
               </Link>
             </li>
             <li>
@@ -156,7 +156,7 @@ const EnemiesLayout = ({ children }) => {
             </li>
             <li>
               <Link to="/database/enemies/mousebot" {...linkProps}>
-                Mousebot
+                <img src="/images/profiles/mousebot.png" alt="Mousebot" />
               </Link>
             </li>
           </ul>
