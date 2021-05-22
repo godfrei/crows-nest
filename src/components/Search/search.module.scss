@@ -3,9 +3,75 @@
 .search {
     display: flex;
     justify-self: start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: background-color 0.2s ease;
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 100;
+
+    &.open {
+        background-color: rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+        transition: background-color 0.2s ease;
+        pointer-events: auto;
+    }
+}
+
+.toggleButton {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 101;
+    height: 44px;
+    width: 44px;
+    padding: 8px;
+    -webkit-appearance: none;
+    border: none;
+    color: $default-text;
+    font-weight: 900;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 766px) {
+    .searchForm {
+        background-color: $gray;
+        padding: 24px 16px 12px;
+        height: 9.6rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-100%);
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+
+        .open & {
+            // transition: all 0.2s ease;
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+.searchLabel {
+    margin-bottom: 4px;
+
+    @media screen and (min-width: 767px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
 }
 
 .input {
@@ -25,25 +91,41 @@
 
 @media screen and (min-width: 767px) {
     .search {
+        display: block;
         position: relative;
         padding: 8px 24px;
         width: 100%;
         grid-column: 3 / 4;
+        pointer-events: auto;
+    }
+
+    .searchForm {
+        display: block;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .toggleButton {
+        display: none;
     }
 }
 
 .results {
     position: absolute;
-    top: 42px;
-    right: 24px;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    top: 9.6rem;
     z-index: 10;
-    background-color: $gray;
-    // backdrop-filter: blur(5px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.8);
-    border: 1px solid $glow-border;
     padding: 0;
     margin: 0;
-    border-radius: 0.2rem;
+    display: none;
+
+    .open & {
+        display: block;
+        bottom: 0;
+    }
 
     &:empty {
         display: none;
@@ -65,6 +147,19 @@
 
     li + li {
         border-top: 1px solid $glow-border;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .results {
+        display: block;
+        top: 42px;
+        right: 24px;
+        bottom: auto;
+        background-color: $gray;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+        border: 1px solid $glow-border;
+        border-radius: 0.2rem;
     }
 }
 

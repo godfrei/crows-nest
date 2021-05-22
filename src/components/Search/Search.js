@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Index } from "elasticlunr";
 import { Link, navigate } from "gatsby";
 import EditorsChoice from "../EditorsChoice";
-import { search, input, results as resultsClass, empty, result, missionClass, blogClass, componentClass, ecClass, type, selectedClass } from "./search.module.scss";
+import { search, input, results as resultsClass, empty, result, missionClass, blogClass, componentClass, ecClass, type, selectedClass, searchForm, open, searchLabel, toggleButton } from "./search.module.scss";
 
 const keyCodes = {
   9: 'tab',
@@ -21,6 +21,7 @@ export default class Search extends Component {
       results: [],
       selectedResult: null,
       menuOpen: false,
+      searchOpen: false,
     }
 
     this.handleKeyDown = this.handleKeyDown.bind(this);
@@ -31,6 +32,7 @@ export default class Search extends Component {
     this.handleBlur = this.handleBlur.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
     this.handleTab = this.handleTab.bind(this);
+    this.toggleSearch = this.toggleSearch.bind(this);
 
     this.inputRef = React.createRef();
   }
@@ -194,67 +196,85 @@ export default class Search extends Component {
     });
   }
 
+  toggleSearch = () => {
+    let { searchOpen } = this.state;
+    searchOpen = !searchOpen;
+    this.setState({
+      searchOpen: searchOpen,
+    });
+    if (searchOpen) this.inputRef.current.focus();
+  }
+
   render() {
-    const { selectedResult, query, results, menuOpen } = this.state;
+    const { selectedResult, query, results, menuOpen, searchOpen } = this.state;
+    const openClass = searchOpen ? open : '';
 
     return (
-      <div
-        className={search}
-        onKeyDown={this.handleKeyDown}
-      >
-        <label htmlFor="cn-search" className="sr-only">
-          Search The Crow's Nest
-        </label>
-        <input
-          id="cn-search"
-          type="text"
-          value={query}
-          onChange={this.search}
-          className={input}
-          placeholder="Search"
-          ref={this.inputRef}
-          onBlur={this.handleBlur}
-          onFocus={this.handleFocus}
-        />
-        {menuOpen && (
-          <div
-            role="listbox"
-            aria-live="polite"
-            aria-atomic="true"
-            className={resultsClass}
-          >
-            {(!results || results.length === 0) && query !== "" && (
-              <p className={empty}>No results found.</p>
-            )}
-            {results.length > 0 && menuOpen && (
-              <ul>
-                {results.map((page, index) => {
-                  const selected = selectedResult === index ? selectedClass : '';
-                  return (
-                    <li
-                      key={page.id}
-                      role="option"
-                      className={`${result} ${selected}`}
-                    >
-                      <Link to={"/" + page.path}>
-                        <div className={type}>
-                          {this.getTag(page.path)}
-                        </div>
-                        <div>
-                          <strong>{page.title}</strong>
-                          <small>{page.authors && page.authors.join(', ')}</small>
-                        </div>
-                        {this.getEditorsChoice(page)}
-                        {/* <img src={page.cover} alt="" /> */}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
+      <>
+        <button className={toggleButton} onClick={this.toggleSearch}>
+          <span>S</span>
+          <span className="sr-only">Toggle Search</span>
+        </button>
+        <div
+          className={`${search} ${openClass}`}
+          onKeyDown={this.handleKeyDown}
+        >
+          <div className={searchForm}>
+            <label htmlFor="cn-search" className={searchLabel}>
+              Search The Crow's Nest
+            </label>
+            <input
+              id="cn-search"
+              type="text"
+              value={query}
+              onChange={this.search}
+              className={input}
+              placeholder="Search"
+              ref={this.inputRef}
+              onBlur={this.handleBlur}
+              onFocus={this.handleFocus}
+            />
           </div>
-        )}
-      </div>
+          {menuOpen && (
+            <div
+              role="listbox"
+              aria-live="polite"
+              aria-atomic="true"
+              className={resultsClass}
+            >
+              {(!results || results.length === 0) && query !== "" && (
+                <p className={empty}>No results found.</p>
+              )}
+              {results.length > 0 && menuOpen && (
+                <ul>
+                  {results.map((page, index) => {
+                    const selected = selectedResult === index ? selectedClass : '';
+                    return (
+                      <li
+                        key={page.id}
+                        role="option"
+                        className={`${result} ${selected}`}
+                      >
+                        <Link to={"/" + page.path}>
+                          <div className={type}>
+                            {this.getTag(page.path)}
+                          </div>
+                          <div>
+                            <strong>{page.title}</strong>
+                            <small>{page.authors && page.authors.join(', ')}</small>
+                          </div>
+                          {this.getEditorsChoice(page)}
+                          {/* <img src={page.cover} alt="" /> */}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+            </div>
+          )}
+        </div>
+      </>
     )
   }
 }
