@@ -21,7 +21,9 @@
     }
 
     header[class^=Header] {
-        padding-top: 52px; /* 48 + 4 */
+        > div {
+            padding-top: 52px; /* 48 + 4 */
+        }
 
         > div > a:first-child {
             display: none;
@@ -84,7 +86,7 @@
 
 @media screen and (min-width: 767px) {
     .home {
-        header[class^=Header] {
+        header[class^=Header] > div {
             padding-top: 0px;
         }
 
