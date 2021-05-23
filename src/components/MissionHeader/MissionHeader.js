@@ -27,7 +27,7 @@ const MissionHeader = ({ node }) => {
 
   return (
     <header className={header}>
-      <div className={`content ${content}`}>
+      {/* <div className={`content ${content}`}> */}
         <div className={headGroup}>
           <h1>
             <Aurebesh text={node.title} />
@@ -36,7 +36,7 @@ const MissionHeader = ({ node }) => {
           <AuthorLinks node={node} />
         </div>
         <div className={awards}>{getEditorsChoice(node)}</div>
-      </div>
+      {/* </div> */}
     </header>
   );
 };

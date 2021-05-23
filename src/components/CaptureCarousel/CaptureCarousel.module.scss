@@ -5,8 +5,10 @@
 
 @media screen and (min-width: 767px) {
     :root {
-        --captureWidth: 669px;
-        --captureHeight: 418px;
+        // --captureWidth: 669px;
+        // --captureHeight: 418px;
+        --captureWidth: 517px;
+        --captureHeight: 323px;
     }
 }
 
@@ -26,6 +28,14 @@
     height: var(--captureHeight);
     overflow: hidden;
     margin: auto;
+
+    // @media screen and (min-width: 767px) {
+    //     margin-left: -48px;
+    // }
+
+    // @media screen and (min-width: 1023px) {
+    //     margin-left: 0;
+    // }
 
     button {
         -webkit-appearance: none;

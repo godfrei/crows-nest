@@ -17,11 +17,18 @@
 }
 
 .components {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+
     li {
         img {
             width: 12px;
             display: inline-block;
             margin-right: 5px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }

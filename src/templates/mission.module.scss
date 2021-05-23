@@ -2,22 +2,22 @@
 @import '../styles/vars';
 
 .mission {
-    grid-column: 1  / -1;
+    // grid-column: 1  / -1;
     position: relative;
     z-index: 1;
-    margin-left: -16px;
-    margin-right: -16px;
-    padding: 30vh 16px 0;
-    background-image: linear-gradient(to bottom, transparent 10vh, $black 40vh);
+    padding: 25vh 0 0;
+    // background-image: linear-gradient(to bottom, transparent 10vh, $black 40vh);
 
     &:after {
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
+        left: -16px;
+        right: -16px;
         content: "";
         display: block;
         bottom: 0;
+        z-index: 1;
+        background-image: linear-gradient(to bottom, transparent 20vh, $black 28vh);
     }
 
     h2 {
@@ -30,6 +30,11 @@
     h2 + ul {
         margin-top: 0;
     }
+}
+
+.descAndReviews, .supplemental {
+    position: relative;
+    z-index: 2;
 }
 
 .meta {
@@ -80,8 +85,8 @@
 }
 
 .coverImage {
-    position: absolute;
-    top: 4px;
+    position: fixed;
+    top: 0px;
     left: 0;
     right: 0;
     height: 40vh;
@@ -101,8 +106,28 @@
 
 @media screen and (min-width: 767px) {
     .mission {
-        padding: 25vh calc(5% + 3.2rem) $spacing-8;
-        background-image: linear-gradient(to bottom, transparent 25vh, $black 50vh);
+        display: contents;
+        // margin: 0;
+        // padding: 25vh calc(5% + 3.2rem) $spacing-8;
+        // background-image: linear-gradient(to bottom, transparent 25vh, $black 50vh);
+
+        &:after {
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(to bottom, transparent 35vh, $black 58vh);
+        }
+    }
+
+    .descAndReviews, .supplemental {
+        grid-row: 2;
+    }
+
+    .descAndReviews {
+        grid-column: 2 / 4;
+    }
+
+    .supplemental {
+        grid-column: 4 / 5;
     }
 
     .coverImage {
@@ -115,6 +140,6 @@
 
 @media screen and (min-width: 1023px) {
     .descAndReviews {
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
     }
 }

@@ -47,13 +47,11 @@ const RelatedMissions = ({ origMission }) => {
     if (relatedMissions.length <= 0) return null;
     return (
         <div className={related}>
-            <div className="content">
-                <section>
-                    <h2>Related Missions</h2>
-                    <p>Enjoy {origMission.title}? Check out these other missions by the same author(s).</p>
-                    <MissionListing missionNodes={relatedMissions.slice(0,2)} />
-                </section>
-            </div>
+            <section>
+                <h2>Related Missions</h2>
+                <p>Enjoy {origMission.title}? Check out these other missions by the same author(s).</p>
+                <MissionListing missionNodes={relatedMissions.slice(0,2)} />
+            </section>
         </div>
     )
 }

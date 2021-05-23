@@ -19,6 +19,7 @@ import {
   coverImage,
   missionRating,
   meta,
+  supplemental,
 } from "./mission.module.scss";
 
 const MissionTemplate = ({ data }) => {
@@ -122,20 +123,18 @@ const MissionTemplate = ({ data }) => {
       ></div>
       <div className={mission}>
         <MissionHeader node={missionNode} />
-        <div className="content">
-          <div className={descAndReviews}>
-            <h2>Description</h2>
-            <p className={plot}>{missionNode.description}</p>
-            {missionNode.screenshots.length > 0 ? (
-              <CaptureCarousel captures={missionNode.screenshots} />
-            ) : null}
-            <h2>Review</h2>
-            {getReviewContent(missionNode.reviews)}
-          </div>
-          <div className="supplemental">
-            {getDownloadLink(missionNode)}
-            <TechSpecs node={missionNode} />
-          </div>
+        <div className={descAndReviews}>
+          <h2>Description</h2>
+          <p className={plot}>{missionNode.description}</p>
+          {missionNode.screenshots.length > 0 ? (
+            <CaptureCarousel captures={missionNode.screenshots} />
+          ) : null}
+          <h2>Review</h2>
+          {getReviewContent(missionNode.reviews)}
+        </div>
+        <div className={supplemental}>
+          {getDownloadLink(missionNode)}
+          <TechSpecs node={missionNode} />
         </div>
       </div>
       <RelatedMissions origMission={missionNode} />

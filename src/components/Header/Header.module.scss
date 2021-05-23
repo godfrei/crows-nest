@@ -5,7 +5,7 @@
 .header {
   position: relative;
   z-index: 103;
-  width: 100%;
+  width: 100vw;
   background-color: $gray;
 
   > div {
@@ -39,7 +39,7 @@
     position: fixed;
 
     > div {
-      width: 100%;
+      width: 100vw;
       max-width: $max-width;
       margin: auto;
       display: grid;
