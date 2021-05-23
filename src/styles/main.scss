@@ -174,7 +174,7 @@ code {
         right: 8px;
         width: calc(100vw - 16px);
         max-width: $max-width;
-        bottom: 32px;
+        bottom: 24px;
         z-index: 100;
         border: 2px solid rgba(255,255,255,0.8);
         border-radius: 20px;
@@ -189,7 +189,7 @@ code {
             top: 64px;
             left: -32px;
             right: -32px;
-            bottom: 8px;
+            bottom: 0px;
             width: calc(100% + 32px);
             max-width: calc(#{$max-width} + 48px);
             border: 14px solid $black;
