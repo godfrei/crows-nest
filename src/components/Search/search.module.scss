@@ -134,8 +134,9 @@
     .search {
         display: block;
         position: relative;
-        padding: 8px 24px;
-        width: 100%;
+        padding: 8px 0;
+        margin-left: 24px;
+        width: calc(100% - 48px);
         grid-column: 3 / 4;
         pointer-events: auto;
     }
@@ -149,6 +150,13 @@
 
     .toggleButton {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .search {
+        margin-left: 72px;
+        width: calc(100% - 96px);
     }
 }
 
@@ -194,17 +202,21 @@
 @media screen and (min-width: 767px) {
     .results {
         display: block;
+        left: auto;
         top: 42px;
-        right: 24px;
+        // right: 24px;
         bottom: auto;
         background-color: $gray;
         box-shadow: 0 5px 20px rgba(0,0,0,0.8);
         border: 1px solid $glow-border;
         border-radius: 0.2rem;
+        width: max-content;
+        min-width: 100%;
     }
 }
 
 .empty {
+    font-size: 1.4rem;
     font-style: italic;
     color: $glow-border;
     margin: 10px;
