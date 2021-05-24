@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import { active, navigation } from "./navigation.module.scss";
-import launchPad from "../../images/launch_pad.png";
-import reviewList from "../../images/reviews.png";
-import storage from "../../images/storage.png";
-import database from "../../images/database.png";
 
 export default () => {
   const linkProps = {
