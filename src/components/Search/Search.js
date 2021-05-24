@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Index } from "elasticlunr";
 import { Link, navigate } from "gatsby";
 import EditorsChoice from "../EditorsChoice";
-import { search, input, results as resultsClass, empty, result, missionClass, blogClass, componentClass, ecClass, type, selectedClass, searchForm, open, searchLabel, toggleButton } from "./search.module.scss";
+import { search, input, results as resultsClass, empty, result, missionClass, blogClass, componentClass, ecClass, type, selectedClass, searchForm, open, searchLabel, toggleButton, line1, line2, circle } from "./search.module.scss";
 
 const keyCodes = {
   9: 'tab',
@@ -211,8 +211,12 @@ export default class Search extends Component {
 
     return (
       <>
-        <button className={toggleButton} onClick={this.toggleSearch}>
-          <span>S</span>
+        <button className={`${toggleButton} ${openClass}`} onClick={this.toggleSearch}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path className={circle} d="M35.22 6c16.112 0 29.22 13.108 29.22 29.22S51.332 64.44 35.22 64.44 6 51.332 6 35.22 19.108 6 35.22 6m0-6C15.769 0 0 15.769 0 35.22s15.769 35.22 35.22 35.22 35.22-15.769 35.22-35.22S54.672 0 35.22 0z"/>
+            <path className={line1} fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" d="M97.775 97.775L57.799 57.799"/>
+            <path className={line2} fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" d="M97.775 97.775L57.799 57.799"/>
+          </svg>
           <span className="sr-only">Toggle Search</span>
         </button>
         <div
