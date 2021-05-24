@@ -35,13 +35,19 @@
 @media screen and (min-width: 767px) {
     .article-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 2rem;
         margin-top: 2rem;
 
         li {
             margin-bottom: 0;
         }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .article-list {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
 }
 
