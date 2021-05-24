@@ -260,6 +260,46 @@
         "caption": "Poor texture decisions and the addition of dozens of new files weigh this level down."
     },
     {
+        "mission": "mt-kurek",
+        "file": "./images/kurek1.png",
+        "caption": "Inventive new ways to use the Dark Forces engine abound in this mission."
+    },
+    {
+        "mission": "mt-kurek",
+        "file": "./images/kurek2.png",
+        "caption": "The combination of sound design and elaborate INF programming brings the environment to life."
+    },
+    {
+        "mission": "mt-kurek",
+        "file": "./images/kurek3.png",
+        "caption": "Mission Imp... erial?"
+    },
+    {
+        "mission": "mt-kurek",
+        "file": "./images/kurek5.png",
+        "caption": "New VUEs make the cloning facility feel like an active base, not a ghost town."
+    },
+    {
+        "mission": "mt-kurek",
+        "file": "./images/kurek6.png",
+        "caption": "Each area feels lovingly and uniquely crafted."
+    },
+    {
+        "mission": "mt-kurek",
+        "file": "./images/kurek8.png",
+        "caption": "We've seen many of these kinds of places before, but never with this level of detail and custom work."
+    },
+    {
+        "mission": "mt-kurek",
+        "file": "./images/kurek9.png",
+        "caption": "The story unfolds as you progress through the mission, giving you an enhanced sense of urgency to complete your objectives."
+    },
+    {
+        "mission": "mt-kurek",
+        "file": "./images/kurek11.png",
+        "caption": "What exactly is going on within the Mt. Kurek facility?"
+    },
+    {
         "mission": "night-raid",
         "file": "./images/niteraid.png",
         "caption": "This area might look nice but it serves no purpose other than to slow down the computer."
