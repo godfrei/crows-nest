@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import { top, cover, content } from "./TopPost.module.scss";
+import Tag from "../Tag";
+import Aurebesh from "../Aurebesh";
+import { top, cover, content, tag } from "./TopPost.module.scss";
 
 const TopPost = ({ post }) => {
   const coverUrl = post.node.frontmatter.cover
@@ -11,15 +13,18 @@ const TopPost = ({ post }) => {
 
   return (
     <Link to={`/${post.node.fields.slug}`} key={post.title} className={top}>
+      <div
+        className={cover}
+        style={{ backgroundImage: `url(${coverUrl})` }}
+      ></div>
       <article>
-        <div
-          className={cover}
-          style={{ backgroundImage: `url(${coverUrl})` }}
-        ></div>
         <div className={content}>
-          <h1>{post.node.frontmatter.title}</h1>
+          <h1>
+            <Aurebesh text={post.node.frontmatter.title} />
+            {post.node.frontmatter.title}
+          </h1>
 
-          <div>{post.node.fields.date}</div>
+          <Tag type="post" text="Blog" className={tag} /> <small>{post.node.fields.date}</small>
 
           <p>{description}</p>
           {/* <div dangerouslySetInnerHTML={{ __html: post.node.html }} /> */}
