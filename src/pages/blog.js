@@ -15,6 +15,8 @@ const posts = ({ data }) => (
       <div className={description}>
         <h1>Blog</h1>
         <p>The latest updates about the Nest, coupled with thoughts from an old level-reviewer.</p>
+
+        <p>There are a few vintage entries from 1997 kept around for nostalgia's sake. Odds are there's nothing to see there. Move along.</p>
       </div>
     </div>
 

@@ -1,0 +1,8 @@
+@import '../../styles/pageHeader';
+
+.pageHeader {
+    &:before {
+        background-image: url('/images/award.png');
+        image-rendering: pixelated;
+    }
+}

@@ -17,7 +17,7 @@ const Database = () => (
         <h1>Database</h1>
 
         <p>
-          Information about <em>Dark Forces</em>, how to play it, and how to build for it.
+          Looking to learn more about <em>Dark Forces</em>? The database has information on how to get it, important details to keep in mind when playing it, and once you're ready to contribute to the wealth of community-created content you can find more on how to build for it.
         </p>
       </div>
     </div>
