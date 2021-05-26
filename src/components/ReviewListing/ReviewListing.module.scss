@@ -1,0 +1,32 @@
+
+.reviewGrid {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 2em;
+
+    li {
+        list-style: none;
+        position: relative;
+        margin-bottom: 2rem;
+        // max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .reviewGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+
+        li {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .reviewGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+}

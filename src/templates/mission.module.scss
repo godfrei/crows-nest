@@ -1,0 +1,145 @@
+@import '../styles/colors';
+@import '../styles/vars';
+
+.mission {
+    // grid-column: 1  / -1;
+    position: relative;
+    z-index: 1;
+    padding: 25vh 0 0;
+    // background-image: linear-gradient(to bottom, transparent 10vh, $black 40vh);
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: -16px;
+        right: -16px;
+        content: "";
+        display: block;
+        bottom: 0;
+        z-index: 1;
+        background-image: linear-gradient(to bottom, transparent 20vh, $black 28vh);
+    }
+
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    h2 + p,
+    h2 + ul {
+        margin-top: 0;
+    }
+}
+
+.descAndReviews, .supplemental {
+    position: relative;
+    z-index: 2;
+}
+
+.meta {
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.6);
+}
+
+.download {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    strong {
+        font-size: 2rem;
+        line-height: 1.2;
+        color: $teal;
+        text-decoration: underline;
+        display: block;
+        margin-bottom: 0.2em;
+    }
+}
+
+.missingFile {
+    margin-left: 20px;
+    margin-top: 20px;
+
+    strong {
+        color: $red;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-top: 0;
+        line-height: 1.4;
+        font-size: 1.4rem;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+.plot {
+    color: $gold;
+}
+
+.coverImage {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    // height: calc(100vh - 84px);
+    image-rendering: pixelated;
+    background-position: center;
+    // background-color: $teal;
+    background-size: cover;
+    // background-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+.missionRating {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 767px) {
+    .mission {
+        display: contents;
+        // margin: 0;
+        // padding: 25vh calc(5% + 3.2rem) $spacing-8;
+        // background-image: linear-gradient(to bottom, transparent 25vh, $black 50vh);
+
+        &:after {
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(to bottom, transparent 35vh, $black 58vh);
+        }
+    }
+
+    .descAndReviews, .supplemental {
+        grid-row: 2;
+    }
+
+    .descAndReviews {
+        grid-column: 2 / 4;
+    }
+
+    .supplemental {
+        grid-column: 4 / 5;
+    }
+
+    .coverImage {
+        position: fixed;
+        top: 88px;
+        height: 60vh;
+    }
+}
+
+
+@media screen and (min-width: 1023px) {
+    .descAndReviews {
+        grid-column: 3 / 4;
+    }
+}

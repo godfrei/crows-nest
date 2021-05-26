@@ -1,0 +1,70 @@
+@import '../../styles/colors';
+
+.editorsChoice {
+    display: block;
+    background-image: radial-gradient($black, transparent 70%, transparent);
+
+    .background {
+        fill: transparent;
+    }
+
+    text {
+        fill: $teal;
+        font-family: "Encode Sans Condensed", sans-serif;
+        font-weight: 800;
+    }
+
+    .crow {
+        fill: white;
+    }
+
+    .ring {
+        fill: $teal;
+    }
+}
+
+// .editorsChoice {
+//     float: left;
+//     position: relative;
+//     background-color: rgba($teal, 0.1);
+//     width: 145px;
+//     padding: 10px 10px;
+//     padding-right: 55px;
+//     line-height: 1.1;
+//     font-family: "Engravers Gothic";
+//     border: 1px solid rgba($teal, 0.5);
+//     border-radius: 4px;
+//     transition: border-color 0.2s ease;
+//     box-shadow: inset 0 0 2px black, inset 0 0 80px rgba(0,0,0,0.5);
+
+//     // position: absolute;
+//     // left: calc(50% + 26em - 10vw);
+//     // top: 3em;
+
+//     &:after {
+//         background-image: url("./editors_choice_crow.png");
+//         background-size: auto 45px;
+//         background-repeat: no-repeat;
+//         content: "";
+//         display: block;
+//         top: 0;
+//         right: 2px;
+//         bottom: 0;
+//         left: 0;
+//         position: absolute;
+//         background-position: right 45%;
+//     }
+
+//     &:link, &:visited {
+//         text-decoration: none;
+//     }
+
+//     &:hover {
+//         border-color: $teal;
+//     }
+
+//     strong {
+//         color: $teal;
+//         vertical-align: middle;
+//     }
+// }

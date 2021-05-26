@@ -1,0 +1,11 @@
+@import '../../styles/colors';
+
+.review {
+    clear: both;
+    margin-bottom: 40px;
+}
+
+.review + .review {
+    border-top: 1px solid $glow-border;
+    padding-top: 30px;
+}

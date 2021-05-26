@@ -1,0 +1,24 @@
+@import "../../styles/colors";
+
+.related {
+    background-color: $black;
+    position: relative;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 24px 16px;
+}
+
+@media screen and (min-width: 767px) {
+    .related {
+        padding: 24px calc(5% + 1.6rem);
+        grid-column: 1 / -1;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        section {
+            grid-column: 2 / 3;
+        }
+    }
+}

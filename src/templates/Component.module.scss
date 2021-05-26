@@ -1,0 +1,10 @@
+@import "../styles/vars";
+
+.component {
+    display: contents;
+    
+    article {
+        grid-column: 3 / 4;
+        padding-bottom: $spacing-8;
+    }
+}

@@ -1,0 +1,17 @@
+@import "../../styles/colors";
+
+.cover {
+    // position: relative;
+    image-rendering: pixelated;
+    background-size: auto 50vh;
+    background-repeat: no-repeat;
+    max-height: 100%;
+    filter: drop-shadow(0 0 32px rgba($blue,0.5));
+}
+
+@media screen and (min-width: 1023px) {
+    .enemyContent {
+        gap: 32px;
+        grid-template-columns: auto 140px;
+    }
+}

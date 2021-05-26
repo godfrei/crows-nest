@@ -1,0 +1,12 @@
+@import '../../styles/colors';
+
+.code {
+    font-size: 1rem;
+    color: #666;
+    font-family: Aurebesh, sans-serif;
+    font-display: optional;
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}

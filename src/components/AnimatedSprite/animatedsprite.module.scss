@@ -1,0 +1,20 @@
+
+
+.wax {
+    background-size: auto;
+    image-rendering: crisp-edges;
+    // Scale can be determined per use
+    // transform: scale(5);
+    transform-origin: top left;
+}
+
+.active {
+    animation: play 1s infinite;
+}
+
+
+
+@keyframes play {
+    0% { background-position: 0px 0px };
+    // The 100% value comes from the inline style which is provided by the component props
+}

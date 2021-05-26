@@ -1,0 +1,60 @@
+@import '../styles/pageHeader';
+
+.pageHeader {
+    &:before {
+        background-image: url('/images/vault-tunnel.jpg');
+    }
+}
+
+.typeClass {
+    background-color: rgba($amber, 0.2);
+    color: $amber;
+    padding: $spacing-2 $spacing-3;
+    font-size: 1.2rem;
+}
+
+.storageTable {
+    border-collapse: collapse;
+    border: none;
+    grid-row: 2;
+    grid-column: 2 / 5;
+
+    th {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: #AAA;
+        letter-spacing: 0.1rem;
+
+        &:first-child {
+            text-align: left;
+        }
+    }
+
+    th, td {
+        padding: $spacing-4 $spacing-5;
+        border: none;
+        border-collapse: collapse;
+        border-bottom: 1px solid $glow-border;
+    }
+
+    tr:hover td {
+        background-color: rgba($blue, 0.1);
+    }
+
+    a:link, a:visited {
+        font-weight: 600;
+        display: block;
+    }
+
+    td:first-child {
+        a:link, a:visited {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.authors {
+    color: #AAA;
+    font-size: 1.4rem;
+}

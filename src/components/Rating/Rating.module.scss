@@ -1,0 +1,21 @@
+@import '../../styles/colors';
+
+.rating {
+    span {
+        display: inline-block;
+        margin-right: 0.2em;
+    }
+}
+
+.ratingScore {
+    font-size: 1em;
+    line-height: 1;
+}
+
+.fullStar {
+    color: $amber;
+}
+
+.emptyStar {
+    color: #333;
+}

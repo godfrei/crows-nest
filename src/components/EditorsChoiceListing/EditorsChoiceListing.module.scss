@@ -1,0 +1,47 @@
+.ecGrid {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    
+
+    li {
+        position: relative;
+        margin-bottom: 2rem;
+        // max-width: 320px;
+        list-style: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .ecGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 2rem;
+
+        li {
+            max-width: 320px;
+            margin: 0;
+        }
+    }
+}
+
+/* Don't really like this, but I'm not sure how to keep things confined to a single row. */
+
+@media (max-width: 1519px) {
+    .ecGrid li:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 1249px) {
+    .ecGrid li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 975px) {
+    .ecGrid li:nth-child(3) {
+        display: none;
+    }
+}
