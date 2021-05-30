@@ -13,6 +13,7 @@ const MainLayout = ({ children }) => (
       }}
     >
       <meta name="description" content={config.siteDescription} />
+      <meta name="google-site-verification" content="uAijTXB2zExhw2d1VfsgzRkYs0rLSG-YcuTGByUQqA0" />
     </Helmet>
     <Header />
     <div className="cn-layout">
