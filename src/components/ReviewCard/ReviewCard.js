@@ -6,7 +6,7 @@ import { authorList } from "./ReviewCard.module.scss";
 
 const ReviewCard = ({ review, orientation }) => {
   const mission = review.frontmatter.mission;
-  const coverURL = mission.cover ? mission.cover.publicURL : defaultImage;
+  const coverURL = mission.cover ? mission.cover.publicURL : '';
 
   return (
     <Card link={`/missions/${mission.slug}`} coverURL={coverURL} title={mission.title} orientation={orientation} type="mission">
