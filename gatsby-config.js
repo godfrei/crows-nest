@@ -284,7 +284,7 @@ module.exports = {
                 // categories: edge.node.frontmatter.tags,
                 date: edge.node.fields.date,
                 title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
+                description: edge.node.frontmatter.description || edge.node.excerpt,
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + getGuidSuffix(edge),
                 custom_elements: [
@@ -310,6 +310,7 @@ module.exports = {
                     }
                     frontmatter {
                       title
+                      description
                       cover {
                         publicURL
                         internal {
