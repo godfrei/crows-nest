@@ -4,6 +4,8 @@ date: 1997-09-30
 authors: 
   - "Geoff Elliott"
 cover: hothexit.jpeg
+coverAlt: "Photo of a Rebel transport flying away from the planet Hoth."
+coverCredit: "Lucasfilm"
 categories:
 tags:
 ---

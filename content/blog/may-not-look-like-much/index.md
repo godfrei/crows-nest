@@ -5,6 +5,7 @@ authors:
   - "Geoff Elliott"
 cover: falcon-tools.jpg
 coverAlt: "Photo of an open maintenance grate on the Millenium Falcon with tools precariously perched nearby."
+coverCredit: "Lucasfilm"
 categories:
 tags:
 description: "On resurrecting a passion project in the middle of a pandemic."
