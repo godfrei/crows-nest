@@ -32,7 +32,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <article>
           <figure className={coverClass}>
             <img src={cover} alt={post.coverAlt} />
-            <figcaption>{post.coverCredit}</figcaption>
+            {post.coverCredit && (<figcaption>{post.coverCredit}</figcaption>)}
           </figure>
           
           <h1>{post.title}</h1>
