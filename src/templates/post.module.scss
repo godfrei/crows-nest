@@ -23,7 +23,6 @@
             transform: rotate(90deg);
             color: #757575;
             text-align: right;
-            padding-bottom: 4px;
             
             &:before {
                 content: "";
@@ -38,6 +37,10 @@
                 transform: rotate(-90deg);
                 position: relative;
                 top: -1px;
+            }
+
+            @media screen and (min-width: 767px) {
+                padding-bottom: 4px;
             }
         }
     }
