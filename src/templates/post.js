@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
+import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../layout";
 import PostTags from "../components/PostTags";
 import SEO from "../components/SEO";
@@ -18,7 +19,8 @@ const PostTemplate = ({ data, pageContext }) => {
   const postNode = data.markdownRemark;
   const post = postNode.frontmatter;
   const date = postNode.fields.date;
-  const cover = post.cover ? post.cover.publicURL : "";
+  // const cover = post.cover ? post.cover.publicURL : "";
+  const image = getImage(post.cover)
   if (!post.id) {
     post.id = slug;
   }
@@ -31,7 +33,7 @@ const PostTemplate = ({ data, pageContext }) => {
       <div className="text">
         <article>
           <figure className={coverClass}>
-            <img src={cover} alt={post.coverAlt} />
+            <GatsbyImage image={image} alt={post.coverAlt} />
             {post.coverCredit && (<figcaption>{post.coverCredit}</figcaption>)}
           </figure>
           
@@ -74,7 +76,9 @@ export const pageQuery = graphql`
         title
         date
         cover {
-          publicURL
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          },
         }
         coverAlt
         coverCredit
