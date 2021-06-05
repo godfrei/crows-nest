@@ -311,13 +311,63 @@
     },
     {
         "mission": "operation-archangel-episode-2-dungeons-of-gamorra",
-        "file": "./images/black_whirlwind.png",
+        "file": "./images/arch2-1.png",
+        "caption": "A custom briefing might seem like table stakes for a great mission now, but doing it right with custom artwork is all part of the experience."
+    },
+    {
+        "mission": "operation-archangel-episode-2-dungeons-of-gamorra",
+        "file": "./images/arch2-2.png",
+        "caption": "The nighttime setting of the castle on Gamorra establishes a threatening ambience right away."
+    },
+    {
+        "mission": "operation-archangel-episode-2-dungeons-of-gamorra",
+        "file": "./images/arch2-3.png",
+        "caption": "Special touches like an underwater area showcase the inventiveness of this author."
+    },
+    {
+        "mission": "operation-archangel-episode-2-dungeons-of-gamorra",
+        "file": "./images/arch2-4.png",
+        "caption": "The castle is a great mix of old and new textures, Imperial and medieval architecture."
+    },
+    {
+        "mission": "operation-archangel-episode-2-dungeons-of-gamorra",
+        "file": "./images/arch2-5.png",
+        "caption": "Come to papa..."
+    },
+    {
+        "mission": "operation-archangel-episode-2-dungeons-of-gamorra",
+        "file": "./images/arch2-6.png",
         "caption": "The castle and other settings may be great, but what steals the show is the new weapon you find: The Black Whirlwind."
     },
     {
         "mission": "operation-archangel-episode-i-mos-eisley-the-maze",
-        "file": "./images/archangel.png",
+        "file": "./images/arch1-1.png",
         "caption": "As with many levels based in the movies, this one recreates what we all know well, adding in subtle twists to bend it to the author's wishes."
+    },
+    {
+        "mission": "operation-archangel-episode-i-mos-eisley-the-maze",
+        "file": "./images/arch1-2.png",
+        "caption": "New FMEs and WAXes help the mission really come alive."
+    },
+    {
+        "mission": "operation-archangel-episode-i-mos-eisley-the-maze",
+        "file": "./images/arch1-3.png",
+        "caption": "The architecture gives you the feeling of Mos Eisley, and makes you understand the title of \"The Maze\""
+    },
+    {
+        "mission": "operation-archangel-episode-i-mos-eisley-the-maze",
+        "file": "./images/arch1-4.png",
+        "caption": "Secrets and in-jokes are abundant in the various Mos Eisley buildings."
+    },
+    {
+        "mission": "operation-archangel-episode-i-mos-eisley-the-maze",
+        "file": "./images/arch1-5.png",
+        "caption": "While this mission is more than just movie references, it's definitely fun to encounter recognizable spaces."
+    },
+    {
+        "mission": "operation-archangel-episode-i-mos-eisley-the-maze",
+        "file": "./images/arch1-6.png",
+        "caption": "Droids aren't welcome here, and neither are you."
     },
     {
         "mission": "operation-borea",

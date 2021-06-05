@@ -1,9 +1,49 @@
 @import '../styles/colors';
 @import '../styles/vars';
 
-.coverClass {
-    width: 100%;
-    margin-bottom: 32px;
+:global(.text) {
+    .coverClass {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 32px;
+        float: none;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            margin: 0;
+            font-size: 10px;
+            transform-origin: bottom right;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: rotate(90deg);
+            color: #757575;
+            text-align: right;
+            
+            &:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 10px;
+                height: 10px;
+                background-image: url('/images/camera.svg');
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                margin-inline-end: 4px;
+                transform: rotate(-90deg);
+                position: relative;
+                top: -1px;
+            }
+
+            @media screen and (min-width: 767px) {
+                padding-bottom: 4px;
+            }
+        }
+    }
 }
 
 .post-meta {

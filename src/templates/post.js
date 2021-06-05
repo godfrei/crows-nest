@@ -30,7 +30,11 @@ const PostTemplate = ({ data, pageContext }) => {
       <SEO postPath={slug} postNode={postNode} postSEO />
       <div className="text">
         <article>
-          <img src={cover} className={coverClass} alt="" />
+          <figure className={coverClass}>
+            <img src={cover} alt={post.coverAlt} />
+            {post.coverCredit && (<figcaption>{post.coverCredit}</figcaption>)}
+          </figure>
+          
           <h1>{post.title}</h1>
           <p className={postMeta}>{date}</p>
           <div className={postMeta}>
@@ -73,6 +77,7 @@ export const pageQuery = graphql`
           publicURL
         }
         coverAlt
+        coverCredit
       }
       fields {
         slug

@@ -5,6 +5,7 @@ authors:
   - "Geoff Elliott"
 cover: star-wars-empire-han-hits-falcon.jpeg
 coverAlt: "Han Solo hitting the control panels in the Millenium Falcon cockpit."
+coverCredit: "Lucasfilm"
 categories:
 tags:
 ---

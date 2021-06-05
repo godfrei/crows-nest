@@ -5,6 +5,7 @@ authors:
   - "Geoff Elliott"
 cover: hyperspace.jpg
 coverAlt: "Stars streaming into lines as a ship jumps to hyperspace."
+coverCredit: "EA / Respawn"
 categories:
 tags:
 description: "The Nest is coming back. Here's a little bit about what you can expect."
