@@ -192,6 +192,12 @@ module.exports = {
         color: config.themeColor,
       },
     },
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ['https://fonts.gstatic.com']
+      }
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
