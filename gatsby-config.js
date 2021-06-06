@@ -73,6 +73,7 @@ module.exports = {
         name: `missionFiles`,
       },
     },
+    "gatsby-plugin-preact",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
