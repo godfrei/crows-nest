@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import BodyClassName from "react-body-classname";
 import SiteTitle from "../components/SiteTitle";
 import Header from "../components/Header";
@@ -12,7 +13,7 @@ import ReviewListing from "../components/ReviewListing";
 import TopPost from "../components/TopPost";
 import EditorsChoiceListing from "../components/EditorsChoiceListing";
 import RecentComponents from "../components/RecentComponents";
-import { home, header, grid } from "./index.module.scss";
+import { home, grid, crow, planet } from "./index.module.scss";
 
 const Index = ({ data }) => {
   const topPost = data.allMarkdownRemark.edges[0];
@@ -42,6 +43,8 @@ const Index = ({ data }) => {
                 it.
               </p>
             </div>
+            <StaticImage src="../../static/images/planet_hologram.png" alt="" className={planet} loading="eager" placeholder="blurred" />
+            <StaticImage src="../../static/images/crow.png" alt="An image of Kyle Katarn's ship, the Moldy Crow, flying toward you." className={crow} loading="eager" placeholder="blurred" />
             
             <div className={grid}>
               <div>

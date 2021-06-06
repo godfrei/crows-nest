@@ -3,7 +3,6 @@ import { Link, StaticQuery, graphql } from "gatsby";
 import Navigation from "../Navigation";
 import SiteTitle from "../SiteTitle";
 import Search from "../Search";
-import crow from "../../images/crow.png";
 import { header, title } from "./Header.module.scss";
 
 const Header = () => (
@@ -19,7 +18,7 @@ const Header = () => (
       <header className={header}>
         <div>
           <Link to="/" className={title}>
-            <img src={crow} alt="The Moldy Crow" id="crow" />
+            <img src="/images/crow.png" alt="The Moldy Crow" />
             <SiteTitle />
           </Link>
           <Navigation />

@@ -10,9 +10,9 @@
         > span {
             background-color: transparent;
             background-image: linear-gradient($teal, black 65%, black);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             white-space: nowrap;
             position: relative;
             z-index: 5;

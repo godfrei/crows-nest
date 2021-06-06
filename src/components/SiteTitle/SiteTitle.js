@@ -1,5 +1,5 @@
 import React from "react";
-import { siteTitle, apos } from "./SiteTitle.module.scss";
+import { siteTitle } from "./SiteTitle.module.scss";
 
 const SiteTitle = () => {
   return (
