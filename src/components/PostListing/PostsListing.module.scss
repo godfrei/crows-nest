@@ -6,6 +6,7 @@
     padding: 0;
     list-style: none;
     margin: 0;
+    margin-top: 2rem;
     padding-bottom: 2em;
 
     li {
@@ -25,7 +26,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 2rem;
-        margin-top: 2rem;
 
         li {
             margin-bottom: 0;
@@ -34,6 +34,12 @@
 }
 
 @media screen and (min-width: 1023px) {
+    .article-list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .article-list {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
