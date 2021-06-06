@@ -1,14 +1,16 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../layout";
 import config from "../../data/SiteConfig";
-import { pageHeader, description, links } from './launchpad.module.scss';
+import { pageHeader, description, links, cover } from './launchpad.module.scss';
 
 const LaunchpadPage = () => (
   <Layout>
     <Helmet title={`Launch Pad | ${config.siteTitle}`} />
 
     <div className={pageHeader}>
+      <StaticImage src="../../static/images/hangar.jpg" alt="A photo of the hangar on a Calamari cruiser with Rebel fighter ships and a shuttle." className={cover} loading="eager" />
       <div className={description}>
         <h1>Launch Pad</h1>
 

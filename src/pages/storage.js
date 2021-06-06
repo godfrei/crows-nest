@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
 import SEO from "../components/SEO";
@@ -10,6 +11,7 @@ import {
   sortOptions,
   active,
   description,
+  cover,
 } from "./storage.module.scss";
 
 const Storage = ({ data }) => {
@@ -24,6 +26,7 @@ const Storage = ({ data }) => {
       </Helmet>
       <SEO />
       <div className={pageHeader}>
+        <StaticImage src="../../static/images/vault-tunnel.jpg" alt="A photo of the tunnel leading to the data vault on Scarif." className={cover} loading="eager" />
         <div className={description}>
           <h1>Storage</h1>
 

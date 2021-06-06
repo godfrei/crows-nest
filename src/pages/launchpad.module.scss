@@ -1,13 +1,4 @@
-@import "../styles/colors";
-@import "../styles/vars";
 @import "../styles/pageHeader";
-
-.pageHeader {
-    &:before {
-        background-image: url('/images/hangar.jpg');
-        background-position: center top;
-    }
-}
 
 .links {
     position: relative;

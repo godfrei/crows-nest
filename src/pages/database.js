@@ -1,10 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import config from "../../data/SiteConfig";
 import SEO from "../components/SEO";
 import Layout from "../layout";
-import { pageHeader, databaseHeader, description, info, play, build, grid } from "./Database.module.scss";
+import { pageHeader, databaseHeader, description, info, play, build, grid, cover } from "./Database.module.scss";
 
 const Database = () => (
   <Layout>
@@ -13,6 +14,7 @@ const Database = () => (
     </Helmet>
     <SEO />
     <div className={`${pageHeader} ${databaseHeader}`}>
+      <StaticImage src="../../static/images/artoo-terminal.png" alt="A photo R2-D2 about to plug in to a computer terminal." className={cover} loading="eager" />
       <div className={description}>
         <h1>Database</h1>
 
