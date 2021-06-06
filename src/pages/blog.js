@@ -44,8 +44,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             cover {
-              name
-              publicURL
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
             coverAlt
             date

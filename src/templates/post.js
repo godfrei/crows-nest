@@ -33,7 +33,7 @@ const PostTemplate = ({ data, pageContext }) => {
       <div className="text">
         <article>
           <figure className={coverClass}>
-            <GatsbyImage image={image} alt={post.coverAlt} />
+            <GatsbyImage image={image} alt={post.coverAlt} loading="eager" />
             {post.coverCredit && (<figcaption>{post.coverCredit}</figcaption>)}
           </figure>
           

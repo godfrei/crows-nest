@@ -105,7 +105,9 @@ export const pageQuery = graphql`
             title
             description
             cover {
-              name
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
               publicURL
             }
             date
