@@ -13,42 +13,22 @@
     a:link, a:visited {
         text-decoration: none;
     }
-
-    h1 {
-        font-size: clamp(14px, 4vw, 40px);
-    }
 }
 
 .map {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 3.2rem;
+    display: none;
+}
 
-    ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    li {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 0.4rem;
-        list-style: none;
-    }
-
-    > li {
-        border-top: 1px solid $black;
-        border-left: 1px solid $black;
-        padding: 1rem 0 0 1.2rem;
-        margin-bottom: 1.6rem;
-    }
-
-    strong {
-        display: block;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        margin-bottom: 0.4rem;
-    }
+.logo {
+    grid-column: 4 / 5;
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+    padding: 1.6rem;
+    background-image: url("/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80%;
 }
 
 @media screen and (min-width: 767px) {
@@ -64,6 +44,10 @@
 
     .title {
         grid-column: 2 / 3;
+
+        h1 {
+            font-size: clamp(14px, 4vw, 40px);
+        }
     }
 
     .links {
@@ -73,12 +57,40 @@
     .logo {
         grid-column: 4 / 5;
         width: 100%;
-        padding: 1.6rem;
     }
 
     .map {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1.6rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 3.2rem;
+    
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+    
+        li {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 0.4rem;
+            list-style: none;
+        }
+    
+        > li {
+            border-top: 1px solid $black;
+            border-left: 1px solid $black;
+            padding: 1rem 0 0 1.2rem;
+            margin-bottom: 1.6rem;
+        }
+    
+        strong {
+            display: block;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+        }
     }
 }
