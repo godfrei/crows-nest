@@ -77,7 +77,10 @@ export const pageQuery = graphql`
         date
         cover {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              width: 742
+            )
           },
         }
         coverAlt

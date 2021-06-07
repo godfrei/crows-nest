@@ -43,7 +43,7 @@ const Index = ({ data }) => {
                 it.
               </p>
             </div>
-            <StaticImage src="../../static/images/planet_hologram.png" alt="" className={planet} loading="eager" placeholder="blurred" />
+            <StaticImage src="../../static/images/planet_hologram.png" alt="" className={planet} loading="eager" placeholder="blurred" width="660" />
             <StaticImage src="../../static/images/crow.png" alt="An image of Kyle Katarn's ship, the Moldy Crow, flying toward you." className={crow} loading="eager" placeholder="blurred" />
             
             <div className={grid}>
@@ -109,7 +109,10 @@ export const pageQuery = graphql`
             description
             cover {
               childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
+                gatsbyImageData(
+                  width: 672
+                  layout: CONSTRAINED
+                )
               }
               publicURL
             }
