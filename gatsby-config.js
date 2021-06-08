@@ -73,6 +73,7 @@ module.exports = {
         name: `missionFiles`,
       },
     },
+    "gatsby-plugin-preact",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
@@ -191,7 +192,22 @@ module.exports = {
         color: config.themeColor,
       },
     },
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ['https://fonts.gstatic.com']
+      }
+    },
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          quality: 90,
+          webpQuality: 100,
+        }
+      }
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",

@@ -65,15 +65,6 @@ export default () => {
 
         <p>
           <small>
-            {/* <a
-              rel="license"
-              href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-            >
-              <img
-                alt="Creative Commons License"
-                src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
-              />
-            </a> */}
             <span property="dct:title">{config.siteTitle}</span> by{" "}
             <span property="cc:attributionName">{config.userName}</span> is
             licensed under a{" "}
@@ -93,10 +84,7 @@ export default () => {
 
         <p><small>{config.copyright}</small></p>
       </div>
-      <img src="/logo.svg" className={logo} alt="" />
-
-
-
+      <div className={logo}></div>
     </footer>
   );
 };

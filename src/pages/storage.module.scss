@@ -1,11 +1,5 @@
 @import '../styles/pageHeader';
 
-.pageHeader {
-    &:before {
-        background-image: url('/images/vault-tunnel.jpg');
-    }
-}
-
 .typeClass {
     background-color: rgba($amber, 0.2);
     color: $amber;

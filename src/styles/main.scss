@@ -31,7 +31,7 @@ body {
     color: $default-text;
     background-color: $black;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", "Avenir", "Century Gothic", "CenturyGothic", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -67,7 +67,7 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Encode Sans Condensed", sans-serif;
+    font-family: "Encode Sans Condensed", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "ArialNovaCond-Bold", "Arial Nova Cond Bold", sans-serif;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 1px;

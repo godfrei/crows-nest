@@ -22,7 +22,7 @@
 
     header[class^=Header] {
         > div {
-            padding-top: 52px; /* 48 + 4 */
+            padding-top: 48px;
         }
 
         > div > a:first-child {
@@ -33,7 +33,6 @@
 
 :global(#site-title) {
     position: static;
-    // margin-top: 160px;
     text-align: center;
 
     > * {
@@ -50,38 +49,35 @@
         width: 300px;
         margin-top: 144px;
     }
+}
 
-    &:before {
-        content: '';
-        display: block;
+.home {
+    .planet, .crow {
         position: absolute;
-        background-color: transparent;
-        background-image: url('/images/planet_hologram.webp');
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 40vw auto;
-        top: -144px;
-        right: 0;
-        width: 100%;
-        height: 20vw;
-        z-index: 1;
     }
+}
 
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        background-image: url('../images/crow.png');
-        background-repeat: no-repeat;
-        background-position: top left;
-        transform: rotate(20deg);
-        z-index: 1;
-        width: 157px;
-        height: 100px;
-        top: -120px;
-        left: $spacing-5;
-        background-size: 157px 100px;
-    }
+.planet {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 40vw;
+    top: -144px;
+    right: 0;
+    z-index: 1;
+}
+
+.crow {
+    content: '';
+    display: block;
+    position: absolute;
+    transform: rotate(20deg);
+    z-index: 1;
+    width: 157px;
+    height: 100px;
+    top: -120px;
+    left: $spacing-5;
 }
 
 @media screen and (min-width: 767px) {
@@ -142,26 +138,23 @@
             max-width: 34em;
         }
 
-        &:before {
-            background-size: 40vw auto;
-            top: 0px;
-            right: 0;
-            width: 100%;
-            height: 20vw;
-            z-index: 1;
-        }
-
-        &:after {
-            width: 314px;
-            height: 200px;
-            top: $spacing-10 * 3;
-            left: $spacing-7;
-            background-size: 314px 200px;
-        }
-
         p {
             text-shadow: 0 0 12px rgba(0,0,0,0.8);
         }
+    }
+
+    .planet {
+        top: 0px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .crow {
+        width: 314px;
+        height: 200px;
+        top: $spacing-10 * 3;
+        left: $spacing-7;
+        background-size: 314px 200px;
     }
 }
 
@@ -181,10 +174,6 @@
     }
 
     :global(#site-title) {
-        // &:after {
-        //     top: $spacing-10 * 2;
-        // }
-
         h1 {
             font-size: 12rem;
         }
@@ -198,14 +187,13 @@
         }
     }
 
-    :global(#site-title) {
-        &:before {
-            top: -112px;
-        }
+    .planet {
+        max-width: 660px;
+        top: -96px;
+    }
 
-        &:after {
-            top: $spacing-10 * 2;
-            left: $spacing-10;
-        }
+    .crow {
+        top: $spacing-10 * 2;
+        left: $spacing-10;
     }
 }

@@ -24,10 +24,10 @@
 .toggleButton {
     position: absolute;
     top: 0;
-    right: 8px;
+    right: 0px;
     z-index: 101;
-    height: 44px;
-    width: 44px;
+    height: 48px;
+    width: 48px;
     padding: 8px;
     display: flex;
     align-items: center;
@@ -35,7 +35,6 @@
     -webkit-appearance: none;
     border: none;
     color: $default-text;
-    font-weight: 900;
     background-color: transparent;
 
     svg {

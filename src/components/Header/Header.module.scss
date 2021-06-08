@@ -18,7 +18,7 @@
   text-align: center;
   text-decoration: none;
   padding: $spacing-3 $spacing-5;
-  margin-bottom: $spacing-2;
+  margin: 0 48px $spacing-2 48px;
   height: 48px;
   position: relative;
   font-size: 3.2rem;
@@ -54,7 +54,7 @@
     align-items: center;
     height: 64px;
     padding: $spacing-6 0 $spacing-4 $spacing-4;
-    // margin-right: 40px;
+    margin: 0 0 $spacing-2 0;
     max-width: 100%;
 
     h1 {

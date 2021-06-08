@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../layout";
 import MissionListing from "../components/MissionListing";
 import SEO from "../components/SEO";
@@ -11,23 +12,10 @@ import {
   sortOptions,
   missionListHeader,
   description,
+  cover,
 } from "./mission-list.module.scss";
 
-function averageRating(mission) {
-  if (mission.reviews.length <= 0) return 0;
-  let ratingTotal = 0;
-  let numberOfReviews = 0;
-  mission.reviews.forEach((review) => {
-    if (typeof review.frontmatter.rating === "number") {
-      ratingTotal += review.frontmatter.rating;
-      numberOfReviews++;
-    }
-  });
-  if (numberOfReviews === 0) return 0;
-  return Math.round(ratingTotal / numberOfReviews);
-}
-
-const Missions = ({ data, pageContext }) => {
+const Missions = ({ data }) => {
   const linkProps = {
     activeClassName: active,
     partiallyActive: true,
@@ -38,6 +26,7 @@ const Missions = ({ data, pageContext }) => {
       <Helmet title={`Missions | ${config.siteTitle}`} />
       <SEO />
       <div className={`${pageHeader} ${missionListHeader}`}>
+        <StaticImage src="../../static/images/briefing.jpg" alt="A photo of the briefing room before the Battle of Endor, with Mon Mothma describing the mission at hand." className={cover} loading="eager" />
         <div className={description}>
           <h1>Missions</h1>
 
