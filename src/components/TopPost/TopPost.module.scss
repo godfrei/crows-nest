@@ -26,10 +26,11 @@
     .cover {
         position: absolute;
         z-index: 1;
-        top: 8px;
-        right: 8px;
-        left: 8px;
+        // top: 8px;
+        // right: 8px;
+        // left: 8px;
         height: 100px;
+        width: calc(100% - 8px);
         border-radius: 16px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
