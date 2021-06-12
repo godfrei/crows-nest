@@ -14,6 +14,7 @@ const ReviewListing = () => {
         nodes {
           frontmatter {
             authors
+            description
             mission {
               slug
               title

@@ -7,6 +7,7 @@ import { authorList } from "./ReviewCard.module.scss";
 const ReviewCard = ({ review, orientation }) => {
   const mission = review.frontmatter.mission;
   const coverURL = mission.cover ? mission.cover.publicURL : '';
+  const desc = review.frontmatter.description || review.excerpt;
 
   return (
     <Card link={`/missions/${mission.slug}`} coverURL={coverURL} title={mission.title} orientation={orientation} type="mission">
@@ -15,7 +16,7 @@ const ReviewCard = ({ review, orientation }) => {
         <small className={authorList}>Reviewed by {review.frontmatter.authors.join(", ")}</small>
       </div>
       
-      <p>{review.excerpt}</p>
+      <p>{desc}</p>
       <Rating score={review.frontmatter.rating} />
     </Card>
   );
