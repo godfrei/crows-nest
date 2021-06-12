@@ -390,6 +390,46 @@
         "caption": "An entire legion of my best troops awaits them..."
     },
     {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust1.png",
+        "caption": "Being able to look across the level to see the landing pad where you had been moments earlier makes the space feel real."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust2.png",
+        "caption": "New 3DOs and VUEs are sprinkled throughout, though they don't feel tightly integrated with the story."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust3.png",
+        "caption": "Yep, it's a bathroom. But thankfully it's used for more than just a snicker."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust4.png",
+        "caption": "The trigger-happy nature of the game feels a little more justified when you're confronted with Imperial atrocities."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust5.png",
+        "caption": "The author should be commended for using Boba Fett for more than just another fight, though I wish the standing frame had been placed here."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust6.png",
+        "caption": "Some spaces are nicely decorated, and enemies and items are well-placed, but taken as a whole the geometry never really becomes something special."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust7.png",
+        "caption": "You'll see a number of long hallways and textures that don't quite line up. And you just know there's something waiting for you on the other side of that overhang."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust8.png",
+        "caption": "You can never tell if the droids are decoration or agressive, nor what kind of attack logic they've been imbued with."
+    },
+    {
         "mission": "operation-nar-shaddaa-water-treatment-plant",
         "file": "./images/wplant.png",
         "caption": "One of the more interesting parts of the level is here in this large water tank."
