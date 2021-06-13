@@ -4,7 +4,7 @@ title: "REVIEW: Operation Just Cause"
 authors: 
   -  "Geoff Elliott"
 date: 2021-06-12
-rating: 2
+rating: 3
 description: A classic example of a mid-90s Dark Forces mission, complete with keys, Dark Troopers, and explosives. 
 ---
 
