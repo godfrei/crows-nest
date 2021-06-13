@@ -126,8 +126,28 @@
     },
     {
         "mission": "escape-from-hoth",
-        "file": "./images/escape.png",
+        "file": "./images/escape1.png",
         "caption": "You round the corner to see a large metal structure. You raise your head and look up, and up..."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape2.png",
+        "caption": "The damage caused by the Imperial assault is still present."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape3.png",
+        "caption": "Every part of the Rebel base is now filled with Imperial troops, so best be cautious."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape4.png",
+        "caption": "The Imperials are flooding the area with probe droids in an attempt to locate the Corellian commander before you do."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape5.png",
+        "caption": "Spend enough time in the twisting caverns of Hoth and you may discover some new life forms (or start hallucinating, I'm not sure)."
     },
     {
         "mission": "escape-from-secret-base-ii",
@@ -581,7 +601,17 @@
     },
     {
         "mission": "underground-research-facility",
-        "file": "./images/cave.png",
+        "file": "./images/cave1.png",
+        "caption": "Imperial architects definitely aren't subtle. You'll know when you've found the underground facility."
+    },
+    {
+        "mission": "underground-research-facility",
+        "file": "./images/cave2.png",
+        "caption": "It seems that they might be researching more than just Dark Troopers. Or maybe the poor kell dragon is target practice..."
+    },
+    {
+        "mission": "underground-research-facility",
+        "file": "./images/cave3.png",
         "caption": "Don't worry, they don't bite. In this level you infiltrate the facility believed to have created the first DT prototype."
     },
     {
