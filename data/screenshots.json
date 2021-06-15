@@ -126,8 +126,28 @@
     },
     {
         "mission": "escape-from-hoth",
-        "file": "./images/escape.png",
+        "file": "./images/escape1.png",
         "caption": "You round the corner to see a large metal structure. You raise your head and look up, and up..."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape2.png",
+        "caption": "The damage caused by the Imperial assault is still present."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape3.png",
+        "caption": "Every part of the Rebel base is now filled with Imperial troops, so best be cautious."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape4.png",
+        "caption": "The Imperials are flooding the area with probe droids in an attempt to locate the Corellian commander before you do."
+    },
+    {
+        "mission": "escape-from-hoth",
+        "file": "./images/escape5.png",
+        "caption": "Spend enough time in the twisting caverns of Hoth and you may discover some new life forms (or start hallucinating, I'm not sure)."
     },
     {
         "mission": "escape-from-secret-base-ii",
@@ -390,6 +410,46 @@
         "caption": "An entire legion of my best troops awaits them..."
     },
     {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust1.png",
+        "caption": "Being able to look across the level to see the landing pad where you had been moments earlier makes the space feel real."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust2.png",
+        "caption": "New 3DOs and VUEs are sprinkled throughout, though they don't feel tightly integrated with the story."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust3.png",
+        "caption": "Yep, it's a bathroom. But thankfully it's used for more than just a snicker."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust4.png",
+        "caption": "The trigger-happy nature of the game feels a little more justified when you're confronted with Imperial atrocities."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust5.png",
+        "caption": "The author should be commended for using Boba Fett for more than just another fight, though I wish the standing frame had been placed here."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust6.png",
+        "caption": "Some spaces are nicely decorated, and enemies and items are well-placed, but taken as a whole the geometry never really becomes something special."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust7.png",
+        "caption": "You'll see a number of long hallways and textures that don't quite line up. And you just know there's something waiting for you on the other side of that overhang."
+    },
+    {
+        "mission": "operation-just-cause",
+        "file": "./images/opjust8.png",
+        "caption": "You can never tell if the droids are decoration or agressive, nor what kind of attack logic they've been imbued with."
+    },
+    {
         "mission": "operation-nar-shaddaa-water-treatment-plant",
         "file": "./images/wplant.png",
         "caption": "One of the more interesting parts of the level is here in this large water tank."
@@ -541,7 +601,17 @@
     },
     {
         "mission": "underground-research-facility",
-        "file": "./images/cave.png",
+        "file": "./images/cave1.png",
+        "caption": "Imperial architects definitely aren't subtle. You'll know when you've found the underground facility."
+    },
+    {
+        "mission": "underground-research-facility",
+        "file": "./images/cave2.png",
+        "caption": "It seems that they might be researching more than just Dark Troopers. Or maybe the poor kell dragon is target practice..."
+    },
+    {
+        "mission": "underground-research-facility",
+        "file": "./images/cave3.png",
         "caption": "Don't worry, they don't bite. In this level you infiltrate the facility believed to have created the first DT prototype."
     },
     {

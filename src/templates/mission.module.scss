@@ -133,7 +133,12 @@
     .coverImage {
         position: fixed;
         top: 88px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 60vh;
+        width: 100vw;
+        max-width: $max-width;
+        background-position: 50% 25%;
     }
 }
 
