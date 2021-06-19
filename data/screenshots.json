@@ -240,6 +240,21 @@
         "caption": "Even though the author has recycled his previous Tatooine level, he still adds several new surprises to give the experience some freshness."
     },
     {
+        "mission": "jabbas-ship-revenge",
+        "file": "./images/revenge1.png",
+        "caption": "Right from the start things are a little different from what you might remember."
+    },
+    {
+        "mission": "jabbas-ship-revenge",
+        "file": "./images/revenge2.png",
+        "caption": "The revised mission will give you plenty of opportunity to use the arsenal it provides."
+    },
+    {
+        "mission": "jabbas-ship-revenge",
+        "file": "./images/revenge3.png",
+        "caption": "Some of the logics applied to WAXes make for disturbing and hilarious new combinations."
+    },
+    {
         "mission": "jawa-sandcrawler",
         "file": "./images/sandcraw.png",
         "caption": "You get to run around inside a jawa sandcrawler. And that's about it."
