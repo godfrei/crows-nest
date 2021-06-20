@@ -235,6 +235,21 @@
         "caption": "There are some intersting ideas in this level but nothing really spectacular."
     },
     {
+        "mission": "imperial-residence",
+        "file": "./images/residence1.png",
+        "caption": "The author has created familiar sights using basic geometry."
+    },
+    {
+        "mission": "imperial-residence",
+        "file": "./images/residence2.png",
+        "caption": "Secrets abound in this mini mission."
+    },
+    {
+        "mission": "imperial-residence",
+        "file": "./images/residence3.png",
+        "caption": "Your home has been transformed through the power of the Jedi engine, and it's not very friendly."
+    },
+    {
         "mission": "impossible-rescue",
         "file": "./images/rescue.png",
         "caption": "Even though the author has recycled his previous Tatooine level, he still adds several new surprises to give the experience some freshness."
@@ -496,8 +511,23 @@
     },
     {
         "mission": "ravager-outpost",
-        "file": "./images/ravager.png",
-        "caption": "Like most of the level: it's a nice idea, but ultimately it falls a little short."
+        "file": "./images/ravager1.png",
+        "caption": "The mission kicks off with a high-stakes jumping puzzle as you escape your death sentence. It's downhill from there."
+    },
+    {
+        "mission": "ravager-outpost",
+        "file": "./images/ravager2.png",
+        "caption": "There are some nice ideas for set pieces, but they don't quite come together."
+    },
+    {
+        "mission": "ravager-outpost",
+        "file": "./images/ravager3.png",
+        "caption": "Lots of long, identical hallways, littered with PGUs and mines. Nobody would ever really build an outpost like this."
+    },
+    {
+        "mission": "ravager-outpost",
+        "file": "./images/ravager4.png",
+        "caption": "A few new items are scattered about as window dressing, never really amounting to much."
     },
     {
         "mission": "return-of-the-jawa",
