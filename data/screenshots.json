@@ -165,6 +165,26 @@
         "caption": "The old facility has been given a new look, and new areas have been added to revive this old level."
     },
     {
+        "mission": "mission-freebird",
+        "file": "./images/freebird1.png",
+        "caption": "You're in a tight spot at your initial drop point."
+    },
+    {
+        "mission": "mission-freebird",
+        "file": "./images/freebird2.png",
+        "caption": "It's a serviceable Imperial facility, but nothing new."
+    },
+    {
+        "mission": "mission-freebird",
+        "file": "./images/freebird3.png",
+        "caption": "The author claims the mission is difficult, but a single Phase 1 Dark Trooper isn't particularly challenging."
+    },
+    {
+        "mission": "mission-freebird",
+        "file": "./images/freebird4.png",
+        "caption": "Individual rooms are packed with troops, but again, that's not really hard."
+    },
+    {
         "mission": "frogman",
         "file": "./images/frogman.png",
         "caption": "These new graphics are a lot like the level; an interesting attempt, but they fall short."
