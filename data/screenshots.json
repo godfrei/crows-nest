@@ -546,8 +546,18 @@
     },
     {
         "mission": "star-base",
-        "file": "./images/starbase.png",
-        "caption": "The architecture and texturing isn't too bad, but doesn't even slightly resemble the prison it's supposed to."
+        "file": "./images/starbase1.png",
+        "caption": "Texturing is functional, but feels a little too clean for a run-down facility."
+    },
+    {
+        "mission": "star-base",
+        "file": "./images/starbase2.png",
+        "caption": "The architecture is also passable, but doesn't resemble a prison."
+    },
+    {
+        "mission": "star-base",
+        "file": "./images/starbase3.png",
+        "caption": "Some rooms better match the description, but the biggest issue is a disconnect between the narrative and design of the mission."
     },
     {
         "mission": "star-destroyer-oppressor-iv",
