@@ -51,8 +51,23 @@
     },
     {
         "mission": "cargo-bay-5",
-        "file": "./images/cargobay.png",
-        "caption": "A Mos Eisley stormtrooper complete with larger rifle and a new \"dark\" trooper are nice touches to this level."
+        "file": "./images/cargobay1.png",
+        "caption": "It's one of THOSE missions. OK then."
+    },
+    {
+        "mission": "cargo-bay-5",
+        "file": "./images/cargobay2.png",
+        "caption": "You'll have lots of enemies to shoot at, including these new stormtrooper WAXes."
+    },
+    {
+        "mission": "cargo-bay-5",
+        "file": "./images/cargobay3.png",
+        "caption": "Yes, there are \"dark\" troopers in this mission."
+    },
+    {
+        "mission": "cargo-bay-5",
+        "file": "./images/cargobay4.png",
+        "caption": "Like shooting dianogas in a... sewage barrel."
     },
     {
         "mission": "castle",
