@@ -70,6 +70,26 @@
         "caption": "Flat, boring, easy. Yup, it's Wolfenstein."
     },
     {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat1.png",
+        "caption": "The mission grabs your attention with a nice first view. The thermal detonator immediately lobbed in your direction also helps."
+    },
+    {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat2.png",
+        "caption": "Little details like the officer inspecting non-functional Dark Trooper prototypes elevate the setting."
+    },
+    {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat3.png",
+        "caption": "Find the controls that extend the bridge! Blasting them recommended."
+    },
+    {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat4.png",
+        "caption": "Subtle lighting differences let the textures pop and focus the player's attention on the objective."
+    },
+    {
         "mission": "coober",
         "file": "./images/coober.png",
         "caption": "Coober: what you see is what you get. I can't even come up with something funny to say."
@@ -556,8 +576,28 @@
     },
     {
         "mission": "return-to-bespin",
-        "file": "./images/bespin.png",
-        "caption": "New, artfully done waxes add to the Bespin experience."
+        "file": "./images/bespin1.png",
+        "caption": "It's Cloud City, alright."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin2.png",
+        "caption": "You'll find numerous callbacks to settings in The Empire Strikes Back, though some are better executed than others."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin3.png",
+        "caption": "It's Cloud City, alright."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin4.png",
+        "caption": "New WAXes help this new setting feel distinct from any of the original Dark Forces levels."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin5.png",
+        "caption": "The layout and texture work are top notch."
     },
     {
         "mission": "sensation",
