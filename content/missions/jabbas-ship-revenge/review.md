@@ -3,7 +3,7 @@ mission: "jabbas-ship-revenge"
 title: "REVIEW: Jabba's Ship Revenge"
 authors: 
   -  "Geoff Elliott"
-date: 2021-06-18
+date: 2021-06-21
 rating: 1
 description: Despite an expanded arsenal and a few new surprises, revisiting Jabba's Ship isn't that exciting.
 ---
