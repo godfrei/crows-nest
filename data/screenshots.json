@@ -51,8 +51,23 @@
     },
     {
         "mission": "cargo-bay-5",
-        "file": "./images/cargobay.png",
-        "caption": "A Mos Eisley stormtrooper complete with larger rifle and a new \"dark\" trooper are nice touches to this level."
+        "file": "./images/cargobay1.png",
+        "caption": "It's one of THOSE missions. OK then."
+    },
+    {
+        "mission": "cargo-bay-5",
+        "file": "./images/cargobay2.png",
+        "caption": "You'll have lots of enemies to shoot at, including these new stormtrooper WAXes."
+    },
+    {
+        "mission": "cargo-bay-5",
+        "file": "./images/cargobay3.png",
+        "caption": "Yes, there are \"dark\" troopers in this mission."
+    },
+    {
+        "mission": "cargo-bay-5",
+        "file": "./images/cargobay4.png",
+        "caption": "Like shooting dianogas in a... sewage barrel."
     },
     {
         "mission": "castle",
@@ -68,6 +83,26 @@
         "mission": "castle-wolfenstein",
         "file": "./images/wolf.png",
         "caption": "Flat, boring, easy. Yup, it's Wolfenstein."
+    },
+    {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat1.png",
+        "caption": "The mission grabs your attention with a nice first view. The thermal detonator immediately lobbed in your direction also helps."
+    },
+    {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat2.png",
+        "caption": "Little details like the officer inspecting non-functional Dark Trooper prototypes elevate the setting."
+    },
+    {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat3.png",
+        "caption": "Find the controls that extend the bridge! Blasting them recommended."
+    },
+    {
+        "mission": "commenor-station-pursuit-of-cycy-loctob",
+        "file": "./images/commstat4.png",
+        "caption": "Subtle lighting differences let the textures pop and focus the player's attention on the objective."
     },
     {
         "mission": "coober",
@@ -165,6 +200,26 @@
         "caption": "The old facility has been given a new look, and new areas have been added to revive this old level."
     },
     {
+        "mission": "mission-freebird",
+        "file": "./images/freebird1.png",
+        "caption": "You're in a tight spot at your initial drop point."
+    },
+    {
+        "mission": "mission-freebird",
+        "file": "./images/freebird2.png",
+        "caption": "It's a serviceable Imperial facility, but nothing new."
+    },
+    {
+        "mission": "mission-freebird",
+        "file": "./images/freebird3.png",
+        "caption": "The author claims the mission is difficult, but a single Phase 1 Dark Trooper isn't particularly challenging."
+    },
+    {
+        "mission": "mission-freebird",
+        "file": "./images/freebird4.png",
+        "caption": "Individual rooms are packed with troops, but again, that's not really hard."
+    },
+    {
         "mission": "frogman",
         "file": "./images/frogman.png",
         "caption": "These new graphics are a lot like the level; an interesting attempt, but they fall short."
@@ -235,9 +290,39 @@
         "caption": "There are some intersting ideas in this level but nothing really spectacular."
     },
     {
+        "mission": "imperial-residence",
+        "file": "./images/residence1.png",
+        "caption": "The author has created familiar sights using basic geometry."
+    },
+    {
+        "mission": "imperial-residence",
+        "file": "./images/residence2.png",
+        "caption": "Secrets abound in this mini mission."
+    },
+    {
+        "mission": "imperial-residence",
+        "file": "./images/residence3.png",
+        "caption": "Your home has been transformed through the power of the Jedi engine, and it's not very friendly."
+    },
+    {
         "mission": "impossible-rescue",
         "file": "./images/rescue.png",
         "caption": "Even though the author has recycled his previous Tatooine level, he still adds several new surprises to give the experience some freshness."
+    },
+    {
+        "mission": "jabbas-ship-revenge",
+        "file": "./images/revenge1.png",
+        "caption": "Right from the start things are a little different from what you might remember."
+    },
+    {
+        "mission": "jabbas-ship-revenge",
+        "file": "./images/revenge2.png",
+        "caption": "The revised mission will give you plenty of opportunity to use the arsenal it provides."
+    },
+    {
+        "mission": "jabbas-ship-revenge",
+        "file": "./images/revenge3.png",
+        "caption": "Some of the logics applied to WAXes make for disturbing and hilarious new combinations."
     },
     {
         "mission": "jawa-sandcrawler",
@@ -481,8 +566,23 @@
     },
     {
         "mission": "ravager-outpost",
-        "file": "./images/ravager.png",
-        "caption": "Like most of the level: it's a nice idea, but ultimately it falls a little short."
+        "file": "./images/ravager1.png",
+        "caption": "The mission kicks off with a high-stakes jumping puzzle as you escape your death sentence. It's downhill from there."
+    },
+    {
+        "mission": "ravager-outpost",
+        "file": "./images/ravager2.png",
+        "caption": "There are some nice ideas for set pieces, but they don't quite come together."
+    },
+    {
+        "mission": "ravager-outpost",
+        "file": "./images/ravager3.png",
+        "caption": "Lots of long, identical hallways, littered with PGUs and mines. Nobody would ever really build an outpost like this."
+    },
+    {
+        "mission": "ravager-outpost",
+        "file": "./images/ravager4.png",
+        "caption": "A few new items are scattered about as window dressing, never really amounting to much."
     },
     {
         "mission": "return-of-the-jawa",
@@ -491,8 +591,28 @@
     },
     {
         "mission": "return-to-bespin",
-        "file": "./images/bespin.png",
-        "caption": "New, artfully done waxes add to the Bespin experience."
+        "file": "./images/bespin1.png",
+        "caption": "It's Cloud City, alright."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin2.png",
+        "caption": "You'll find numerous callbacks to settings in The Empire Strikes Back, though some are better executed than others."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin3.png",
+        "caption": "It's Cloud City, alright."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin4.png",
+        "caption": "New WAXes help this new setting feel distinct from any of the original Dark Forces levels."
+    },
+    {
+        "mission": "return-to-bespin",
+        "file": "./images/bespin5.png",
+        "caption": "The layout and texture work are top notch."
     },
     {
         "mission": "sensation",
@@ -501,8 +621,18 @@
     },
     {
         "mission": "star-base",
-        "file": "./images/starbase.png",
-        "caption": "The architecture and texturing isn't too bad, but doesn't even slightly resemble the prison it's supposed to."
+        "file": "./images/starbase1.png",
+        "caption": "Texturing is functional, but feels a little too clean for a run-down facility."
+    },
+    {
+        "mission": "star-base",
+        "file": "./images/starbase2.png",
+        "caption": "The architecture is also passable, but doesn't resemble a prison."
+    },
+    {
+        "mission": "star-base",
+        "file": "./images/starbase3.png",
+        "caption": "Some rooms better match the description, but the biggest issue is a disconnect between the narrative and design of the mission."
     },
     {
         "mission": "star-destroyer-oppressor-iv",
