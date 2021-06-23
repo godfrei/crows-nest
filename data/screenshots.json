@@ -251,8 +251,18 @@
     },
     {
         "mission": "gulag-5",
-        "file": "./images/gulag5.png",
-        "caption": "Well... to each their own, I guess."
+        "file": "./images/gulag1.png",
+        "caption": "Would you believe the big rocket engine looking thing in the back there is a door? It is."
+    },
+    {
+        "mission": "gulag-5",
+        "file": "./images/gulag2.png",
+        "caption": "What is that big wall behind the shuttle? Is that...?"
+    },
+    {
+        "mission": "gulag-5",
+        "file": "./images/gulag3.png",
+        "caption": "Oh, no..."
     },
     {
         "mission": "hydra",
@@ -556,8 +566,18 @@
     },
     {
         "mission": "operation-stealth",
-        "file": "./images/stealth.png",
+        "file": "./images/stealth1.png",
         "caption": "Those Imperials work fast! They've converted Tak Base to their own uses."
+    },
+    {
+        "mission": "operation-stealth",
+        "file": "./images/stealth2.png",
+        "caption": "There are lots of VERY tight squeezes throughout the mission."
+    },
+    {
+        "mission": "operation-stealth",
+        "file": "./images/stealth3.png",
+        "caption": "It feels more like your normal Imperial base than it does the shattered remains of a Dark Trooper attack."
     },
     {
         "mission": "operation-tatooine",
