@@ -1,5 +1,15 @@
 [
     {
+        "mission": "3-d-mad",
+        "file": "./images/3dmad1.png",
+        "caption": "Watch the stormtroopers as we strafe to the side. Now you see them..."
+    },
+    {
+        "mission": "3-d-mad",
+        "file": "./images/3dmad2.png",
+        "caption": "...now you don't!"
+    },
+    {
         "mission": "a-jedi-night",
         "file": "./images/jedinight.png",
         "caption": "It's still the same Coruscant, but there have been a few changes since...er.. before you saw it last."
@@ -583,6 +593,16 @@
         "mission": "ravager-outpost",
         "file": "./images/ravager4.png",
         "caption": "A few new items are scattered about as window dressing, never really amounting to much."
+    },
+    {
+        "mission": "rescue-on-endor",
+        "file": "./images/endbase1.png",
+        "caption": "You know, I always thought security in this facility could use some beefing up."
+    },
+    {
+        "mission": "rescue-on-endor",
+        "file": "./images/endbase2.png",
+        "caption": "Some objects have been swapped, some enemies added. But nothing worth your time."
     },
     {
         "mission": "return-of-the-jawa",
