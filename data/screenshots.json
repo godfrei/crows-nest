@@ -35,6 +35,26 @@
         "caption": "Superb lighting and texturing really allow this level to shine."
     },
     {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon1.png",
+        "caption": "Up in the sky! It's... it's... a clump of improperly placed objects."
+    },
+    {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon2.png",
+        "caption": "There are lots of Imperials, and now only Imperials, throughout the level."
+    },
+    {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon3.png",
+        "caption": "The challenge is undercut when around every corner you'll find another Repeater and Shield Supercharge."
+    },
+    {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon4.png",
+        "caption": "It seems that every officer you come across has a key of some kind."
+    },
+    {
         "mission": "back-to-yavin",
         "file": "./images/yavin.png",
         "caption": "There's no mistaking this scene. The Imperials are renovating Yavin, and you have to stop them."

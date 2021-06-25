@@ -294,6 +294,7 @@
         "date": "1995-06-26",
         "filename": "./missions/authcon.zip",
         "description": "A modification of the Ramsees Hed mission that adds different enemies and items.",
+        "cover": "./images/authcon2.png",
         "levelReplaced": "RAMSHED",
         "difficulty": false,
         "bm": false,
@@ -305,7 +306,7 @@
         "vue": false,
         "lfd": false,
         "base": "Modified Level", 
-        "editors": "" 
+        "editors": "Dark Forces Editor 2.00" 
     },
     {
         "id": "yavin",
