@@ -777,12 +777,32 @@
     {
         "mission": "tie-defender-base",
         "file": "./images/defbase1.png",
-        "caption": "New ideas and creations abound in this level."
+        "caption": "Polished custom VUEs and new 3DOs showcase the focus of the mission."
     },
     {
         "mission": "tie-defender-base",
         "file": "./images/defbase2.png",
-        "caption": "You are to infiltrate a base and secure the plans for the Empire's newest weapon, the TIE Defender."
+        "caption": "The ships aren't the only new addition. This new enemy is a mid-mission challenge."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase3.png",
+        "caption": "This mission is hard at the higher difficulties. Lots of stormtrooper cannon fodder will draw down your ammo reserves if you aren't careful."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase4.png",
+        "caption": "The TIE Defender isn't the only new 3DO. It feels like a proper TIE Fighter reunion."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase5.png",
+        "caption": "There are new surprises around every corner, and all of them feel well-integrated and not included just for the sake of newness."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase6.png",
+        "caption": "Your eyes will be feasting and your wits will be challenged right up until the very end."
     },
     {
         "mission": "triton-spaceport",
