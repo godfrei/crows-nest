@@ -1,5 +1,15 @@
 [
     {
+        "mission": "3-d-mad",
+        "file": "./images/3dmad1.png",
+        "caption": "Watch the stormtroopers as we strafe to the side. Now you see them..."
+    },
+    {
+        "mission": "3-d-mad",
+        "file": "./images/3dmad2.png",
+        "caption": "...now you don't!"
+    },
+    {
         "mission": "a-jedi-night",
         "file": "./images/jedinight.png",
         "caption": "It's still the same Coruscant, but there have been a few changes since...er.. before you saw it last."
@@ -23,6 +33,26 @@
         "mission": "asteroid",
         "file": "./images/asteroid.png",
         "caption": "Superb lighting and texturing really allow this level to shine."
+    },
+    {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon1.png",
+        "caption": "Up in the sky! It's... it's... a clump of improperly placed objects."
+    },
+    {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon2.png",
+        "caption": "There are lots of Imperials, and now only Imperials, throughout the level."
+    },
+    {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon3.png",
+        "caption": "The challenge is undercut when around every corner you'll find another Repeater and Shield Supercharge."
+    },
+    {
+        "mission": "authoritative-conflict",
+        "file": "./images/authcon4.png",
+        "caption": "It seems that every officer you come across has a key of some kind."
     },
     {
         "mission": "back-to-yavin",
@@ -108,6 +138,26 @@
         "mission": "coober",
         "file": "./images/coober.png",
         "caption": "Coober: what you see is what you get. I can't even come up with something funny to say."
+    },
+    {
+        "mission": "danuta",
+        "file": "./images/danuta1.png",
+        "caption": "Surprise!"
+    },
+    {
+        "mission": "danuta",
+        "file": "./images/danuta2.png",
+        "caption": "If you're not looking for secrets you'll only notice a few superficial changes to the mission."
+    },
+    {
+        "mission": "danuta",
+        "file": "./images/danuta3.png",
+        "caption": "These guys weren't here before..."
+    },
+    {
+        "mission": "danuta",
+        "file": "./images/danuta4.png",
+        "caption": "In addition to starting the mission on the rooftop you'll find a sweet new ride is your getaway ship when you return there."
     },
     {
         "mission": "dark-prelude-the-early-missions-of-kyle-katarn",
@@ -241,8 +291,18 @@
     },
     {
         "mission": "gulag-5",
-        "file": "./images/gulag5.png",
-        "caption": "Well... to each their own, I guess."
+        "file": "./images/gulag1.png",
+        "caption": "Would you believe the big rocket engine looking thing in the back there is a door? It is."
+    },
+    {
+        "mission": "gulag-5",
+        "file": "./images/gulag2.png",
+        "caption": "What is that big wall behind the shuttle? Is that...?"
+    },
+    {
+        "mission": "gulag-5",
+        "file": "./images/gulag3.png",
+        "caption": "Oh, no..."
     },
     {
         "mission": "hydra",
@@ -546,8 +606,18 @@
     },
     {
         "mission": "operation-stealth",
-        "file": "./images/stealth.png",
+        "file": "./images/stealth1.png",
         "caption": "Those Imperials work fast! They've converted Tak Base to their own uses."
+    },
+    {
+        "mission": "operation-stealth",
+        "file": "./images/stealth2.png",
+        "caption": "There are lots of VERY tight squeezes throughout the mission."
+    },
+    {
+        "mission": "operation-stealth",
+        "file": "./images/stealth3.png",
+        "caption": "It feels more like your normal Imperial base than it does the shattered remains of a Dark Trooper attack."
     },
     {
         "mission": "operation-tatooine",
@@ -583,6 +653,16 @@
         "mission": "ravager-outpost",
         "file": "./images/ravager4.png",
         "caption": "A few new items are scattered about as window dressing, never really amounting to much."
+    },
+    {
+        "mission": "rescue-on-endor",
+        "file": "./images/endbase1.png",
+        "caption": "You know, I always thought security in this facility could use some beefing up."
+    },
+    {
+        "mission": "rescue-on-endor",
+        "file": "./images/endbase2.png",
+        "caption": "Some objects have been swapped, some enemies added. But nothing worth your time."
     },
     {
         "mission": "return-of-the-jawa",
@@ -717,12 +797,32 @@
     {
         "mission": "tie-defender-base",
         "file": "./images/defbase1.png",
-        "caption": "New ideas and creations abound in this level."
+        "caption": "Polished custom VUEs and new 3DOs showcase the focus of the mission."
     },
     {
         "mission": "tie-defender-base",
         "file": "./images/defbase2.png",
-        "caption": "You are to infiltrate a base and secure the plans for the Empire's newest weapon, the TIE Defender."
+        "caption": "The ships aren't the only new addition. This new enemy is a mid-mission challenge."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase3.png",
+        "caption": "This mission is hard at the higher difficulties. Lots of stormtrooper cannon fodder will draw down your ammo reserves if you aren't careful."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase4.png",
+        "caption": "The TIE Defender isn't the only new 3DO. It feels like a proper TIE Fighter reunion."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase5.png",
+        "caption": "There are new surprises around every corner, and all of them feel well-integrated and not included just for the sake of newness."
+    },
+    {
+        "mission": "tie-defender-base",
+        "file": "./images/defbase6.png",
+        "caption": "Your eyes will be feasting and your wits will be challenged right up until the very end."
     },
     {
         "mission": "triton-spaceport",

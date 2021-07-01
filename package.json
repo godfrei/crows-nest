@@ -1,7 +1,7 @@
 {
   "name": "crows-nest",
   "description": "Reviews for community-made add-on levels for the LucasArts game *Dark Forces*.",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "author": "Geoff Elliott",
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
