@@ -140,6 +140,26 @@
         "caption": "Coober: what you see is what you get. I can't even come up with something funny to say."
     },
     {
+        "mission": "danuta",
+        "file": "./images/danuta1.png",
+        "caption": "Surprise!"
+    },
+    {
+        "mission": "danuta",
+        "file": "./images/danuta2.png",
+        "caption": "If you're not looking for secrets you'll only notice a few superficial changes to the mission."
+    },
+    {
+        "mission": "danuta",
+        "file": "./images/danuta3.png",
+        "caption": "These guys weren't here before..."
+    },
+    {
+        "mission": "danuta",
+        "file": "./images/danuta4.png",
+        "caption": "In addition to starting the mission on the rooftop you'll find a sweet new ride is your getaway ship when you return there."
+    },
+    {
         "mission": "dark-prelude-the-early-missions-of-kyle-katarn",
         "file": "./images/prelude.png",
         "caption": "Your job in the second level is to steal an Imperial IFF device, hidden somewhere in this docking facility."
