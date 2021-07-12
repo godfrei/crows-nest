@@ -695,6 +695,31 @@
         "caption": "The layout and texture work are top notch."
     },
     {
+        "mission": "secbase-revisited",
+        "file": "./images/secrev1.png",
+        "caption": ""
+    },
+    {
+        "mission": "secbase-revisited",
+        "file": "./images/secrev2.png",
+        "caption": ""
+    },
+    {
+        "mission": "secbase-revisited",
+        "file": "./images/secrev3.png",
+        "caption": ""
+    },
+    {
+        "mission": "secbase-revisited",
+        "file": "./images/secrev4.png",
+        "caption": ""
+    },
+    {
+        "mission": "secbase-revisited",
+        "file": "./images/secrev5.png",
+        "caption": ""
+    },
+    {
         "mission": "sensation",
         "file": "./images/sensation.png",
         "caption": "Your job is to hitch a ride on this crane."
