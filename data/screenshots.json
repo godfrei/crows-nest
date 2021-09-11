@@ -750,6 +750,36 @@
         "caption": "Stormtroopers armed with cloaking devices are your new nemesis in this level."
     },
     {
+        "mission": "terminate-boba-fett",
+        "file": "./images/terminat01.png",
+        "caption": "Is it really a Boba Fett mission without this ship?"
+    },
+    {
+        "mission": "terminate-boba-fett",
+        "file": "./images/terminat02.png",
+        "caption": "You'll have plenty of opposition, but nothing insurmountable. The bigger obstacle is the bland room design."
+    },
+    {
+        "mission": "terminate-boba-fett",
+        "file": "./images/terminat05.png",
+        "caption": "You'll fight \"Boba Fett\" a few times during the mission in the form of prototype Assault Droids."
+    },
+    {
+        "mission": "terminate-boba-fett",
+        "file": "./images/terminat06.png",
+        "caption": "Darkened, narrow, twisting caves with surprises lurking around the corners become a bit tiring after a while."
+    },
+    {
+        "mission": "terminate-boba-fett",
+        "file": "./images/terminat08.png",
+        "caption": "Getting to explore the surface of Sullust is a change of pace, but not really enough."
+    },
+    {
+        "mission": "terminate-boba-fett",
+        "file": "./images/terminat09.png",
+        "caption": "The caverns feature some nice, elaborate open areas, but did somebody just lose the blue key while spelunking?"
+    },
+    {
         "mission": "the-danger-room",
         "file": "./images/dangroom.png",
         "caption": "What's your poison? In this hallway you select your opponents."
