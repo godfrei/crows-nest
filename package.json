@@ -32,7 +32,7 @@
     "gatsby-transformer-remark": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
     "lodash": "^4.17.20",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-sass": "^5.0.0",
     "preact": "^10.5.13",
     "preact-render-to-string": "^5.1.19",
